@@ -1,0 +1,9046 @@
+[
+  {
+    "id": 1,
+    "name": "bulbasaur",
+    "base_experience": 64,
+    "height": 7,
+    "weight": 69
+  },
+  {
+    "id": 2,
+    "name": "ivysaur",
+    "base_experience": 142,
+    "height": 10,
+    "weight": 130
+  },
+  {
+    "id": 3,
+    "name": "venusaur",
+    "base_experience": 263,
+    "height": 20,
+    "weight": 1000
+  },
+  {
+    "id": 4,
+    "name": "charmander",
+    "base_experience": 62,
+    "height": 6,
+    "weight": 85
+  },
+  {
+    "id": 5,
+    "name": "charmeleon",
+    "base_experience": 142,
+    "height": 11,
+    "weight": 190
+  },
+  {
+    "id": 6,
+    "name": "charizard",
+    "base_experience": 267,
+    "height": 17,
+    "weight": 905
+  },
+  {
+    "id": 7,
+    "name": "squirtle",
+    "base_experience": 63,
+    "height": 5,
+    "weight": 90
+  },
+  {
+    "id": 8,
+    "name": "wartortle",
+    "base_experience": 142,
+    "height": 10,
+    "weight": 225
+  },
+  {
+    "id": 9,
+    "name": "blastoise",
+    "base_experience": 265,
+    "height": 16,
+    "weight": 855
+  },
+  {
+    "id": 10,
+    "name": "caterpie",
+    "base_experience": 39,
+    "height": 3,
+    "weight": 29
+  },
+  {
+    "id": 11,
+    "name": "metapod",
+    "base_experience": 72,
+    "height": 7,
+    "weight": 99
+  },
+  {
+    "id": 12,
+    "name": "butterfree",
+    "base_experience": 198,
+    "height": 11,
+    "weight": 320
+  },
+  {
+    "id": 13,
+    "name": "weedle",
+    "base_experience": 39,
+    "height": 3,
+    "weight": 32
+  },
+  {
+    "id": 14,
+    "name": "kakuna",
+    "base_experience": 72,
+    "height": 6,
+    "weight": 100
+  },
+  {
+    "id": 15,
+    "name": "beedrill",
+    "base_experience": 178,
+    "height": 10,
+    "weight": 295
+  },
+  {
+    "id": 16,
+    "name": "pidgey",
+    "base_experience": 50,
+    "height": 3,
+    "weight": 18
+  },
+  {
+    "id": 17,
+    "name": "pidgeotto",
+    "base_experience": 122,
+    "height": 11,
+    "weight": 300
+  },
+  {
+    "id": 18,
+    "name": "pidgeot",
+    "base_experience": 216,
+    "height": 15,
+    "weight": 395
+  },
+  {
+    "id": 19,
+    "name": "rattata",
+    "base_experience": 51,
+    "height": 3,
+    "weight": 35
+  },
+  {
+    "id": 20,
+    "name": "raticate",
+    "base_experience": 145,
+    "height": 7,
+    "weight": 185
+  },
+  {
+    "id": 21,
+    "name": "spearow",
+    "base_experience": 52,
+    "height": 3,
+    "weight": 20
+  },
+  {
+    "id": 22,
+    "name": "fearow",
+    "base_experience": 155,
+    "height": 12,
+    "weight": 380
+  },
+  {
+    "id": 23,
+    "name": "ekans",
+    "base_experience": 58,
+    "height": 20,
+    "weight": 69
+  },
+  {
+    "id": 24,
+    "name": "arbok",
+    "base_experience": 157,
+    "height": 35,
+    "weight": 650
+  },
+  {
+    "id": 25,
+    "name": "pikachu",
+    "base_experience": 112,
+    "height": 4,
+    "weight": 60
+  },
+  {
+    "id": 26,
+    "name": "raichu",
+    "base_experience": 243,
+    "height": 8,
+    "weight": 300
+  },
+  {
+    "id": 27,
+    "name": "sandshrew",
+    "base_experience": 60,
+    "height": 6,
+    "weight": 120
+  },
+  {
+    "id": 28,
+    "name": "sandslash",
+    "base_experience": 158,
+    "height": 10,
+    "weight": 295
+  },
+  {
+    "id": 29,
+    "name": "nidoran-f",
+    "base_experience": 55,
+    "height": 4,
+    "weight": 70
+  },
+  {
+    "id": 30,
+    "name": "nidorina",
+    "base_experience": 128,
+    "height": 8,
+    "weight": 200
+  },
+  {
+    "id": 31,
+    "name": "nidoqueen",
+    "base_experience": 253,
+    "height": 13,
+    "weight": 600
+  },
+  {
+    "id": 32,
+    "name": "nidoran-m",
+    "base_experience": 55,
+    "height": 5,
+    "weight": 90
+  },
+  {
+    "id": 33,
+    "name": "nidorino",
+    "base_experience": 128,
+    "height": 9,
+    "weight": 195
+  },
+  {
+    "id": 34,
+    "name": "nidoking",
+    "base_experience": 253,
+    "height": 14,
+    "weight": 620
+  },
+  {
+    "id": 35,
+    "name": "clefairy",
+    "base_experience": 113,
+    "height": 6,
+    "weight": 75
+  },
+  {
+    "id": 36,
+    "name": "clefable",
+    "base_experience": 242,
+    "height": 13,
+    "weight": 400
+  },
+  {
+    "id": 37,
+    "name": "vulpix",
+    "base_experience": 60,
+    "height": 6,
+    "weight": 99
+  },
+  {
+    "id": 38,
+    "name": "ninetales",
+    "base_experience": 177,
+    "height": 11,
+    "weight": 199
+  },
+  {
+    "id": 39,
+    "name": "jigglypuff",
+    "base_experience": 95,
+    "height": 5,
+    "weight": 55
+  },
+  {
+    "id": 40,
+    "name": "wigglytuff",
+    "base_experience": 218,
+    "height": 10,
+    "weight": 120
+  },
+  {
+    "id": 41,
+    "name": "zubat",
+    "base_experience": 49,
+    "height": 8,
+    "weight": 75
+  },
+  {
+    "id": 42,
+    "name": "golbat",
+    "base_experience": 159,
+    "height": 16,
+    "weight": 550
+  },
+  {
+    "id": 43,
+    "name": "oddish",
+    "base_experience": 64,
+    "height": 5,
+    "weight": 54
+  },
+  {
+    "id": 44,
+    "name": "gloom",
+    "base_experience": 138,
+    "height": 8,
+    "weight": 86
+  },
+  {
+    "id": 45,
+    "name": "vileplume",
+    "base_experience": 245,
+    "height": 12,
+    "weight": 186
+  },
+  {
+    "id": 46,
+    "name": "paras",
+    "base_experience": 57,
+    "height": 3,
+    "weight": 54
+  },
+  {
+    "id": 47,
+    "name": "parasect",
+    "base_experience": 142,
+    "height": 10,
+    "weight": 295
+  },
+  {
+    "id": 48,
+    "name": "venonat",
+    "base_experience": 61,
+    "height": 10,
+    "weight": 300
+  },
+  {
+    "id": 49,
+    "name": "venomoth",
+    "base_experience": 158,
+    "height": 15,
+    "weight": 125
+  },
+  {
+    "id": 50,
+    "name": "diglett",
+    "base_experience": 53,
+    "height": 2,
+    "weight": 8
+  },
+  {
+    "id": 51,
+    "name": "dugtrio",
+    "base_experience": 149,
+    "height": 7,
+    "weight": 333
+  },
+  {
+    "id": 52,
+    "name": "meowth",
+    "base_experience": 58,
+    "height": 4,
+    "weight": 42
+  },
+  {
+    "id": 53,
+    "name": "persian",
+    "base_experience": 154,
+    "height": 10,
+    "weight": 320
+  },
+  {
+    "id": 54,
+    "name": "psyduck",
+    "base_experience": 64,
+    "height": 8,
+    "weight": 196
+  },
+  {
+    "id": 55,
+    "name": "golduck",
+    "base_experience": 175,
+    "height": 17,
+    "weight": 766
+  },
+  {
+    "id": 56,
+    "name": "mankey",
+    "base_experience": 61,
+    "height": 5,
+    "weight": 280
+  },
+  {
+    "id": 57,
+    "name": "primeape",
+    "base_experience": 159,
+    "height": 10,
+    "weight": 320
+  },
+  {
+    "id": 58,
+    "name": "growlithe",
+    "base_experience": 70,
+    "height": 7,
+    "weight": 190
+  },
+  {
+    "id": 59,
+    "name": "arcanine",
+    "base_experience": 194,
+    "height": 19,
+    "weight": 1550
+  },
+  {
+    "id": 60,
+    "name": "poliwag",
+    "base_experience": 60,
+    "height": 6,
+    "weight": 124
+  },
+  {
+    "id": 61,
+    "name": "poliwhirl",
+    "base_experience": 135,
+    "height": 10,
+    "weight": 200
+  },
+  {
+    "id": 62,
+    "name": "poliwrath",
+    "base_experience": 255,
+    "height": 13,
+    "weight": 540
+  },
+  {
+    "id": 63,
+    "name": "abra",
+    "base_experience": 62,
+    "height": 9,
+    "weight": 195
+  },
+  {
+    "id": 64,
+    "name": "kadabra",
+    "base_experience": 140,
+    "height": 13,
+    "weight": 565
+  },
+  {
+    "id": 65,
+    "name": "alakazam",
+    "base_experience": 250,
+    "height": 15,
+    "weight": 480
+  },
+  {
+    "id": 66,
+    "name": "machop",
+    "base_experience": 61,
+    "height": 8,
+    "weight": 195
+  },
+  {
+    "id": 67,
+    "name": "machoke",
+    "base_experience": 142,
+    "height": 15,
+    "weight": 705
+  },
+  {
+    "id": 68,
+    "name": "machamp",
+    "base_experience": 253,
+    "height": 16,
+    "weight": 1300
+  },
+  {
+    "id": 69,
+    "name": "bellsprout",
+    "base_experience": 60,
+    "height": 7,
+    "weight": 40
+  },
+  {
+    "id": 70,
+    "name": "weepinbell",
+    "base_experience": 137,
+    "height": 10,
+    "weight": 64
+  },
+  {
+    "id": 71,
+    "name": "victreebel",
+    "base_experience": 221,
+    "height": 17,
+    "weight": 155
+  },
+  {
+    "id": 72,
+    "name": "tentacool",
+    "base_experience": 67,
+    "height": 9,
+    "weight": 455
+  },
+  {
+    "id": 73,
+    "name": "tentacruel",
+    "base_experience": 180,
+    "height": 16,
+    "weight": 550
+  },
+  {
+    "id": 74,
+    "name": "geodude",
+    "base_experience": 60,
+    "height": 4,
+    "weight": 200
+  },
+  {
+    "id": 75,
+    "name": "graveler",
+    "base_experience": 137,
+    "height": 10,
+    "weight": 1050
+  },
+  {
+    "id": 76,
+    "name": "golem",
+    "base_experience": 223,
+    "height": 14,
+    "weight": 3000
+  },
+  {
+    "id": 77,
+    "name": "ponyta",
+    "base_experience": 82,
+    "height": 10,
+    "weight": 300
+  },
+  {
+    "id": 78,
+    "name": "rapidash",
+    "base_experience": 175,
+    "height": 17,
+    "weight": 950
+  },
+  {
+    "id": 79,
+    "name": "slowpoke",
+    "base_experience": 63,
+    "height": 12,
+    "weight": 360
+  },
+  {
+    "id": 80,
+    "name": "slowbro",
+    "base_experience": 172,
+    "height": 16,
+    "weight": 785
+  },
+  {
+    "id": 81,
+    "name": "magnemite",
+    "base_experience": 65,
+    "height": 3,
+    "weight": 60
+  },
+  {
+    "id": 82,
+    "name": "magneton",
+    "base_experience": 163,
+    "height": 10,
+    "weight": 600
+  },
+  {
+    "id": 83,
+    "name": "farfetchd",
+    "base_experience": 132,
+    "height": 8,
+    "weight": 150
+  },
+  {
+    "id": 84,
+    "name": "doduo",
+    "base_experience": 62,
+    "height": 14,
+    "weight": 392
+  },
+  {
+    "id": 85,
+    "name": "dodrio",
+    "base_experience": 165,
+    "height": 18,
+    "weight": 852
+  },
+  {
+    "id": 86,
+    "name": "seel",
+    "base_experience": 65,
+    "height": 11,
+    "weight": 900
+  },
+  {
+    "id": 87,
+    "name": "dewgong",
+    "base_experience": 166,
+    "height": 17,
+    "weight": 1200
+  },
+  {
+    "id": 88,
+    "name": "grimer",
+    "base_experience": 65,
+    "height": 9,
+    "weight": 300
+  },
+  {
+    "id": 89,
+    "name": "muk",
+    "base_experience": 175,
+    "height": 12,
+    "weight": 300
+  },
+  {
+    "id": 90,
+    "name": "shellder",
+    "base_experience": 61,
+    "height": 3,
+    "weight": 40
+  },
+  {
+    "id": 91,
+    "name": "cloyster",
+    "base_experience": 184,
+    "height": 15,
+    "weight": 1325
+  },
+  {
+    "id": 92,
+    "name": "gastly",
+    "base_experience": 62,
+    "height": 13,
+    "weight": 1
+  },
+  {
+    "id": 93,
+    "name": "haunter",
+    "base_experience": 142,
+    "height": 16,
+    "weight": 1
+  },
+  {
+    "id": 94,
+    "name": "gengar",
+    "base_experience": 250,
+    "height": 15,
+    "weight": 405
+  },
+  {
+    "id": 95,
+    "name": "onix",
+    "base_experience": 77,
+    "height": 88,
+    "weight": 2100
+  },
+  {
+    "id": 96,
+    "name": "drowzee",
+    "base_experience": 66,
+    "height": 10,
+    "weight": 324
+  },
+  {
+    "id": 97,
+    "name": "hypno",
+    "base_experience": 169,
+    "height": 16,
+    "weight": 756
+  },
+  {
+    "id": 98,
+    "name": "krabby",
+    "base_experience": 65,
+    "height": 4,
+    "weight": 65
+  },
+  {
+    "id": 99,
+    "name": "kingler",
+    "base_experience": 166,
+    "height": 13,
+    "weight": 600
+  },
+  {
+    "id": 100,
+    "name": "voltorb",
+    "base_experience": 66,
+    "height": 5,
+    "weight": 104
+  },
+  {
+    "id": 101,
+    "name": "electrode",
+    "base_experience": 172,
+    "height": 12,
+    "weight": 666
+  },
+  {
+    "id": 102,
+    "name": "exeggcute",
+    "base_experience": 65,
+    "height": 4,
+    "weight": 25
+  },
+  {
+    "id": 103,
+    "name": "exeggutor",
+    "base_experience": 186,
+    "height": 20,
+    "weight": 1200
+  },
+  {
+    "id": 104,
+    "name": "cubone",
+    "base_experience": 64,
+    "height": 4,
+    "weight": 65
+  },
+  {
+    "id": 105,
+    "name": "marowak",
+    "base_experience": 149,
+    "height": 10,
+    "weight": 450
+  },
+  {
+    "id": 106,
+    "name": "hitmonlee",
+    "base_experience": 159,
+    "height": 15,
+    "weight": 498
+  },
+  {
+    "id": 107,
+    "name": "hitmonchan",
+    "base_experience": 159,
+    "height": 14,
+    "weight": 502
+  },
+  {
+    "id": 108,
+    "name": "lickitung",
+    "base_experience": 77,
+    "height": 12,
+    "weight": 655
+  },
+  {
+    "id": 109,
+    "name": "koffing",
+    "base_experience": 68,
+    "height": 6,
+    "weight": 10
+  },
+  {
+    "id": 110,
+    "name": "weezing",
+    "base_experience": 172,
+    "height": 12,
+    "weight": 95
+  },
+  {
+    "id": 111,
+    "name": "rhyhorn",
+    "base_experience": 69,
+    "height": 10,
+    "weight": 1150
+  },
+  {
+    "id": 112,
+    "name": "rhydon",
+    "base_experience": 170,
+    "height": 19,
+    "weight": 1200
+  },
+  {
+    "id": 113,
+    "name": "chansey",
+    "base_experience": 395,
+    "height": 11,
+    "weight": 346
+  },
+  {
+    "id": 114,
+    "name": "tangela",
+    "base_experience": 87,
+    "height": 10,
+    "weight": 350
+  },
+  {
+    "id": 115,
+    "name": "kangaskhan",
+    "base_experience": 172,
+    "height": 22,
+    "weight": 800
+  },
+  {
+    "id": 116,
+    "name": "horsea",
+    "base_experience": 59,
+    "height": 4,
+    "weight": 80
+  },
+  {
+    "id": 117,
+    "name": "seadra",
+    "base_experience": 154,
+    "height": 12,
+    "weight": 250
+  },
+  {
+    "id": 118,
+    "name": "goldeen",
+    "base_experience": 64,
+    "height": 6,
+    "weight": 150
+  },
+  {
+    "id": 119,
+    "name": "seaking",
+    "base_experience": 158,
+    "height": 13,
+    "weight": 390
+  },
+  {
+    "id": 120,
+    "name": "staryu",
+    "base_experience": 68,
+    "height": 8,
+    "weight": 345
+  },
+  {
+    "id": 121,
+    "name": "starmie",
+    "base_experience": 182,
+    "height": 11,
+    "weight": 800
+  },
+  {
+    "id": 122,
+    "name": "mr-mime",
+    "base_experience": 161,
+    "height": 13,
+    "weight": 545
+  },
+  {
+    "id": 123,
+    "name": "scyther",
+    "base_experience": 100,
+    "height": 15,
+    "weight": 560
+  },
+  {
+    "id": 124,
+    "name": "jynx",
+    "base_experience": 159,
+    "height": 14,
+    "weight": 406
+  },
+  {
+    "id": 125,
+    "name": "electabuzz",
+    "base_experience": 172,
+    "height": 11,
+    "weight": 300
+  },
+  {
+    "id": 126,
+    "name": "magmar",
+    "base_experience": 173,
+    "height": 13,
+    "weight": 445
+  },
+  {
+    "id": 127,
+    "name": "pinsir",
+    "base_experience": 175,
+    "height": 15,
+    "weight": 550
+  },
+  {
+    "id": 128,
+    "name": "tauros",
+    "base_experience": 172,
+    "height": 14,
+    "weight": 884
+  },
+  {
+    "id": 129,
+    "name": "magikarp",
+    "base_experience": 40,
+    "height": 9,
+    "weight": 100
+  },
+  {
+    "id": 130,
+    "name": "gyarados",
+    "base_experience": 189,
+    "height": 65,
+    "weight": 2350
+  },
+  {
+    "id": 131,
+    "name": "lapras",
+    "base_experience": 187,
+    "height": 25,
+    "weight": 2200
+  },
+  {
+    "id": 132,
+    "name": "ditto",
+    "base_experience": 101,
+    "height": 3,
+    "weight": 40
+  },
+  {
+    "id": 133,
+    "name": "eevee",
+    "base_experience": 65,
+    "height": 3,
+    "weight": 65
+  },
+  {
+    "id": 134,
+    "name": "vaporeon",
+    "base_experience": 184,
+    "height": 10,
+    "weight": 290
+  },
+  {
+    "id": 135,
+    "name": "jolteon",
+    "base_experience": 184,
+    "height": 8,
+    "weight": 245
+  },
+  {
+    "id": 136,
+    "name": "flareon",
+    "base_experience": 184,
+    "height": 9,
+    "weight": 250
+  },
+  {
+    "id": 137,
+    "name": "porygon",
+    "base_experience": 79,
+    "height": 8,
+    "weight": 365
+  },
+  {
+    "id": 138,
+    "name": "omanyte",
+    "base_experience": 71,
+    "height": 4,
+    "weight": 75
+  },
+  {
+    "id": 139,
+    "name": "omastar",
+    "base_experience": 173,
+    "height": 10,
+    "weight": 350
+  },
+  {
+    "id": 140,
+    "name": "kabuto",
+    "base_experience": 71,
+    "height": 5,
+    "weight": 115
+  },
+  {
+    "id": 141,
+    "name": "kabutops",
+    "base_experience": 173,
+    "height": 13,
+    "weight": 405
+  },
+  {
+    "id": 142,
+    "name": "aerodactyl",
+    "base_experience": 180,
+    "height": 18,
+    "weight": 590
+  },
+  {
+    "id": 143,
+    "name": "snorlax",
+    "base_experience": 189,
+    "height": 21,
+    "weight": 4600
+  },
+  {
+    "id": 144,
+    "name": "articuno",
+    "base_experience": 290,
+    "height": 17,
+    "weight": 554
+  },
+  {
+    "id": 145,
+    "name": "zapdos",
+    "base_experience": 290,
+    "height": 16,
+    "weight": 526
+  },
+  {
+    "id": 146,
+    "name": "moltres",
+    "base_experience": 290,
+    "height": 20,
+    "weight": 600
+  },
+  {
+    "id": 147,
+    "name": "dratini",
+    "base_experience": 60,
+    "height": 18,
+    "weight": 33
+  },
+  {
+    "id": 148,
+    "name": "dragonair",
+    "base_experience": 147,
+    "height": 40,
+    "weight": 165
+  },
+  {
+    "id": 149,
+    "name": "dragonite",
+    "base_experience": 300,
+    "height": 22,
+    "weight": 2100
+  },
+  {
+    "id": 150,
+    "name": "mewtwo",
+    "base_experience": 340,
+    "height": 20,
+    "weight": 1220
+  },
+  {
+    "id": 151,
+    "name": "mew",
+    "base_experience": 300,
+    "height": 4,
+    "weight": 40
+  },
+  {
+    "id": 152,
+    "name": "chikorita",
+    "base_experience": 64,
+    "height": 9,
+    "weight": 64
+  },
+  {
+    "id": 153,
+    "name": "bayleef",
+    "base_experience": 142,
+    "height": 12,
+    "weight": 158
+  },
+  {
+    "id": 154,
+    "name": "meganium",
+    "base_experience": 236,
+    "height": 18,
+    "weight": 1005
+  },
+  {
+    "id": 155,
+    "name": "cyndaquil",
+    "base_experience": 62,
+    "height": 5,
+    "weight": 79
+  },
+  {
+    "id": 156,
+    "name": "quilava",
+    "base_experience": 142,
+    "height": 9,
+    "weight": 190
+  },
+  {
+    "id": 157,
+    "name": "typhlosion",
+    "base_experience": 240,
+    "height": 17,
+    "weight": 795
+  },
+  {
+    "id": 158,
+    "name": "totodile",
+    "base_experience": 63,
+    "height": 6,
+    "weight": 95
+  },
+  {
+    "id": 159,
+    "name": "croconaw",
+    "base_experience": 142,
+    "height": 11,
+    "weight": 250
+  },
+  {
+    "id": 160,
+    "name": "feraligatr",
+    "base_experience": 239,
+    "height": 23,
+    "weight": 888
+  },
+  {
+    "id": 161,
+    "name": "sentret",
+    "base_experience": 43,
+    "height": 8,
+    "weight": 60
+  },
+  {
+    "id": 162,
+    "name": "furret",
+    "base_experience": 145,
+    "height": 18,
+    "weight": 325
+  },
+  {
+    "id": 163,
+    "name": "hoothoot",
+    "base_experience": 52,
+    "height": 7,
+    "weight": 212
+  },
+  {
+    "id": 164,
+    "name": "noctowl",
+    "base_experience": 158,
+    "height": 16,
+    "weight": 408
+  },
+  {
+    "id": 165,
+    "name": "ledyba",
+    "base_experience": 53,
+    "height": 10,
+    "weight": 108
+  },
+  {
+    "id": 166,
+    "name": "ledian",
+    "base_experience": 137,
+    "height": 14,
+    "weight": 356
+  },
+  {
+    "id": 167,
+    "name": "spinarak",
+    "base_experience": 50,
+    "height": 5,
+    "weight": 85
+  },
+  {
+    "id": 168,
+    "name": "ariados",
+    "base_experience": 140,
+    "height": 11,
+    "weight": 335
+  },
+  {
+    "id": 169,
+    "name": "crobat",
+    "base_experience": 268,
+    "height": 18,
+    "weight": 750
+  },
+  {
+    "id": 170,
+    "name": "chinchou",
+    "base_experience": 66,
+    "height": 5,
+    "weight": 120
+  },
+  {
+    "id": 171,
+    "name": "lanturn",
+    "base_experience": 161,
+    "height": 12,
+    "weight": 225
+  },
+  {
+    "id": 172,
+    "name": "pichu",
+    "base_experience": 41,
+    "height": 3,
+    "weight": 20
+  },
+  {
+    "id": 173,
+    "name": "cleffa",
+    "base_experience": 44,
+    "height": 3,
+    "weight": 30
+  },
+  {
+    "id": 174,
+    "name": "igglybuff",
+    "base_experience": 42,
+    "height": 3,
+    "weight": 10
+  },
+  {
+    "id": 175,
+    "name": "togepi",
+    "base_experience": 49,
+    "height": 3,
+    "weight": 15
+  },
+  {
+    "id": 176,
+    "name": "togetic",
+    "base_experience": 142,
+    "height": 6,
+    "weight": 32
+  },
+  {
+    "id": 177,
+    "name": "natu",
+    "base_experience": 64,
+    "height": 2,
+    "weight": 20
+  },
+  {
+    "id": 178,
+    "name": "xatu",
+    "base_experience": 165,
+    "height": 15,
+    "weight": 150
+  },
+  {
+    "id": 179,
+    "name": "mareep",
+    "base_experience": 56,
+    "height": 6,
+    "weight": 78
+  },
+  {
+    "id": 180,
+    "name": "flaaffy",
+    "base_experience": 128,
+    "height": 8,
+    "weight": 133
+  },
+  {
+    "id": 181,
+    "name": "ampharos",
+    "base_experience": 230,
+    "height": 14,
+    "weight": 615
+  },
+  {
+    "id": 182,
+    "name": "bellossom",
+    "base_experience": 245,
+    "height": 4,
+    "weight": 58
+  },
+  {
+    "id": 183,
+    "name": "marill",
+    "base_experience": 88,
+    "height": 4,
+    "weight": 85
+  },
+  {
+    "id": 184,
+    "name": "azumarill",
+    "base_experience": 210,
+    "height": 8,
+    "weight": 285
+  },
+  {
+    "id": 185,
+    "name": "sudowoodo",
+    "base_experience": 144,
+    "height": 12,
+    "weight": 380
+  },
+  {
+    "id": 186,
+    "name": "politoed",
+    "base_experience": 250,
+    "height": 11,
+    "weight": 339
+  },
+  {
+    "id": 187,
+    "name": "hoppip",
+    "base_experience": 50,
+    "height": 4,
+    "weight": 5
+  },
+  {
+    "id": 188,
+    "name": "skiploom",
+    "base_experience": 119,
+    "height": 6,
+    "weight": 10
+  },
+  {
+    "id": 189,
+    "name": "jumpluff",
+    "base_experience": 207,
+    "height": 8,
+    "weight": 30
+  },
+  {
+    "id": 190,
+    "name": "aipom",
+    "base_experience": 72,
+    "height": 8,
+    "weight": 115
+  },
+  {
+    "id": 191,
+    "name": "sunkern",
+    "base_experience": 36,
+    "height": 3,
+    "weight": 18
+  },
+  {
+    "id": 192,
+    "name": "sunflora",
+    "base_experience": 149,
+    "height": 8,
+    "weight": 85
+  },
+  {
+    "id": 193,
+    "name": "yanma",
+    "base_experience": 78,
+    "height": 12,
+    "weight": 380
+  },
+  {
+    "id": 194,
+    "name": "wooper",
+    "base_experience": 42,
+    "height": 4,
+    "weight": 85
+  },
+  {
+    "id": 195,
+    "name": "quagsire",
+    "base_experience": 151,
+    "height": 14,
+    "weight": 750
+  },
+  {
+    "id": 196,
+    "name": "espeon",
+    "base_experience": 184,
+    "height": 9,
+    "weight": 265
+  },
+  {
+    "id": 197,
+    "name": "umbreon",
+    "base_experience": 184,
+    "height": 10,
+    "weight": 270
+  },
+  {
+    "id": 198,
+    "name": "murkrow",
+    "base_experience": 81,
+    "height": 5,
+    "weight": 21
+  },
+  {
+    "id": 199,
+    "name": "slowking",
+    "base_experience": 172,
+    "height": 20,
+    "weight": 795
+  },
+  {
+    "id": 200,
+    "name": "misdreavus",
+    "base_experience": 87,
+    "height": 7,
+    "weight": 10
+  },
+  {
+    "id": 201,
+    "name": "unown",
+    "base_experience": 118,
+    "height": 5,
+    "weight": 50
+  },
+  {
+    "id": 202,
+    "name": "wobbuffet",
+    "base_experience": 142,
+    "height": 13,
+    "weight": 285
+  },
+  {
+    "id": 203,
+    "name": "girafarig",
+    "base_experience": 159,
+    "height": 15,
+    "weight": 415
+  },
+  {
+    "id": 204,
+    "name": "pineco",
+    "base_experience": 58,
+    "height": 6,
+    "weight": 72
+  },
+  {
+    "id": 205,
+    "name": "forretress",
+    "base_experience": 163,
+    "height": 12,
+    "weight": 1258
+  },
+  {
+    "id": 206,
+    "name": "dunsparce",
+    "base_experience": 145,
+    "height": 15,
+    "weight": 140
+  },
+  {
+    "id": 207,
+    "name": "gligar",
+    "base_experience": 86,
+    "height": 11,
+    "weight": 648
+  },
+  {
+    "id": 208,
+    "name": "steelix",
+    "base_experience": 179,
+    "height": 92,
+    "weight": 4000
+  },
+  {
+    "id": 209,
+    "name": "snubbull",
+    "base_experience": 60,
+    "height": 6,
+    "weight": 78
+  },
+  {
+    "id": 210,
+    "name": "granbull",
+    "base_experience": 158,
+    "height": 14,
+    "weight": 487
+  },
+  {
+    "id": 211,
+    "name": "qwilfish",
+    "base_experience": 88,
+    "height": 5,
+    "weight": 39
+  },
+  {
+    "id": 212,
+    "name": "scizor",
+    "base_experience": 175,
+    "height": 18,
+    "weight": 1180
+  },
+  {
+    "id": 213,
+    "name": "shuckle",
+    "base_experience": 177,
+    "height": 6,
+    "weight": 205
+  },
+  {
+    "id": 214,
+    "name": "heracross",
+    "base_experience": 175,
+    "height": 15,
+    "weight": 540
+  },
+  {
+    "id": 215,
+    "name": "sneasel",
+    "base_experience": 86,
+    "height": 9,
+    "weight": 280
+  },
+  {
+    "id": 216,
+    "name": "teddiursa",
+    "base_experience": 66,
+    "height": 6,
+    "weight": 88
+  },
+  {
+    "id": 217,
+    "name": "ursaring",
+    "base_experience": 175,
+    "height": 18,
+    "weight": 1258
+  },
+  {
+    "id": 218,
+    "name": "slugma",
+    "base_experience": 50,
+    "height": 7,
+    "weight": 350
+  },
+  {
+    "id": 219,
+    "name": "magcargo",
+    "base_experience": 151,
+    "height": 8,
+    "weight": 550
+  },
+  {
+    "id": 220,
+    "name": "swinub",
+    "base_experience": 50,
+    "height": 4,
+    "weight": 65
+  },
+  {
+    "id": 221,
+    "name": "piloswine",
+    "base_experience": 158,
+    "height": 11,
+    "weight": 558
+  },
+  {
+    "id": 222,
+    "name": "corsola",
+    "base_experience": 144,
+    "height": 6,
+    "weight": 50
+  },
+  {
+    "id": 223,
+    "name": "remoraid",
+    "base_experience": 60,
+    "height": 6,
+    "weight": 120
+  },
+  {
+    "id": 224,
+    "name": "octillery",
+    "base_experience": 168,
+    "height": 9,
+    "weight": 285
+  },
+  {
+    "id": 225,
+    "name": "delibird",
+    "base_experience": 116,
+    "height": 9,
+    "weight": 160
+  },
+  {
+    "id": 226,
+    "name": "mantine",
+    "base_experience": 170,
+    "height": 21,
+    "weight": 2200
+  },
+  {
+    "id": 227,
+    "name": "skarmory",
+    "base_experience": 163,
+    "height": 17,
+    "weight": 505
+  },
+  {
+    "id": 228,
+    "name": "houndour",
+    "base_experience": 66,
+    "height": 6,
+    "weight": 108
+  },
+  {
+    "id": 229,
+    "name": "houndoom",
+    "base_experience": 175,
+    "height": 14,
+    "weight": 350
+  },
+  {
+    "id": 230,
+    "name": "kingdra",
+    "base_experience": 270,
+    "height": 18,
+    "weight": 1520
+  },
+  {
+    "id": 231,
+    "name": "phanpy",
+    "base_experience": 66,
+    "height": 5,
+    "weight": 335
+  },
+  {
+    "id": 232,
+    "name": "donphan",
+    "base_experience": 175,
+    "height": 11,
+    "weight": 1200
+  },
+  {
+    "id": 233,
+    "name": "porygon2",
+    "base_experience": 180,
+    "height": 6,
+    "weight": 325
+  },
+  {
+    "id": 234,
+    "name": "stantler",
+    "base_experience": 163,
+    "height": 14,
+    "weight": 712
+  },
+  {
+    "id": 235,
+    "name": "smeargle",
+    "base_experience": 88,
+    "height": 12,
+    "weight": 580
+  },
+  {
+    "id": 236,
+    "name": "tyrogue",
+    "base_experience": 42,
+    "height": 7,
+    "weight": 210
+  },
+  {
+    "id": 237,
+    "name": "hitmontop",
+    "base_experience": 159,
+    "height": 14,
+    "weight": 480
+  },
+  {
+    "id": 238,
+    "name": "smoochum",
+    "base_experience": 61,
+    "height": 4,
+    "weight": 60
+  },
+  {
+    "id": 239,
+    "name": "elekid",
+    "base_experience": 72,
+    "height": 6,
+    "weight": 235
+  },
+  {
+    "id": 240,
+    "name": "magby",
+    "base_experience": 73,
+    "height": 7,
+    "weight": 214
+  },
+  {
+    "id": 241,
+    "name": "miltank",
+    "base_experience": 172,
+    "height": 12,
+    "weight": 755
+  },
+  {
+    "id": 242,
+    "name": "blissey",
+    "base_experience": 635,
+    "height": 15,
+    "weight": 468
+  },
+  {
+    "id": 243,
+    "name": "raikou",
+    "base_experience": 290,
+    "height": 19,
+    "weight": 1780
+  },
+  {
+    "id": 244,
+    "name": "entei",
+    "base_experience": 290,
+    "height": 21,
+    "weight": 1980
+  },
+  {
+    "id": 245,
+    "name": "suicune",
+    "base_experience": 290,
+    "height": 20,
+    "weight": 1870
+  },
+  {
+    "id": 246,
+    "name": "larvitar",
+    "base_experience": 60,
+    "height": 6,
+    "weight": 720
+  },
+  {
+    "id": 247,
+    "name": "pupitar",
+    "base_experience": 144,
+    "height": 12,
+    "weight": 1520
+  },
+  {
+    "id": 248,
+    "name": "tyranitar",
+    "base_experience": 300,
+    "height": 20,
+    "weight": 2020
+  },
+  {
+    "id": 249,
+    "name": "lugia",
+    "base_experience": 340,
+    "height": 52,
+    "weight": 2160
+  },
+  {
+    "id": 250,
+    "name": "ho-oh",
+    "base_experience": 340,
+    "height": 38,
+    "weight": 1990
+  },
+  {
+    "id": 251,
+    "name": "celebi",
+    "base_experience": 300,
+    "height": 6,
+    "weight": 50
+  },
+  {
+    "id": 252,
+    "name": "treecko",
+    "base_experience": 62,
+    "height": 5,
+    "weight": 50
+  },
+  {
+    "id": 253,
+    "name": "grovyle",
+    "base_experience": 142,
+    "height": 9,
+    "weight": 216
+  },
+  {
+    "id": 254,
+    "name": "sceptile",
+    "base_experience": 265,
+    "height": 17,
+    "weight": 522
+  },
+  {
+    "id": 255,
+    "name": "torchic",
+    "base_experience": 62,
+    "height": 4,
+    "weight": 25
+  },
+  {
+    "id": 256,
+    "name": "combusken",
+    "base_experience": 142,
+    "height": 9,
+    "weight": 195
+  },
+  {
+    "id": 257,
+    "name": "blaziken",
+    "base_experience": 265,
+    "height": 19,
+    "weight": 520
+  },
+  {
+    "id": 258,
+    "name": "mudkip",
+    "base_experience": 62,
+    "height": 4,
+    "weight": 76
+  },
+  {
+    "id": 259,
+    "name": "marshtomp",
+    "base_experience": 142,
+    "height": 7,
+    "weight": 280
+  },
+  {
+    "id": 260,
+    "name": "swampert",
+    "base_experience": 268,
+    "height": 15,
+    "weight": 819
+  },
+  {
+    "id": 261,
+    "name": "poochyena",
+    "base_experience": 56,
+    "height": 5,
+    "weight": 136
+  },
+  {
+    "id": 262,
+    "name": "mightyena",
+    "base_experience": 147,
+    "height": 10,
+    "weight": 370
+  },
+  {
+    "id": 263,
+    "name": "zigzagoon",
+    "base_experience": 56,
+    "height": 4,
+    "weight": 175
+  },
+  {
+    "id": 264,
+    "name": "linoone",
+    "base_experience": 147,
+    "height": 5,
+    "weight": 325
+  },
+  {
+    "id": 265,
+    "name": "wurmple",
+    "base_experience": 56,
+    "height": 3,
+    "weight": 36
+  },
+  {
+    "id": 266,
+    "name": "silcoon",
+    "base_experience": 72,
+    "height": 6,
+    "weight": 100
+  },
+  {
+    "id": 267,
+    "name": "beautifly",
+    "base_experience": 178,
+    "height": 10,
+    "weight": 284
+  },
+  {
+    "id": 268,
+    "name": "cascoon",
+    "base_experience": 72,
+    "height": 7,
+    "weight": 115
+  },
+  {
+    "id": 269,
+    "name": "dustox",
+    "base_experience": 173,
+    "height": 12,
+    "weight": 316
+  },
+  {
+    "id": 270,
+    "name": "lotad",
+    "base_experience": 44,
+    "height": 5,
+    "weight": 26
+  },
+  {
+    "id": 271,
+    "name": "lombre",
+    "base_experience": 119,
+    "height": 12,
+    "weight": 325
+  },
+  {
+    "id": 272,
+    "name": "ludicolo",
+    "base_experience": 240,
+    "height": 15,
+    "weight": 550
+  },
+  {
+    "id": 273,
+    "name": "seedot",
+    "base_experience": 44,
+    "height": 5,
+    "weight": 40
+  },
+  {
+    "id": 274,
+    "name": "nuzleaf",
+    "base_experience": 119,
+    "height": 10,
+    "weight": 280
+  },
+  {
+    "id": 275,
+    "name": "shiftry",
+    "base_experience": 240,
+    "height": 13,
+    "weight": 596
+  },
+  {
+    "id": 276,
+    "name": "taillow",
+    "base_experience": 54,
+    "height": 3,
+    "weight": 23
+  },
+  {
+    "id": 277,
+    "name": "swellow",
+    "base_experience": 159,
+    "height": 7,
+    "weight": 198
+  },
+  {
+    "id": 278,
+    "name": "wingull",
+    "base_experience": 54,
+    "height": 6,
+    "weight": 95
+  },
+  {
+    "id": 279,
+    "name": "pelipper",
+    "base_experience": 154,
+    "height": 12,
+    "weight": 280
+  },
+  {
+    "id": 280,
+    "name": "ralts",
+    "base_experience": 40,
+    "height": 4,
+    "weight": 66
+  },
+  {
+    "id": 281,
+    "name": "kirlia",
+    "base_experience": 97,
+    "height": 8,
+    "weight": 202
+  },
+  {
+    "id": 282,
+    "name": "gardevoir",
+    "base_experience": 259,
+    "height": 16,
+    "weight": 484
+  },
+  {
+    "id": 283,
+    "name": "surskit",
+    "base_experience": 54,
+    "height": 5,
+    "weight": 17
+  },
+  {
+    "id": 284,
+    "name": "masquerain",
+    "base_experience": 159,
+    "height": 8,
+    "weight": 36
+  },
+  {
+    "id": 285,
+    "name": "shroomish",
+    "base_experience": 59,
+    "height": 4,
+    "weight": 45
+  },
+  {
+    "id": 286,
+    "name": "breloom",
+    "base_experience": 161,
+    "height": 12,
+    "weight": 392
+  },
+  {
+    "id": 287,
+    "name": "slakoth",
+    "base_experience": 56,
+    "height": 8,
+    "weight": 240
+  },
+  {
+    "id": 288,
+    "name": "vigoroth",
+    "base_experience": 154,
+    "height": 14,
+    "weight": 465
+  },
+  {
+    "id": 289,
+    "name": "slaking",
+    "base_experience": 252,
+    "height": 20,
+    "weight": 1305
+  },
+  {
+    "id": 290,
+    "name": "nincada",
+    "base_experience": 53,
+    "height": 5,
+    "weight": 55
+  },
+  {
+    "id": 291,
+    "name": "ninjask",
+    "base_experience": 160,
+    "height": 8,
+    "weight": 120
+  },
+  {
+    "id": 292,
+    "name": "shedinja",
+    "base_experience": 83,
+    "height": 8,
+    "weight": 12
+  },
+  {
+    "id": 293,
+    "name": "whismur",
+    "base_experience": 48,
+    "height": 6,
+    "weight": 163
+  },
+  {
+    "id": 294,
+    "name": "loudred",
+    "base_experience": 126,
+    "height": 10,
+    "weight": 405
+  },
+  {
+    "id": 295,
+    "name": "exploud",
+    "base_experience": 245,
+    "height": 15,
+    "weight": 840
+  },
+  {
+    "id": 296,
+    "name": "makuhita",
+    "base_experience": 47,
+    "height": 10,
+    "weight": 864
+  },
+  {
+    "id": 297,
+    "name": "hariyama",
+    "base_experience": 166,
+    "height": 23,
+    "weight": 2538
+  },
+  {
+    "id": 298,
+    "name": "azurill",
+    "base_experience": 38,
+    "height": 2,
+    "weight": 20
+  },
+  {
+    "id": 299,
+    "name": "nosepass",
+    "base_experience": 75,
+    "height": 10,
+    "weight": 970
+  },
+  {
+    "id": 300,
+    "name": "skitty",
+    "base_experience": 52,
+    "height": 6,
+    "weight": 110
+  },
+  {
+    "id": 301,
+    "name": "delcatty",
+    "base_experience": 140,
+    "height": 11,
+    "weight": 326
+  },
+  {
+    "id": 302,
+    "name": "sableye",
+    "base_experience": 133,
+    "height": 5,
+    "weight": 110
+  },
+  {
+    "id": 303,
+    "name": "mawile",
+    "base_experience": 133,
+    "height": 6,
+    "weight": 115
+  },
+  {
+    "id": 304,
+    "name": "aron",
+    "base_experience": 66,
+    "height": 4,
+    "weight": 600
+  },
+  {
+    "id": 305,
+    "name": "lairon",
+    "base_experience": 151,
+    "height": 9,
+    "weight": 1200
+  },
+  {
+    "id": 306,
+    "name": "aggron",
+    "base_experience": 265,
+    "height": 21,
+    "weight": 3600
+  },
+  {
+    "id": 307,
+    "name": "meditite",
+    "base_experience": 56,
+    "height": 6,
+    "weight": 112
+  },
+  {
+    "id": 308,
+    "name": "medicham",
+    "base_experience": 144,
+    "height": 13,
+    "weight": 315
+  },
+  {
+    "id": 309,
+    "name": "electrike",
+    "base_experience": 59,
+    "height": 6,
+    "weight": 152
+  },
+  {
+    "id": 310,
+    "name": "manectric",
+    "base_experience": 166,
+    "height": 15,
+    "weight": 402
+  },
+  {
+    "id": 311,
+    "name": "plusle",
+    "base_experience": 142,
+    "height": 4,
+    "weight": 42
+  },
+  {
+    "id": 312,
+    "name": "minun",
+    "base_experience": 142,
+    "height": 4,
+    "weight": 42
+  },
+  {
+    "id": 313,
+    "name": "volbeat",
+    "base_experience": 151,
+    "height": 7,
+    "weight": 177
+  },
+  {
+    "id": 314,
+    "name": "illumise",
+    "base_experience": 151,
+    "height": 6,
+    "weight": 177
+  },
+  {
+    "id": 315,
+    "name": "roselia",
+    "base_experience": 140,
+    "height": 3,
+    "weight": 20
+  },
+  {
+    "id": 316,
+    "name": "gulpin",
+    "base_experience": 60,
+    "height": 4,
+    "weight": 103
+  },
+  {
+    "id": 317,
+    "name": "swalot",
+    "base_experience": 163,
+    "height": 17,
+    "weight": 800
+  },
+  {
+    "id": 318,
+    "name": "carvanha",
+    "base_experience": 61,
+    "height": 8,
+    "weight": 208
+  },
+  {
+    "id": 319,
+    "name": "sharpedo",
+    "base_experience": 161,
+    "height": 18,
+    "weight": 888
+  },
+  {
+    "id": 320,
+    "name": "wailmer",
+    "base_experience": 80,
+    "height": 20,
+    "weight": 1300
+  },
+  {
+    "id": 321,
+    "name": "wailord",
+    "base_experience": 175,
+    "height": 145,
+    "weight": 3980
+  },
+  {
+    "id": 322,
+    "name": "numel",
+    "base_experience": 61,
+    "height": 7,
+    "weight": 240
+  },
+  {
+    "id": 323,
+    "name": "camerupt",
+    "base_experience": 161,
+    "height": 19,
+    "weight": 2200
+  },
+  {
+    "id": 324,
+    "name": "torkoal",
+    "base_experience": 165,
+    "height": 5,
+    "weight": 804
+  },
+  {
+    "id": 325,
+    "name": "spoink",
+    "base_experience": 66,
+    "height": 7,
+    "weight": 306
+  },
+  {
+    "id": 326,
+    "name": "grumpig",
+    "base_experience": 165,
+    "height": 9,
+    "weight": 715
+  },
+  {
+    "id": 327,
+    "name": "spinda",
+    "base_experience": 126,
+    "height": 11,
+    "weight": 50
+  },
+  {
+    "id": 328,
+    "name": "trapinch",
+    "base_experience": 58,
+    "height": 7,
+    "weight": 150
+  },
+  {
+    "id": 329,
+    "name": "vibrava",
+    "base_experience": 119,
+    "height": 11,
+    "weight": 153
+  },
+  {
+    "id": 330,
+    "name": "flygon",
+    "base_experience": 260,
+    "height": 20,
+    "weight": 820
+  },
+  {
+    "id": 331,
+    "name": "cacnea",
+    "base_experience": 67,
+    "height": 4,
+    "weight": 513
+  },
+  {
+    "id": 332,
+    "name": "cacturne",
+    "base_experience": 166,
+    "height": 13,
+    "weight": 774
+  },
+  {
+    "id": 333,
+    "name": "swablu",
+    "base_experience": 62,
+    "height": 4,
+    "weight": 12
+  },
+  {
+    "id": 334,
+    "name": "altaria",
+    "base_experience": 172,
+    "height": 11,
+    "weight": 206
+  },
+  {
+    "id": 335,
+    "name": "zangoose",
+    "base_experience": 160,
+    "height": 13,
+    "weight": 403
+  },
+  {
+    "id": 336,
+    "name": "seviper",
+    "base_experience": 160,
+    "height": 27,
+    "weight": 525
+  },
+  {
+    "id": 337,
+    "name": "lunatone",
+    "base_experience": 161,
+    "height": 10,
+    "weight": 1680
+  },
+  {
+    "id": 338,
+    "name": "solrock",
+    "base_experience": 161,
+    "height": 12,
+    "weight": 1540
+  },
+  {
+    "id": 339,
+    "name": "barboach",
+    "base_experience": 58,
+    "height": 4,
+    "weight": 19
+  },
+  {
+    "id": 340,
+    "name": "whiscash",
+    "base_experience": 164,
+    "height": 9,
+    "weight": 236
+  },
+  {
+    "id": 341,
+    "name": "corphish",
+    "base_experience": 62,
+    "height": 6,
+    "weight": 115
+  },
+  {
+    "id": 342,
+    "name": "crawdaunt",
+    "base_experience": 164,
+    "height": 11,
+    "weight": 328
+  },
+  {
+    "id": 343,
+    "name": "baltoy",
+    "base_experience": 60,
+    "height": 5,
+    "weight": 215
+  },
+  {
+    "id": 344,
+    "name": "claydol",
+    "base_experience": 175,
+    "height": 15,
+    "weight": 1080
+  },
+  {
+    "id": 345,
+    "name": "lileep",
+    "base_experience": 71,
+    "height": 10,
+    "weight": 238
+  },
+  {
+    "id": 346,
+    "name": "cradily",
+    "base_experience": 173,
+    "height": 15,
+    "weight": 604
+  },
+  {
+    "id": 347,
+    "name": "anorith",
+    "base_experience": 71,
+    "height": 7,
+    "weight": 125
+  },
+  {
+    "id": 348,
+    "name": "armaldo",
+    "base_experience": 173,
+    "height": 15,
+    "weight": 682
+  },
+  {
+    "id": 349,
+    "name": "feebas",
+    "base_experience": 40,
+    "height": 6,
+    "weight": 74
+  },
+  {
+    "id": 350,
+    "name": "milotic",
+    "base_experience": 189,
+    "height": 62,
+    "weight": 1620
+  },
+  {
+    "id": 351,
+    "name": "castform",
+    "base_experience": 147,
+    "height": 3,
+    "weight": 8
+  },
+  {
+    "id": 352,
+    "name": "kecleon",
+    "base_experience": 154,
+    "height": 10,
+    "weight": 220
+  },
+  {
+    "id": 353,
+    "name": "shuppet",
+    "base_experience": 59,
+    "height": 6,
+    "weight": 23
+  },
+  {
+    "id": 354,
+    "name": "banette",
+    "base_experience": 159,
+    "height": 11,
+    "weight": 125
+  },
+  {
+    "id": 355,
+    "name": "duskull",
+    "base_experience": 59,
+    "height": 8,
+    "weight": 150
+  },
+  {
+    "id": 356,
+    "name": "dusclops",
+    "base_experience": 159,
+    "height": 16,
+    "weight": 306
+  },
+  {
+    "id": 357,
+    "name": "tropius",
+    "base_experience": 161,
+    "height": 20,
+    "weight": 1000
+  },
+  {
+    "id": 358,
+    "name": "chimecho",
+    "base_experience": 159,
+    "height": 6,
+    "weight": 10
+  },
+  {
+    "id": 359,
+    "name": "absol",
+    "base_experience": 163,
+    "height": 12,
+    "weight": 470
+  },
+  {
+    "id": 360,
+    "name": "wynaut",
+    "base_experience": 52,
+    "height": 6,
+    "weight": 140
+  },
+  {
+    "id": 361,
+    "name": "snorunt",
+    "base_experience": 60,
+    "height": 7,
+    "weight": 168
+  },
+  {
+    "id": 362,
+    "name": "glalie",
+    "base_experience": 168,
+    "height": 15,
+    "weight": 2565
+  },
+  {
+    "id": 363,
+    "name": "spheal",
+    "base_experience": 58,
+    "height": 8,
+    "weight": 395
+  },
+  {
+    "id": 364,
+    "name": "sealeo",
+    "base_experience": 144,
+    "height": 11,
+    "weight": 876
+  },
+  {
+    "id": 365,
+    "name": "walrein",
+    "base_experience": 265,
+    "height": 14,
+    "weight": 1506
+  },
+  {
+    "id": 366,
+    "name": "clamperl",
+    "base_experience": 69,
+    "height": 4,
+    "weight": 525
+  },
+  {
+    "id": 367,
+    "name": "huntail",
+    "base_experience": 170,
+    "height": 17,
+    "weight": 270
+  },
+  {
+    "id": 368,
+    "name": "gorebyss",
+    "base_experience": 170,
+    "height": 18,
+    "weight": 226
+  },
+  {
+    "id": 369,
+    "name": "relicanth",
+    "base_experience": 170,
+    "height": 10,
+    "weight": 234
+  },
+  {
+    "id": 370,
+    "name": "luvdisc",
+    "base_experience": 116,
+    "height": 6,
+    "weight": 87
+  },
+  {
+    "id": 371,
+    "name": "bagon",
+    "base_experience": 60,
+    "height": 6,
+    "weight": 421
+  },
+  {
+    "id": 372,
+    "name": "shelgon",
+    "base_experience": 147,
+    "height": 11,
+    "weight": 1105
+  },
+  {
+    "id": 373,
+    "name": "salamence",
+    "base_experience": 300,
+    "height": 15,
+    "weight": 1026
+  },
+  {
+    "id": 374,
+    "name": "beldum",
+    "base_experience": 60,
+    "height": 6,
+    "weight": 952
+  },
+  {
+    "id": 375,
+    "name": "metang",
+    "base_experience": 147,
+    "height": 12,
+    "weight": 2025
+  },
+  {
+    "id": 376,
+    "name": "metagross",
+    "base_experience": 300,
+    "height": 16,
+    "weight": 5500
+  },
+  {
+    "id": 377,
+    "name": "regirock",
+    "base_experience": 290,
+    "height": 17,
+    "weight": 2300
+  },
+  {
+    "id": 378,
+    "name": "regice",
+    "base_experience": 290,
+    "height": 18,
+    "weight": 1750
+  },
+  {
+    "id": 379,
+    "name": "registeel",
+    "base_experience": 290,
+    "height": 19,
+    "weight": 2050
+  },
+  {
+    "id": 380,
+    "name": "latias",
+    "base_experience": 300,
+    "height": 14,
+    "weight": 400
+  },
+  {
+    "id": 381,
+    "name": "latios",
+    "base_experience": 300,
+    "height": 20,
+    "weight": 600
+  },
+  {
+    "id": 382,
+    "name": "kyogre",
+    "base_experience": 335,
+    "height": 45,
+    "weight": 3520
+  },
+  {
+    "id": 383,
+    "name": "groudon",
+    "base_experience": 335,
+    "height": 35,
+    "weight": 9500
+  },
+  {
+    "id": 384,
+    "name": "rayquaza",
+    "base_experience": 340,
+    "height": 70,
+    "weight": 2065
+  },
+  {
+    "id": 385,
+    "name": "jirachi",
+    "base_experience": 300,
+    "height": 3,
+    "weight": 11
+  },
+  {
+    "id": 386,
+    "name": "deoxys-normal",
+    "base_experience": 270,
+    "height": 17,
+    "weight": 608
+  },
+  {
+    "id": 387,
+    "name": "turtwig",
+    "base_experience": 64,
+    "height": 4,
+    "weight": 102
+  },
+  {
+    "id": 388,
+    "name": "grotle",
+    "base_experience": 142,
+    "height": 11,
+    "weight": 970
+  },
+  {
+    "id": 389,
+    "name": "torterra",
+    "base_experience": 236,
+    "height": 22,
+    "weight": 3100
+  },
+  {
+    "id": 390,
+    "name": "chimchar",
+    "base_experience": 62,
+    "height": 5,
+    "weight": 62
+  },
+  {
+    "id": 391,
+    "name": "monferno",
+    "base_experience": 142,
+    "height": 9,
+    "weight": 220
+  },
+  {
+    "id": 392,
+    "name": "infernape",
+    "base_experience": 240,
+    "height": 12,
+    "weight": 550
+  },
+  {
+    "id": 393,
+    "name": "piplup",
+    "base_experience": 63,
+    "height": 4,
+    "weight": 52
+  },
+  {
+    "id": 394,
+    "name": "prinplup",
+    "base_experience": 142,
+    "height": 8,
+    "weight": 230
+  },
+  {
+    "id": 395,
+    "name": "empoleon",
+    "base_experience": 239,
+    "height": 17,
+    "weight": 845
+  },
+  {
+    "id": 396,
+    "name": "starly",
+    "base_experience": 49,
+    "height": 3,
+    "weight": 20
+  },
+  {
+    "id": 397,
+    "name": "staravia",
+    "base_experience": 119,
+    "height": 6,
+    "weight": 155
+  },
+  {
+    "id": 398,
+    "name": "staraptor",
+    "base_experience": 218,
+    "height": 12,
+    "weight": 249
+  },
+  {
+    "id": 399,
+    "name": "bidoof",
+    "base_experience": 50,
+    "height": 5,
+    "weight": 200
+  },
+  {
+    "id": 400,
+    "name": "bibarel",
+    "base_experience": 144,
+    "height": 10,
+    "weight": 315
+  },
+  {
+    "id": 401,
+    "name": "kricketot",
+    "base_experience": 39,
+    "height": 3,
+    "weight": 22
+  },
+  {
+    "id": 402,
+    "name": "kricketune",
+    "base_experience": 134,
+    "height": 10,
+    "weight": 255
+  },
+  {
+    "id": 403,
+    "name": "shinx",
+    "base_experience": 53,
+    "height": 5,
+    "weight": 95
+  },
+  {
+    "id": 404,
+    "name": "luxio",
+    "base_experience": 127,
+    "height": 9,
+    "weight": 305
+  },
+  {
+    "id": 405,
+    "name": "luxray",
+    "base_experience": 262,
+    "height": 14,
+    "weight": 420
+  },
+  {
+    "id": 406,
+    "name": "budew",
+    "base_experience": 56,
+    "height": 2,
+    "weight": 12
+  },
+  {
+    "id": 407,
+    "name": "roserade",
+    "base_experience": 258,
+    "height": 9,
+    "weight": 145
+  },
+  {
+    "id": 408,
+    "name": "cranidos",
+    "base_experience": 70,
+    "height": 9,
+    "weight": 315
+  },
+  {
+    "id": 409,
+    "name": "rampardos",
+    "base_experience": 173,
+    "height": 16,
+    "weight": 1025
+  },
+  {
+    "id": 410,
+    "name": "shieldon",
+    "base_experience": 70,
+    "height": 5,
+    "weight": 570
+  },
+  {
+    "id": 411,
+    "name": "bastiodon",
+    "base_experience": 173,
+    "height": 13,
+    "weight": 1495
+  },
+  {
+    "id": 412,
+    "name": "burmy",
+    "base_experience": 45,
+    "height": 2,
+    "weight": 34
+  },
+  {
+    "id": 413,
+    "name": "wormadam-plant",
+    "base_experience": 148,
+    "height": 5,
+    "weight": 65
+  },
+  {
+    "id": 414,
+    "name": "mothim",
+    "base_experience": 148,
+    "height": 9,
+    "weight": 233
+  },
+  {
+    "id": 415,
+    "name": "combee",
+    "base_experience": 49,
+    "height": 3,
+    "weight": 55
+  },
+  {
+    "id": 416,
+    "name": "vespiquen",
+    "base_experience": 166,
+    "height": 12,
+    "weight": 385
+  },
+  {
+    "id": 417,
+    "name": "pachirisu",
+    "base_experience": 142,
+    "height": 4,
+    "weight": 39
+  },
+  {
+    "id": 418,
+    "name": "buizel",
+    "base_experience": 66,
+    "height": 7,
+    "weight": 295
+  },
+  {
+    "id": 419,
+    "name": "floatzel",
+    "base_experience": 173,
+    "height": 11,
+    "weight": 335
+  },
+  {
+    "id": 420,
+    "name": "cherubi",
+    "base_experience": 55,
+    "height": 4,
+    "weight": 33
+  },
+  {
+    "id": 421,
+    "name": "cherrim",
+    "base_experience": 158,
+    "height": 5,
+    "weight": 93
+  },
+  {
+    "id": 422,
+    "name": "shellos",
+    "base_experience": 65,
+    "height": 3,
+    "weight": 63
+  },
+  {
+    "id": 423,
+    "name": "gastrodon",
+    "base_experience": 166,
+    "height": 9,
+    "weight": 299
+  },
+  {
+    "id": 424,
+    "name": "ambipom",
+    "base_experience": 169,
+    "height": 12,
+    "weight": 203
+  },
+  {
+    "id": 425,
+    "name": "drifloon",
+    "base_experience": 70,
+    "height": 4,
+    "weight": 12
+  },
+  {
+    "id": 426,
+    "name": "drifblim",
+    "base_experience": 174,
+    "height": 12,
+    "weight": 150
+  },
+  {
+    "id": 427,
+    "name": "buneary",
+    "base_experience": 70,
+    "height": 4,
+    "weight": 55
+  },
+  {
+    "id": 428,
+    "name": "lopunny",
+    "base_experience": 168,
+    "height": 12,
+    "weight": 333
+  },
+  {
+    "id": 429,
+    "name": "mismagius",
+    "base_experience": 173,
+    "height": 9,
+    "weight": 44
+  },
+  {
+    "id": 430,
+    "name": "honchkrow",
+    "base_experience": 177,
+    "height": 9,
+    "weight": 273
+  },
+  {
+    "id": 431,
+    "name": "glameow",
+    "base_experience": 62,
+    "height": 5,
+    "weight": 39
+  },
+  {
+    "id": 432,
+    "name": "purugly",
+    "base_experience": 158,
+    "height": 10,
+    "weight": 438
+  },
+  {
+    "id": 433,
+    "name": "chingling",
+    "base_experience": 57,
+    "height": 2,
+    "weight": 6
+  },
+  {
+    "id": 434,
+    "name": "stunky",
+    "base_experience": 66,
+    "height": 4,
+    "weight": 192
+  },
+  {
+    "id": 435,
+    "name": "skuntank",
+    "base_experience": 168,
+    "height": 10,
+    "weight": 380
+  },
+  {
+    "id": 436,
+    "name": "bronzor",
+    "base_experience": 60,
+    "height": 5,
+    "weight": 605
+  },
+  {
+    "id": 437,
+    "name": "bronzong",
+    "base_experience": 175,
+    "height": 13,
+    "weight": 1870
+  },
+  {
+    "id": 438,
+    "name": "bonsly",
+    "base_experience": 58,
+    "height": 5,
+    "weight": 150
+  },
+  {
+    "id": 439,
+    "name": "mime-jr",
+    "base_experience": 62,
+    "height": 6,
+    "weight": 130
+  },
+  {
+    "id": 440,
+    "name": "happiny",
+    "base_experience": 110,
+    "height": 6,
+    "weight": 244
+  },
+  {
+    "id": 441,
+    "name": "chatot",
+    "base_experience": 144,
+    "height": 5,
+    "weight": 19
+  },
+  {
+    "id": 442,
+    "name": "spiritomb",
+    "base_experience": 170,
+    "height": 10,
+    "weight": 1080
+  },
+  {
+    "id": 443,
+    "name": "gible",
+    "base_experience": 60,
+    "height": 7,
+    "weight": 205
+  },
+  {
+    "id": 444,
+    "name": "gabite",
+    "base_experience": 144,
+    "height": 14,
+    "weight": 560
+  },
+  {
+    "id": 445,
+    "name": "garchomp",
+    "base_experience": 300,
+    "height": 19,
+    "weight": 950
+  },
+  {
+    "id": 446,
+    "name": "munchlax",
+    "base_experience": 78,
+    "height": 6,
+    "weight": 1050
+  },
+  {
+    "id": 447,
+    "name": "riolu",
+    "base_experience": 57,
+    "height": 7,
+    "weight": 202
+  },
+  {
+    "id": 448,
+    "name": "lucario",
+    "base_experience": 184,
+    "height": 12,
+    "weight": 540
+  },
+  {
+    "id": 449,
+    "name": "hippopotas",
+    "base_experience": 66,
+    "height": 8,
+    "weight": 495
+  },
+  {
+    "id": 450,
+    "name": "hippowdon",
+    "base_experience": 184,
+    "height": 20,
+    "weight": 3000
+  },
+  {
+    "id": 451,
+    "name": "skorupi",
+    "base_experience": 66,
+    "height": 8,
+    "weight": 120
+  },
+  {
+    "id": 452,
+    "name": "drapion",
+    "base_experience": 175,
+    "height": 13,
+    "weight": 615
+  },
+  {
+    "id": 453,
+    "name": "croagunk",
+    "base_experience": 60,
+    "height": 7,
+    "weight": 230
+  },
+  {
+    "id": 454,
+    "name": "toxicroak",
+    "base_experience": 172,
+    "height": 13,
+    "weight": 444
+  },
+  {
+    "id": 455,
+    "name": "carnivine",
+    "base_experience": 159,
+    "height": 14,
+    "weight": 270
+  },
+  {
+    "id": 456,
+    "name": "finneon",
+    "base_experience": 66,
+    "height": 4,
+    "weight": 70
+  },
+  {
+    "id": 457,
+    "name": "lumineon",
+    "base_experience": 161,
+    "height": 12,
+    "weight": 240
+  },
+  {
+    "id": 458,
+    "name": "mantyke",
+    "base_experience": 69,
+    "height": 10,
+    "weight": 650
+  },
+  {
+    "id": 459,
+    "name": "snover",
+    "base_experience": 67,
+    "height": 10,
+    "weight": 505
+  },
+  {
+    "id": 460,
+    "name": "abomasnow",
+    "base_experience": 173,
+    "height": 22,
+    "weight": 1355
+  },
+  {
+    "id": 461,
+    "name": "weavile",
+    "base_experience": 179,
+    "height": 11,
+    "weight": 340
+  },
+  {
+    "id": 462,
+    "name": "magnezone",
+    "base_experience": 268,
+    "height": 12,
+    "weight": 1800
+  },
+  {
+    "id": 463,
+    "name": "lickilicky",
+    "base_experience": 180,
+    "height": 17,
+    "weight": 1400
+  },
+  {
+    "id": 464,
+    "name": "rhyperior",
+    "base_experience": 268,
+    "height": 24,
+    "weight": 2828
+  },
+  {
+    "id": 465,
+    "name": "tangrowth",
+    "base_experience": 187,
+    "height": 20,
+    "weight": 1286
+  },
+  {
+    "id": 466,
+    "name": "electivire",
+    "base_experience": 270,
+    "height": 18,
+    "weight": 1386
+  },
+  {
+    "id": 467,
+    "name": "magmortar",
+    "base_experience": 270,
+    "height": 16,
+    "weight": 680
+  },
+  {
+    "id": 468,
+    "name": "togekiss",
+    "base_experience": 273,
+    "height": 15,
+    "weight": 380
+  },
+  {
+    "id": 469,
+    "name": "yanmega",
+    "base_experience": 180,
+    "height": 19,
+    "weight": 515
+  },
+  {
+    "id": 470,
+    "name": "leafeon",
+    "base_experience": 184,
+    "height": 10,
+    "weight": 255
+  },
+  {
+    "id": 471,
+    "name": "glaceon",
+    "base_experience": 184,
+    "height": 8,
+    "weight": 259
+  },
+  {
+    "id": 472,
+    "name": "gliscor",
+    "base_experience": 179,
+    "height": 20,
+    "weight": 425
+  },
+  {
+    "id": 473,
+    "name": "mamoswine",
+    "base_experience": 265,
+    "height": 25,
+    "weight": 2910
+  },
+  {
+    "id": 474,
+    "name": "porygon-z",
+    "base_experience": 268,
+    "height": 9,
+    "weight": 340
+  },
+  {
+    "id": 475,
+    "name": "gallade",
+    "base_experience": 259,
+    "height": 16,
+    "weight": 520
+  },
+  {
+    "id": 476,
+    "name": "probopass",
+    "base_experience": 184,
+    "height": 14,
+    "weight": 3400
+  },
+  {
+    "id": 477,
+    "name": "dusknoir",
+    "base_experience": 263,
+    "height": 22,
+    "weight": 1066
+  },
+  {
+    "id": 478,
+    "name": "froslass",
+    "base_experience": 168,
+    "height": 13,
+    "weight": 266
+  },
+  {
+    "id": 479,
+    "name": "rotom",
+    "base_experience": 154,
+    "height": 3,
+    "weight": 3
+  },
+  {
+    "id": 480,
+    "name": "uxie",
+    "base_experience": 290,
+    "height": 3,
+    "weight": 3
+  },
+  {
+    "id": 481,
+    "name": "mesprit",
+    "base_experience": 290,
+    "height": 3,
+    "weight": 3
+  },
+  {
+    "id": 482,
+    "name": "azelf",
+    "base_experience": 290,
+    "height": 3,
+    "weight": 3
+  },
+  {
+    "id": 483,
+    "name": "dialga",
+    "base_experience": 340,
+    "height": 54,
+    "weight": 6830
+  },
+  {
+    "id": 484,
+    "name": "palkia",
+    "base_experience": 340,
+    "height": 42,
+    "weight": 3360
+  },
+  {
+    "id": 485,
+    "name": "heatran",
+    "base_experience": 300,
+    "height": 17,
+    "weight": 4300
+  },
+  {
+    "id": 486,
+    "name": "regigigas",
+    "base_experience": 335,
+    "height": 37,
+    "weight": 4200
+  },
+  {
+    "id": 487,
+    "name": "giratina-altered",
+    "base_experience": 340,
+    "height": 45,
+    "weight": 7500
+  },
+  {
+    "id": 488,
+    "name": "cresselia",
+    "base_experience": 300,
+    "height": 15,
+    "weight": 856
+  },
+  {
+    "id": 489,
+    "name": "phione",
+    "base_experience": 216,
+    "height": 4,
+    "weight": 31
+  },
+  {
+    "id": 490,
+    "name": "manaphy",
+    "base_experience": 270,
+    "height": 3,
+    "weight": 14
+  },
+  {
+    "id": 491,
+    "name": "darkrai",
+    "base_experience": 270,
+    "height": 15,
+    "weight": 505
+  },
+  {
+    "id": 492,
+    "name": "shaymin-land",
+    "base_experience": 270,
+    "height": 2,
+    "weight": 21
+  },
+  {
+    "id": 493,
+    "name": "arceus",
+    "base_experience": 324,
+    "height": 32,
+    "weight": 3200
+  },
+  {
+    "id": 494,
+    "name": "victini",
+    "base_experience": 300,
+    "height": 4,
+    "weight": 40
+  },
+  {
+    "id": 495,
+    "name": "snivy",
+    "base_experience": 62,
+    "height": 6,
+    "weight": 81
+  },
+  {
+    "id": 496,
+    "name": "servine",
+    "base_experience": 145,
+    "height": 8,
+    "weight": 160
+  },
+  {
+    "id": 497,
+    "name": "serperior",
+    "base_experience": 238,
+    "height": 33,
+    "weight": 630
+  },
+  {
+    "id": 498,
+    "name": "tepig",
+    "base_experience": 62,
+    "height": 5,
+    "weight": 99
+  },
+  {
+    "id": 499,
+    "name": "pignite",
+    "base_experience": 146,
+    "height": 10,
+    "weight": 555
+  },
+  {
+    "id": 500,
+    "name": "emboar",
+    "base_experience": 238,
+    "height": 16,
+    "weight": 1500
+  },
+  {
+    "id": 501,
+    "name": "oshawott",
+    "base_experience": 62,
+    "height": 5,
+    "weight": 59
+  },
+  {
+    "id": 502,
+    "name": "dewott",
+    "base_experience": 145,
+    "height": 8,
+    "weight": 245
+  },
+  {
+    "id": 503,
+    "name": "samurott",
+    "base_experience": 238,
+    "height": 15,
+    "weight": 946
+  },
+  {
+    "id": 504,
+    "name": "patrat",
+    "base_experience": 51,
+    "height": 5,
+    "weight": 116
+  },
+  {
+    "id": 505,
+    "name": "watchog",
+    "base_experience": 147,
+    "height": 11,
+    "weight": 270
+  },
+  {
+    "id": 506,
+    "name": "lillipup",
+    "base_experience": 55,
+    "height": 4,
+    "weight": 41
+  },
+  {
+    "id": 507,
+    "name": "herdier",
+    "base_experience": 130,
+    "height": 9,
+    "weight": 147
+  },
+  {
+    "id": 508,
+    "name": "stoutland",
+    "base_experience": 250,
+    "height": 12,
+    "weight": 610
+  },
+  {
+    "id": 509,
+    "name": "purrloin",
+    "base_experience": 56,
+    "height": 4,
+    "weight": 101
+  },
+  {
+    "id": 510,
+    "name": "liepard",
+    "base_experience": 156,
+    "height": 11,
+    "weight": 375
+  },
+  {
+    "id": 511,
+    "name": "pansage",
+    "base_experience": 63,
+    "height": 6,
+    "weight": 105
+  },
+  {
+    "id": 512,
+    "name": "simisage",
+    "base_experience": 174,
+    "height": 11,
+    "weight": 305
+  },
+  {
+    "id": 513,
+    "name": "pansear",
+    "base_experience": 63,
+    "height": 6,
+    "weight": 110
+  },
+  {
+    "id": 514,
+    "name": "simisear",
+    "base_experience": 174,
+    "height": 10,
+    "weight": 280
+  },
+  {
+    "id": 515,
+    "name": "panpour",
+    "base_experience": 63,
+    "height": 6,
+    "weight": 135
+  },
+  {
+    "id": 516,
+    "name": "simipour",
+    "base_experience": 174,
+    "height": 10,
+    "weight": 290
+  },
+  {
+    "id": 517,
+    "name": "munna",
+    "base_experience": 58,
+    "height": 6,
+    "weight": 233
+  },
+  {
+    "id": 518,
+    "name": "musharna",
+    "base_experience": 170,
+    "height": 11,
+    "weight": 605
+  },
+  {
+    "id": 519,
+    "name": "pidove",
+    "base_experience": 53,
+    "height": 3,
+    "weight": 21
+  },
+  {
+    "id": 520,
+    "name": "tranquill",
+    "base_experience": 125,
+    "height": 6,
+    "weight": 150
+  },
+  {
+    "id": 521,
+    "name": "unfezant",
+    "base_experience": 244,
+    "height": 12,
+    "weight": 290
+  },
+  {
+    "id": 522,
+    "name": "blitzle",
+    "base_experience": 59,
+    "height": 8,
+    "weight": 298
+  },
+  {
+    "id": 523,
+    "name": "zebstrika",
+    "base_experience": 174,
+    "height": 16,
+    "weight": 795
+  },
+  {
+    "id": 524,
+    "name": "roggenrola",
+    "base_experience": 56,
+    "height": 4,
+    "weight": 180
+  },
+  {
+    "id": 525,
+    "name": "boldore",
+    "base_experience": 137,
+    "height": 9,
+    "weight": 1020
+  },
+  {
+    "id": 526,
+    "name": "gigalith",
+    "base_experience": 258,
+    "height": 17,
+    "weight": 2600
+  },
+  {
+    "id": 527,
+    "name": "woobat",
+    "base_experience": 65,
+    "height": 4,
+    "weight": 21
+  },
+  {
+    "id": 528,
+    "name": "swoobat",
+    "base_experience": 149,
+    "height": 9,
+    "weight": 105
+  },
+  {
+    "id": 529,
+    "name": "drilbur",
+    "base_experience": 66,
+    "height": 3,
+    "weight": 85
+  },
+  {
+    "id": 530,
+    "name": "excadrill",
+    "base_experience": 178,
+    "height": 7,
+    "weight": 404
+  },
+  {
+    "id": 531,
+    "name": "audino",
+    "base_experience": 390,
+    "height": 11,
+    "weight": 310
+  },
+  {
+    "id": 532,
+    "name": "timburr",
+    "base_experience": 61,
+    "height": 6,
+    "weight": 125
+  },
+  {
+    "id": 533,
+    "name": "gurdurr",
+    "base_experience": 142,
+    "height": 12,
+    "weight": 400
+  },
+  {
+    "id": 534,
+    "name": "conkeldurr",
+    "base_experience": 253,
+    "height": 14,
+    "weight": 870
+  },
+  {
+    "id": 535,
+    "name": "tympole",
+    "base_experience": 59,
+    "height": 5,
+    "weight": 45
+  },
+  {
+    "id": 536,
+    "name": "palpitoad",
+    "base_experience": 134,
+    "height": 8,
+    "weight": 170
+  },
+  {
+    "id": 537,
+    "name": "seismitoad",
+    "base_experience": 255,
+    "height": 15,
+    "weight": 620
+  },
+  {
+    "id": 538,
+    "name": "throh",
+    "base_experience": 163,
+    "height": 13,
+    "weight": 555
+  },
+  {
+    "id": 539,
+    "name": "sawk",
+    "base_experience": 163,
+    "height": 14,
+    "weight": 510
+  },
+  {
+    "id": 540,
+    "name": "sewaddle",
+    "base_experience": 62,
+    "height": 3,
+    "weight": 25
+  },
+  {
+    "id": 541,
+    "name": "swadloon",
+    "base_experience": 133,
+    "height": 5,
+    "weight": 73
+  },
+  {
+    "id": 542,
+    "name": "leavanny",
+    "base_experience": 225,
+    "height": 12,
+    "weight": 205
+  },
+  {
+    "id": 543,
+    "name": "venipede",
+    "base_experience": 52,
+    "height": 4,
+    "weight": 53
+  },
+  {
+    "id": 544,
+    "name": "whirlipede",
+    "base_experience": 126,
+    "height": 12,
+    "weight": 585
+  },
+  {
+    "id": 545,
+    "name": "scolipede",
+    "base_experience": 243,
+    "height": 25,
+    "weight": 2005
+  },
+  {
+    "id": 546,
+    "name": "cottonee",
+    "base_experience": 56,
+    "height": 3,
+    "weight": 6
+  },
+  {
+    "id": 547,
+    "name": "whimsicott",
+    "base_experience": 168,
+    "height": 7,
+    "weight": 66
+  },
+  {
+    "id": 548,
+    "name": "petilil",
+    "base_experience": 56,
+    "height": 5,
+    "weight": 66
+  },
+  {
+    "id": 549,
+    "name": "lilligant",
+    "base_experience": 168,
+    "height": 11,
+    "weight": 163
+  },
+  {
+    "id": 550,
+    "name": "basculin-red-striped",
+    "base_experience": 161,
+    "height": 10,
+    "weight": 180
+  },
+  {
+    "id": 551,
+    "name": "sandile",
+    "base_experience": 58,
+    "height": 7,
+    "weight": 152
+  },
+  {
+    "id": 552,
+    "name": "krokorok",
+    "base_experience": 123,
+    "height": 10,
+    "weight": 334
+  },
+  {
+    "id": 553,
+    "name": "krookodile",
+    "base_experience": 260,
+    "height": 15,
+    "weight": 963
+  },
+  {
+    "id": 554,
+    "name": "darumaka",
+    "base_experience": 63,
+    "height": 6,
+    "weight": 375
+  },
+  {
+    "id": 555,
+    "name": "darmanitan-standard",
+    "base_experience": 168,
+    "height": 13,
+    "weight": 929
+  },
+  {
+    "id": 556,
+    "name": "maractus",
+    "base_experience": 161,
+    "height": 10,
+    "weight": 280
+  },
+  {
+    "id": 557,
+    "name": "dwebble",
+    "base_experience": 65,
+    "height": 3,
+    "weight": 145
+  },
+  {
+    "id": 558,
+    "name": "crustle",
+    "base_experience": 170,
+    "height": 14,
+    "weight": 2000
+  },
+  {
+    "id": 559,
+    "name": "scraggy",
+    "base_experience": 70,
+    "height": 6,
+    "weight": 118
+  },
+  {
+    "id": 560,
+    "name": "scrafty",
+    "base_experience": 171,
+    "height": 11,
+    "weight": 300
+  },
+  {
+    "id": 561,
+    "name": "sigilyph",
+    "base_experience": 172,
+    "height": 14,
+    "weight": 140
+  },
+  {
+    "id": 562,
+    "name": "yamask",
+    "base_experience": 61,
+    "height": 5,
+    "weight": 15
+  },
+  {
+    "id": 563,
+    "name": "cofagrigus",
+    "base_experience": 169,
+    "height": 17,
+    "weight": 765
+  },
+  {
+    "id": 564,
+    "name": "tirtouga",
+    "base_experience": 71,
+    "height": 7,
+    "weight": 165
+  },
+  {
+    "id": 565,
+    "name": "carracosta",
+    "base_experience": 173,
+    "height": 12,
+    "weight": 810
+  },
+  {
+    "id": 566,
+    "name": "archen",
+    "base_experience": 71,
+    "height": 5,
+    "weight": 95
+  },
+  {
+    "id": 567,
+    "name": "archeops",
+    "base_experience": 177,
+    "height": 14,
+    "weight": 320
+  },
+  {
+    "id": 568,
+    "name": "trubbish",
+    "base_experience": 66,
+    "height": 6,
+    "weight": 310
+  },
+  {
+    "id": 569,
+    "name": "garbodor",
+    "base_experience": 166,
+    "height": 19,
+    "weight": 1073
+  },
+  {
+    "id": 570,
+    "name": "zorua",
+    "base_experience": 66,
+    "height": 7,
+    "weight": 125
+  },
+  {
+    "id": 571,
+    "name": "zoroark",
+    "base_experience": 179,
+    "height": 16,
+    "weight": 811
+  },
+  {
+    "id": 572,
+    "name": "minccino",
+    "base_experience": 60,
+    "height": 4,
+    "weight": 58
+  },
+  {
+    "id": 573,
+    "name": "cinccino",
+    "base_experience": 165,
+    "height": 5,
+    "weight": 75
+  },
+  {
+    "id": 574,
+    "name": "gothita",
+    "base_experience": 58,
+    "height": 4,
+    "weight": 58
+  },
+  {
+    "id": 575,
+    "name": "gothorita",
+    "base_experience": 137,
+    "height": 7,
+    "weight": 180
+  },
+  {
+    "id": 576,
+    "name": "gothitelle",
+    "base_experience": 245,
+    "height": 15,
+    "weight": 440
+  },
+  {
+    "id": 577,
+    "name": "solosis",
+    "base_experience": 58,
+    "height": 3,
+    "weight": 10
+  },
+  {
+    "id": 578,
+    "name": "duosion",
+    "base_experience": 130,
+    "height": 6,
+    "weight": 80
+  },
+  {
+    "id": 579,
+    "name": "reuniclus",
+    "base_experience": 245,
+    "height": 10,
+    "weight": 201
+  },
+  {
+    "id": 580,
+    "name": "ducklett",
+    "base_experience": 61,
+    "height": 5,
+    "weight": 55
+  },
+  {
+    "id": 581,
+    "name": "swanna",
+    "base_experience": 166,
+    "height": 13,
+    "weight": 242
+  },
+  {
+    "id": 582,
+    "name": "vanillite",
+    "base_experience": 61,
+    "height": 4,
+    "weight": 57
+  },
+  {
+    "id": 583,
+    "name": "vanillish",
+    "base_experience": 138,
+    "height": 11,
+    "weight": 410
+  },
+  {
+    "id": 584,
+    "name": "vanilluxe",
+    "base_experience": 268,
+    "height": 13,
+    "weight": 575
+  },
+  {
+    "id": 585,
+    "name": "deerling",
+    "base_experience": 67,
+    "height": 6,
+    "weight": 195
+  },
+  {
+    "id": 586,
+    "name": "sawsbuck",
+    "base_experience": 166,
+    "height": 19,
+    "weight": 925
+  },
+  {
+    "id": 587,
+    "name": "emolga",
+    "base_experience": 150,
+    "height": 4,
+    "weight": 50
+  },
+  {
+    "id": 588,
+    "name": "karrablast",
+    "base_experience": 63,
+    "height": 5,
+    "weight": 59
+  },
+  {
+    "id": 589,
+    "name": "escavalier",
+    "base_experience": 173,
+    "height": 10,
+    "weight": 330
+  },
+  {
+    "id": 590,
+    "name": "foongus",
+    "base_experience": 59,
+    "height": 2,
+    "weight": 10
+  },
+  {
+    "id": 591,
+    "name": "amoonguss",
+    "base_experience": 162,
+    "height": 6,
+    "weight": 105
+  },
+  {
+    "id": 592,
+    "name": "frillish",
+    "base_experience": 67,
+    "height": 12,
+    "weight": 330
+  },
+  {
+    "id": 593,
+    "name": "jellicent",
+    "base_experience": 168,
+    "height": 22,
+    "weight": 1350
+  },
+  {
+    "id": 594,
+    "name": "alomomola",
+    "base_experience": 165,
+    "height": 12,
+    "weight": 316
+  },
+  {
+    "id": 595,
+    "name": "joltik",
+    "base_experience": 64,
+    "height": 1,
+    "weight": 6
+  },
+  {
+    "id": 596,
+    "name": "galvantula",
+    "base_experience": 165,
+    "height": 8,
+    "weight": 143
+  },
+  {
+    "id": 597,
+    "name": "ferroseed",
+    "base_experience": 61,
+    "height": 6,
+    "weight": 188
+  },
+  {
+    "id": 598,
+    "name": "ferrothorn",
+    "base_experience": 171,
+    "height": 10,
+    "weight": 1100
+  },
+  {
+    "id": 599,
+    "name": "klink",
+    "base_experience": 60,
+    "height": 3,
+    "weight": 210
+  },
+  {
+    "id": 600,
+    "name": "klang",
+    "base_experience": 154,
+    "height": 6,
+    "weight": 510
+  },
+  {
+    "id": 601,
+    "name": "klinklang",
+    "base_experience": 260,
+    "height": 6,
+    "weight": 810
+  },
+  {
+    "id": 602,
+    "name": "tynamo",
+    "base_experience": 55,
+    "height": 2,
+    "weight": 3
+  },
+  {
+    "id": 603,
+    "name": "eelektrik",
+    "base_experience": 142,
+    "height": 12,
+    "weight": 220
+  },
+  {
+    "id": 604,
+    "name": "eelektross",
+    "base_experience": 232,
+    "height": 21,
+    "weight": 805
+  },
+  {
+    "id": 605,
+    "name": "elgyem",
+    "base_experience": 67,
+    "height": 5,
+    "weight": 90
+  },
+  {
+    "id": 606,
+    "name": "beheeyem",
+    "base_experience": 170,
+    "height": 10,
+    "weight": 345
+  },
+  {
+    "id": 607,
+    "name": "litwick",
+    "base_experience": 55,
+    "height": 3,
+    "weight": 31
+  },
+  {
+    "id": 608,
+    "name": "lampent",
+    "base_experience": 130,
+    "height": 6,
+    "weight": 130
+  },
+  {
+    "id": 609,
+    "name": "chandelure",
+    "base_experience": 260,
+    "height": 10,
+    "weight": 343
+  },
+  {
+    "id": 610,
+    "name": "axew",
+    "base_experience": 64,
+    "height": 6,
+    "weight": 180
+  },
+  {
+    "id": 611,
+    "name": "fraxure",
+    "base_experience": 144,
+    "height": 10,
+    "weight": 360
+  },
+  {
+    "id": 612,
+    "name": "haxorus",
+    "base_experience": 270,
+    "height": 18,
+    "weight": 1055
+  },
+  {
+    "id": 613,
+    "name": "cubchoo",
+    "base_experience": 61,
+    "height": 5,
+    "weight": 85
+  },
+  {
+    "id": 614,
+    "name": "beartic",
+    "base_experience": 177,
+    "height": 26,
+    "weight": 2600
+  },
+  {
+    "id": 615,
+    "name": "cryogonal",
+    "base_experience": 180,
+    "height": 11,
+    "weight": 1480
+  },
+  {
+    "id": 616,
+    "name": "shelmet",
+    "base_experience": 61,
+    "height": 4,
+    "weight": 77
+  },
+  {
+    "id": 617,
+    "name": "accelgor",
+    "base_experience": 173,
+    "height": 8,
+    "weight": 253
+  },
+  {
+    "id": 618,
+    "name": "stunfisk",
+    "base_experience": 165,
+    "height": 7,
+    "weight": 110
+  },
+  {
+    "id": 619,
+    "name": "mienfoo",
+    "base_experience": 70,
+    "height": 9,
+    "weight": 200
+  },
+  {
+    "id": 620,
+    "name": "mienshao",
+    "base_experience": 179,
+    "height": 14,
+    "weight": 355
+  },
+  {
+    "id": 621,
+    "name": "druddigon",
+    "base_experience": 170,
+    "height": 16,
+    "weight": 1390
+  },
+  {
+    "id": 622,
+    "name": "golett",
+    "base_experience": 61,
+    "height": 10,
+    "weight": 920
+  },
+  {
+    "id": 623,
+    "name": "golurk",
+    "base_experience": 169,
+    "height": 28,
+    "weight": 3300
+  },
+  {
+    "id": 624,
+    "name": "pawniard",
+    "base_experience": 68,
+    "height": 5,
+    "weight": 102
+  },
+  {
+    "id": 625,
+    "name": "bisharp",
+    "base_experience": 172,
+    "height": 16,
+    "weight": 700
+  },
+  {
+    "id": 626,
+    "name": "bouffalant",
+    "base_experience": 172,
+    "height": 16,
+    "weight": 946
+  },
+  {
+    "id": 627,
+    "name": "rufflet",
+    "base_experience": 70,
+    "height": 5,
+    "weight": 105
+  },
+  {
+    "id": 628,
+    "name": "braviary",
+    "base_experience": 179,
+    "height": 15,
+    "weight": 410
+  },
+  {
+    "id": 629,
+    "name": "vullaby",
+    "base_experience": 74,
+    "height": 5,
+    "weight": 90
+  },
+  {
+    "id": 630,
+    "name": "mandibuzz",
+    "base_experience": 179,
+    "height": 12,
+    "weight": 395
+  },
+  {
+    "id": 631,
+    "name": "heatmor",
+    "base_experience": 169,
+    "height": 14,
+    "weight": 580
+  },
+  {
+    "id": 632,
+    "name": "durant",
+    "base_experience": 169,
+    "height": 3,
+    "weight": 330
+  },
+  {
+    "id": 633,
+    "name": "deino",
+    "base_experience": 60,
+    "height": 8,
+    "weight": 173
+  },
+  {
+    "id": 634,
+    "name": "zweilous",
+    "base_experience": 147,
+    "height": 14,
+    "weight": 500
+  },
+  {
+    "id": 635,
+    "name": "hydreigon",
+    "base_experience": 300,
+    "height": 18,
+    "weight": 1600
+  },
+  {
+    "id": 636,
+    "name": "larvesta",
+    "base_experience": 72,
+    "height": 11,
+    "weight": 288
+  },
+  {
+    "id": 637,
+    "name": "volcarona",
+    "base_experience": 275,
+    "height": 16,
+    "weight": 460
+  },
+  {
+    "id": 638,
+    "name": "cobalion",
+    "base_experience": 290,
+    "height": 21,
+    "weight": 2500
+  },
+  {
+    "id": 639,
+    "name": "terrakion",
+    "base_experience": 290,
+    "height": 19,
+    "weight": 2600
+  },
+  {
+    "id": 640,
+    "name": "virizion",
+    "base_experience": 290,
+    "height": 20,
+    "weight": 2000
+  },
+  {
+    "id": 641,
+    "name": "tornadus-incarnate",
+    "base_experience": 290,
+    "height": 15,
+    "weight": 630
+  },
+  {
+    "id": 642,
+    "name": "thundurus-incarnate",
+    "base_experience": 290,
+    "height": 15,
+    "weight": 610
+  },
+  {
+    "id": 643,
+    "name": "reshiram",
+    "base_experience": 340,
+    "height": 32,
+    "weight": 3300
+  },
+  {
+    "id": 644,
+    "name": "zekrom",
+    "base_experience": 340,
+    "height": 29,
+    "weight": 3450
+  },
+  {
+    "id": 645,
+    "name": "landorus-incarnate",
+    "base_experience": 300,
+    "height": 15,
+    "weight": 680
+  },
+  {
+    "id": 646,
+    "name": "kyurem",
+    "base_experience": 330,
+    "height": 30,
+    "weight": 3250
+  },
+  {
+    "id": 647,
+    "name": "keldeo-ordinary",
+    "base_experience": 290,
+    "height": 14,
+    "weight": 485
+  },
+  {
+    "id": 648,
+    "name": "meloetta-aria",
+    "base_experience": 270,
+    "height": 6,
+    "weight": 65
+  },
+  {
+    "id": 649,
+    "name": "genesect",
+    "base_experience": 300,
+    "height": 15,
+    "weight": 825
+  },
+  {
+    "id": 650,
+    "name": "chespin",
+    "base_experience": 63,
+    "height": 4,
+    "weight": 90
+  },
+  {
+    "id": 651,
+    "name": "quilladin",
+    "base_experience": 142,
+    "height": 7,
+    "weight": 290
+  },
+  {
+    "id": 652,
+    "name": "chesnaught",
+    "base_experience": 239,
+    "height": 16,
+    "weight": 900
+  },
+  {
+    "id": 653,
+    "name": "fennekin",
+    "base_experience": 61,
+    "height": 4,
+    "weight": 94
+  },
+  {
+    "id": 654,
+    "name": "braixen",
+    "base_experience": 143,
+    "height": 10,
+    "weight": 145
+  },
+  {
+    "id": 655,
+    "name": "delphox",
+    "base_experience": 240,
+    "height": 15,
+    "weight": 390
+  },
+  {
+    "id": 656,
+    "name": "froakie",
+    "base_experience": 63,
+    "height": 3,
+    "weight": 70
+  },
+  {
+    "id": 657,
+    "name": "frogadier",
+    "base_experience": 142,
+    "height": 6,
+    "weight": 109
+  },
+  {
+    "id": 658,
+    "name": "greninja",
+    "base_experience": 239,
+    "height": 15,
+    "weight": 400
+  },
+  {
+    "id": 659,
+    "name": "bunnelby",
+    "base_experience": 47,
+    "height": 4,
+    "weight": 50
+  },
+  {
+    "id": 660,
+    "name": "diggersby",
+    "base_experience": 148,
+    "height": 10,
+    "weight": 424
+  },
+  {
+    "id": 661,
+    "name": "fletchling",
+    "base_experience": 56,
+    "height": 3,
+    "weight": 17
+  },
+  {
+    "id": 662,
+    "name": "fletchinder",
+    "base_experience": 134,
+    "height": 7,
+    "weight": 160
+  },
+  {
+    "id": 663,
+    "name": "talonflame",
+    "base_experience": 175,
+    "height": 12,
+    "weight": 245
+  },
+  {
+    "id": 664,
+    "name": "scatterbug",
+    "base_experience": 40,
+    "height": 3,
+    "weight": 25
+  },
+  {
+    "id": 665,
+    "name": "spewpa",
+    "base_experience": 75,
+    "height": 3,
+    "weight": 84
+  },
+  {
+    "id": 666,
+    "name": "vivillon",
+    "base_experience": 185,
+    "height": 12,
+    "weight": 170
+  },
+  {
+    "id": 667,
+    "name": "litleo",
+    "base_experience": 74,
+    "height": 6,
+    "weight": 135
+  },
+  {
+    "id": 668,
+    "name": "pyroar",
+    "base_experience": 177,
+    "height": 15,
+    "weight": 815
+  },
+  {
+    "id": 669,
+    "name": "flabebe",
+    "base_experience": 61,
+    "height": 1,
+    "weight": 1
+  },
+  {
+    "id": 670,
+    "name": "floette",
+    "base_experience": 130,
+    "height": 2,
+    "weight": 9
+  },
+  {
+    "id": 671,
+    "name": "florges",
+    "base_experience": 248,
+    "height": 11,
+    "weight": 100
+  },
+  {
+    "id": 672,
+    "name": "skiddo",
+    "base_experience": 70,
+    "height": 9,
+    "weight": 310
+  },
+  {
+    "id": 673,
+    "name": "gogoat",
+    "base_experience": 186,
+    "height": 17,
+    "weight": 910
+  },
+  {
+    "id": 674,
+    "name": "pancham",
+    "base_experience": 70,
+    "height": 6,
+    "weight": 80
+  },
+  {
+    "id": 675,
+    "name": "pangoro",
+    "base_experience": 173,
+    "height": 21,
+    "weight": 1360
+  },
+  {
+    "id": 676,
+    "name": "furfrou",
+    "base_experience": 165,
+    "height": 12,
+    "weight": 280
+  },
+  {
+    "id": 677,
+    "name": "espurr",
+    "base_experience": 71,
+    "height": 3,
+    "weight": 35
+  },
+  {
+    "id": 678,
+    "name": "meowstic-male",
+    "base_experience": 163,
+    "height": 6,
+    "weight": 85
+  },
+  {
+    "id": 679,
+    "name": "honedge",
+    "base_experience": 65,
+    "height": 8,
+    "weight": 20
+  },
+  {
+    "id": 680,
+    "name": "doublade",
+    "base_experience": 157,
+    "height": 8,
+    "weight": 45
+  },
+  {
+    "id": 681,
+    "name": "aegislash-shield",
+    "base_experience": 250,
+    "height": 17,
+    "weight": 530
+  },
+  {
+    "id": 682,
+    "name": "spritzee",
+    "base_experience": 68,
+    "height": 2,
+    "weight": 5
+  },
+  {
+    "id": 683,
+    "name": "aromatisse",
+    "base_experience": 162,
+    "height": 8,
+    "weight": 155
+  },
+  {
+    "id": 684,
+    "name": "swirlix",
+    "base_experience": 68,
+    "height": 4,
+    "weight": 35
+  },
+  {
+    "id": 685,
+    "name": "slurpuff",
+    "base_experience": 168,
+    "height": 8,
+    "weight": 50
+  },
+  {
+    "id": 686,
+    "name": "inkay",
+    "base_experience": 58,
+    "height": 4,
+    "weight": 35
+  },
+  {
+    "id": 687,
+    "name": "malamar",
+    "base_experience": 169,
+    "height": 15,
+    "weight": 470
+  },
+  {
+    "id": 688,
+    "name": "binacle",
+    "base_experience": 61,
+    "height": 5,
+    "weight": 310
+  },
+  {
+    "id": 689,
+    "name": "barbaracle",
+    "base_experience": 175,
+    "height": 13,
+    "weight": 960
+  },
+  {
+    "id": 690,
+    "name": "skrelp",
+    "base_experience": 64,
+    "height": 5,
+    "weight": 73
+  },
+  {
+    "id": 691,
+    "name": "dragalge",
+    "base_experience": 173,
+    "height": 18,
+    "weight": 815
+  },
+  {
+    "id": 692,
+    "name": "clauncher",
+    "base_experience": 66,
+    "height": 5,
+    "weight": 83
+  },
+  {
+    "id": 693,
+    "name": "clawitzer",
+    "base_experience": 100,
+    "height": 13,
+    "weight": 353
+  },
+  {
+    "id": 694,
+    "name": "helioptile",
+    "base_experience": 58,
+    "height": 5,
+    "weight": 60
+  },
+  {
+    "id": 695,
+    "name": "heliolisk",
+    "base_experience": 168,
+    "height": 10,
+    "weight": 210
+  },
+  {
+    "id": 696,
+    "name": "tyrunt",
+    "base_experience": 72,
+    "height": 8,
+    "weight": 260
+  },
+  {
+    "id": 697,
+    "name": "tyrantrum",
+    "base_experience": 182,
+    "height": 25,
+    "weight": 2700
+  },
+  {
+    "id": 698,
+    "name": "amaura",
+    "base_experience": 72,
+    "height": 13,
+    "weight": 252
+  },
+  {
+    "id": 699,
+    "name": "aurorus",
+    "base_experience": 104,
+    "height": 27,
+    "weight": 2250
+  },
+  {
+    "id": 700,
+    "name": "sylveon",
+    "base_experience": 184,
+    "height": 10,
+    "weight": 235
+  },
+  {
+    "id": 701,
+    "name": "hawlucha",
+    "base_experience": 175,
+    "height": 8,
+    "weight": 215
+  },
+  {
+    "id": 702,
+    "name": "dedenne",
+    "base_experience": 151,
+    "height": 2,
+    "weight": 22
+  },
+  {
+    "id": 703,
+    "name": "carbink",
+    "base_experience": 100,
+    "height": 3,
+    "weight": 57
+  },
+  {
+    "id": 704,
+    "name": "goomy",
+    "base_experience": 60,
+    "height": 3,
+    "weight": 28
+  },
+  {
+    "id": 705,
+    "name": "sliggoo",
+    "base_experience": 158,
+    "height": 8,
+    "weight": 175
+  },
+  {
+    "id": 706,
+    "name": "goodra",
+    "base_experience": 300,
+    "height": 20,
+    "weight": 1505
+  },
+  {
+    "id": 707,
+    "name": "klefki",
+    "base_experience": 165,
+    "height": 2,
+    "weight": 30
+  },
+  {
+    "id": 708,
+    "name": "phantump",
+    "base_experience": 62,
+    "height": 4,
+    "weight": 70
+  },
+  {
+    "id": 709,
+    "name": "trevenant",
+    "base_experience": 166,
+    "height": 15,
+    "weight": 710
+  },
+  {
+    "id": 710,
+    "name": "pumpkaboo-average",
+    "base_experience": 67,
+    "height": 4,
+    "weight": 50
+  },
+  {
+    "id": 711,
+    "name": "gourgeist-average",
+    "base_experience": 173,
+    "height": 9,
+    "weight": 125
+  },
+  {
+    "id": 712,
+    "name": "bergmite",
+    "base_experience": 61,
+    "height": 10,
+    "weight": 995
+  },
+  {
+    "id": 713,
+    "name": "avalugg",
+    "base_experience": 180,
+    "height": 20,
+    "weight": 5050
+  },
+  {
+    "id": 714,
+    "name": "noibat",
+    "base_experience": 49,
+    "height": 5,
+    "weight": 80
+  },
+  {
+    "id": 715,
+    "name": "noivern",
+    "base_experience": 187,
+    "height": 15,
+    "weight": 850
+  },
+  {
+    "id": 716,
+    "name": "xerneas",
+    "base_experience": 340,
+    "height": 30,
+    "weight": 2150
+  },
+  {
+    "id": 717,
+    "name": "yveltal",
+    "base_experience": 340,
+    "height": 58,
+    "weight": 2030
+  },
+  {
+    "id": 718,
+    "name": "zygarde-50",
+    "base_experience": 300,
+    "height": 50,
+    "weight": 3050
+  },
+  {
+    "id": 719,
+    "name": "diancie",
+    "base_experience": 300,
+    "height": 7,
+    "weight": 88
+  },
+  {
+    "id": 720,
+    "name": "hoopa",
+    "base_experience": 270,
+    "height": 5,
+    "weight": 90
+  },
+  {
+    "id": 721,
+    "name": "volcanion",
+    "base_experience": 300,
+    "height": 17,
+    "weight": 1950
+  },
+  {
+    "id": 722,
+    "name": "rowlet",
+    "base_experience": 64,
+    "height": 3,
+    "weight": 15
+  },
+  {
+    "id": 723,
+    "name": "dartrix",
+    "base_experience": 147,
+    "height": 7,
+    "weight": 160
+  },
+  {
+    "id": 724,
+    "name": "decidueye",
+    "base_experience": 265,
+    "height": 16,
+    "weight": 366
+  },
+  {
+    "id": 725,
+    "name": "litten",
+    "base_experience": 64,
+    "height": 4,
+    "weight": 43
+  },
+  {
+    "id": 726,
+    "name": "torracat",
+    "base_experience": 147,
+    "height": 7,
+    "weight": 250
+  },
+  {
+    "id": 727,
+    "name": "incineroar",
+    "base_experience": 265,
+    "height": 18,
+    "weight": 830
+  },
+  {
+    "id": 728,
+    "name": "popplio",
+    "base_experience": 64,
+    "height": 4,
+    "weight": 75
+  },
+  {
+    "id": 729,
+    "name": "brionne",
+    "base_experience": 147,
+    "height": 6,
+    "weight": 175
+  },
+  {
+    "id": 730,
+    "name": "primarina",
+    "base_experience": 265,
+    "height": 18,
+    "weight": 440
+  },
+  {
+    "id": 731,
+    "name": "pikipek",
+    "base_experience": 53,
+    "height": 3,
+    "weight": 12
+  },
+  {
+    "id": 732,
+    "name": "trumbeak",
+    "base_experience": 124,
+    "height": 6,
+    "weight": 148
+  },
+  {
+    "id": 733,
+    "name": "toucannon",
+    "base_experience": 218,
+    "height": 11,
+    "weight": 260
+  },
+  {
+    "id": 734,
+    "name": "yungoos",
+    "base_experience": 51,
+    "height": 4,
+    "weight": 60
+  },
+  {
+    "id": 735,
+    "name": "gumshoos",
+    "base_experience": 146,
+    "height": 7,
+    "weight": 142
+  },
+  {
+    "id": 736,
+    "name": "grubbin",
+    "base_experience": 60,
+    "height": 4,
+    "weight": 44
+  },
+  {
+    "id": 737,
+    "name": "charjabug",
+    "base_experience": 140,
+    "height": 5,
+    "weight": 105
+  },
+  {
+    "id": 738,
+    "name": "vikavolt",
+    "base_experience": 250,
+    "height": 15,
+    "weight": 450
+  },
+  {
+    "id": 739,
+    "name": "crabrawler",
+    "base_experience": 68,
+    "height": 6,
+    "weight": 70
+  },
+  {
+    "id": 740,
+    "name": "crabominable",
+    "base_experience": 167,
+    "height": 17,
+    "weight": 1800
+  },
+  {
+    "id": 741,
+    "name": "oricorio-baile",
+    "base_experience": 167,
+    "height": 6,
+    "weight": 34
+  },
+  {
+    "id": 742,
+    "name": "cutiefly",
+    "base_experience": 61,
+    "height": 1,
+    "weight": 2
+  },
+  {
+    "id": 743,
+    "name": "ribombee",
+    "base_experience": 162,
+    "height": 2,
+    "weight": 5
+  },
+  {
+    "id": 744,
+    "name": "rockruff",
+    "base_experience": 56,
+    "height": 5,
+    "weight": 92
+  },
+  {
+    "id": 745,
+    "name": "lycanroc-midday",
+    "base_experience": 170,
+    "height": 8,
+    "weight": 250
+  },
+  {
+    "id": 746,
+    "name": "wishiwashi-solo",
+    "base_experience": 61,
+    "height": 2,
+    "weight": 3
+  },
+  {
+    "id": 747,
+    "name": "mareanie",
+    "base_experience": 61,
+    "height": 4,
+    "weight": 80
+  },
+  {
+    "id": 748,
+    "name": "toxapex",
+    "base_experience": 173,
+    "height": 7,
+    "weight": 145
+  },
+  {
+    "id": 749,
+    "name": "mudbray",
+    "base_experience": 77,
+    "height": 10,
+    "weight": 1100
+  },
+  {
+    "id": 750,
+    "name": "mudsdale",
+    "base_experience": 175,
+    "height": 25,
+    "weight": 9200
+  },
+  {
+    "id": 751,
+    "name": "dewpider",
+    "base_experience": 54,
+    "height": 3,
+    "weight": 40
+  },
+  {
+    "id": 752,
+    "name": "araquanid",
+    "base_experience": 159,
+    "height": 18,
+    "weight": 820
+  },
+  {
+    "id": 753,
+    "name": "fomantis",
+    "base_experience": 50,
+    "height": 3,
+    "weight": 15
+  },
+  {
+    "id": 754,
+    "name": "lurantis",
+    "base_experience": 168,
+    "height": 9,
+    "weight": 185
+  },
+  {
+    "id": 755,
+    "name": "morelull",
+    "base_experience": 57,
+    "height": 2,
+    "weight": 15
+  },
+  {
+    "id": 756,
+    "name": "shiinotic",
+    "base_experience": 142,
+    "height": 10,
+    "weight": 115
+  },
+  {
+    "id": 757,
+    "name": "salandit",
+    "base_experience": 64,
+    "height": 6,
+    "weight": 48
+  },
+  {
+    "id": 758,
+    "name": "salazzle",
+    "base_experience": 168,
+    "height": 12,
+    "weight": 222
+  },
+  {
+    "id": 759,
+    "name": "stufful",
+    "base_experience": 68,
+    "height": 5,
+    "weight": 68
+  },
+  {
+    "id": 760,
+    "name": "bewear",
+    "base_experience": 175,
+    "height": 21,
+    "weight": 1350
+  },
+  {
+    "id": 761,
+    "name": "bounsweet",
+    "base_experience": 42,
+    "height": 3,
+    "weight": 32
+  },
+  {
+    "id": 762,
+    "name": "steenee",
+    "base_experience": 102,
+    "height": 7,
+    "weight": 82
+  },
+  {
+    "id": 763,
+    "name": "tsareena",
+    "base_experience": 255,
+    "height": 12,
+    "weight": 214
+  },
+  {
+    "id": 764,
+    "name": "comfey",
+    "base_experience": 170,
+    "height": 1,
+    "weight": 3
+  },
+  {
+    "id": 765,
+    "name": "oranguru",
+    "base_experience": 172,
+    "height": 15,
+    "weight": 760
+  },
+  {
+    "id": 766,
+    "name": "passimian",
+    "base_experience": 172,
+    "height": 20,
+    "weight": 828
+  },
+  {
+    "id": 767,
+    "name": "wimpod",
+    "base_experience": 46,
+    "height": 5,
+    "weight": 120
+  },
+  {
+    "id": 768,
+    "name": "golisopod",
+    "base_experience": 186,
+    "height": 20,
+    "weight": 1080
+  },
+  {
+    "id": 769,
+    "name": "sandygast",
+    "base_experience": 64,
+    "height": 5,
+    "weight": 700
+  },
+  {
+    "id": 770,
+    "name": "palossand",
+    "base_experience": 168,
+    "height": 13,
+    "weight": 2500
+  },
+  {
+    "id": 771,
+    "name": "pyukumuku",
+    "base_experience": 144,
+    "height": 3,
+    "weight": 12
+  },
+  {
+    "id": 772,
+    "name": "type-null",
+    "base_experience": 107,
+    "height": 19,
+    "weight": 1205
+  },
+  {
+    "id": 773,
+    "name": "silvally",
+    "base_experience": 285,
+    "height": 23,
+    "weight": 1005
+  },
+  {
+    "id": 774,
+    "name": "minior-red-meteor",
+    "base_experience": 154,
+    "height": 3,
+    "weight": 400
+  },
+  {
+    "id": 775,
+    "name": "komala",
+    "base_experience": 168,
+    "height": 4,
+    "weight": 199
+  },
+  {
+    "id": 776,
+    "name": "turtonator",
+    "base_experience": 170,
+    "height": 20,
+    "weight": 2120
+  },
+  {
+    "id": 777,
+    "name": "togedemaru",
+    "base_experience": 152,
+    "height": 3,
+    "weight": 33
+  },
+  {
+    "id": 778,
+    "name": "mimikyu-disguised",
+    "base_experience": 167,
+    "height": 2,
+    "weight": 7
+  },
+  {
+    "id": 779,
+    "name": "bruxish",
+    "base_experience": 166,
+    "height": 9,
+    "weight": 190
+  },
+  {
+    "id": 780,
+    "name": "drampa",
+    "base_experience": 170,
+    "height": 30,
+    "weight": 1850
+  },
+  {
+    "id": 781,
+    "name": "dhelmise",
+    "base_experience": 181,
+    "height": 39,
+    "weight": 2100
+  },
+  {
+    "id": 782,
+    "name": "jangmo-o",
+    "base_experience": 60,
+    "height": 6,
+    "weight": 297
+  },
+  {
+    "id": 783,
+    "name": "hakamo-o",
+    "base_experience": 147,
+    "height": 12,
+    "weight": 470
+  },
+  {
+    "id": 784,
+    "name": "kommo-o",
+    "base_experience": 300,
+    "height": 16,
+    "weight": 782
+  },
+  {
+    "id": 785,
+    "name": "tapu-koko",
+    "base_experience": 285,
+    "height": 18,
+    "weight": 205
+  },
+  {
+    "id": 786,
+    "name": "tapu-lele",
+    "base_experience": 285,
+    "height": 12,
+    "weight": 186
+  },
+  {
+    "id": 787,
+    "name": "tapu-bulu",
+    "base_experience": 285,
+    "height": 19,
+    "weight": 455
+  },
+  {
+    "id": 788,
+    "name": "tapu-fini",
+    "base_experience": 285,
+    "height": 13,
+    "weight": 212
+  },
+  {
+    "id": 789,
+    "name": "cosmog",
+    "base_experience": 40,
+    "height": 2,
+    "weight": 1
+  },
+  {
+    "id": 790,
+    "name": "cosmoem",
+    "base_experience": 140,
+    "height": 1,
+    "weight": 9999
+  },
+  {
+    "id": 791,
+    "name": "solgaleo",
+    "base_experience": 340,
+    "height": 34,
+    "weight": 2300
+  },
+  {
+    "id": 792,
+    "name": "lunala",
+    "base_experience": 340,
+    "height": 40,
+    "weight": 1200
+  },
+  {
+    "id": 793,
+    "name": "nihilego",
+    "base_experience": 285,
+    "height": 12,
+    "weight": 555
+  },
+  {
+    "id": 794,
+    "name": "buzzwole",
+    "base_experience": 285,
+    "height": 24,
+    "weight": 3336
+  },
+  {
+    "id": 795,
+    "name": "pheromosa",
+    "base_experience": 285,
+    "height": 18,
+    "weight": 250
+  },
+  {
+    "id": 796,
+    "name": "xurkitree",
+    "base_experience": 285,
+    "height": 38,
+    "weight": 1000
+  },
+  {
+    "id": 797,
+    "name": "celesteela",
+    "base_experience": 285,
+    "height": 92,
+    "weight": 9999
+  },
+  {
+    "id": 798,
+    "name": "kartana",
+    "base_experience": 285,
+    "height": 3,
+    "weight": 1
+  },
+  {
+    "id": 799,
+    "name": "guzzlord",
+    "base_experience": 285,
+    "height": 55,
+    "weight": 8880
+  },
+  {
+    "id": 800,
+    "name": "necrozma",
+    "base_experience": 300,
+    "height": 24,
+    "weight": 2300
+  },
+  {
+    "id": 801,
+    "name": "magearna",
+    "base_experience": 300,
+    "height": 10,
+    "weight": 805
+  },
+  {
+    "id": 802,
+    "name": "marshadow",
+    "base_experience": 300,
+    "height": 7,
+    "weight": 222
+  },
+  {
+    "id": 803,
+    "name": "poipole",
+    "base_experience": 210,
+    "height": 6,
+    "weight": 18
+  },
+  {
+    "id": 804,
+    "name": "naganadel",
+    "base_experience": 270,
+    "height": 36,
+    "weight": 1500
+  },
+  {
+    "id": 805,
+    "name": "stakataka",
+    "base_experience": 285,
+    "height": 55,
+    "weight": 8200
+  },
+  {
+    "id": 806,
+    "name": "blacephalon",
+    "base_experience": 285,
+    "height": 18,
+    "weight": 130
+  },
+  {
+    "id": 807,
+    "name": "zeraora",
+    "base_experience": 300,
+    "height": 15,
+    "weight": 445
+  },
+  {
+    "id": 808,
+    "name": "meltan",
+    "base_experience": 150,
+    "height": 2,
+    "weight": 80
+  },
+  {
+    "id": 809,
+    "name": "melmetal",
+    "base_experience": 300,
+    "height": 25,
+    "weight": 8000
+  },
+  {
+    "id": 810,
+    "name": "grookey",
+    "base_experience": 62,
+    "height": 3,
+    "weight": 50
+  },
+  {
+    "id": 811,
+    "name": "thwackey",
+    "base_experience": 147,
+    "height": 7,
+    "weight": 140
+  },
+  {
+    "id": 812,
+    "name": "rillaboom",
+    "base_experience": 265,
+    "height": 21,
+    "weight": 900
+  },
+  {
+    "id": 813,
+    "name": "scorbunny",
+    "base_experience": 62,
+    "height": 3,
+    "weight": 45
+  },
+  {
+    "id": 814,
+    "name": "raboot",
+    "base_experience": 147,
+    "height": 6,
+    "weight": 90
+  },
+  {
+    "id": 815,
+    "name": "cinderace",
+    "base_experience": 265,
+    "height": 14,
+    "weight": 330
+  },
+  {
+    "id": 816,
+    "name": "sobble",
+    "base_experience": 62,
+    "height": 3,
+    "weight": 40
+  },
+  {
+    "id": 817,
+    "name": "drizzile",
+    "base_experience": 147,
+    "height": 7,
+    "weight": 115
+  },
+  {
+    "id": 818,
+    "name": "inteleon",
+    "base_experience": 265,
+    "height": 19,
+    "weight": 452
+  },
+  {
+    "id": 819,
+    "name": "skwovet",
+    "base_experience": 55,
+    "height": 3,
+    "weight": 25
+  },
+  {
+    "id": 820,
+    "name": "greedent",
+    "base_experience": 161,
+    "height": 6,
+    "weight": 60
+  },
+  {
+    "id": 821,
+    "name": "rookidee",
+    "base_experience": 49,
+    "height": 2,
+    "weight": 18
+  },
+  {
+    "id": 822,
+    "name": "corvisquire",
+    "base_experience": 128,
+    "height": 8,
+    "weight": 160
+  },
+  {
+    "id": 823,
+    "name": "corviknight",
+    "base_experience": 248,
+    "height": 22,
+    "weight": 750
+  },
+  {
+    "id": 824,
+    "name": "blipbug",
+    "base_experience": 36,
+    "height": 4,
+    "weight": 80
+  },
+  {
+    "id": 825,
+    "name": "dottler",
+    "base_experience": 117,
+    "height": 4,
+    "weight": 195
+  },
+  {
+    "id": 826,
+    "name": "orbeetle",
+    "base_experience": 253,
+    "height": 4,
+    "weight": 408
+  },
+  {
+    "id": 827,
+    "name": "nickit",
+    "base_experience": 49,
+    "height": 6,
+    "weight": 89
+  },
+  {
+    "id": 828,
+    "name": "thievul",
+    "base_experience": 159,
+    "height": 12,
+    "weight": 199
+  },
+  {
+    "id": 829,
+    "name": "gossifleur",
+    "base_experience": 50,
+    "height": 4,
+    "weight": 22
+  },
+  {
+    "id": 830,
+    "name": "eldegoss",
+    "base_experience": 161,
+    "height": 5,
+    "weight": 25
+  },
+  {
+    "id": 831,
+    "name": "wooloo",
+    "base_experience": 122,
+    "height": 6,
+    "weight": 60
+  },
+  {
+    "id": 832,
+    "name": "dubwool",
+    "base_experience": 172,
+    "height": 13,
+    "weight": 430
+  },
+  {
+    "id": 833,
+    "name": "chewtle",
+    "base_experience": 57,
+    "height": 3,
+    "weight": 85
+  },
+  {
+    "id": 834,
+    "name": "drednaw",
+    "base_experience": 170,
+    "height": 10,
+    "weight": 1155
+  },
+  {
+    "id": 835,
+    "name": "yamper",
+    "base_experience": 54,
+    "height": 3,
+    "weight": 135
+  },
+  {
+    "id": 836,
+    "name": "boltund",
+    "base_experience": 172,
+    "height": 10,
+    "weight": 340
+  },
+  {
+    "id": 837,
+    "name": "rolycoly",
+    "base_experience": 48,
+    "height": 3,
+    "weight": 120
+  },
+  {
+    "id": 838,
+    "name": "carkol",
+    "base_experience": 144,
+    "height": 11,
+    "weight": 780
+  },
+  {
+    "id": 839,
+    "name": "coalossal",
+    "base_experience": 255,
+    "height": 28,
+    "weight": 3105
+  },
+  {
+    "id": 840,
+    "name": "applin",
+    "base_experience": 52,
+    "height": 2,
+    "weight": 5
+  },
+  {
+    "id": 841,
+    "name": "flapple",
+    "base_experience": 170,
+    "height": 3,
+    "weight": 10
+  },
+  {
+    "id": 842,
+    "name": "appletun",
+    "base_experience": 170,
+    "height": 4,
+    "weight": 130
+  },
+  {
+    "id": 843,
+    "name": "silicobra",
+    "base_experience": 63,
+    "height": 22,
+    "weight": 76
+  },
+  {
+    "id": 844,
+    "name": "sandaconda",
+    "base_experience": 179,
+    "height": 38,
+    "weight": 655
+  },
+  {
+    "id": 845,
+    "name": "cramorant",
+    "base_experience": 166,
+    "height": 8,
+    "weight": 180
+  },
+  {
+    "id": 846,
+    "name": "arrokuda",
+    "base_experience": 56,
+    "height": 5,
+    "weight": 10
+  },
+  {
+    "id": 847,
+    "name": "barraskewda",
+    "base_experience": 172,
+    "height": 13,
+    "weight": 300
+  },
+  {
+    "id": 848,
+    "name": "toxel",
+    "base_experience": 48,
+    "height": 4,
+    "weight": 110
+  },
+  {
+    "id": 849,
+    "name": "toxtricity-amped",
+    "base_experience": 176,
+    "height": 16,
+    "weight": 400
+  },
+  {
+    "id": 850,
+    "name": "sizzlipede",
+    "base_experience": 61,
+    "height": 7,
+    "weight": 10
+  },
+  {
+    "id": 851,
+    "name": "centiskorch",
+    "base_experience": 184,
+    "height": 30,
+    "weight": 1200
+  },
+  {
+    "id": 852,
+    "name": "clobbopus",
+    "base_experience": 62,
+    "height": 6,
+    "weight": 40
+  },
+  {
+    "id": 853,
+    "name": "grapploct",
+    "base_experience": 168,
+    "height": 16,
+    "weight": 390
+  },
+  {
+    "id": 854,
+    "name": "sinistea",
+    "base_experience": 62,
+    "height": 1,
+    "weight": 2
+  },
+  {
+    "id": 855,
+    "name": "polteageist",
+    "base_experience": 178,
+    "height": 2,
+    "weight": 4
+  },
+  {
+    "id": 856,
+    "name": "hatenna",
+    "base_experience": 53,
+    "height": 4,
+    "weight": 34
+  },
+  {
+    "id": 857,
+    "name": "hattrem",
+    "base_experience": 130,
+    "height": 6,
+    "weight": 48
+  },
+  {
+    "id": 858,
+    "name": "hatterene",
+    "base_experience": 255,
+    "height": 21,
+    "weight": 51
+  },
+  {
+    "id": 859,
+    "name": "impidimp",
+    "base_experience": 53,
+    "height": 4,
+    "weight": 55
+  },
+  {
+    "id": 860,
+    "name": "morgrem",
+    "base_experience": 130,
+    "height": 8,
+    "weight": 125
+  },
+  {
+    "id": 861,
+    "name": "grimmsnarl",
+    "base_experience": 255,
+    "height": 15,
+    "weight": 610
+  },
+  {
+    "id": 862,
+    "name": "obstagoon",
+    "base_experience": 260,
+    "height": 16,
+    "weight": 460
+  },
+  {
+    "id": 863,
+    "name": "perrserker",
+    "base_experience": 154,
+    "height": 8,
+    "weight": 280
+  },
+  {
+    "id": 864,
+    "name": "cursola",
+    "base_experience": 179,
+    "height": 10,
+    "weight": 4
+  },
+  {
+    "id": 865,
+    "name": "sirfetchd",
+    "base_experience": 177,
+    "height": 8,
+    "weight": 1170
+  },
+  {
+    "id": 866,
+    "name": "mr-rime",
+    "base_experience": 182,
+    "height": 15,
+    "weight": 582
+  },
+  {
+    "id": 867,
+    "name": "runerigus",
+    "base_experience": 169,
+    "height": 16,
+    "weight": 666
+  },
+  {
+    "id": 868,
+    "name": "milcery",
+    "base_experience": 54,
+    "height": 2,
+    "weight": 3
+  },
+  {
+    "id": 869,
+    "name": "alcremie",
+    "base_experience": 173,
+    "height": 3,
+    "weight": 5
+  },
+  {
+    "id": 870,
+    "name": "falinks",
+    "base_experience": 165,
+    "height": 30,
+    "weight": 620
+  },
+  {
+    "id": 871,
+    "name": "pincurchin",
+    "base_experience": 152,
+    "height": 3,
+    "weight": 10
+  },
+  {
+    "id": 872,
+    "name": "snom",
+    "base_experience": 37,
+    "height": 3,
+    "weight": 38
+  },
+  {
+    "id": 873,
+    "name": "frosmoth",
+    "base_experience": 166,
+    "height": 13,
+    "weight": 420
+  },
+  {
+    "id": 874,
+    "name": "stonjourner",
+    "base_experience": 165,
+    "height": 25,
+    "weight": 5200
+  },
+  {
+    "id": 875,
+    "name": "eiscue-ice",
+    "base_experience": 165,
+    "height": 14,
+    "weight": 890
+  },
+  {
+    "id": 876,
+    "name": "indeedee-male",
+    "base_experience": 166,
+    "height": 9,
+    "weight": 280
+  },
+  {
+    "id": 877,
+    "name": "morpeko-full-belly",
+    "base_experience": 153,
+    "height": 3,
+    "weight": 30
+  },
+  {
+    "id": 878,
+    "name": "cufant",
+    "base_experience": 66,
+    "height": 12,
+    "weight": 1000
+  },
+  {
+    "id": 879,
+    "name": "copperajah",
+    "base_experience": 175,
+    "height": 30,
+    "weight": 6500
+  },
+  {
+    "id": 880,
+    "name": "dracozolt",
+    "base_experience": 177,
+    "height": 18,
+    "weight": 1900
+  },
+  {
+    "id": 881,
+    "name": "arctozolt",
+    "base_experience": 177,
+    "height": 23,
+    "weight": 1500
+  },
+  {
+    "id": 882,
+    "name": "dracovish",
+    "base_experience": 177,
+    "height": 23,
+    "weight": 2150
+  },
+  {
+    "id": 883,
+    "name": "arctovish",
+    "base_experience": 177,
+    "height": 20,
+    "weight": 1750
+  },
+  {
+    "id": 884,
+    "name": "duraludon",
+    "base_experience": 187,
+    "height": 18,
+    "weight": 400
+  },
+  {
+    "id": 885,
+    "name": "dreepy",
+    "base_experience": 54,
+    "height": 5,
+    "weight": 20
+  },
+  {
+    "id": 886,
+    "name": "drakloak",
+    "base_experience": 144,
+    "height": 14,
+    "weight": 110
+  },
+  {
+    "id": 887,
+    "name": "dragapult",
+    "base_experience": 300,
+    "height": 30,
+    "weight": 500
+  },
+  {
+    "id": 888,
+    "name": "zacian",
+    "base_experience": 335,
+    "height": 28,
+    "weight": 1100
+  },
+  {
+    "id": 889,
+    "name": "zamazenta",
+    "base_experience": 335,
+    "height": 29,
+    "weight": 2100
+  },
+  {
+    "id": 890,
+    "name": "eternatus",
+    "base_experience": 345,
+    "height": 200,
+    "weight": 9500
+  },
+  {
+    "id": 891,
+    "name": "kubfu",
+    "base_experience": 77,
+    "height": 6,
+    "weight": 120
+  },
+  {
+    "id": 892,
+    "name": "urshifu-single-strike",
+    "base_experience": 275,
+    "height": 19,
+    "weight": 1050
+  },
+  {
+    "id": 893,
+    "name": "zarude",
+    "base_experience": 300,
+    "height": 18,
+    "weight": 700
+  },
+  {
+    "id": 894,
+    "name": "regieleki",
+    "base_experience": 290,
+    "height": 12,
+    "weight": 1450
+  },
+  {
+    "id": 895,
+    "name": "regidrago",
+    "base_experience": 290,
+    "height": 21,
+    "weight": 2000
+  },
+  {
+    "id": 896,
+    "name": "glastrier",
+    "base_experience": 290,
+    "height": 22,
+    "weight": 8000
+  },
+  {
+    "id": 897,
+    "name": "spectrier",
+    "base_experience": 290,
+    "height": 20,
+    "weight": 445
+  },
+  {
+    "id": 898,
+    "name": "calyrex",
+    "base_experience": 250,
+    "height": 11,
+    "weight": 77
+  },
+  {
+    "id": 899,
+    "name": "wyrdeer",
+    "base_experience": null,
+    "height": 18,
+    "weight": 951
+  },
+  {
+    "id": 900,
+    "name": "kleavor",
+    "base_experience": null,
+    "height": 18,
+    "weight": 890
+  },
+  {
+    "id": 901,
+    "name": "ursaluna",
+    "base_experience": null,
+    "height": 24,
+    "weight": 2900
+  },
+  {
+    "id": 902,
+    "name": "basculegion-male",
+    "base_experience": null,
+    "height": 30,
+    "weight": 1100
+  },
+  {
+    "id": 903,
+    "name": "sneasler",
+    "base_experience": null,
+    "height": 13,
+    "weight": 430
+  },
+  {
+    "id": 904,
+    "name": "overqwil",
+    "base_experience": null,
+    "height": 25,
+    "weight": 605
+  },
+  {
+    "id": 905,
+    "name": "enamorus-incarnate",
+    "base_experience": null,
+    "height": 16,
+    "weight": 480
+  },
+  {
+    "id": 906,
+    "name": "sprigatito",
+    "base_experience": null,
+    "height": 4,
+    "weight": 41
+  },
+  {
+    "id": 907,
+    "name": "floragato",
+    "base_experience": null,
+    "height": 9,
+    "weight": 122
+  },
+  {
+    "id": 908,
+    "name": "meowscarada",
+    "base_experience": null,
+    "height": 15,
+    "weight": 312
+  },
+  {
+    "id": 909,
+    "name": "fuecoco",
+    "base_experience": null,
+    "height": 4,
+    "weight": 98
+  },
+  {
+    "id": 910,
+    "name": "crocalor",
+    "base_experience": null,
+    "height": 10,
+    "weight": 307
+  },
+  {
+    "id": 911,
+    "name": "skeledirge",
+    "base_experience": null,
+    "height": 16,
+    "weight": 3265
+  },
+  {
+    "id": 912,
+    "name": "quaxly",
+    "base_experience": null,
+    "height": 5,
+    "weight": 61
+  },
+  {
+    "id": 913,
+    "name": "quaxwell",
+    "base_experience": null,
+    "height": 12,
+    "weight": 215
+  },
+  {
+    "id": 914,
+    "name": "quaquaval",
+    "base_experience": null,
+    "height": 18,
+    "weight": 619
+  },
+  {
+    "id": 915,
+    "name": "lechonk",
+    "base_experience": null,
+    "height": 5,
+    "weight": 102
+  },
+  {
+    "id": 916,
+    "name": "oinkologne",
+    "base_experience": null,
+    "height": 10,
+    "weight": 1200
+  },
+  {
+    "id": 917,
+    "name": "tarountula",
+    "base_experience": null,
+    "height": 3,
+    "weight": 40
+  },
+  {
+    "id": 918,
+    "name": "spidops",
+    "base_experience": null,
+    "height": 10,
+    "weight": 165
+  },
+  {
+    "id": 919,
+    "name": "nymble",
+    "base_experience": null,
+    "height": 2,
+    "weight": 10
+  },
+  {
+    "id": 920,
+    "name": "lokix",
+    "base_experience": null,
+    "height": 10,
+    "weight": 175
+  },
+  {
+    "id": 921,
+    "name": "pawmi",
+    "base_experience": null,
+    "height": 3,
+    "weight": 25
+  },
+  {
+    "id": 922,
+    "name": "pawmo",
+    "base_experience": null,
+    "height": 4,
+    "weight": 65
+  },
+  {
+    "id": 923,
+    "name": "pawmot",
+    "base_experience": null,
+    "height": 9,
+    "weight": 410
+  },
+  {
+    "id": 924,
+    "name": "tandemaus",
+    "base_experience": null,
+    "height": 3,
+    "weight": 18
+  },
+  {
+    "id": 925,
+    "name": "maushold",
+    "base_experience": null,
+    "height": 3,
+    "weight": 23
+  },
+  {
+    "id": 926,
+    "name": "fidough",
+    "base_experience": null,
+    "height": 3,
+    "weight": 109
+  },
+  {
+    "id": 927,
+    "name": "dachsbun",
+    "base_experience": null,
+    "height": 5,
+    "weight": 149
+  },
+  {
+    "id": 928,
+    "name": "smoliv",
+    "base_experience": null,
+    "height": 3,
+    "weight": 65
+  },
+  {
+    "id": 929,
+    "name": "dolliv",
+    "base_experience": null,
+    "height": 6,
+    "weight": 119
+  },
+  {
+    "id": 930,
+    "name": "arboliva",
+    "base_experience": null,
+    "height": 14,
+    "weight": 482
+  },
+  {
+    "id": 931,
+    "name": "squawkabilly",
+    "base_experience": null,
+    "height": 6,
+    "weight": 24
+  },
+  {
+    "id": 932,
+    "name": "nacli",
+    "base_experience": null,
+    "height": 4,
+    "weight": 160
+  },
+  {
+    "id": 933,
+    "name": "naclstack",
+    "base_experience": null,
+    "height": 6,
+    "weight": 1050
+  },
+  {
+    "id": 934,
+    "name": "garganacl",
+    "base_experience": null,
+    "height": 23,
+    "weight": 2400
+  },
+  {
+    "id": 935,
+    "name": "charcadet",
+    "base_experience": null,
+    "height": 6,
+    "weight": 105
+  },
+  {
+    "id": 936,
+    "name": "armarouge",
+    "base_experience": null,
+    "height": 15,
+    "weight": 850
+  },
+  {
+    "id": 937,
+    "name": "ceruledge",
+    "base_experience": null,
+    "height": 16,
+    "weight": 620
+  },
+  {
+    "id": 938,
+    "name": "tadbulb",
+    "base_experience": null,
+    "height": 3,
+    "weight": 4
+  },
+  {
+    "id": 939,
+    "name": "bellibolt",
+    "base_experience": null,
+    "height": 12,
+    "weight": 1130
+  },
+  {
+    "id": 940,
+    "name": "wattrel",
+    "base_experience": null,
+    "height": 4,
+    "weight": 36
+  },
+  {
+    "id": 941,
+    "name": "kilowattrel",
+    "base_experience": null,
+    "height": 14,
+    "weight": 386
+  },
+  {
+    "id": 942,
+    "name": "maschiff",
+    "base_experience": null,
+    "height": 5,
+    "weight": 160
+  },
+  {
+    "id": 943,
+    "name": "mabosstiff",
+    "base_experience": null,
+    "height": 11,
+    "weight": 610
+  },
+  {
+    "id": 944,
+    "name": "shroodle",
+    "base_experience": null,
+    "height": 2,
+    "weight": 7
+  },
+  {
+    "id": 945,
+    "name": "grafaiai",
+    "base_experience": null,
+    "height": 7,
+    "weight": 272
+  },
+  {
+    "id": 946,
+    "name": "bramblin",
+    "base_experience": null,
+    "height": 6,
+    "weight": 6
+  },
+  {
+    "id": 947,
+    "name": "brambleghast",
+    "base_experience": null,
+    "height": 12,
+    "weight": 60
+  },
+  {
+    "id": 948,
+    "name": "toedscool",
+    "base_experience": null,
+    "height": 9,
+    "weight": 330
+  },
+  {
+    "id": 949,
+    "name": "toedscruel",
+    "base_experience": null,
+    "height": 19,
+    "weight": 580
+  },
+  {
+    "id": 950,
+    "name": "klawf",
+    "base_experience": null,
+    "height": 13,
+    "weight": 790
+  },
+  {
+    "id": 951,
+    "name": "capsakid",
+    "base_experience": null,
+    "height": 3,
+    "weight": 30
+  },
+  {
+    "id": 952,
+    "name": "scovillain",
+    "base_experience": null,
+    "height": 9,
+    "weight": 150
+  },
+  {
+    "id": 953,
+    "name": "rellor",
+    "base_experience": null,
+    "height": 2,
+    "weight": 10
+  },
+  {
+    "id": 954,
+    "name": "rabsca",
+    "base_experience": null,
+    "height": 3,
+    "weight": 35
+  },
+  {
+    "id": 955,
+    "name": "flittle",
+    "base_experience": null,
+    "height": 2,
+    "weight": 15
+  },
+  {
+    "id": 956,
+    "name": "espathra",
+    "base_experience": null,
+    "height": 19,
+    "weight": 900
+  },
+  {
+    "id": 957,
+    "name": "tinkatink",
+    "base_experience": null,
+    "height": 4,
+    "weight": 89
+  },
+  {
+    "id": 958,
+    "name": "tinkatuff",
+    "base_experience": null,
+    "height": 7,
+    "weight": 591
+  },
+  {
+    "id": 959,
+    "name": "tinkaton",
+    "base_experience": null,
+    "height": 7,
+    "weight": 1128
+  },
+  {
+    "id": 960,
+    "name": "wiglett",
+    "base_experience": null,
+    "height": 12,
+    "weight": 18
+  },
+  {
+    "id": 961,
+    "name": "wugtrio",
+    "base_experience": null,
+    "height": 12,
+    "weight": 54
+  },
+  {
+    "id": 962,
+    "name": "bombirdier",
+    "base_experience": null,
+    "height": 15,
+    "weight": 429
+  },
+  {
+    "id": 963,
+    "name": "finizen",
+    "base_experience": null,
+    "height": 13,
+    "weight": 602
+  },
+  {
+    "id": 964,
+    "name": "palafin",
+    "base_experience": null,
+    "height": 13,
+    "weight": 602
+  },
+  {
+    "id": 965,
+    "name": "varoom",
+    "base_experience": null,
+    "height": 10,
+    "weight": 350
+  },
+  {
+    "id": 966,
+    "name": "revavroom",
+    "base_experience": null,
+    "height": 18,
+    "weight": 1200
+  },
+  {
+    "id": 967,
+    "name": "cyclizar",
+    "base_experience": null,
+    "height": 16,
+    "weight": 630
+  },
+  {
+    "id": 968,
+    "name": "orthworm",
+    "base_experience": null,
+    "height": 25,
+    "weight": 3100
+  },
+  {
+    "id": 969,
+    "name": "glimmet",
+    "base_experience": null,
+    "height": 7,
+    "weight": 80
+  },
+  {
+    "id": 970,
+    "name": "glimmora",
+    "base_experience": null,
+    "height": 15,
+    "weight": 450
+  },
+  {
+    "id": 971,
+    "name": "greavard",
+    "base_experience": null,
+    "height": 6,
+    "weight": 350
+  },
+  {
+    "id": 972,
+    "name": "houndstone",
+    "base_experience": null,
+    "height": 20,
+    "weight": 150
+  },
+  {
+    "id": 973,
+    "name": "flamigo",
+    "base_experience": null,
+    "height": 16,
+    "weight": 370
+  },
+  {
+    "id": 974,
+    "name": "cetoddle",
+    "base_experience": null,
+    "height": 12,
+    "weight": 450
+  },
+  {
+    "id": 975,
+    "name": "cetitan",
+    "base_experience": null,
+    "height": 45,
+    "weight": 7000
+  },
+  {
+    "id": 976,
+    "name": "veluza",
+    "base_experience": null,
+    "height": 25,
+    "weight": 900
+  },
+  {
+    "id": 977,
+    "name": "dondozo",
+    "base_experience": null,
+    "height": 120,
+    "weight": 2200
+  },
+  {
+    "id": 978,
+    "name": "tatsugiri",
+    "base_experience": null,
+    "height": 3,
+    "weight": 80
+  },
+  {
+    "id": 979,
+    "name": "annihilape",
+    "base_experience": null,
+    "height": 12,
+    "weight": 560
+  },
+  {
+    "id": 980,
+    "name": "clodsire",
+    "base_experience": null,
+    "height": 18,
+    "weight": 2230
+  },
+  {
+    "id": 981,
+    "name": "farigiraf",
+    "base_experience": null,
+    "height": 32,
+    "weight": 1600
+  },
+  {
+    "id": 982,
+    "name": "dudunsparce",
+    "base_experience": null,
+    "height": 36,
+    "weight": 392
+  },
+  {
+    "id": 983,
+    "name": "kingambit",
+    "base_experience": null,
+    "height": 20,
+    "weight": 1200
+  },
+  {
+    "id": 984,
+    "name": "great-tusk",
+    "base_experience": null,
+    "height": 22,
+    "weight": 3200
+  },
+  {
+    "id": 985,
+    "name": "scream-tail",
+    "base_experience": null,
+    "height": 12,
+    "weight": 80
+  },
+  {
+    "id": 986,
+    "name": "brute-bonnet",
+    "base_experience": null,
+    "height": 12,
+    "weight": 210
+  },
+  {
+    "id": 987,
+    "name": "flutter-mane",
+    "base_experience": null,
+    "height": 14,
+    "weight": 40
+  },
+  {
+    "id": 988,
+    "name": "slither-wing",
+    "base_experience": null,
+    "height": 32,
+    "weight": 920
+  },
+  {
+    "id": 989,
+    "name": "sandy-shocks",
+    "base_experience": null,
+    "height": 23,
+    "weight": 600
+  },
+  {
+    "id": 990,
+    "name": "iron-treads",
+    "base_experience": null,
+    "height": 9,
+    "weight": 2400
+  },
+  {
+    "id": 991,
+    "name": "iron-bundle",
+    "base_experience": null,
+    "height": 6,
+    "weight": 110
+  },
+  {
+    "id": 992,
+    "name": "iron-hands",
+    "base_experience": null,
+    "height": 18,
+    "weight": 3807
+  },
+  {
+    "id": 993,
+    "name": "iron-jugulis",
+    "base_experience": null,
+    "height": 13,
+    "weight": 1110
+  },
+  {
+    "id": 994,
+    "name": "iron-moth",
+    "base_experience": null,
+    "height": 12,
+    "weight": 360
+  },
+  {
+    "id": 995,
+    "name": "iron-thorns",
+    "base_experience": null,
+    "height": 16,
+    "weight": 3030
+  },
+  {
+    "id": 996,
+    "name": "frigibax",
+    "base_experience": null,
+    "height": 5,
+    "weight": 170
+  },
+  {
+    "id": 997,
+    "name": "arctibax",
+    "base_experience": null,
+    "height": 8,
+    "weight": 300
+  },
+  {
+    "id": 998,
+    "name": "baxcalibur",
+    "base_experience": null,
+    "height": 21,
+    "weight": 2100
+  },
+  {
+    "id": 999,
+    "name": "gimmighoul",
+    "base_experience": null,
+    "height": 3,
+    "weight": 50
+  },
+  {
+    "id": 1000,
+    "name": "gholdengo",
+    "base_experience": null,
+    "height": 12,
+    "weight": 300
+  },
+  {
+    "id": 1001,
+    "name": "wo-chien",
+    "base_experience": null,
+    "height": 15,
+    "weight": 742
+  },
+  {
+    "id": 1002,
+    "name": "chien-pao",
+    "base_experience": null,
+    "height": 19,
+    "weight": 1522
+  },
+  {
+    "id": 1003,
+    "name": "ting-lu",
+    "base_experience": null,
+    "height": 27,
+    "weight": 6997
+  },
+  {
+    "id": 1004,
+    "name": "chi-yu",
+    "base_experience": null,
+    "height": 4,
+    "weight": 49
+  },
+  {
+    "id": 1005,
+    "name": "roaring-moon",
+    "base_experience": null,
+    "height": 20,
+    "weight": 3800
+  },
+  {
+    "id": 1006,
+    "name": "iron-valiant",
+    "base_experience": null,
+    "height": 14,
+    "weight": 350
+  },
+  {
+    "id": 1007,
+    "name": "koraidon",
+    "base_experience": null,
+    "height": 25,
+    "weight": 3030
+  },
+  {
+    "id": 1008,
+    "name": "miraidon",
+    "base_experience": null,
+    "height": 35,
+    "weight": 2400
+  },
+  {
+    "id": 1009,
+    "name": "walking-wake",
+    "base_experience": null,
+    "height": 35,
+    "weight": 2800
+  },
+  {
+    "id": 1010,
+    "name": "iron-leaves",
+    "base_experience": null,
+    "height": 15,
+    "weight": 1250
+  },
+  {
+    "id": 1011,
+    "name": "dipplin",
+    "base_experience": null,
+    "height": 4,
+    "weight": 97
+  },
+  {
+    "id": 1012,
+    "name": "poltchageist",
+    "base_experience": null,
+    "height": 1,
+    "weight": 11
+  },
+  {
+    "id": 1013,
+    "name": "sinistcha",
+    "base_experience": null,
+    "height": 2,
+    "weight": 22
+  },
+  {
+    "id": 1014,
+    "name": "okidogi",
+    "base_experience": null,
+    "height": 18,
+    "weight": 922
+  },
+  {
+    "id": 1015,
+    "name": "munkidori",
+    "base_experience": null,
+    "height": 10,
+    "weight": 122
+  },
+  {
+    "id": 1016,
+    "name": "fezandipiti",
+    "base_experience": null,
+    "height": 14,
+    "weight": 301
+  },
+  {
+    "id": 1017,
+    "name": "ogerpon",
+    "base_experience": null,
+    "height": 12,
+    "weight": 398
+  },
+  {
+    "id": 10001,
+    "name": "deoxys-attack",
+    "base_experience": 270,
+    "height": 17,
+    "weight": 608
+  },
+  {
+    "id": 10002,
+    "name": "deoxys-defense",
+    "base_experience": 270,
+    "height": 17,
+    "weight": 608
+  },
+  {
+    "id": 10003,
+    "name": "deoxys-speed",
+    "base_experience": 270,
+    "height": 17,
+    "weight": 608
+  },
+  {
+    "id": 10004,
+    "name": "wormadam-sandy",
+    "base_experience": 148,
+    "height": 5,
+    "weight": 65
+  },
+  {
+    "id": 10005,
+    "name": "wormadam-trash",
+    "base_experience": 148,
+    "height": 5,
+    "weight": 65
+  },
+  {
+    "id": 10006,
+    "name": "shaymin-sky",
+    "base_experience": 270,
+    "height": 4,
+    "weight": 52
+  },
+  {
+    "id": 10007,
+    "name": "giratina-origin",
+    "base_experience": 340,
+    "height": 69,
+    "weight": 6500
+  },
+  {
+    "id": 10008,
+    "name": "rotom-heat",
+    "base_experience": 182,
+    "height": 3,
+    "weight": 3
+  },
+  {
+    "id": 10009,
+    "name": "rotom-wash",
+    "base_experience": 182,
+    "height": 3,
+    "weight": 3
+  },
+  {
+    "id": 10010,
+    "name": "rotom-frost",
+    "base_experience": 182,
+    "height": 3,
+    "weight": 3
+  },
+  {
+    "id": 10011,
+    "name": "rotom-fan",
+    "base_experience": 182,
+    "height": 3,
+    "weight": 3
+  },
+  {
+    "id": 10012,
+    "name": "rotom-mow",
+    "base_experience": 182,
+    "height": 3,
+    "weight": 3
+  },
+  {
+    "id": 10013,
+    "name": "castform-sunny",
+    "base_experience": 147,
+    "height": 3,
+    "weight": 8
+  },
+  {
+    "id": 10014,
+    "name": "castform-rainy",
+    "base_experience": 147,
+    "height": 3,
+    "weight": 8
+  },
+  {
+    "id": 10015,
+    "name": "castform-snowy",
+    "base_experience": 147,
+    "height": 3,
+    "weight": 8
+  },
+  {
+    "id": 10016,
+    "name": "basculin-blue-striped",
+    "base_experience": 161,
+    "height": 10,
+    "weight": 180
+  },
+  {
+    "id": 10017,
+    "name": "darmanitan-zen",
+    "base_experience": 189,
+    "height": 13,
+    "weight": 929
+  },
+  {
+    "id": 10018,
+    "name": "meloetta-pirouette",
+    "base_experience": 270,
+    "height": 6,
+    "weight": 65
+  },
+  {
+    "id": 10019,
+    "name": "tornadus-therian",
+    "base_experience": 290,
+    "height": 14,
+    "weight": 630
+  },
+  {
+    "id": 10020,
+    "name": "thundurus-therian",
+    "base_experience": 290,
+    "height": 30,
+    "weight": 610
+  },
+  {
+    "id": 10021,
+    "name": "landorus-therian",
+    "base_experience": 300,
+    "height": 13,
+    "weight": 680
+  },
+  {
+    "id": 10022,
+    "name": "kyurem-black",
+    "base_experience": 350,
+    "height": 33,
+    "weight": 3250
+  },
+  {
+    "id": 10023,
+    "name": "kyurem-white",
+    "base_experience": 350,
+    "height": 36,
+    "weight": 3250
+  },
+  {
+    "id": 10024,
+    "name": "keldeo-resolute",
+    "base_experience": 290,
+    "height": 14,
+    "weight": 485
+  },
+  {
+    "id": 10025,
+    "name": "meowstic-female",
+    "base_experience": 163,
+    "height": 6,
+    "weight": 85
+  },
+  {
+    "id": 10026,
+    "name": "aegislash-blade",
+    "base_experience": 250,
+    "height": 17,
+    "weight": 530
+  },
+  {
+    "id": 10027,
+    "name": "pumpkaboo-small",
+    "base_experience": 67,
+    "height": 3,
+    "weight": 35
+  },
+  {
+    "id": 10028,
+    "name": "pumpkaboo-large",
+    "base_experience": 67,
+    "height": 5,
+    "weight": 75
+  },
+  {
+    "id": 10029,
+    "name": "pumpkaboo-super",
+    "base_experience": 67,
+    "height": 8,
+    "weight": 150
+  },
+  {
+    "id": 10030,
+    "name": "gourgeist-small",
+    "base_experience": 173,
+    "height": 7,
+    "weight": 95
+  },
+  {
+    "id": 10031,
+    "name": "gourgeist-large",
+    "base_experience": 173,
+    "height": 11,
+    "weight": 140
+  },
+  {
+    "id": 10032,
+    "name": "gourgeist-super",
+    "base_experience": 173,
+    "height": 17,
+    "weight": 390
+  },
+  {
+    "id": 10033,
+    "name": "venusaur-mega",
+    "base_experience": 281,
+    "height": 24,
+    "weight": 1555
+  },
+  {
+    "id": 10034,
+    "name": "charizard-mega-x",
+    "base_experience": 285,
+    "height": 17,
+    "weight": 1105
+  },
+  {
+    "id": 10035,
+    "name": "charizard-mega-y",
+    "base_experience": 285,
+    "height": 17,
+    "weight": 1005
+  },
+  {
+    "id": 10036,
+    "name": "blastoise-mega",
+    "base_experience": 284,
+    "height": 16,
+    "weight": 1011
+  },
+  {
+    "id": 10037,
+    "name": "alakazam-mega",
+    "base_experience": 270,
+    "height": 12,
+    "weight": 480
+  },
+  {
+    "id": 10038,
+    "name": "gengar-mega",
+    "base_experience": 270,
+    "height": 14,
+    "weight": 405
+  },
+  {
+    "id": 10039,
+    "name": "kangaskhan-mega",
+    "base_experience": 207,
+    "height": 22,
+    "weight": 1000
+  },
+  {
+    "id": 10040,
+    "name": "pinsir-mega",
+    "base_experience": 210,
+    "height": 17,
+    "weight": 590
+  },
+  {
+    "id": 10041,
+    "name": "gyarados-mega",
+    "base_experience": 224,
+    "height": 65,
+    "weight": 3050
+  },
+  {
+    "id": 10042,
+    "name": "aerodactyl-mega",
+    "base_experience": 215,
+    "height": 21,
+    "weight": 790
+  },
+  {
+    "id": 10043,
+    "name": "mewtwo-mega-x",
+    "base_experience": 351,
+    "height": 23,
+    "weight": 1270
+  },
+  {
+    "id": 10044,
+    "name": "mewtwo-mega-y",
+    "base_experience": 351,
+    "height": 15,
+    "weight": 330
+  },
+  {
+    "id": 10045,
+    "name": "ampharos-mega",
+    "base_experience": 275,
+    "height": 14,
+    "weight": 615
+  },
+  {
+    "id": 10046,
+    "name": "scizor-mega",
+    "base_experience": 210,
+    "height": 20,
+    "weight": 1250
+  },
+  {
+    "id": 10047,
+    "name": "heracross-mega",
+    "base_experience": 210,
+    "height": 17,
+    "weight": 625
+  },
+  {
+    "id": 10048,
+    "name": "houndoom-mega",
+    "base_experience": 210,
+    "height": 19,
+    "weight": 495
+  },
+  {
+    "id": 10049,
+    "name": "tyranitar-mega",
+    "base_experience": 315,
+    "height": 25,
+    "weight": 2550
+  },
+  {
+    "id": 10050,
+    "name": "blaziken-mega",
+    "base_experience": 284,
+    "height": 19,
+    "weight": 520
+  },
+  {
+    "id": 10051,
+    "name": "gardevoir-mega",
+    "base_experience": 278,
+    "height": 16,
+    "weight": 484
+  },
+  {
+    "id": 10052,
+    "name": "mawile-mega",
+    "base_experience": 168,
+    "height": 10,
+    "weight": 235
+  },
+  {
+    "id": 10053,
+    "name": "aggron-mega",
+    "base_experience": 284,
+    "height": 22,
+    "weight": 3950
+  },
+  {
+    "id": 10054,
+    "name": "medicham-mega",
+    "base_experience": 179,
+    "height": 13,
+    "weight": 315
+  },
+  {
+    "id": 10055,
+    "name": "manectric-mega",
+    "base_experience": 201,
+    "height": 18,
+    "weight": 440
+  },
+  {
+    "id": 10056,
+    "name": "banette-mega",
+    "base_experience": 194,
+    "height": 12,
+    "weight": 130
+  },
+  {
+    "id": 10057,
+    "name": "absol-mega",
+    "base_experience": 198,
+    "height": 12,
+    "weight": 490
+  },
+  {
+    "id": 10058,
+    "name": "garchomp-mega",
+    "base_experience": 315,
+    "height": 19,
+    "weight": 950
+  },
+  {
+    "id": 10059,
+    "name": "lucario-mega",
+    "base_experience": 219,
+    "height": 13,
+    "weight": 575
+  },
+  {
+    "id": 10060,
+    "name": "abomasnow-mega",
+    "base_experience": 208,
+    "height": 27,
+    "weight": 1850
+  },
+  {
+    "id": 10061,
+    "name": "floette-eternal",
+    "base_experience": 243,
+    "height": 2,
+    "weight": 9
+  },
+  {
+    "id": 10062,
+    "name": "latias-mega",
+    "base_experience": 315,
+    "height": 18,
+    "weight": 520
+  },
+  {
+    "id": 10063,
+    "name": "latios-mega",
+    "base_experience": 315,
+    "height": 23,
+    "weight": 700
+  },
+  {
+    "id": 10064,
+    "name": "swampert-mega",
+    "base_experience": 286,
+    "height": 19,
+    "weight": 1020
+  },
+  {
+    "id": 10065,
+    "name": "sceptile-mega",
+    "base_experience": 284,
+    "height": 19,
+    "weight": 552
+  },
+  {
+    "id": 10066,
+    "name": "sableye-mega",
+    "base_experience": 168,
+    "height": 5,
+    "weight": 1610
+  },
+  {
+    "id": 10067,
+    "name": "altaria-mega",
+    "base_experience": 207,
+    "height": 15,
+    "weight": 206
+  },
+  {
+    "id": 10068,
+    "name": "gallade-mega",
+    "base_experience": 278,
+    "height": 16,
+    "weight": 564
+  },
+  {
+    "id": 10069,
+    "name": "audino-mega",
+    "base_experience": 425,
+    "height": 15,
+    "weight": 320
+  },
+  {
+    "id": 10070,
+    "name": "sharpedo-mega",
+    "base_experience": 196,
+    "height": 25,
+    "weight": 1303
+  },
+  {
+    "id": 10071,
+    "name": "slowbro-mega",
+    "base_experience": 207,
+    "height": 20,
+    "weight": 1200
+  },
+  {
+    "id": 10072,
+    "name": "steelix-mega",
+    "base_experience": 214,
+    "height": 105,
+    "weight": 7400
+  },
+  {
+    "id": 10073,
+    "name": "pidgeot-mega",
+    "base_experience": 261,
+    "height": 22,
+    "weight": 505
+  },
+  {
+    "id": 10074,
+    "name": "glalie-mega",
+    "base_experience": 203,
+    "height": 21,
+    "weight": 3502
+  },
+  {
+    "id": 10075,
+    "name": "diancie-mega",
+    "base_experience": 315,
+    "height": 11,
+    "weight": 278
+  },
+  {
+    "id": 10076,
+    "name": "metagross-mega",
+    "base_experience": 315,
+    "height": 25,
+    "weight": 9429
+  },
+  {
+    "id": 10077,
+    "name": "kyogre-primal",
+    "base_experience": 347,
+    "height": 98,
+    "weight": 4300
+  },
+  {
+    "id": 10078,
+    "name": "groudon-primal",
+    "base_experience": 347,
+    "height": 50,
+    "weight": 9997
+  },
+  {
+    "id": 10079,
+    "name": "rayquaza-mega",
+    "base_experience": 351,
+    "height": 108,
+    "weight": 3920
+  },
+  {
+    "id": 10080,
+    "name": "pikachu-rock-star",
+    "base_experience": 112,
+    "height": 4,
+    "weight": 60
+  },
+  {
+    "id": 10081,
+    "name": "pikachu-belle",
+    "base_experience": 112,
+    "height": 4,
+    "weight": 60
+  },
+  {
+    "id": 10082,
+    "name": "pikachu-pop-star",
+    "base_experience": 112,
+    "height": 4,
+    "weight": 60
+  },
+  {
+    "id": 10083,
+    "name": "pikachu-phd",
+    "base_experience": 112,
+    "height": 4,
+    "weight": 60
+  },
+  {
+    "id": 10084,
+    "name": "pikachu-libre",
+    "base_experience": 112,
+    "height": 4,
+    "weight": 60
+  },
+  {
+    "id": 10085,
+    "name": "pikachu-cosplay",
+    "base_experience": 112,
+    "height": 4,
+    "weight": 60
+  },
+  {
+    "id": 10086,
+    "name": "hoopa-unbound",
+    "base_experience": 306,
+    "height": 65,
+    "weight": 4900
+  },
+  {
+    "id": 10087,
+    "name": "camerupt-mega",
+    "base_experience": 196,
+    "height": 25,
+    "weight": 3205
+  },
+  {
+    "id": 10088,
+    "name": "lopunny-mega",
+    "base_experience": 203,
+    "height": 13,
+    "weight": 283
+  },
+  {
+    "id": 10089,
+    "name": "salamence-mega",
+    "base_experience": 315,
+    "height": 18,
+    "weight": 1126
+  },
+  {
+    "id": 10090,
+    "name": "beedrill-mega",
+    "base_experience": 223,
+    "height": 14,
+    "weight": 405
+  },
+  {
+    "id": 10091,
+    "name": "rattata-alola",
+    "base_experience": 51,
+    "height": 3,
+    "weight": 38
+  },
+  {
+    "id": 10092,
+    "name": "raticate-alola",
+    "base_experience": 145,
+    "height": 7,
+    "weight": 255
+  },
+  {
+    "id": 10093,
+    "name": "raticate-totem-alola",
+    "base_experience": 145,
+    "height": 14,
+    "weight": 1050
+  },
+  {
+    "id": 10094,
+    "name": "pikachu-original-cap",
+    "base_experience": 112,
+    "height": 4,
+    "weight": 60
+  },
+  {
+    "id": 10095,
+    "name": "pikachu-hoenn-cap",
+    "base_experience": 112,
+    "height": 4,
+    "weight": 60
+  },
+  {
+    "id": 10096,
+    "name": "pikachu-sinnoh-cap",
+    "base_experience": 112,
+    "height": 4,
+    "weight": 60
+  },
+  {
+    "id": 10097,
+    "name": "pikachu-unova-cap",
+    "base_experience": 112,
+    "height": 4,
+    "weight": 60
+  },
+  {
+    "id": 10098,
+    "name": "pikachu-kalos-cap",
+    "base_experience": 112,
+    "height": 4,
+    "weight": 60
+  },
+  {
+    "id": 10099,
+    "name": "pikachu-alola-cap",
+    "base_experience": 112,
+    "height": 4,
+    "weight": 60
+  },
+  {
+    "id": 10100,
+    "name": "raichu-alola",
+    "base_experience": 243,
+    "height": 7,
+    "weight": 210
+  },
+  {
+    "id": 10101,
+    "name": "sandshrew-alola",
+    "base_experience": 60,
+    "height": 7,
+    "weight": 400
+  },
+  {
+    "id": 10102,
+    "name": "sandslash-alola",
+    "base_experience": 158,
+    "height": 12,
+    "weight": 550
+  },
+  {
+    "id": 10103,
+    "name": "vulpix-alola",
+    "base_experience": 60,
+    "height": 6,
+    "weight": 99
+  },
+  {
+    "id": 10104,
+    "name": "ninetales-alola",
+    "base_experience": 177,
+    "height": 11,
+    "weight": 199
+  },
+  {
+    "id": 10105,
+    "name": "diglett-alola",
+    "base_experience": 53,
+    "height": 2,
+    "weight": 10
+  },
+  {
+    "id": 10106,
+    "name": "dugtrio-alola",
+    "base_experience": 149,
+    "height": 7,
+    "weight": 666
+  },
+  {
+    "id": 10107,
+    "name": "meowth-alola",
+    "base_experience": 58,
+    "height": 4,
+    "weight": 42
+  },
+  {
+    "id": 10108,
+    "name": "persian-alola",
+    "base_experience": 154,
+    "height": 11,
+    "weight": 330
+  },
+  {
+    "id": 10109,
+    "name": "geodude-alola",
+    "base_experience": 60,
+    "height": 4,
+    "weight": 203
+  },
+  {
+    "id": 10110,
+    "name": "graveler-alola",
+    "base_experience": 137,
+    "height": 10,
+    "weight": 1100
+  },
+  {
+    "id": 10111,
+    "name": "golem-alola",
+    "base_experience": 223,
+    "height": 17,
+    "weight": 3160
+  },
+  {
+    "id": 10112,
+    "name": "grimer-alola",
+    "base_experience": 65,
+    "height": 7,
+    "weight": 420
+  },
+  {
+    "id": 10113,
+    "name": "muk-alola",
+    "base_experience": 175,
+    "height": 10,
+    "weight": 520
+  },
+  {
+    "id": 10114,
+    "name": "exeggutor-alola",
+    "base_experience": 186,
+    "height": 109,
+    "weight": 4156
+  },
+  {
+    "id": 10115,
+    "name": "marowak-alola",
+    "base_experience": 149,
+    "height": 10,
+    "weight": 340
+  },
+  {
+    "id": 10116,
+    "name": "greninja-battle-bond",
+    "base_experience": 239,
+    "height": 15,
+    "weight": 400
+  },
+  {
+    "id": 10117,
+    "name": "greninja-ash",
+    "base_experience": 288,
+    "height": 15,
+    "weight": 400
+  },
+  {
+    "id": 10118,
+    "name": "zygarde-10-power-construct",
+    "base_experience": 243,
+    "height": 12,
+    "weight": 335
+  },
+  {
+    "id": 10119,
+    "name": "zygarde-50-power-construct",
+    "base_experience": 300,
+    "height": 50,
+    "weight": 3050
+  },
+  {
+    "id": 10120,
+    "name": "zygarde-complete",
+    "base_experience": 354,
+    "height": 45,
+    "weight": 6100
+  },
+  {
+    "id": 10121,
+    "name": "gumshoos-totem",
+    "base_experience": 146,
+    "height": 14,
+    "weight": 600
+  },
+  {
+    "id": 10122,
+    "name": "vikavolt-totem",
+    "base_experience": 225,
+    "height": 26,
+    "weight": 1475
+  },
+  {
+    "id": 10123,
+    "name": "oricorio-pom-pom",
+    "base_experience": 167,
+    "height": 6,
+    "weight": 34
+  },
+  {
+    "id": 10124,
+    "name": "oricorio-pau",
+    "base_experience": 167,
+    "height": 6,
+    "weight": 34
+  },
+  {
+    "id": 10125,
+    "name": "oricorio-sensu",
+    "base_experience": 167,
+    "height": 6,
+    "weight": 34
+  },
+  {
+    "id": 10126,
+    "name": "lycanroc-midnight",
+    "base_experience": 170,
+    "height": 11,
+    "weight": 250
+  },
+  {
+    "id": 10127,
+    "name": "wishiwashi-school",
+    "base_experience": 217,
+    "height": 82,
+    "weight": 786
+  },
+  {
+    "id": 10128,
+    "name": "lurantis-totem",
+    "base_experience": 168,
+    "height": 15,
+    "weight": 580
+  },
+  {
+    "id": 10129,
+    "name": "salazzle-totem",
+    "base_experience": 168,
+    "height": 21,
+    "weight": 810
+  },
+  {
+    "id": 10130,
+    "name": "minior-orange-meteor",
+    "base_experience": 154,
+    "height": 3,
+    "weight": 400
+  },
+  {
+    "id": 10131,
+    "name": "minior-yellow-meteor",
+    "base_experience": 154,
+    "height": 3,
+    "weight": 400
+  },
+  {
+    "id": 10132,
+    "name": "minior-green-meteor",
+    "base_experience": 154,
+    "height": 3,
+    "weight": 400
+  },
+  {
+    "id": 10133,
+    "name": "minior-blue-meteor",
+    "base_experience": 154,
+    "height": 3,
+    "weight": 400
+  },
+  {
+    "id": 10134,
+    "name": "minior-indigo-meteor",
+    "base_experience": 154,
+    "height": 3,
+    "weight": 400
+  },
+  {
+    "id": 10135,
+    "name": "minior-violet-meteor",
+    "base_experience": 154,
+    "height": 3,
+    "weight": 400
+  },
+  {
+    "id": 10136,
+    "name": "minior-red",
+    "base_experience": 175,
+    "height": 3,
+    "weight": 3
+  },
+  {
+    "id": 10137,
+    "name": "minior-orange",
+    "base_experience": 175,
+    "height": 3,
+    "weight": 3
+  },
+  {
+    "id": 10138,
+    "name": "minior-yellow",
+    "base_experience": 175,
+    "height": 3,
+    "weight": 3
+  },
+  {
+    "id": 10139,
+    "name": "minior-green",
+    "base_experience": 175,
+    "height": 3,
+    "weight": 3
+  },
+  {
+    "id": 10140,
+    "name": "minior-blue",
+    "base_experience": 175,
+    "height": 3,
+    "weight": 3
+  },
+  {
+    "id": 10141,
+    "name": "minior-indigo",
+    "base_experience": 175,
+    "height": 3,
+    "weight": 3
+  },
+  {
+    "id": 10142,
+    "name": "minior-violet",
+    "base_experience": 175,
+    "height": 3,
+    "weight": 3
+  },
+  {
+    "id": 10143,
+    "name": "mimikyu-busted",
+    "base_experience": 167,
+    "height": 2,
+    "weight": 7
+  },
+  {
+    "id": 10144,
+    "name": "mimikyu-totem-disguised",
+    "base_experience": 167,
+    "height": 4,
+    "weight": 28
+  },
+  {
+    "id": 10145,
+    "name": "mimikyu-totem-busted",
+    "base_experience": 167,
+    "height": 4,
+    "weight": 28
+  },
+  {
+    "id": 10146,
+    "name": "kommo-o-totem",
+    "base_experience": 270,
+    "height": 24,
+    "weight": 2075
+  },
+  {
+    "id": 10147,
+    "name": "magearna-original",
+    "base_experience": 300,
+    "height": 10,
+    "weight": 805
+  },
+  {
+    "id": 10148,
+    "name": "pikachu-partner-cap",
+    "base_experience": 112,
+    "height": 4,
+    "weight": 60
+  },
+  {
+    "id": 10149,
+    "name": "marowak-totem",
+    "base_experience": 149,
+    "height": 17,
+    "weight": 980
+  },
+  {
+    "id": 10150,
+    "name": "ribombee-totem",
+    "base_experience": 162,
+    "height": 4,
+    "weight": 20
+  },
+  {
+    "id": 10151,
+    "name": "rockruff-own-tempo",
+    "base_experience": 56,
+    "height": 5,
+    "weight": 92
+  },
+  {
+    "id": 10152,
+    "name": "lycanroc-dusk",
+    "base_experience": 170,
+    "height": 8,
+    "weight": 250
+  },
+  {
+    "id": 10153,
+    "name": "araquanid-totem",
+    "base_experience": 159,
+    "height": 31,
+    "weight": 2175
+  },
+  {
+    "id": 10154,
+    "name": "togedemaru-totem",
+    "base_experience": 152,
+    "height": 6,
+    "weight": 130
+  },
+  {
+    "id": 10155,
+    "name": "necrozma-dusk",
+    "base_experience": 340,
+    "height": 38,
+    "weight": 4600
+  },
+  {
+    "id": 10156,
+    "name": "necrozma-dawn",
+    "base_experience": 340,
+    "height": 42,
+    "weight": 3500
+  },
+  {
+    "id": 10157,
+    "name": "necrozma-ultra",
+    "base_experience": 339,
+    "height": 75,
+    "weight": 2300
+  },
+  {
+    "id": 10158,
+    "name": "pikachu-starter",
+    "base_experience": 86,
+    "height": 4,
+    "weight": 60
+  },
+  {
+    "id": 10159,
+    "name": "eevee-starter",
+    "base_experience": 87,
+    "height": 3,
+    "weight": 65
+  },
+  {
+    "id": 10160,
+    "name": "pikachu-world-cap",
+    "base_experience": 112,
+    "height": 4,
+    "weight": 60
+  },
+  {
+    "id": 10161,
+    "name": "meowth-galar",
+    "base_experience": 58,
+    "height": 4,
+    "weight": 75
+  },
+  {
+    "id": 10162,
+    "name": "ponyta-galar",
+    "base_experience": 82,
+    "height": 8,
+    "weight": 240
+  },
+  {
+    "id": 10163,
+    "name": "rapidash-galar",
+    "base_experience": 175,
+    "height": 17,
+    "weight": 800
+  },
+  {
+    "id": 10164,
+    "name": "slowpoke-galar",
+    "base_experience": 63,
+    "height": 12,
+    "weight": 360
+  },
+  {
+    "id": 10165,
+    "name": "slowbro-galar",
+    "base_experience": 172,
+    "height": 16,
+    "weight": 705
+  },
+  {
+    "id": 10166,
+    "name": "farfetchd-galar",
+    "base_experience": 132,
+    "height": 8,
+    "weight": 420
+  },
+  {
+    "id": 10167,
+    "name": "weezing-galar",
+    "base_experience": 172,
+    "height": 30,
+    "weight": 160
+  },
+  {
+    "id": 10168,
+    "name": "mr-mime-galar",
+    "base_experience": 161,
+    "height": 14,
+    "weight": 568
+  },
+  {
+    "id": 10169,
+    "name": "articuno-galar",
+    "base_experience": 290,
+    "height": 17,
+    "weight": 509
+  },
+  {
+    "id": 10170,
+    "name": "zapdos-galar",
+    "base_experience": 290,
+    "height": 16,
+    "weight": 582
+  },
+  {
+    "id": 10171,
+    "name": "moltres-galar",
+    "base_experience": 290,
+    "height": 20,
+    "weight": 660
+  },
+  {
+    "id": 10172,
+    "name": "slowking-galar",
+    "base_experience": 172,
+    "height": 18,
+    "weight": 795
+  },
+  {
+    "id": 10173,
+    "name": "corsola-galar",
+    "base_experience": 144,
+    "height": 6,
+    "weight": 5
+  },
+  {
+    "id": 10174,
+    "name": "zigzagoon-galar",
+    "base_experience": 56,
+    "height": 4,
+    "weight": 175
+  },
+  {
+    "id": 10175,
+    "name": "linoone-galar",
+    "base_experience": 147,
+    "height": 5,
+    "weight": 325
+  },
+  {
+    "id": 10176,
+    "name": "darumaka-galar",
+    "base_experience": 63,
+    "height": 7,
+    "weight": 400
+  },
+  {
+    "id": 10177,
+    "name": "darmanitan-galar-standard",
+    "base_experience": 168,
+    "height": 17,
+    "weight": 1200
+  },
+  {
+    "id": 10178,
+    "name": "darmanitan-galar-zen",
+    "base_experience": 189,
+    "height": 17,
+    "weight": 1200
+  },
+  {
+    "id": 10179,
+    "name": "yamask-galar",
+    "base_experience": 61,
+    "height": 5,
+    "weight": 15
+  },
+  {
+    "id": 10180,
+    "name": "stunfisk-galar",
+    "base_experience": 165,
+    "height": 7,
+    "weight": 205
+  },
+  {
+    "id": 10181,
+    "name": "zygarde-10",
+    "base_experience": 243,
+    "height": 12,
+    "weight": 335
+  },
+  {
+    "id": 10182,
+    "name": "cramorant-gulping",
+    "base_experience": 166,
+    "height": 8,
+    "weight": 180
+  },
+  {
+    "id": 10183,
+    "name": "cramorant-gorging",
+    "base_experience": 166,
+    "height": 8,
+    "weight": 180
+  },
+  {
+    "id": 10184,
+    "name": "toxtricity-low-key",
+    "base_experience": 176,
+    "height": 16,
+    "weight": 400
+  },
+  {
+    "id": 10185,
+    "name": "eiscue-noice",
+    "base_experience": 165,
+    "height": 14,
+    "weight": 890
+  },
+  {
+    "id": 10186,
+    "name": "indeedee-female",
+    "base_experience": 166,
+    "height": 9,
+    "weight": 280
+  },
+  {
+    "id": 10187,
+    "name": "morpeko-hangry",
+    "base_experience": 153,
+    "height": 3,
+    "weight": 30
+  },
+  {
+    "id": 10188,
+    "name": "zacian-crowned",
+    "base_experience": 360,
+    "height": 28,
+    "weight": 3550
+  },
+  {
+    "id": 10189,
+    "name": "zamazenta-crowned",
+    "base_experience": 360,
+    "height": 29,
+    "weight": 7850
+  },
+  {
+    "id": 10190,
+    "name": "eternatus-eternamax",
+    "base_experience": 563,
+    "height": 1000,
+    "weight": 0
+  },
+  {
+    "id": 10191,
+    "name": "urshifu-rapid-strike",
+    "base_experience": 275,
+    "height": 19,
+    "weight": 1050
+  },
+  {
+    "id": 10192,
+    "name": "zarude-dada",
+    "base_experience": 300,
+    "height": 18,
+    "weight": 700
+  },
+  {
+    "id": 10193,
+    "name": "calyrex-ice",
+    "base_experience": 340,
+    "height": 24,
+    "weight": 8091
+  },
+  {
+    "id": 10194,
+    "name": "calyrex-shadow",
+    "base_experience": 340,
+    "height": 24,
+    "weight": 536
+  },
+  {
+    "id": 10195,
+    "name": "venusaur-gmax",
+    "base_experience": 236,
+    "height": 240,
+    "weight": 10000
+  },
+  {
+    "id": 10196,
+    "name": "charizard-gmax",
+    "base_experience": 240,
+    "height": 280,
+    "weight": 10000
+  },
+  {
+    "id": 10197,
+    "name": "blastoise-gmax",
+    "base_experience": 239,
+    "height": 250,
+    "weight": 10000
+  },
+  {
+    "id": 10198,
+    "name": "butterfree-gmax",
+    "base_experience": 178,
+    "height": 170,
+    "weight": 10000
+  },
+  {
+    "id": 10199,
+    "name": "pikachu-gmax",
+    "base_experience": 112,
+    "height": 210,
+    "weight": 10000
+  },
+  {
+    "id": 10200,
+    "name": "meowth-gmax",
+    "base_experience": 58,
+    "height": 330,
+    "weight": 10000
+  },
+  {
+    "id": 10201,
+    "name": "machamp-gmax",
+    "base_experience": 227,
+    "height": 250,
+    "weight": 10000
+  },
+  {
+    "id": 10202,
+    "name": "gengar-gmax",
+    "base_experience": 225,
+    "height": 200,
+    "weight": 10000
+  },
+  {
+    "id": 10203,
+    "name": "kingler-gmax",
+    "base_experience": 166,
+    "height": 190,
+    "weight": 10000
+  },
+  {
+    "id": 10204,
+    "name": "lapras-gmax",
+    "base_experience": 187,
+    "height": 240,
+    "weight": 10000
+  },
+  {
+    "id": 10205,
+    "name": "eevee-gmax",
+    "base_experience": 65,
+    "height": 180,
+    "weight": 10000
+  },
+  {
+    "id": 10206,
+    "name": "snorlax-gmax",
+    "base_experience": 189,
+    "height": 350,
+    "weight": 10000
+  },
+  {
+    "id": 10207,
+    "name": "garbodor-gmax",
+    "base_experience": 166,
+    "height": 210,
+    "weight": 10000
+  },
+  {
+    "id": 10208,
+    "name": "melmetal-gmax",
+    "base_experience": 270,
+    "height": 250,
+    "weight": 10000
+  },
+  {
+    "id": 10209,
+    "name": "rillaboom-gmax",
+    "base_experience": 265,
+    "height": 280,
+    "weight": 10000
+  },
+  {
+    "id": 10210,
+    "name": "cinderace-gmax",
+    "base_experience": 265,
+    "height": 270,
+    "weight": 10000
+  },
+  {
+    "id": 10211,
+    "name": "inteleon-gmax",
+    "base_experience": 265,
+    "height": 400,
+    "weight": 10000
+  },
+  {
+    "id": 10212,
+    "name": "corviknight-gmax",
+    "base_experience": 248,
+    "height": 140,
+    "weight": 10000
+  },
+  {
+    "id": 10213,
+    "name": "orbeetle-gmax",
+    "base_experience": 253,
+    "height": 140,
+    "weight": 10000
+  },
+  {
+    "id": 10214,
+    "name": "drednaw-gmax",
+    "base_experience": 170,
+    "height": 240,
+    "weight": 10000
+  },
+  {
+    "id": 10215,
+    "name": "coalossal-gmax",
+    "base_experience": 255,
+    "height": 420,
+    "weight": 10000
+  },
+  {
+    "id": 10216,
+    "name": "flapple-gmax",
+    "base_experience": 170,
+    "height": 240,
+    "weight": 10000
+  },
+  {
+    "id": 10217,
+    "name": "appletun-gmax",
+    "base_experience": 170,
+    "height": 240,
+    "weight": 10000
+  },
+  {
+    "id": 10218,
+    "name": "sandaconda-gmax",
+    "base_experience": 179,
+    "height": 220,
+    "weight": 10000
+  },
+  {
+    "id": 10219,
+    "name": "toxtricity-amped-gmax",
+    "base_experience": 176,
+    "height": 240,
+    "weight": 10000
+  },
+  {
+    "id": 10220,
+    "name": "centiskorch-gmax",
+    "base_experience": 184,
+    "height": 750,
+    "weight": 10000
+  },
+  {
+    "id": 10221,
+    "name": "hatterene-gmax",
+    "base_experience": 255,
+    "height": 260,
+    "weight": 10000
+  },
+  {
+    "id": 10222,
+    "name": "grimmsnarl-gmax",
+    "base_experience": 255,
+    "height": 320,
+    "weight": 10000
+  },
+  {
+    "id": 10223,
+    "name": "alcremie-gmax",
+    "base_experience": 173,
+    "height": 300,
+    "weight": 10000
+  },
+  {
+    "id": 10224,
+    "name": "copperajah-gmax",
+    "base_experience": 175,
+    "height": 230,
+    "weight": 10000
+  },
+  {
+    "id": 10225,
+    "name": "duraludon-gmax",
+    "base_experience": 187,
+    "height": 430,
+    "weight": 10000
+  },
+  {
+    "id": 10226,
+    "name": "urshifu-single-strike-gmax",
+    "base_experience": 275,
+    "height": 290,
+    "weight": 10000
+  },
+  {
+    "id": 10227,
+    "name": "urshifu-rapid-strike-gmax",
+    "base_experience": 275,
+    "height": 260,
+    "weight": 10000
+  },
+  {
+    "id": 10228,
+    "name": "toxtricity-low-key-gmax",
+    "base_experience": 176,
+    "height": 240,
+    "weight": 10000
+  },
+  {
+    "id": 10229,
+    "name": "growlithe-hisui",
+    "base_experience": null,
+    "height": 8,
+    "weight": 227
+  },
+  {
+    "id": 10230,
+    "name": "arcanine-hisui",
+    "base_experience": null,
+    "height": 20,
+    "weight": 1680
+  },
+  {
+    "id": 10231,
+    "name": "voltorb-hisui",
+    "base_experience": null,
+    "height": 5,
+    "weight": 130
+  },
+  {
+    "id": 10232,
+    "name": "electrode-hisui",
+    "base_experience": null,
+    "height": 12,
+    "weight": 710
+  },
+  {
+    "id": 10233,
+    "name": "typhlosion-hisui",
+    "base_experience": null,
+    "height": 16,
+    "weight": 698
+  },
+  {
+    "id": 10234,
+    "name": "qwilfish-hisui",
+    "base_experience": null,
+    "height": 5,
+    "weight": 39
+  },
+  {
+    "id": 10235,
+    "name": "sneasel-hisui",
+    "base_experience": null,
+    "height": 9,
+    "weight": 270
+  },
+  {
+    "id": 10236,
+    "name": "samurott-hisui",
+    "base_experience": null,
+    "height": 15,
+    "weight": 582
+  },
+  {
+    "id": 10237,
+    "name": "lilligant-hisui",
+    "base_experience": null,
+    "height": 12,
+    "weight": 192
+  },
+  {
+    "id": 10238,
+    "name": "zorua-hisui",
+    "base_experience": null,
+    "height": 7,
+    "weight": 125
+  },
+  {
+    "id": 10239,
+    "name": "zoroark-hisui",
+    "base_experience": null,
+    "height": 16,
+    "weight": 730
+  },
+  {
+    "id": 10240,
+    "name": "braviary-hisui",
+    "base_experience": null,
+    "height": 17,
+    "weight": 434
+  },
+  {
+    "id": 10241,
+    "name": "sliggoo-hisui",
+    "base_experience": null,
+    "height": 7,
+    "weight": 685
+  },
+  {
+    "id": 10242,
+    "name": "goodra-hisui",
+    "base_experience": null,
+    "height": 17,
+    "weight": 3341
+  },
+  {
+    "id": 10243,
+    "name": "avalugg-hisui",
+    "base_experience": null,
+    "height": 14,
+    "weight": 2624
+  },
+  {
+    "id": 10244,
+    "name": "decidueye-hisui",
+    "base_experience": null,
+    "height": 16,
+    "weight": 370
+  },
+  {
+    "id": 10245,
+    "name": "dialga-origin",
+    "base_experience": null,
+    "height": 70,
+    "weight": 8487
+  },
+  {
+    "id": 10246,
+    "name": "palkia-origin",
+    "base_experience": null,
+    "height": 63,
+    "weight": 6590
+  },
+  {
+    "id": 10247,
+    "name": "basculin-white-striped",
+    "base_experience": null,
+    "height": 10,
+    "weight": 180
+  },
+  {
+    "id": 10248,
+    "name": "basculegion-female",
+    "base_experience": null,
+    "height": 30,
+    "weight": 1100
+  },
+  {
+    "id": 10249,
+    "name": "enamorus-therian",
+    "base_experience": null,
+    "height": 16,
+    "weight": 480
+  },
+  {
+    "id": 10250,
+    "name": "tauros-paldea-combat-breed",
+    "base_experience": null,
+    "height": 14,
+    "weight": 1150
+  },
+  {
+    "id": 10251,
+    "name": "tauros-paldea-blaze-breed",
+    "base_experience": null,
+    "height": 14,
+    "weight": 850
+  },
+  {
+    "id": 10252,
+    "name": "tauros-paldea-aqua-breed",
+    "base_experience": null,
+    "height": 14,
+    "weight": 1100
+  },
+  {
+    "id": 10253,
+    "name": "wooper-paldea",
+    "base_experience": null,
+    "height": 4,
+    "weight": 110
+  },
+  {
+    "id": 10254,
+    "name": "oinkologne-female",
+    "base_experience": null,
+    "height": 10,
+    "weight": 1200
+  },
+  {
+    "id": 10255,
+    "name": "dudunsparce-three-segment",
+    "base_experience": null,
+    "height": 45,
+    "weight": 474
+  },
+  {
+    "id": 10256,
+    "name": "palafin-hero",
+    "base_experience": null,
+    "height": 18,
+    "weight": 974
+  },
+  {
+    "id": 10257,
+    "name": "maushold-family-of-three",
+    "base_experience": null,
+    "height": 3,
+    "weight": 28
+  },
+  {
+    "id": 10258,
+    "name": "tatsugiri-droopy",
+    "base_experience": null,
+    "height": 3,
+    "weight": 80
+  },
+  {
+    "id": 10259,
+    "name": "tatsugiri-stretchy",
+    "base_experience": null,
+    "height": 3,
+    "weight": 80
+  },
+  {
+    "id": 10260,
+    "name": "squawkabilly-blue-plumage",
+    "base_experience": null,
+    "height": 6,
+    "weight": 24
+  },
+  {
+    "id": 10261,
+    "name": "squawkabilly-yellow-plumage",
+    "base_experience": null,
+    "height": 6,
+    "weight": 24
+  },
+  {
+    "id": 10262,
+    "name": "squawkabilly-white-plumage",
+    "base_experience": null,
+    "height": 6,
+    "weight": 24
+  },
+  {
+    "id": 10263,
+    "name": "gimmighoul-roaming",
+    "base_experience": null,
+    "height": 1,
+    "weight": 10
+  },
+  {
+    "id": 10264,
+    "name": "koraidon-limited-build",
+    "base_experience": null,
+    "height": 35,
+    "weight": 3030
+  },
+  {
+    "id": 10265,
+    "name": "koraidon-sprinting-build",
+    "base_experience": null,
+    "height": 35,
+    "weight": 3030
+  },
+  {
+    "id": 10266,
+    "name": "koraidon-swimming-build",
+    "base_experience": null,
+    "height": 35,
+    "weight": 3030
+  },
+  {
+    "id": 10267,
+    "name": "koraidon-gliding-build",
+    "base_experience": null,
+    "height": 35,
+    "weight": 3030
+  },
+  {
+    "id": 10268,
+    "name": "miraidon-low-power-mode",
+    "base_experience": null,
+    "height": 28,
+    "weight": 2400
+  },
+  {
+    "id": 10269,
+    "name": "miraidon-drive-mode",
+    "base_experience": null,
+    "height": 28,
+    "weight": 2400
+  },
+  {
+    "id": 10270,
+    "name": "miraidon-aquatic-mode",
+    "base_experience": null,
+    "height": 28,
+    "weight": 2400
+  },
+  {
+    "id": 10271,
+    "name": "miraidon-glide-mode",
+    "base_experience": null,
+    "height": 28,
+    "weight": 2400
+  },
+  {
+    "id": 10272,
+    "name": "ursaluna-bloodmoon",
+    "base_experience": null,
+    "height": 24,
+    "weight": 2900
+  },
+  {
+    "id": 10273,
+    "name": "ogerpon-wellspring-mask",
+    "base_experience": null,
+    "height": 12,
+    "weight": 398
+  },
+  {
+    "id": 10274,
+    "name": "ogerpon-hearthflame-mask",
+    "base_experience": null,
+    "height": 12,
+    "weight": 398
+  },
+  {
+    "id": 10275,
+    "name": "ogerpon-cornerstone-mask",
+    "base_experience": null,
+    "height": 12,
+    "weight": 398
+  }
+]
