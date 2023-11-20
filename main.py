@@ -3,7 +3,9 @@ import json
 
 arguments = sys.argv
 
-
-
-with open(filename, "r") as source:
-    data = json.load(source)
+with open("pokemons.json", "r") as source_pokedex:
+    data = json.load(source_pokedex)
+    #print(len(data))
+    
+for pokemon in data:
+    print(len(pokemon))
