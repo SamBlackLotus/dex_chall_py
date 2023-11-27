@@ -31,27 +31,27 @@ def cast_to_int(value):
 
 
 def process_pokemons(pokemons):
-    highest = {"idx": 0, "value": 0}
-    heaviest = {"idx": 0, "value": 0}
-    more_experience = {"idx": 0, "value": 0}
+    highest = {"index": 0, "value": 0}
+    heaviest = {"index": 0, "value": 0}
+    more_experience = {"index": 0, "value": 0}
     total_alolas = 0
     snorlax_height = 0
     charizard_height = 0
 
-    for idx, pokemon in enumerate(pokemons):
+    for index, pokemon in enumerate(pokemons):
         height_int = cast_to_int(pokemon["height"])
         if height_int > highest["value"]:
-            highest["idx"] = idx
+            highest["index"] = index
             highest["value"] = height_int
 
         weight_int = cast_to_int(pokemon["weight"])
         if weight_int > heaviest["value"]:
-            heaviest["idx"] = idx
+            heaviest["index"] = index
             heaviest["value"] = weight_int
 
         base_experience_int = cast_to_int(pokemon["base_experience"])
         if base_experience_int > more_experience["value"]:
-            more_experience["idx"] = idx
+            more_experience["index"] = index
             more_experience["value"] = base_experience_int
         
         if "alola" in pokemon["name"]:
@@ -65,12 +65,12 @@ def process_pokemons(pokemons):
 
     return Answers(
         total=len(pokemons),
-        highest_pokemon_name=pokemons[highest["idx"]]["name"],
-        highest_pokemon_value=pokemons[highest["idx"]]["height"],
-        heaviest_pokemon_name=pokemons[heaviest["idx"]]["name"],
-        heaviest_pokemon_value=pokemons[heaviest["idx"]]["weight"],
-        more_experience_pokemon_name=pokemons[more_experience["idx"]]["name"],
-        more_experience_pokemon_value=pokemons[more_experience["idx"]]["base_experience"],
+        highest_pokemon_name=pokemons[highest["index"]]["name"],
+        highest_pokemon_value=pokemons[highest["index"]]["height"],
+        heaviest_pokemon_name=pokemons[heaviest["index"]]["name"],
+        heaviest_pokemon_value=pokemons[heaviest["index"]]["weight"],
+        more_experience_pokemon_name=pokemons[more_experience["index"]]["name"],
+        more_experience_pokemon_value=pokemons[more_experience["index"]]["base_experience"],
         total_alolas=total_alolas,
         final_question=YesNo.YES if snorlax_height > charizard_height else YesNo.NO
     )
