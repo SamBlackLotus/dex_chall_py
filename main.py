@@ -1,48 +1,56 @@
+import os
 import sys
 import json
-import math
+
+def read_file(filename):
+    with open((filename), "r") as source_pokedex:
+        data = json.load(source_pokedex)
 
 
+def client_helper():
+    helper_msg = """
+    Hi! Welcome to the pokedex.
+    We will inform some statistic about your pokemon list.
 
-arguments = sys.argv[1]
+    To use it, please inform the filename that contains your pokemon list.
+    It should be a json file and each pokemon should be described as an item in a list with the following attributes:
 
-with open((arguments), "r") as source_pokedex:
-    data = json.load(source_pokedex)
+    - id: The identifier for this resource. integer
+    - name: The name for this resource. string
+    - base_experience: The base experience gained for defeating this Pokémon. integer
+    - height: The height of this Pokémon in decimetres. integer
+    - weight: The weight of this Pokémon in hectograms. integer
+    """
+    print(helper_msg)
 
-for pokemon in enumerate(data):
+def client_usage():
+    client_usage_msg = """
+    CLI usage:
+        > python3 main.py --filename pokemons.json 
+        > python3 main.py --help
+    """
+    return client_usage_msg
 
-    id_list = [pokemon["id"] for pokemon in data]    
-    name_list = [pokemon["name"] for pokemon in data]
-    base_experience_list = [pokemon["base_experience"] for pokemon in data if pokemon["base_experience"] is not None]    
-    height_list = [pokemon["height"] for pokemon in data]
-    weight_list = [pokemon["weight"] for pokemon in data]
-    alola_list = [pokemon["name"] for pokemon in data if "-alola" in pokemon["name"]]
+def main():
+    if len(sys.argv) == 1:
+        print(client_usage())
+        quit()
+        
+    elif len(sys.argv) > 3:
+        print("Warning! Incorrect amount of arguments.")
+        quit()
 
-highest_pokemon = max(height_list)
-heaviest_pokemon = max(weight_list)
-most_worthy = max(base_experience_list)
-alola_list = len(alola_list)
+    command = sys.argv[1]
 
+    if command == "--help":
+        client_helper()
+        quit()
 
-print('There are',len(data),'pokemon in the list.')  
-print(f'The highest pokemon is',data[1206]["name"])
-print(f'The heaviest pokemon is ',data[1211]["name"])
-print(f'The most worthy pokemon to defeat is',data[241]["name"])
-print('There are',alola_list,'alola pokemon')
+    elif command == "--filename":
+        if len(sys.argv) == 2:
+            print("Warning! Incorrect amount of arguments.")
+            quit()
+            
 
-
-
-charizard = data[5]["height"]
-snorlax = data[142]["height"]
-
-if snorlax > charizard:
-    answer = "Yes"
-else:
-    answer = "No"    
-
-print('Is snorlax bigger than charizard?', answer)
- 
-#for pokemon in data:
-    #print('\n id:',pokemon["id"],'\n name:',pokemon["name"],'\n base experience:'
-          #,pokemon["base_experience"],'\n height:',pokemon["height"],'\n weight:'
-          #,pokemon["weight"],'\n')
+if __name__ == "__main__":
+    main()            
