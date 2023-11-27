@@ -21,16 +21,16 @@ class Answers(TypedDict):
     final_question: YesNo
 
 
-def read_file(filepath: str) -> List[Dict[str, Union[str, int]]]:
+def read_file(filepath):
     with open((filepath), "r") as source_pokedex:
         return json.load(source_pokedex)
     
 
-def cast_to_int(value: Optional[str]) -> int:
+def cast_to_int(value):
     return int(value) if value is not None else 0
 
 
-def process_pokemons(pokemons: List[Dict[str, Union[str, int]]]) -> Dict[str, str]:
+def process_pokemons(pokemons):
     highest = {"idx": 0, "value": 0}
     heaviest = {"idx": 0, "value": 0}
     more_experience = {"idx": 0, "value": 0}
@@ -76,7 +76,7 @@ def process_pokemons(pokemons: List[Dict[str, Union[str, int]]]) -> Dict[str, st
     )
 
 
-def show_info(pokemons_info: Answers) -> None:
+def show_info(pokemons_info):
     msg = """
     Pokedex information:
 
