@@ -128,7 +128,7 @@ def cli_usage() -> str:
 
 def main():
     if len(sys.argv) == 1:
-        print(cli_usage())
+        cli_usage()
         quit()
 
     if len(sys.argv) > 3:
