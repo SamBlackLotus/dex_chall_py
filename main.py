@@ -19,6 +19,8 @@ class Answers(TypedDict):
     more_experience_pokemon_value: int
     total_alolas: int
     final_question: YesNo
+    smallest_pokemon_name: str
+    smallest_pokemon_value: int
 
 
 def read_file(filepath):
@@ -30,25 +32,35 @@ def cast_to_int(value):
     return int(value) if value is not None else 0
 
 
-def process_pokemons(pokemons):
+def process_pokemons(pokemons_data):
     highest = {"index": 0, "value": 0}
+    smallest = {"index": 0, "value": 0}
     heaviest = {"index": 0, "value": 0}
+    lightest = {"index": 0, "value": 0}
     more_experience = {"index": 0, "value": 0}
     total_alolas = 0
     snorlax_height = 0
     charizard_height = 0
 
-    for index, pokemon in enumerate(pokemons):
+    for index, pokemon in enumerate(pokemons_data):
         height_int = cast_to_int(pokemon["height"])
         if height_int > highest["value"]:
             highest["index"] = index
             highest["value"] = height_int
+            
+        if height_int < smallest["value"] or smallest["value"] <= 0:
+            smallest["index"] = index
+            smallest["value"] = height_int    
 
         weight_int = cast_to_int(pokemon["weight"])
         if weight_int > heaviest["value"]:
             heaviest["index"] = index
             heaviest["value"] = weight_int
-
+        
+        if weight_int < lightest["value"] or lightest["value"] <= 0:
+            lightest["index"] = index
+            lightest["value"] = weight_int   
+            
         base_experience_int = cast_to_int(pokemon["base_experience"])
         if base_experience_int > more_experience["value"]:
             more_experience["index"] = index
@@ -64,15 +76,20 @@ def process_pokemons(pokemons):
             charizard_height = pokemon["height"]
 
     return Answers(
-        total=len(pokemons),
-        highest_pokemon_name=pokemons[highest["index"]]["name"],
-        highest_pokemon_value=pokemons[highest["index"]]["height"],
-        heaviest_pokemon_name=pokemons[heaviest["index"]]["name"],
-        heaviest_pokemon_value=pokemons[heaviest["index"]]["weight"],
-        more_experience_pokemon_name=pokemons[more_experience["index"]]["name"],
-        more_experience_pokemon_value=pokemons[more_experience["index"]]["base_experience"],
+        total=len(pokemons_data),
+        highest_pokemon_name=pokemons_data[highest["index"]]["name"],
+        highest_pokemon_value=pokemons_data[highest["index"]]["height"],
+        smallest_pokemon_name=pokemons_data[smallest["index"]]["name"],
+        smallest_pokemon_value=pokemons_data[smallest["index"]]["height"],         
+        heaviest_pokemon_name=pokemons_data[heaviest["index"]]["name"],
+        heaviest_pokemon_value=pokemons_data[heaviest["index"]]["weight"],
+        lightest_pokemon_name=pokemons_data[lightest["index"]]["name"],
+        lightest_pokemon_value=pokemons_data[lightest["index"]]["weight"],        
+        more_experience_pokemon_name=pokemons_data[more_experience["index"]]["name"],
+        more_experience_pokemon_value=pokemons_data[more_experience["index"]]["base_experience"],
         total_alolas=total_alolas,
-        final_question=YesNo.YES if snorlax_height > charizard_height else YesNo.NO
+        final_question=YesNo.YES if snorlax_height > charizard_height else YesNo.NO,
+       
     )
 
 
@@ -84,15 +101,19 @@ def show_info(pokemons_info):
         > {total} pokemons.
     2. Which one is the highest:
         > Pokemon {highest_pokemon_name} with {highest_pokemon_value} decimetres.
-    3. Which one is the heaviest:
+    3. Which one is the smallest:
+        > Pokemon {smallest_pokemon_name} with {smallest_pokemon_value} decimetres.    
+    4. Which one is the heaviest:
         > Pokemon {heaviest_pokemon_name} with {heaviest_pokemon_value} hectograms.
-    4. Which one is more worthy of defeating based on the experience gained from defeating them:
+    5. Which one is the lightest:
+        > Pokemon {lightest_pokemon_name} with {lightest_pokemon_value} hectograms.            
+    6. Which one is more worthy of defeating based on the experience gained from defeating them:
         > Pokemon {more_experience_pokemon_name} with {more_experience_pokemon_value} base experience.
-    5. How many alola pokemons there is:
+    7. How many alola pokemons there is:
         > {total_alolas} alola pokemons.
-    6. Is snorlax bigger than charizard:
+    8. Is snorlax bigger than charizard:
         > {final_question}
-
+    
     Thanks for using this pokedex!
     """
     print(msg.format(**pokemons_info))
@@ -146,14 +167,14 @@ def main():
     
         filepath = sys.argv[2]
         if not os.path.exists(filepath):
-                print(f"WARNING: File {filepath} don't exist.")
+                print(f"WARNING: File {filepath} does not exist.")
                 quit()        
 
         data = read_file(filepath)
         info = process_pokemons(data)
         show_info(info)
     else:
-        print(f"WARNING: This command don't exist.\n{client_usage()}")
+        print(f"WARNING: This command does not exist.\n{client_usage()}")
 
         
 if __name__ == "__main__":
