@@ -8,7 +8,7 @@
 - Git, Github
 - Poetry
 - FastAPI
-- PostgreeSQL
+- PostgreSQL
 
 
 ### The roadmap so far...
