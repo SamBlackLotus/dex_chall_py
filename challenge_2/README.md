@@ -6,8 +6,8 @@ Your podekex CLI will change a bit, it will receive 2 files containing pokedexes
 
 The new CLI interface needs to be the following:
 ```sh
-python pokedex.py --player1 pokemons.csv --player2 pokemons.csv --info
-python pokedex.py --player1 pokemons.csv --player2 pokemons.csv --battle
+python pokedex.py --player1 pokemons_1.csv --player2 pokemons_2.csv --info
+python pokedex.py --player1 pokemons_1.csv --player2 pokemons_2.csv --battle
 ```
 ## Info 
 
