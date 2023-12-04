@@ -6,7 +6,7 @@ import csv
 def read_file_1(filepath):
     with open((filepath), newline='') as data:
 
-        reader = csv.DictReader(data)
+        reader = csv.DictReader(data, delimiter=',')
 
         for row in reader:
 
@@ -54,8 +54,8 @@ def main():
                 quit()        
 
         data = read_file_1(filepath)
-        info = process_pokemons(data)
-        show_info(info)
+        #info = process_pokemons(data)
+        #show_info(info)
     else:
         print(f"WARNING: This command does not exist.\n{client_usage()}")
 
