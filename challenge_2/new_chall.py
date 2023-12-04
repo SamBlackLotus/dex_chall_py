@@ -1,58 +1,32 @@
 import os
 import sys
-import json
-from enum import Enum
+import csv
 
-class Answers(TypedDict):
-    
-def read_file(filepath):
-    with open((filepath), "r") as source_pokedex:
-        return json.load(source_pokedex)
-    
+   
+def read_file_1(filepath):
+    with open((filepath), newline='') as data:
 
-def cast_to_int(value):
-    return int(value) if value is not None else 0
+        reader = csv.DictReader(data)
 
+        for row in reader:
 
-def process_pokemons(pokemons_data):
-    highest = {"index": 0, "value": 0}
-    smallest = {"index": 0, "value": 0}
-    heaviest = {"index": 0, "value": 0}
-    lightest = {"index": 0, "value": 0}
-    more_experience = {"index": 0, "value": 0}
-    total_alolas = 0
-    snorlax_height = 0
-    charizard_height = 0
-    
-
-def show_info(pokemons_info):
-    msg = """ """
-    
-    
+            print(row)
+                  
 def client_helper():
     helper_msg = """
     Hello! Welcome to the Pokedex.
     We will inform some statistic about your pokemon list.
-
-    To use it, please inform the filename that contains your pokemon list.
-    It should be a json file and each pokemon should be described as an item in a list with the following attributes:
-
-    - id: The identifier for this resource. integer
-    - name: The name for this resource. string
-    - base_experience: The base experience gained for defeating this Pokémon. integer
-    - height: The height of this Pokémon in decimetres. integer
-    - weight: The weight of this Pokémon in hectograms. integer
     """
     return print(helper_msg)
 
 def client_usage():
     client_usage_msg = """
     CLI usage:
-        > python3 main.py --filename pokemons.json 
-        > python3 main.py --help
+        > python3 new_chall.py --filename pokemons_1.csv 
+        > python3 new_chall.py --help
         
     """
-    return print(client_usage_msg)
+    return client_usage_msg 
 
 def main():
     if len(sys.argv) == 1:
@@ -79,7 +53,7 @@ def main():
                 print(f"WARNING: File {filepath} does not exist.")
                 quit()        
 
-        data = read_file(filepath)
+        data = read_file_1(filepath)
         info = process_pokemons(data)
         show_info(info)
     else:
