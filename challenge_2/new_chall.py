@@ -5,23 +5,16 @@ from enum import Enum
 from typing import Dict, Union, List, TypedDict, Optional
 
 
+
 class Answers(TypedDict):
-    Id: int
-    Name: str
-    Type1: str
-    Type2: str
-    Total: int
-    HP: int
-    Attack: int
-    Defense: int
-    Sp_Atk: int
-    Sp_Def: int
-    Speed: int
-    Generation: str
-    Legendary: bool
-    strongest_p1: str
+    p1_tot_info: int  
+    p2_tot_info: int
+    strgst_p1_info: str
+    strgst_p2_info: str
+    leg_1_info: int
+    leg_2_info: int
     
-  
+
    
 def read_file(filepath): 
     with open(filepath, "r") as data:
@@ -39,17 +32,23 @@ def cast_to_bool(value):
 def cast_to_set():
     return
 
-def process_pokemons(process_poke1,process_poke2):
+def start_battle():
+    
+    id = {"index": 0, "value": 0}
     name = {"index": 0, "value": 0}
     type_1 = {"index": 0, "value": 0}
     type_2 = {"index": 0, "value": 0}
     total = {"index": 0, "value": 0}
     hp = {"index": 0, "value": 0}
+    attack = {"index": 0, "value": 0}
     defense = {"index": 0, "value": 0}
     sp_atk = {"index": 0, "value": 0}
     sp_def = {"index": 0, "value": 0}
     speed = {"index": 0, "value": 0}
     generation = {"index": 0, "value": 0}
+
+def process_pokemons(process_poke1,process_poke2):
+    
     strongest_p1 = {"index": 0, "value": 0}
     strongest_p2 = {"index": 0, "value": 0}
     legendary_1 = 0
@@ -149,7 +148,7 @@ def main():
             client_helper()
             quit()
         else:
-            client_usage()
+            print(f"WARNING: This command does not exist.\n{client_usage()}")
             quit()
             
     elif len(sys.argv) > 6:
@@ -166,7 +165,7 @@ def main():
         filepath_1 = sys.argv[2]
         if not os.path.exists(filepath_1):
                 print(f"WARNING: File {filepath_1} does not exist.")
-                quit()  
+                quit()
         
         command2 = sys.argv[3]
         if command2 == "--player2":
@@ -177,7 +176,13 @@ def main():
             filepath_2 = sys.argv[4]
             if not os.path.exists(filepath_2):
                     print(f"WARNING: File {filepath_2} does not exist.")
-                    quit()              
+                    quit()
+        else:
+            print(f"WARNING: This command does not exist.\n{client_usage()}")
+            quit()
+    else:
+        print(f"WARNING: This command does not exist.\n{client_usage()}")
+        quit()            
         
     if len(sys.argv) == 5:
         print(f"WARNING! Incorrect amount of arguments.\n{client_usage()}")
@@ -190,16 +195,12 @@ def main():
     if command3 == "--info":   
         info = process_pokemons(file_csv_1,file_csv_2)
         show_info(info)
-    else:
-        print(f"WARNING: This command does not exist.")
-        client_usage()
-        quit()
         
-    if command3 == "--battle":
+    elif command3 == "--battle":
         print("Batalha pokemon!")
+    
     else:
-        print(f"WARNING: This command does not exist.")
-        client_usage()
+        print(f"WARNING: This command does not exist.\n{client_usage()}")
         quit()
 
         
