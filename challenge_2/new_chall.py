@@ -1,11 +1,11 @@
 import os
 import sys
 import csv
-import enum
+from enum import Enum
 from typing import Dict, Union, List, TypedDict, Optional
 
 
-class Attributes(TypedDict):
+class Answers(TypedDict):
     Id: int
     Name: str
     Type1: str
@@ -19,61 +19,82 @@ class Attributes(TypedDict):
     Speed: int
     Generation: str
     Legendary: bool
+    strongest_p1: str
+    
+  
    
-def read_file_1(filepath_1):
-    with open((filepath_1), "r") as data_1:
-        player_1_pokemons = csv.DictReader(data_1, delimiter = ",")
-                
+def read_file(filepath_1): 
+    with open(filepath_1, "r") as data_1:
+        file_1 = csv.DictReader(data_1, delimiter = ",")
+        p1_pokemons = [row for row in file_1]
+        return p1_pokemons
+    
 
-def show_info():
-    info_table = print("""
-                   | Player 1            | Player 2            |
------------------- | -------------------- -------------------- |
-pokemons           | {pokemons_ammount}  | 2                   |
-strongest pokemon  | charmander          | snorlax             |
-legendaries        | 2                   | 0                   |
-repeated pokemons  | 5                                         |
-different pokemons | 50                                        |
------------------- | ----------------------------------------- |
-""")
-                    return info_table
-                          
+def cast_to_int(value):
+    return int(value) if value is not None else 0    
 
+
+def process_pokemons(process_poke1,process_poke2):
+    name = {"index": 0, "value": 0}
+    type_1 = {"index": 0, "value": 0}
+    type_2 = {"index": 0, "value": 0}
+    total = {"index": 0, "value": 0}
+    hp = {"index": 0, "value": 0}
+    defense = {"index": 0, "value": 0}
+    sp_atk = {"index": 0, "value": 0}
+    sp_def = {"index": 0, "value": 0}
+    speed = {"index": 0, "value": 0}
+    generation = {"index": 0, "value": 0}
+    legendary = {"index": 0, "value": 0}
+    strongest_p1 = {"index": 0, "value": 0}
+    strongest_p2 = {"index": 0, "value": 0}
+    
+    
+    
+    for index, pokemon in enumerate(process_poke1):
+        p1_total = (len(process_poke1)-1)
+        #print("Arquivo 1: ",p1_total, "\n")
+        
+        
+        attack = cast_to_int(pokemon["Attack"])
+        if attack > strongest_p1["value"]:
+            strongest_p1["index"] = index
+            strongest_p1["value"] = attack
             
-# def read_file_2(filepath_2):
-#     with open((filepath_2), newline='') as data_2:
+        
+             
+    for index, pokemon in enumerate(process_poke2):
+        p2_total = (len(process_poke2)-1)  
+        #print("Arquivo 2: ",p2_total, "\n")
+        
+        attack = cast_to_int(pokemon["Attack"])
+        if attack > strongest_p2["value"]:
+            strongest_p2["index"] = index
+            strongest_p2["value"] = attack
+        
+  
+    return Answers(
+        
+        p1_tot_info = p1_total,
+        p2_tot_info = p2_total,
+        strgst_p1_info = strongest_p1["index"],
+        strgst_p2_info = strongest_p2["index"]
+         
+)
 
-#         reader_2 = csv.DictReader(data_2)
-
-#         for row in reader_2:
-            
-#             print(row)            
- 
-# def cast_to_int(value):
-#     return int(value) if value is not None else 0
-
-
-def process_pokemons(player_1_pokemons):
+def show_info(process_pokemons):
+    msg = """
+                       | Player 1            | Player 2            |
+    ------------------ | -------------------- -------------------- |
+    Pokémons           | {p1_tot_info}                 | {p2_tot_info}                 |
+    Strongest Pokémon  | {strgst_p1_info}                  | {strgst_p2_info}                 |
+    Legendaries        |                     |                     |
+    Repeated Pokemons  |                                           |
+    Different Pokemons |                                           |
+    ------------------ | ----------------------------------------- |
+    """
     
-    Id = {"index": 0, "value": 0}
-    Name = {"index": 0, "value": 0}
-    Type1 = {"index": 0, "value": 0}
-    Type2 = {"index": 0, "value": 0}
-    Total = {"index": 0, "value": 0}
-    HP = {"index": 0, "value": 0}
-    Attack = {"index": 0, "value": 0}
-    Defense = {"index": 0, "value": 0}
-    Sp_Atk = {"index": 0, "value": 0}
-    Sp_Def = {"index": 0, "value": 0}
-    Speed = {"index": 0, "value": 0}
-    Generation = {"index": 0, "value": 0}
-    Legendary = {"index": 0, "value": 0}
-    pokemons_ammount = 
-    
-    
-    for index, pokemon in enumerate(pokemons_data):
-        return
-
+    print(msg.format(**process_pokemons))
                   
 def client_helper():
     helper_msg = """
@@ -85,7 +106,8 @@ def client_helper():
 def client_usage():
     client_usage_msg = """
     CLI usage:
-        > python3 new_chall.py --player1 pokemons_1.csv 
+        > python3 new_chall.py --player1 pokemons_1.csv --player2 pokemons_2.csv --info
+        > python3 new_chall.py --player1 pokemons_1.csv --player2 pokemons_2.csv --battle
         > python3 new_chall.py --help
         
     """
@@ -116,17 +138,17 @@ def main():
                 print(f"WARNING: File {filepath_1} does not exist.")
                 quit()  
                 
-        # filepath_2 = sys.argv[4]
-        # if not os.path.exists(filepath_2):
-        #         print(f"WARNING: File {filepath_2} does not exist.")
-        #         quit()           
+        filepath_2 = sys.argv[4]
+        if not os.path.exists(filepath_2):
+                 print(f"WARNING: File {filepath_2} does not exist.")
+                 quit()           
                 
                      
-
-        data_1 = read_file_1(filepath_1)
-        #data_2 = read_file_2(filepath_2)
-        info = process_pokemon(data_1)
-        #show_info(info)
+        
+        file_csv_1 = read_file(filepath_1)
+        file_csv_2 = read_file(filepath_2)
+        info = process_pokemons(file_csv_1,file_csv_2)
+        show_info(info)
     else:
         print(f"WARNING: This command does not exist.\n{client_usage()}")
 
