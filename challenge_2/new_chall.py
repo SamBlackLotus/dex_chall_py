@@ -21,6 +21,15 @@ def read_file(filepath):
         file = csv.DictReader(data, delimiter = ",")
         pokemons = [row for row in file]
         return pokemons
+
+def cast_to_set(file_set1,file_set2): 
+    pokemon_set = set()
+    for pokemon1 in file_set1:
+        pokemon_set.add(pokemon1["Name"])
+                
+    for pokemon2 in file_set2:
+        pokemon_set.add(pokemon2["Name"])
+    return pokemon_set
     
 
 def cast_to_int(value):
@@ -29,8 +38,6 @@ def cast_to_int(value):
 def cast_to_bool(value):
     return True if value == "True" else False 
 
-def cast_to_set():
-    return
 
 def start_battle():
     
@@ -47,7 +54,7 @@ def start_battle():
     speed = {"index": 0, "value": 0}
     generation = {"index": 0, "value": 0}
 
-def process_pokemons(process_poke1,process_poke2):
+def process_pokemons(process_poke1,process_poke2,poke_set):
     
     strongest_p1 = {"index": 0, "value": 0}
     strongest_p2 = {"index": 0, "value": 0}
@@ -55,13 +62,12 @@ def process_pokemons(process_poke1,process_poke2):
     legendary_2 = 0
     tot_leg_1 = 0
     tot_leg_2 = 0
-    
+    repeated_pokemon = 0
+    diferent_pokemons = len(poke_set)
     
     
     for index, pokemon in enumerate(process_poke1):
         p1_total = (len(process_poke1)-1)
-        #print("Arquivo 1: ",p1_total, "\n")
-        
         
         attack = cast_to_int(pokemon["Attack"])
         if attack > strongest_p1["value"]:
@@ -75,7 +81,6 @@ def process_pokemons(process_poke1,process_poke2):
              
     for index, pokemon in enumerate(process_poke2):
         p2_total = (len(process_poke2)-1)  
-        #print("Arquivo 2: ",p2_total, "\n")
         
         attack = cast_to_int(pokemon["Attack"])
         if attack > strongest_p2["value"]:
@@ -84,9 +89,10 @@ def process_pokemons(process_poke1,process_poke2):
 
         legendary_2 = cast_to_bool(pokemon["Legendary"])
         if legendary_2 == True:
-            tot_leg_2 +=1              
+            tot_leg_2 +=1   
             
-        
+              
+                       
   
     return Answers(
         
@@ -95,8 +101,8 @@ def process_pokemons(process_poke1,process_poke2):
         strgst_p1_info = process_poke1[strongest_p1["index"]]["Name"],
         strgst_p2_info = process_poke2[strongest_p2["index"]]["Name"],
         leg_1_info = tot_leg_1,
-        leg_2_info = tot_leg_2
-        
+        leg_2_info = tot_leg_2,
+        dif_pok_info = diferent_pokemons
          
 )
 
@@ -108,7 +114,7 @@ def show_info(process_pokemons):
     Strongest Pokémon  |{strgst_p1_info}|{strgst_p2_info}   |
     Legendaries        |{leg_1_info}                   |{leg_2_info}                   |
     Repeated Pokemons  |                                           | 
-    Different Pokemons |                                           |
+    Different Pokemons |{dif_pok_info}                                        |
     ------------------ | ----------------------------------------- |
     """
     
@@ -189,11 +195,12 @@ def main():
         quit()
         
     file_csv_1 = read_file(filepath_1)
-    file_csv_2 = read_file(filepath_2) 
+    file_csv_2 = read_file(filepath_2)
+    file_set = cast_to_set(file_csv_1,file_csv_2)
             
     command3 = sys.argv[5]
     if command3 == "--info":   
-        info = process_pokemons(file_csv_1,file_csv_2)
+        info = process_pokemons(file_csv_1,file_csv_2,file_set)
         show_info(info)
         
     elif command3 == "--battle":
