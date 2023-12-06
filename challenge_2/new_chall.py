@@ -13,32 +13,33 @@ class Answers(TypedDict):
     strgst_p2_info: str
     leg_1_info: int
     leg_2_info: int
-    
+    intersec_pokemon: int
+    diff_pokemon: int 
 
    
-def read_file(filepath): 
+def read_file(filepath: str) -> List[Dict[str, Union[str, int]]]:
     with open(filepath, "r") as data:
         file = csv.DictReader(data, delimiter = ",")
         pokemons = [row for row in file]
         return pokemons
 
-def cast_to_set_1(file_set_1): 
+def cast_to_set_1(file_set_1: str) -> List[str]:
     pokemon_set_1 = set()
     for pokemon_1 in file_set_1:
         pokemon_set_1.add(pokemon_1["Name"])
     return pokemon_set_1    
         
-def cast_to_set_2(file_set_2):     
+def cast_to_set_2(file_set_2: str) -> List[str]:     
     pokemon_set_2 = set()            
     for pokemon_2 in file_set_2:
         pokemon_set_2.add(pokemon_2["Name"])
     return  pokemon_set_2
     
 
-def cast_to_int(value):
+def cast_to_int(value: Optional[str]) -> int:
     return int(value) if value is not None else 0    
 
-def cast_to_bool(value):
+def cast_to_bool(value: Optional[str]) -> bool:
     return True if value == "True" else False 
 
 
@@ -57,7 +58,7 @@ def start_battle():
     speed = {"index": 0, "value": 0}
     generation = {"index": 0, "value": 0}
 
-def process_pokemons(process_poke1,process_poke2,pokemon_set_1,pokemon_set_2):
+def process_pokemons(process_poke1,process_poke2,pokemon_set_1,pokemon_set_2: List[Dict[str, Union[str, int]]]) -> Dict[str, str]:
     
     strongest_p1 = {"index": 0, "value": 0}
     strongest_p2 = {"index": 0, "value": 0}
@@ -112,7 +113,7 @@ def process_pokemons(process_poke1,process_poke2,pokemon_set_1,pokemon_set_2):
          
 )
 
-def show_info(process_pokemons):
+def show_info(process_pokemons: Answers) -> None:
     msg = """
                        | Player 1            | Player 2            |
     ------------------ | -------------------- -------------------- |
@@ -126,7 +127,7 @@ def show_info(process_pokemons):
     
     print(msg.format(**process_pokemons))
                   
-def client_helper():
+def client_helper() -> None:
     helper_msg = """
     Hello! Welcome to the Pokedex.
     Here you can choose betweem two option, that are:
@@ -139,7 +140,7 @@ def client_helper():
     """
     return print(helper_msg)
 
-def client_usage():
+def client_usage() -> str:
     client_usage_msg = """
     CLI usage:
         > python3 new_chall.py --player1 pokemons_1.csv --player2 pokemons_2.csv --info
