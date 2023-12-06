@@ -23,40 +23,18 @@ def read_file(filepath: str) -> List[Dict[str, Union[str, int]]]:
         pokemons = [row for row in file]
         return pokemons
 
-def cast_to_set_1(file_set_1: str) -> List[str]:
-    pokemon_set_1 = set()
-    for pokemon_1 in file_set_1:
-        pokemon_set_1.add(pokemon_1["Name"])
-    return pokemon_set_1    
-        
-def cast_to_set_2(file_set_2: str) -> List[str]:     
-    pokemon_set_2 = set()            
-    for pokemon_2 in file_set_2:
-        pokemon_set_2.add(pokemon_2["Name"])
-    return  pokemon_set_2
-    
+def cast_to_set(file_set_1: str) -> List[str]:
+    pokemon_set = set()
+    for pokemon in file_set_1:
+        pokemon_set.add(pokemon["Name"])
+    return pokemon_set    
 
 def cast_to_int(value: Optional[str]) -> int:
     return int(value) if value is not None else 0    
 
 def cast_to_bool(value: Optional[str]) -> bool:
     return True if value == "True" else False 
-
-
-def start_battle():
     
-    id = {"index": 0, "value": 0}
-    name = {"index": 0, "value": 0}
-    type_1 = {"index": 0, "value": 0}
-    type_2 = {"index": 0, "value": 0}
-    total = {"index": 0, "value": 0}
-    hp = {"index": 0, "value": 0}
-    attack = {"index": 0, "value": 0}
-    defense = {"index": 0, "value": 0}
-    sp_atk = {"index": 0, "value": 0}
-    sp_def = {"index": 0, "value": 0}
-    speed = {"index": 0, "value": 0}
-    generation = {"index": 0, "value": 0}
 
 def process_pokemons(process_poke1,process_poke2,pokemon_set_1,pokemon_set_2: List[Dict[str, Union[str, int]]]) -> Dict[str, str]:
     
@@ -126,6 +104,83 @@ def show_info(process_pokemons: Answers) -> None:
     """
     
     print(msg.format(**process_pokemons))
+    
+def start_battle(player_1_battle,player_2_battle):
+    
+    id = {"index": 0, "value": 0}
+    name = {"index": 0, "value": 0}
+    hp = {"index": 0, "value": 0}
+    attack = {"index": 0, "value": 0}
+    defense = {"index": 0, "value": 0}  
+    p1_pokemon_1= {"index": 0, "value": 0}
+    p1_pokemon_2 = {"index": 0, "value": 0}
+    p1_pokemon_3 = {"index": 0, "value": 0}
+    p2_pokemon_1 = {"index": 0, "value": 0}
+    p2_pokemon_2 = {"index": 0, "value": 0}
+    p2_pokemon_3 = {"index": 0, "value": 0}
+    
+    for index, pokemon in enumerate(player_1_battle):
+        
+        attack = cast_to_int(sorted(pokemon["Attack"]))
+        if attack > p1_pokemon_1["value"]:
+            p1_pokemon_1["index"] = index
+            p1_pokemon_1["value"] = attack
+            
+         
+        if attack > p1_pokemon_2["value"]:
+            p1_pokemon_2["index"] = index
+            p1_pokemon_2["value"] = attack
+            
+            
+        if attack > p1_pokemon_3["value"]:
+            p1_pokemon_3["index"] = index
+            p1_pokemon_3["value"] = attack        
+            
+    
+    for index, pokemon in enumerate(player_2_battle):
+        
+        attack = cast_to_int(pokemon["Attack"])
+        if attack > p2_pokemon_1["value"]:
+            p2_pokemon_1["index"] = index
+            p2_pokemon_1["value"] = attack
+
+        if attack > p2_pokemon_2["value"]:
+            p2_pokemon_2["index"] = index
+            p2_pokemon_2["value"] = attack
+            
+            
+        if attack > p2_pokemon_3["value"]:
+            p2_pokemon_3["index"] = index
+            p2_pokemon_3["value"] = attack        
+                    
+         
+    return Answers(
+        
+        p1_pkm_1 =  player_1_battle[p1_pokemon_1["index"]]["Name"],
+        p1_pkm_2 =  player_1_battle[p1_pokemon_2["index"]]["Name"],
+        p1_pkm_3 =  player_1_battle[p1_pokemon_3["index"]]["Name"],
+        p2_pkm_1 =  player_2_battle[p2_pokemon_1["index"]]["Name"],
+        p2_pkm_2 =  player_2_battle[p2_pokemon_2["index"]]["Name"],
+        p2_pkm_3 =  player_2_battle[p2_pokemon_3["index"]]["Name"]
+         
+         
+)        
+
+def show_battle_info(start_battle): 
+    battle_msg = """
+----- Battle -----
+
+Player 1 pokemons: {p1_pkm_1}, {p1_pkm_2}, {p1_pkm_3}
+Player 2 pokemons: {p2_pkm_1}, {p2_pkm_2}, {p2_pkm_3}
+
+----- Result -----
+Winner: Player 1
+Rounds: 50
+Pokemon that died: Archeops
+    """
+    
+    print(battle_msg.format(**start_battle))      
+    
                   
 def client_helper() -> None:
     helper_msg = """
@@ -203,18 +258,19 @@ def main():
         
     file_csv_1 = read_file(filepath_1)
     file_csv_2 = read_file(filepath_2)
-    file_set_1 = cast_to_set_1(file_csv_1)
-    file_set_2 = cast_to_set_2(file_csv_2)
-    
-    
-            
+    file_set_1 = cast_to_set(file_csv_1)
+    file_set_2 = cast_to_set(file_csv_2)
+               
     command3 = sys.argv[5]
     if command3 == "--info":   
         info = process_pokemons(file_csv_1,file_csv_2,file_set_1,file_set_2)
         show_info(info)
         
     elif command3 == "--battle":
-        print("Batalha pokemon!")
+        battle = start_battle(file_csv_1,file_csv_2)
+        show_battle_info(battle)
+        
+        
     
     else:
         print(f"WARNING: This command does not exist.\n{client_usage()}")
