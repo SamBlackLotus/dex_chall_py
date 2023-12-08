@@ -120,7 +120,7 @@ def process_pokemons(process_poke1,process_poke2,pokemon_set_1,pokemon_set_2: Li
 
 def show_info(process_pokemons: Answers) -> None:
     msg = """
-                       | Player 1            | Player 2            |
+                       | PLAYER 1            | PLAYER 2            |
     ------------------ | -------------------- -------------------- |
     Pokémons           |{p1_tot_info}                  |{p2_tot_info}                  |
     Strongest Pokémon  |{strgst_p1_info}|{strgst_p2_info}   |
@@ -132,7 +132,7 @@ def show_info(process_pokemons: Answers) -> None:
     
     print(msg.format(**process_pokemons))
     
-def start_battle(player_1_battle,player_2_battle):
+def start_battle(player_1_battle,player_2_battle: List[Dict[str, Union[str, int]]]) -> Dict[str, int]:
     
     hp = {"index": 0, "value": 0}
     attack = {"index": 0, "value": 0}
@@ -285,7 +285,7 @@ def start_battle(player_1_battle,player_2_battle):
                   
 )        
 
-def show_battle_info(start_battle): 
+def show_battle_info(start_battle: Answers) -> None:
     battle_msg = """
 ================================== POKéMON BATTLE ===================================
 
@@ -307,18 +307,18 @@ def show_battle_info(start_battle):
 |Defense:{p2_pkm_1_dfs}                  |Defense:{p2_pkm_2_dfs}               |Defense:{p2_pkm_2_dfs}                |
 -------------------------------------------------------------------------------------
 =====================================================================================
-                               +++++ RESULT +++++
+|                              +++++ RESULT +++++                                   |
 =====================================================================================
-                         -----------------------------   
-                                   --Winner--
-                                    Player {winner}
-                         -----------------------------
-                                   --Rounds-- 
-                                       {rounds} 
-                         -----------------------------
-                           --First pokemon to fall--          
-                              {loser_pokemon} 
-======================================================================================
+|                        -----------------------------                              |
+|                                  --Winner--                                       |
+|                                   Player {winner}                                        |
+|                        -----------------------------                              |
+|                                  --Rounds--                                       |
+|                                      {rounds}                                           |
+|                        -----------------------------                              |
+|                          --First pokemon to fall--                                |
+|                              {loser_pokemon}                                   |
+=====================================================================================
     """
     
     print(battle_msg.format(**start_battle))      
