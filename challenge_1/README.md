@@ -48,4 +48,16 @@ The columns descriptions and data types:
 - height: The height of this Pokémon in decimetres. integer
 - weight: The weight of this Pokémon in hectograms. integer
 
+## Retrospective
 
+The good:
+- Execute code from linux terminal.
+- Learn about CLI.
+- Read json and aggregate data.
+- Exercise how to read and understand external code.
+- Used fluxograms to understand the problem.
+
+The bad:
+- Difficulties on how to aggregate the data, it's not straightforward.
+    - Translate the logic into an algorithm and later into python.
+- Typing still too complex.

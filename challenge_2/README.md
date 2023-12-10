@@ -57,3 +57,7 @@ Skills to unlock:
 - Read multiple files
 - Read csv files
 - Working with the following data structures: set
+
+## Retrospective
+
+TODO
