@@ -1,7 +1,9 @@
 import os
 import sys
+import json
 import csv
 import xmltodict
+import yaml
 from enum import Enum
 from typing import Dict, Union, List, TypedDict, Optional
 
@@ -44,6 +46,9 @@ class Answers(TypedDict):
     rounds: int
     loser_pokemon: str
 
+def read_file_json(filepath): #função pra processar arquivos json
+    with open((filepath), "r") as source_pokedex:
+        return json.load(source_pokedex)
    
 def read_file_csv(filepath: str) -> List[Dict[str, Union[str, int]]]:
     with open(filepath, "r") as data:
@@ -51,10 +56,16 @@ def read_file_csv(filepath: str) -> List[Dict[str, Union[str, int]]]:
         pokemons = [row for row in file]
         return pokemons
 
-def read_file_xml(filepath: str) -> List[Dict[str, Union[str, int]]]:
-    with open(filepath, "r", encoding= 'utf-8') as data:
+def read_file_xml(filepath: str) -> List[Dict[str, Union[str, int]]]: #função pra processar arquivos xml
+    with open(filepath, "r", encoding= "UTF-8") as data:
         file = data.read()
-        pokemons = xmltodict.parse(file, process_namespaces= True)
+        pokemons = xmltodict.parse(file, process_namespaces = )
+        return pokemons
+
+def read_file_yaml(filepath: str) -> List[Dict[str, Union[str, int]]]: #função pra processar arquivos yaml
+    with open(filepath, "r") as data:
+        file = data.read()
+        pokemons = yaml.safe_load(file)
         return pokemons
 
 def cast_to_set(file_set_1: str) -> List[str]:
@@ -69,6 +80,65 @@ def cast_to_int(value: Optional[str]) -> int:
 def cast_to_bool(value: Optional[str]) -> bool:
     return True if value == "True" else False 
     
+def poke_trivia(pokemons_data):
+    highest = {"index": 0, "value": 0}
+    smallest = {"index": 0, "value": 0}
+    heaviest = {"index": 0, "value": 0}
+    lightest = {"index": 0, "value": 0}
+    more_experience = {"index": 0, "value": 0}
+    total_alolas = 0
+    snorlax_height = 0
+    charizard_height = 0
+
+    for index, pokemon in enumerate(pokemons_data):
+        height_int = cast_to_int(pokemon["height"])
+        if height_int > highest["value"]:
+            highest["index"] = index
+            highest["value"] = height_int
+            
+        if height_int < smallest["value"] or smallest["value"] <= 0:
+            smallest["index"] = index
+            smallest["value"] = height_int    
+
+        weight_int = cast_to_int(pokemon["weight"])
+        if weight_int > heaviest["value"]:
+            heaviest["index"] = index
+            heaviest["value"] = weight_int
+        
+        if weight_int < lightest["value"] or lightest["value"] <= 0:
+            lightest["index"] = index
+            lightest["value"] = weight_int   
+            
+        base_experience_int = cast_to_int(pokemon["base_experience"])
+        if base_experience_int > more_experience["value"]:
+            more_experience["index"] = index
+            more_experience["value"] = base_experience_int
+        
+        if "alola" in pokemon["name"]:
+            total_alolas += 1
+        
+        if pokemon["name"] == "snorlax":
+            snorlax_height = pokemon["height"]
+        
+        if pokemon["name"] == "charizard":
+            charizard_height = pokemon["height"]
+
+    return Answers(
+        total=len(pokemons_data),
+        highest_pokemon_name=pokemons_data[highest["index"]]["name"],
+        highest_pokemon_value=pokemons_data[highest["index"]]["height"],
+        smallest_pokemon_name=pokemons_data[smallest["index"]]["name"],
+        smallest_pokemon_value=pokemons_data[smallest["index"]]["height"],         
+        heaviest_pokemon_name=pokemons_data[heaviest["index"]]["name"],
+        heaviest_pokemon_value=pokemons_data[heaviest["index"]]["weight"],
+        lightest_pokemon_name=pokemons_data[lightest["index"]]["name"],
+        lightest_pokemon_value=pokemons_data[lightest["index"]]["weight"],        
+        more_experience_pokemon_name=pokemons_data[more_experience["index"]]["name"],
+        more_experience_pokemon_value=pokemons_data[more_experience["index"]]["base_experience"],
+        total_alolas=total_alolas,
+        final_question=YesNo.YES if snorlax_height > charizard_height else YesNo.NO,
+       
+    )
 
 def process_pokemons(process_poke1,process_poke2,pokemon_set_1,pokemon_set_2: List[Dict[str, Union[str, int]]]) -> Dict[str, str]:
     
@@ -124,6 +194,49 @@ def process_pokemons(process_poke1,process_poke2,pokemon_set_1,pokemon_set_2: Li
          
          
 )
+    
+def show_trivia(pokemons_info):
+    msg = """
+    
+                Welcome to the Pokedex!     
+ ⣷⣿⣿⣶⣶⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⢠⣴⣶⣷⣿⣿
+⠀⠹⣿⣿⣿⡄⠀⠈⠓⠦⣄ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡤⠖⠊⠉⠀⣸⣿⣿⣽⠃
+⠀⠀⠘⣿⣿⣇⠀⠀⠀⠀⠀⠘⠶⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⠞⠁⠀⠀⠀⠀⠀⣿⣿⣿⠃⠀
+⠀⠀⠀⠈⢻⣿ ⠀⠀⠀⠀⠀⠀⠈⠳⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡤⠙⠁⠀⠀⠀⠀⠀⠀⡸⣿⠟⠁⠀⠀
+⠀⠀⠀⠀⠀⠁⢾⡄⠀⠀⠀⠀⠀⠀⠀⠈⠱⣦⠀⠀⠀⠀⠀⠀⢀⣀⣀⣀⣀⡀⠀⠀⠀⠀⠀⢀⡴⠋⠀⠀⠀⠀⠀⠀⠀⠀⣠⠟⠁⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠉⠳⡄⠀⠀⠀⠀⠀⠀⠀⠈⠳⡆⣤⠴⠞⠛⠉⠉⠉⠉⠉⠉⠉⠳⠆⣤⣤⠞⠁⠀⠀⠀⠀⠀⠀⢀⣠⠖⠁⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡠⠖⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⢳⡞⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢇⠞⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡾⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⣠⣶⠖⢤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠴⠶⣦⡄⠀⠀⢈⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠾⠀⠀⢰⣾⣷⣀⣰⡧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣀⣠⣾⣿⠀⠀⠀⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡟⠀⠀⠈⠻⣍⡩⠜⠃⠀⠀⠀⠠⣤⡤⠀⠀⠀⠀⠹⠭⣉⠽⠏⠀⠀⠀⡷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢀⣤⠴⠴⣤⣠⣇⣤⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⣤⣤⣼⣀⡴⢴⢦⣄⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⢸⠃⠀⠀⠀⠀⢹⡁⣀⡀⠙⣱⡀⠀⠀⠀⠲⣄⣠⡴⣒⢒⣤⣤⠴⠂⠀⠀⠀⢠⡞⢁⣀⡀⢨⠃⠀⠀⠀⠀⢹⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠈⠉⠀⠉⠀⠈⠈⠉⠉⠉⠉⠉⠉⠉⠉⠉⠈⠀⠉⠉⠉⠉⠉⠉⠀⠀⠀⠀⠈⠉⠉⠉⠉⠉⠉⠁⠈⠈⠈⠀⠉⠀⠀⠀⠀⠀⠀     
+    Here we have some useful information gathered from the list you provided us:
+
+    1. How many pokemons there is:
+        > {total} pokemons.
+    2. Which one is the highest:
+        > Pokemon {highest_pokemon_name} with {highest_pokemon_value} decimetres.
+    3. Which one is the smallest:
+        > Pokemon {smallest_pokemon_name} with {smallest_pokemon_value} decimetres.    
+    4. Which one is the heaviest:
+        > Pokemon {heaviest_pokemon_name} with {heaviest_pokemon_value} hectograms.
+    5. Which one is the lightest:
+        > Pokemon {lightest_pokemon_name} with {lightest_pokemon_value} hectograms.            
+    6. Which one is more worthy of defeating based on the experience gained from defeating them:
+        > Pokemon {more_experience_pokemon_name} with {more_experience_pokemon_value} base experience.
+    7. How many alola pokemons there is:
+        > {total_alolas} alola pokemons.
+    8. Is snorlax bigger than charizard:
+        > {final_question}
+    
+    Thanks for using this pokedex!
+    """
+    print(msg.format(**pokemons_info))
 
 def show_info(process_pokemons: Answers) -> None:
     msg = """
@@ -356,7 +469,7 @@ def client_helper() -> None:
     -- battle
     
     The two players will challenge each other, using their three strongest
-    pokemon, where the firts pokemon to fall decides the winner, and we'll
+    pokemon, where the first pokemon to fall decides the winner, and we'll
     show you the battle information.
     """
     return print(helper_msg)
@@ -366,7 +479,7 @@ def client_usage() -> str:
     CLI usage:
     
         > python3 pokedex_crud.py --help
-        > python3 pokedex_crud.py --player <player file and format> --trivia
+        > python3 pokedex_crud.py --player1 <player file and format> --trivia
         > python3 pokedex_crud.py --player1 <player 1 file and format> --player2 <player 2 file and format> --info
         > python3 pokedex_crud.py --player1 <player 1 file and format> --player2 <player 2 file and format> --battle
         
@@ -379,7 +492,7 @@ def client_usage() -> str:
         
         
     """
-    return client_usage_msg 
+    return print(client_usage_msg) 
 
 def main():
     if len(sys.argv) == 1:
@@ -405,6 +518,9 @@ def main():
         if len(sys.argv) == 2:
             print(f"WARNING! Incorrect amount of arguments.\n{client_usage()}")
             quit()
+        elif len(sys.argv) == 3:
+            print(f"WARNING! Incorrect amount of arguments.\n{client_usage()}")
+            quit()    
     
         filepath_1 = sys.argv[2]
         if not os.path.exists(filepath_1):
@@ -412,7 +528,27 @@ def main():
                 quit()
         
         command2 = sys.argv[3]
-        if command2 == "--player2":
+        
+        if command2 == "--trivia":
+            if len(sys.argv) >= 5:
+                print(f"WARNING! Incorrect amount of arguments.\n{client_usage()}")
+                quit()
+            
+            if '.json' in filepath_1:    
+                data_1 = read_file_json(filepath_1)
+            elif '.csv' in filepath_1:    
+                data_1 = read_file_json(filepath_1)
+            elif '.xml' in filepath_1:    
+                data_1 = read_file_json(filepath_1)
+            elif '.yaml' in filepath_1:    
+                data_1 = read_file_json(filepath_1)
+            else:
+                print("Erro formato de arquivo não suportado")
+                
+            info = poke_trivia(data_1)
+            show_trivia(info)
+            
+        elif command2 == "--player2":
             if len(sys.argv) == 4:
                 print(f"WARNING! Incorrect amount of arguments.\n{client_usage()}")
                 quit()
@@ -424,45 +560,50 @@ def main():
         else:
             print(f"WARNING: This command does not exist.\n{client_usage()}")
             quit()
+        
+        if len(sys.argv) == 5:
+            print(f"WARNING! Incorrect amount of arguments.\n{client_usage()}")
+            quit()
+    
+        if '.json' in filepath_1:
+            data_1 = read_file_json(filepath_1)
+            dataset_1 = cast_to_set(data_1)
+        elif '.csv' in filepath_1:
+            data_1 = read_file_csv(filepath_1)
+            dataset_1 = cast_to_set(data_1)
+        elif '.xml' in filepath_1:
+            data_1 = read_file_xml(filepath_1)
+            dataset_1 = cast_to_set(data_1)
+        elif '.yaml' in filepath_1:
+            data_1 = read_file_yaml(filepath_1)
+            dataset_1 = cast_to_set(data_1)
+        
+        if '.json' in filepath_2:
+            data_2= read_file_json(filepath_2)
+            dataset_2 = cast_to_set(data_2)
+        elif '.csv' in filepath_2:
+            data_2 = read_file_csv(filepath_2)
+            dataset_2 = cast_to_set(data_2)
+        elif '.xml' in filepath_2:
+            data_2 = read_file_xml(filepath_2)
+            dataset_2 = cast_to_set(data_2)
+        elif '.yaml' in filepath_2:
+            data_2 = read_file_yaml(filepath_2)
+            dataset_2 = cast_to_set(data_2)
+        
+        command3 = sys.argv[5]
+        
+        if command3 == "--info":   
+            info = process_pokemons(data_1,data_2,dataset_1,dataset_2)
+            show_info(info)
+            
+        elif command3 == "--battle":
+            battle = start_battle(data_1,data_2)
+            show_battle_info(battle)      
     else:
         print(f"WARNING: This command does not exist.\n{client_usage()}")
-        quit()            
-        
-    if len(sys.argv) == 5:
-        print(f"WARNING! Incorrect amount of arguments.\n{client_usage()}")
         quit()
-    
-    if '.csv' in filepath_1:
-        file_csv_1 = read_file_csv(filepath_1)
-        file_set_1 = cast_to_set(file_csv_1)
-    elif '.xml' in filepath_1:
-        file_xml_1 = read_file_xml(filepath_1)
-        print(file_xml_1)
-        file_set_1 = cast_to_set(file_xml_1)
-    
-    if '.csv' in filepath_2:
-        file_csv_2 = read_file_csv(filepath_2)
-        file_set_2 = cast_to_set(file_csv_2)
-    elif '.xml' in filepath_2:
-        file_xml_2 = read_file_xml(filepath_2)
-        file_set_2 = cast_to_set(file_xml_2)
-    
-    command3 = sys.argv[5]
-    if command3 == "--info":   
-        info = process_pokemons(file_csv_1,file_csv_2,file_set_1,file_set_2)
-        show_info(info)
-        
-    elif command3 == "--battle":
-        battle = start_battle(file_csv_1,file_csv_2)
-        show_battle_info(battle)
-        
-        
-    
-    else:
-        print(f"WARNING: This command does not exist.\n{client_usage()}")
-        quit()
-
-        
+       
 if __name__ == "__main__":
     main()      
                 
