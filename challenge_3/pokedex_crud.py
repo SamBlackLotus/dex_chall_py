@@ -45,101 +45,136 @@ class Answers(TypedDict):
     winner: int
     rounds: int
     loser_pokemon: str
-
-def read_file_json(filepath): #função pra processar arquivos json
+    
+#Receive and read json files 
+def read_file_json(filepath): 
     with open((filepath), "r") as source_pokedex:
         return json.load(source_pokedex)
-   
-def read_file_csv(filepath: str) -> List[Dict[str, Union[str, int]]]:
+    
+#Receive and read csv files       
+def read_file_csv(filepath):
     with open(filepath, "r") as data:
         file = csv.DictReader(data, delimiter = ",")
         pokemons = [row for row in file]
         return pokemons
 
-def read_file_xml(filepath: str) -> List[Dict[str, Union[str, int]]]: #função pra processar arquivos xml
+#Receive and read xml files    
+def read_file_xml(filepath): 
     with open(filepath, "r", encoding= "UTF-8") as data:
         file = data.read()
         pokemons = xmltodict.parse(file)
         print(pokemons)
         return pokemons
 
-def read_file_yaml(filepath: str) -> List[Dict[str, Union[str, int]]]: #função pra processar arquivos yaml
+#Receive and read yaml files 
+def read_file_yaml(filepath):
     with open(filepath, "r") as data:
         file = data.read()
         pokemons = yaml.safe_load(file)
         return pokemons
-
-def cast_to_set(file_set_1: str) -> List[str]:
+    
+#Cast the dict data received into a set
+def cast_to_set(file_set_1):
     pokemon_set = set()
     for pokemon in file_set_1:
         pokemon_set.add(pokemon["Name"])
     return pokemon_set    
 
-def cast_to_int(value: Optional[str]) -> int:
-    return int(value) if value is not None else 0    
-
-def cast_to_bool(value: Optional[str]) -> bool:
-    return True if value == "True" else False 
+#Cast the needed values into integers
+def cast_to_int(value):
+    return int(value) if value is not None else 0
     
+#Cast the needed values into boolean
+def cast_to_bool(value):
+    return True if value == "True" else False 
+
+#Process and generate the answers to the trivia questions    
 def poke_trivia(pokemons_data):
-    highest = {"index": 0, "value": 0}
-    smallest = {"index": 0, "value": 0}
-    heaviest = {"index": 0, "value": 0}
-    lightest = {"index": 0, "value": 0}
-    more_experience = {"index": 0, "value": 0}
-    total_alolas = 0
-    snorlax_height = 0
-    charizard_height = 0
+    highest_hp_trivia = {"index":0, "value":0}
+    highest_atk_trivia = {"index": 0, "value": 0}
+    highest_def_trivia = {"index": 0, "value": 0}
+    highest_spd_trivia = {"index": 0, "value": 0} 
+
 
     for index, pokemon in enumerate(pokemons_data):
-        height_int = cast_to_int(pokemon["height"])
-        if height_int > highest["value"]:
-            highest["index"] = index
-            highest["value"] = height_int
+        
+        hp_trivia_int = cast_to_int(pokemon["HP"])
+        if hp_trivia_int > ["value"]:
+            highest_hp_trivia["index"] = index
+            highest_hp_trivia["value"] = hp_trivia_int
+      
+        attack_trivia_int = cast_to_int(pokemon["Attack"])
+        if attack_trivia_int > ["value"]:
+            highest_atk_trivia["index"] = index
+            highest_atk_trivia["value"] = attack_trivia_int
             
-        if height_int < smallest["value"] or smallest["value"] <= 0:
-            smallest["index"] = index
-            smallest["value"] = height_int    
-
-        weight_int = cast_to_int(pokemon["weight"])
-        if weight_int > heaviest["value"]:
-            heaviest["index"] = index
-            heaviest["value"] = weight_int
-        
-        if weight_int < lightest["value"] or lightest["value"] <= 0:
-            lightest["index"] = index
-            lightest["value"] = weight_int   
+        defense_trivia_int = cast_to_int(pokemon["Defense"])
+        if defense_trivia_int > ["value"]:
+            highest_def_trivia["index"] = index
+            highest_def_trivia["value"] = defense_trivia_int
+      
+        speed_trivia_int = cast_to_int(pokemon["Attack"])
+        if speed_trivia_int > ["value"]:
+            highest_spd_trivia["index"] = index
+            highest_spd_trivia["value"] = speed_trivia_int    
             
-        base_experience_int = cast_to_int(pokemon["base_experience"])
-        if base_experience_int > more_experience["value"]:
-            more_experience["index"] = index
-            more_experience["value"] = base_experience_int
-        
-        if "alola" in pokemon["name"]:
-            total_alolas += 1
-        
-        if pokemon["name"] == "snorlax":
-            snorlax_height = pokemon["height"]
-        
-        if pokemon["name"] == "charizard":
-            charizard_height = pokemon["height"]
+  
+            
 
     return Answers(
-        total=len(pokemons_data),
-        highest_pokemon_name=pokemons_data[highest["index"]]["name"],
-        highest_pokemon_value=pokemons_data[highest["index"]]["height"],
-        smallest_pokemon_name=pokemons_data[smallest["index"]]["name"],
-        smallest_pokemon_value=pokemons_data[smallest["index"]]["height"],         
-        heaviest_pokemon_name=pokemons_data[heaviest["index"]]["name"],
-        heaviest_pokemon_value=pokemons_data[heaviest["index"]]["weight"],
-        lightest_pokemon_name=pokemons_data[lightest["index"]]["name"],
-        lightest_pokemon_value=pokemons_data[lightest["index"]]["weight"],        
-        more_experience_pokemon_name=pokemons_data[more_experience["index"]]["name"],
-        more_experience_pokemon_value=pokemons_data[more_experience["index"]]["base_experience"],
-        total_alolas=total_alolas,
-        final_question=YesNo.YES if snorlax_height > charizard_height else YesNo.NO,
-       
+        total_trivia=len(pokemons_data),
+        hp_trivia_name=pokemons_data[highest_hp_trivia["index"]]["Name"],
+        hp_trivia_points=pokemons_data[highest_hp_trivia["index"]]["HP"],
+        atk_trivia_name=pokemons_data[highest_atk_trivia["index"]]["Name"],
+        atk_trivia_points=pokemons_data[highest_atk_trivia["index"]]["Attack"],
+        def_trivia_name=pokemons_data[highest_atk_trivia["index"]]["Name"],
+        def_trivia_points=pokemons_data[highest_atk_trivia["index"]]["Defense"],
+        spd_trivia_name=pokemons_data[highest_atk_trivia["index"]]["Name"],
+        spd_trivia_points=pokemons_data[highest_atk_trivia["index"]]["Speed"]
+     
     )
+    
+def show_trivia(pokemons_info):
+    msg = """
+    
+                Welcome to the Pokedex!     
+ ⣷⣿⣿⣶⣶⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⢠⣴⣶⣷⣿⣿
+⠀⠹⣿⣿⣿⡄⠀⠈⠓⠦⣄ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡤⠖⠊⠉⠀⣸⣿⣿⣽⠃
+⠀⠀⠘⣿⣿⣇⠀⠀⠀⠀⠀⠘⠶⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⠞⠁⠀⠀⠀⠀⠀⣿⣿⣿⠃⠀
+⠀⠀⠀⠈⢻⣿ ⠀⠀⠀⠀⠀⠀⠈⠳⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡤⠙⠁⠀⠀⠀⠀⠀⠀⡸⣿⠟⠁⠀⠀
+⠀⠀⠀⠀⠀⠁⢾⡄⠀⠀⠀⠀⠀⠀⠀⠈⠱⣦⠀⠀⠀⠀⠀⠀⢀⣀⣀⣀⣀⡀⠀⠀⠀⠀⠀⢀⡴⠋⠀⠀⠀⠀⠀⠀⠀⠀⣠⠟⠁⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠉⠳⡄⠀⠀⠀⠀⠀⠀⠀⠈⠳⡆⣤⠴⠞⠛⠉⠉⠉⠉⠉⠉⠉⠳⠆⣤⣤⠞⠁⠀⠀⠀⠀⠀⠀⢀⣠⠖⠁⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡠⠖⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⢳⡞⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢇⠞⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡾⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⣠⣶⠖⢤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠴⠶⣦⡄⠀⠀⢈⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠾⠀⠀⢰⣾⣷⣀⣰⡧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣀⣠⣾⣿⠀⠀⠀⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡟⠀⠀⠈⠻⣍⡩⠜⠃⠀⠀⠀⠠⣤⡤⠀⠀⠀⠀⠹⠭⣉⠽⠏⠀⠀⠀⡷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢀⣤⠴⠴⣤⣠⣇⣤⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⣤⣤⣼⣀⡴⢴⢦⣄⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⢸⠃⠀⠀⠀⠀⢹⡁⣀⡀⠙⣱⡀⠀⠀⠀⠲⣄⣠⡴⣒⢒⣤⣤⠴⠂⠀⠀⠀⢠⡞⢁⣀⡀⢨⠃⠀⠀⠀⠀⢹⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠈⠉⠀⠉⠀⠈⠈⠉⠉⠉⠉⠉⠉⠉⠉⠉⠈⠀⠉⠉⠉⠉⠉⠉⠀⠀⠀⠀⠈⠉⠉⠉⠉⠉⠉⠁⠈⠈⠈⠀⠉⠀⠀⠀⠀⠀⠀     
+    Here we have some useful information gathered from the list you provided us:
+
+    1. How many pokemons there is in this list:
+        > {total_trivia} pokemons.
+        
+    2. The pokemon with the highest HP point is:
+        >{hp_trivia_name} with {hp_trivia_points} HP points
+            
+    3. Which one has the strongest attack:
+        >{atk_trivia_name} with {atk_trivia_points} attack points.
+        
+    4. Which one has the strongest defense:
+        >{def_trivia_name} with {def_trivia_points} defense points.
+            
+    5. Which one is the fastest:
+        >{spd_trivia_name} with {spd_trivia_name} speed points.
+   
+    
+    Thanks for using this pokedex!
+    """
+    print(msg.format(**pokemons_info))    
 
 def process_pokemons(process_poke1,process_poke2,pokemon_set_1,pokemon_set_2: List[Dict[str, Union[str, int]]]) -> Dict[str, str]:
     
@@ -196,48 +231,6 @@ def process_pokemons(process_poke1,process_poke2,pokemon_set_1,pokemon_set_2: Li
          
 )
     
-def show_trivia(pokemons_info):
-    msg = """
-    
-                Welcome to the Pokedex!     
- ⣷⣿⣿⣶⣶⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⢠⣴⣶⣷⣿⣿
-⠀⠹⣿⣿⣿⡄⠀⠈⠓⠦⣄ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡤⠖⠊⠉⠀⣸⣿⣿⣽⠃
-⠀⠀⠘⣿⣿⣇⠀⠀⠀⠀⠀⠘⠶⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⠞⠁⠀⠀⠀⠀⠀⣿⣿⣿⠃⠀
-⠀⠀⠀⠈⢻⣿ ⠀⠀⠀⠀⠀⠀⠈⠳⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡤⠙⠁⠀⠀⠀⠀⠀⠀⡸⣿⠟⠁⠀⠀
-⠀⠀⠀⠀⠀⠁⢾⡄⠀⠀⠀⠀⠀⠀⠀⠈⠱⣦⠀⠀⠀⠀⠀⠀⢀⣀⣀⣀⣀⡀⠀⠀⠀⠀⠀⢀⡴⠋⠀⠀⠀⠀⠀⠀⠀⠀⣠⠟⠁⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠉⠳⡄⠀⠀⠀⠀⠀⠀⠀⠈⠳⡆⣤⠴⠞⠛⠉⠉⠉⠉⠉⠉⠉⠳⠆⣤⣤⠞⠁⠀⠀⠀⠀⠀⠀⢀⣠⠖⠁⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡠⠖⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⢳⡞⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢇⠞⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡾⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⣠⣶⠖⢤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠴⠶⣦⡄⠀⠀⢈⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠾⠀⠀⢰⣾⣷⣀⣰⡧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣀⣠⣾⣿⠀⠀⠀⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡟⠀⠀⠈⠻⣍⡩⠜⠃⠀⠀⠀⠠⣤⡤⠀⠀⠀⠀⠹⠭⣉⠽⠏⠀⠀⠀⡷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⢀⣤⠴⠴⣤⣠⣇⣤⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⣤⣤⣼⣀⡴⢴⢦⣄⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⢸⠃⠀⠀⠀⠀⢹⡁⣀⡀⠙⣱⡀⠀⠀⠀⠲⣄⣠⡴⣒⢒⣤⣤⠴⠂⠀⠀⠀⢠⡞⢁⣀⡀⢨⠃⠀⠀⠀⠀⢹⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠈⠉⠀⠉⠀⠈⠈⠉⠉⠉⠉⠉⠉⠉⠉⠉⠈⠀⠉⠉⠉⠉⠉⠉⠀⠀⠀⠀⠈⠉⠉⠉⠉⠉⠉⠁⠈⠈⠈⠀⠉⠀⠀⠀⠀⠀⠀     
-    Here we have some useful information gathered from the list you provided us:
-
-    1. How many pokemons there is:
-        > {total} pokemons.
-    2. Which one is the highest:
-        > Pokemon {highest_pokemon_name} with {highest_pokemon_value} decimetres.
-    3. Which one is the smallest:
-        > Pokemon {smallest_pokemon_name} with {smallest_pokemon_value} decimetres.    
-    4. Which one is the heaviest:
-        > Pokemon {heaviest_pokemon_name} with {heaviest_pokemon_value} hectograms.
-    5. Which one is the lightest:
-        > Pokemon {lightest_pokemon_name} with {lightest_pokemon_value} hectograms.            
-    6. Which one is more worthy of defeating based on the experience gained from defeating them:
-        > Pokemon {more_experience_pokemon_name} with {more_experience_pokemon_value} base experience.
-    7. How many alola pokemons there is:
-        > {total_alolas} alola pokemons.
-    8. Is snorlax bigger than charizard:
-        > {final_question}
-    
-    Thanks for using this pokedex!
-    """
-    print(msg.format(**pokemons_info))
 
 def show_info(process_pokemons: Answers) -> None:
     msg = """
