@@ -59,7 +59,8 @@ def read_file_csv(filepath: str) -> List[Dict[str, Union[str, int]]]:
 def read_file_xml(filepath: str) -> List[Dict[str, Union[str, int]]]: #função pra processar arquivos xml
     with open(filepath, "r", encoding= "UTF-8") as data:
         file = data.read()
-        pokemons = xmltodict.parse(file, process_namespaces = )
+        pokemons = xmltodict.parse(file)
+        print(pokemons)
         return pokemons
 
 def read_file_yaml(filepath: str) -> List[Dict[str, Union[str, int]]]: #função pra processar arquivos yaml
@@ -479,16 +480,18 @@ def client_usage() -> str:
     CLI usage:
     
         > python3 pokedex_crud.py --help
-        > python3 pokedex_crud.py --player1 <player file and format> --trivia
-        > python3 pokedex_crud.py --player1 <player 1 file and format> --player2 <player 2 file and format> --info
-        > python3 pokedex_crud.py --player1 <player 1 file and format> --player2 <player 2 file and format> --battle
+        > python3 pokedex_crud.py --player1 pokemons_1.json --trivia
+        > python3 pokedex_crud.py --player1 pokemons_1.json --player2 pokemons_2.json --info
+        > python3 pokedex_crud.py --player1 pokemons_1.json --player2 pokemons_2.json --battle
         
         ATENTION:
         
-        Where you read <player file and format> follow the example --> pokemon_1.json 
-                                                                       pokemon_1.csv
-                                                                       pokemon_1.xml
-                                                                       pokemon_1.yaml 
+        Where you read <pokemons_1.json> or <pokemons_2.json> 
+        You can use the file format that best suits your needs
+        Example --> pokemons_1.json  pokemons_2.json 
+                    pokemons_1.csv   pokemons_2.csv
+                    pokemons_1.xml   pokemons_2.xml
+                    pokemons_1.yaml  pokemons_2.yaml
         
         
     """
