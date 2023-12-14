@@ -1,4503 +1,4503 @@
 <?xml version="1.0" encoding="UTF-8" ?>
  <root>
-     <0>
+     <id0>
          <Id>127</Id>
          <Name>Pinsir</Name>
-         <Type 1>Bug</Type 1>
-         <Type 2></Type 2>
+         <Type1>Bug</Type1>
+         <Type2></Type2>
          <Total>500</Total>
          <HP>65</HP>
          <Attack>125</Attack>
          <Defense>100</Defense>
-         <Sp. Atk>55</Sp. Atk>
-         <Sp. Def>70</Sp. Def>
+         <Sp_Atk>55</Sp_Atk>
+         <Sp_Def>70</Sp_Def>
          <Speed>85</Speed>
          <Generation>1</Generation>
          <Legendary>False</Legendary>
-     </0>
-     <1>
+     </id0>
+     <id1>
          <Id>65</Id>
          <Name>Alakazam</Name>
-         <Type 1>Psychic</Type 1>
-         <Type 2></Type 2>
+         <Type1>Psychic</Type1>
+         <Type2></Type2>
          <Total>500</Total>
          <HP>55</HP>
          <Attack>50</Attack>
          <Defense>45</Defense>
-         <Sp. Atk>135</Sp. Atk>
-         <Sp. Def>95</Sp. Def>
+         <Sp_Atk>135</Sp_Atk>
+         <Sp_Def>95</Sp_Def>
          <Speed>120</Speed>
          <Generation>1</Generation>
          <Legendary>False</Legendary>
-     </1>
-     <2>
+     </id1>
+     <id2>
          <Id>434</Id>
          <Name>Stunky</Name>
-         <Type 1>Poison</Type 1>
-         <Type 2>Dark</Type 2>
+         <Type1>Poison</Type1>
+         <Type2>Dark</Type2>
          <Total>329</Total>
          <HP>63</HP>
          <Attack>63</Attack>
          <Defense>47</Defense>
-         <Sp. Atk>41</Sp. Atk>
-         <Sp. Def>41</Sp. Def>
+         <Sp_Atk>41</Sp_Atk>
+         <Sp_Def>41</Sp_Def>
          <Speed>74</Speed>
          <Generation>4</Generation>
          <Legendary>False</Legendary>
-     </2>
-     <3>
+     </id2>
+     <id3>
          <Id>492</Id>
          <Name>ShayminSky Forme</Name>
-         <Type 1>Grass</Type 1>
-         <Type 2>Flying</Type 2>
+         <Type1>Grass</Type1>
+         <Type2>Flying</Type2>
          <Total>600</Total>
          <HP>100</HP>
          <Attack>103</Attack>
          <Defense>75</Defense>
-         <Sp. Atk>120</Sp. Atk>
-         <Sp. Def>75</Sp. Def>
+         <Sp_Atk>120</Sp_Atk>
+         <Sp_Def>75</Sp_Def>
          <Speed>127</Speed>
          <Generation>4</Generation>
          <Legendary>True</Legendary>
-     </3>
-     <4>
+     </id3>
+     <id4>
          <Id>295</Id>
          <Name>Exploud</Name>
-         <Type 1>Normal</Type 1>
-         <Type 2></Type 2>
+         <Type1>Normal</Type1>
+         <Type2></Type2>
          <Total>490</Total>
          <HP>104</HP>
          <Attack>91</Attack>
          <Defense>63</Defense>
-         <Sp. Atk>91</Sp. Atk>
-         <Sp. Def>73</Sp. Def>
+         <Sp_Atk>91</Sp_Atk>
+         <Sp_Def>73</Sp_Def>
          <Speed>68</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </4>
-     <5>
+     </id4>
+     <id5>
          <Id>388</Id>
          <Name>Grotle</Name>
-         <Type 1>Grass</Type 1>
-         <Type 2></Type 2>
+         <Type1>Grass</Type1>
+         <Type2></Type2>
          <Total>405</Total>
          <HP>75</HP>
          <Attack>89</Attack>
          <Defense>85</Defense>
-         <Sp. Atk>55</Sp. Atk>
-         <Sp. Def>65</Sp. Def>
+         <Sp_Atk>55</Sp_Atk>
+         <Sp_Def>65</Sp_Def>
          <Speed>36</Speed>
          <Generation>4</Generation>
          <Legendary>False</Legendary>
-     </5>
-     <6>
+     </id5>
+     <id6>
          <Id>65</Id>
          <Name>AlakazamMega Alakazam</Name>
-         <Type 1>Psychic</Type 1>
-         <Type 2></Type 2>
+         <Type1>Psychic</Type1>
+         <Type2></Type2>
          <Total>590</Total>
          <HP>55</HP>
          <Attack>50</Attack>
          <Defense>65</Defense>
-         <Sp. Atk>175</Sp. Atk>
-         <Sp. Def>95</Sp. Def>
+         <Sp_Atk>175</Sp_Atk>
+         <Sp_Def>95</Sp_Def>
          <Speed>150</Speed>
          <Generation>1</Generation>
          <Legendary>False</Legendary>
-     </6>
-     <7>
+     </id6>
+     <id7>
          <Id>531</Id>
          <Name>AudinoMega Audino</Name>
-         <Type 1>Normal</Type 1>
-         <Type 2>Fairy</Type 2>
+         <Type1>Normal</Type1>
+         <Type2>Fairy</Type2>
          <Total>545</Total>
          <HP>103</HP>
          <Attack>60</Attack>
          <Defense>126</Defense>
-         <Sp. Atk>80</Sp. Atk>
-         <Sp. Def>126</Sp. Def>
+         <Sp_Atk>80</Sp_Atk>
+         <Sp_Def>126</Sp_Def>
          <Speed>50</Speed>
          <Generation>5</Generation>
          <Legendary>False</Legendary>
-     </7>
-     <8>
+     </id7>
+     <id8>
          <Id>582</Id>
          <Name>Vanillite</Name>
-         <Type 1>Ice</Type 1>
-         <Type 2></Type 2>
+         <Type1>Ice</Type1>
+         <Type2></Type2>
          <Total>305</Total>
          <HP>36</HP>
          <Attack>50</Attack>
          <Defense>50</Defense>
-         <Sp. Atk>65</Sp. Atk>
-         <Sp. Def>60</Sp. Def>
+         <Sp_Atk>65</Sp_Atk>
+         <Sp_Def>60</Sp_Def>
          <Speed>44</Speed>
          <Generation>5</Generation>
          <Legendary>False</Legendary>
-     </8>
-     <9>
+     </id8>
+     <id9>
          <Id>341</Id>
          <Name>Corphish</Name>
-         <Type 1>Water</Type 1>
-         <Type 2></Type 2>
+         <Type1>Water</Type1>
+         <Type2></Type2>
          <Total>308</Total>
          <HP>43</HP>
          <Attack>80</Attack>
          <Defense>65</Defense>
-         <Sp. Atk>50</Sp. Atk>
-         <Sp. Def>35</Sp. Def>
+         <Sp_Atk>50</Sp_Atk>
+         <Sp_Def>35</Sp_Def>
          <Speed>35</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </9>
-     <10>
+     </id9>
+     <id10>
          <Id>33</Id>
          <Name>Nidorino</Name>
-         <Type 1>Poison</Type 1>
-         <Type 2></Type 2>
+         <Type1>Poison</Type1>
+         <Type2></Type2>
          <Total>365</Total>
          <HP>61</HP>
          <Attack>72</Attack>
          <Defense>57</Defense>
-         <Sp. Atk>55</Sp. Atk>
-         <Sp. Def>55</Sp. Def>
+         <Sp_Atk>55</Sp_Atk>
+         <Sp_Def>55</Sp_Def>
          <Speed>65</Speed>
          <Generation>1</Generation>
          <Legendary>False</Legendary>
-     </10>
-     <11>
+     </id10>
+     <id11>
          <Id>615</Id>
          <Name>Cryogonal</Name>
-         <Type 1>Ice</Type 1>
-         <Type 2></Type 2>
+         <Type1>Ice</Type1>
+         <Type2></Type2>
          <Total>485</Total>
          <HP>70</HP>
          <Attack>50</Attack>
          <Defense>30</Defense>
-         <Sp. Atk>95</Sp. Atk>
-         <Sp. Def>135</Sp. Def>
+         <Sp_Atk>95</Sp_Atk>
+         <Sp_Def>135</Sp_Def>
          <Speed>105</Speed>
          <Generation>5</Generation>
          <Legendary>False</Legendary>
-     </11>
-     <12>
+     </id11>
+     <id12>
          <Id>535</Id>
          <Name>Tympole</Name>
-         <Type 1>Water</Type 1>
-         <Type 2></Type 2>
+         <Type1>Water</Type1>
+         <Type2></Type2>
          <Total>294</Total>
          <HP>50</HP>
          <Attack>50</Attack>
          <Defense>40</Defense>
-         <Sp. Atk>50</Sp. Atk>
-         <Sp. Def>40</Sp. Def>
+         <Sp_Atk>50</Sp_Atk>
+         <Sp_Def>40</Sp_Def>
          <Speed>64</Speed>
          <Generation>5</Generation>
          <Legendary>False</Legendary>
-     </12>
-     <13>
+     </id12>
+     <id13>
          <Id>204</Id>
          <Name>Pineco</Name>
-         <Type 1>Bug</Type 1>
-         <Type 2></Type 2>
+         <Type1>Bug</Type1>
+         <Type2></Type2>
          <Total>290</Total>
          <HP>50</HP>
          <Attack>65</Attack>
          <Defense>90</Defense>
-         <Sp. Atk>35</Sp. Atk>
-         <Sp. Def>35</Sp. Def>
+         <Sp_Atk>35</Sp_Atk>
+         <Sp_Def>35</Sp_Def>
          <Speed>15</Speed>
          <Generation>2</Generation>
          <Legendary>False</Legendary>
-     </13>
-     <14>
+     </id13>
+     <id14>
          <Id>201</Id>
          <Name>Unown</Name>
-         <Type 1>Psychic</Type 1>
-         <Type 2></Type 2>
+         <Type1>Psychic</Type1>
+         <Type2></Type2>
          <Total>336</Total>
          <HP>48</HP>
          <Attack>72</Attack>
          <Defense>48</Defense>
-         <Sp. Atk>72</Sp. Atk>
-         <Sp. Def>48</Sp. Def>
+         <Sp_Atk>72</Sp_Atk>
+         <Sp_Def>48</Sp_Def>
          <Speed>48</Speed>
          <Generation>2</Generation>
          <Legendary>False</Legendary>
-     </14>
-     <15>
+     </id14>
+     <id15>
          <Id>290</Id>
          <Name>Nincada</Name>
-         <Type 1>Bug</Type 1>
-         <Type 2>Ground</Type 2>
+         <Type1>Bug</Type1>
+         <Type2>Ground</Type2>
          <Total>266</Total>
          <HP>31</HP>
          <Attack>45</Attack>
          <Defense>90</Defense>
-         <Sp. Atk>30</Sp. Atk>
-         <Sp. Def>30</Sp. Def>
+         <Sp_Atk>30</Sp_Atk>
+         <Sp_Def>30</Sp_Def>
          <Speed>40</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </15>
-     <16>
+     </id15>
+     <id16>
          <Id>347</Id>
          <Name>Anorith</Name>
-         <Type 1>Rock</Type 1>
-         <Type 2>Bug</Type 2>
+         <Type1>Rock</Type1>
+         <Type2>Bug</Type2>
          <Total>355</Total>
          <HP>45</HP>
          <Attack>95</Attack>
          <Defense>50</Defense>
-         <Sp. Atk>40</Sp. Atk>
-         <Sp. Def>50</Sp. Def>
+         <Sp_Atk>40</Sp_Atk>
+         <Sp_Def>50</Sp_Def>
          <Speed>75</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </16>
-     <17>
+     </id16>
+     <id17>
          <Id>82</Id>
          <Name>Magneton</Name>
-         <Type 1>Electric</Type 1>
-         <Type 2>Steel</Type 2>
+         <Type1>Electric</Type1>
+         <Type2>Steel</Type2>
          <Total>465</Total>
          <HP>50</HP>
          <Attack>60</Attack>
          <Defense>95</Defense>
-         <Sp. Atk>120</Sp. Atk>
-         <Sp. Def>70</Sp. Def>
+         <Sp_Atk>120</Sp_Atk>
+         <Sp_Def>70</Sp_Def>
          <Speed>70</Speed>
          <Generation>1</Generation>
          <Legendary>False</Legendary>
-     </17>
-     <18>
+     </id17>
+     <id18>
          <Id>485</Id>
          <Name>Heatran</Name>
-         <Type 1>Fire</Type 1>
-         <Type 2>Steel</Type 2>
+         <Type1>Fire</Type1>
+         <Type2>Steel</Type2>
          <Total>600</Total>
          <HP>91</HP>
          <Attack>90</Attack>
          <Defense>106</Defense>
-         <Sp. Atk>130</Sp. Atk>
-         <Sp. Def>106</Sp. Def>
+         <Sp_Atk>130</Sp_Atk>
+         <Sp_Def>106</Sp_Def>
          <Speed>77</Speed>
          <Generation>4</Generation>
          <Legendary>True</Legendary>
-     </18>
-     <19>
+     </id18>
+     <id19>
          <Id>244</Id>
          <Name>Entei</Name>
-         <Type 1>Fire</Type 1>
-         <Type 2></Type 2>
+         <Type1>Fire</Type1>
+         <Type2></Type2>
          <Total>580</Total>
          <HP>115</HP>
          <Attack>115</Attack>
          <Defense>85</Defense>
-         <Sp. Atk>90</Sp. Atk>
-         <Sp. Def>75</Sp. Def>
+         <Sp_Atk>90</Sp_Atk>
+         <Sp_Def>75</Sp_Def>
          <Speed>100</Speed>
          <Generation>2</Generation>
          <Legendary>True</Legendary>
-     </19>
-     <20>
+     </id19>
+     <id20>
          <Id>438</Id>
          <Name>Bonsly</Name>
-         <Type 1>Rock</Type 1>
-         <Type 2></Type 2>
+         <Type1>Rock</Type1>
+         <Type2></Type2>
          <Total>290</Total>
          <HP>50</HP>
          <Attack>80</Attack>
          <Defense>95</Defense>
-         <Sp. Atk>10</Sp. Atk>
-         <Sp. Def>45</Sp. Def>
+         <Sp_Atk>10</Sp_Atk>
+         <Sp_Def>45</Sp_Def>
          <Speed>10</Speed>
          <Generation>4</Generation>
          <Legendary>False</Legendary>
-     </20>
-     <21>
+     </id20>
+     <id21>
          <Id>95</Id>
          <Name>Onix</Name>
-         <Type 1>Rock</Type 1>
-         <Type 2>Ground</Type 2>
+         <Type1>Rock</Type1>
+         <Type2>Ground</Type2>
          <Total>385</Total>
          <HP>35</HP>
          <Attack>45</Attack>
          <Defense>160</Defense>
-         <Sp. Atk>30</Sp. Atk>
-         <Sp. Def>45</Sp. Def>
+         <Sp_Atk>30</Sp_Atk>
+         <Sp_Def>45</Sp_Def>
          <Speed>70</Speed>
          <Generation>1</Generation>
          <Legendary>False</Legendary>
-     </21>
-     <22>
+     </id21>
+     <id22>
          <Id>646</Id>
          <Name>Kyurem</Name>
-         <Type 1>Dragon</Type 1>
-         <Type 2>Ice</Type 2>
+         <Type1>Dragon</Type1>
+         <Type2>Ice</Type2>
          <Total>660</Total>
          <HP>125</HP>
          <Attack>130</Attack>
          <Defense>90</Defense>
-         <Sp. Atk>130</Sp. Atk>
-         <Sp. Def>90</Sp. Def>
+         <Sp_Atk>130</Sp_Atk>
+         <Sp_Def>90</Sp_Def>
          <Speed>95</Speed>
          <Generation>5</Generation>
          <Legendary>True</Legendary>
-     </22>
-     <23>
+     </id22>
+     <id23>
          <Id>635</Id>
          <Name>Hydreigon</Name>
-         <Type 1>Dark</Type 1>
-         <Type 2>Dragon</Type 2>
+         <Type1>Dark</Type1>
+         <Type2>Dragon</Type2>
          <Total>600</Total>
          <HP>92</HP>
          <Attack>105</Attack>
          <Defense>90</Defense>
-         <Sp. Atk>125</Sp. Atk>
-         <Sp. Def>90</Sp. Def>
+         <Sp_Atk>125</Sp_Atk>
+         <Sp_Def>90</Sp_Def>
          <Speed>98</Speed>
          <Generation>5</Generation>
          <Legendary>False</Legendary>
-     </23>
-     <24>
+     </id23>
+     <id24>
          <Id>662</Id>
          <Name>Fletchinder</Name>
-         <Type 1>Fire</Type 1>
-         <Type 2>Flying</Type 2>
+         <Type1>Fire</Type1>
+         <Type2>Flying</Type2>
          <Total>382</Total>
          <HP>62</HP>
          <Attack>73</Attack>
          <Defense>55</Defense>
-         <Sp. Atk>56</Sp. Atk>
-         <Sp. Def>52</Sp. Def>
+         <Sp_Atk>56</Sp_Atk>
+         <Sp_Def>52</Sp_Def>
          <Speed>84</Speed>
          <Generation>6</Generation>
          <Legendary>False</Legendary>
-     </24>
-     <25>
+     </id24>
+     <id25>
          <Id>415</Id>
          <Name>Combee</Name>
-         <Type 1>Bug</Type 1>
-         <Type 2>Flying</Type 2>
+         <Type1>Bug</Type1>
+         <Type2>Flying</Type2>
          <Total>244</Total>
          <HP>30</HP>
          <Attack>30</Attack>
          <Defense>42</Defense>
-         <Sp. Atk>30</Sp. Atk>
-         <Sp. Def>42</Sp. Def>
+         <Sp_Atk>30</Sp_Atk>
+         <Sp_Def>42</Sp_Def>
          <Speed>70</Speed>
          <Generation>4</Generation>
          <Legendary>False</Legendary>
-     </25>
-     <26>
+     </id25>
+     <id26>
          <Id>292</Id>
          <Name>Shedinja</Name>
-         <Type 1>Bug</Type 1>
-         <Type 2>Ghost</Type 2>
+         <Type1>Bug</Type1>
+         <Type2>Ghost</Type2>
          <Total>236</Total>
          <HP>1</HP>
          <Attack>90</Attack>
          <Defense>45</Defense>
-         <Sp. Atk>30</Sp. Atk>
-         <Sp. Def>30</Sp. Def>
+         <Sp_Atk>30</Sp_Atk>
+         <Sp_Def>30</Sp_Def>
          <Speed>40</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </26>
-     <27>
+     </id26>
+     <id27>
          <Id>367</Id>
          <Name>Huntail</Name>
-         <Type 1>Water</Type 1>
-         <Type 2></Type 2>
+         <Type1>Water</Type1>
+         <Type2></Type2>
          <Total>485</Total>
          <HP>55</HP>
          <Attack>104</Attack>
          <Defense>105</Defense>
-         <Sp. Atk>94</Sp. Atk>
-         <Sp. Def>75</Sp. Def>
+         <Sp_Atk>94</Sp_Atk>
+         <Sp_Def>75</Sp_Def>
          <Speed>52</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </27>
-     <28>
+     </id27>
+     <id28>
          <Id>161</Id>
          <Name>Sentret</Name>
-         <Type 1>Normal</Type 1>
-         <Type 2></Type 2>
+         <Type1>Normal</Type1>
+         <Type2></Type2>
          <Total>215</Total>
          <HP>35</HP>
          <Attack>46</Attack>
          <Defense>34</Defense>
-         <Sp. Atk>35</Sp. Atk>
-         <Sp. Def>45</Sp. Def>
+         <Sp_Atk>35</Sp_Atk>
+         <Sp_Def>45</Sp_Def>
          <Speed>20</Speed>
          <Generation>2</Generation>
          <Legendary>False</Legendary>
-     </28>
-     <29>
+     </id28>
+     <id29>
          <Id>181</Id>
          <Name>AmpharosMega Ampharos</Name>
-         <Type 1>Electric</Type 1>
-         <Type 2>Dragon</Type 2>
+         <Type1>Electric</Type1>
+         <Type2>Dragon</Type2>
          <Total>610</Total>
          <HP>90</HP>
          <Attack>95</Attack>
          <Defense>105</Defense>
-         <Sp. Atk>165</Sp. Atk>
-         <Sp. Def>110</Sp. Def>
+         <Sp_Atk>165</Sp_Atk>
+         <Sp_Def>110</Sp_Def>
          <Speed>45</Speed>
          <Generation>2</Generation>
          <Legendary>False</Legendary>
-     </29>
-     <30>
+     </id29>
+     <id30>
          <Id>377</Id>
          <Name>Regirock</Name>
-         <Type 1>Rock</Type 1>
-         <Type 2></Type 2>
+         <Type1>Rock</Type1>
+         <Type2></Type2>
          <Total>580</Total>
          <HP>80</HP>
          <Attack>100</Attack>
          <Defense>200</Defense>
-         <Sp. Atk>50</Sp. Atk>
-         <Sp. Def>100</Sp. Def>
+         <Sp_Atk>50</Sp_Atk>
+         <Sp_Def>100</Sp_Def>
          <Speed>50</Speed>
          <Generation>3</Generation>
          <Legendary>True</Legendary>
-     </30>
-     <31>
+     </id30>
+     <id31>
          <Id>284</Id>
          <Name>Masquerain</Name>
-         <Type 1>Bug</Type 1>
-         <Type 2>Flying</Type 2>
+         <Type1>Bug</Type1>
+         <Type2>Flying</Type2>
          <Total>414</Total>
          <HP>70</HP>
          <Attack>60</Attack>
          <Defense>62</Defense>
-         <Sp. Atk>80</Sp. Atk>
-         <Sp. Def>82</Sp. Def>
+         <Sp_Atk>80</Sp_Atk>
+         <Sp_Def>82</Sp_Def>
          <Speed>60</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </31>
-     <32>
+     </id31>
+     <id32>
          <Id>510</Id>
          <Name>Liepard</Name>
-         <Type 1>Dark</Type 1>
-         <Type 2></Type 2>
+         <Type1>Dark</Type1>
+         <Type2></Type2>
          <Total>446</Total>
          <HP>64</HP>
          <Attack>88</Attack>
          <Defense>50</Defense>
-         <Sp. Atk>88</Sp. Atk>
-         <Sp. Def>50</Sp. Def>
+         <Sp_Atk>88</Sp_Atk>
+         <Sp_Def>50</Sp_Def>
          <Speed>106</Speed>
          <Generation>5</Generation>
          <Legendary>False</Legendary>
-     </32>
-     <33>
+     </id32>
+     <id33>
          <Id>376</Id>
          <Name>MetagrossMega Metagross</Name>
-         <Type 1>Steel</Type 1>
-         <Type 2>Psychic</Type 2>
+         <Type1>Steel</Type1>
+         <Type2>Psychic</Type2>
          <Total>700</Total>
          <HP>80</HP>
          <Attack>145</Attack>
          <Defense>150</Defense>
-         <Sp. Atk>105</Sp. Atk>
-         <Sp. Def>110</Sp. Def>
+         <Sp_Atk>105</Sp_Atk>
+         <Sp_Def>110</Sp_Def>
          <Speed>110</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </33>
-     <34>
+     </id33>
+     <id34>
          <Id>579</Id>
          <Name>Reuniclus</Name>
-         <Type 1>Psychic</Type 1>
-         <Type 2></Type 2>
+         <Type1>Psychic</Type1>
+         <Type2></Type2>
          <Total>490</Total>
          <HP>110</HP>
          <Attack>65</Attack>
          <Defense>75</Defense>
-         <Sp. Atk>125</Sp. Atk>
-         <Sp. Def>85</Sp. Def>
+         <Sp_Atk>125</Sp_Atk>
+         <Sp_Def>85</Sp_Def>
          <Speed>30</Speed>
          <Generation>5</Generation>
          <Legendary>False</Legendary>
-     </34>
-     <35>
+     </id34>
+     <id35>
          <Id>432</Id>
          <Name>Purugly</Name>
-         <Type 1>Normal</Type 1>
-         <Type 2></Type 2>
+         <Type1>Normal</Type1>
+         <Type2></Type2>
          <Total>452</Total>
          <HP>71</HP>
          <Attack>82</Attack>
          <Defense>64</Defense>
-         <Sp. Atk>64</Sp. Atk>
-         <Sp. Def>59</Sp. Def>
+         <Sp_Atk>64</Sp_Atk>
+         <Sp_Def>59</Sp_Def>
          <Speed>112</Speed>
          <Generation>4</Generation>
          <Legendary>False</Legendary>
-     </35>
-     <36>
+     </id35>
+     <id36>
          <Id>580</Id>
          <Name>Ducklett</Name>
-         <Type 1>Water</Type 1>
-         <Type 2>Flying</Type 2>
+         <Type1>Water</Type1>
+         <Type2>Flying</Type2>
          <Total>305</Total>
          <HP>62</HP>
          <Attack>44</Attack>
          <Defense>50</Defense>
-         <Sp. Atk>44</Sp. Atk>
-         <Sp. Def>50</Sp. Def>
+         <Sp_Atk>44</Sp_Atk>
+         <Sp_Def>50</Sp_Def>
          <Speed>55</Speed>
          <Generation>5</Generation>
          <Legendary>False</Legendary>
-     </36>
-     <37>
+     </id36>
+     <id37>
          <Id>193</Id>
          <Name>Yanma</Name>
-         <Type 1>Bug</Type 1>
-         <Type 2>Flying</Type 2>
+         <Type1>Bug</Type1>
+         <Type2>Flying</Type2>
          <Total>390</Total>
          <HP>65</HP>
          <Attack>65</Attack>
          <Defense>45</Defense>
-         <Sp. Atk>75</Sp. Atk>
-         <Sp. Def>45</Sp. Def>
+         <Sp_Atk>75</Sp_Atk>
+         <Sp_Def>45</Sp_Def>
          <Speed>95</Speed>
          <Generation>2</Generation>
          <Legendary>False</Legendary>
-     </37>
-     <38>
+     </id37>
+     <id38>
          <Id>698</Id>
          <Name>Amaura</Name>
-         <Type 1>Rock</Type 1>
-         <Type 2>Ice</Type 2>
+         <Type1>Rock</Type1>
+         <Type2>Ice</Type2>
          <Total>362</Total>
          <HP>77</HP>
          <Attack>59</Attack>
          <Defense>50</Defense>
-         <Sp. Atk>67</Sp. Atk>
-         <Sp. Def>63</Sp. Def>
+         <Sp_Atk>67</Sp_Atk>
+         <Sp_Def>63</Sp_Def>
          <Speed>46</Speed>
          <Generation>6</Generation>
          <Legendary>False</Legendary>
-     </38>
-     <39>
+     </id38>
+     <id39>
          <Id>505</Id>
          <Name>Watchog</Name>
-         <Type 1>Normal</Type 1>
-         <Type 2></Type 2>
+         <Type1>Normal</Type1>
+         <Type2></Type2>
          <Total>420</Total>
          <HP>60</HP>
          <Attack>85</Attack>
          <Defense>69</Defense>
-         <Sp. Atk>60</Sp. Atk>
-         <Sp. Def>69</Sp. Def>
+         <Sp_Atk>60</Sp_Atk>
+         <Sp_Def>69</Sp_Def>
          <Speed>77</Speed>
          <Generation>5</Generation>
          <Legendary>False</Legendary>
-     </39>
-     <40>
+     </id39>
+     <id40>
          <Id>138</Id>
          <Name>Omanyte</Name>
-         <Type 1>Rock</Type 1>
-         <Type 2>Water</Type 2>
+         <Type1>Rock</Type1>
+         <Type2>Water</Type2>
          <Total>355</Total>
          <HP>35</HP>
          <Attack>40</Attack>
          <Defense>100</Defense>
-         <Sp. Atk>90</Sp. Atk>
-         <Sp. Def>55</Sp. Def>
+         <Sp_Atk>90</Sp_Atk>
+         <Sp_Def>55</Sp_Def>
          <Speed>35</Speed>
          <Generation>1</Generation>
          <Legendary>False</Legendary>
-     </40>
-     <41>
+     </id40>
+     <id41>
          <Id>545</Id>
          <Name>Scolipede</Name>
-         <Type 1>Bug</Type 1>
-         <Type 2>Poison</Type 2>
+         <Type1>Bug</Type1>
+         <Type2>Poison</Type2>
          <Total>485</Total>
          <HP>60</HP>
          <Attack>100</Attack>
          <Defense>89</Defense>
-         <Sp. Atk>55</Sp. Atk>
-         <Sp. Def>69</Sp. Def>
+         <Sp_Atk>55</Sp_Atk>
+         <Sp_Def>69</Sp_Def>
          <Speed>112</Speed>
          <Generation>5</Generation>
          <Legendary>False</Legendary>
-     </41>
-     <42>
+     </id41>
+     <id42>
          <Id>467</Id>
          <Name>Magmortar</Name>
-         <Type 1>Fire</Type 1>
-         <Type 2></Type 2>
+         <Type1>Fire</Type1>
+         <Type2></Type2>
          <Total>540</Total>
          <HP>75</HP>
          <Attack>95</Attack>
          <Defense>67</Defense>
-         <Sp. Atk>125</Sp. Atk>
-         <Sp. Def>95</Sp. Def>
+         <Sp_Atk>125</Sp_Atk>
+         <Sp_Def>95</Sp_Def>
          <Speed>83</Speed>
          <Generation>4</Generation>
          <Legendary>False</Legendary>
-     </42>
-     <43>
+     </id42>
+     <id43>
          <Id>378</Id>
          <Name>Regice</Name>
-         <Type 1>Ice</Type 1>
-         <Type 2></Type 2>
+         <Type1>Ice</Type1>
+         <Type2></Type2>
          <Total>580</Total>
          <HP>80</HP>
          <Attack>50</Attack>
          <Defense>100</Defense>
-         <Sp. Atk>100</Sp. Atk>
-         <Sp. Def>200</Sp. Def>
+         <Sp_Atk>100</Sp_Atk>
+         <Sp_Def>200</Sp_Def>
          <Speed>50</Speed>
          <Generation>3</Generation>
          <Legendary>True</Legendary>
-     </43>
-     <44>
+     </id43>
+     <id44>
          <Id>224</Id>
          <Name>Octillery</Name>
-         <Type 1>Water</Type 1>
-         <Type 2></Type 2>
+         <Type1>Water</Type1>
+         <Type2></Type2>
          <Total>480</Total>
          <HP>75</HP>
          <Attack>105</Attack>
          <Defense>75</Defense>
-         <Sp. Atk>105</Sp. Atk>
-         <Sp. Def>75</Sp. Def>
+         <Sp_Atk>105</Sp_Atk>
+         <Sp_Def>75</Sp_Def>
          <Speed>45</Speed>
          <Generation>2</Generation>
          <Legendary>False</Legendary>
-     </44>
-     <45>
+     </id44>
+     <id45>
          <Id>720</Id>
          <Name>HoopaHoopa Unbound</Name>
-         <Type 1>Psychic</Type 1>
-         <Type 2>Dark</Type 2>
+         <Type1>Psychic</Type1>
+         <Type2>Dark</Type2>
          <Total>680</Total>
          <HP>80</HP>
          <Attack>160</Attack>
          <Defense>60</Defense>
-         <Sp. Atk>170</Sp. Atk>
-         <Sp. Def>130</Sp. Def>
+         <Sp_Atk>170</Sp_Atk>
+         <Sp_Def>130</Sp_Def>
          <Speed>80</Speed>
          <Generation>6</Generation>
          <Legendary>True</Legendary>
-     </45>
-     <46>
+     </id45>
+     <id46>
          <Id>437</Id>
          <Name>Bronzong</Name>
-         <Type 1>Steel</Type 1>
-         <Type 2>Psychic</Type 2>
+         <Type1>Steel</Type1>
+         <Type2>Psychic</Type2>
          <Total>500</Total>
          <HP>67</HP>
          <Attack>89</Attack>
          <Defense>116</Defense>
-         <Sp. Atk>79</Sp. Atk>
-         <Sp. Def>116</Sp. Def>
+         <Sp_Atk>79</Sp_Atk>
+         <Sp_Def>116</Sp_Def>
          <Speed>33</Speed>
          <Generation>4</Generation>
          <Legendary>False</Legendary>
-     </46>
-     <47>
+     </id46>
+     <id47>
          <Id>478</Id>
          <Name>Froslass</Name>
-         <Type 1>Ice</Type 1>
-         <Type 2>Ghost</Type 2>
+         <Type1>Ice</Type1>
+         <Type2>Ghost</Type2>
          <Total>480</Total>
          <HP>70</HP>
          <Attack>80</Attack>
          <Defense>70</Defense>
-         <Sp. Atk>80</Sp. Atk>
-         <Sp. Def>70</Sp. Def>
+         <Sp_Atk>80</Sp_Atk>
+         <Sp_Def>70</Sp_Def>
          <Speed>110</Speed>
          <Generation>4</Generation>
          <Legendary>False</Legendary>
-     </47>
-     <48>
+     </id47>
+     <id48>
          <Id>254</Id>
          <Name>SceptileMega Sceptile</Name>
-         <Type 1>Grass</Type 1>
-         <Type 2>Dragon</Type 2>
+         <Type1>Grass</Type1>
+         <Type2>Dragon</Type2>
          <Total>630</Total>
          <HP>70</HP>
          <Attack>110</Attack>
          <Defense>75</Defense>
-         <Sp. Atk>145</Sp. Atk>
-         <Sp. Def>85</Sp. Def>
+         <Sp_Atk>145</Sp_Atk>
+         <Sp_Def>85</Sp_Def>
          <Speed>145</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </48>
-     <49>
+     </id48>
+     <id49>
          <Id>408</Id>
          <Name>Cranidos</Name>
-         <Type 1>Rock</Type 1>
-         <Type 2></Type 2>
+         <Type1>Rock</Type1>
+         <Type2></Type2>
          <Total>350</Total>
          <HP>67</HP>
          <Attack>125</Attack>
          <Defense>40</Defense>
-         <Sp. Atk>30</Sp. Atk>
-         <Sp. Def>30</Sp. Def>
+         <Sp_Atk>30</Sp_Atk>
+         <Sp_Def>30</Sp_Def>
          <Speed>58</Speed>
          <Generation>4</Generation>
          <Legendary>False</Legendary>
-     </49>
-     <50>
+     </id49>
+     <id50>
          <Id>473</Id>
          <Name>Mamoswine</Name>
-         <Type 1>Ice</Type 1>
-         <Type 2>Ground</Type 2>
+         <Type1>Ice</Type1>
+         <Type2>Ground</Type2>
          <Total>530</Total>
          <HP>110</HP>
          <Attack>130</Attack>
          <Defense>80</Defense>
-         <Sp. Atk>70</Sp. Atk>
-         <Sp. Def>60</Sp. Def>
+         <Sp_Atk>70</Sp_Atk>
+         <Sp_Def>60</Sp_Def>
          <Speed>80</Speed>
          <Generation>4</Generation>
          <Legendary>False</Legendary>
-     </50>
-     <51>
+     </id50>
+     <id51>
          <Id>268</Id>
          <Name>Cascoon</Name>
-         <Type 1>Bug</Type 1>
-         <Type 2></Type 2>
+         <Type1>Bug</Type1>
+         <Type2></Type2>
          <Total>205</Total>
          <HP>50</HP>
          <Attack>35</Attack>
          <Defense>55</Defense>
-         <Sp. Atk>25</Sp. Atk>
-         <Sp. Def>25</Sp. Def>
+         <Sp_Atk>25</Sp_Atk>
+         <Sp_Def>25</Sp_Def>
          <Speed>15</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </51>
-     <52>
+     </id51>
+     <id52>
          <Id>379</Id>
          <Name>Registeel</Name>
-         <Type 1>Steel</Type 1>
-         <Type 2></Type 2>
+         <Type1>Steel</Type1>
+         <Type2></Type2>
          <Total>580</Total>
          <HP>80</HP>
          <Attack>75</Attack>
          <Defense>150</Defense>
-         <Sp. Atk>75</Sp. Atk>
-         <Sp. Def>150</Sp. Def>
+         <Sp_Atk>75</Sp_Atk>
+         <Sp_Def>150</Sp_Def>
          <Speed>50</Speed>
          <Generation>3</Generation>
          <Legendary>True</Legendary>
-     </52>
-     <53>
+     </id52>
+     <id53>
          <Id>610</Id>
          <Name>Axew</Name>
-         <Type 1>Dragon</Type 1>
-         <Type 2></Type 2>
+         <Type1>Dragon</Type1>
+         <Type2></Type2>
          <Total>320</Total>
          <HP>46</HP>
          <Attack>87</Attack>
          <Defense>60</Defense>
-         <Sp. Atk>30</Sp. Atk>
-         <Sp. Def>40</Sp. Def>
+         <Sp_Atk>30</Sp_Atk>
+         <Sp_Def>40</Sp_Def>
          <Speed>57</Speed>
          <Generation>5</Generation>
          <Legendary>False</Legendary>
-     </53>
-     <54>
+     </id53>
+     <id54>
          <Id>458</Id>
          <Name>Mantyke</Name>
-         <Type 1>Water</Type 1>
-         <Type 2>Flying</Type 2>
+         <Type1>Water</Type1>
+         <Type2>Flying</Type2>
          <Total>345</Total>
          <HP>45</HP>
          <Attack>20</Attack>
          <Defense>50</Defense>
-         <Sp. Atk>60</Sp. Atk>
-         <Sp. Def>120</Sp. Def>
+         <Sp_Atk>60</Sp_Atk>
+         <Sp_Def>120</Sp_Def>
          <Speed>50</Speed>
          <Generation>4</Generation>
          <Legendary>False</Legendary>
-     </54>
-     <55>
+     </id54>
+     <id55>
          <Id>498</Id>
          <Name>Tepig</Name>
-         <Type 1>Fire</Type 1>
-         <Type 2></Type 2>
+         <Type1>Fire</Type1>
+         <Type2></Type2>
          <Total>308</Total>
          <HP>65</HP>
          <Attack>63</Attack>
          <Defense>45</Defense>
-         <Sp. Atk>45</Sp. Atk>
-         <Sp. Def>45</Sp. Def>
+         <Sp_Atk>45</Sp_Atk>
+         <Sp_Def>45</Sp_Def>
          <Speed>45</Speed>
          <Generation>5</Generation>
          <Legendary>False</Legendary>
-     </55>
-     <56>
+     </id55>
+     <id56>
          <Id>200</Id>
          <Name>Misdreavus</Name>
-         <Type 1>Ghost</Type 1>
-         <Type 2></Type 2>
+         <Type1>Ghost</Type1>
+         <Type2></Type2>
          <Total>435</Total>
          <HP>60</HP>
          <Attack>60</Attack>
          <Defense>60</Defense>
-         <Sp. Atk>85</Sp. Atk>
-         <Sp. Def>85</Sp. Def>
+         <Sp_Atk>85</Sp_Atk>
+         <Sp_Def>85</Sp_Def>
          <Speed>85</Speed>
          <Generation>2</Generation>
          <Legendary>False</Legendary>
-     </56>
-     <57>
+     </id56>
+     <id57>
          <Id>61</Id>
          <Name>Poliwhirl</Name>
-         <Type 1>Water</Type 1>
-         <Type 2></Type 2>
+         <Type1>Water</Type1>
+         <Type2></Type2>
          <Total>385</Total>
          <HP>65</HP>
          <Attack>65</Attack>
          <Defense>65</Defense>
-         <Sp. Atk>50</Sp. Atk>
-         <Sp. Def>50</Sp. Def>
+         <Sp_Atk>50</Sp_Atk>
+         <Sp_Def>50</Sp_Def>
          <Speed>90</Speed>
          <Generation>1</Generation>
          <Legendary>False</Legendary>
-     </57>
-     <58>
+     </id57>
+     <id58>
          <Id>79</Id>
          <Name>Slowpoke</Name>
-         <Type 1>Water</Type 1>
-         <Type 2>Psychic</Type 2>
+         <Type1>Water</Type1>
+         <Type2>Psychic</Type2>
          <Total>315</Total>
          <HP>90</HP>
          <Attack>65</Attack>
          <Defense>65</Defense>
-         <Sp. Atk>40</Sp. Atk>
-         <Sp. Def>40</Sp. Def>
+         <Sp_Atk>40</Sp_Atk>
+         <Sp_Def>40</Sp_Def>
          <Speed>15</Speed>
          <Generation>1</Generation>
          <Legendary>False</Legendary>
-     </58>
-     <59>
+     </id58>
+     <id59>
          <Id>26</Id>
          <Name>Raichu</Name>
-         <Type 1>Electric</Type 1>
-         <Type 2></Type 2>
+         <Type1>Electric</Type1>
+         <Type2></Type2>
          <Total>485</Total>
          <HP>60</HP>
          <Attack>90</Attack>
          <Defense>55</Defense>
-         <Sp. Atk>90</Sp. Atk>
-         <Sp. Def>80</Sp. Def>
+         <Sp_Atk>90</Sp_Atk>
+         <Sp_Def>80</Sp_Def>
          <Speed>110</Speed>
          <Generation>1</Generation>
          <Legendary>False</Legendary>
-     </59>
-     <60>
+     </id59>
+     <id60>
          <Id>136</Id>
          <Name>Flareon</Name>
-         <Type 1>Fire</Type 1>
-         <Type 2></Type 2>
+         <Type1>Fire</Type1>
+         <Type2></Type2>
          <Total>525</Total>
          <HP>65</HP>
          <Attack>130</Attack>
          <Defense>60</Defense>
-         <Sp. Atk>95</Sp. Atk>
-         <Sp. Def>110</Sp. Def>
+         <Sp_Atk>95</Sp_Atk>
+         <Sp_Def>110</Sp_Def>
          <Speed>65</Speed>
          <Generation>1</Generation>
          <Legendary>False</Legendary>
-     </60>
-     <61>
+     </id60>
+     <id61>
          <Id>298</Id>
          <Name>Azurill</Name>
-         <Type 1>Normal</Type 1>
-         <Type 2>Fairy</Type 2>
+         <Type1>Normal</Type1>
+         <Type2>Fairy</Type2>
          <Total>190</Total>
          <HP>50</HP>
          <Attack>20</Attack>
          <Defense>40</Defense>
-         <Sp. Atk>20</Sp. Atk>
-         <Sp. Def>40</Sp. Def>
+         <Sp_Atk>20</Sp_Atk>
+         <Sp_Def>40</Sp_Def>
          <Speed>20</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </61>
-     <62>
+     </id61>
+     <id62>
          <Id>236</Id>
          <Name>Tyrogue</Name>
-         <Type 1>Fighting</Type 1>
-         <Type 2></Type 2>
+         <Type1>Fighting</Type1>
+         <Type2></Type2>
          <Total>210</Total>
          <HP>35</HP>
          <Attack>35</Attack>
          <Defense>35</Defense>
-         <Sp. Atk>35</Sp. Atk>
-         <Sp. Def>35</Sp. Def>
+         <Sp_Atk>35</Sp_Atk>
+         <Sp_Def>35</Sp_Def>
          <Speed>35</Speed>
          <Generation>2</Generation>
          <Legendary>False</Legendary>
-     </62>
-     <63>
+     </id62>
+     <id63>
          <Id>253</Id>
          <Name>Grovyle</Name>
-         <Type 1>Grass</Type 1>
-         <Type 2></Type 2>
+         <Type1>Grass</Type1>
+         <Type2></Type2>
          <Total>405</Total>
          <HP>50</HP>
          <Attack>65</Attack>
          <Defense>45</Defense>
-         <Sp. Atk>85</Sp. Atk>
-         <Sp. Def>65</Sp. Def>
+         <Sp_Atk>85</Sp_Atk>
+         <Sp_Def>65</Sp_Def>
          <Speed>95</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </63>
-     <64>
+     </id63>
+     <id64>
          <Id>494</Id>
          <Name>Victini</Name>
-         <Type 1>Psychic</Type 1>
-         <Type 2>Fire</Type 2>
+         <Type1>Psychic</Type1>
+         <Type2>Fire</Type2>
          <Total>600</Total>
          <HP>100</HP>
          <Attack>100</Attack>
          <Defense>100</Defense>
-         <Sp. Atk>100</Sp. Atk>
-         <Sp. Def>100</Sp. Def>
+         <Sp_Atk>100</Sp_Atk>
+         <Sp_Def>100</Sp_Def>
          <Speed>100</Speed>
          <Generation>5</Generation>
          <Legendary>True</Legendary>
-     </64>
-     <65>
+     </id64>
+     <id65>
          <Id>208</Id>
          <Name>Steelix</Name>
-         <Type 1>Steel</Type 1>
-         <Type 2>Ground</Type 2>
+         <Type1>Steel</Type1>
+         <Type2>Ground</Type2>
          <Total>510</Total>
          <HP>75</HP>
          <Attack>85</Attack>
          <Defense>200</Defense>
-         <Sp. Atk>55</Sp. Atk>
-         <Sp. Def>65</Sp. Def>
+         <Sp_Atk>55</Sp_Atk>
+         <Sp_Def>65</Sp_Def>
          <Speed>30</Speed>
          <Generation>2</Generation>
          <Legendary>False</Legendary>
-     </65>
-     <66>
+     </id65>
+     <id66>
          <Id>720</Id>
          <Name>HoopaHoopa Confined</Name>
-         <Type 1>Psychic</Type 1>
-         <Type 2>Ghost</Type 2>
+         <Type1>Psychic</Type1>
+         <Type2>Ghost</Type2>
          <Total>600</Total>
          <HP>80</HP>
          <Attack>110</Attack>
          <Defense>60</Defense>
-         <Sp. Atk>150</Sp. Atk>
-         <Sp. Def>130</Sp. Def>
+         <Sp_Atk>150</Sp_Atk>
+         <Sp_Def>130</Sp_Def>
          <Speed>70</Speed>
          <Generation>6</Generation>
          <Legendary>True</Legendary>
-     </66>
-     <67>
+     </id66>
+     <id67>
          <Id>519</Id>
          <Name>Pidove</Name>
-         <Type 1>Normal</Type 1>
-         <Type 2>Flying</Type 2>
+         <Type1>Normal</Type1>
+         <Type2>Flying</Type2>
          <Total>264</Total>
          <HP>50</HP>
          <Attack>55</Attack>
          <Defense>50</Defense>
-         <Sp. Atk>36</Sp. Atk>
-         <Sp. Def>30</Sp. Def>
+         <Sp_Atk>36</Sp_Atk>
+         <Sp_Def>30</Sp_Def>
          <Speed>43</Speed>
          <Generation>5</Generation>
          <Legendary>False</Legendary>
-     </67>
-     <68>
+     </id67>
+     <id68>
          <Id>175</Id>
          <Name>Togepi</Name>
-         <Type 1>Fairy</Type 1>
-         <Type 2></Type 2>
+         <Type1>Fairy</Type1>
+         <Type2></Type2>
          <Total>245</Total>
          <HP>35</HP>
          <Attack>20</Attack>
          <Defense>65</Defense>
-         <Sp. Atk>40</Sp. Atk>
-         <Sp. Def>65</Sp. Def>
+         <Sp_Atk>40</Sp_Atk>
+         <Sp_Def>65</Sp_Def>
          <Speed>20</Speed>
          <Generation>2</Generation>
          <Legendary>False</Legendary>
-     </68>
-     <69>
+     </id68>
+     <id69>
          <Id>265</Id>
          <Name>Wurmple</Name>
-         <Type 1>Bug</Type 1>
-         <Type 2></Type 2>
+         <Type1>Bug</Type1>
+         <Type2></Type2>
          <Total>195</Total>
          <HP>45</HP>
          <Attack>45</Attack>
          <Defense>35</Defense>
-         <Sp. Atk>20</Sp. Atk>
-         <Sp. Def>30</Sp. Def>
+         <Sp_Atk>20</Sp_Atk>
+         <Sp_Def>30</Sp_Def>
          <Speed>20</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </69>
-     <70>
+     </id69>
+     <id70>
          <Id>81</Id>
          <Name>Magnemite</Name>
-         <Type 1>Electric</Type 1>
-         <Type 2>Steel</Type 2>
+         <Type1>Electric</Type1>
+         <Type2>Steel</Type2>
          <Total>325</Total>
          <HP>25</HP>
          <Attack>35</Attack>
          <Defense>70</Defense>
-         <Sp. Atk>95</Sp. Atk>
-         <Sp. Def>55</Sp. Def>
+         <Sp_Atk>95</Sp_Atk>
+         <Sp_Def>55</Sp_Def>
          <Speed>45</Speed>
          <Generation>1</Generation>
          <Legendary>False</Legendary>
-     </70>
-     <71>
+     </id70>
+     <id71>
          <Id>247</Id>
          <Name>Pupitar</Name>
-         <Type 1>Rock</Type 1>
-         <Type 2>Ground</Type 2>
+         <Type1>Rock</Type1>
+         <Type2>Ground</Type2>
          <Total>410</Total>
          <HP>70</HP>
          <Attack>84</Attack>
          <Defense>70</Defense>
-         <Sp. Atk>65</Sp. Atk>
-         <Sp. Def>70</Sp. Def>
+         <Sp_Atk>65</Sp_Atk>
+         <Sp_Def>70</Sp_Def>
          <Speed>51</Speed>
          <Generation>2</Generation>
          <Legendary>False</Legendary>
-     </71>
-     <72>
+     </id71>
+     <id72>
          <Id>614</Id>
          <Name>Beartic</Name>
-         <Type 1>Ice</Type 1>
-         <Type 2></Type 2>
+         <Type1>Ice</Type1>
+         <Type2></Type2>
          <Total>485</Total>
          <HP>95</HP>
          <Attack>110</Attack>
          <Defense>80</Defense>
-         <Sp. Atk>70</Sp. Atk>
-         <Sp. Def>80</Sp. Def>
+         <Sp_Atk>70</Sp_Atk>
+         <Sp_Def>80</Sp_Def>
          <Speed>50</Speed>
          <Generation>5</Generation>
          <Legendary>False</Legendary>
-     </72>
-     <73>
+     </id72>
+     <id73>
          <Id>362</Id>
          <Name>Glalie</Name>
-         <Type 1>Ice</Type 1>
-         <Type 2></Type 2>
+         <Type1>Ice</Type1>
+         <Type2></Type2>
          <Total>480</Total>
          <HP>80</HP>
          <Attack>80</Attack>
          <Defense>80</Defense>
-         <Sp. Atk>80</Sp. Atk>
-         <Sp. Def>80</Sp. Def>
+         <Sp_Atk>80</Sp_Atk>
+         <Sp_Def>80</Sp_Def>
          <Speed>80</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </73>
-     <74>
+     </id73>
+     <id74>
          <Id>312</Id>
          <Name>Minun</Name>
-         <Type 1>Electric</Type 1>
-         <Type 2></Type 2>
+         <Type1>Electric</Type1>
+         <Type2></Type2>
          <Total>405</Total>
          <HP>60</HP>
          <Attack>40</Attack>
          <Defense>50</Defense>
-         <Sp. Atk>75</Sp. Atk>
-         <Sp. Def>85</Sp. Def>
+         <Sp_Atk>75</Sp_Atk>
+         <Sp_Def>85</Sp_Def>
          <Speed>95</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </74>
-     <75>
+     </id74>
+     <id75>
          <Id>385</Id>
          <Name>Jirachi</Name>
-         <Type 1>Steel</Type 1>
-         <Type 2>Psychic</Type 2>
+         <Type1>Steel</Type1>
+         <Type2>Psychic</Type2>
          <Total>600</Total>
          <HP>100</HP>
          <Attack>100</Attack>
          <Defense>100</Defense>
-         <Sp. Atk>100</Sp. Atk>
-         <Sp. Def>100</Sp. Def>
+         <Sp_Atk>100</Sp_Atk>
+         <Sp_Def>100</Sp_Def>
          <Speed>100</Speed>
          <Generation>3</Generation>
          <Legendary>True</Legendary>
-     </75>
-     <76>
+     </id75>
+     <id76>
          <Id>198</Id>
          <Name>Murkrow</Name>
-         <Type 1>Dark</Type 1>
-         <Type 2>Flying</Type 2>
+         <Type1>Dark</Type1>
+         <Type2>Flying</Type2>
          <Total>405</Total>
          <HP>60</HP>
          <Attack>85</Attack>
          <Defense>42</Defense>
-         <Sp. Atk>85</Sp. Atk>
-         <Sp. Def>42</Sp. Def>
+         <Sp_Atk>85</Sp_Atk>
+         <Sp_Def>42</Sp_Def>
          <Speed>91</Speed>
          <Generation>2</Generation>
          <Legendary>False</Legendary>
-     </76>
-     <77>
+     </id76>
+     <id77>
          <Id>339</Id>
          <Name>Barboach</Name>
-         <Type 1>Water</Type 1>
-         <Type 2>Ground</Type 2>
+         <Type1>Water</Type1>
+         <Type2>Ground</Type2>
          <Total>288</Total>
          <HP>50</HP>
          <Attack>48</Attack>
          <Defense>43</Defense>
-         <Sp. Atk>46</Sp. Atk>
-         <Sp. Def>41</Sp. Def>
+         <Sp_Atk>46</Sp_Atk>
+         <Sp_Def>41</Sp_Def>
          <Speed>60</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </77>
-     <78>
+     </id77>
+     <id78>
          <Id>293</Id>
          <Name>Whismur</Name>
-         <Type 1>Normal</Type 1>
-         <Type 2></Type 2>
+         <Type1>Normal</Type1>
+         <Type2></Type2>
          <Total>240</Total>
          <HP>64</HP>
          <Attack>51</Attack>
          <Defense>23</Defense>
-         <Sp. Atk>51</Sp. Atk>
-         <Sp. Def>23</Sp. Def>
+         <Sp_Atk>51</Sp_Atk>
+         <Sp_Def>23</Sp_Def>
          <Speed>28</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </78>
-     <79>
+     </id78>
+     <id79>
          <Id>212</Id>
          <Name>ScizorMega Scizor</Name>
-         <Type 1>Bug</Type 1>
-         <Type 2>Steel</Type 2>
+         <Type1>Bug</Type1>
+         <Type2>Steel</Type2>
          <Total>600</Total>
          <HP>70</HP>
          <Attack>150</Attack>
          <Defense>140</Defense>
-         <Sp. Atk>65</Sp. Atk>
-         <Sp. Def>100</Sp. Def>
+         <Sp_Atk>65</Sp_Atk>
+         <Sp_Def>100</Sp_Def>
          <Speed>75</Speed>
          <Generation>2</Generation>
          <Legendary>False</Legendary>
-     </79>
-     <80>
+     </id79>
+     <id80>
          <Id>692</Id>
          <Name>Clauncher</Name>
-         <Type 1>Water</Type 1>
-         <Type 2></Type 2>
+         <Type1>Water</Type1>
+         <Type2></Type2>
          <Total>330</Total>
          <HP>50</HP>
          <Attack>53</Attack>
          <Defense>62</Defense>
-         <Sp. Atk>58</Sp. Atk>
-         <Sp. Def>63</Sp. Def>
+         <Sp_Atk>58</Sp_Atk>
+         <Sp_Def>63</Sp_Def>
          <Speed>44</Speed>
          <Generation>6</Generation>
          <Legendary>False</Legendary>
-     </80>
-     <81>
+     </id80>
+     <id81>
          <Id>529</Id>
          <Name>Drilbur</Name>
-         <Type 1>Ground</Type 1>
-         <Type 2></Type 2>
+         <Type1>Ground</Type1>
+         <Type2></Type2>
          <Total>328</Total>
          <HP>60</HP>
          <Attack>85</Attack>
          <Defense>40</Defense>
-         <Sp. Atk>30</Sp. Atk>
-         <Sp. Def>45</Sp. Def>
+         <Sp_Atk>30</Sp_Atk>
+         <Sp_Def>45</Sp_Def>
          <Speed>68</Speed>
          <Generation>5</Generation>
          <Legendary>False</Legendary>
-     </81>
-     <82>
+     </id81>
+     <id82>
          <Id>227</Id>
          <Name>Skarmory</Name>
-         <Type 1>Steel</Type 1>
-         <Type 2>Flying</Type 2>
+         <Type1>Steel</Type1>
+         <Type2>Flying</Type2>
          <Total>465</Total>
          <HP>65</HP>
          <Attack>80</Attack>
          <Defense>140</Defense>
-         <Sp. Atk>40</Sp. Atk>
-         <Sp. Def>70</Sp. Def>
+         <Sp_Atk>40</Sp_Atk>
+         <Sp_Def>70</Sp_Def>
          <Speed>70</Speed>
          <Generation>2</Generation>
          <Legendary>False</Legendary>
-     </82>
-     <83>
+     </id82>
+     <id83>
          <Id>384</Id>
          <Name>Rayquaza</Name>
-         <Type 1>Dragon</Type 1>
-         <Type 2>Flying</Type 2>
+         <Type1>Dragon</Type1>
+         <Type2>Flying</Type2>
          <Total>680</Total>
          <HP>105</HP>
          <Attack>150</Attack>
          <Defense>90</Defense>
-         <Sp. Atk>150</Sp. Atk>
-         <Sp. Def>90</Sp. Def>
+         <Sp_Atk>150</Sp_Atk>
+         <Sp_Def>90</Sp_Def>
          <Speed>95</Speed>
          <Generation>3</Generation>
          <Legendary>True</Legendary>
-     </83>
-     <84>
+     </id83>
+     <id84>
          <Id>633</Id>
          <Name>Deino</Name>
-         <Type 1>Dark</Type 1>
-         <Type 2>Dragon</Type 2>
+         <Type1>Dark</Type1>
+         <Type2>Dragon</Type2>
          <Total>300</Total>
          <HP>52</HP>
          <Attack>65</Attack>
          <Defense>50</Defense>
-         <Sp. Atk>45</Sp. Atk>
-         <Sp. Def>50</Sp. Def>
+         <Sp_Atk>45</Sp_Atk>
+         <Sp_Def>50</Sp_Def>
          <Speed>38</Speed>
          <Generation>5</Generation>
          <Legendary>False</Legendary>
-     </84>
-     <85>
+     </id84>
+     <id85>
          <Id>619</Id>
          <Name>Mienfoo</Name>
-         <Type 1>Fighting</Type 1>
-         <Type 2></Type 2>
+         <Type1>Fighting</Type1>
+         <Type2></Type2>
          <Total>350</Total>
          <HP>45</HP>
          <Attack>85</Attack>
          <Defense>50</Defense>
-         <Sp. Atk>55</Sp. Atk>
-         <Sp. Def>50</Sp. Def>
+         <Sp_Atk>55</Sp_Atk>
+         <Sp_Def>50</Sp_Def>
          <Speed>65</Speed>
          <Generation>5</Generation>
          <Legendary>False</Legendary>
-     </85>
-     <86>
+     </id85>
+     <id86>
          <Id>606</Id>
          <Name>Beheeyem</Name>
-         <Type 1>Psychic</Type 1>
-         <Type 2></Type 2>
+         <Type1>Psychic</Type1>
+         <Type2></Type2>
          <Total>485</Total>
          <HP>75</HP>
          <Attack>75</Attack>
          <Defense>75</Defense>
-         <Sp. Atk>125</Sp. Atk>
-         <Sp. Def>95</Sp. Def>
+         <Sp_Atk>125</Sp_Atk>
+         <Sp_Def>95</Sp_Def>
          <Speed>40</Speed>
          <Generation>5</Generation>
          <Legendary>False</Legendary>
-     </86>
-     <87>
+     </id86>
+     <id87>
          <Id>368</Id>
          <Name>Gorebyss</Name>
-         <Type 1>Water</Type 1>
-         <Type 2></Type 2>
+         <Type1>Water</Type1>
+         <Type2></Type2>
          <Total>485</Total>
          <HP>55</HP>
          <Attack>84</Attack>
          <Defense>105</Defense>
-         <Sp. Atk>114</Sp. Atk>
-         <Sp. Def>75</Sp. Def>
+         <Sp_Atk>114</Sp_Atk>
+         <Sp_Def>75</Sp_Def>
          <Speed>52</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </87>
-     <88>
+     </id87>
+     <id88>
          <Id>700</Id>
          <Name>Sylveon</Name>
-         <Type 1>Fairy</Type 1>
-         <Type 2></Type 2>
+         <Type1>Fairy</Type1>
+         <Type2></Type2>
          <Total>525</Total>
          <HP>95</HP>
          <Attack>65</Attack>
          <Defense>65</Defense>
-         <Sp. Atk>110</Sp. Atk>
-         <Sp. Def>130</Sp. Def>
+         <Sp_Atk>110</Sp_Atk>
+         <Sp_Def>130</Sp_Def>
          <Speed>60</Speed>
          <Generation>6</Generation>
          <Legendary>False</Legendary>
-     </88>
-     <89>
+     </id88>
+     <id89>
          <Id>550</Id>
          <Name>Basculin</Name>
-         <Type 1>Water</Type 1>
-         <Type 2></Type 2>
+         <Type1>Water</Type1>
+         <Type2></Type2>
          <Total>460</Total>
          <HP>70</HP>
          <Attack>92</Attack>
          <Defense>65</Defense>
-         <Sp. Atk>80</Sp. Atk>
-         <Sp. Def>55</Sp. Def>
+         <Sp_Atk>80</Sp_Atk>
+         <Sp_Def>55</Sp_Def>
          <Speed>98</Speed>
          <Generation>5</Generation>
          <Legendary>False</Legendary>
-     </89>
-     <90>
+     </id89>
+     <id90>
          <Id>718</Id>
          <Name>Zygarde50% Forme</Name>
-         <Type 1>Dragon</Type 1>
-         <Type 2>Ground</Type 2>
+         <Type1>Dragon</Type1>
+         <Type2>Ground</Type2>
          <Total>600</Total>
          <HP>108</HP>
          <Attack>100</Attack>
          <Defense>121</Defense>
-         <Sp. Atk>81</Sp. Atk>
-         <Sp. Def>95</Sp. Def>
+         <Sp_Atk>81</Sp_Atk>
+         <Sp_Def>95</Sp_Def>
          <Speed>95</Speed>
          <Generation>6</Generation>
          <Legendary>True</Legendary>
-     </90>
-     <91>
+     </id90>
+     <id91>
          <Id>220</Id>
          <Name>Swinub</Name>
-         <Type 1>Ice</Type 1>
-         <Type 2>Ground</Type 2>
+         <Type1>Ice</Type1>
+         <Type2>Ground</Type2>
          <Total>250</Total>
          <HP>50</HP>
          <Attack>50</Attack>
          <Defense>40</Defense>
-         <Sp. Atk>30</Sp. Atk>
-         <Sp. Def>30</Sp. Def>
+         <Sp_Atk>30</Sp_Atk>
+         <Sp_Def>30</Sp_Def>
          <Speed>50</Speed>
          <Generation>2</Generation>
          <Legendary>False</Legendary>
-     </91>
-     <92>
+     </id91>
+     <id92>
          <Id>452</Id>
          <Name>Drapion</Name>
-         <Type 1>Poison</Type 1>
-         <Type 2>Dark</Type 2>
+         <Type1>Poison</Type1>
+         <Type2>Dark</Type2>
          <Total>500</Total>
          <HP>70</HP>
          <Attack>90</Attack>
          <Defense>110</Defense>
-         <Sp. Atk>60</Sp. Atk>
-         <Sp. Def>75</Sp. Def>
+         <Sp_Atk>60</Sp_Atk>
+         <Sp_Def>75</Sp_Def>
          <Speed>95</Speed>
          <Generation>4</Generation>
          <Legendary>False</Legendary>
-     </92>
-     <93>
+     </id92>
+     <id93>
          <Id>542</Id>
          <Name>Leavanny</Name>
-         <Type 1>Bug</Type 1>
-         <Type 2>Grass</Type 2>
+         <Type1>Bug</Type1>
+         <Type2>Grass</Type2>
          <Total>500</Total>
          <HP>75</HP>
          <Attack>103</Attack>
          <Defense>80</Defense>
-         <Sp. Atk>70</Sp. Atk>
-         <Sp. Def>80</Sp. Def>
+         <Sp_Atk>70</Sp_Atk>
+         <Sp_Def>80</Sp_Def>
          <Speed>92</Speed>
          <Generation>5</Generation>
          <Legendary>False</Legendary>
-     </93>
-     <94>
+     </id93>
+     <id94>
          <Id>711</Id>
          <Name>GourgeistAverage Size</Name>
-         <Type 1>Ghost</Type 1>
-         <Type 2>Grass</Type 2>
+         <Type1>Ghost</Type1>
+         <Type2>Grass</Type2>
          <Total>494</Total>
          <HP>65</HP>
          <Attack>90</Attack>
          <Defense>122</Defense>
-         <Sp. Atk>58</Sp. Atk>
-         <Sp. Def>75</Sp. Def>
+         <Sp_Atk>58</Sp_Atk>
+         <Sp_Def>75</Sp_Def>
          <Speed>84</Speed>
          <Generation>6</Generation>
          <Legendary>False</Legendary>
-     </94>
-     <95>
+     </id94>
+     <id95>
          <Id>110</Id>
          <Name>Weezing</Name>
-         <Type 1>Poison</Type 1>
-         <Type 2></Type 2>
+         <Type1>Poison</Type1>
+         <Type2></Type2>
          <Total>490</Total>
          <HP>65</HP>
          <Attack>90</Attack>
          <Defense>120</Defense>
-         <Sp. Atk>85</Sp. Atk>
-         <Sp. Def>70</Sp. Def>
+         <Sp_Atk>85</Sp_Atk>
+         <Sp_Def>70</Sp_Def>
          <Speed>60</Speed>
          <Generation>1</Generation>
          <Legendary>False</Legendary>
-     </95>
-     <96>
+     </id95>
+     <id96>
          <Id>390</Id>
          <Name>Chimchar</Name>
-         <Type 1>Fire</Type 1>
-         <Type 2></Type 2>
+         <Type1>Fire</Type1>
+         <Type2></Type2>
          <Total>309</Total>
          <HP>44</HP>
          <Attack>58</Attack>
          <Defense>44</Defense>
-         <Sp. Atk>58</Sp. Atk>
-         <Sp. Def>44</Sp. Def>
+         <Sp_Atk>58</Sp_Atk>
+         <Sp_Def>44</Sp_Def>
          <Speed>61</Speed>
          <Generation>4</Generation>
          <Legendary>False</Legendary>
-     </96>
-     <97>
+     </id96>
+     <id97>
          <Id>221</Id>
          <Name>Piloswine</Name>
-         <Type 1>Ice</Type 1>
-         <Type 2>Ground</Type 2>
+         <Type1>Ice</Type1>
+         <Type2>Ground</Type2>
          <Total>450</Total>
          <HP>100</HP>
          <Attack>100</Attack>
          <Defense>80</Defense>
-         <Sp. Atk>60</Sp. Atk>
-         <Sp. Def>60</Sp. Def>
+         <Sp_Atk>60</Sp_Atk>
+         <Sp_Def>60</Sp_Def>
          <Speed>50</Speed>
          <Generation>2</Generation>
          <Legendary>False</Legendary>
-     </97>
-     <98>
+     </id97>
+     <id98>
          <Id>183</Id>
          <Name>Marill</Name>
-         <Type 1>Water</Type 1>
-         <Type 2>Fairy</Type 2>
+         <Type1>Water</Type1>
+         <Type2>Fairy</Type2>
          <Total>250</Total>
          <HP>70</HP>
          <Attack>20</Attack>
          <Defense>50</Defense>
-         <Sp. Atk>20</Sp. Atk>
-         <Sp. Def>50</Sp. Def>
+         <Sp_Atk>20</Sp_Atk>
+         <Sp_Def>50</Sp_Def>
          <Speed>40</Speed>
          <Generation>2</Generation>
          <Legendary>False</Legendary>
-     </98>
-     <99>
+     </id98>
+     <id99>
          <Id>500</Id>
          <Name>Emboar</Name>
-         <Type 1>Fire</Type 1>
-         <Type 2>Fighting</Type 2>
+         <Type1>Fire</Type1>
+         <Type2>Fighting</Type2>
          <Total>528</Total>
          <HP>110</HP>
          <Attack>123</Attack>
          <Defense>65</Defense>
-         <Sp. Atk>100</Sp. Atk>
-         <Sp. Def>65</Sp. Def>
+         <Sp_Atk>100</Sp_Atk>
+         <Sp_Def>65</Sp_Def>
          <Speed>65</Speed>
          <Generation>5</Generation>
          <Legendary>False</Legendary>
-     </99>
-     <100>
+     </id99>
+     <id100>
          <Id>572</Id>
          <Name>Minccino</Name>
-         <Type 1>Normal</Type 1>
-         <Type 2></Type 2>
+         <Type1>Normal</Type1>
+         <Type2></Type2>
          <Total>300</Total>
          <HP>55</HP>
          <Attack>50</Attack>
          <Defense>40</Defense>
-         <Sp. Atk>40</Sp. Atk>
-         <Sp. Def>40</Sp. Def>
+         <Sp_Atk>40</Sp_Atk>
+         <Sp_Def>40</Sp_Def>
          <Speed>75</Speed>
          <Generation>5</Generation>
          <Legendary>False</Legendary>
-     </100>
-     <101>
+     </id100>
+     <id101>
          <Id>281</Id>
          <Name>Kirlia</Name>
-         <Type 1>Psychic</Type 1>
-         <Type 2>Fairy</Type 2>
+         <Type1>Psychic</Type1>
+         <Type2>Fairy</Type2>
          <Total>278</Total>
          <HP>38</HP>
          <Attack>35</Attack>
          <Defense>35</Defense>
-         <Sp. Atk>65</Sp. Atk>
-         <Sp. Def>55</Sp. Def>
+         <Sp_Atk>65</Sp_Atk>
+         <Sp_Def>55</Sp_Def>
          <Speed>50</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </101>
-     <102>
+     </id101>
+     <id102>
          <Id>55</Id>
          <Name>Golduck</Name>
-         <Type 1>Water</Type 1>
-         <Type 2></Type 2>
+         <Type1>Water</Type1>
+         <Type2></Type2>
          <Total>500</Total>
          <HP>80</HP>
          <Attack>82</Attack>
          <Defense>78</Defense>
-         <Sp. Atk>95</Sp. Atk>
-         <Sp. Def>80</Sp. Def>
+         <Sp_Atk>95</Sp_Atk>
+         <Sp_Def>80</Sp_Def>
          <Speed>85</Speed>
          <Generation>1</Generation>
          <Legendary>False</Legendary>
-     </102>
-     <103>
+     </id102>
+     <id103>
          <Id>258</Id>
          <Name>Mudkip</Name>
-         <Type 1>Water</Type 1>
-         <Type 2></Type 2>
+         <Type1>Water</Type1>
+         <Type2></Type2>
          <Total>310</Total>
          <HP>50</HP>
          <Attack>70</Attack>
          <Defense>50</Defense>
-         <Sp. Atk>50</Sp. Atk>
-         <Sp. Def>50</Sp. Def>
+         <Sp_Atk>50</Sp_Atk>
+         <Sp_Def>50</Sp_Def>
          <Speed>40</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </103>
-     <104>
+     </id103>
+     <id104>
          <Id>271</Id>
          <Name>Lombre</Name>
-         <Type 1>Water</Type 1>
-         <Type 2>Grass</Type 2>
+         <Type1>Water</Type1>
+         <Type2>Grass</Type2>
          <Total>340</Total>
          <HP>60</HP>
          <Attack>50</Attack>
          <Defense>50</Defense>
-         <Sp. Atk>60</Sp. Atk>
-         <Sp. Def>70</Sp. Def>
+         <Sp_Atk>60</Sp_Atk>
+         <Sp_Def>70</Sp_Def>
          <Speed>50</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </104>
-     <105>
+     </id104>
+     <id105>
          <Id>520</Id>
          <Name>Tranquill</Name>
-         <Type 1>Normal</Type 1>
-         <Type 2>Flying</Type 2>
+         <Type1>Normal</Type1>
+         <Type2>Flying</Type2>
          <Total>358</Total>
          <HP>62</HP>
          <Attack>77</Attack>
          <Defense>62</Defense>
-         <Sp. Atk>50</Sp. Atk>
-         <Sp. Def>42</Sp. Def>
+         <Sp_Atk>50</Sp_Atk>
+         <Sp_Def>42</Sp_Def>
          <Speed>65</Speed>
          <Generation>5</Generation>
          <Legendary>False</Legendary>
-     </105>
-     <106>
+     </id105>
+     <id106>
          <Id>479</Id>
          <Name>RotomWash Rotom</Name>
-         <Type 1>Electric</Type 1>
-         <Type 2>Water</Type 2>
+         <Type1>Electric</Type1>
+         <Type2>Water</Type2>
          <Total>520</Total>
          <HP>50</HP>
          <Attack>65</Attack>
          <Defense>107</Defense>
-         <Sp. Atk>105</Sp. Atk>
-         <Sp. Def>107</Sp. Def>
+         <Sp_Atk>105</Sp_Atk>
+         <Sp_Def>107</Sp_Def>
          <Speed>86</Speed>
          <Generation>4</Generation>
          <Legendary>False</Legendary>
-     </106>
-     <107>
+     </id106>
+     <id107>
          <Id>590</Id>
          <Name>Foongus</Name>
-         <Type 1>Grass</Type 1>
-         <Type 2>Poison</Type 2>
+         <Type1>Grass</Type1>
+         <Type2>Poison</Type2>
          <Total>294</Total>
          <HP>69</HP>
          <Attack>55</Attack>
          <Defense>45</Defense>
-         <Sp. Atk>55</Sp. Atk>
-         <Sp. Def>55</Sp. Def>
+         <Sp_Atk>55</Sp_Atk>
+         <Sp_Def>55</Sp_Def>
          <Speed>15</Speed>
          <Generation>5</Generation>
          <Legendary>False</Legendary>
-     </107>
-     <108>
+     </id107>
+     <id108>
          <Id>587</Id>
          <Name>Emolga</Name>
-         <Type 1>Electric</Type 1>
-         <Type 2>Flying</Type 2>
+         <Type1>Electric</Type1>
+         <Type2>Flying</Type2>
          <Total>428</Total>
          <HP>55</HP>
          <Attack>75</Attack>
          <Defense>60</Defense>
-         <Sp. Atk>75</Sp. Atk>
-         <Sp. Def>60</Sp. Def>
+         <Sp_Atk>75</Sp_Atk>
+         <Sp_Def>60</Sp_Def>
          <Speed>103</Speed>
          <Generation>5</Generation>
          <Legendary>False</Legendary>
-     </108>
-     <109>
+     </id108>
+     <id109>
          <Id>182</Id>
          <Name>Bellossom</Name>
-         <Type 1>Grass</Type 1>
-         <Type 2></Type 2>
+         <Type1>Grass</Type1>
+         <Type2></Type2>
          <Total>490</Total>
          <HP>75</HP>
          <Attack>80</Attack>
          <Defense>95</Defense>
-         <Sp. Atk>90</Sp. Atk>
-         <Sp. Def>100</Sp. Def>
+         <Sp_Atk>90</Sp_Atk>
+         <Sp_Def>100</Sp_Def>
          <Speed>50</Speed>
          <Generation>2</Generation>
          <Legendary>False</Legendary>
-     </109>
-     <110>
+     </id109>
+     <id110>
          <Id>134</Id>
          <Name>Vaporeon</Name>
-         <Type 1>Water</Type 1>
-         <Type 2></Type 2>
+         <Type1>Water</Type1>
+         <Type2></Type2>
          <Total>525</Total>
          <HP>130</HP>
          <Attack>65</Attack>
          <Defense>60</Defense>
-         <Sp. Atk>110</Sp. Atk>
-         <Sp. Def>95</Sp. Def>
+         <Sp_Atk>110</Sp_Atk>
+         <Sp_Def>95</Sp_Def>
          <Speed>65</Speed>
          <Generation>1</Generation>
          <Legendary>False</Legendary>
-     </110>
-     <111>
+     </id110>
+     <id111>
          <Id>386</Id>
          <Name>DeoxysAttack Forme</Name>
-         <Type 1>Psychic</Type 1>
-         <Type 2></Type 2>
+         <Type1>Psychic</Type1>
+         <Type2></Type2>
          <Total>600</Total>
          <HP>50</HP>
          <Attack>180</Attack>
          <Defense>20</Defense>
-         <Sp. Atk>180</Sp. Atk>
-         <Sp. Def>20</Sp. Def>
+         <Sp_Atk>180</Sp_Atk>
+         <Sp_Def>20</Sp_Def>
          <Speed>150</Speed>
          <Generation>3</Generation>
          <Legendary>True</Legendary>
-     </111>
-     <112>
+     </id111>
+     <id112>
          <Id>273</Id>
          <Name>Seedot</Name>
-         <Type 1>Grass</Type 1>
-         <Type 2></Type 2>
+         <Type1>Grass</Type1>
+         <Type2></Type2>
          <Total>220</Total>
          <HP>40</HP>
          <Attack>40</Attack>
          <Defense>50</Defense>
-         <Sp. Atk>30</Sp. Atk>
-         <Sp. Def>30</Sp. Def>
+         <Sp_Atk>30</Sp_Atk>
+         <Sp_Def>30</Sp_Def>
          <Speed>30</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </112>
-     <113>
+     </id112>
+     <id113>
          <Id>581</Id>
          <Name>Swanna</Name>
-         <Type 1>Water</Type 1>
-         <Type 2>Flying</Type 2>
+         <Type1>Water</Type1>
+         <Type2>Flying</Type2>
          <Total>473</Total>
          <HP>75</HP>
          <Attack>87</Attack>
          <Defense>63</Defense>
-         <Sp. Atk>87</Sp. Atk>
-         <Sp. Def>63</Sp. Def>
+         <Sp_Atk>87</Sp_Atk>
+         <Sp_Def>63</Sp_Def>
          <Speed>98</Speed>
          <Generation>5</Generation>
          <Legendary>False</Legendary>
-     </113>
-     <114>
+     </id113>
+     <id114>
          <Id>412</Id>
          <Name>Burmy</Name>
-         <Type 1>Bug</Type 1>
-         <Type 2></Type 2>
+         <Type1>Bug</Type1>
+         <Type2></Type2>
          <Total>224</Total>
          <HP>40</HP>
          <Attack>29</Attack>
          <Defense>45</Defense>
-         <Sp. Atk>29</Sp. Atk>
-         <Sp. Def>45</Sp. Def>
+         <Sp_Atk>29</Sp_Atk>
+         <Sp_Def>45</Sp_Def>
          <Speed>36</Speed>
          <Generation>4</Generation>
          <Legendary>False</Legendary>
-     </114>
-     <115>
+     </id114>
+     <id115>
          <Id>634</Id>
          <Name>Zweilous</Name>
-         <Type 1>Dark</Type 1>
-         <Type 2>Dragon</Type 2>
+         <Type1>Dark</Type1>
+         <Type2>Dragon</Type2>
          <Total>420</Total>
          <HP>72</HP>
          <Attack>85</Attack>
          <Defense>70</Defense>
-         <Sp. Atk>65</Sp. Atk>
-         <Sp. Def>70</Sp. Def>
+         <Sp_Atk>65</Sp_Atk>
+         <Sp_Def>70</Sp_Def>
          <Speed>58</Speed>
          <Generation>5</Generation>
          <Legendary>False</Legendary>
-     </115>
-     <116>
+     </id115>
+     <id116>
          <Id>84</Id>
          <Name>Doduo</Name>
-         <Type 1>Normal</Type 1>
-         <Type 2>Flying</Type 2>
+         <Type1>Normal</Type1>
+         <Type2>Flying</Type2>
          <Total>310</Total>
          <HP>35</HP>
          <Attack>85</Attack>
          <Defense>45</Defense>
-         <Sp. Atk>35</Sp. Atk>
-         <Sp. Def>35</Sp. Def>
+         <Sp_Atk>35</Sp_Atk>
+         <Sp_Def>35</Sp_Def>
          <Speed>75</Speed>
          <Generation>1</Generation>
          <Legendary>False</Legendary>
-     </116>
-     <117>
+     </id116>
+     <id117>
          <Id>217</Id>
          <Name>Ursaring</Name>
-         <Type 1>Normal</Type 1>
-         <Type 2></Type 2>
+         <Type1>Normal</Type1>
+         <Type2></Type2>
          <Total>500</Total>
          <HP>90</HP>
          <Attack>130</Attack>
          <Defense>75</Defense>
-         <Sp. Atk>75</Sp. Atk>
-         <Sp. Def>75</Sp. Def>
+         <Sp_Atk>75</Sp_Atk>
+         <Sp_Def>75</Sp_Def>
          <Speed>55</Speed>
          <Generation>2</Generation>
          <Legendary>False</Legendary>
-     </117>
-     <118>
+     </id117>
+     <id118>
          <Id>352</Id>
          <Name>Kecleon</Name>
-         <Type 1>Normal</Type 1>
-         <Type 2></Type 2>
+         <Type1>Normal</Type1>
+         <Type2></Type2>
          <Total>440</Total>
          <HP>60</HP>
          <Attack>90</Attack>
          <Defense>70</Defense>
-         <Sp. Atk>60</Sp. Atk>
-         <Sp. Def>120</Sp. Def>
+         <Sp_Atk>60</Sp_Atk>
+         <Sp_Def>120</Sp_Def>
          <Speed>40</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </118>
-     <119>
+     </id118>
+     <id119>
          <Id>463</Id>
          <Name>Lickilicky</Name>
-         <Type 1>Normal</Type 1>
-         <Type 2></Type 2>
+         <Type1>Normal</Type1>
+         <Type2></Type2>
          <Total>515</Total>
          <HP>110</HP>
          <Attack>85</Attack>
          <Defense>95</Defense>
-         <Sp. Atk>80</Sp. Atk>
-         <Sp. Def>95</Sp. Def>
+         <Sp_Atk>80</Sp_Atk>
+         <Sp_Def>95</Sp_Def>
          <Speed>50</Speed>
          <Generation>4</Generation>
          <Legendary>False</Legendary>
-     </119>
-     <120>
+     </id119>
+     <id120>
          <Id>686</Id>
          <Name>Inkay</Name>
-         <Type 1>Dark</Type 1>
-         <Type 2>Psychic</Type 2>
+         <Type1>Dark</Type1>
+         <Type2>Psychic</Type2>
          <Total>288</Total>
          <HP>53</HP>
          <Attack>54</Attack>
          <Defense>53</Defense>
-         <Sp. Atk>37</Sp. Atk>
-         <Sp. Def>46</Sp. Def>
+         <Sp_Atk>37</Sp_Atk>
+         <Sp_Def>46</Sp_Def>
          <Speed>45</Speed>
          <Generation>6</Generation>
          <Legendary>False</Legendary>
-     </120>
-     <121>
+     </id120>
+     <id121>
          <Id>212</Id>
          <Name>Scizor</Name>
-         <Type 1>Bug</Type 1>
-         <Type 2>Steel</Type 2>
+         <Type1>Bug</Type1>
+         <Type2>Steel</Type2>
          <Total>500</Total>
          <HP>70</HP>
          <Attack>130</Attack>
          <Defense>100</Defense>
-         <Sp. Atk>55</Sp. Atk>
-         <Sp. Def>80</Sp. Def>
+         <Sp_Atk>55</Sp_Atk>
+         <Sp_Def>80</Sp_Def>
          <Speed>65</Speed>
          <Generation>2</Generation>
          <Legendary>False</Legendary>
-     </121>
-     <122>
+     </id121>
+     <id122>
          <Id>608</Id>
          <Name>Lampent</Name>
-         <Type 1>Ghost</Type 1>
-         <Type 2>Fire</Type 2>
+         <Type1>Ghost</Type1>
+         <Type2>Fire</Type2>
          <Total>370</Total>
          <HP>60</HP>
          <Attack>40</Attack>
          <Defense>60</Defense>
-         <Sp. Atk>95</Sp. Atk>
-         <Sp. Def>60</Sp. Def>
+         <Sp_Atk>95</Sp_Atk>
+         <Sp_Def>60</Sp_Def>
          <Speed>55</Speed>
          <Generation>5</Generation>
          <Legendary>False</Legendary>
-     </122>
-     <123>
+     </id122>
+     <id123>
          <Id>696</Id>
          <Name>Tyrunt</Name>
-         <Type 1>Rock</Type 1>
-         <Type 2>Dragon</Type 2>
+         <Type1>Rock</Type1>
+         <Type2>Dragon</Type2>
          <Total>362</Total>
          <HP>58</HP>
          <Attack>89</Attack>
          <Defense>77</Defense>
-         <Sp. Atk>45</Sp. Atk>
-         <Sp. Def>45</Sp. Def>
+         <Sp_Atk>45</Sp_Atk>
+         <Sp_Def>45</Sp_Def>
          <Speed>48</Speed>
          <Generation>6</Generation>
          <Legendary>False</Legendary>
-     </123>
-     <124>
+     </id123>
+     <id124>
          <Id>396</Id>
          <Name>Starly</Name>
-         <Type 1>Normal</Type 1>
-         <Type 2>Flying</Type 2>
+         <Type1>Normal</Type1>
+         <Type2>Flying</Type2>
          <Total>245</Total>
          <HP>40</HP>
          <Attack>55</Attack>
          <Defense>30</Defense>
-         <Sp. Atk>30</Sp. Atk>
-         <Sp. Def>30</Sp. Def>
+         <Sp_Atk>30</Sp_Atk>
+         <Sp_Def>30</Sp_Def>
          <Speed>60</Speed>
          <Generation>4</Generation>
          <Legendary>False</Legendary>
-     </124>
-     <125>
+     </id124>
+     <id125>
          <Id>420</Id>
          <Name>Cherubi</Name>
-         <Type 1>Grass</Type 1>
-         <Type 2></Type 2>
+         <Type1>Grass</Type1>
+         <Type2></Type2>
          <Total>275</Total>
          <HP>45</HP>
          <Attack>35</Attack>
          <Defense>45</Defense>
-         <Sp. Atk>62</Sp. Atk>
-         <Sp. Def>53</Sp. Def>
+         <Sp_Atk>62</Sp_Atk>
+         <Sp_Def>53</Sp_Def>
          <Speed>35</Speed>
          <Generation>4</Generation>
          <Legendary>False</Legendary>
-     </125>
-     <126>
+     </id125>
+     <id126>
          <Id>180</Id>
          <Name>Flaaffy</Name>
-         <Type 1>Electric</Type 1>
-         <Type 2></Type 2>
+         <Type1>Electric</Type1>
+         <Type2></Type2>
          <Total>365</Total>
          <HP>70</HP>
          <Attack>55</Attack>
          <Defense>55</Defense>
-         <Sp. Atk>80</Sp. Atk>
-         <Sp. Def>60</Sp. Def>
+         <Sp_Atk>80</Sp_Atk>
+         <Sp_Def>60</Sp_Def>
          <Speed>45</Speed>
          <Generation>2</Generation>
          <Legendary>False</Legendary>
-     </126>
-     <127>
+     </id126>
+     <id127>
          <Id>205</Id>
          <Name>Forretress</Name>
-         <Type 1>Bug</Type 1>
-         <Type 2>Steel</Type 2>
+         <Type1>Bug</Type1>
+         <Type2>Steel</Type2>
          <Total>465</Total>
          <HP>75</HP>
          <Attack>90</Attack>
          <Defense>140</Defense>
-         <Sp. Atk>60</Sp. Atk>
-         <Sp. Def>60</Sp. Def>
+         <Sp_Atk>60</Sp_Atk>
+         <Sp_Def>60</Sp_Def>
          <Speed>40</Speed>
          <Generation>2</Generation>
          <Legendary>False</Legendary>
-     </127>
-     <128>
+     </id127>
+     <id128>
          <Id>555</Id>
          <Name>DarmanitanStandard Mode</Name>
-         <Type 1>Fire</Type 1>
-         <Type 2></Type 2>
+         <Type1>Fire</Type1>
+         <Type2></Type2>
          <Total>480</Total>
          <HP>105</HP>
          <Attack>140</Attack>
          <Defense>55</Defense>
-         <Sp. Atk>30</Sp. Atk>
-         <Sp. Def>55</Sp. Def>
+         <Sp_Atk>30</Sp_Atk>
+         <Sp_Def>55</Sp_Def>
          <Speed>95</Speed>
          <Generation>5</Generation>
          <Legendary>False</Legendary>
-     </128>
-     <129>
+     </id128>
+     <id129>
          <Id>646</Id>
          <Name>KyuremWhite Kyurem</Name>
-         <Type 1>Dragon</Type 1>
-         <Type 2>Ice</Type 2>
+         <Type1>Dragon</Type1>
+         <Type2>Ice</Type2>
          <Total>700</Total>
          <HP>125</HP>
          <Attack>120</Attack>
          <Defense>90</Defense>
-         <Sp. Atk>170</Sp. Atk>
-         <Sp. Def>100</Sp. Def>
+         <Sp_Atk>170</Sp_Atk>
+         <Sp_Def>100</Sp_Def>
          <Speed>95</Speed>
          <Generation>5</Generation>
          <Legendary>True</Legendary>
-     </129>
-     <130>
+     </id129>
+     <id130>
          <Id>521</Id>
          <Name>Unfezant</Name>
-         <Type 1>Normal</Type 1>
-         <Type 2>Flying</Type 2>
+         <Type1>Normal</Type1>
+         <Type2>Flying</Type2>
          <Total>488</Total>
          <HP>80</HP>
          <Attack>115</Attack>
          <Defense>80</Defense>
-         <Sp. Atk>65</Sp. Atk>
-         <Sp. Def>55</Sp. Def>
+         <Sp_Atk>65</Sp_Atk>
+         <Sp_Def>55</Sp_Def>
          <Speed>93</Speed>
          <Generation>5</Generation>
          <Legendary>False</Legendary>
-     </130>
-     <131>
+     </id130>
+     <id131>
          <Id>235</Id>
          <Name>Smeargle</Name>
-         <Type 1>Normal</Type 1>
-         <Type 2></Type 2>
+         <Type1>Normal</Type1>
+         <Type2></Type2>
          <Total>250</Total>
          <HP>55</HP>
          <Attack>20</Attack>
          <Defense>35</Defense>
-         <Sp. Atk>20</Sp. Atk>
-         <Sp. Def>45</Sp. Def>
+         <Sp_Atk>20</Sp_Atk>
+         <Sp_Def>45</Sp_Def>
          <Speed>75</Speed>
          <Generation>2</Generation>
          <Legendary>False</Legendary>
-     </131>
-     <132>
+     </id131>
+     <id132>
          <Id>225</Id>
          <Name>Delibird</Name>
-         <Type 1>Ice</Type 1>
-         <Type 2>Flying</Type 2>
+         <Type1>Ice</Type1>
+         <Type2>Flying</Type2>
          <Total>330</Total>
          <HP>45</HP>
          <Attack>55</Attack>
          <Defense>45</Defense>
-         <Sp. Atk>65</Sp. Atk>
-         <Sp. Def>45</Sp. Def>
+         <Sp_Atk>65</Sp_Atk>
+         <Sp_Def>45</Sp_Def>
          <Speed>75</Speed>
          <Generation>2</Generation>
          <Legendary>False</Legendary>
-     </132>
-     <133>
+     </id132>
+     <id133>
          <Id>422</Id>
          <Name>Shellos</Name>
-         <Type 1>Water</Type 1>
-         <Type 2></Type 2>
+         <Type1>Water</Type1>
+         <Type2></Type2>
          <Total>325</Total>
          <HP>76</HP>
          <Attack>48</Attack>
          <Defense>48</Defense>
-         <Sp. Atk>57</Sp. Atk>
-         <Sp. Def>62</Sp. Def>
+         <Sp_Atk>57</Sp_Atk>
+         <Sp_Def>62</Sp_Def>
          <Speed>34</Speed>
          <Generation>4</Generation>
          <Legendary>False</Legendary>
-     </133>
-     <134>
+     </id133>
+     <id134>
          <Id>459</Id>
          <Name>Snover</Name>
-         <Type 1>Grass</Type 1>
-         <Type 2>Ice</Type 2>
+         <Type1>Grass</Type1>
+         <Type2>Ice</Type2>
          <Total>334</Total>
          <HP>60</HP>
          <Attack>62</Attack>
          <Defense>50</Defense>
-         <Sp. Atk>62</Sp. Atk>
-         <Sp. Def>60</Sp. Def>
+         <Sp_Atk>62</Sp_Atk>
+         <Sp_Def>60</Sp_Def>
          <Speed>40</Speed>
          <Generation>4</Generation>
          <Legendary>False</Legendary>
-     </134>
-     <135>
+     </id134>
+     <id135>
          <Id>349</Id>
          <Name>Feebas</Name>
-         <Type 1>Water</Type 1>
-         <Type 2></Type 2>
+         <Type1>Water</Type1>
+         <Type2></Type2>
          <Total>200</Total>
          <HP>20</HP>
          <Attack>15</Attack>
          <Defense>20</Defense>
-         <Sp. Atk>10</Sp. Atk>
-         <Sp. Def>55</Sp. Def>
+         <Sp_Atk>10</Sp_Atk>
+         <Sp_Def>55</Sp_Def>
          <Speed>80</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </135>
-     <136>
+     </id135>
+     <id136>
          <Id>152</Id>
          <Name>Chikorita</Name>
-         <Type 1>Grass</Type 1>
-         <Type 2></Type 2>
+         <Type1>Grass</Type1>
+         <Type2></Type2>
          <Total>318</Total>
          <HP>45</HP>
          <Attack>49</Attack>
          <Defense>65</Defense>
-         <Sp. Atk>49</Sp. Atk>
-         <Sp. Def>65</Sp. Def>
+         <Sp_Atk>49</Sp_Atk>
+         <Sp_Def>65</Sp_Def>
          <Speed>45</Speed>
          <Generation>2</Generation>
          <Legendary>False</Legendary>
-     </136>
-     <137>
+     </id136>
+     <id137>
          <Id>16</Id>
          <Name>Pidgey</Name>
-         <Type 1>Normal</Type 1>
-         <Type 2>Flying</Type 2>
+         <Type1>Normal</Type1>
+         <Type2>Flying</Type2>
          <Total>251</Total>
          <HP>40</HP>
          <Attack>45</Attack>
          <Defense>40</Defense>
-         <Sp. Atk>35</Sp. Atk>
-         <Sp. Def>35</Sp. Def>
+         <Sp_Atk>35</Sp_Atk>
+         <Sp_Def>35</Sp_Def>
          <Speed>56</Speed>
          <Generation>1</Generation>
          <Legendary>False</Legendary>
-     </137>
-     <138>
+     </id137>
+     <id138>
          <Id>313</Id>
          <Name>Volbeat</Name>
-         <Type 1>Bug</Type 1>
-         <Type 2></Type 2>
+         <Type1>Bug</Type1>
+         <Type2></Type2>
          <Total>400</Total>
          <HP>65</HP>
          <Attack>73</Attack>
          <Defense>55</Defense>
-         <Sp. Atk>47</Sp. Atk>
-         <Sp. Def>75</Sp. Def>
+         <Sp_Atk>47</Sp_Atk>
+         <Sp_Def>75</Sp_Def>
          <Speed>85</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </138>
-     <139>
+     </id138>
+     <id139>
          <Id>52</Id>
          <Name>Meowth</Name>
-         <Type 1>Normal</Type 1>
-         <Type 2></Type 2>
+         <Type1>Normal</Type1>
+         <Type2></Type2>
          <Total>290</Total>
          <HP>40</HP>
          <Attack>45</Attack>
          <Defense>35</Defense>
-         <Sp. Atk>40</Sp. Atk>
-         <Sp. Def>40</Sp. Def>
+         <Sp_Atk>40</Sp_Atk>
+         <Sp_Def>40</Sp_Def>
          <Speed>90</Speed>
          <Generation>1</Generation>
          <Legendary>False</Legendary>
-     </139>
-     <140>
+     </id139>
+     <id140>
          <Id>585</Id>
          <Name>Deerling</Name>
-         <Type 1>Normal</Type 1>
-         <Type 2>Grass</Type 2>
+         <Type1>Normal</Type1>
+         <Type2>Grass</Type2>
          <Total>335</Total>
          <HP>60</HP>
          <Attack>60</Attack>
          <Defense>50</Defense>
-         <Sp. Atk>40</Sp. Atk>
-         <Sp. Def>50</Sp. Def>
+         <Sp_Atk>40</Sp_Atk>
+         <Sp_Def>50</Sp_Def>
          <Speed>75</Speed>
          <Generation>5</Generation>
          <Legendary>False</Legendary>
-     </140>
-     <141>
+     </id140>
+     <id141>
          <Id>588</Id>
          <Name>Karrablast</Name>
-         <Type 1>Bug</Type 1>
-         <Type 2></Type 2>
+         <Type1>Bug</Type1>
+         <Type2></Type2>
          <Total>315</Total>
          <HP>50</HP>
          <Attack>75</Attack>
          <Defense>45</Defense>
-         <Sp. Atk>40</Sp. Atk>
-         <Sp. Def>45</Sp. Def>
+         <Sp_Atk>40</Sp_Atk>
+         <Sp_Def>45</Sp_Def>
          <Speed>60</Speed>
          <Generation>5</Generation>
          <Legendary>False</Legendary>
-     </141>
-     <142>
+     </id141>
+     <id142>
          <Id>305</Id>
          <Name>Lairon</Name>
-         <Type 1>Steel</Type 1>
-         <Type 2>Rock</Type 2>
+         <Type1>Steel</Type1>
+         <Type2>Rock</Type2>
          <Total>430</Total>
          <HP>60</HP>
          <Attack>90</Attack>
          <Defense>140</Defense>
-         <Sp. Atk>50</Sp. Atk>
-         <Sp. Def>50</Sp. Def>
+         <Sp_Atk>50</Sp_Atk>
+         <Sp_Def>50</Sp_Def>
          <Speed>40</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </142>
-     <143>
+     </id142>
+     <id143>
          <Id>561</Id>
          <Name>Sigilyph</Name>
-         <Type 1>Psychic</Type 1>
-         <Type 2>Flying</Type 2>
+         <Type1>Psychic</Type1>
+         <Type2>Flying</Type2>
          <Total>490</Total>
          <HP>72</HP>
          <Attack>58</Attack>
          <Defense>80</Defense>
-         <Sp. Atk>103</Sp. Atk>
-         <Sp. Def>80</Sp. Def>
+         <Sp_Atk>103</Sp_Atk>
+         <Sp_Def>80</Sp_Def>
          <Speed>97</Speed>
          <Generation>5</Generation>
          <Legendary>False</Legendary>
-     </143>
-     <144>
+     </id143>
+     <id144>
          <Id>358</Id>
          <Name>Chimecho</Name>
-         <Type 1>Psychic</Type 1>
-         <Type 2></Type 2>
+         <Type1>Psychic</Type1>
+         <Type2></Type2>
          <Total>425</Total>
          <HP>65</HP>
          <Attack>50</Attack>
          <Defense>70</Defense>
-         <Sp. Atk>95</Sp. Atk>
-         <Sp. Def>80</Sp. Def>
+         <Sp_Atk>95</Sp_Atk>
+         <Sp_Def>80</Sp_Def>
          <Speed>65</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </144>
-     <145>
+     </id144>
+     <id145>
          <Id>168</Id>
          <Name>Ariados</Name>
-         <Type 1>Bug</Type 1>
-         <Type 2>Poison</Type 2>
+         <Type1>Bug</Type1>
+         <Type2>Poison</Type2>
          <Total>390</Total>
          <HP>70</HP>
          <Attack>90</Attack>
          <Defense>70</Defense>
-         <Sp. Atk>60</Sp. Atk>
-         <Sp. Def>60</Sp. Def>
+         <Sp_Atk>60</Sp_Atk>
+         <Sp_Def>60</Sp_Def>
          <Speed>40</Speed>
          <Generation>2</Generation>
          <Legendary>False</Legendary>
-     </145>
-     <146>
+     </id145>
+     <id146>
          <Id>189</Id>
          <Name>Jumpluff</Name>
-         <Type 1>Grass</Type 1>
-         <Type 2>Flying</Type 2>
+         <Type1>Grass</Type1>
+         <Type2>Flying</Type2>
          <Total>460</Total>
          <HP>75</HP>
          <Attack>55</Attack>
          <Defense>70</Defense>
-         <Sp. Atk>55</Sp. Atk>
-         <Sp. Def>95</Sp. Def>
+         <Sp_Atk>55</Sp_Atk>
+         <Sp_Def>95</Sp_Def>
          <Speed>110</Speed>
          <Generation>2</Generation>
          <Legendary>False</Legendary>
-     </146>
-     <147>
+     </id146>
+     <id147>
          <Id>320</Id>
          <Name>Wailmer</Name>
-         <Type 1>Water</Type 1>
-         <Type 2></Type 2>
+         <Type1>Water</Type1>
+         <Type2></Type2>
          <Total>400</Total>
          <HP>130</HP>
          <Attack>70</Attack>
          <Defense>35</Defense>
-         <Sp. Atk>70</Sp. Atk>
-         <Sp. Def>35</Sp. Def>
+         <Sp_Atk>70</Sp_Atk>
+         <Sp_Def>35</Sp_Def>
          <Speed>60</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </147>
-     <148>
+     </id147>
+     <id148>
          <Id>364</Id>
          <Name>Sealeo</Name>
-         <Type 1>Ice</Type 1>
-         <Type 2>Water</Type 2>
+         <Type1>Ice</Type1>
+         <Type2>Water</Type2>
          <Total>410</Total>
          <HP>90</HP>
          <Attack>60</Attack>
          <Defense>70</Defense>
-         <Sp. Atk>75</Sp. Atk>
-         <Sp. Def>70</Sp. Def>
+         <Sp_Atk>75</Sp_Atk>
+         <Sp_Def>70</Sp_Def>
          <Speed>45</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </148>
-     <149>
+     </id148>
+     <id149>
          <Id>371</Id>
          <Name>Bagon</Name>
-         <Type 1>Dragon</Type 1>
-         <Type 2></Type 2>
+         <Type1>Dragon</Type1>
+         <Type2></Type2>
          <Total>300</Total>
          <HP>45</HP>
          <Attack>75</Attack>
          <Defense>60</Defense>
-         <Sp. Atk>40</Sp. Atk>
-         <Sp. Def>30</Sp. Def>
+         <Sp_Atk>40</Sp_Atk>
+         <Sp_Def>30</Sp_Def>
          <Speed>50</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </149>
-     <150>
+     </id149>
+     <id150>
          <Id>430</Id>
          <Name>Honchkrow</Name>
-         <Type 1>Dark</Type 1>
-         <Type 2>Flying</Type 2>
+         <Type1>Dark</Type1>
+         <Type2>Flying</Type2>
          <Total>505</Total>
          <HP>100</HP>
          <Attack>125</Attack>
          <Defense>52</Defense>
-         <Sp. Atk>105</Sp. Atk>
-         <Sp. Def>52</Sp. Def>
+         <Sp_Atk>105</Sp_Atk>
+         <Sp_Def>52</Sp_Def>
          <Speed>71</Speed>
          <Generation>4</Generation>
          <Legendary>False</Legendary>
-     </150>
-     <151>
+     </id150>
+     <id151>
          <Id>648</Id>
          <Name>MeloettaPirouette Forme</Name>
-         <Type 1>Normal</Type 1>
-         <Type 2>Fighting</Type 2>
+         <Type1>Normal</Type1>
+         <Type2>Fighting</Type2>
          <Total>600</Total>
          <HP>100</HP>
          <Attack>128</Attack>
          <Defense>90</Defense>
-         <Sp. Atk>77</Sp. Atk>
-         <Sp. Def>77</Sp. Def>
+         <Sp_Atk>77</Sp_Atk>
+         <Sp_Def>77</Sp_Def>
          <Speed>128</Speed>
          <Generation>5</Generation>
          <Legendary>False</Legendary>
-     </151>
-     <152>
+     </id151>
+     <id152>
          <Id>343</Id>
          <Name>Baltoy</Name>
-         <Type 1>Ground</Type 1>
-         <Type 2>Psychic</Type 2>
+         <Type1>Ground</Type1>
+         <Type2>Psychic</Type2>
          <Total>300</Total>
          <HP>40</HP>
          <Attack>40</Attack>
          <Defense>55</Defense>
-         <Sp. Atk>40</Sp. Atk>
-         <Sp. Def>70</Sp. Def>
+         <Sp_Atk>40</Sp_Atk>
+         <Sp_Def>70</Sp_Def>
          <Speed>55</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </152>
-     <153>
+     </id152>
+     <id153>
          <Id>479</Id>
          <Name>RotomMow Rotom</Name>
-         <Type 1>Electric</Type 1>
-         <Type 2>Grass</Type 2>
+         <Type1>Electric</Type1>
+         <Type2>Grass</Type2>
          <Total>520</Total>
          <HP>50</HP>
          <Attack>65</Attack>
          <Defense>107</Defense>
-         <Sp. Atk>105</Sp. Atk>
-         <Sp. Def>107</Sp. Def>
+         <Sp_Atk>105</Sp_Atk>
+         <Sp_Def>107</Sp_Def>
          <Speed>86</Speed>
          <Generation>4</Generation>
          <Legendary>False</Legendary>
-     </153>
-     <154>
+     </id153>
+     <id154>
          <Id>493</Id>
          <Name>Arceus</Name>
-         <Type 1>Normal</Type 1>
-         <Type 2></Type 2>
+         <Type1>Normal</Type1>
+         <Type2></Type2>
          <Total>720</Total>
          <HP>120</HP>
          <Attack>120</Attack>
          <Defense>120</Defense>
-         <Sp. Atk>120</Sp. Atk>
-         <Sp. Def>120</Sp. Def>
+         <Sp_Atk>120</Sp_Atk>
+         <Sp_Def>120</Sp_Def>
          <Speed>120</Speed>
          <Generation>4</Generation>
          <Legendary>True</Legendary>
-     </154>
-     <155>
+     </id154>
+     <id155>
          <Id>309</Id>
          <Name>Electrike</Name>
-         <Type 1>Electric</Type 1>
-         <Type 2></Type 2>
+         <Type1>Electric</Type1>
+         <Type2></Type2>
          <Total>295</Total>
          <HP>40</HP>
          <Attack>45</Attack>
          <Defense>40</Defense>
-         <Sp. Atk>65</Sp. Atk>
-         <Sp. Def>40</Sp. Def>
+         <Sp_Atk>65</Sp_Atk>
+         <Sp_Def>40</Sp_Def>
          <Speed>65</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </155>
-     <156>
+     </id155>
+     <id156>
          <Id>118</Id>
          <Name>Goldeen</Name>
-         <Type 1>Water</Type 1>
-         <Type 2></Type 2>
+         <Type1>Water</Type1>
+         <Type2></Type2>
          <Total>320</Total>
          <HP>45</HP>
          <Attack>67</Attack>
          <Defense>60</Defense>
-         <Sp. Atk>35</Sp. Atk>
-         <Sp. Def>50</Sp. Def>
+         <Sp_Atk>35</Sp_Atk>
+         <Sp_Def>50</Sp_Def>
          <Speed>63</Speed>
          <Generation>1</Generation>
          <Legendary>False</Legendary>
-     </156>
-     <157>
+     </id156>
+     <id157>
          <Id>641</Id>
          <Name>TornadusTherian Forme</Name>
-         <Type 1>Flying</Type 1>
-         <Type 2></Type 2>
+         <Type1>Flying</Type1>
+         <Type2></Type2>
          <Total>580</Total>
          <HP>79</HP>
          <Attack>100</Attack>
          <Defense>80</Defense>
-         <Sp. Atk>110</Sp. Atk>
-         <Sp. Def>90</Sp. Def>
+         <Sp_Atk>110</Sp_Atk>
+         <Sp_Def>90</Sp_Def>
          <Speed>121</Speed>
          <Generation>5</Generation>
          <Legendary>True</Legendary>
-     </157>
-     <158>
+     </id157>
+     <id158>
          <Id>675</Id>
          <Name>Pangoro</Name>
-         <Type 1>Fighting</Type 1>
-         <Type 2>Dark</Type 2>
+         <Type1>Fighting</Type1>
+         <Type2>Dark</Type2>
          <Total>495</Total>
          <HP>95</HP>
          <Attack>124</Attack>
          <Defense>78</Defense>
-         <Sp. Atk>69</Sp. Atk>
-         <Sp. Def>71</Sp. Def>
+         <Sp_Atk>69</Sp_Atk>
+         <Sp_Def>71</Sp_Def>
          <Speed>58</Speed>
          <Generation>6</Generation>
          <Legendary>False</Legendary>
-     </158>
-     <159>
+     </id158>
+     <id159>
          <Id>9</Id>
          <Name>Blastoise</Name>
-         <Type 1>Water</Type 1>
-         <Type 2></Type 2>
+         <Type1>Water</Type1>
+         <Type2></Type2>
          <Total>530</Total>
          <HP>79</HP>
          <Attack>83</Attack>
          <Defense>100</Defense>
-         <Sp. Atk>85</Sp. Atk>
-         <Sp. Def>105</Sp. Def>
+         <Sp_Atk>85</Sp_Atk>
+         <Sp_Def>105</Sp_Def>
          <Speed>78</Speed>
          <Generation>1</Generation>
          <Legendary>False</Legendary>
-     </159>
-     <160>
+     </id159>
+     <id160>
          <Id>391</Id>
          <Name>Monferno</Name>
-         <Type 1>Fire</Type 1>
-         <Type 2>Fighting</Type 2>
+         <Type1>Fire</Type1>
+         <Type2>Fighting</Type2>
          <Total>405</Total>
          <HP>64</HP>
          <Attack>78</Attack>
          <Defense>52</Defense>
-         <Sp. Atk>78</Sp. Atk>
-         <Sp. Def>52</Sp. Def>
+         <Sp_Atk>78</Sp_Atk>
+         <Sp_Def>52</Sp_Def>
          <Speed>81</Speed>
          <Generation>4</Generation>
          <Legendary>False</Legendary>
-     </160>
-     <161>
+     </id160>
+     <id161>
          <Id>177</Id>
          <Name>Natu</Name>
-         <Type 1>Psychic</Type 1>
-         <Type 2>Flying</Type 2>
+         <Type1>Psychic</Type1>
+         <Type2>Flying</Type2>
          <Total>320</Total>
          <HP>40</HP>
          <Attack>50</Attack>
          <Defense>45</Defense>
-         <Sp. Atk>70</Sp. Atk>
-         <Sp. Def>45</Sp. Def>
+         <Sp_Atk>70</Sp_Atk>
+         <Sp_Def>45</Sp_Def>
          <Speed>70</Speed>
          <Generation>2</Generation>
          <Legendary>False</Legendary>
-     </161>
-     <162>
+     </id161>
+     <id162>
          <Id>294</Id>
          <Name>Loudred</Name>
-         <Type 1>Normal</Type 1>
-         <Type 2></Type 2>
+         <Type1>Normal</Type1>
+         <Type2></Type2>
          <Total>360</Total>
          <HP>84</HP>
          <Attack>71</Attack>
          <Defense>43</Defense>
-         <Sp. Atk>71</Sp. Atk>
-         <Sp. Def>43</Sp. Def>
+         <Sp_Atk>71</Sp_Atk>
+         <Sp_Def>43</Sp_Def>
          <Speed>48</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </162>
-     <163>
+     </id162>
+     <id163>
          <Id>185</Id>
          <Name>Sudowoodo</Name>
-         <Type 1>Rock</Type 1>
-         <Type 2></Type 2>
+         <Type1>Rock</Type1>
+         <Type2></Type2>
          <Total>410</Total>
          <HP>70</HP>
          <Attack>100</Attack>
          <Defense>115</Defense>
-         <Sp. Atk>30</Sp. Atk>
-         <Sp. Def>65</Sp. Def>
+         <Sp_Atk>30</Sp_Atk>
+         <Sp_Def>65</Sp_Def>
          <Speed>30</Speed>
          <Generation>2</Generation>
          <Legendary>False</Legendary>
-     </163>
-     <164>
+     </id163>
+     <id164>
          <Id>386</Id>
          <Name>DeoxysNormal Forme</Name>
-         <Type 1>Psychic</Type 1>
-         <Type 2></Type 2>
+         <Type1>Psychic</Type1>
+         <Type2></Type2>
          <Total>600</Total>
          <HP>50</HP>
          <Attack>150</Attack>
          <Defense>50</Defense>
-         <Sp. Atk>150</Sp. Atk>
-         <Sp. Def>50</Sp. Def>
+         <Sp_Atk>150</Sp_Atk>
+         <Sp_Def>50</Sp_Def>
          <Speed>150</Speed>
          <Generation>3</Generation>
          <Legendary>True</Legendary>
-     </164>
-     <165>
+     </id164>
+     <id165>
          <Id>719</Id>
          <Name>DiancieMega Diancie</Name>
-         <Type 1>Rock</Type 1>
-         <Type 2>Fairy</Type 2>
+         <Type1>Rock</Type1>
+         <Type2>Fairy</Type2>
          <Total>700</Total>
          <HP>50</HP>
          <Attack>160</Attack>
          <Defense>110</Defense>
-         <Sp. Atk>160</Sp. Atk>
-         <Sp. Def>110</Sp. Def>
+         <Sp_Atk>160</Sp_Atk>
+         <Sp_Def>110</Sp_Def>
          <Speed>110</Speed>
          <Generation>6</Generation>
          <Legendary>True</Legendary>
-     </165>
-     <166>
+     </id165>
+     <id166>
          <Id>254</Id>
          <Name>Sceptile</Name>
-         <Type 1>Grass</Type 1>
-         <Type 2></Type 2>
+         <Type1>Grass</Type1>
+         <Type2></Type2>
          <Total>530</Total>
          <HP>70</HP>
          <Attack>85</Attack>
          <Defense>65</Defense>
-         <Sp. Atk>105</Sp. Atk>
-         <Sp. Def>85</Sp. Def>
+         <Sp_Atk>105</Sp_Atk>
+         <Sp_Def>85</Sp_Def>
          <Speed>120</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </166>
-     <167>
+     </id166>
+     <id167>
          <Id>210</Id>
          <Name>Granbull</Name>
-         <Type 1>Fairy</Type 1>
-         <Type 2></Type 2>
+         <Type1>Fairy</Type1>
+         <Type2></Type2>
          <Total>450</Total>
          <HP>90</HP>
          <Attack>120</Attack>
          <Defense>75</Defense>
-         <Sp. Atk>60</Sp. Atk>
-         <Sp. Def>60</Sp. Def>
+         <Sp_Atk>60</Sp_Atk>
+         <Sp_Def>60</Sp_Def>
          <Speed>45</Speed>
          <Generation>2</Generation>
          <Legendary>False</Legendary>
-     </167>
-     <168>
+     </id167>
+     <id168>
          <Id>708</Id>
          <Name>Phantump</Name>
-         <Type 1>Ghost</Type 1>
-         <Type 2>Grass</Type 2>
+         <Type1>Ghost</Type1>
+         <Type2>Grass</Type2>
          <Total>309</Total>
          <HP>43</HP>
          <Attack>70</Attack>
          <Defense>48</Defense>
-         <Sp. Atk>50</Sp. Atk>
-         <Sp. Def>60</Sp. Def>
+         <Sp_Atk>50</Sp_Atk>
+         <Sp_Def>60</Sp_Def>
          <Speed>38</Speed>
          <Generation>6</Generation>
          <Legendary>False</Legendary>
-     </168>
-     <169>
+     </id168>
+     <id169>
          <Id>342</Id>
          <Name>Crawdaunt</Name>
-         <Type 1>Water</Type 1>
-         <Type 2>Dark</Type 2>
+         <Type1>Water</Type1>
+         <Type2>Dark</Type2>
          <Total>468</Total>
          <HP>63</HP>
          <Attack>120</Attack>
          <Defense>85</Defense>
-         <Sp. Atk>90</Sp. Atk>
-         <Sp. Def>55</Sp. Def>
+         <Sp_Atk>90</Sp_Atk>
+         <Sp_Def>55</Sp_Def>
          <Speed>55</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </169>
-     <170>
+     </id169>
+     <id170>
          <Id>678</Id>
          <Name>MeowsticMale</Name>
-         <Type 1>Psychic</Type 1>
-         <Type 2></Type 2>
+         <Type1>Psychic</Type1>
+         <Type2></Type2>
          <Total>466</Total>
          <HP>74</HP>
          <Attack>48</Attack>
          <Defense>76</Defense>
-         <Sp. Atk>83</Sp. Atk>
-         <Sp. Def>81</Sp. Def>
+         <Sp_Atk>83</Sp_Atk>
+         <Sp_Def>81</Sp_Def>
          <Speed>104</Speed>
          <Generation>6</Generation>
          <Legendary>False</Legendary>
-     </170>
-     <171>
+     </id170>
+     <id171>
          <Id>695</Id>
          <Name>Heliolisk</Name>
-         <Type 1>Electric</Type 1>
-         <Type 2>Normal</Type 2>
+         <Type1>Electric</Type1>
+         <Type2>Normal</Type2>
          <Total>481</Total>
          <HP>62</HP>
          <Attack>55</Attack>
          <Defense>52</Defense>
-         <Sp. Atk>109</Sp. Atk>
-         <Sp. Def>94</Sp. Def>
+         <Sp_Atk>109</Sp_Atk>
+         <Sp_Def>94</Sp_Def>
          <Speed>109</Speed>
          <Generation>6</Generation>
          <Legendary>False</Legendary>
-     </171>
-     <172>
+     </id171>
+     <id172>
          <Id>710</Id>
          <Name>PumpkabooSuper Size</Name>
-         <Type 1>Ghost</Type 1>
-         <Type 2>Grass</Type 2>
+         <Type1>Ghost</Type1>
+         <Type2>Grass</Type2>
          <Total>335</Total>
          <HP>59</HP>
          <Attack>66</Attack>
          <Defense>70</Defense>
-         <Sp. Atk>44</Sp. Atk>
-         <Sp. Def>55</Sp. Def>
+         <Sp_Atk>44</Sp_Atk>
+         <Sp_Def>55</Sp_Def>
          <Speed>41</Speed>
          <Generation>6</Generation>
          <Legendary>False</Legendary>
-     </172>
-     <173>
+     </id172>
+     <id173>
          <Id>131</Id>
          <Name>Lapras</Name>
-         <Type 1>Water</Type 1>
-         <Type 2>Ice</Type 2>
+         <Type1>Water</Type1>
+         <Type2>Ice</Type2>
          <Total>535</Total>
          <HP>130</HP>
          <Attack>85</Attack>
          <Defense>80</Defense>
-         <Sp. Atk>85</Sp. Atk>
-         <Sp. Def>95</Sp. Def>
+         <Sp_Atk>85</Sp_Atk>
+         <Sp_Def>95</Sp_Def>
          <Speed>60</Speed>
          <Generation>1</Generation>
          <Legendary>False</Legendary>
-     </173>
-     <174>
+     </id173>
+     <id174>
          <Id>414</Id>
          <Name>Mothim</Name>
-         <Type 1>Bug</Type 1>
-         <Type 2>Flying</Type 2>
+         <Type1>Bug</Type1>
+         <Type2>Flying</Type2>
          <Total>424</Total>
          <HP>70</HP>
          <Attack>94</Attack>
          <Defense>50</Defense>
-         <Sp. Atk>94</Sp. Atk>
-         <Sp. Def>50</Sp. Def>
+         <Sp_Atk>94</Sp_Atk>
+         <Sp_Def>50</Sp_Def>
          <Speed>66</Speed>
          <Generation>4</Generation>
          <Legendary>False</Legendary>
-     </174>
-     <175>
+     </id174>
+     <id175>
          <Id>163</Id>
          <Name>Hoothoot</Name>
-         <Type 1>Normal</Type 1>
-         <Type 2>Flying</Type 2>
+         <Type1>Normal</Type1>
+         <Type2>Flying</Type2>
          <Total>262</Total>
          <HP>60</HP>
          <Attack>30</Attack>
          <Defense>30</Defense>
-         <Sp. Atk>36</Sp. Atk>
-         <Sp. Def>56</Sp. Def>
+         <Sp_Atk>36</Sp_Atk>
+         <Sp_Def>56</Sp_Def>
          <Speed>50</Speed>
          <Generation>2</Generation>
          <Legendary>False</Legendary>
-     </175>
-     <176>
+     </id175>
+     <id176>
          <Id>101</Id>
          <Name>Electrode</Name>
-         <Type 1>Electric</Type 1>
-         <Type 2></Type 2>
+         <Type1>Electric</Type1>
+         <Type2></Type2>
          <Total>480</Total>
          <HP>60</HP>
          <Attack>50</Attack>
          <Defense>70</Defense>
-         <Sp. Atk>80</Sp. Atk>
-         <Sp. Def>80</Sp. Def>
+         <Sp_Atk>80</Sp_Atk>
+         <Sp_Def>80</Sp_Def>
          <Speed>140</Speed>
          <Generation>1</Generation>
          <Legendary>False</Legendary>
-     </176>
-     <177>
+     </id176>
+     <id177>
          <Id>99</Id>
          <Name>Kingler</Name>
-         <Type 1>Water</Type 1>
-         <Type 2></Type 2>
+         <Type1>Water</Type1>
+         <Type2></Type2>
          <Total>475</Total>
          <HP>55</HP>
          <Attack>130</Attack>
          <Defense>115</Defense>
-         <Sp. Atk>50</Sp. Atk>
-         <Sp. Def>50</Sp. Def>
+         <Sp_Atk>50</Sp_Atk>
+         <Sp_Def>50</Sp_Def>
          <Speed>75</Speed>
          <Generation>1</Generation>
          <Legendary>False</Legendary>
-     </177>
-     <178>
+     </id177>
+     <id178>
          <Id>637</Id>
          <Name>Volcarona</Name>
-         <Type 1>Bug</Type 1>
-         <Type 2>Fire</Type 2>
+         <Type1>Bug</Type1>
+         <Type2>Fire</Type2>
          <Total>550</Total>
          <HP>85</HP>
          <Attack>60</Attack>
          <Defense>65</Defense>
-         <Sp. Atk>135</Sp. Atk>
-         <Sp. Def>105</Sp. Def>
+         <Sp_Atk>135</Sp_Atk>
+         <Sp_Def>105</Sp_Def>
          <Speed>100</Speed>
          <Generation>5</Generation>
          <Legendary>False</Legendary>
-     </178>
-     <179>
+     </id178>
+     <id179>
          <Id>612</Id>
          <Name>Haxorus</Name>
-         <Type 1>Dragon</Type 1>
-         <Type 2></Type 2>
+         <Type1>Dragon</Type1>
+         <Type2></Type2>
          <Total>540</Total>
          <HP>76</HP>
          <Attack>147</Attack>
          <Defense>90</Defense>
-         <Sp. Atk>60</Sp. Atk>
-         <Sp. Def>70</Sp. Def>
+         <Sp_Atk>60</Sp_Atk>
+         <Sp_Def>70</Sp_Def>
          <Speed>97</Speed>
          <Generation>5</Generation>
          <Legendary>False</Legendary>
-     </179>
-     <180>
+     </id179>
+     <id180>
          <Id>454</Id>
          <Name>Toxicroak</Name>
-         <Type 1>Poison</Type 1>
-         <Type 2>Fighting</Type 2>
+         <Type1>Poison</Type1>
+         <Type2>Fighting</Type2>
          <Total>490</Total>
          <HP>83</HP>
          <Attack>106</Attack>
          <Defense>65</Defense>
-         <Sp. Atk>86</Sp. Atk>
-         <Sp. Def>65</Sp. Def>
+         <Sp_Atk>86</Sp_Atk>
+         <Sp_Def>65</Sp_Def>
          <Speed>85</Speed>
          <Generation>4</Generation>
          <Legendary>False</Legendary>
-     </180>
-     <181>
+     </id180>
+     <id181>
          <Id>680</Id>
          <Name>Doublade</Name>
-         <Type 1>Steel</Type 1>
-         <Type 2>Ghost</Type 2>
+         <Type1>Steel</Type1>
+         <Type2>Ghost</Type2>
          <Total>448</Total>
          <HP>59</HP>
          <Attack>110</Attack>
          <Defense>150</Defense>
-         <Sp. Atk>45</Sp. Atk>
-         <Sp. Def>49</Sp. Def>
+         <Sp_Atk>45</Sp_Atk>
+         <Sp_Def>49</Sp_Def>
          <Speed>35</Speed>
          <Generation>6</Generation>
          <Legendary>False</Legendary>
-     </181>
-     <182>
+     </id181>
+     <id182>
          <Id>319</Id>
          <Name>Sharpedo</Name>
-         <Type 1>Water</Type 1>
-         <Type 2>Dark</Type 2>
+         <Type1>Water</Type1>
+         <Type2>Dark</Type2>
          <Total>460</Total>
          <HP>70</HP>
          <Attack>120</Attack>
          <Defense>40</Defense>
-         <Sp. Atk>95</Sp. Atk>
-         <Sp. Def>40</Sp. Def>
+         <Sp_Atk>95</Sp_Atk>
+         <Sp_Def>40</Sp_Def>
          <Speed>95</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </182>
-     <183>
+     </id182>
+     <id183>
          <Id>503</Id>
          <Name>Samurott</Name>
-         <Type 1>Water</Type 1>
-         <Type 2></Type 2>
+         <Type1>Water</Type1>
+         <Type2></Type2>
          <Total>528</Total>
          <HP>95</HP>
          <Attack>100</Attack>
          <Defense>85</Defense>
-         <Sp. Atk>108</Sp. Atk>
-         <Sp. Def>70</Sp. Def>
+         <Sp_Atk>108</Sp_Atk>
+         <Sp_Def>70</Sp_Def>
          <Speed>70</Speed>
          <Generation>5</Generation>
          <Legendary>False</Legendary>
-     </183>
-     <184>
+     </id183>
+     <id184>
          <Id>527</Id>
          <Name>Woobat</Name>
-         <Type 1>Psychic</Type 1>
-         <Type 2>Flying</Type 2>
+         <Type1>Psychic</Type1>
+         <Type2>Flying</Type2>
          <Total>313</Total>
          <HP>55</HP>
          <Attack>45</Attack>
          <Defense>43</Defense>
-         <Sp. Atk>55</Sp. Atk>
-         <Sp. Def>43</Sp. Def>
+         <Sp_Atk>55</Sp_Atk>
+         <Sp_Def>43</Sp_Def>
          <Speed>72</Speed>
          <Generation>5</Generation>
          <Legendary>False</Legendary>
-     </184>
-     <185>
+     </id184>
+     <id185>
          <Id>181</Id>
          <Name>Ampharos</Name>
-         <Type 1>Electric</Type 1>
-         <Type 2></Type 2>
+         <Type1>Electric</Type1>
+         <Type2></Type2>
          <Total>510</Total>
          <HP>90</HP>
          <Attack>75</Attack>
          <Defense>85</Defense>
-         <Sp. Atk>115</Sp. Atk>
-         <Sp. Def>90</Sp. Def>
+         <Sp_Atk>115</Sp_Atk>
+         <Sp_Def>90</Sp_Def>
          <Speed>55</Speed>
          <Generation>2</Generation>
          <Legendary>False</Legendary>
-     </185>
-     <186>
+     </id185>
+     <id186>
          <Id>264</Id>
          <Name>Linoone</Name>
-         <Type 1>Normal</Type 1>
-         <Type 2></Type 2>
+         <Type1>Normal</Type1>
+         <Type2></Type2>
          <Total>420</Total>
          <HP>78</HP>
          <Attack>70</Attack>
          <Defense>61</Defense>
-         <Sp. Atk>50</Sp. Atk>
-         <Sp. Def>61</Sp. Def>
+         <Sp_Atk>50</Sp_Atk>
+         <Sp_Def>61</Sp_Def>
          <Speed>100</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </186>
-     <187>
+     </id186>
+     <id187>
          <Id>260</Id>
          <Name>Swampert</Name>
-         <Type 1>Water</Type 1>
-         <Type 2>Ground</Type 2>
+         <Type1>Water</Type1>
+         <Type2>Ground</Type2>
          <Total>535</Total>
          <HP>100</HP>
          <Attack>110</Attack>
          <Defense>90</Defense>
-         <Sp. Atk>85</Sp. Atk>
-         <Sp. Def>90</Sp. Def>
+         <Sp_Atk>85</Sp_Atk>
+         <Sp_Def>90</Sp_Def>
          <Speed>60</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </187>
-     <188>
+     </id187>
+     <id188>
          <Id>80</Id>
          <Name>SlowbroMega Slowbro</Name>
-         <Type 1>Water</Type 1>
-         <Type 2>Psychic</Type 2>
+         <Type1>Water</Type1>
+         <Type2>Psychic</Type2>
          <Total>590</Total>
          <HP>95</HP>
          <Attack>75</Attack>
          <Defense>180</Defense>
-         <Sp. Atk>130</Sp. Atk>
-         <Sp. Def>80</Sp. Def>
+         <Sp_Atk>130</Sp_Atk>
+         <Sp_Def>80</Sp_Def>
          <Speed>30</Speed>
          <Generation>1</Generation>
          <Legendary>False</Legendary>
-     </188>
-     <189>
+     </id188>
+     <id189>
          <Id>618</Id>
          <Name>Stunfisk</Name>
-         <Type 1>Ground</Type 1>
-         <Type 2>Electric</Type 2>
+         <Type1>Ground</Type1>
+         <Type2>Electric</Type2>
          <Total>471</Total>
          <HP>109</HP>
          <Attack>66</Attack>
          <Defense>84</Defense>
-         <Sp. Atk>81</Sp. Atk>
-         <Sp. Def>99</Sp. Def>
+         <Sp_Atk>81</Sp_Atk>
+         <Sp_Def>99</Sp_Def>
          <Speed>32</Speed>
          <Generation>5</Generation>
          <Legendary>False</Legendary>
-     </189>
-     <190>
+     </id189>
+     <id190>
          <Id>270</Id>
          <Name>Lotad</Name>
-         <Type 1>Water</Type 1>
-         <Type 2>Grass</Type 2>
+         <Type1>Water</Type1>
+         <Type2>Grass</Type2>
          <Total>220</Total>
          <HP>40</HP>
          <Attack>30</Attack>
          <Defense>30</Defense>
-         <Sp. Atk>40</Sp. Atk>
-         <Sp. Def>50</Sp. Def>
+         <Sp_Atk>40</Sp_Atk>
+         <Sp_Def>50</Sp_Def>
          <Speed>30</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </190>
-     <191>
+     </id190>
+     <id191>
          <Id>323</Id>
          <Name>Camerupt</Name>
-         <Type 1>Fire</Type 1>
-         <Type 2>Ground</Type 2>
+         <Type1>Fire</Type1>
+         <Type2>Ground</Type2>
          <Total>460</Total>
          <HP>70</HP>
          <Attack>100</Attack>
          <Defense>70</Defense>
-         <Sp. Atk>105</Sp. Atk>
-         <Sp. Def>75</Sp. Def>
+         <Sp_Atk>105</Sp_Atk>
+         <Sp_Def>75</Sp_Def>
          <Speed>40</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </191>
-     <192>
+     </id191>
+     <id192>
          <Id>156</Id>
          <Name>Quilava</Name>
-         <Type 1>Fire</Type 1>
-         <Type 2></Type 2>
+         <Type1>Fire</Type1>
+         <Type2></Type2>
          <Total>405</Total>
          <HP>58</HP>
          <Attack>64</Attack>
          <Defense>58</Defense>
-         <Sp. Atk>80</Sp. Atk>
-         <Sp. Def>65</Sp. Def>
+         <Sp_Atk>80</Sp_Atk>
+         <Sp_Def>65</Sp_Def>
          <Speed>80</Speed>
          <Generation>2</Generation>
          <Legendary>False</Legendary>
-     </192>
-     <193>
+     </id192>
+     <id193>
          <Id>673</Id>
          <Name>Gogoat</Name>
-         <Type 1>Grass</Type 1>
-         <Type 2></Type 2>
+         <Type1>Grass</Type1>
+         <Type2></Type2>
          <Total>531</Total>
          <HP>123</HP>
          <Attack>100</Attack>
          <Defense>62</Defense>
-         <Sp. Atk>97</Sp. Atk>
-         <Sp. Def>81</Sp. Def>
+         <Sp_Atk>97</Sp_Atk>
+         <Sp_Def>81</Sp_Def>
          <Speed>68</Speed>
          <Generation>6</Generation>
          <Legendary>False</Legendary>
-     </193>
-     <194>
+     </id193>
+     <id194>
          <Id>171</Id>
          <Name>Lanturn</Name>
-         <Type 1>Water</Type 1>
-         <Type 2>Electric</Type 2>
+         <Type1>Water</Type1>
+         <Type2>Electric</Type2>
          <Total>460</Total>
          <HP>125</HP>
          <Attack>58</Attack>
          <Defense>58</Defense>
-         <Sp. Atk>76</Sp. Atk>
-         <Sp. Def>76</Sp. Def>
+         <Sp_Atk>76</Sp_Atk>
+         <Sp_Def>76</Sp_Def>
          <Speed>67</Speed>
          <Generation>2</Generation>
          <Legendary>False</Legendary>
-     </194>
-     <195>
+     </id194>
+     <id195>
          <Id>202</Id>
          <Name>Wobbuffet</Name>
-         <Type 1>Psychic</Type 1>
-         <Type 2></Type 2>
+         <Type1>Psychic</Type1>
+         <Type2></Type2>
          <Total>405</Total>
          <HP>190</HP>
          <Attack>33</Attack>
          <Defense>58</Defense>
-         <Sp. Atk>33</Sp. Atk>
-         <Sp. Def>58</Sp. Def>
+         <Sp_Atk>33</Sp_Atk>
+         <Sp_Def>58</Sp_Def>
          <Speed>33</Speed>
          <Generation>2</Generation>
          <Legendary>False</Legendary>
-     </195>
-     <196>
+     </id195>
+     <id196>
          <Id>296</Id>
          <Name>Makuhita</Name>
-         <Type 1>Fighting</Type 1>
-         <Type 2></Type 2>
+         <Type1>Fighting</Type1>
+         <Type2></Type2>
          <Total>237</Total>
          <HP>72</HP>
          <Attack>60</Attack>
          <Defense>30</Defense>
-         <Sp. Atk>20</Sp. Atk>
-         <Sp. Def>30</Sp. Def>
+         <Sp_Atk>20</Sp_Atk>
+         <Sp_Def>30</Sp_Def>
          <Speed>25</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </196>
-     <197>
+     </id196>
+     <id197>
          <Id>464</Id>
          <Name>Rhyperior</Name>
-         <Type 1>Ground</Type 1>
-         <Type 2>Rock</Type 2>
+         <Type1>Ground</Type1>
+         <Type2>Rock</Type2>
          <Total>535</Total>
          <HP>115</HP>
          <Attack>140</Attack>
          <Defense>130</Defense>
-         <Sp. Atk>55</Sp. Atk>
-         <Sp. Def>55</Sp. Def>
+         <Sp_Atk>55</Sp_Atk>
+         <Sp_Def>55</Sp_Def>
          <Speed>40</Speed>
          <Generation>4</Generation>
          <Legendary>False</Legendary>
-     </197>
-     <198>
+     </id197>
+     <id198>
          <Id>149</Id>
          <Name>Dragonite</Name>
-         <Type 1>Dragon</Type 1>
-         <Type 2>Flying</Type 2>
+         <Type1>Dragon</Type1>
+         <Type2>Flying</Type2>
          <Total>600</Total>
          <HP>91</HP>
          <Attack>134</Attack>
          <Defense>95</Defense>
-         <Sp. Atk>100</Sp. Atk>
-         <Sp. Def>100</Sp. Def>
+         <Sp_Atk>100</Sp_Atk>
+         <Sp_Def>100</Sp_Def>
          <Speed>80</Speed>
          <Generation>1</Generation>
          <Legendary>False</Legendary>
-     </198>
-     <199>
+     </id198>
+     <id199>
          <Id>688</Id>
          <Name>Binacle</Name>
-         <Type 1>Rock</Type 1>
-         <Type 2>Water</Type 2>
+         <Type1>Rock</Type1>
+         <Type2>Water</Type2>
          <Total>306</Total>
          <HP>42</HP>
          <Attack>52</Attack>
          <Defense>67</Defense>
-         <Sp. Atk>39</Sp. Atk>
-         <Sp. Def>56</Sp. Def>
+         <Sp_Atk>39</Sp_Atk>
+         <Sp_Def>56</Sp_Def>
          <Speed>50</Speed>
          <Generation>6</Generation>
          <Legendary>False</Legendary>
-     </199>
-     <200>
+     </id199>
+     <id200>
          <Id>381</Id>
          <Name>LatiosMega Latios</Name>
-         <Type 1>Dragon</Type 1>
-         <Type 2>Psychic</Type 2>
+         <Type1>Dragon</Type1>
+         <Type2>Psychic</Type2>
          <Total>700</Total>
          <HP>80</HP>
          <Attack>130</Attack>
          <Defense>100</Defense>
-         <Sp. Atk>160</Sp. Atk>
-         <Sp. Def>120</Sp. Def>
+         <Sp_Atk>160</Sp_Atk>
+         <Sp_Def>120</Sp_Def>
          <Speed>110</Speed>
          <Generation>3</Generation>
          <Legendary>True</Legendary>
-     </200>
-     <201>
+     </id200>
+     <id201>
          <Id>19</Id>
          <Name>Rattata</Name>
-         <Type 1>Normal</Type 1>
-         <Type 2></Type 2>
+         <Type1>Normal</Type1>
+         <Type2></Type2>
          <Total>253</Total>
          <HP>30</HP>
          <Attack>56</Attack>
          <Defense>35</Defense>
-         <Sp. Atk>25</Sp. Atk>
-         <Sp. Def>35</Sp. Def>
+         <Sp_Atk>25</Sp_Atk>
+         <Sp_Def>35</Sp_Def>
          <Speed>72</Speed>
          <Generation>1</Generation>
          <Legendary>False</Legendary>
-     </201>
-     <202>
+     </id201>
+     <id202>
          <Id>278</Id>
          <Name>Wingull</Name>
-         <Type 1>Water</Type 1>
-         <Type 2>Flying</Type 2>
+         <Type1>Water</Type1>
+         <Type2>Flying</Type2>
          <Total>270</Total>
          <HP>40</HP>
          <Attack>30</Attack>
          <Defense>30</Defense>
-         <Sp. Atk>55</Sp. Atk>
-         <Sp. Def>30</Sp. Def>
+         <Sp_Atk>55</Sp_Atk>
+         <Sp_Def>30</Sp_Def>
          <Speed>85</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </202>
-     <203>
+     </id202>
+     <id203>
          <Id>31</Id>
          <Name>Nidoqueen</Name>
-         <Type 1>Poison</Type 1>
-         <Type 2>Ground</Type 2>
+         <Type1>Poison</Type1>
+         <Type2>Ground</Type2>
          <Total>505</Total>
          <HP>90</HP>
          <Attack>92</Attack>
          <Defense>87</Defense>
-         <Sp. Atk>75</Sp. Atk>
-         <Sp. Def>85</Sp. Def>
+         <Sp_Atk>75</Sp_Atk>
+         <Sp_Def>85</Sp_Def>
          <Speed>76</Speed>
          <Generation>1</Generation>
          <Legendary>False</Legendary>
-     </203>
-     <204>
+     </id203>
+     <id204>
          <Id>681</Id>
          <Name>AegislashShield Forme</Name>
-         <Type 1>Steel</Type 1>
-         <Type 2>Ghost</Type 2>
+         <Type1>Steel</Type1>
+         <Type2>Ghost</Type2>
          <Total>520</Total>
          <HP>60</HP>
          <Attack>50</Attack>
          <Defense>150</Defense>
-         <Sp. Atk>50</Sp. Atk>
-         <Sp. Def>150</Sp. Def>
+         <Sp_Atk>50</Sp_Atk>
+         <Sp_Def>150</Sp_Def>
          <Speed>60</Speed>
          <Generation>6</Generation>
          <Legendary>False</Legendary>
-     </204>
-     <205>
+     </id204>
+     <id205>
          <Id>245</Id>
          <Name>Suicune</Name>
-         <Type 1>Water</Type 1>
-         <Type 2></Type 2>
+         <Type1>Water</Type1>
+         <Type2></Type2>
          <Total>580</Total>
          <HP>100</HP>
          <Attack>75</Attack>
          <Defense>115</Defense>
-         <Sp. Atk>90</Sp. Atk>
-         <Sp. Def>115</Sp. Def>
+         <Sp_Atk>90</Sp_Atk>
+         <Sp_Def>115</Sp_Def>
          <Speed>85</Speed>
          <Generation>2</Generation>
          <Legendary>True</Legendary>
-     </205>
-     <206>
+     </id205>
+     <id206>
          <Id>517</Id>
          <Name>Munna</Name>
-         <Type 1>Psychic</Type 1>
-         <Type 2></Type 2>
+         <Type1>Psychic</Type1>
+         <Type2></Type2>
          <Total>292</Total>
          <HP>76</HP>
          <Attack>25</Attack>
          <Defense>45</Defense>
-         <Sp. Atk>67</Sp. Atk>
-         <Sp. Def>55</Sp. Def>
+         <Sp_Atk>67</Sp_Atk>
+         <Sp_Def>55</Sp_Def>
          <Speed>24</Speed>
          <Generation>5</Generation>
          <Legendary>False</Legendary>
-     </206>
-     <207>
+     </id206>
+     <id207>
          <Id>130</Id>
          <Name>GyaradosMega Gyarados</Name>
-         <Type 1>Water</Type 1>
-         <Type 2>Dark</Type 2>
+         <Type1>Water</Type1>
+         <Type2>Dark</Type2>
          <Total>640</Total>
          <HP>95</HP>
          <Attack>155</Attack>
          <Defense>109</Defense>
-         <Sp. Atk>70</Sp. Atk>
-         <Sp. Def>130</Sp. Def>
+         <Sp_Atk>70</Sp_Atk>
+         <Sp_Def>130</Sp_Def>
          <Speed>81</Speed>
          <Generation>1</Generation>
          <Legendary>False</Legendary>
-     </207>
-     <208>
+     </id207>
+     <id208>
          <Id>308</Id>
          <Name>MedichamMega Medicham</Name>
-         <Type 1>Fighting</Type 1>
-         <Type 2>Psychic</Type 2>
+         <Type1>Fighting</Type1>
+         <Type2>Psychic</Type2>
          <Total>510</Total>
          <HP>60</HP>
          <Attack>100</Attack>
          <Defense>85</Defense>
-         <Sp. Atk>80</Sp. Atk>
-         <Sp. Def>85</Sp. Def>
+         <Sp_Atk>80</Sp_Atk>
+         <Sp_Def>85</Sp_Def>
          <Speed>100</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </208>
-     <209>
+     </id208>
+     <id209>
          <Id>476</Id>
          <Name>Probopass</Name>
-         <Type 1>Rock</Type 1>
-         <Type 2>Steel</Type 2>
+         <Type1>Rock</Type1>
+         <Type2>Steel</Type2>
          <Total>525</Total>
          <HP>60</HP>
          <Attack>55</Attack>
          <Defense>145</Defense>
-         <Sp. Atk>75</Sp. Atk>
-         <Sp. Def>150</Sp. Def>
+         <Sp_Atk>75</Sp_Atk>
+         <Sp_Def>150</Sp_Def>
          <Speed>40</Speed>
          <Generation>4</Generation>
          <Legendary>False</Legendary>
-     </209>
-     <210>
+     </id209>
+     <id210>
          <Id>318</Id>
          <Name>Carvanha</Name>
-         <Type 1>Water</Type 1>
-         <Type 2>Dark</Type 2>
+         <Type1>Water</Type1>
+         <Type2>Dark</Type2>
          <Total>305</Total>
          <HP>45</HP>
          <Attack>90</Attack>
          <Defense>20</Defense>
-         <Sp. Atk>65</Sp. Atk>
-         <Sp. Def>20</Sp. Def>
+         <Sp_Atk>65</Sp_Atk>
+         <Sp_Def>20</Sp_Def>
          <Speed>65</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </210>
-     <211>
+     </id210>
+     <id211>
          <Id>353</Id>
          <Name>Shuppet</Name>
-         <Type 1>Ghost</Type 1>
-         <Type 2></Type 2>
+         <Type1>Ghost</Type1>
+         <Type2></Type2>
          <Total>295</Total>
          <HP>44</HP>
          <Attack>75</Attack>
          <Defense>35</Defense>
-         <Sp. Atk>63</Sp. Atk>
-         <Sp. Def>33</Sp. Def>
+         <Sp_Atk>63</Sp_Atk>
+         <Sp_Def>33</Sp_Def>
          <Speed>45</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </211>
-     <212>
+     </id211>
+     <id212>
          <Id>460</Id>
          <Name>Abomasnow</Name>
-         <Type 1>Grass</Type 1>
-         <Type 2>Ice</Type 2>
+         <Type1>Grass</Type1>
+         <Type2>Ice</Type2>
          <Total>494</Total>
          <HP>90</HP>
          <Attack>92</Attack>
          <Defense>75</Defense>
-         <Sp. Atk>92</Sp. Atk>
-         <Sp. Def>85</Sp. Def>
+         <Sp_Atk>92</Sp_Atk>
+         <Sp_Def>85</Sp_Def>
          <Speed>60</Speed>
          <Generation>4</Generation>
          <Legendary>False</Legendary>
-     </212>
-     <213>
+     </id212>
+     <id213>
          <Id>482</Id>
          <Name>Azelf</Name>
-         <Type 1>Psychic</Type 1>
-         <Type 2></Type 2>
+         <Type1>Psychic</Type1>
+         <Type2></Type2>
          <Total>580</Total>
          <HP>75</HP>
          <Attack>125</Attack>
          <Defense>70</Defense>
-         <Sp. Atk>125</Sp. Atk>
-         <Sp. Def>70</Sp. Def>
+         <Sp_Atk>125</Sp_Atk>
+         <Sp_Def>70</Sp_Def>
          <Speed>115</Speed>
          <Generation>4</Generation>
          <Legendary>True</Legendary>
-     </213>
-     <214>
+     </id213>
+     <id214>
          <Id>219</Id>
          <Name>Magcargo</Name>
-         <Type 1>Fire</Type 1>
-         <Type 2>Rock</Type 2>
+         <Type1>Fire</Type1>
+         <Type2>Rock</Type2>
          <Total>410</Total>
          <HP>50</HP>
          <Attack>50</Attack>
          <Defense>120</Defense>
-         <Sp. Atk>80</Sp. Atk>
-         <Sp. Def>80</Sp. Def>
+         <Sp_Atk>80</Sp_Atk>
+         <Sp_Def>80</Sp_Def>
          <Speed>30</Speed>
          <Generation>2</Generation>
          <Legendary>False</Legendary>
-     </214>
-     <215>
+     </id214>
+     <id215>
          <Id>283</Id>
          <Name>Surskit</Name>
-         <Type 1>Bug</Type 1>
-         <Type 2>Water</Type 2>
+         <Type1>Bug</Type1>
+         <Type2>Water</Type2>
          <Total>269</Total>
          <HP>40</HP>
          <Attack>30</Attack>
          <Defense>32</Defense>
-         <Sp. Atk>50</Sp. Atk>
-         <Sp. Def>52</Sp. Def>
+         <Sp_Atk>50</Sp_Atk>
+         <Sp_Def>52</Sp_Def>
          <Speed>65</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </215>
-     <216>
+     </id215>
+     <id216>
          <Id>150</Id>
          <Name>Mewtwo</Name>
-         <Type 1>Psychic</Type 1>
-         <Type 2></Type 2>
+         <Type1>Psychic</Type1>
+         <Type2></Type2>
          <Total>680</Total>
          <HP>106</HP>
          <Attack>110</Attack>
          <Defense>90</Defense>
-         <Sp. Atk>154</Sp. Atk>
-         <Sp. Def>90</Sp. Def>
+         <Sp_Atk>154</Sp_Atk>
+         <Sp_Def>90</Sp_Def>
          <Speed>130</Speed>
          <Generation>1</Generation>
          <Legendary>True</Legendary>
-     </216>
-     <217>
+     </id216>
+     <id217>
          <Id>121</Id>
          <Name>Starmie</Name>
-         <Type 1>Water</Type 1>
-         <Type 2>Psychic</Type 2>
+         <Type1>Water</Type1>
+         <Type2>Psychic</Type2>
          <Total>520</Total>
          <HP>60</HP>
          <Attack>75</Attack>
          <Defense>85</Defense>
-         <Sp. Atk>100</Sp. Atk>
-         <Sp. Def>85</Sp. Def>
+         <Sp_Atk>100</Sp_Atk>
+         <Sp_Def>85</Sp_Def>
          <Speed>115</Speed>
          <Generation>1</Generation>
          <Legendary>False</Legendary>
-     </217>
-     <218>
+     </id217>
+     <id218>
          <Id>348</Id>
          <Name>Armaldo</Name>
-         <Type 1>Rock</Type 1>
-         <Type 2>Bug</Type 2>
+         <Type1>Rock</Type1>
+         <Type2>Bug</Type2>
          <Total>495</Total>
          <HP>75</HP>
          <Attack>125</Attack>
          <Defense>100</Defense>
-         <Sp. Atk>70</Sp. Atk>
-         <Sp. Def>80</Sp. Def>
+         <Sp_Atk>70</Sp_Atk>
+         <Sp_Def>80</Sp_Def>
          <Speed>45</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </218>
-     <219>
+     </id218>
+     <id219>
          <Id>605</Id>
          <Name>Elgyem</Name>
-         <Type 1>Psychic</Type 1>
-         <Type 2></Type 2>
+         <Type1>Psychic</Type1>
+         <Type2></Type2>
          <Total>335</Total>
          <HP>55</HP>
          <Attack>55</Attack>
          <Defense>55</Defense>
-         <Sp. Atk>85</Sp. Atk>
-         <Sp. Def>55</Sp. Def>
+         <Sp_Atk>85</Sp_Atk>
+         <Sp_Def>55</Sp_Def>
          <Speed>30</Speed>
          <Generation>5</Generation>
          <Legendary>False</Legendary>
-     </219>
-     <220>
+     </id219>
+     <id220>
          <Id>184</Id>
          <Name>Azumarill</Name>
-         <Type 1>Water</Type 1>
-         <Type 2>Fairy</Type 2>
+         <Type1>Water</Type1>
+         <Type2>Fairy</Type2>
          <Total>420</Total>
          <HP>100</HP>
          <Attack>50</Attack>
          <Defense>80</Defense>
-         <Sp. Atk>60</Sp. Atk>
-         <Sp. Def>80</Sp. Def>
+         <Sp_Atk>60</Sp_Atk>
+         <Sp_Def>80</Sp_Def>
          <Speed>50</Speed>
          <Generation>2</Generation>
          <Legendary>False</Legendary>
-     </220>
-     <221>
+     </id220>
+     <id221>
          <Id>334</Id>
          <Name>Altaria</Name>
-         <Type 1>Dragon</Type 1>
-         <Type 2>Flying</Type 2>
+         <Type1>Dragon</Type1>
+         <Type2>Flying</Type2>
          <Total>490</Total>
          <HP>75</HP>
          <Attack>70</Attack>
          <Defense>90</Defense>
-         <Sp. Atk>70</Sp. Atk>
-         <Sp. Def>105</Sp. Def>
+         <Sp_Atk>70</Sp_Atk>
+         <Sp_Def>105</Sp_Def>
          <Speed>80</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </221>
-     <222>
+     </id221>
+     <id222>
          <Id>124</Id>
          <Name>Jynx</Name>
-         <Type 1>Ice</Type 1>
-         <Type 2>Psychic</Type 2>
+         <Type1>Ice</Type1>
+         <Type2>Psychic</Type2>
          <Total>455</Total>
          <HP>65</HP>
          <Attack>50</Attack>
          <Defense>35</Defense>
-         <Sp. Atk>115</Sp. Atk>
-         <Sp. Def>95</Sp. Def>
+         <Sp_Atk>115</Sp_Atk>
+         <Sp_Def>95</Sp_Def>
          <Speed>95</Speed>
          <Generation>1</Generation>
          <Legendary>False</Legendary>
-     </222>
-     <223>
+     </id222>
+     <id223>
          <Id>103</Id>
          <Name>Exeggutor</Name>
-         <Type 1>Grass</Type 1>
-         <Type 2>Psychic</Type 2>
+         <Type1>Grass</Type1>
+         <Type2>Psychic</Type2>
          <Total>520</Total>
          <HP>95</HP>
          <Attack>95</Attack>
          <Defense>85</Defense>
-         <Sp. Atk>125</Sp. Atk>
-         <Sp. Def>65</Sp. Def>
+         <Sp_Atk>125</Sp_Atk>
+         <Sp_Def>65</Sp_Def>
          <Speed>55</Speed>
          <Generation>1</Generation>
          <Legendary>False</Legendary>
-     </223>
-     <224>
+     </id223>
+     <id224>
          <Id>115</Id>
          <Name>KangaskhanMega Kangaskhan</Name>
-         <Type 1>Normal</Type 1>
-         <Type 2></Type 2>
+         <Type1>Normal</Type1>
+         <Type2></Type2>
          <Total>590</Total>
          <HP>105</HP>
          <Attack>125</Attack>
          <Defense>100</Defense>
-         <Sp. Atk>60</Sp. Atk>
-         <Sp. Def>100</Sp. Def>
+         <Sp_Atk>60</Sp_Atk>
+         <Sp_Def>100</Sp_Def>
          <Speed>100</Speed>
          <Generation>1</Generation>
          <Legendary>False</Legendary>
-     </224>
-     <225>
+     </id224>
+     <id225>
          <Id>484</Id>
          <Name>Palkia</Name>
-         <Type 1>Water</Type 1>
-         <Type 2>Dragon</Type 2>
+         <Type1>Water</Type1>
+         <Type2>Dragon</Type2>
          <Total>680</Total>
          <HP>90</HP>
          <Attack>120</Attack>
          <Defense>100</Defense>
-         <Sp. Atk>150</Sp. Atk>
-         <Sp. Def>120</Sp. Def>
+         <Sp_Atk>150</Sp_Atk>
+         <Sp_Def>120</Sp_Def>
          <Speed>100</Speed>
          <Generation>4</Generation>
          <Legendary>True</Legendary>
-     </225>
-     <226>
+     </id225>
+     <id226>
          <Id>71</Id>
          <Name>Victreebel</Name>
-         <Type 1>Grass</Type 1>
-         <Type 2>Poison</Type 2>
+         <Type1>Grass</Type1>
+         <Type2>Poison</Type2>
          <Total>490</Total>
          <HP>80</HP>
          <Attack>105</Attack>
          <Defense>65</Defense>
-         <Sp. Atk>100</Sp. Atk>
-         <Sp. Def>70</Sp. Def>
+         <Sp_Atk>100</Sp_Atk>
+         <Sp_Def>70</Sp_Def>
          <Speed>70</Speed>
          <Generation>1</Generation>
          <Legendary>False</Legendary>
-     </226>
-     <227>
+     </id226>
+     <id227>
          <Id>92</Id>
          <Name>Gastly</Name>
-         <Type 1>Ghost</Type 1>
-         <Type 2>Poison</Type 2>
+         <Type1>Ghost</Type1>
+         <Type2>Poison</Type2>
          <Total>310</Total>
          <HP>30</HP>
          <Attack>35</Attack>
          <Defense>30</Defense>
-         <Sp. Atk>100</Sp. Atk>
-         <Sp. Def>35</Sp. Def>
+         <Sp_Atk>100</Sp_Atk>
+         <Sp_Def>35</Sp_Def>
          <Speed>80</Speed>
          <Generation>1</Generation>
          <Legendary>False</Legendary>
-     </227>
-     <228>
+     </id227>
+     <id228>
          <Id>78</Id>
          <Name>Rapidash</Name>
-         <Type 1>Fire</Type 1>
-         <Type 2></Type 2>
+         <Type1>Fire</Type1>
+         <Type2></Type2>
          <Total>500</Total>
          <HP>65</HP>
          <Attack>100</Attack>
          <Defense>70</Defense>
-         <Sp. Atk>80</Sp. Atk>
-         <Sp. Def>80</Sp. Def>
+         <Sp_Atk>80</Sp_Atk>
+         <Sp_Def>80</Sp_Def>
          <Speed>105</Speed>
          <Generation>1</Generation>
          <Legendary>False</Legendary>
-     </228>
-     <229>
+     </id228>
+     <id229>
          <Id>404</Id>
          <Name>Luxio</Name>
-         <Type 1>Electric</Type 1>
-         <Type 2></Type 2>
+         <Type1>Electric</Type1>
+         <Type2></Type2>
          <Total>363</Total>
          <HP>60</HP>
          <Attack>85</Attack>
          <Defense>49</Defense>
-         <Sp. Atk>60</Sp. Atk>
-         <Sp. Def>49</Sp. Def>
+         <Sp_Atk>60</Sp_Atk>
+         <Sp_Def>49</Sp_Def>
          <Speed>60</Speed>
          <Generation>4</Generation>
          <Legendary>False</Legendary>
-     </229>
-     <230>
+     </id229>
+     <id230>
          <Id>449</Id>
          <Name>Hippopotas</Name>
-         <Type 1>Ground</Type 1>
-         <Type 2></Type 2>
+         <Type1>Ground</Type1>
+         <Type2></Type2>
          <Total>330</Total>
          <HP>68</HP>
          <Attack>72</Attack>
          <Defense>78</Defense>
-         <Sp. Atk>38</Sp. Atk>
-         <Sp. Def>42</Sp. Def>
+         <Sp_Atk>38</Sp_Atk>
+         <Sp_Def>42</Sp_Def>
          <Speed>32</Speed>
          <Generation>4</Generation>
          <Legendary>False</Legendary>
-     </230>
-     <231>
+     </id230>
+     <id231>
          <Id>242</Id>
          <Name>Blissey</Name>
-         <Type 1>Normal</Type 1>
-         <Type 2></Type 2>
+         <Type1>Normal</Type1>
+         <Type2></Type2>
          <Total>540</Total>
          <HP>255</HP>
          <Attack>10</Attack>
          <Defense>10</Defense>
-         <Sp. Atk>75</Sp. Atk>
-         <Sp. Def>135</Sp. Def>
+         <Sp_Atk>75</Sp_Atk>
+         <Sp_Def>135</Sp_Def>
          <Speed>55</Speed>
          <Generation>2</Generation>
          <Legendary>False</Legendary>
-     </231>
-     <232>
+     </id231>
+     <id232>
          <Id>54</Id>
          <Name>Psyduck</Name>
-         <Type 1>Water</Type 1>
-         <Type 2></Type 2>
+         <Type1>Water</Type1>
+         <Type2></Type2>
          <Total>320</Total>
          <HP>50</HP>
          <Attack>52</Attack>
          <Defense>48</Defense>
-         <Sp. Atk>65</Sp. Atk>
-         <Sp. Def>50</Sp. Def>
+         <Sp_Atk>65</Sp_Atk>
+         <Sp_Def>50</Sp_Def>
          <Speed>55</Speed>
          <Generation>1</Generation>
          <Legendary>False</Legendary>
-     </232>
-     <233>
+     </id232>
+     <id233>
          <Id>43</Id>
          <Name>Oddish</Name>
-         <Type 1>Grass</Type 1>
-         <Type 2>Poison</Type 2>
+         <Type1>Grass</Type1>
+         <Type2>Poison</Type2>
          <Total>320</Total>
          <HP>45</HP>
          <Attack>50</Attack>
          <Defense>55</Defense>
-         <Sp. Atk>75</Sp. Atk>
-         <Sp. Def>65</Sp. Def>
+         <Sp_Atk>75</Sp_Atk>
+         <Sp_Def>65</Sp_Def>
          <Speed>30</Speed>
          <Generation>1</Generation>
          <Legendary>False</Legendary>
-     </233>
-     <234>
+     </id233>
+     <id234>
          <Id>363</Id>
          <Name>Spheal</Name>
-         <Type 1>Ice</Type 1>
-         <Type 2>Water</Type 2>
+         <Type1>Ice</Type1>
+         <Type2>Water</Type2>
          <Total>290</Total>
          <HP>70</HP>
          <Attack>40</Attack>
          <Defense>50</Defense>
-         <Sp. Atk>55</Sp. Atk>
-         <Sp. Def>50</Sp. Def>
+         <Sp_Atk>55</Sp_Atk>
+         <Sp_Def>50</Sp_Def>
          <Speed>25</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </234>
-     <235>
+     </id234>
+     <id235>
          <Id>246</Id>
          <Name>Larvitar</Name>
-         <Type 1>Rock</Type 1>
-         <Type 2>Ground</Type 2>
+         <Type1>Rock</Type1>
+         <Type2>Ground</Type2>
          <Total>300</Total>
          <HP>50</HP>
          <Attack>64</Attack>
          <Defense>50</Defense>
-         <Sp. Atk>45</Sp. Atk>
-         <Sp. Def>50</Sp. Def>
+         <Sp_Atk>45</Sp_Atk>
+         <Sp_Def>50</Sp_Def>
          <Speed>41</Speed>
          <Generation>2</Generation>
          <Legendary>False</Legendary>
-     </235>
-     <236>
+     </id235>
+     <id236>
          <Id>321</Id>
          <Name>Wailord</Name>
-         <Type 1>Water</Type 1>
-         <Type 2></Type 2>
+         <Type1>Water</Type1>
+         <Type2></Type2>
          <Total>500</Total>
          <HP>170</HP>
          <Attack>90</Attack>
          <Defense>45</Defense>
-         <Sp. Atk>90</Sp. Atk>
-         <Sp. Def>45</Sp. Def>
+         <Sp_Atk>90</Sp_Atk>
+         <Sp_Def>45</Sp_Def>
          <Speed>60</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </236>
-     <237>
+     </id236>
+     <id237>
          <Id>179</Id>
          <Name>Mareep</Name>
-         <Type 1>Electric</Type 1>
-         <Type 2></Type 2>
+         <Type1>Electric</Type1>
+         <Type2></Type2>
          <Total>280</Total>
          <HP>55</HP>
          <Attack>40</Attack>
          <Defense>40</Defense>
-         <Sp. Atk>65</Sp. Atk>
-         <Sp. Def>45</Sp. Def>
+         <Sp_Atk>65</Sp_Atk>
+         <Sp_Def>45</Sp_Def>
          <Speed>35</Speed>
          <Generation>2</Generation>
          <Legendary>False</Legendary>
-     </237>
-     <238>
+     </id237>
+     <id238>
          <Id>631</Id>
          <Name>Heatmor</Name>
-         <Type 1>Fire</Type 1>
-         <Type 2></Type 2>
+         <Type1>Fire</Type1>
+         <Type2></Type2>
          <Total>484</Total>
          <HP>85</HP>
          <Attack>97</Attack>
          <Defense>66</Defense>
-         <Sp. Atk>105</Sp. Atk>
-         <Sp. Def>66</Sp. Def>
+         <Sp_Atk>105</Sp_Atk>
+         <Sp_Def>66</Sp_Def>
          <Speed>65</Speed>
          <Generation>5</Generation>
          <Legendary>False</Legendary>
-     </238>
-     <239>
+     </id238>
+     <id239>
          <Id>672</Id>
          <Name>Skiddo</Name>
-         <Type 1>Grass</Type 1>
-         <Type 2></Type 2>
+         <Type1>Grass</Type1>
+         <Type2></Type2>
          <Total>350</Total>
          <HP>66</HP>
          <Attack>65</Attack>
          <Defense>48</Defense>
-         <Sp. Atk>62</Sp. Atk>
-         <Sp. Def>57</Sp. Def>
+         <Sp_Atk>62</Sp_Atk>
+         <Sp_Def>57</Sp_Def>
          <Speed>52</Speed>
          <Generation>6</Generation>
          <Legendary>False</Legendary>
-     </239>
-     <240>
+     </id239>
+     <id240>
          <Id>359</Id>
          <Name>Absol</Name>
-         <Type 1>Dark</Type 1>
-         <Type 2></Type 2>
+         <Type1>Dark</Type1>
+         <Type2></Type2>
          <Total>465</Total>
          <HP>65</HP>
          <Attack>130</Attack>
          <Defense>60</Defense>
-         <Sp. Atk>75</Sp. Atk>
-         <Sp. Def>60</Sp. Def>
+         <Sp_Atk>75</Sp_Atk>
+         <Sp_Def>60</Sp_Def>
          <Speed>75</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </240>
-     <241>
+     </id240>
+     <id241>
          <Id>6</Id>
          <Name>Charizard</Name>
-         <Type 1>Fire</Type 1>
-         <Type 2>Flying</Type 2>
+         <Type1>Fire</Type1>
+         <Type2>Flying</Type2>
          <Total>534</Total>
          <HP>78</HP>
          <Attack>84</Attack>
          <Defense>78</Defense>
-         <Sp. Atk>109</Sp. Atk>
-         <Sp. Def>85</Sp. Def>
+         <Sp_Atk>109</Sp_Atk>
+         <Sp_Def>85</Sp_Def>
          <Speed>100</Speed>
          <Generation>1</Generation>
          <Legendary>False</Legendary>
-     </241>
-     <242>
+     </id241>
+     <id242>
          <Id>93</Id>
          <Name>Haunter</Name>
-         <Type 1>Ghost</Type 1>
-         <Type 2>Poison</Type 2>
+         <Type1>Ghost</Type1>
+         <Type2>Poison</Type2>
          <Total>405</Total>
          <HP>45</HP>
          <Attack>50</Attack>
          <Defense>45</Defense>
-         <Sp. Atk>115</Sp. Atk>
-         <Sp. Def>55</Sp. Def>
+         <Sp_Atk>115</Sp_Atk>
+         <Sp_Def>55</Sp_Def>
          <Speed>95</Speed>
          <Generation>1</Generation>
          <Legendary>False</Legendary>
-     </242>
-     <243>
+     </id242>
+     <id243>
          <Id>153</Id>
          <Name>Bayleef</Name>
-         <Type 1>Grass</Type 1>
-         <Type 2></Type 2>
+         <Type1>Grass</Type1>
+         <Type2></Type2>
          <Total>405</Total>
          <HP>60</HP>
          <Attack>62</Attack>
          <Defense>80</Defense>
-         <Sp. Atk>63</Sp. Atk>
-         <Sp. Def>80</Sp. Def>
+         <Sp_Atk>63</Sp_Atk>
+         <Sp_Def>80</Sp_Def>
          <Speed>60</Speed>
          <Generation>2</Generation>
          <Legendary>False</Legendary>
-     </243>
-     <244>
+     </id243>
+     <id244>
          <Id>613</Id>
          <Name>Cubchoo</Name>
-         <Type 1>Ice</Type 1>
-         <Type 2></Type 2>
+         <Type1>Ice</Type1>
+         <Type2></Type2>
          <Total>305</Total>
          <HP>55</HP>
          <Attack>70</Attack>
          <Defense>40</Defense>
-         <Sp. Atk>60</Sp. Atk>
-         <Sp. Def>40</Sp. Def>
+         <Sp_Atk>60</Sp_Atk>
+         <Sp_Def>40</Sp_Def>
          <Speed>40</Speed>
          <Generation>5</Generation>
          <Legendary>False</Legendary>
-     </244>
-     <245>
+     </id244>
+     <id245>
          <Id>306</Id>
          <Name>AggronMega Aggron</Name>
-         <Type 1>Steel</Type 1>
-         <Type 2></Type 2>
+         <Type1>Steel</Type1>
+         <Type2></Type2>
          <Total>630</Total>
          <HP>70</HP>
          <Attack>140</Attack>
          <Defense>230</Defense>
-         <Sp. Atk>60</Sp. Atk>
-         <Sp. Def>80</Sp. Def>
+         <Sp_Atk>60</Sp_Atk>
+         <Sp_Def>80</Sp_Def>
          <Speed>50</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </245>
-     <246>
+     </id245>
+     <id246>
          <Id>679</Id>
          <Name>Honedge</Name>
-         <Type 1>Steel</Type 1>
-         <Type 2>Ghost</Type 2>
+         <Type1>Steel</Type1>
+         <Type2>Ghost</Type2>
          <Total>325</Total>
          <HP>45</HP>
          <Attack>80</Attack>
          <Defense>100</Defense>
-         <Sp. Atk>35</Sp. Atk>
-         <Sp. Def>37</Sp. Def>
+         <Sp_Atk>35</Sp_Atk>
+         <Sp_Def>37</Sp_Def>
          <Speed>28</Speed>
          <Generation>6</Generation>
          <Legendary>False</Legendary>
-     </246>
-     <247>
+     </id246>
+     <id247>
          <Id>13</Id>
          <Name>Weedle</Name>
-         <Type 1>Bug</Type 1>
-         <Type 2>Poison</Type 2>
+         <Type1>Bug</Type1>
+         <Type2>Poison</Type2>
          <Total>195</Total>
          <HP>40</HP>
          <Attack>35</Attack>
          <Defense>30</Defense>
-         <Sp. Atk>20</Sp. Atk>
-         <Sp. Def>20</Sp. Def>
+         <Sp_Atk>20</Sp_Atk>
+         <Sp_Def>20</Sp_Def>
          <Speed>50</Speed>
          <Generation>1</Generation>
          <Legendary>False</Legendary>
-     </247>
-     <248>
+     </id247>
+     <id248>
          <Id>39</Id>
          <Name>Jigglypuff</Name>
-         <Type 1>Normal</Type 1>
-         <Type 2>Fairy</Type 2>
+         <Type1>Normal</Type1>
+         <Type2>Fairy</Type2>
          <Total>270</Total>
          <HP>115</HP>
          <Attack>45</Attack>
          <Defense>20</Defense>
-         <Sp. Atk>45</Sp. Atk>
-         <Sp. Def>25</Sp. Def>
+         <Sp_Atk>45</Sp_Atk>
+         <Sp_Def>25</Sp_Def>
          <Speed>20</Speed>
          <Generation>1</Generation>
          <Legendary>False</Legendary>
-     </248>
-     <249>
+     </id248>
+     <id249>
          <Id>663</Id>
          <Name>Talonflame</Name>
-         <Type 1>Fire</Type 1>
-         <Type 2>Flying</Type 2>
+         <Type1>Fire</Type1>
+         <Type2>Flying</Type2>
          <Total>499</Total>
          <HP>78</HP>
          <Attack>81</Attack>
          <Defense>71</Defense>
-         <Sp. Atk>74</Sp. Atk>
-         <Sp. Def>69</Sp. Def>
+         <Sp_Atk>74</Sp_Atk>
+         <Sp_Def>69</Sp_Def>
          <Speed>126</Speed>
          <Generation>6</Generation>
          <Legendary>False</Legendary>
-     </249>
-     <250>
+     </id249>
+     <id250>
          <Id>506</Id>
          <Name>Lillipup</Name>
-         <Type 1>Normal</Type 1>
-         <Type 2></Type 2>
+         <Type1>Normal</Type1>
+         <Type2></Type2>
          <Total>275</Total>
          <HP>45</HP>
          <Attack>60</Attack>
          <Defense>45</Defense>
-         <Sp. Atk>25</Sp. Atk>
-         <Sp. Def>45</Sp. Def>
+         <Sp_Atk>25</Sp_Atk>
+         <Sp_Def>45</Sp_Def>
          <Speed>55</Speed>
          <Generation>5</Generation>
          <Legendary>False</Legendary>
-     </250>
-     <251>
+     </id250>
+     <id251>
          <Id>172</Id>
          <Name>Pichu</Name>
-         <Type 1>Electric</Type 1>
-         <Type 2></Type 2>
+         <Type1>Electric</Type1>
+         <Type2></Type2>
          <Total>205</Total>
          <HP>20</HP>
          <Attack>40</Attack>
          <Defense>15</Defense>
-         <Sp. Atk>35</Sp. Atk>
-         <Sp. Def>35</Sp. Def>
+         <Sp_Atk>35</Sp_Atk>
+         <Sp_Def>35</Sp_Def>
          <Speed>60</Speed>
          <Generation>2</Generation>
          <Legendary>False</Legendary>
-     </251>
-     <252>
+     </id251>
+     <id252>
          <Id>132</Id>
          <Name>Ditto</Name>
-         <Type 1>Normal</Type 1>
-         <Type 2></Type 2>
+         <Type1>Normal</Type1>
+         <Type2></Type2>
          <Total>288</Total>
          <HP>48</HP>
          <Attack>48</Attack>
          <Defense>48</Defense>
-         <Sp. Atk>48</Sp. Atk>
-         <Sp. Def>48</Sp. Def>
+         <Sp_Atk>48</Sp_Atk>
+         <Sp_Def>48</Sp_Def>
          <Speed>48</Speed>
          <Generation>1</Generation>
          <Legendary>False</Legendary>
-     </252>
-     <253>
+     </id252>
+     <id253>
          <Id>711</Id>
          <Name>GourgeistLarge Size</Name>
-         <Type 1>Ghost</Type 1>
-         <Type 2>Grass</Type 2>
+         <Type1>Ghost</Type1>
+         <Type2>Grass</Type2>
          <Total>494</Total>
          <HP>75</HP>
          <Attack>95</Attack>
          <Defense>122</Defense>
-         <Sp. Atk>58</Sp. Atk>
-         <Sp. Def>75</Sp. Def>
+         <Sp_Atk>58</Sp_Atk>
+         <Sp_Def>75</Sp_Def>
          <Speed>69</Speed>
          <Generation>6</Generation>
          <Legendary>False</Legendary>
-     </253>
-     <254>
+     </id253>
+     <id254>
          <Id>532</Id>
          <Name>Timburr</Name>
-         <Type 1>Fighting</Type 1>
-         <Type 2></Type 2>
+         <Type1>Fighting</Type1>
+         <Type2></Type2>
          <Total>305</Total>
          <HP>75</HP>
          <Attack>80</Attack>
          <Defense>55</Defense>
-         <Sp. Atk>25</Sp. Atk>
-         <Sp. Def>35</Sp. Def>
+         <Sp_Atk>25</Sp_Atk>
+         <Sp_Def>35</Sp_Def>
          <Speed>35</Speed>
          <Generation>5</Generation>
          <Legendary>False</Legendary>
-     </254>
-     <255>
+     </id254>
+     <id255>
          <Id>647</Id>
          <Name>KeldeoResolute Forme</Name>
-         <Type 1>Water</Type 1>
-         <Type 2>Fighting</Type 2>
+         <Type1>Water</Type1>
+         <Type2>Fighting</Type2>
          <Total>580</Total>
          <HP>91</HP>
          <Attack>72</Attack>
          <Defense>90</Defense>
-         <Sp. Atk>129</Sp. Atk>
-         <Sp. Def>90</Sp. Def>
+         <Sp_Atk>129</Sp_Atk>
+         <Sp_Def>90</Sp_Def>
          <Speed>108</Speed>
          <Generation>5</Generation>
          <Legendary>False</Legendary>
-     </255>
-     <256>
+     </id255>
+     <id256>
          <Id>600</Id>
          <Name>Klang</Name>
-         <Type 1>Steel</Type 1>
-         <Type 2></Type 2>
+         <Type1>Steel</Type1>
+         <Type2></Type2>
          <Total>440</Total>
          <HP>60</HP>
          <Attack>80</Attack>
          <Defense>95</Defense>
-         <Sp. Atk>70</Sp. Atk>
-         <Sp. Def>85</Sp. Def>
+         <Sp_Atk>70</Sp_Atk>
+         <Sp_Def>85</Sp_Def>
          <Speed>50</Speed>
          <Generation>5</Generation>
          <Legendary>False</Legendary>
-     </256>
-     <257>
+     </id256>
+     <id257>
          <Id>502</Id>
          <Name>Dewott</Name>
-         <Type 1>Water</Type 1>
-         <Type 2></Type 2>
+         <Type1>Water</Type1>
+         <Type2></Type2>
          <Total>413</Total>
          <HP>75</HP>
          <Attack>75</Attack>
          <Defense>60</Defense>
-         <Sp. Atk>83</Sp. Atk>
-         <Sp. Def>60</Sp. Def>
+         <Sp_Atk>83</Sp_Atk>
+         <Sp_Def>60</Sp_Def>
          <Speed>60</Speed>
          <Generation>5</Generation>
          <Legendary>False</Legendary>
-     </257>
-     <258>
+     </id257>
+     <id258>
          <Id>616</Id>
          <Name>Shelmet</Name>
-         <Type 1>Bug</Type 1>
-         <Type 2></Type 2>
+         <Type1>Bug</Type1>
+         <Type2></Type2>
          <Total>305</Total>
          <HP>50</HP>
          <Attack>40</Attack>
          <Defense>85</Defense>
-         <Sp. Atk>40</Sp. Atk>
-         <Sp. Def>65</Sp. Def>
+         <Sp_Atk>40</Sp_Atk>
+         <Sp_Def>65</Sp_Def>
          <Speed>25</Speed>
          <Generation>5</Generation>
          <Legendary>False</Legendary>
-     </258>
-     <259>
+     </id258>
+     <id259>
          <Id>573</Id>
          <Name>Cinccino</Name>
-         <Type 1>Normal</Type 1>
-         <Type 2></Type 2>
+         <Type1>Normal</Type1>
+         <Type2></Type2>
          <Total>470</Total>
          <HP>75</HP>
          <Attack>95</Attack>
          <Defense>60</Defense>
-         <Sp. Atk>65</Sp. Atk>
-         <Sp. Def>60</Sp. Def>
+         <Sp_Atk>65</Sp_Atk>
+         <Sp_Def>60</Sp_Def>
          <Speed>115</Speed>
          <Generation>5</Generation>
          <Legendary>False</Legendary>
-     </259>
-     <260>
+     </id259>
+     <id260>
          <Id>9</Id>
          <Name>BlastoiseMega Blastoise</Name>
-         <Type 1>Water</Type 1>
-         <Type 2></Type 2>
+         <Type1>Water</Type1>
+         <Type2></Type2>
          <Total>630</Total>
          <HP>79</HP>
          <Attack>103</Attack>
          <Defense>120</Defense>
-         <Sp. Atk>135</Sp. Atk>
-         <Sp. Def>115</Sp. Def>
+         <Sp_Atk>135</Sp_Atk>
+         <Sp_Def>115</Sp_Def>
          <Speed>78</Speed>
          <Generation>1</Generation>
          <Legendary>False</Legendary>
-     </260>
-     <261>
+     </id260>
+     <id261>
          <Id>642</Id>
          <Name>ThundurusTherian Forme</Name>
-         <Type 1>Electric</Type 1>
-         <Type 2>Flying</Type 2>
+         <Type1>Electric</Type1>
+         <Type2>Flying</Type2>
          <Total>580</Total>
          <HP>79</HP>
          <Attack>105</Attack>
          <Defense>70</Defense>
-         <Sp. Atk>145</Sp. Atk>
-         <Sp. Def>80</Sp. Def>
+         <Sp_Atk>145</Sp_Atk>
+         <Sp_Def>80</Sp_Def>
          <Speed>101</Speed>
          <Generation>5</Generation>
          <Legendary>True</Legendary>
-     </261>
-     <262>
+     </id261>
+     <id262>
          <Id>357</Id>
          <Name>Tropius</Name>
-         <Type 1>Grass</Type 1>
-         <Type 2>Flying</Type 2>
+         <Type1>Grass</Type1>
+         <Type2>Flying</Type2>
          <Total>460</Total>
          <HP>99</HP>
          <Attack>68</Attack>
          <Defense>83</Defense>
-         <Sp. Atk>72</Sp. Atk>
-         <Sp. Def>87</Sp. Def>
+         <Sp_Atk>72</Sp_Atk>
+         <Sp_Def>87</Sp_Def>
          <Speed>51</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </262>
-     <263>
+     </id262>
+     <id263>
          <Id>646</Id>
          <Name>KyuremBlack Kyurem</Name>
-         <Type 1>Dragon</Type 1>
-         <Type 2>Ice</Type 2>
+         <Type1>Dragon</Type1>
+         <Type2>Ice</Type2>
          <Total>700</Total>
          <HP>125</HP>
          <Attack>170</Attack>
          <Defense>100</Defense>
-         <Sp. Atk>120</Sp. Atk>
-         <Sp. Def>90</Sp. Def>
+         <Sp_Atk>120</Sp_Atk>
+         <Sp_Def>90</Sp_Def>
          <Speed>95</Speed>
          <Generation>5</Generation>
          <Legendary>True</Legendary>
-     </263>
-     <264>
+     </id263>
+     <id264>
          <Id>630</Id>
          <Name>Mandibuzz</Name>
-         <Type 1>Dark</Type 1>
-         <Type 2>Flying</Type 2>
+         <Type1>Dark</Type1>
+         <Type2>Flying</Type2>
          <Total>510</Total>
          <HP>110</HP>
          <Attack>65</Attack>
          <Defense>105</Defense>
-         <Sp. Atk>55</Sp. Atk>
-         <Sp. Def>95</Sp. Def>
+         <Sp_Atk>55</Sp_Atk>
+         <Sp_Def>95</Sp_Def>
          <Speed>80</Speed>
          <Generation>5</Generation>
          <Legendary>False</Legendary>
-     </264>
-     <265>
+     </id264>
+     <id265>
          <Id>234</Id>
          <Name>Stantler</Name>
-         <Type 1>Normal</Type 1>
-         <Type 2></Type 2>
+         <Type1>Normal</Type1>
+         <Type2></Type2>
          <Total>465</Total>
          <HP>73</HP>
          <Attack>95</Attack>
          <Defense>62</Defense>
-         <Sp. Atk>85</Sp. Atk>
-         <Sp. Def>65</Sp. Def>
+         <Sp_Atk>85</Sp_Atk>
+         <Sp_Def>65</Sp_Def>
          <Speed>85</Speed>
          <Generation>2</Generation>
          <Legendary>False</Legendary>
-     </265>
-     <266>
+     </id265>
+     <id266>
          <Id>27</Id>
          <Name>Sandshrew</Name>
-         <Type 1>Ground</Type 1>
-         <Type 2></Type 2>
+         <Type1>Ground</Type1>
+         <Type2></Type2>
          <Total>300</Total>
          <HP>50</HP>
          <Attack>75</Attack>
          <Defense>85</Defense>
-         <Sp. Atk>20</Sp. Atk>
-         <Sp. Def>30</Sp. Def>
+         <Sp_Atk>20</Sp_Atk>
+         <Sp_Def>30</Sp_Def>
          <Speed>40</Speed>
          <Generation>1</Generation>
          <Legendary>False</Legendary>
-     </266>
-     <267>
+     </id266>
+     <id267>
          <Id>75</Id>
          <Name>Graveler</Name>
-         <Type 1>Rock</Type 1>
-         <Type 2>Ground</Type 2>
+         <Type1>Rock</Type1>
+         <Type2>Ground</Type2>
          <Total>390</Total>
          <HP>55</HP>
          <Attack>95</Attack>
          <Defense>115</Defense>
-         <Sp. Atk>45</Sp. Atk>
-         <Sp. Def>45</Sp. Def>
+         <Sp_Atk>45</Sp_Atk>
+         <Sp_Def>45</Sp_Def>
          <Speed>35</Speed>
          <Generation>1</Generation>
          <Legendary>False</Legendary>
-     </267>
-     <268>
+     </id267>
+     <id268>
          <Id>684</Id>
          <Name>Swirlix</Name>
-         <Type 1>Fairy</Type 1>
-         <Type 2></Type 2>
+         <Type1>Fairy</Type1>
+         <Type2></Type2>
          <Total>341</Total>
          <HP>62</HP>
          <Attack>48</Attack>
          <Defense>66</Defense>
-         <Sp. Atk>59</Sp. Atk>
-         <Sp. Def>57</Sp. Def>
+         <Sp_Atk>59</Sp_Atk>
+         <Sp_Def>57</Sp_Def>
          <Speed>49</Speed>
          <Generation>6</Generation>
          <Legendary>False</Legendary>
-     </268>
-     <269>
+     </id268>
+     <id269>
          <Id>682</Id>
          <Name>Spritzee</Name>
-         <Type 1>Fairy</Type 1>
-         <Type 2></Type 2>
+         <Type1>Fairy</Type1>
+         <Type2></Type2>
          <Total>341</Total>
          <HP>78</HP>
          <Attack>52</Attack>
          <Defense>60</Defense>
-         <Sp. Atk>63</Sp. Atk>
-         <Sp. Def>65</Sp. Def>
+         <Sp_Atk>63</Sp_Atk>
+         <Sp_Def>65</Sp_Def>
          <Speed>23</Speed>
          <Generation>6</Generation>
          <Legendary>False</Legendary>
-     </269>
-     <270>
+     </id269>
+     <id270>
          <Id>676</Id>
          <Name>Furfrou</Name>
-         <Type 1>Normal</Type 1>
-         <Type 2></Type 2>
+         <Type1>Normal</Type1>
+         <Type2></Type2>
          <Total>472</Total>
          <HP>75</HP>
          <Attack>80</Attack>
          <Defense>60</Defense>
-         <Sp. Atk>65</Sp. Atk>
-         <Sp. Def>90</Sp. Def>
+         <Sp_Atk>65</Sp_Atk>
+         <Sp_Def>90</Sp_Def>
          <Speed>102</Speed>
          <Generation>6</Generation>
          <Legendary>False</Legendary>
-     </270>
-     <271>
+     </id270>
+     <id271>
          <Id>327</Id>
          <Name>Spinda</Name>
-         <Type 1>Normal</Type 1>
-         <Type 2></Type 2>
+         <Type1>Normal</Type1>
+         <Type2></Type2>
          <Total>360</Total>
          <HP>60</HP>
          <Attack>60</Attack>
          <Defense>60</Defense>
-         <Sp. Atk>60</Sp. Atk>
-         <Sp. Def>60</Sp. Def>
+         <Sp_Atk>60</Sp_Atk>
+         <Sp_Def>60</Sp_Def>
          <Speed>60</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </271>
-     <272>
+     </id271>
+     <id272>
          <Id>522</Id>
          <Name>Blitzle</Name>
-         <Type 1>Electric</Type 1>
-         <Type 2></Type 2>
+         <Type1>Electric</Type1>
+         <Type2></Type2>
          <Total>295</Total>
          <HP>45</HP>
          <Attack>60</Attack>
          <Defense>32</Defense>
-         <Sp. Atk>50</Sp. Atk>
-         <Sp. Def>32</Sp. Def>
+         <Sp_Atk>50</Sp_Atk>
+         <Sp_Def>32</Sp_Def>
          <Speed>76</Speed>
          <Generation>5</Generation>
          <Legendary>False</Legendary>
-     </272>
-     <273>
+     </id272>
+     <id273>
          <Id>66</Id>
          <Name>Machop</Name>
-         <Type 1>Fighting</Type 1>
-         <Type 2></Type 2>
+         <Type1>Fighting</Type1>
+         <Type2></Type2>
          <Total>305</Total>
          <HP>70</HP>
          <Attack>80</Attack>
          <Defense>50</Defense>
-         <Sp. Atk>35</Sp. Atk>
-         <Sp. Def>35</Sp. Def>
+         <Sp_Atk>35</Sp_Atk>
+         <Sp_Def>35</Sp_Def>
          <Speed>35</Speed>
          <Generation>1</Generation>
          <Legendary>False</Legendary>
-     </273>
-     <274>
+     </id273>
+     <id274>
          <Id>88</Id>
          <Name>Grimer</Name>
-         <Type 1>Poison</Type 1>
-         <Type 2></Type 2>
+         <Type1>Poison</Type1>
+         <Type2></Type2>
          <Total>325</Total>
          <HP>80</HP>
          <Attack>80</Attack>
          <Defense>50</Defense>
-         <Sp. Atk>40</Sp. Atk>
-         <Sp. Def>50</Sp. Def>
+         <Sp_Atk>40</Sp_Atk>
+         <Sp_Def>50</Sp_Def>
          <Speed>25</Speed>
          <Generation>1</Generation>
          <Legendary>False</Legendary>
-     </274>
-     <275>
+     </id274>
+     <id275>
          <Id>509</Id>
          <Name>Purrloin</Name>
-         <Type 1>Dark</Type 1>
-         <Type 2></Type 2>
+         <Type1>Dark</Type1>
+         <Type2></Type2>
          <Total>281</Total>
          <HP>41</HP>
          <Attack>50</Attack>
          <Defense>37</Defense>
-         <Sp. Atk>50</Sp. Atk>
-         <Sp. Def>37</Sp. Def>
+         <Sp_Atk>50</Sp_Atk>
+         <Sp_Def>37</Sp_Def>
          <Speed>66</Speed>
          <Generation>5</Generation>
          <Legendary>False</Legendary>
-     </275>
-     <276>
+     </id275>
+     <id276>
          <Id>648</Id>
          <Name>MeloettaAria Forme</Name>
-         <Type 1>Normal</Type 1>
-         <Type 2>Psychic</Type 2>
+         <Type1>Normal</Type1>
+         <Type2>Psychic</Type2>
          <Total>600</Total>
          <HP>100</HP>
          <Attack>77</Attack>
          <Defense>77</Defense>
-         <Sp. Atk>128</Sp. Atk>
-         <Sp. Def>128</Sp. Def>
+         <Sp_Atk>128</Sp_Atk>
+         <Sp_Def>128</Sp_Def>
          <Speed>90</Speed>
          <Generation>5</Generation>
          <Legendary>False</Legendary>
-     </276>
-     <277>
+     </id276>
+     <id277>
          <Id>472</Id>
          <Name>Gliscor</Name>
-         <Type 1>Ground</Type 1>
-         <Type 2>Flying</Type 2>
+         <Type1>Ground</Type1>
+         <Type2>Flying</Type2>
          <Total>510</Total>
          <HP>75</HP>
          <Attack>95</Attack>
          <Defense>125</Defense>
-         <Sp. Atk>45</Sp. Atk>
-         <Sp. Def>75</Sp. Def>
+         <Sp_Atk>45</Sp_Atk>
+         <Sp_Def>75</Sp_Def>
          <Speed>95</Speed>
          <Generation>4</Generation>
          <Legendary>False</Legendary>
-     </277>
-     <278>
+     </id277>
+     <id278>
          <Id>326</Id>
          <Name>Grumpig</Name>
-         <Type 1>Psychic</Type 1>
-         <Type 2></Type 2>
+         <Type1>Psychic</Type1>
+         <Type2></Type2>
          <Total>470</Total>
          <HP>80</HP>
          <Attack>45</Attack>
          <Defense>65</Defense>
-         <Sp. Atk>90</Sp. Atk>
-         <Sp. Def>110</Sp. Def>
+         <Sp_Atk>90</Sp_Atk>
+         <Sp_Def>110</Sp_Def>
          <Speed>80</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </278>
-     <279>
+     </id278>
+     <id279>
          <Id>260</Id>
          <Name>SwampertMega Swampert</Name>
-         <Type 1>Water</Type 1>
-         <Type 2>Ground</Type 2>
+         <Type1>Water</Type1>
+         <Type2>Ground</Type2>
          <Total>635</Total>
          <HP>100</HP>
          <Attack>150</Attack>
          <Defense>110</Defense>
-         <Sp. Atk>95</Sp. Atk>
-         <Sp. Def>110</Sp. Def>
+         <Sp_Atk>95</Sp_Atk>
+         <Sp_Def>110</Sp_Def>
          <Speed>70</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </279>
-     <280>
+     </id279>
+     <id280>
          <Id>355</Id>
          <Name>Duskull</Name>
-         <Type 1>Ghost</Type 1>
-         <Type 2></Type 2>
+         <Type1>Ghost</Type1>
+         <Type2></Type2>
          <Total>295</Total>
          <HP>20</HP>
          <Attack>40</Attack>
          <Defense>90</Defense>
-         <Sp. Atk>30</Sp. Atk>
-         <Sp. Def>90</Sp. Def>
+         <Sp_Atk>30</Sp_Atk>
+         <Sp_Def>90</Sp_Def>
          <Speed>25</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </280>
-     <281>
+     </id280>
+     <id281>
          <Id>58</Id>
          <Name>Growlithe</Name>
-         <Type 1>Fire</Type 1>
-         <Type 2></Type 2>
+         <Type1>Fire</Type1>
+         <Type2></Type2>
          <Total>350</Total>
          <HP>55</HP>
          <Attack>70</Attack>
          <Defense>45</Defense>
-         <Sp. Atk>70</Sp. Atk>
-         <Sp. Def>50</Sp. Def>
+         <Sp_Atk>70</Sp_Atk>
+         <Sp_Def>50</Sp_Def>
          <Speed>60</Speed>
          <Generation>1</Generation>
          <Legendary>False</Legendary>
-     </281>
-     <282>
+     </id281>
+     <id282>
          <Id>42</Id>
          <Name>Golbat</Name>
-         <Type 1>Poison</Type 1>
-         <Type 2>Flying</Type 2>
+         <Type1>Poison</Type1>
+         <Type2>Flying</Type2>
          <Total>455</Total>
          <HP>75</HP>
          <Attack>80</Attack>
          <Defense>70</Defense>
-         <Sp. Atk>65</Sp. Atk>
-         <Sp. Def>75</Sp. Def>
+         <Sp_Atk>65</Sp_Atk>
+         <Sp_Def>75</Sp_Def>
          <Speed>90</Speed>
          <Generation>1</Generation>
          <Legendary>False</Legendary>
-     </282>
-     <283>
+     </id282>
+     <id283>
          <Id>6</Id>
          <Name>CharizardMega Charizard X</Name>
-         <Type 1>Fire</Type 1>
-         <Type 2>Dragon</Type 2>
+         <Type1>Fire</Type1>
+         <Type2>Dragon</Type2>
          <Total>634</Total>
          <HP>78</HP>
          <Attack>130</Attack>
          <Defense>111</Defense>
-         <Sp. Atk>130</Sp. Atk>
-         <Sp. Def>85</Sp. Def>
+         <Sp_Atk>130</Sp_Atk>
+         <Sp_Def>85</Sp_Def>
          <Speed>100</Speed>
          <Generation>1</Generation>
          <Legendary>False</Legendary>
-     </283>
-     <284>
+     </id283>
+     <id284>
          <Id>575</Id>
          <Name>Gothorita</Name>
-         <Type 1>Psychic</Type 1>
-         <Type 2></Type 2>
+         <Type1>Psychic</Type1>
+         <Type2></Type2>
          <Total>390</Total>
          <HP>60</HP>
          <Attack>45</Attack>
          <Defense>70</Defense>
-         <Sp. Atk>75</Sp. Atk>
-         <Sp. Def>85</Sp. Def>
+         <Sp_Atk>75</Sp_Atk>
+         <Sp_Def>85</Sp_Def>
          <Speed>55</Speed>
          <Generation>5</Generation>
          <Legendary>False</Legendary>
-     </284>
-     <285>
+     </id284>
+     <id285>
          <Id>690</Id>
          <Name>Skrelp</Name>
-         <Type 1>Poison</Type 1>
-         <Type 2>Water</Type 2>
+         <Type1>Poison</Type1>
+         <Type2>Water</Type2>
          <Total>320</Total>
          <HP>50</HP>
          <Attack>60</Attack>
          <Defense>60</Defense>
-         <Sp. Atk>60</Sp. Atk>
-         <Sp. Def>60</Sp. Def>
+         <Sp_Atk>60</Sp_Atk>
+         <Sp_Def>60</Sp_Def>
          <Speed>30</Speed>
          <Generation>6</Generation>
          <Legendary>False</Legendary>
-     </285>
-     <286>
+     </id285>
+     <id286>
          <Id>602</Id>
          <Name>Tynamo</Name>
-         <Type 1>Electric</Type 1>
-         <Type 2></Type 2>
+         <Type1>Electric</Type1>
+         <Type2></Type2>
          <Total>275</Total>
          <HP>35</HP>
          <Attack>55</Attack>
          <Defense>40</Defense>
-         <Sp. Atk>45</Sp. Atk>
-         <Sp. Def>40</Sp. Def>
+         <Sp_Atk>45</Sp_Atk>
+         <Sp_Def>40</Sp_Def>
          <Speed>60</Speed>
          <Generation>5</Generation>
          <Legendary>False</Legendary>
-     </286>
-     <287>
+     </id286>
+     <id287>
          <Id>167</Id>
          <Name>Spinarak</Name>
-         <Type 1>Bug</Type 1>
-         <Type 2>Poison</Type 2>
+         <Type1>Bug</Type1>
+         <Type2>Poison</Type2>
          <Total>250</Total>
          <HP>40</HP>
          <Attack>60</Attack>
          <Defense>40</Defense>
-         <Sp. Atk>40</Sp. Atk>
-         <Sp. Def>40</Sp. Def>
+         <Sp_Atk>40</Sp_Atk>
+         <Sp_Def>40</Sp_Def>
          <Speed>30</Speed>
          <Generation>2</Generation>
          <Legendary>False</Legendary>
-     </287>
-     <288>
+     </id287>
+     <id288>
          <Id>196</Id>
          <Name>Espeon</Name>
-         <Type 1>Psychic</Type 1>
-         <Type 2></Type 2>
+         <Type1>Psychic</Type1>
+         <Type2></Type2>
          <Total>525</Total>
          <HP>65</HP>
          <Attack>65</Attack>
          <Defense>60</Defense>
-         <Sp. Atk>130</Sp. Atk>
-         <Sp. Def>95</Sp. Def>
+         <Sp_Atk>130</Sp_Atk>
+         <Sp_Def>95</Sp_Def>
          <Speed>110</Speed>
          <Generation>2</Generation>
          <Legendary>False</Legendary>
-     </288>
-     <289>
+     </id288>
+     <id289>
          <Id>308</Id>
          <Name>Medicham</Name>
-         <Type 1>Fighting</Type 1>
-         <Type 2>Psychic</Type 2>
+         <Type1>Fighting</Type1>
+         <Type2>Psychic</Type2>
          <Total>410</Total>
          <HP>60</HP>
          <Attack>60</Attack>
          <Defense>75</Defense>
-         <Sp. Atk>60</Sp. Atk>
-         <Sp. Def>75</Sp. Def>
+         <Sp_Atk>60</Sp_Atk>
+         <Sp_Def>75</Sp_Def>
          <Speed>80</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </289>
-     <290>
+     </id289>
+     <id290>
          <Id>444</Id>
          <Name>Gabite</Name>
-         <Type 1>Dragon</Type 1>
-         <Type 2>Ground</Type 2>
+         <Type1>Dragon</Type1>
+         <Type2>Ground</Type2>
          <Total>410</Total>
          <HP>68</HP>
          <Attack>90</Attack>
          <Defense>65</Defense>
-         <Sp. Atk>50</Sp. Atk>
-         <Sp. Def>55</Sp. Def>
+         <Sp_Atk>50</Sp_Atk>
+         <Sp_Def>55</Sp_Def>
          <Speed>82</Speed>
          <Generation>4</Generation>
          <Legendary>False</Legendary>
-     </290>
-     <291>
+     </id290>
+     <id291>
          <Id>693</Id>
          <Name>Clawitzer</Name>
-         <Type 1>Water</Type 1>
-         <Type 2></Type 2>
+         <Type1>Water</Type1>
+         <Type2></Type2>
          <Total>500</Total>
          <HP>71</HP>
          <Attack>73</Attack>
          <Defense>88</Defense>
-         <Sp. Atk>120</Sp. Atk>
-         <Sp. Def>89</Sp. Def>
+         <Sp_Atk>120</Sp_Atk>
+         <Sp_Def>89</Sp_Def>
          <Speed>59</Speed>
          <Generation>6</Generation>
          <Legendary>False</Legendary>
-     </291>
-     <292>
+     </id291>
+     <id292>
          <Id>6</Id>
          <Name>CharizardMega Charizard Y</Name>
-         <Type 1>Fire</Type 1>
-         <Type 2>Flying</Type 2>
+         <Type1>Fire</Type1>
+         <Type2>Flying</Type2>
          <Total>634</Total>
          <HP>78</HP>
          <Attack>104</Attack>
          <Defense>78</Defense>
-         <Sp. Atk>159</Sp. Atk>
-         <Sp. Def>115</Sp. Def>
+         <Sp_Atk>159</Sp_Atk>
+         <Sp_Def>115</Sp_Def>
          <Speed>100</Speed>
          <Generation>1</Generation>
          <Legendary>False</Legendary>
-     </292>
-     <293>
+     </id292>
+     <id293>
          <Id>4</Id>
          <Name>Charmander</Name>
-         <Type 1>Fire</Type 1>
-         <Type 2></Type 2>
+         <Type1>Fire</Type1>
+         <Type2></Type2>
          <Total>309</Total>
          <HP>39</HP>
          <Attack>52</Attack>
          <Defense>43</Defense>
-         <Sp. Atk>60</Sp. Atk>
-         <Sp. Def>50</Sp. Def>
+         <Sp_Atk>60</Sp_Atk>
+         <Sp_Def>50</Sp_Def>
          <Speed>65</Speed>
          <Generation>1</Generation>
          <Legendary>False</Legendary>
-     </293>
-     <294>
+     </id293>
+     <id294>
          <Id>272</Id>
          <Name>Ludicolo</Name>
-         <Type 1>Water</Type 1>
-         <Type 2>Grass</Type 2>
+         <Type1>Water</Type1>
+         <Type2>Grass</Type2>
          <Total>480</Total>
          <HP>80</HP>
          <Attack>70</Attack>
          <Defense>70</Defense>
-         <Sp. Atk>90</Sp. Atk>
-         <Sp. Def>100</Sp. Def>
+         <Sp_Atk>90</Sp_Atk>
+         <Sp_Def>100</Sp_Def>
          <Speed>70</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </294>
-     <295>
+     </id294>
+     <id295>
          <Id>338</Id>
          <Name>Solrock</Name>
-         <Type 1>Rock</Type 1>
-         <Type 2>Psychic</Type 2>
+         <Type1>Rock</Type1>
+         <Type2>Psychic</Type2>
          <Total>440</Total>
          <HP>70</HP>
          <Attack>95</Attack>
          <Defense>85</Defense>
-         <Sp. Atk>55</Sp. Atk>
-         <Sp. Def>65</Sp. Def>
+         <Sp_Atk>55</Sp_Atk>
+         <Sp_Def>65</Sp_Def>
          <Speed>70</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </295>
-     <296>
+     </id295>
+     <id296>
          <Id>303</Id>
          <Name>Mawile</Name>
-         <Type 1>Steel</Type 1>
-         <Type 2>Fairy</Type 2>
+         <Type1>Steel</Type1>
+         <Type2>Fairy</Type2>
          <Total>380</Total>
          <HP>50</HP>
          <Attack>85</Attack>
          <Defense>85</Defense>
-         <Sp. Atk>55</Sp. Atk>
-         <Sp. Def>55</Sp. Def>
+         <Sp_Atk>55</Sp_Atk>
+         <Sp_Def>55</Sp_Def>
          <Speed>50</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </296>
-     <297>
+     </id296>
+     <id297>
          <Id>670</Id>
          <Name>Floette</Name>
-         <Type 1>Fairy</Type 1>
-         <Type 2></Type 2>
+         <Type1>Fairy</Type1>
+         <Type2></Type2>
          <Total>371</Total>
          <HP>54</HP>
          <Attack>45</Attack>
          <Defense>47</Defense>
-         <Sp. Atk>75</Sp. Atk>
-         <Sp. Def>98</Sp. Def>
+         <Sp_Atk>75</Sp_Atk>
+         <Sp_Def>98</Sp_Def>
          <Speed>52</Speed>
          <Generation>6</Generation>
          <Legendary>False</Legendary>
-     </297>
-     <298>
+     </id297>
+     <id298>
          <Id>526</Id>
          <Name>Gigalith</Name>
-         <Type 1>Rock</Type 1>
-         <Type 2></Type 2>
+         <Type1>Rock</Type1>
+         <Type2></Type2>
          <Total>515</Total>
          <HP>85</HP>
          <Attack>135</Attack>
          <Defense>130</Defense>
-         <Sp. Atk>60</Sp. Atk>
-         <Sp. Def>80</Sp. Def>
+         <Sp_Atk>60</Sp_Atk>
+         <Sp_Def>80</Sp_Def>
          <Speed>25</Speed>
          <Generation>5</Generation>
          <Legendary>False</Legendary>
-     </298>
-     <299>
+     </id298>
+     <id299>
          <Id>369</Id>
          <Name>Relicanth</Name>
-         <Type 1>Water</Type 1>
-         <Type 2>Rock</Type 2>
+         <Type1>Water</Type1>
+         <Type2>Rock</Type2>
          <Total>485</Total>
          <HP>100</HP>
          <Attack>90</Attack>
          <Defense>130</Defense>
-         <Sp. Atk>45</Sp. Atk>
-         <Sp. Def>65</Sp. Def>
+         <Sp_Atk>45</Sp_Atk>
+         <Sp_Def>65</Sp_Def>
          <Speed>55</Speed>
          <Generation>3</Generation>
          <Legendary>False</Legendary>
-     </299>
+     </id299>
  </root>

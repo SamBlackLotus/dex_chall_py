@@ -487,7 +487,7 @@ def client_usage() -> str:
         ATENTION:
         
         Where you read <pokemons_1.json> or <pokemons_2.json> 
-        You can use the file format that best suits your needs
+        You can use the file format that best suits your needs:
         Example --> pokemons_1.json  pokemons_2.json 
                     pokemons_1.csv   pokemons_2.csv
                     pokemons_1.xml   pokemons_2.xml
