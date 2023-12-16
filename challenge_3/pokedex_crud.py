@@ -3,6 +3,7 @@ import sys
 import json
 import csv
 import xmltodict
+import collections
 import yaml
 from enum import Enum
 from typing import Dict, Union, List, TypedDict, Optional
@@ -56,15 +57,22 @@ def read_file_csv(filepath):
     with open(filepath, "r") as data:
         file = csv.DictReader(data, delimiter = ",")
         pokemons = [row for row in file]
+        print(file)
         return pokemons
 
 #Receive and read xml files    
 def read_file_xml(filepath): 
-    with open(filepath, "r", encoding= "UTF-8") as data:
+    with open(filepath, "r") as data:
         file = data.read()
-        pokemons = xmltodict.parse(file)
-        print(pokemons)
-        return pokemons
+        pokemonsxml = xmltodict.parse(file)
+        pokemonsid = {chave: valor for chave, valor in pokemonsxml['root'].items()}
+        pokemons= {}
+        for chave, valor in pokemonsid.items():
+            pokemons = [{a: i for a, i in valor.items()}]
+            print(pokemons)
+    
+    print(pokemons)
+    return pokemons
 
 #Receive and read yaml files 
 def read_file_yaml(filepath):
@@ -89,32 +97,30 @@ def cast_to_bool(value):
     return True if value == "True" else False 
 
 #Process and generate the answers to the trivia questions    
-def poke_trivia(pokemons_data):
+def process_trivia(pokemons_data):
     highest_hp_trivia = {"index":0, "value":0}
     highest_atk_trivia = {"index": 0, "value": 0}
     highest_def_trivia = {"index": 0, "value": 0}
-    highest_spd_trivia = {"index": 0, "value": 0} 
-
-
+    highest_spd_trivia = {"index": 0, "value": 0}
     for index, pokemon in enumerate(pokemons_data):
-        
+
         hp_trivia_int = cast_to_int(pokemon["HP"])
-        if hp_trivia_int > ["value"]:
+        if hp_trivia_int > highest_hp_trivia["value"]:
             highest_hp_trivia["index"] = index
             highest_hp_trivia["value"] = hp_trivia_int
       
         attack_trivia_int = cast_to_int(pokemon["Attack"])
-        if attack_trivia_int > ["value"]:
+        if attack_trivia_int > highest_atk_trivia["value"]:
             highest_atk_trivia["index"] = index
             highest_atk_trivia["value"] = attack_trivia_int
             
         defense_trivia_int = cast_to_int(pokemon["Defense"])
-        if defense_trivia_int > ["value"]:
+        if defense_trivia_int > highest_def_trivia["value"]:
             highest_def_trivia["index"] = index
             highest_def_trivia["value"] = defense_trivia_int
       
         speed_trivia_int = cast_to_int(pokemon["Attack"])
-        if speed_trivia_int > ["value"]:
+        if speed_trivia_int > highest_spd_trivia["value"]:
             highest_spd_trivia["index"] = index
             highest_spd_trivia["value"] = speed_trivia_int    
             
@@ -133,27 +139,27 @@ def poke_trivia(pokemons_data):
         spd_trivia_points=pokemons_data[highest_atk_trivia["index"]]["Speed"]
      
     )
-    
+#Show the information gathered in the trivia function    
 def show_trivia(pokemons_info):
     msg = """
     
-                Welcome to the Pokedex!     
- ⣷⣿⣿⣶⣶⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⢠⣴⣶⣷⣿⣿
-⠀⠹⣿⣿⣿⡄⠀⠈⠓⠦⣄ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡤⠖⠊⠉⠀⣸⣿⣿⣽⠃
-⠀⠀⠘⣿⣿⣇⠀⠀⠀⠀⠀⠘⠶⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⠞⠁⠀⠀⠀⠀⠀⣿⣿⣿⠃⠀
-⠀⠀⠀⠈⢻⣿ ⠀⠀⠀⠀⠀⠀⠈⠳⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡤⠙⠁⠀⠀⠀⠀⠀⠀⡸⣿⠟⠁⠀⠀
-⠀⠀⠀⠀⠀⠁⢾⡄⠀⠀⠀⠀⠀⠀⠀⠈⠱⣦⠀⠀⠀⠀⠀⠀⢀⣀⣀⣀⣀⡀⠀⠀⠀⠀⠀⢀⡴⠋⠀⠀⠀⠀⠀⠀⠀⠀⣠⠟⠁⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠉⠳⡄⠀⠀⠀⠀⠀⠀⠀⠈⠳⡆⣤⠴⠞⠛⠉⠉⠉⠉⠉⠉⠉⠳⠆⣤⣤⠞⠁⠀⠀⠀⠀⠀⠀⢀⣠⠖⠁⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡠⠖⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⢳⡞⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢇⠞⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡾⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⣠⣶⠖⢤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠴⠶⣦⡄⠀⠀⢈⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠾⠀⠀⢰⣾⣷⣀⣰⡧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣀⣠⣾⣿⠀⠀⠀⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡟⠀⠀⠈⠻⣍⡩⠜⠃⠀⠀⠀⠠⣤⡤⠀⠀⠀⠀⠹⠭⣉⠽⠏⠀⠀⠀⡷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⢀⣤⠴⠴⣤⣠⣇⣤⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⣤⣤⣼⣀⡴⢴⢦⣄⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⢸⠃⠀⠀⠀⠀⢹⡁⣀⡀⠙⣱⡀⠀⠀⠀⠲⣄⣠⡴⣒⢒⣤⣤⠴⠂⠀⠀⠀⢠⡞⢁⣀⡀⢨⠃⠀⠀⠀⠀⢹⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠈⠉⠀⠉⠀⠈⠈⠉⠉⠉⠉⠉⠉⠉⠉⠉⠈⠀⠉⠉⠉⠉⠉⠉⠀⠀⠀⠀⠈⠉⠉⠉⠉⠉⠉⠁⠈⠈⠈⠀⠉⠀⠀⠀⠀⠀⠀     
+                            Welcome to the Pokedex!     
+            ⣷⣿⣿⣶⣶⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⢠⣴⣶⣷⣿⣿
+            ⠀⠹⣿⣿⣿⡄⠀⠈⠓⠦⣄ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡤⠖⠊⠉⠀⣸⣿⣿⣽⠃
+            ⠀⠀⠘⣿⣿⣇⠀⠀⠀⠀⠀⠘⠶⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⠞⠁⠀⠀⠀⠀⠀⣿⣿⣿⠃⠀
+            ⠀⠀⠀⠈⢻⣿ ⠀⠀⠀⠀⠀⠀⠈⠳⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡤⠙⠁⠀⠀⠀⠀⠀⠀⡸⣿⠟⠁⠀⠀
+            ⠀⠀⠀⠀⠀⠁⢾⡄⠀⠀⠀⠀⠀⠀⠀⠈⠱⣦⠀⠀⠀⠀⠀⠀⢀⣀⣀⣀⣀⡀⠀⠀⠀⠀⠀⢀⡴⠋⠀⠀⠀⠀⠀⠀⠀⠀⣠⠟⠁⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠉⠳⡄⠀⠀⠀⠀⠀⠀⠀⠈⠳⡆⣤⠴⠞⠛⠉⠉⠉⠉⠉⠉⠉⠳⠆⣤⣤⠞⠁⠀⠀⠀⠀⠀⠀⢀⣠⠖⠁⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡠⠖⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⢳⡞⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢇⠞⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡾⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⣠⣶⠖⢤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠴⠶⣦⡄⠀⠀⢈⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠾⠀⠀⢰⣾⣷⣀⣰⡧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣀⣠⣾⣿⠀⠀⠀⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡟⠀⠀⠈⠻⣍⡩⠜⠃⠀⠀⠀⠠⣤⡤⠀⠀⠀⠀⠹⠭⣉⠽⠏⠀⠀⠀⡷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⢀⣤⠴⠴⣤⣠⣇⣤⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⣤⣤⣼⣀⡴⢴⢦⣄⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⢸⠃⠀⠀⠀⠀⢹⡁⣀⡀⠙⣱⡀⠀⠀⠀⠲⣄⣠⡴⣒⢒⣤⣤⠴⠂⠀⠀⠀⢠⡞⢁⣀⡀⢨⠃⠀⠀⠀⠀⢹⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠈⠉⠀⠉⠀⠈⠈⠉⠉⠉⠉⠉⠉⠉⠉⠉⠈⠀⠉⠉⠉⠉⠉⠉⠀⠀⠀⠀⠈⠉⠉⠉⠉⠉⠉⠁⠈⠈⠈⠀⠉⠀⠀⠀⠀⠀⠀     
     Here we have some useful information gathered from the list you provided us:
 
     1. How many pokemons there is in this list:
@@ -169,14 +175,15 @@ def show_trivia(pokemons_info):
         >{def_trivia_name} with {def_trivia_points} defense points.
             
     5. Which one is the fastest:
-        >{spd_trivia_name} with {spd_trivia_name} speed points.
+        >{spd_trivia_name} with {spd_trivia_points} speed points.
    
     
     Thanks for using this pokedex!
     """
-    print(msg.format(**pokemons_info))    
-
-def process_pokemons(process_poke1,process_poke2,pokemon_set_1,pokemon_set_2: List[Dict[str, Union[str, int]]]) -> Dict[str, str]:
+    print(msg.format(**pokemons_info)) 
+       
+#Process the information read in the files and generate the info table 
+def process_info(process_poke1,process_poke2,pokemon_set_1,pokemon_set_2):
     
     strongest_p1 = {"index": 0, "value": 0}
     strongest_p2 = {"index": 0, "value": 0}
@@ -231,8 +238,8 @@ def process_pokemons(process_poke1,process_poke2,pokemon_set_1,pokemon_set_2: Li
          
 )
     
-
-def show_info(process_pokemons: Answers) -> None:
+#Show the information gathered in the info process function
+def show_info(process_pokemons):
     msg = """
                        | PLAYER 1            | PLAYER 2            |
     ------------------ | -------------------- -------------------- |
@@ -246,7 +253,10 @@ def show_info(process_pokemons: Answers) -> None:
     
     print(msg.format(**process_pokemons))
     
-def start_battle(player_1_battle,player_2_battle: List[Dict[str, Union[str, int]]]) -> Dict[str, int]:
+
+#Process the information read in the files, compare the pokemons in each list to define
+#wich three of each player will participate in the battle 
+def select_pokemons_for_battle(player_1_battle,player_2_battle):
     
     hp = {"index": 0, "value": 0}
     attack = {"index": 0, "value": 0}
@@ -316,7 +326,8 @@ def start_battle(player_1_battle,player_2_battle: List[Dict[str, Union[str, int]
             p2_pokemon_3["name"] = name
             p2_pokemon_3["attack"] = attack        
             p2_pokemon_3["defense"] = defense
-            p2_pokemon_3["hp"] = hp       
+            p2_pokemon_3["hp"] = hp    
+                     
             
     damagep1poke1 = (0.5 * (p1_pokemon_1["attack"] / p2_pokemon_1["defense"]) + 1)         
     damagep1poke2 = (0.5 * (p1_pokemon_2["attack"] / p2_pokemon_2["defense"]) + 1) 
@@ -398,8 +409,8 @@ def start_battle(player_1_battle,player_2_battle: List[Dict[str, Union[str, int]
         loser_pokemon = first_pokemon_dead["name"]
                   
 )        
-
-def show_battle_info(start_battle: Answers) -> None:
+#Show the information about wich pokemons participated in the battle, and wich player was the winner
+def show_battle_winner(start_battle):
     battle_msg = """
 ================================== POKéMON BATTLE ===================================
 
@@ -438,7 +449,7 @@ def show_battle_info(start_battle: Answers) -> None:
     print(battle_msg.format(**start_battle))      
     
                   
-def client_helper() -> None:
+def client_helper():
     helper_msg = """
     Hello! Welcome to the Pokedex.
     
@@ -468,7 +479,7 @@ def client_helper() -> None:
     """
     return print(helper_msg)
 
-def client_usage() -> str:
+def client_usage():
     client_usage_msg = """
     CLI usage:
     
@@ -533,16 +544,17 @@ def main():
             if '.json' in filepath_1:    
                 data_1 = read_file_json(filepath_1)
             elif '.csv' in filepath_1:    
-                data_1 = read_file_json(filepath_1)
+                data_1 = read_file_csv(filepath_1)
             elif '.xml' in filepath_1:    
-                data_1 = read_file_json(filepath_1)
+                data_1 = read_file_xml(filepath_1)
             elif '.yaml' in filepath_1:    
-                data_1 = read_file_json(filepath_1)
+                data_1 = read_file_yaml(filepath_1)
             else:
-                print("Erro formato de arquivo não suportado")
-                
-            info = poke_trivia(data_1)
+                print("Error: File format not supported! ")
+            
+            info = process_trivia(data_1)
             show_trivia(info)
+            quit()
             
         elif command2 == "--player2":
             if len(sys.argv) == 4:
@@ -590,12 +602,12 @@ def main():
         command3 = sys.argv[5]
         
         if command3 == "--info":   
-            info = process_pokemons(data_1,data_2,dataset_1,dataset_2)
+            info = process_info(data_1,data_2,dataset_1,dataset_2)
             show_info(info)
             
         elif command3 == "--battle":
-            battle = start_battle(data_1,data_2)
-            show_battle_info(battle)      
+            battle = select_pokemons_for_battle(data_1,data_2)
+            show_battle_winner(battle)      
     else:
         print(f"WARNING: This command does not exist.\n{client_usage()}")
         quit()
