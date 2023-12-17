@@ -3,8 +3,9 @@ import sys
 import json
 import csv
 import xmltodict
-import collections
+import xml.etree.ElementTree as ET
 import yaml
+from datetime import datetime
 from enum import Enum
 from typing import Dict, Union, List, TypedDict, Optional
 
@@ -69,9 +70,6 @@ def read_file_xml(filepath):
         pokemons= {}
         for chave, valor in pokemonsid.items():
             pokemons = [{a: i for a, i in valor.items()}]
-            print(pokemons)
-    
-    print(pokemons)
     return pokemons
 
 #Receive and read yaml files 
@@ -139,48 +137,68 @@ def process_trivia(pokemons_data):
         spd_trivia_points=pokemons_data[highest_atk_trivia["index"]]["Speed"]
      
     )
-#Show the information gathered in the trivia function    
-def show_trivia(pokemons_info):
-    msg = """
+#Show the information gathered inn the trivia function    
+def show_trivia(pokemons_info, idnumber):
+    datenow =  datetime.now()
+    msg  = "reported generated on:   " + datenow.isoformat() + "                                                  \n"
+    msg += "                                                                           \n"
+    msg += "                             Welcome to the Pokedex!                       \n"
+    msg += "        ⣷⣿⣿⣶⣶⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⢠⣴⣶⣷⣿⣿    \n"
+    msg += "       ⠀⠹⣿⣿⣿⡄⠀⠈⠓⠦⣄ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡤⠖⠊⠉⠀⣸⣿⣿⣽⠃    \n"
+    msg += "       ⠀⠀⠘⣿⣿⣇⠀⠀⠀⠀⠀⠘⠶⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⠞⠁⠀⠀⠀⠀⠀⣿⣿⣿⠃⠀    \n"
+    msg += "       ⠀⠀⠀⠈⢻⣿ ⠀⠀⠀⠀⠀⠀⠈⠳⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡤⠙⠁⠀⠀⠀⠀⠀⠀⡸⣿⠟⠁⠀⠀    \n"
+    msg += "       ⠀⠀⠀⠀⠀⠁⢾⡄⠀⠀⠀⠀⠀⠀⠀⠈⠱⣦⠀⠀⠀⠀⠀⠀⢀⣀⣀⣀⣀⡀⠀⠀⠀⠀⠀⢀⡴⠋⠀⠀⠀⠀⠀⠀⠀⠀⣠⠟⠁⠀⠀⠀     \n"
+    msg += "       ⠀⠀⠀⠀⠀⠀⠀⠉⠳⡄⠀⠀⠀⠀⠀⠀⠀⠈⠳⡆⣤⠴⠞⠛⠉⠉⠉⠉⠉⠉⠉⠳⠆⣤⣤⠞⠁⠀⠀⠀⠀⠀⠀⢀⣠⠖⠁⠀⠀⠀⠀⠀     \n"
+    msg += "       ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡠⠖⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀    \n"
+    msg += "       ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⢳⡞⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢇⠞⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀    \n"
+    msg += "       ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡾⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀    \n"
+    msg += "        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀   \n"
+    msg += "        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⣠⣶⠖⢤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠴⠶⣦⡄⠀⠀⢈⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀   \n"
+    msg += "        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠾⠀⠀⢰⣾⣷⣀⣰⡧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣀⣠⣾⣿⠀⠀⠀⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀   \n"
+    msg += "        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡟⠀⠀⠈⠻⣍⡩⠜⠃⠀⠀⠀⠠⣤⡤⠀⠀⠀⠀⠹⠭⣉⠽⠏⠀⠀⠀⡷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀   \n"
+    msg += "        ⠀⠀⠀⠀⠀⠀⠀⢀⣤⠴⠴⣤⣠⣇⣤⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⣤⣤⣼⣀⡴⢴⢦⣄⠀⠀⠀⠀⠀⠀⠀   \n"
+    msg += "        ⠀⠀⠀⠀⠀⠀⢸⠃⠀⠀⠀⠀⢹⡁⣀⡀⠙⣱⡀⠀⠀⠀⠲⣄⣠⡴⣒⢒⣤⣤⠴⠂⠀⠀⠀⢠⡞⢁⣀⡀⢨⠃⠀⠀⠀⠀⢹⠀⠀⠀⠀⠀⠀   \n"
+    msg += "        ⠀⠀⠀⠀⠀⠀⠈⠉⠀⠉⠀⠈⠈⠉⠉⠉⠉⠉⠉⠉⠉⠉⠈⠀⠉⠉⠉⠉⠉⠉⠀⠀⠀⠀⠈⠉⠉⠉⠉⠉⠉⠁⠈⠈⠈⠀⠉⠀⠀⠀⠀⠀⠀   \n"    
+    msg += "Here we have some useful information gathered from the list you provided us:\n"
+    msg += "                                                                            \n"
+    msg += "1. How many pokemons there is in this list:                                 \n"
+    msg += "    > " + str(pokemons_info["total_trivia"]) + " pokemons.                         \n"
+    msg += "                                                                            \n"
+    msg += "2. The pokemon with the highest HP point is:                                \n"
+    msg += "    >" + pokemons_info["hp_trivia_name"] + " with " + str(pokemons_info["hp_trivia_points"]) + " HP points                     \n"
+    msg += "                                                                            \n"
+    msg += "3. Which one has the strongest attack:                                      \n"
+    msg += "    >" + pokemons_info["atk_trivia_name"] + " with " + str(pokemons_info["atk_trivia_points"]) + " attack points.              \n"
+    msg += "                                                                            \n"
+    msg += "4. Which one has the strongest defense:                                     \n"
+    msg += "    >" + pokemons_info["def_trivia_name"] + " with " + str(pokemons_info["def_trivia_points"]) + " defense points.             \n"
+    msg += "                                                                            \n"
+    msg += "5. Which one is the fastest:                                                \n"
+    msg += "    >" + pokemons_info["spd_trivia_name"] + " with " + str(pokemons_info["spd_trivia_points"]) + " speed points.               \n"
+    msg += "                                                                            \n"
+    msg += "                                                                            \n"
+    msg += "Thanks for using this pokedex!                                              \n"
     
-                            Welcome to the Pokedex!     
-            ⣷⣿⣿⣶⣶⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⢠⣴⣶⣷⣿⣿
-            ⠀⠹⣿⣿⣿⡄⠀⠈⠓⠦⣄ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡤⠖⠊⠉⠀⣸⣿⣿⣽⠃
-            ⠀⠀⠘⣿⣿⣇⠀⠀⠀⠀⠀⠘⠶⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⠞⠁⠀⠀⠀⠀⠀⣿⣿⣿⠃⠀
-            ⠀⠀⠀⠈⢻⣿ ⠀⠀⠀⠀⠀⠀⠈⠳⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡤⠙⠁⠀⠀⠀⠀⠀⠀⡸⣿⠟⠁⠀⠀
-            ⠀⠀⠀⠀⠀⠁⢾⡄⠀⠀⠀⠀⠀⠀⠀⠈⠱⣦⠀⠀⠀⠀⠀⠀⢀⣀⣀⣀⣀⡀⠀⠀⠀⠀⠀⢀⡴⠋⠀⠀⠀⠀⠀⠀⠀⠀⣠⠟⠁⠀⠀⠀
-            ⠀⠀⠀⠀⠀⠀⠀⠉⠳⡄⠀⠀⠀⠀⠀⠀⠀⠈⠳⡆⣤⠴⠞⠛⠉⠉⠉⠉⠉⠉⠉⠳⠆⣤⣤⠞⠁⠀⠀⠀⠀⠀⠀⢀⣠⠖⠁⠀⠀⠀⠀⠀
-            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡠⠖⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀
-            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⢳⡞⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢇⠞⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡾⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⣠⣶⠖⢤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠴⠶⣦⡄⠀⠀⢈⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠾⠀⠀⢰⣾⣷⣀⣰⡧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣀⣠⣾⣿⠀⠀⠀⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡟⠀⠀⠈⠻⣍⡩⠜⠃⠀⠀⠀⠠⣤⡤⠀⠀⠀⠀⠹⠭⣉⠽⠏⠀⠀⠀⡷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-            ⠀⠀⠀⠀⠀⠀⠀⢀⣤⠴⠴⣤⣠⣇⣤⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⣤⣤⣼⣀⡴⢴⢦⣄⠀⠀⠀⠀⠀⠀⠀
-            ⠀⠀⠀⠀⠀⠀⢸⠃⠀⠀⠀⠀⢹⡁⣀⡀⠙⣱⡀⠀⠀⠀⠲⣄⣠⡴⣒⢒⣤⣤⠴⠂⠀⠀⠀⢠⡞⢁⣀⡀⢨⠃⠀⠀⠀⠀⢹⠀⠀⠀⠀⠀⠀
-            ⠀⠀⠀⠀⠀⠀⠈⠉⠀⠉⠀⠈⠈⠉⠉⠉⠉⠉⠉⠉⠉⠉⠈⠀⠉⠉⠉⠉⠉⠉⠀⠀⠀⠀⠈⠉⠉⠉⠉⠉⠉⠁⠈⠈⠈⠀⠉⠀⠀⠀⠀⠀⠀     
-    Here we have some useful information gathered from the list you provided us:
-
-    1. How many pokemons there is in this list:
-        > {total_trivia} pokemons.
+    if os.path.exists(f"{idnumber}_trivia.txt"):
         
-    2. The pokemon with the highest HP point is:
-        >{hp_trivia_name} with {hp_trivia_points} HP points
-            
-    3. Which one has the strongest attack:
-        >{atk_trivia_name} with {atk_trivia_points} attack points.
+        choice = input(f"Files {idnumber}_trivia.txt already exists, what do you prefer to do? [append|OVERWRITE] : ")
         
-    4. Which one has the strongest defense:
-        >{def_trivia_name} with {def_trivia_points} defense points.
+        if choice == 'o' or choice == 'O' or choice == 'Overwrite' or choice == 'overwrite' or choice == 'OVERWRITE':
+           
+            os.remove(f"{idnumber}_trivia.txt")
             
-    5. Which one is the fastest:
-        >{spd_trivia_name} with {spd_trivia_points} speed points.
-   
+            with open(f"{idnumber}_trivia.txt", "w") as target:
+                target.write(msg)
+        elif choice == 'a' or choice == 'A' or choice == 'Append' or choice == 'append' or choice == 'APPEND':
+           
+            with open(f"{idnumber}_trivia.txt", "a") as target:
+                target.write(msg)  
+    else:
+        
+        with open(f"{idnumber}_trivia.txt", "w") as target:
+            target.write(msg)
     
-    Thanks for using this pokedex!
-    """
-    print(msg.format(**pokemons_info)) 
+    print(msg.format(**pokemons_info))
        
 #Process the information read in the files and generate the info table 
 def process_info(process_poke1,process_poke2,pokemon_set_1,pokemon_set_2):
@@ -239,17 +257,37 @@ def process_info(process_poke1,process_poke2,pokemon_set_1,pokemon_set_2):
 )
     
 #Show the information gathered in the info process function
-def show_info(process_pokemons):
-    msg = """
-                       | PLAYER 1            | PLAYER 2            |
-    ------------------ | -------------------- -------------------- |
-    Pokémons           |{p1_tot_info}                  |{p2_tot_info}                  |
-    Strongest Pokémon  |{strgst_p1_info}|{strgst_p2_info}   |
-    Legendaries        |{leg_1_info}                   |{leg_2_info}                   |
-    Repeated Pokemons  |{rep_pok_info}                                        | 
-    Different Pokemons |{diff_pok_info}                                        |
-    ------------------ | ----------------------------------------- |
-    """
+def show_info(process_pokemons, idnumber):
+    
+    datenow =  datetime.now()
+    msg  = "reported generated on:   " + datenow.isoformat() + "                                                  \n"
+    msg += "                   | PLAYER 1            | PLAYER 2            |\n"
+    msg += "------------------ | -------------------- -------------------- |\n"
+    msg += "Pokémons           |" + str(process_pokemons["p1_tot_info"]) + "                  |" + str(process_pokemons["p2_tot_info"]) + "                  |\n"
+    msg += "Strongest Pokémon  |" + process_pokemons["strgst_p1_info"] + "|" + process_pokemons["strgst_p2_info"] + "   |\n"
+    msg += "Legendaries        |" + str(process_pokemons["leg_1_info"]) + "                   |" + str(process_pokemons["leg_2_info"]) + "                   |\n"
+    msg += "Repeated Pokemons  |" + str(process_pokemons["rep_pok_info"]) + "                                        |\n"
+    msg += "Different Pokemons |" + str(process_pokemons["diff_pok_info"]) + "                                        |\n"
+    msg += "------------------ | ----------------------------------------- |\n"
+    
+    if os.path.exists(f"{idnumber}_info.txt"):
+        
+        choice = input(f"Files {idnumber}_info.txt already exists, what do you prefer to do? [append|OVERWRITE] : ")
+        
+        if choice == 'o' or choice == 'O' or choice == 'Overwrite' or choice == 'overwrite' or choice == 'OVERWRITE':
+           
+            os.remove(f"{idnumber}_info.txt")
+            
+            with open(f"{idnumber}_info.txt", "w") as target:
+                target.write(msg)
+        elif choice == 'a' or choice == 'A' or choice == 'Append' or choice == 'append' or choice == 'APPEND':
+           
+            with open(f"{idnumber}_info.txt", "a") as target:
+                target.write(msg)  
+    else:
+        
+        with open(f"{idnumber}_info.txt", "w") as target:
+            target.write(msg)
     
     print(msg.format(**process_pokemons))
     
@@ -410,43 +448,66 @@ def select_pokemons_for_battle(player_1_battle,player_2_battle):
                   
 )        
 #Show the information about wich pokemons participated in the battle, and wich player was the winner
-def show_battle_winner(start_battle):
-    battle_msg = """
-================================== POKéMON BATTLE ===================================
-
--------------------------------------------------------------------------------------
-|                                    PLAYER 1                                       |
--------------------------------------------------------------------------------------
-|Name:{p1_pkm_1_name}  |Name: {p1_pkm_2_name}  |Name: {p1_pkm_3_name}  |
-|HP:{p1_pkm_1_hp}                      |HP:{p1_pkm_2_hp}                     |HP:{p1_pkm_3_hp}                      |
-|Attack:{p1_pkm_1_atk}                  |Attack:{p1_pkm_2_atk}                |Attack:{p1_pkm_3_atk}                 | 
-|Defense:{p1_pkm_1_dfs}                 |Defense:{p1_pkm_2_dfs}                |Defense:{p1_pkm_2_dfs}                 |
--------------------------------------------------------------------------------------
-
--------------------------------------------------------------------------------------
-|                                    PLAYER 2                                       |
--------------------------------------------------------------------------------------
-|Name:{p2_pkm_1_name}     |Name: {p2_pkm_2_name}  |Name: {p2_pkm_3_name}|
-|HP:{p2_pkm_1_hp}                       |HP:{p2_pkm_2_hp}                    |HP:{p2_pkm_3_hp}                      |
-|Attack:{p2_pkm_1_atk}                  |Attack:{p2_pkm_2_atk}                |Attack:{p2_pkm_3_atk}                 | 
-|Defense:{p2_pkm_1_dfs}                  |Defense:{p2_pkm_2_dfs}               |Defense:{p2_pkm_2_dfs}                |
--------------------------------------------------------------------------------------
-=====================================================================================
-|                              +++++ RESULT +++++                                   |
-=====================================================================================
-|                        -----------------------------                              |
-|                                  --Winner--                                       |
-|                                   Player {winner}                                        |
-|                        -----------------------------                              |
-|                                  --Rounds--                                       |
-|                                      {rounds}                                           |
-|                        -----------------------------                              |
-|                          --First pokemon to fall--                                |
-|                              {loser_pokemon}                                   |
-=====================================================================================
-    """
+def show_battle_winner(start_battle, idnumber):
     
-    print(battle_msg.format(**start_battle))      
+    datenow =  datetime.now()
+    battle_msg  = "reported generated on:   " + datenow.isoformat() + "                                                  \n"
+    battle_msg +=  "================================== POKéMON BATTLE ===================================\n"
+    battle_msg += "                                                                                     \n"
+    battle_msg += "-------------------------------------------------------------------------------------\n"
+    battle_msg += "|                                    PLAYER 1                                        |\n"
+    battle_msg += "-------------------------------------------------------------------------------------\n"
+    battle_msg += "|Name: " + start_battle["p1_pkm_1_name"] + "  |Name: " + start_battle["p1_pkm_2_name"] + "   |Name: " + start_battle["p1_pkm_3_name"] + " |\n"
+    battle_msg += "|HP: " + str(start_battle["p1_pkm_1_hp"]) + "                      |HP: " + str(start_battle["p1_pkm_2_hp"]) + "                     |HP: " + str(start_battle["p1_pkm_3_hp"]) + "                    |\n"
+    battle_msg += "|Attack: " + str(start_battle["p1_pkm_1_atk"]) + "                  |Attack: " + str(start_battle["p1_pkm_2_atk"]) + "                |Attack: " + str(start_battle["p1_pkm_3_atk"]) + "               |\n"
+    battle_msg += "|Defense: " + str(start_battle["p1_pkm_1_dfs"]) + "                 |Defense: " + str(start_battle["p1_pkm_2_dfs"]) + "                |Defense: " + str(start_battle["p1_pkm_2_dfs"]) + "               |\n"
+    battle_msg += "-------------------------------------------------------------------------------------\n"
+    battle_msg += "|                                    PLAYER 2                                        |\n"
+    battle_msg += "-------------------------------------------------------------------------------------\n"
+    battle_msg += "|Name: " + start_battle["p2_pkm_1_name"] + "     |Name: " + start_battle["p2_pkm_2_name"] + "   |Name: " + start_battle["p2_pkm_3_name"] + "|\n"
+    battle_msg += "|HP: " + str(start_battle["p2_pkm_1_hp"]) + "                       |HP: " + str(start_battle["p2_pkm_2_hp"]) + "                    |HP: " + str(start_battle["p2_pkm_3_hp"]) + "                    |\n"
+    battle_msg += "|Attack: " + str(start_battle["p2_pkm_1_atk"]) + "                  |Attack: " + str(start_battle["p2_pkm_2_atk"]) + "                |Attack: " + str(start_battle["p2_pkm_3_atk"]) + "               |\n"
+    battle_msg += "-------------------------------------------------------------------------------------\n"
+    battle_msg += "|Defense: " + str(start_battle["p2_pkm_1_dfs"]) + "                  |Defense: " + str(start_battle["p2_pkm_2_dfs"]) + "               |Defense: " + str(start_battle["p2_pkm_2_dfs"]) + "              |\n"
+    battle_msg += "-------------------------------------------------------------------------------------\n"
+    battle_msg += "=====================================================================================\n"
+    battle_msg += "|                              +++++ RESULT +++++                                    |\n"
+    battle_msg += "=====================================================================================\n"
+    battle_msg += "|                        -----------------------------                               |\n"
+    battle_msg += "|                                  --Winner--                                        |\n"
+    battle_msg += "|                                   Player " + str(start_battle["winner"]) + "                                         |\n"
+    battle_msg += "|                        -----------------------------                               |\n"
+    battle_msg += "|                                  --Rounds--                                        |\n"
+    battle_msg += "|                                      " + str(start_battle["rounds"]) + "                                            |\n"
+    battle_msg += "|                        -----------------------------                               |\n"
+    battle_msg += "|                          --First pokemon to fall--                                 |\n"
+    battle_msg += "|                              " + start_battle["loser_pokemon"] + "                                    |\n"
+    battle_msg += "=====================================================================================\n"
+
+    if os.path.exists(f"{idnumber}_battle.txt"):
+        
+        choice = input(f"Files {idnumber}_battle.txt already exists, what do you prefer to do? [append|OVERWRITE] : ")
+        
+        if choice == 'o' or choice == 'O' or choice == 'Overwrite' or choice == 'overwrite' or choice == 'OVERWRITE':
+           
+            os.remove(f"{idnumber}_battle.txt")
+            
+            with open(f"{idnumber}_battle.txt", "w") as target:
+                target.write(battle_msg)
+        elif choice == 'a' or choice == 'A' or choice == 'Append' or choice == 'append' or choice == 'APPEND':
+           
+            with open(f"{idnumber}_battle.txt", "a") as target:
+                target.write(battle_msg)  
+    else:
+        
+        with open(f"{idnumber}_battle.txt", "w") as target:
+            target.write(battle_msg)
+    
+    print(battle_msg.format(**start_battle))
+    
+     
+    
+
     
                   
 def client_helper():
@@ -484,9 +545,9 @@ def client_usage():
     CLI usage:
     
         > python3 pokedex_crud.py --help
-        > python3 pokedex_crud.py --player1 pokemons_1.json --trivia
-        > python3 pokedex_crud.py --player1 pokemons_1.json --player2 pokemons_2.json --info
-        > python3 pokedex_crud.py --player1 pokemons_1.json --player2 pokemons_2.json --battle
+        > python3 pokedex_crud.py --player1 pokemons_1.json --trivia  --id 1
+        > python3 pokedex_crud.py --player1 pokemons_1.json --player2 pokemons_2.json --id 1 --info
+        > python3 pokedex_crud.py --player1 pokemons_1.json --player2 pokemons_2.json --id 1 --battle
         
         ATENTION:
         
@@ -515,7 +576,7 @@ def main():
             print(f"WARNING: This command does not exist.\n{client_usage()}")
             quit()
             
-    elif len(sys.argv) > 6:
+    elif len(sys.argv) > 8:
             print(f"WARNING! Incorrect amount of arguments.\n{client_usage()}")
             quit()
 
@@ -537,9 +598,11 @@ def main():
         command2 = sys.argv[3]
         
         if command2 == "--trivia":
-            if len(sys.argv) >= 5:
+            if len(sys.argv) >= 7:
                 print(f"WARNING! Incorrect amount of arguments.\n{client_usage()}")
                 quit()
+            
+            
             
             if '.json' in filepath_1:    
                 data_1 = read_file_json(filepath_1)
@@ -552,8 +615,12 @@ def main():
             else:
                 print("Error: File format not supported! ")
             
+            if len(sys.argv) == 6:
+                idnumber = sys.argv[5]
+            else:
+                idnumber = 0
             info = process_trivia(data_1)
-            show_trivia(info)
+            show_trivia(info,idnumber)
             quit()
             
         elif command2 == "--player2":
@@ -571,43 +638,85 @@ def main():
         
         if len(sys.argv) == 5:
             print(f"WARNING! Incorrect amount of arguments.\n{client_usage()}")
-            quit()
-    
-        if '.json' in filepath_1:
-            data_1 = read_file_json(filepath_1)
-            dataset_1 = cast_to_set(data_1)
-        elif '.csv' in filepath_1:
-            data_1 = read_file_csv(filepath_1)
-            dataset_1 = cast_to_set(data_1)
-        elif '.xml' in filepath_1:
-            data_1 = read_file_xml(filepath_1)
-            dataset_1 = cast_to_set(data_1)
-        elif '.yaml' in filepath_1:
-            data_1 = read_file_yaml(filepath_1)
-            dataset_1 = cast_to_set(data_1)
-        
-        if '.json' in filepath_2:
-            data_2= read_file_json(filepath_2)
-            dataset_2 = cast_to_set(data_2)
-        elif '.csv' in filepath_2:
-            data_2 = read_file_csv(filepath_2)
-            dataset_2 = cast_to_set(data_2)
-        elif '.xml' in filepath_2:
-            data_2 = read_file_xml(filepath_2)
-            dataset_2 = cast_to_set(data_2)
-        elif '.yaml' in filepath_2:
-            data_2 = read_file_yaml(filepath_2)
-            dataset_2 = cast_to_set(data_2)
-        
+            quit()        
+            
         command3 = sys.argv[5]
         
-        if command3 == "--info":   
-            info = process_info(data_1,data_2,dataset_1,dataset_2)
-            show_info(info)
+        if command3 == "--id":
+        
+            if '.json' in filepath_1:
+                data_1 = read_file_json(filepath_1)
+                dataset_1 = cast_to_set(data_1)
+            elif '.csv' in filepath_1:
+                data_1 = read_file_csv(filepath_1)
+                dataset_1 = cast_to_set(data_1)
+            elif '.xml' in filepath_1:
+                data_1 = read_file_xml(filepath_1)
+                dataset_1 = cast_to_set(data_1)
+            elif '.yaml' in filepath_1:
+                data_1 = read_file_yaml(filepath_1)
+                dataset_1 = cast_to_set(data_1)
             
-        elif command3 == "--battle":
-            battle = select_pokemons_for_battle(data_1,data_2)
-            show_battle_winner(battle)      
+            if '.json' in filepath_2:
+                data_2= read_file_json(filepath_2)
+                dataset_2 = cast_to_set(data_2)
+            elif '.csv' in filepath_2:
+                data_2 = read_file_csv(filepath_2)
+                dataset_2 = cast_to_set(data_2)
+            elif '.xml' in filepath_2:
+                data_2 = read_file_xml(filepath_2)
+                dataset_2 = cast_to_set(data_2)
+            elif '.yaml' in filepath_2:
+                data_2 = read_file_yaml(filepath_2)
+                dataset_2 = cast_to_set(data_2)
+            
+            idnumber = sys.argv[6]
+            command4 = sys.argv[7]     
+
+            if command4 == "--info":   
+                info = process_info(data_1,data_2,dataset_1,dataset_2)
+                show_info(info,idnumber)
+                
+            elif command4 == "--battle":
+                battle = select_pokemons_for_battle(data_1,data_2)
+                show_battle_winner(battle,idnumber)
+        else:
+        
+            if '.json' in filepath_1:
+                data_1 = read_file_json(filepath_1)
+                dataset_1 = cast_to_set(data_1)
+            elif '.csv' in filepath_1:
+                data_1 = read_file_csv(filepath_1)
+                dataset_1 = cast_to_set(data_1)
+            elif '.xml' in filepath_1:
+                data_1 = read_file_xml(filepath_1)
+                dataset_1 = cast_to_set(data_1)
+            elif '.yaml' in filepath_1:
+                data_1 = read_file_yaml(filepath_1)
+                dataset_1 = cast_to_set(data_1)
+            
+            if '.json' in filepath_2:
+                data_2= read_file_json(filepath_2)
+                dataset_2 = cast_to_set(data_2)
+            elif '.csv' in filepath_2:
+                data_2 = read_file_csv(filepath_2)
+                dataset_2 = cast_to_set(data_2)
+            elif '.xml' in filepath_2:
+                data_2 = read_file_xml(filepath_2)
+                dataset_2 = cast_to_set(data_2)
+            elif '.yaml' in filepath_2:
+                data_2 = read_file_yaml(filepath_2)
+                dataset_2 = cast_to_set(data_2)
+            
+            idnumber = 0
+        
+            if command3 == "--info":   
+                info = process_info(data_1,data_2,dataset_1,dataset_2)
+                show_info(info,idnumber)
+                
+            elif command3 == "--battle":
+                battle = select_pokemons_for_battle(data_1,data_2)
+                show_battle_winner(battle,idnumber)    
     else:
         print(f"WARNING: This command does not exist.\n{client_usage()}")
         quit()

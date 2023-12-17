@@ -118,7 +118,7 @@ os.path.exists("5_info.txt")
 - Remove
 ```py
 import os
-os.remove("5_info.txt")
+    os.remove("5_info.txt")
 ```
 
 ### Create a file
