@@ -121,9 +121,6 @@ def process_trivia(pokemons_data):
         if speed_trivia_int > highest_spd_trivia["value"]:
             highest_spd_trivia["index"] = index
             highest_spd_trivia["value"] = speed_trivia_int    
-            
-  
-            
 
     return Answers(
         total_trivia=len(pokemons_data),
@@ -504,11 +501,7 @@ def show_battle_winner(start_battle, idnumber):
             target.write(battle_msg)
     
     print(battle_msg.format(**start_battle))
-    
-     
-    
-
-    
+      
                   
 def client_helper():
     helper_msg = """
@@ -600,10 +593,7 @@ def main():
         if command2 == "--trivia":
             if len(sys.argv) >= 7:
                 print(f"WARNING! Incorrect amount of arguments.\n{client_usage()}")
-                quit()
-            
-            
-            
+                quit()         
             if '.json' in filepath_1:    
                 data_1 = read_file_json(filepath_1)
             elif '.csv' in filepath_1:    
@@ -655,8 +645,7 @@ def main():
                 dataset_1 = cast_to_set(data_1)
             elif '.yaml' in filepath_1:
                 data_1 = read_file_yaml(filepath_1)
-                dataset_1 = cast_to_set(data_1)
-            
+                dataset_1 = cast_to_set(data_1)            
             if '.json' in filepath_2:
                 data_2= read_file_json(filepath_2)
                 dataset_2 = cast_to_set(data_2)
@@ -680,8 +669,7 @@ def main():
             elif command4 == "--battle":
                 battle = select_pokemons_for_battle(data_1,data_2)
                 show_battle_winner(battle,idnumber)
-        else:
-        
+        else:        
             if '.json' in filepath_1:
                 data_1 = read_file_json(filepath_1)
                 dataset_1 = cast_to_set(data_1)
@@ -693,8 +681,7 @@ def main():
                 dataset_1 = cast_to_set(data_1)
             elif '.yaml' in filepath_1:
                 data_1 = read_file_yaml(filepath_1)
-                dataset_1 = cast_to_set(data_1)
-            
+                dataset_1 = cast_to_set(data_1)            
             if '.json' in filepath_2:
                 data_2= read_file_json(filepath_2)
                 dataset_2 = cast_to_set(data_2)
@@ -712,8 +699,7 @@ def main():
         
             if command3 == "--info":   
                 info = process_info(data_1,data_2,dataset_1,dataset_2)
-                show_info(info,idnumber)
-                
+                show_info(info,idnumber)                
             elif command3 == "--battle":
                 battle = select_pokemons_for_battle(data_1,data_2)
                 show_battle_winner(battle,idnumber)    
