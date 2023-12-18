@@ -567,7 +567,8 @@ def client_helper():
     pokemon, where the first pokemon to fall decides the winner, and we'll
     show you the battle information.
     
-    Warning:
+    Warning: If you have any dout about how to use the function read the ATENTION
+    flag at the client usage.
    
     """
     return print(helper_msg)
