@@ -1,3 +1,7 @@
+# TODO: break this file into different files based on their semantics
+# TODO: remove libraries that are not in use
+# TODO: describe better all the functions, adding specific details about it, for example
+# all the info being processed, if it's required to cast something, etc
 import os
 import sys
 import json
@@ -10,7 +14,7 @@ from enum import Enum
 from typing import Dict, Union, List, TypedDict, Optional
 
 
-
+# TODO: break more this data struture
 class Answers(TypedDict):
     p1_tot_info: int  
     p2_tot_info: int
@@ -60,7 +64,8 @@ def read_file_csv(filepath):
         pokemons = [row for row in file]
         return pokemons
 
-#Receive and read xml files    
+#Receive and read xml files
+# TODO: don't mix portuguese with english
 def read_file_xml(filepath): 
     with open(filepath, "r") as data:
         file = data.read()
@@ -206,7 +211,8 @@ def show_trivia(pokemons_info, idnumber):
             target.write(msg)
     
     print(msg.format(**pokemons_info))
-       
+
+
 #Process the information read in the files and generate the info table 
 def process_info(process_poke1,process_poke2,pokemon_set_1,pokemon_set_2):
     
@@ -474,8 +480,10 @@ def pokemon_battle(start_battle):
     )
 
 #Show the information about wich pokemons participated in the battle, and wich player was the winner
+# TODO: control the column width
+# TODO: remove the line separation between attack and defense for player 2
+# TODO: improve how we code the visualization
 def show_battle_winner(start_battle,battle_result, idnumber):
-    
     datenow =  datetime.now()
     battle_msg =  "                                                                                     \n"
     battle_msg += "reported generated on:   " + datenow.isoformat() + "                                                  \n"
@@ -517,6 +525,8 @@ def show_battle_winner(start_battle,battle_result, idnumber):
         
         choice = input(f"Files {idnumber}_battle.txt already exists, what do you prefer to do? [append|OVERWRITE] : ")
         
+        # TODO: you could use:
+        # if choice.lower() == 'o' or choice.lower() == 'overwrite'
         if choice == 'o' or choice == 'O' or choice == 'Overwrite' or choice == 'overwrite' or choice == 'OVERWRITE' or choice == '':
            
             os.remove(f"{idnumber}_battle.txt")
@@ -540,6 +550,8 @@ def show_battle_winner(start_battle,battle_result, idnumber):
       
                   
 def client_helper():
+    # TODO: typo: between
+    # TODO: -- info and -- battle have space in between
     helper_msg = """
     Hello! Welcome to the Pokedex.
     
@@ -574,6 +586,8 @@ def client_helper():
     return print(helper_msg)
 
 def client_usage():
+    # TODO: typo: that both lists
+    # TODO: add explanation about what is an id
     client_usage_msg = """
     CLI usage:
     
@@ -617,6 +631,7 @@ def client_usage():
     """
     return client_usage_msg
 
+# TODO: separate this functon into smaller ones, e.g. parse diff formats, helpers, etc
 def main():
     if len(sys.argv) == 1:
         client_usage()
@@ -652,6 +667,7 @@ def main():
         
         command2 = sys.argv[3]
         
+        # TODO: --trivia shouldn't need the --player1 arg
         if command2 == "--trivia":
             if len(sys.argv) >= 7:
                 print(f"WARNING! Incorrect amount of arguments.\n{client_usage()}")
@@ -813,4 +829,3 @@ def main():
        
 if __name__ == "__main__":
     main()      
-                

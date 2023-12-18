@@ -1,1 +1,10 @@
-pokedex.py
+# general cache
+.cache
+.mypy_cache
+
+# python
+__pycache__
+__pycache__/
+
+# other files
+*.txt

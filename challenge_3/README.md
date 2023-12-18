@@ -188,4 +188,18 @@ Skills to unlock:
 
 ## Retrospective
 
-TODO
+The good:
+- It was possible to add an extra option, the trivia.
+
+The bad:
+- XML.
+- Multiples nested ifs.
+- She focused on the optional goal first (trivia).
+
+## TODO: Day
+- Check the old xml format errors.
+- Next challenge add the creation of multiple files per different semantics.
+
+## Dates
+- Challenge 4: 19 dec until 23 dec
+- Challenge 5: 24 dec until 10 jan
