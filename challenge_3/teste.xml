@@ -1,7 +1,0 @@
-<root xmlns="http://defaultns.com/" 
-      	xmlns:a="http://a.com/"
-      	xmlns:b="http://b.com/">
-	<x>1</x>
-	<a:y>2</a:y>
-	<b:z>3</b:z>
-</root>
