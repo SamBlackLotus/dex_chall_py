@@ -567,7 +567,7 @@ def client_helper():
     pokemon, where the first pokemon to fall decides the winner, and we'll
     show you the battle information.
     
-    Warning: If you have any dout about how to use the function read the ATENTION
+    Warning: If you have any doubt about how to use the function read the ATENTION
     flag at the client usage.
    
     """
@@ -586,7 +586,7 @@ def client_usage():
         
         Where you read <pokemons_1.json> or <pokemons_2.json> 
         Notice that the both list don't need to be in the same format, here you can use more than one file
-        fomat at the same time, like a json and a csv list at the same time, it will work as well.
+        format at the same time, like a json and a csv list at the same time, it will work as well.
         You can use the formats that best suits your needs:
         Example --> pokemons_1.json  pokemons_2.json 
                     pokemons_1.csv   pokemons_2.csv
@@ -615,7 +615,7 @@ def client_usage():
         
         
     """
-    return print(client_usage_msg) 
+    return client_usage_msg
 
 def main():
     if len(sys.argv) == 1:
@@ -668,8 +668,21 @@ def main():
                 print(f"Error: File format not supported!\n{client_usage()}")
                 quit()
             
-            if len(sys.argv) == 6:
-                idnumber = sys.argv[5]
+            if len(sys.argv) >= 5:
+                
+                command3 = sys.argv[4]
+                
+                if command3 == '--id':
+                    
+                    if len(sys.argv) == 6: 
+                        idnumber = sys.argv[5]
+                    else:
+                        print(f"WARNING! Incorrect amount of arguments.\n{client_usage()}")
+                        quit() 
+                        
+                else:
+                    print(f"WARNING: This command does not exist.\n{client_usage()}")
+                    quit()   
             else:
                 idnumber = 0
             info = process_trivia(data_1)
@@ -692,82 +705,108 @@ def main():
         if len(sys.argv) == 5:
             print(f"WARNING! Incorrect amount of arguments.\n{client_usage()}")
             quit()        
-            
-        command3 = sys.argv[5]
+         
+        if len(sys.argv) >= 6:    
+            command3 = sys.argv[5]
         
-        if command3 == "--id":
-        
-            if '.json' in filepath_1:
-                data_1 = read_file_json(filepath_1)
-                dataset_1 = cast_to_set(data_1)
-            elif '.csv' in filepath_1:
-                data_1 = read_file_csv(filepath_1)
-                dataset_1 = cast_to_set(data_1)
-            elif '.xml' in filepath_1:
-                data_1 = read_file_xml(filepath_1)
-                dataset_1 = cast_to_set(data_1)
-            elif '.yaml' in filepath_1:
-                data_1 = read_file_yaml(filepath_1)
-                dataset_1 = cast_to_set(data_1)            
-            if '.json' in filepath_2:
-                data_2= read_file_json(filepath_2)
-                dataset_2 = cast_to_set(data_2)
-            elif '.csv' in filepath_2:
-                data_2 = read_file_csv(filepath_2)
-                dataset_2 = cast_to_set(data_2)
-            elif '.xml' in filepath_2:
-                data_2 = read_file_xml(filepath_2)
-                dataset_2 = cast_to_set(data_2)
-            elif '.yaml' in filepath_2:
-                data_2 = read_file_yaml(filepath_2)
-                dataset_2 = cast_to_set(data_2)
-            
-            idnumber = sys.argv[6]
-            command4 = sys.argv[7]     
+            if command3 == "--id":
+                if len(sys.argv) == 8:
+                    if '.json' in filepath_1:
+                        data_1 = read_file_json(filepath_1)
+                        dataset_1 = cast_to_set(data_1)
+                    elif '.csv' in filepath_1:
+                        data_1 = read_file_csv(filepath_1)
+                        dataset_1 = cast_to_set(data_1)
+                    elif '.xml' in filepath_1:
+                        data_1 = read_file_xml(filepath_1)
+                        dataset_1 = cast_to_set(data_1)
+                    elif '.yaml' in filepath_1:
+                        data_1 = read_file_yaml(filepath_1)
+                        dataset_1 = cast_to_set(data_1)
+                    else:
+                        print(f"Error: File format not supported!\n{client_usage()}")
+                        quit()
+                                
+                    if '.json' in filepath_2:
+                        data_2= read_file_json(filepath_2)
+                        dataset_2 = cast_to_set(data_2)
+                    elif '.csv' in filepath_2:
+                        data_2 = read_file_csv(filepath_2)
+                        dataset_2 = cast_to_set(data_2)
+                    elif '.xml' in filepath_2:
+                        data_2 = read_file_xml(filepath_2)
+                        dataset_2 = cast_to_set(data_2)
+                    elif '.yaml' in filepath_2:
+                        data_2 = read_file_yaml(filepath_2)
+                        dataset_2 = cast_to_set(data_2)
+                    else:
+                        print(f"Error: File format not supported!\n{client_usage()}")
+                        quit()
+                    
+                    idnumber = sys.argv[6]
+                    command4 = sys.argv[7]     
 
-            if command4 == "--info":   
-                info = process_info(data_1,data_2,dataset_1,dataset_2)
-                show_info(info,idnumber)
+                    if command4 == "--info":   
+                        info = process_info(data_1,data_2,dataset_1,dataset_2)
+                        show_info(info,idnumber)
+                        
+                    elif command4 == "--battle":
+                        battle = select_pokemons_for_battle(data_1,data_2)
+                        result = pokemon_battle(battle)
+                        show_battle_winner(battle,result,idnumber)
+                    else:
+                        print(f"WARNING: This command does not exist.\n{client_usage()}")
+                        quit()
+                        
+                else:
+                    print(f"WARNING! Incorrect amount of arguments.\n{client_usage()}")
+                    quit()
+                    
+            elif command3 == "--info" or command3 == '--battle':        
+                if '.json' in filepath_1:
+                    data_1 = read_file_json(filepath_1)
+                    dataset_1 = cast_to_set(data_1)
+                elif '.csv' in filepath_1:
+                    data_1 = read_file_csv(filepath_1)
+                    dataset_1 = cast_to_set(data_1)
+                elif '.xml' in filepath_1:
+                    data_1 = read_file_xml(filepath_1)
+                    dataset_1 = cast_to_set(data_1)
+                elif '.yaml' in filepath_1:
+                    data_1 = read_file_yaml(filepath_1)
+                    dataset_1 = cast_to_set(data_1)
+                else:
+                    print(f"Error: File format not supported!\n{client_usage()}")
+                    quit()    
+                                
+                if '.json' in filepath_2:
+                    data_2= read_file_json(filepath_2)
+                    dataset_2 = cast_to_set(data_2)
+                elif '.csv' in filepath_2:
+                    data_2 = read_file_csv(filepath_2)
+                    dataset_2 = cast_to_set(data_2)
+                elif '.xml' in filepath_2:
+                    data_2 = read_file_xml(filepath_2)
+                    dataset_2 = cast_to_set(data_2)
+                elif '.yaml' in filepath_2:
+                    data_2 = read_file_yaml(filepath_2)
+                    dataset_2 = cast_to_set(data_2)
+                else:
+                    print(f"Error: File format not supported!\n{client_usage()}")
+                    quit()    
                 
-            elif command4 == "--battle":
-                battle = select_pokemons_for_battle(data_1,data_2)
-                result = pokemon_battle(battle)
-                show_battle_winner(battle,result,idnumber)
-        else:        
-            if '.json' in filepath_1:
-                data_1 = read_file_json(filepath_1)
-                dataset_1 = cast_to_set(data_1)
-            elif '.csv' in filepath_1:
-                data_1 = read_file_csv(filepath_1)
-                dataset_1 = cast_to_set(data_1)
-            elif '.xml' in filepath_1:
-                data_1 = read_file_xml(filepath_1)
-                dataset_1 = cast_to_set(data_1)
-            elif '.yaml' in filepath_1:
-                data_1 = read_file_yaml(filepath_1)
-                dataset_1 = cast_to_set(data_1)            
-            if '.json' in filepath_2:
-                data_2= read_file_json(filepath_2)
-                dataset_2 = cast_to_set(data_2)
-            elif '.csv' in filepath_2:
-                data_2 = read_file_csv(filepath_2)
-                dataset_2 = cast_to_set(data_2)
-            elif '.xml' in filepath_2:
-                data_2 = read_file_xml(filepath_2)
-                dataset_2 = cast_to_set(data_2)
-            elif '.yaml' in filepath_2:
-                data_2 = read_file_yaml(filepath_2)
-                dataset_2 = cast_to_set(data_2)
+                idnumber = 0
             
-            idnumber = 0
-        
-            if command3 == "--info":   
-                info = process_info(data_1,data_2,dataset_1,dataset_2)
-                show_info(info,idnumber)                
-            elif command3 == "--battle":
-                battle = select_pokemons_for_battle(data_1,data_2)
-                result = pokemon_battle(battle)
-                show_battle_winner(battle,result,idnumber)    
+                if command3 == "--info":   
+                    info = process_info(data_1,data_2,dataset_1,dataset_2)
+                    show_info(info,idnumber)                
+                elif command3 == "--battle":
+                    battle = select_pokemons_for_battle(data_1,data_2)
+                    result = pokemon_battle(battle)
+                    show_battle_winner(battle,result,idnumber)
+            else:
+                print(f"WARNING: This command does not exist.\n{client_usage()}")
+                quit()   
     else:
         print(f"WARNING: This command does not exist.\n{client_usage()}")
         quit()
