@@ -1,0 +1,3901 @@
+---
+- Id: 444
+  Name: Gabite
+  Type 1: Dragon
+  Type 2: Ground
+  Total: 410
+  HP: 68
+  Attack: 90
+  Defense: 65
+  Sp. Atk: 50
+  Sp. Def: 55
+  Speed: 82
+  Generation: 4
+  Legendary: 'False'
+- Id: 390
+  Name: Chimchar
+  Type 1: Fire
+  Type 2: ''
+  Total: 309
+  HP: 44
+  Attack: 58
+  Defense: 44
+  Sp. Atk: 58
+  Sp. Def: 44
+  Speed: 61
+  Generation: 4
+  Legendary: 'False'
+- Id: 617
+  Name: Accelgor
+  Type 1: Bug
+  Type 2: ''
+  Total: 495
+  HP: 80
+  Attack: 70
+  Defense: 40
+  Sp. Atk: 100
+  Sp. Def: 60
+  Speed: 145
+  Generation: 5
+  Legendary: 'False'
+- Id: 679
+  Name: Honedge
+  Type 1: Steel
+  Type 2: Ghost
+  Total: 325
+  HP: 45
+  Attack: 80
+  Defense: 100
+  Sp. Atk: 35
+  Sp. Def: 37
+  Speed: 28
+  Generation: 6
+  Legendary: 'False'
+- Id: 240
+  Name: Magby
+  Type 1: Fire
+  Type 2: ''
+  Total: 365
+  HP: 45
+  Attack: 75
+  Defense: 37
+  Sp. Atk: 70
+  Sp. Def: 55
+  Speed: 83
+  Generation: 2
+  Legendary: 'False'
+- Id: 104
+  Name: Cubone
+  Type 1: Ground
+  Type 2: ''
+  Total: 320
+  HP: 50
+  Attack: 50
+  Defense: 95
+  Sp. Atk: 40
+  Sp. Def: 50
+  Speed: 35
+  Generation: 1
+  Legendary: 'False'
+- Id: 255
+  Name: Torchic
+  Type 1: Fire
+  Type 2: ''
+  Total: 310
+  HP: 45
+  Attack: 60
+  Defense: 40
+  Sp. Atk: 70
+  Sp. Def: 50
+  Speed: 45
+  Generation: 3
+  Legendary: 'False'
+- Id: 720
+  Name: HoopaHoopa Unbound
+  Type 1: Psychic
+  Type 2: Dark
+  Total: 680
+  HP: 80
+  Attack: 160
+  Defense: 60
+  Sp. Atk: 170
+  Sp. Def: 130
+  Speed: 80
+  Generation: 6
+  Legendary: 'True'
+- Id: 661
+  Name: Fletchling
+  Type 1: Normal
+  Type 2: Flying
+  Total: 278
+  HP: 45
+  Attack: 50
+  Defense: 43
+  Sp. Atk: 40
+  Sp. Def: 38
+  Speed: 62
+  Generation: 6
+  Legendary: 'False'
+- Id: 597
+  Name: Ferroseed
+  Type 1: Grass
+  Type 2: Steel
+  Total: 305
+  HP: 44
+  Attack: 50
+  Defense: 91
+  Sp. Atk: 24
+  Sp. Def: 86
+  Speed: 10
+  Generation: 5
+  Legendary: 'False'
+- Id: 268
+  Name: Cascoon
+  Type 1: Bug
+  Type 2: ''
+  Total: 205
+  HP: 50
+  Attack: 35
+  Defense: 55
+  Sp. Atk: 25
+  Sp. Def: 25
+  Speed: 15
+  Generation: 3
+  Legendary: 'False'
+- Id: 654
+  Name: Braixen
+  Type 1: Fire
+  Type 2: ''
+  Total: 409
+  HP: 59
+  Attack: 59
+  Defense: 58
+  Sp. Atk: 90
+  Sp. Def: 70
+  Speed: 73
+  Generation: 6
+  Legendary: 'False'
+- Id: 395
+  Name: Empoleon
+  Type 1: Water
+  Type 2: Steel
+  Total: 530
+  HP: 84
+  Attack: 86
+  Defense: 88
+  Sp. Atk: 111
+  Sp. Def: 101
+  Speed: 60
+  Generation: 4
+  Legendary: 'False'
+- Id: 646
+  Name: KyuremWhite Kyurem
+  Type 1: Dragon
+  Type 2: Ice
+  Total: 700
+  HP: 125
+  Attack: 120
+  Defense: 90
+  Sp. Atk: 170
+  Sp. Def: 100
+  Speed: 95
+  Generation: 5
+  Legendary: 'True'
+- Id: 296
+  Name: Makuhita
+  Type 1: Fighting
+  Type 2: ''
+  Total: 237
+  HP: 72
+  Attack: 60
+  Defense: 30
+  Sp. Atk: 20
+  Sp. Def: 30
+  Speed: 25
+  Generation: 3
+  Legendary: 'False'
+- Id: 567
+  Name: Archeops
+  Type 1: Rock
+  Type 2: Flying
+  Total: 567
+  HP: 75
+  Attack: 140
+  Defense: 65
+  Sp. Atk: 112
+  Sp. Def: 65
+  Speed: 110
+  Generation: 5
+  Legendary: 'False'
+- Id: 521
+  Name: Unfezant
+  Type 1: Normal
+  Type 2: Flying
+  Total: 488
+  HP: 80
+  Attack: 115
+  Defense: 80
+  Sp. Atk: 65
+  Sp. Def: 55
+  Speed: 93
+  Generation: 5
+  Legendary: 'False'
+- Id: 383
+  Name: GroudonPrimal Groudon
+  Type 1: Ground
+  Type 2: Fire
+  Total: 770
+  HP: 100
+  Attack: 180
+  Defense: 160
+  Sp. Atk: 150
+  Sp. Def: 90
+  Speed: 90
+  Generation: 3
+  Legendary: 'True'
+- Id: 239
+  Name: Elekid
+  Type 1: Electric
+  Type 2: ''
+  Total: 360
+  HP: 45
+  Attack: 63
+  Defense: 37
+  Sp. Atk: 65
+  Sp. Def: 55
+  Speed: 95
+  Generation: 2
+  Legendary: 'False'
+- Id: 641
+  Name: TornadusTherian Forme
+  Type 1: Flying
+  Type 2: ''
+  Total: 580
+  HP: 79
+  Attack: 100
+  Defense: 80
+  Sp. Atk: 110
+  Sp. Def: 90
+  Speed: 121
+  Generation: 5
+  Legendary: 'True'
+- Id: 479
+  Name: RotomWash Rotom
+  Type 1: Electric
+  Type 2: Water
+  Total: 520
+  HP: 50
+  Attack: 65
+  Defense: 107
+  Sp. Atk: 105
+  Sp. Def: 107
+  Speed: 86
+  Generation: 4
+  Legendary: 'False'
+- Id: 380
+  Name: LatiasMega Latias
+  Type 1: Dragon
+  Type 2: Psychic
+  Total: 700
+  HP: 80
+  Attack: 100
+  Defense: 120
+  Sp. Atk: 140
+  Sp. Def: 150
+  Speed: 110
+  Generation: 3
+  Legendary: 'True'
+- Id: 46
+  Name: Paras
+  Type 1: Bug
+  Type 2: Grass
+  Total: 285
+  HP: 35
+  Attack: 70
+  Defense: 55
+  Sp. Atk: 45
+  Sp. Def: 55
+  Speed: 25
+  Generation: 1
+  Legendary: 'False'
+- Id: 362
+  Name: Glalie
+  Type 1: Ice
+  Type 2: ''
+  Total: 480
+  HP: 80
+  Attack: 80
+  Defense: 80
+  Sp. Atk: 80
+  Sp. Def: 80
+  Speed: 80
+  Generation: 3
+  Legendary: 'False'
+- Id: 409
+  Name: Rampardos
+  Type 1: Rock
+  Type 2: ''
+  Total: 495
+  HP: 97
+  Attack: 165
+  Defense: 60
+  Sp. Atk: 65
+  Sp. Def: 50
+  Speed: 58
+  Generation: 4
+  Legendary: 'False'
+- Id: 17
+  Name: Pidgeotto
+  Type 1: Normal
+  Type 2: Flying
+  Total: 349
+  HP: 63
+  Attack: 60
+  Defense: 55
+  Sp. Atk: 50
+  Sp. Def: 50
+  Speed: 71
+  Generation: 1
+  Legendary: 'False'
+- Id: 321
+  Name: Wailord
+  Type 1: Water
+  Type 2: ''
+  Total: 500
+  HP: 170
+  Attack: 90
+  Defense: 45
+  Sp. Atk: 90
+  Sp. Def: 45
+  Speed: 60
+  Generation: 3
+  Legendary: 'False'
+- Id: 339
+  Name: Barboach
+  Type 1: Water
+  Type 2: Ground
+  Total: 288
+  HP: 50
+  Attack: 48
+  Defense: 43
+  Sp. Atk: 46
+  Sp. Def: 41
+  Speed: 60
+  Generation: 3
+  Legendary: 'False'
+- Id: 414
+  Name: Mothim
+  Type 1: Bug
+  Type 2: Flying
+  Total: 424
+  HP: 70
+  Attack: 94
+  Defense: 50
+  Sp. Atk: 94
+  Sp. Def: 50
+  Speed: 66
+  Generation: 4
+  Legendary: 'False'
+- Id: 73
+  Name: Tentacruel
+  Type 1: Water
+  Type 2: Poison
+  Total: 515
+  HP: 80
+  Attack: 70
+  Defense: 65
+  Sp. Atk: 80
+  Sp. Def: 120
+  Speed: 100
+  Generation: 1
+  Legendary: 'False'
+- Id: 135
+  Name: Jolteon
+  Type 1: Electric
+  Type 2: ''
+  Total: 525
+  HP: 65
+  Attack: 65
+  Defense: 60
+  Sp. Atk: 110
+  Sp. Def: 95
+  Speed: 130
+  Generation: 1
+  Legendary: 'False'
+- Id: 274
+  Name: Nuzleaf
+  Type 1: Grass
+  Type 2: Dark
+  Total: 340
+  HP: 70
+  Attack: 70
+  Defense: 40
+  Sp. Atk: 60
+  Sp. Def: 40
+  Speed: 60
+  Generation: 3
+  Legendary: 'False'
+- Id: 611
+  Name: Fraxure
+  Type 1: Dragon
+  Type 2: ''
+  Total: 410
+  HP: 66
+  Attack: 117
+  Defense: 70
+  Sp. Atk: 40
+  Sp. Def: 50
+  Speed: 67
+  Generation: 5
+  Legendary: 'False'
+- Id: 710
+  Name: PumpkabooAverage Size
+  Type 1: Ghost
+  Type 2: Grass
+  Total: 335
+  HP: 49
+  Attack: 66
+  Defense: 70
+  Sp. Atk: 44
+  Sp. Def: 55
+  Speed: 51
+  Generation: 6
+  Legendary: 'False'
+- Id: 458
+  Name: Mantyke
+  Type 1: Water
+  Type 2: Flying
+  Total: 345
+  HP: 45
+  Attack: 20
+  Defense: 50
+  Sp. Atk: 60
+  Sp. Def: 120
+  Speed: 50
+  Generation: 4
+  Legendary: 'False'
+- Id: 638
+  Name: Cobalion
+  Type 1: Steel
+  Type 2: Fighting
+  Total: 580
+  HP: 91
+  Attack: 90
+  Defense: 129
+  Sp. Atk: 90
+  Sp. Def: 72
+  Speed: 108
+  Generation: 5
+  Legendary: 'True'
+- Id: 373
+  Name: Salamence
+  Type 1: Dragon
+  Type 2: Flying
+  Total: 600
+  HP: 95
+  Attack: 135
+  Defense: 80
+  Sp. Atk: 110
+  Sp. Def: 80
+  Speed: 100
+  Generation: 3
+  Legendary: 'False'
+- Id: 555
+  Name: DarmanitanZen Mode
+  Type 1: Fire
+  Type 2: Psychic
+  Total: 540
+  HP: 105
+  Attack: 30
+  Defense: 105
+  Sp. Atk: 140
+  Sp. Def: 105
+  Speed: 55
+  Generation: 5
+  Legendary: 'False'
+- Id: 69
+  Name: Bellsprout
+  Type 1: Grass
+  Type 2: Poison
+  Total: 300
+  HP: 50
+  Attack: 75
+  Defense: 35
+  Sp. Atk: 70
+  Sp. Def: 30
+  Speed: 40
+  Generation: 1
+  Legendary: 'False'
+- Id: 199
+  Name: Slowking
+  Type 1: Water
+  Type 2: Psychic
+  Total: 490
+  HP: 95
+  Attack: 75
+  Defense: 80
+  Sp. Atk: 100
+  Sp. Def: 110
+  Speed: 30
+  Generation: 2
+  Legendary: 'False'
+- Id: 359
+  Name: Absol
+  Type 1: Dark
+  Type 2: ''
+  Total: 465
+  HP: 65
+  Attack: 130
+  Defense: 60
+  Sp. Atk: 75
+  Sp. Def: 60
+  Speed: 75
+  Generation: 3
+  Legendary: 'False'
+- Id: 122
+  Name: Mr. Mime
+  Type 1: Psychic
+  Type 2: Fairy
+  Total: 460
+  HP: 40
+  Attack: 45
+  Defense: 65
+  Sp. Atk: 100
+  Sp. Def: 120
+  Speed: 90
+  Generation: 1
+  Legendary: 'False'
+- Id: 688
+  Name: Binacle
+  Type 1: Rock
+  Type 2: Water
+  Total: 306
+  HP: 42
+  Attack: 52
+  Defense: 67
+  Sp. Atk: 39
+  Sp. Def: 56
+  Speed: 50
+  Generation: 6
+  Legendary: 'False'
+- Id: 215
+  Name: Sneasel
+  Type 1: Dark
+  Type 2: Ice
+  Total: 430
+  HP: 55
+  Attack: 95
+  Defense: 55
+  Sp. Atk: 35
+  Sp. Def: 75
+  Speed: 115
+  Generation: 2
+  Legendary: 'False'
+- Id: 125
+  Name: Electabuzz
+  Type 1: Electric
+  Type 2: ''
+  Total: 490
+  HP: 65
+  Attack: 83
+  Defense: 57
+  Sp. Atk: 95
+  Sp. Def: 85
+  Speed: 105
+  Generation: 1
+  Legendary: 'False'
+- Id: 81
+  Name: Magnemite
+  Type 1: Electric
+  Type 2: Steel
+  Total: 325
+  HP: 25
+  Attack: 35
+  Defense: 70
+  Sp. Atk: 95
+  Sp. Def: 55
+  Speed: 45
+  Generation: 1
+  Legendary: 'False'
+- Id: 231
+  Name: Phanpy
+  Type 1: Ground
+  Type 2: ''
+  Total: 330
+  HP: 90
+  Attack: 60
+  Defense: 60
+  Sp. Atk: 40
+  Sp. Def: 40
+  Speed: 40
+  Generation: 2
+  Legendary: 'False'
+- Id: 700
+  Name: Sylveon
+  Type 1: Fairy
+  Type 2: ''
+  Total: 525
+  HP: 95
+  Attack: 65
+  Defense: 65
+  Sp. Atk: 110
+  Sp. Def: 130
+  Speed: 60
+  Generation: 6
+  Legendary: 'False'
+- Id: 472
+  Name: Gliscor
+  Type 1: Ground
+  Type 2: Flying
+  Total: 510
+  HP: 75
+  Attack: 95
+  Defense: 125
+  Sp. Atk: 45
+  Sp. Def: 75
+  Speed: 95
+  Generation: 4
+  Legendary: 'False'
+- Id: 10
+  Name: Caterpie
+  Type 1: Bug
+  Type 2: ''
+  Total: 195
+  HP: 45
+  Attack: 30
+  Defense: 35
+  Sp. Atk: 20
+  Sp. Def: 20
+  Speed: 45
+  Generation: 1
+  Legendary: 'False'
+- Id: 57
+  Name: Primeape
+  Type 1: Fighting
+  Type 2: ''
+  Total: 455
+  HP: 65
+  Attack: 105
+  Defense: 60
+  Sp. Atk: 60
+  Sp. Def: 70
+  Speed: 95
+  Generation: 1
+  Legendary: 'False'
+- Id: 721
+  Name: Volcanion
+  Type 1: Fire
+  Type 2: Water
+  Total: 600
+  HP: 80
+  Attack: 110
+  Defense: 120
+  Sp. Atk: 130
+  Sp. Def: 90
+  Speed: 70
+  Generation: 6
+  Legendary: 'True'
+- Id: 664
+  Name: Scatterbug
+  Type 1: Bug
+  Type 2: ''
+  Total: 200
+  HP: 38
+  Attack: 35
+  Defense: 40
+  Sp. Atk: 27
+  Sp. Def: 25
+  Speed: 35
+  Generation: 6
+  Legendary: 'False'
+- Id: 544
+  Name: Whirlipede
+  Type 1: Bug
+  Type 2: Poison
+  Total: 360
+  HP: 40
+  Attack: 55
+  Defense: 99
+  Sp. Atk: 40
+  Sp. Def: 79
+  Speed: 47
+  Generation: 5
+  Legendary: 'False'
+- Id: 127
+  Name: Pinsir
+  Type 1: Bug
+  Type 2: ''
+  Total: 500
+  HP: 65
+  Attack: 125
+  Defense: 100
+  Sp. Atk: 55
+  Sp. Def: 70
+  Speed: 85
+  Generation: 1
+  Legendary: 'False'
+- Id: 319
+  Name: Sharpedo
+  Type 1: Water
+  Type 2: Dark
+  Total: 460
+  HP: 70
+  Attack: 120
+  Defense: 40
+  Sp. Atk: 95
+  Sp. Def: 40
+  Speed: 95
+  Generation: 3
+  Legendary: 'False'
+- Id: 37
+  Name: Vulpix
+  Type 1: Fire
+  Type 2: ''
+  Total: 299
+  HP: 38
+  Attack: 41
+  Defense: 40
+  Sp. Atk: 50
+  Sp. Def: 65
+  Speed: 65
+  Generation: 1
+  Legendary: 'False'
+- Id: 169
+  Name: Crobat
+  Type 1: Poison
+  Type 2: Flying
+  Total: 535
+  HP: 85
+  Attack: 90
+  Defense: 80
+  Sp. Atk: 70
+  Sp. Def: 80
+  Speed: 130
+  Generation: 2
+  Legendary: 'False'
+- Id: 291
+  Name: Ninjask
+  Type 1: Bug
+  Type 2: Flying
+  Total: 456
+  HP: 61
+  Attack: 90
+  Defense: 45
+  Sp. Atk: 50
+  Sp. Def: 50
+  Speed: 160
+  Generation: 3
+  Legendary: 'False'
+- Id: 18
+  Name: Pidgeot
+  Type 1: Normal
+  Type 2: Flying
+  Total: 479
+  HP: 83
+  Attack: 80
+  Defense: 75
+  Sp. Atk: 70
+  Sp. Def: 70
+  Speed: 101
+  Generation: 1
+  Legendary: 'False'
+- Id: 501
+  Name: Oshawott
+  Type 1: Water
+  Type 2: ''
+  Total: 308
+  HP: 55
+  Attack: 55
+  Defense: 45
+  Sp. Atk: 63
+  Sp. Def: 45
+  Speed: 45
+  Generation: 5
+  Legendary: 'False'
+- Id: 298
+  Name: Azurill
+  Type 1: Normal
+  Type 2: Fairy
+  Total: 190
+  HP: 50
+  Attack: 20
+  Defense: 40
+  Sp. Atk: 20
+  Sp. Def: 40
+  Speed: 20
+  Generation: 3
+  Legendary: 'False'
+- Id: 185
+  Name: Sudowoodo
+  Type 1: Rock
+  Type 2: ''
+  Total: 410
+  HP: 70
+  Attack: 100
+  Defense: 115
+  Sp. Atk: 30
+  Sp. Def: 65
+  Speed: 30
+  Generation: 2
+  Legendary: 'False'
+- Id: 54
+  Name: Psyduck
+  Type 1: Water
+  Type 2: ''
+  Total: 320
+  HP: 50
+  Attack: 52
+  Defense: 48
+  Sp. Atk: 65
+  Sp. Def: 50
+  Speed: 55
+  Generation: 1
+  Legendary: 'False'
+- Id: 330
+  Name: Flygon
+  Type 1: Ground
+  Type 2: Dragon
+  Total: 520
+  HP: 80
+  Attack: 100
+  Defense: 80
+  Sp. Atk: 80
+  Sp. Def: 80
+  Speed: 100
+  Generation: 3
+  Legendary: 'False'
+- Id: 173
+  Name: Cleffa
+  Type 1: Fairy
+  Type 2: ''
+  Total: 218
+  HP: 50
+  Attack: 25
+  Defense: 28
+  Sp. Atk: 45
+  Sp. Def: 55
+  Speed: 15
+  Generation: 2
+  Legendary: 'False'
+- Id: 333
+  Name: Swablu
+  Type 1: Normal
+  Type 2: Flying
+  Total: 310
+  HP: 45
+  Attack: 40
+  Defense: 60
+  Sp. Atk: 40
+  Sp. Def: 75
+  Speed: 50
+  Generation: 3
+  Legendary: 'False'
+- Id: 180
+  Name: Flaaffy
+  Type 1: Electric
+  Type 2: ''
+  Total: 365
+  HP: 70
+  Attack: 55
+  Defense: 55
+  Sp. Atk: 80
+  Sp. Def: 60
+  Speed: 45
+  Generation: 2
+  Legendary: 'False'
+- Id: 606
+  Name: Beheeyem
+  Type 1: Psychic
+  Type 2: ''
+  Total: 485
+  HP: 75
+  Attack: 75
+  Defense: 75
+  Sp. Atk: 125
+  Sp. Def: 95
+  Speed: 40
+  Generation: 5
+  Legendary: 'False'
+- Id: 496
+  Name: Servine
+  Type 1: Grass
+  Type 2: ''
+  Total: 413
+  HP: 60
+  Attack: 60
+  Defense: 75
+  Sp. Atk: 60
+  Sp. Def: 75
+  Speed: 83
+  Generation: 5
+  Legendary: 'False'
+- Id: 647
+  Name: KeldeoOrdinary Forme
+  Type 1: Water
+  Type 2: Fighting
+  Total: 580
+  HP: 91
+  Attack: 72
+  Defense: 90
+  Sp. Atk: 129
+  Sp. Def: 90
+  Speed: 108
+  Generation: 5
+  Legendary: 'False'
+- Id: 174
+  Name: Igglybuff
+  Type 1: Normal
+  Type 2: Fairy
+  Total: 210
+  HP: 90
+  Attack: 30
+  Defense: 15
+  Sp. Atk: 40
+  Sp. Def: 20
+  Speed: 15
+  Generation: 2
+  Legendary: 'False'
+- Id: 579
+  Name: Reuniclus
+  Type 1: Psychic
+  Type 2: ''
+  Total: 490
+  HP: 110
+  Attack: 65
+  Defense: 75
+  Sp. Atk: 125
+  Sp. Def: 85
+  Speed: 30
+  Generation: 5
+  Legendary: 'False'
+- Id: 111
+  Name: Rhyhorn
+  Type 1: Ground
+  Type 2: Rock
+  Total: 345
+  HP: 80
+  Attack: 85
+  Defense: 95
+  Sp. Atk: 30
+  Sp. Def: 30
+  Speed: 25
+  Generation: 1
+  Legendary: 'False'
+- Id: 196
+  Name: Espeon
+  Type 1: Psychic
+  Type 2: ''
+  Total: 525
+  HP: 65
+  Attack: 65
+  Defense: 60
+  Sp. Atk: 130
+  Sp. Def: 95
+  Speed: 110
+  Generation: 2
+  Legendary: 'False'
+- Id: 547
+  Name: Whimsicott
+  Type 1: Grass
+  Type 2: Fairy
+  Total: 480
+  HP: 60
+  Attack: 67
+  Defense: 85
+  Sp. Atk: 77
+  Sp. Def: 75
+  Speed: 116
+  Generation: 5
+  Legendary: 'False'
+- Id: 287
+  Name: Slakoth
+  Type 1: Normal
+  Type 2: ''
+  Total: 280
+  HP: 60
+  Attack: 60
+  Defense: 60
+  Sp. Atk: 35
+  Sp. Def: 35
+  Speed: 30
+  Generation: 3
+  Legendary: 'False'
+- Id: 646
+  Name: Kyurem
+  Type 1: Dragon
+  Type 2: Ice
+  Total: 660
+  HP: 125
+  Attack: 130
+  Defense: 90
+  Sp. Atk: 130
+  Sp. Def: 90
+  Speed: 95
+  Generation: 5
+  Legendary: 'True'
+- Id: 488
+  Name: Cresselia
+  Type 1: Psychic
+  Type 2: ''
+  Total: 600
+  HP: 120
+  Attack: 70
+  Defense: 120
+  Sp. Atk: 75
+  Sp. Def: 130
+  Speed: 85
+  Generation: 4
+  Legendary: 'False'
+- Id: 432
+  Name: Purugly
+  Type 1: Normal
+  Type 2: ''
+  Total: 452
+  HP: 71
+  Attack: 82
+  Defense: 64
+  Sp. Atk: 64
+  Sp. Def: 59
+  Speed: 112
+  Generation: 4
+  Legendary: 'False'
+- Id: 569
+  Name: Garbodor
+  Type 1: Poison
+  Type 2: ''
+  Total: 474
+  HP: 80
+  Attack: 95
+  Defense: 82
+  Sp. Atk: 60
+  Sp. Def: 82
+  Speed: 75
+  Generation: 5
+  Legendary: 'False'
+- Id: 548
+  Name: Petilil
+  Type 1: Grass
+  Type 2: ''
+  Total: 280
+  HP: 45
+  Attack: 35
+  Defense: 50
+  Sp. Atk: 70
+  Sp. Def: 50
+  Speed: 30
+  Generation: 5
+  Legendary: 'False'
+- Id: 354
+  Name: Banette
+  Type 1: Ghost
+  Type 2: ''
+  Total: 455
+  HP: 64
+  Attack: 115
+  Defense: 65
+  Sp. Atk: 83
+  Sp. Def: 63
+  Speed: 65
+  Generation: 3
+  Legendary: 'False'
+- Id: 364
+  Name: Sealeo
+  Type 1: Ice
+  Type 2: Water
+  Total: 410
+  HP: 90
+  Attack: 60
+  Defense: 70
+  Sp. Atk: 75
+  Sp. Def: 70
+  Speed: 45
+  Generation: 3
+  Legendary: 'False'
+- Id: 1
+  Name: Bulbasaur
+  Type 1: Grass
+  Type 2: Poison
+  Total: 318
+  HP: 45
+  Attack: 49
+  Defense: 49
+  Sp. Atk: 65
+  Sp. Def: 65
+  Speed: 45
+  Generation: 1
+  Legendary: 'False'
+- Id: 623
+  Name: Golurk
+  Type 1: Ground
+  Type 2: Ghost
+  Total: 483
+  HP: 89
+  Attack: 124
+  Defense: 80
+  Sp. Atk: 55
+  Sp. Def: 80
+  Speed: 55
+  Generation: 5
+  Legendary: 'False'
+- Id: 577
+  Name: Solosis
+  Type 1: Psychic
+  Type 2: ''
+  Total: 290
+  HP: 45
+  Attack: 30
+  Defense: 40
+  Sp. Atk: 105
+  Sp. Def: 50
+  Speed: 20
+  Generation: 5
+  Legendary: 'False'
+- Id: 236
+  Name: Tyrogue
+  Type 1: Fighting
+  Type 2: ''
+  Total: 210
+  HP: 35
+  Attack: 35
+  Defense: 35
+  Sp. Atk: 35
+  Sp. Def: 35
+  Speed: 35
+  Generation: 2
+  Legendary: 'False'
+- Id: 453
+  Name: Croagunk
+  Type 1: Poison
+  Type 2: Fighting
+  Total: 300
+  HP: 48
+  Attack: 61
+  Defense: 40
+  Sp. Atk: 61
+  Sp. Def: 40
+  Speed: 50
+  Generation: 4
+  Legendary: 'False'
+- Id: 163
+  Name: Hoothoot
+  Type 1: Normal
+  Type 2: Flying
+  Total: 262
+  HP: 60
+  Attack: 30
+  Defense: 30
+  Sp. Atk: 36
+  Sp. Def: 56
+  Speed: 50
+  Generation: 2
+  Legendary: 'False'
+- Id: 175
+  Name: Togepi
+  Type 1: Fairy
+  Type 2: ''
+  Total: 245
+  HP: 35
+  Attack: 20
+  Defense: 65
+  Sp. Atk: 40
+  Sp. Def: 65
+  Speed: 20
+  Generation: 2
+  Legendary: 'False'
+- Id: 208
+  Name: Steelix
+  Type 1: Steel
+  Type 2: Ground
+  Total: 510
+  HP: 75
+  Attack: 85
+  Defense: 200
+  Sp. Atk: 55
+  Sp. Def: 65
+  Speed: 30
+  Generation: 2
+  Legendary: 'False'
+- Id: 301
+  Name: Delcatty
+  Type 1: Normal
+  Type 2: ''
+  Total: 380
+  HP: 70
+  Attack: 65
+  Defense: 65
+  Sp. Atk: 55
+  Sp. Def: 55
+  Speed: 70
+  Generation: 3
+  Legendary: 'False'
+- Id: 417
+  Name: Pachirisu
+  Type 1: Electric
+  Type 2: ''
+  Total: 405
+  HP: 60
+  Attack: 45
+  Defense: 70
+  Sp. Atk: 45
+  Sp. Def: 90
+  Speed: 95
+  Generation: 4
+  Legendary: 'False'
+- Id: 188
+  Name: Skiploom
+  Type 1: Grass
+  Type 2: Flying
+  Total: 340
+  HP: 55
+  Attack: 45
+  Defense: 50
+  Sp. Atk: 45
+  Sp. Def: 65
+  Speed: 80
+  Generation: 2
+  Legendary: 'False'
+- Id: 223
+  Name: Remoraid
+  Type 1: Water
+  Type 2: ''
+  Total: 300
+  HP: 35
+  Attack: 65
+  Defense: 35
+  Sp. Atk: 65
+  Sp. Def: 35
+  Speed: 65
+  Generation: 2
+  Legendary: 'False'
+- Id: 523
+  Name: Zebstrika
+  Type 1: Electric
+  Type 2: ''
+  Total: 497
+  HP: 75
+  Attack: 100
+  Defense: 63
+  Sp. Atk: 80
+  Sp. Def: 63
+  Speed: 116
+  Generation: 5
+  Legendary: 'False'
+- Id: 543
+  Name: Venipede
+  Type 1: Bug
+  Type 2: Poison
+  Total: 260
+  HP: 30
+  Attack: 45
+  Defense: 59
+  Sp. Atk: 30
+  Sp. Def: 39
+  Speed: 57
+  Generation: 5
+  Legendary: 'False'
+- Id: 562
+  Name: Yamask
+  Type 1: Ghost
+  Type 2: ''
+  Total: 303
+  HP: 38
+  Attack: 30
+  Defense: 85
+  Sp. Atk: 55
+  Sp. Def: 65
+  Speed: 30
+  Generation: 5
+  Legendary: 'False'
+- Id: 92
+  Name: Gastly
+  Type 1: Ghost
+  Type 2: Poison
+  Total: 310
+  HP: 30
+  Attack: 35
+  Defense: 30
+  Sp. Atk: 100
+  Sp. Def: 35
+  Speed: 80
+  Generation: 1
+  Legendary: 'False'
+- Id: 666
+  Name: Vivillon
+  Type 1: Bug
+  Type 2: Flying
+  Total: 411
+  HP: 80
+  Attack: 52
+  Defense: 50
+  Sp. Atk: 90
+  Sp. Def: 50
+  Speed: 89
+  Generation: 6
+  Legendary: 'False'
+- Id: 254
+  Name: Sceptile
+  Type 1: Grass
+  Type 2: ''
+  Total: 530
+  HP: 70
+  Attack: 85
+  Defense: 65
+  Sp. Atk: 105
+  Sp. Def: 85
+  Speed: 120
+  Generation: 3
+  Legendary: 'False'
+- Id: 479
+  Name: Rotom
+  Type 1: Electric
+  Type 2: Ghost
+  Total: 440
+  HP: 50
+  Attack: 50
+  Defense: 77
+  Sp. Atk: 95
+  Sp. Def: 77
+  Speed: 91
+  Generation: 4
+  Legendary: 'False'
+- Id: 371
+  Name: Bagon
+  Type 1: Dragon
+  Type 2: ''
+  Total: 300
+  HP: 45
+  Attack: 75
+  Defense: 60
+  Sp. Atk: 40
+  Sp. Def: 30
+  Speed: 50
+  Generation: 3
+  Legendary: 'False'
+- Id: 304
+  Name: Aron
+  Type 1: Steel
+  Type 2: Rock
+  Total: 330
+  HP: 50
+  Attack: 70
+  Defense: 100
+  Sp. Atk: 40
+  Sp. Def: 40
+  Speed: 30
+  Generation: 3
+  Legendary: 'False'
+- Id: 645
+  Name: LandorusTherian Forme
+  Type 1: Ground
+  Type 2: Flying
+  Total: 600
+  HP: 89
+  Attack: 145
+  Defense: 90
+  Sp. Atk: 105
+  Sp. Def: 80
+  Speed: 91
+  Generation: 5
+  Legendary: 'True'
+- Id: 456
+  Name: Finneon
+  Type 1: Water
+  Type 2: ''
+  Total: 330
+  HP: 49
+  Attack: 49
+  Defense: 56
+  Sp. Atk: 49
+  Sp. Def: 61
+  Speed: 66
+  Generation: 4
+  Legendary: 'False'
+- Id: 563
+  Name: Cofagrigus
+  Type 1: Ghost
+  Type 2: ''
+  Total: 483
+  HP: 58
+  Attack: 50
+  Defense: 145
+  Sp. Atk: 95
+  Sp. Def: 105
+  Speed: 30
+  Generation: 5
+  Legendary: 'False'
+- Id: 30
+  Name: Nidorina
+  Type 1: Poison
+  Type 2: ''
+  Total: 365
+  HP: 70
+  Attack: 62
+  Defense: 67
+  Sp. Atk: 55
+  Sp. Def: 55
+  Speed: 56
+  Generation: 1
+  Legendary: 'False'
+- Id: 98
+  Name: Krabby
+  Type 1: Water
+  Type 2: ''
+  Total: 325
+  HP: 30
+  Attack: 105
+  Defense: 90
+  Sp. Atk: 25
+  Sp. Def: 25
+  Speed: 50
+  Generation: 1
+  Legendary: 'False'
+- Id: 451
+  Name: Skorupi
+  Type 1: Poison
+  Type 2: Bug
+  Total: 330
+  HP: 40
+  Attack: 50
+  Defense: 90
+  Sp. Atk: 30
+  Sp. Def: 55
+  Speed: 65
+  Generation: 4
+  Legendary: 'False'
+- Id: 72
+  Name: Tentacool
+  Type 1: Water
+  Type 2: Poison
+  Total: 335
+  HP: 40
+  Attack: 40
+  Defense: 35
+  Sp. Atk: 50
+  Sp. Def: 100
+  Speed: 70
+  Generation: 1
+  Legendary: 'False'
+- Id: 295
+  Name: Exploud
+  Type 1: Normal
+  Type 2: ''
+  Total: 490
+  HP: 104
+  Attack: 91
+  Defense: 63
+  Sp. Atk: 91
+  Sp. Def: 73
+  Speed: 68
+  Generation: 3
+  Legendary: 'False'
+- Id: 672
+  Name: Skiddo
+  Type 1: Grass
+  Type 2: ''
+  Total: 350
+  HP: 66
+  Attack: 65
+  Defense: 48
+  Sp. Atk: 62
+  Sp. Def: 57
+  Speed: 52
+  Generation: 6
+  Legendary: 'False'
+- Id: 383
+  Name: Groudon
+  Type 1: Ground
+  Type 2: ''
+  Total: 670
+  HP: 100
+  Attack: 150
+  Defense: 140
+  Sp. Atk: 100
+  Sp. Def: 90
+  Speed: 90
+  Generation: 3
+  Legendary: 'True'
+- Id: 176
+  Name: Togetic
+  Type 1: Fairy
+  Type 2: Flying
+  Total: 405
+  HP: 55
+  Attack: 40
+  Defense: 85
+  Sp. Atk: 80
+  Sp. Def: 105
+  Speed: 40
+  Generation: 2
+  Legendary: 'False'
+- Id: 369
+  Name: Relicanth
+  Type 1: Water
+  Type 2: Rock
+  Total: 485
+  HP: 100
+  Attack: 90
+  Defense: 130
+  Sp. Atk: 45
+  Sp. Def: 65
+  Speed: 55
+  Generation: 3
+  Legendary: 'False'
+- Id: 198
+  Name: Murkrow
+  Type 1: Dark
+  Type 2: Flying
+  Total: 405
+  HP: 60
+  Attack: 85
+  Defense: 42
+  Sp. Atk: 85
+  Sp. Def: 42
+  Speed: 91
+  Generation: 2
+  Legendary: 'False'
+- Id: 257
+  Name: BlazikenMega Blaziken
+  Type 1: Fire
+  Type 2: Fighting
+  Total: 630
+  HP: 80
+  Attack: 160
+  Defense: 80
+  Sp. Atk: 130
+  Sp. Def: 80
+  Speed: 100
+  Generation: 3
+  Legendary: 'False'
+- Id: 88
+  Name: Grimer
+  Type 1: Poison
+  Type 2: ''
+  Total: 325
+  HP: 80
+  Attack: 80
+  Defense: 50
+  Sp. Atk: 40
+  Sp. Def: 50
+  Speed: 25
+  Generation: 1
+  Legendary: 'False'
+- Id: 62
+  Name: Poliwrath
+  Type 1: Water
+  Type 2: Fighting
+  Total: 510
+  HP: 90
+  Attack: 95
+  Defense: 95
+  Sp. Atk: 70
+  Sp. Def: 90
+  Speed: 70
+  Generation: 1
+  Legendary: 'False'
+- Id: 587
+  Name: Emolga
+  Type 1: Electric
+  Type 2: Flying
+  Total: 428
+  HP: 55
+  Attack: 75
+  Defense: 60
+  Sp. Atk: 75
+  Sp. Def: 60
+  Speed: 103
+  Generation: 5
+  Legendary: 'False'
+- Id: 313
+  Name: Volbeat
+  Type 1: Bug
+  Type 2: ''
+  Total: 400
+  HP: 65
+  Attack: 73
+  Defense: 55
+  Sp. Atk: 47
+  Sp. Def: 75
+  Speed: 85
+  Generation: 3
+  Legendary: 'False'
+- Id: 658
+  Name: Greninja
+  Type 1: Water
+  Type 2: Dark
+  Total: 530
+  HP: 72
+  Attack: 95
+  Defense: 67
+  Sp. Atk: 103
+  Sp. Def: 71
+  Speed: 122
+  Generation: 6
+  Legendary: 'False'
+- Id: 505
+  Name: Watchog
+  Type 1: Normal
+  Type 2: ''
+  Total: 420
+  HP: 60
+  Attack: 85
+  Defense: 69
+  Sp. Atk: 60
+  Sp. Def: 69
+  Speed: 77
+  Generation: 5
+  Legendary: 'False'
+- Id: 305
+  Name: Lairon
+  Type 1: Steel
+  Type 2: Rock
+  Total: 430
+  HP: 60
+  Attack: 90
+  Defense: 140
+  Sp. Atk: 50
+  Sp. Def: 50
+  Speed: 40
+  Generation: 3
+  Legendary: 'False'
+- Id: 142
+  Name: Aerodactyl
+  Type 1: Rock
+  Type 2: Flying
+  Total: 515
+  HP: 80
+  Attack: 105
+  Defense: 65
+  Sp. Atk: 60
+  Sp. Def: 75
+  Speed: 130
+  Generation: 1
+  Legendary: 'False'
+- Id: 463
+  Name: Lickilicky
+  Type 1: Normal
+  Type 2: ''
+  Total: 515
+  HP: 110
+  Attack: 85
+  Defense: 95
+  Sp. Atk: 80
+  Sp. Def: 95
+  Speed: 50
+  Generation: 4
+  Legendary: 'False'
+- Id: 621
+  Name: Druddigon
+  Type 1: Dragon
+  Type 2: ''
+  Total: 485
+  HP: 77
+  Attack: 120
+  Defense: 90
+  Sp. Atk: 60
+  Sp. Def: 90
+  Speed: 48
+  Generation: 5
+  Legendary: 'False'
+- Id: 311
+  Name: Plusle
+  Type 1: Electric
+  Type 2: ''
+  Total: 405
+  HP: 60
+  Attack: 50
+  Defense: 40
+  Sp. Atk: 85
+  Sp. Def: 75
+  Speed: 95
+  Generation: 3
+  Legendary: 'False'
+- Id: 5
+  Name: Charmeleon
+  Type 1: Fire
+  Type 2: ''
+  Total: 405
+  HP: 58
+  Attack: 64
+  Defense: 58
+  Sp. Atk: 80
+  Sp. Def: 65
+  Speed: 80
+  Generation: 1
+  Legendary: 'False'
+- Id: 129
+  Name: Magikarp
+  Type 1: Water
+  Type 2: ''
+  Total: 200
+  HP: 20
+  Attack: 10
+  Defense: 55
+  Sp. Atk: 15
+  Sp. Def: 20
+  Speed: 80
+  Generation: 1
+  Legendary: 'False'
+- Id: 211
+  Name: Qwilfish
+  Type 1: Water
+  Type 2: Poison
+  Total: 430
+  HP: 65
+  Attack: 95
+  Defense: 75
+  Sp. Atk: 55
+  Sp. Def: 55
+  Speed: 85
+  Generation: 2
+  Legendary: 'False'
+- Id: 118
+  Name: Goldeen
+  Type 1: Water
+  Type 2: ''
+  Total: 320
+  HP: 45
+  Attack: 67
+  Defense: 60
+  Sp. Atk: 35
+  Sp. Def: 50
+  Speed: 63
+  Generation: 1
+  Legendary: 'False'
+- Id: 391
+  Name: Monferno
+  Type 1: Fire
+  Type 2: Fighting
+  Total: 405
+  HP: 64
+  Attack: 78
+  Defense: 52
+  Sp. Atk: 78
+  Sp. Def: 52
+  Speed: 81
+  Generation: 4
+  Legendary: 'False'
+- Id: 483
+  Name: Dialga
+  Type 1: Steel
+  Type 2: Dragon
+  Total: 680
+  HP: 100
+  Attack: 120
+  Defense: 120
+  Sp. Atk: 150
+  Sp. Def: 100
+  Speed: 90
+  Generation: 4
+  Legendary: 'True'
+- Id: 410
+  Name: Shieldon
+  Type 1: Rock
+  Type 2: Steel
+  Total: 350
+  HP: 30
+  Attack: 42
+  Defense: 118
+  Sp. Atk: 42
+  Sp. Def: 88
+  Speed: 30
+  Generation: 4
+  Legendary: 'False'
+- Id: 718
+  Name: Zygarde50% Forme
+  Type 1: Dragon
+  Type 2: Ground
+  Total: 600
+  HP: 108
+  Attack: 100
+  Defense: 121
+  Sp. Atk: 81
+  Sp. Def: 95
+  Speed: 95
+  Generation: 6
+  Legendary: 'True'
+- Id: 120
+  Name: Staryu
+  Type 1: Water
+  Type 2: ''
+  Total: 340
+  HP: 30
+  Attack: 45
+  Defense: 55
+  Sp. Atk: 70
+  Sp. Def: 55
+  Speed: 85
+  Generation: 1
+  Legendary: 'False'
+- Id: 386
+  Name: DeoxysNormal Forme
+  Type 1: Psychic
+  Type 2: ''
+  Total: 600
+  HP: 50
+  Attack: 150
+  Defense: 50
+  Sp. Atk: 150
+  Sp. Def: 50
+  Speed: 150
+  Generation: 3
+  Legendary: 'True'
+- Id: 170
+  Name: Chinchou
+  Type 1: Water
+  Type 2: Electric
+  Total: 330
+  HP: 75
+  Attack: 38
+  Defense: 38
+  Sp. Atk: 56
+  Sp. Def: 56
+  Speed: 67
+  Generation: 2
+  Legendary: 'False'
+- Id: 96
+  Name: Drowzee
+  Type 1: Psychic
+  Type 2: ''
+  Total: 328
+  HP: 60
+  Attack: 48
+  Defense: 45
+  Sp. Atk: 43
+  Sp. Def: 90
+  Speed: 42
+  Generation: 1
+  Legendary: 'False'
+- Id: 260
+  Name: SwampertMega Swampert
+  Type 1: Water
+  Type 2: Ground
+  Total: 635
+  HP: 100
+  Attack: 150
+  Defense: 110
+  Sp. Atk: 95
+  Sp. Def: 110
+  Speed: 70
+  Generation: 3
+  Legendary: 'False'
+- Id: 263
+  Name: Zigzagoon
+  Type 1: Normal
+  Type 2: ''
+  Total: 240
+  HP: 38
+  Attack: 30
+  Defense: 41
+  Sp. Atk: 30
+  Sp. Def: 41
+  Speed: 60
+  Generation: 3
+  Legendary: 'False'
+- Id: 475
+  Name: GalladeMega Gallade
+  Type 1: Psychic
+  Type 2: Fighting
+  Total: 618
+  HP: 68
+  Attack: 165
+  Defense: 95
+  Sp. Atk: 65
+  Sp. Def: 115
+  Speed: 110
+  Generation: 4
+  Legendary: 'False'
+- Id: 680
+  Name: Doublade
+  Type 1: Steel
+  Type 2: Ghost
+  Total: 448
+  HP: 59
+  Attack: 110
+  Defense: 150
+  Sp. Atk: 45
+  Sp. Def: 49
+  Speed: 35
+  Generation: 6
+  Legendary: 'False'
+- Id: 386
+  Name: DeoxysDefense Forme
+  Type 1: Psychic
+  Type 2: ''
+  Total: 600
+  HP: 50
+  Attack: 70
+  Defense: 160
+  Sp. Atk: 70
+  Sp. Def: 160
+  Speed: 90
+  Generation: 3
+  Legendary: 'True'
+- Id: 419
+  Name: Floatzel
+  Type 1: Water
+  Type 2: ''
+  Total: 495
+  HP: 85
+  Attack: 105
+  Defense: 55
+  Sp. Atk: 85
+  Sp. Def: 50
+  Speed: 115
+  Generation: 4
+  Legendary: 'False'
+- Id: 293
+  Name: Whismur
+  Type 1: Normal
+  Type 2: ''
+  Total: 240
+  HP: 64
+  Attack: 51
+  Defense: 23
+  Sp. Atk: 51
+  Sp. Def: 23
+  Speed: 28
+  Generation: 3
+  Legendary: 'False'
+- Id: 704
+  Name: Goomy
+  Type 1: Dragon
+  Type 2: ''
+  Total: 300
+  HP: 45
+  Attack: 50
+  Defense: 35
+  Sp. Atk: 55
+  Sp. Def: 75
+  Speed: 40
+  Generation: 6
+  Legendary: 'False'
+- Id: 368
+  Name: Gorebyss
+  Type 1: Water
+  Type 2: ''
+  Total: 485
+  HP: 55
+  Attack: 84
+  Defense: 105
+  Sp. Atk: 114
+  Sp. Def: 75
+  Speed: 52
+  Generation: 3
+  Legendary: 'False'
+- Id: 712
+  Name: Bergmite
+  Type 1: Ice
+  Type 2: ''
+  Total: 304
+  HP: 55
+  Attack: 69
+  Defense: 85
+  Sp. Atk: 32
+  Sp. Def: 35
+  Speed: 28
+  Generation: 6
+  Legendary: 'False'
+- Id: 442
+  Name: Spiritomb
+  Type 1: Ghost
+  Type 2: Dark
+  Total: 485
+  HP: 50
+  Attack: 92
+  Defense: 108
+  Sp. Atk: 92
+  Sp. Def: 108
+  Speed: 35
+  Generation: 4
+  Legendary: 'False'
+- Id: 447
+  Name: Riolu
+  Type 1: Fighting
+  Type 2: ''
+  Total: 285
+  HP: 40
+  Attack: 70
+  Defense: 40
+  Sp. Atk: 35
+  Sp. Def: 40
+  Speed: 60
+  Generation: 4
+  Legendary: 'False'
+- Id: 121
+  Name: Starmie
+  Type 1: Water
+  Type 2: Psychic
+  Total: 520
+  HP: 60
+  Attack: 75
+  Defense: 85
+  Sp. Atk: 100
+  Sp. Def: 85
+  Speed: 115
+  Generation: 1
+  Legendary: 'False'
+- Id: 124
+  Name: Jynx
+  Type 1: Ice
+  Type 2: Psychic
+  Total: 455
+  HP: 65
+  Attack: 50
+  Defense: 35
+  Sp. Atk: 115
+  Sp. Def: 95
+  Speed: 95
+  Generation: 1
+  Legendary: 'False'
+- Id: 318
+  Name: Carvanha
+  Type 1: Water
+  Type 2: Dark
+  Total: 305
+  HP: 45
+  Attack: 90
+  Defense: 20
+  Sp. Atk: 65
+  Sp. Def: 20
+  Speed: 65
+  Generation: 3
+  Legendary: 'False'
+- Id: 4
+  Name: Charmander
+  Type 1: Fire
+  Type 2: ''
+  Total: 309
+  HP: 39
+  Attack: 52
+  Defense: 43
+  Sp. Atk: 60
+  Sp. Def: 50
+  Speed: 65
+  Generation: 1
+  Legendary: 'False'
+- Id: 86
+  Name: Seel
+  Type 1: Water
+  Type 2: ''
+  Total: 325
+  HP: 65
+  Attack: 45
+  Defense: 55
+  Sp. Atk: 45
+  Sp. Def: 70
+  Speed: 45
+  Generation: 1
+  Legendary: 'False'
+- Id: 267
+  Name: Beautifly
+  Type 1: Bug
+  Type 2: Flying
+  Total: 395
+  HP: 60
+  Attack: 70
+  Defense: 50
+  Sp. Atk: 100
+  Sp. Def: 50
+  Speed: 65
+  Generation: 3
+  Legendary: 'False'
+- Id: 641
+  Name: TornadusIncarnate Forme
+  Type 1: Flying
+  Type 2: ''
+  Total: 580
+  HP: 79
+  Attack: 115
+  Defense: 70
+  Sp. Atk: 125
+  Sp. Def: 80
+  Speed: 111
+  Generation: 5
+  Legendary: 'True'
+- Id: 136
+  Name: Flareon
+  Type 1: Fire
+  Type 2: ''
+  Total: 525
+  HP: 65
+  Attack: 130
+  Defense: 60
+  Sp. Atk: 95
+  Sp. Def: 110
+  Speed: 65
+  Generation: 1
+  Legendary: 'False'
+- Id: 103
+  Name: Exeggutor
+  Type 1: Grass
+  Type 2: Psychic
+  Total: 520
+  HP: 95
+  Attack: 95
+  Defense: 85
+  Sp. Atk: 125
+  Sp. Def: 65
+  Speed: 55
+  Generation: 1
+  Legendary: 'False'
+- Id: 109
+  Name: Koffing
+  Type 1: Poison
+  Type 2: ''
+  Total: 340
+  HP: 40
+  Attack: 65
+  Defense: 95
+  Sp. Atk: 60
+  Sp. Def: 45
+  Speed: 35
+  Generation: 1
+  Legendary: 'False'
+- Id: 524
+  Name: Roggenrola
+  Type 1: Rock
+  Type 2: ''
+  Total: 280
+  HP: 55
+  Attack: 75
+  Defense: 85
+  Sp. Atk: 25
+  Sp. Def: 25
+  Speed: 15
+  Generation: 5
+  Legendary: 'False'
+- Id: 248
+  Name: Tyranitar
+  Type 1: Rock
+  Type 2: Dark
+  Total: 600
+  HP: 100
+  Attack: 134
+  Defense: 110
+  Sp. Atk: 95
+  Sp. Def: 100
+  Speed: 61
+  Generation: 2
+  Legendary: 'False'
+- Id: 620
+  Name: Mienshao
+  Type 1: Fighting
+  Type 2: ''
+  Total: 510
+  HP: 65
+  Attack: 125
+  Defense: 60
+  Sp. Atk: 95
+  Sp. Def: 60
+  Speed: 105
+  Generation: 5
+  Legendary: 'False'
+- Id: 637
+  Name: Volcarona
+  Type 1: Bug
+  Type 2: Fire
+  Total: 550
+  HP: 85
+  Attack: 60
+  Defense: 65
+  Sp. Atk: 135
+  Sp. Def: 105
+  Speed: 100
+  Generation: 5
+  Legendary: 'False'
+- Id: 452
+  Name: Drapion
+  Type 1: Poison
+  Type 2: Dark
+  Total: 500
+  HP: 70
+  Attack: 90
+  Defense: 110
+  Sp. Atk: 60
+  Sp. Def: 75
+  Speed: 95
+  Generation: 4
+  Legendary: 'False'
+- Id: 595
+  Name: Joltik
+  Type 1: Bug
+  Type 2: Electric
+  Total: 319
+  HP: 50
+  Attack: 47
+  Defense: 50
+  Sp. Atk: 57
+  Sp. Def: 50
+  Speed: 65
+  Generation: 5
+  Legendary: 'False'
+- Id: 685
+  Name: Slurpuff
+  Type 1: Fairy
+  Type 2: ''
+  Total: 480
+  HP: 82
+  Attack: 80
+  Defense: 86
+  Sp. Atk: 85
+  Sp. Def: 75
+  Speed: 72
+  Generation: 6
+  Legendary: 'False'
+- Id: 237
+  Name: Hitmontop
+  Type 1: Fighting
+  Type 2: ''
+  Total: 455
+  HP: 50
+  Attack: 95
+  Defense: 95
+  Sp. Atk: 35
+  Sp. Def: 110
+  Speed: 70
+  Generation: 2
+  Legendary: 'False'
+- Id: 6
+  Name: Charizard
+  Type 1: Fire
+  Type 2: Flying
+  Total: 534
+  HP: 78
+  Attack: 84
+  Defense: 78
+  Sp. Atk: 109
+  Sp. Def: 85
+  Speed: 100
+  Generation: 1
+  Legendary: 'False'
+- Id: 572
+  Name: Minccino
+  Type 1: Normal
+  Type 2: ''
+  Total: 300
+  HP: 55
+  Attack: 50
+  Defense: 40
+  Sp. Atk: 40
+  Sp. Def: 40
+  Speed: 75
+  Generation: 5
+  Legendary: 'False'
+- Id: 214
+  Name: Heracross
+  Type 1: Bug
+  Type 2: Fighting
+  Total: 500
+  HP: 80
+  Attack: 125
+  Defense: 75
+  Sp. Atk: 40
+  Sp. Def: 95
+  Speed: 85
+  Generation: 2
+  Legendary: 'False'
+- Id: 643
+  Name: Reshiram
+  Type 1: Dragon
+  Type 2: Fire
+  Total: 680
+  HP: 100
+  Attack: 120
+  Defense: 100
+  Sp. Atk: 150
+  Sp. Def: 120
+  Speed: 90
+  Generation: 5
+  Legendary: 'True'
+- Id: 269
+  Name: Dustox
+  Type 1: Bug
+  Type 2: Poison
+  Total: 385
+  HP: 60
+  Attack: 50
+  Defense: 70
+  Sp. Atk: 50
+  Sp. Def: 90
+  Speed: 65
+  Generation: 3
+  Legendary: 'False'
+- Id: 531
+  Name: Audino
+  Type 1: Normal
+  Type 2: ''
+  Total: 445
+  HP: 103
+  Attack: 60
+  Defense: 86
+  Sp. Atk: 60
+  Sp. Def: 86
+  Speed: 50
+  Generation: 5
+  Legendary: 'False'
+- Id: 91
+  Name: Cloyster
+  Type 1: Water
+  Type 2: Ice
+  Total: 525
+  HP: 50
+  Attack: 95
+  Defense: 180
+  Sp. Atk: 85
+  Sp. Def: 45
+  Speed: 70
+  Generation: 1
+  Legendary: 'False'
+- Id: 608
+  Name: Lampent
+  Type 1: Ghost
+  Type 2: Fire
+  Total: 370
+  HP: 60
+  Attack: 40
+  Defense: 60
+  Sp. Atk: 95
+  Sp. Def: 60
+  Speed: 55
+  Generation: 5
+  Legendary: 'False'
+- Id: 479
+  Name: RotomFrost Rotom
+  Type 1: Electric
+  Type 2: Ice
+  Total: 520
+  HP: 50
+  Attack: 65
+  Defense: 107
+  Sp. Atk: 105
+  Sp. Def: 107
+  Speed: 86
+  Generation: 4
+  Legendary: 'False'
+- Id: 273
+  Name: Seedot
+  Type 1: Grass
+  Type 2: ''
+  Total: 220
+  HP: 40
+  Attack: 40
+  Defense: 50
+  Sp. Atk: 30
+  Sp. Def: 30
+  Speed: 30
+  Generation: 3
+  Legendary: 'False'
+- Id: 549
+  Name: Lilligant
+  Type 1: Grass
+  Type 2: ''
+  Total: 480
+  HP: 70
+  Attack: 60
+  Defense: 75
+  Sp. Atk: 110
+  Sp. Def: 75
+  Speed: 90
+  Generation: 5
+  Legendary: 'False'
+- Id: 545
+  Name: Scolipede
+  Type 1: Bug
+  Type 2: Poison
+  Total: 485
+  HP: 60
+  Attack: 100
+  Defense: 89
+  Sp. Atk: 55
+  Sp. Def: 69
+  Speed: 112
+  Generation: 5
+  Legendary: 'False'
+- Id: 132
+  Name: Ditto
+  Type 1: Normal
+  Type 2: ''
+  Total: 288
+  HP: 48
+  Attack: 48
+  Defense: 48
+  Sp. Atk: 48
+  Sp. Def: 48
+  Speed: 48
+  Generation: 1
+  Legendary: 'False'
+- Id: 460
+  Name: Abomasnow
+  Type 1: Grass
+  Type 2: Ice
+  Total: 494
+  HP: 90
+  Attack: 92
+  Defense: 75
+  Sp. Atk: 92
+  Sp. Def: 85
+  Speed: 60
+  Generation: 4
+  Legendary: 'False'
+- Id: 139
+  Name: Omastar
+  Type 1: Rock
+  Type 2: Water
+  Total: 495
+  HP: 70
+  Attack: 60
+  Defense: 125
+  Sp. Atk: 115
+  Sp. Def: 70
+  Speed: 55
+  Generation: 1
+  Legendary: 'False'
+- Id: 639
+  Name: Terrakion
+  Type 1: Rock
+  Type 2: Fighting
+  Total: 580
+  HP: 91
+  Attack: 129
+  Defense: 90
+  Sp. Atk: 72
+  Sp. Def: 90
+  Speed: 108
+  Generation: 5
+  Legendary: 'True'
+- Id: 698
+  Name: Amaura
+  Type 1: Rock
+  Type 2: Ice
+  Total: 362
+  HP: 77
+  Attack: 59
+  Defense: 50
+  Sp. Atk: 67
+  Sp. Def: 63
+  Speed: 46
+  Generation: 6
+  Legendary: 'False'
+- Id: 570
+  Name: Zorua
+  Type 1: Dark
+  Type 2: ''
+  Total: 330
+  HP: 40
+  Attack: 65
+  Defense: 40
+  Sp. Atk: 80
+  Sp. Def: 40
+  Speed: 65
+  Generation: 5
+  Legendary: 'False'
+- Id: 428
+  Name: LopunnyMega Lopunny
+  Type 1: Normal
+  Type 2: Fighting
+  Total: 580
+  HP: 65
+  Attack: 136
+  Defense: 94
+  Sp. Atk: 54
+  Sp. Def: 96
+  Speed: 135
+  Generation: 4
+  Legendary: 'False'
+- Id: 382
+  Name: KyogrePrimal Kyogre
+  Type 1: Water
+  Type 2: ''
+  Total: 770
+  HP: 100
+  Attack: 150
+  Defense: 90
+  Sp. Atk: 180
+  Sp. Def: 160
+  Speed: 90
+  Generation: 3
+  Legendary: 'True'
+- Id: 386
+  Name: DeoxysSpeed Forme
+  Type 1: Psychic
+  Type 2: ''
+  Total: 600
+  HP: 50
+  Attack: 95
+  Defense: 90
+  Sp. Atk: 95
+  Sp. Def: 90
+  Speed: 180
+  Generation: 3
+  Legendary: 'True'
+- Id: 690
+  Name: Skrelp
+  Type 1: Poison
+  Type 2: Water
+  Total: 320
+  HP: 50
+  Attack: 60
+  Defense: 60
+  Sp. Atk: 60
+  Sp. Def: 60
+  Speed: 30
+  Generation: 6
+  Legendary: 'False'
+- Id: 25
+  Name: Pikachu
+  Type 1: Electric
+  Type 2: ''
+  Total: 320
+  HP: 35
+  Attack: 55
+  Defense: 40
+  Sp. Atk: 50
+  Sp. Def: 50
+  Speed: 90
+  Generation: 1
+  Legendary: 'False'
+- Id: 362
+  Name: GlalieMega Glalie
+  Type 1: Ice
+  Type 2: ''
+  Total: 580
+  HP: 80
+  Attack: 120
+  Defense: 80
+  Sp. Atk: 120
+  Sp. Def: 80
+  Speed: 100
+  Generation: 3
+  Legendary: 'False'
+- Id: 137
+  Name: Porygon
+  Type 1: Normal
+  Type 2: ''
+  Total: 395
+  HP: 65
+  Attack: 60
+  Defense: 70
+  Sp. Atk: 85
+  Sp. Def: 75
+  Speed: 40
+  Generation: 1
+  Legendary: 'False'
+- Id: 225
+  Name: Delibird
+  Type 1: Ice
+  Type 2: Flying
+  Total: 330
+  HP: 45
+  Attack: 55
+  Defense: 45
+  Sp. Atk: 65
+  Sp. Def: 45
+  Speed: 75
+  Generation: 2
+  Legendary: 'False'
+- Id: 101
+  Name: Electrode
+  Type 1: Electric
+  Type 2: ''
+  Total: 480
+  HP: 60
+  Attack: 50
+  Defense: 70
+  Sp. Atk: 80
+  Sp. Def: 80
+  Speed: 140
+  Generation: 1
+  Legendary: 'False'
+- Id: 105
+  Name: Marowak
+  Type 1: Ground
+  Type 2: ''
+  Total: 425
+  HP: 60
+  Attack: 80
+  Defense: 110
+  Sp. Atk: 50
+  Sp. Def: 80
+  Speed: 45
+  Generation: 1
+  Legendary: 'False'
+- Id: 144
+  Name: Articuno
+  Type 1: Ice
+  Type 2: Flying
+  Total: 580
+  HP: 90
+  Attack: 85
+  Defense: 100
+  Sp. Atk: 95
+  Sp. Def: 125
+  Speed: 85
+  Generation: 1
+  Legendary: 'True'
+- Id: 635
+  Name: Hydreigon
+  Type 1: Dark
+  Type 2: Dragon
+  Total: 600
+  HP: 92
+  Attack: 105
+  Defense: 90
+  Sp. Atk: 125
+  Sp. Def: 90
+  Speed: 98
+  Generation: 5
+  Legendary: 'False'
+- Id: 102
+  Name: Exeggcute
+  Type 1: Grass
+  Type 2: Psychic
+  Total: 325
+  HP: 60
+  Attack: 40
+  Defense: 80
+  Sp. Atk: 60
+  Sp. Def: 45
+  Speed: 40
+  Generation: 1
+  Legendary: 'False'
+- Id: 648
+  Name: MeloettaAria Forme
+  Type 1: Normal
+  Type 2: Psychic
+  Total: 600
+  HP: 100
+  Attack: 77
+  Defense: 77
+  Sp. Atk: 128
+  Sp. Def: 128
+  Speed: 90
+  Generation: 5
+  Legendary: 'False'
+- Id: 20
+  Name: Raticate
+  Type 1: Normal
+  Type 2: ''
+  Total: 413
+  HP: 55
+  Attack: 81
+  Defense: 60
+  Sp. Atk: 50
+  Sp. Def: 70
+  Speed: 97
+  Generation: 1
+  Legendary: 'False'
+- Id: 512
+  Name: Simisage
+  Type 1: Grass
+  Type 2: ''
+  Total: 498
+  HP: 75
+  Attack: 98
+  Defense: 63
+  Sp. Atk: 98
+  Sp. Def: 63
+  Speed: 101
+  Generation: 5
+  Legendary: 'False'
+- Id: 454
+  Name: Toxicroak
+  Type 1: Poison
+  Type 2: Fighting
+  Total: 490
+  HP: 83
+  Attack: 106
+  Defense: 65
+  Sp. Atk: 86
+  Sp. Def: 65
+  Speed: 85
+  Generation: 4
+  Legendary: 'False'
+- Id: 233
+  Name: Porygon2
+  Type 1: Normal
+  Type 2: ''
+  Total: 515
+  HP: 85
+  Attack: 80
+  Defense: 90
+  Sp. Atk: 105
+  Sp. Def: 95
+  Speed: 60
+  Generation: 2
+  Legendary: 'False'
+- Id: 675
+  Name: Pangoro
+  Type 1: Fighting
+  Type 2: Dark
+  Total: 495
+  HP: 95
+  Attack: 124
+  Defense: 78
+  Sp. Atk: 69
+  Sp. Def: 71
+  Speed: 58
+  Generation: 6
+  Legendary: 'False'
+- Id: 314
+  Name: Illumise
+  Type 1: Bug
+  Type 2: ''
+  Total: 400
+  HP: 65
+  Attack: 47
+  Defense: 55
+  Sp. Atk: 73
+  Sp. Def: 75
+  Speed: 85
+  Generation: 3
+  Legendary: 'False'
+- Id: 306
+  Name: AggronMega Aggron
+  Type 1: Steel
+  Type 2: ''
+  Total: 630
+  HP: 70
+  Attack: 140
+  Defense: 230
+  Sp. Atk: 60
+  Sp. Def: 80
+  Speed: 50
+  Generation: 3
+  Legendary: 'False'
+- Id: 665
+  Name: Spewpa
+  Type 1: Bug
+  Type 2: ''
+  Total: 213
+  HP: 45
+  Attack: 22
+  Defense: 60
+  Sp. Atk: 27
+  Sp. Def: 30
+  Speed: 29
+  Generation: 6
+  Legendary: 'False'
+- Id: 681
+  Name: AegislashShield Forme
+  Type 1: Steel
+  Type 2: Ghost
+  Total: 520
+  HP: 60
+  Attack: 50
+  Defense: 150
+  Sp. Atk: 50
+  Sp. Def: 150
+  Speed: 60
+  Generation: 6
+  Legendary: 'False'
+- Id: 408
+  Name: Cranidos
+  Type 1: Rock
+  Type 2: ''
+  Total: 350
+  HP: 67
+  Attack: 125
+  Defense: 40
+  Sp. Atk: 30
+  Sp. Def: 30
+  Speed: 58
+  Generation: 4
+  Legendary: 'False'
+- Id: 58
+  Name: Growlithe
+  Type 1: Fire
+  Type 2: ''
+  Total: 350
+  HP: 55
+  Attack: 70
+  Defense: 45
+  Sp. Atk: 70
+  Sp. Def: 50
+  Speed: 60
+  Generation: 1
+  Legendary: 'False'
+- Id: 55
+  Name: Golduck
+  Type 1: Water
+  Type 2: ''
+  Total: 500
+  HP: 80
+  Attack: 82
+  Defense: 78
+  Sp. Atk: 95
+  Sp. Def: 80
+  Speed: 85
+  Generation: 1
+  Legendary: 'False'
+- Id: 6
+  Name: CharizardMega Charizard X
+  Type 1: Fire
+  Type 2: Dragon
+  Total: 634
+  HP: 78
+  Attack: 130
+  Defense: 111
+  Sp. Atk: 130
+  Sp. Def: 85
+  Speed: 100
+  Generation: 1
+  Legendary: 'False'
+- Id: 470
+  Name: Leafeon
+  Type 1: Grass
+  Type 2: ''
+  Total: 525
+  HP: 65
+  Attack: 110
+  Defense: 130
+  Sp. Atk: 60
+  Sp. Def: 65
+  Speed: 95
+  Generation: 4
+  Legendary: 'False'
+- Id: 586
+  Name: Sawsbuck
+  Type 1: Normal
+  Type 2: Grass
+  Total: 475
+  HP: 80
+  Attack: 100
+  Defense: 70
+  Sp. Atk: 60
+  Sp. Def: 70
+  Speed: 95
+  Generation: 5
+  Legendary: 'False'
+- Id: 615
+  Name: Cryogonal
+  Type 1: Ice
+  Type 2: ''
+  Total: 485
+  HP: 70
+  Attack: 50
+  Defense: 30
+  Sp. Atk: 95
+  Sp. Def: 135
+  Speed: 105
+  Generation: 5
+  Legendary: 'False'
+- Id: 319
+  Name: SharpedoMega Sharpedo
+  Type 1: Water
+  Type 2: Dark
+  Total: 560
+  HP: 70
+  Attack: 140
+  Defense: 70
+  Sp. Atk: 110
+  Sp. Def: 65
+  Speed: 105
+  Generation: 3
+  Legendary: 'False'
+- Id: 400
+  Name: Bibarel
+  Type 1: Normal
+  Type 2: Water
+  Total: 410
+  HP: 79
+  Attack: 85
+  Defense: 60
+  Sp. Atk: 55
+  Sp. Def: 60
+  Speed: 71
+  Generation: 4
+  Legendary: 'False'
+- Id: 607
+  Name: Litwick
+  Type 1: Ghost
+  Type 2: Fire
+  Total: 275
+  HP: 50
+  Attack: 30
+  Defense: 55
+  Sp. Atk: 65
+  Sp. Def: 55
+  Speed: 20
+  Generation: 5
+  Legendary: 'False'
+- Id: 324
+  Name: Torkoal
+  Type 1: Fire
+  Type 2: ''
+  Total: 470
+  HP: 70
+  Attack: 85
+  Defense: 140
+  Sp. Atk: 85
+  Sp. Def: 70
+  Speed: 20
+  Generation: 3
+  Legendary: 'False'
+- Id: 165
+  Name: Ledyba
+  Type 1: Bug
+  Type 2: Flying
+  Total: 265
+  HP: 40
+  Attack: 20
+  Defense: 30
+  Sp. Atk: 40
+  Sp. Def: 80
+  Speed: 55
+  Generation: 2
+  Legendary: 'False'
+- Id: 94
+  Name: Gengar
+  Type 1: Ghost
+  Type 2: Poison
+  Total: 500
+  HP: 60
+  Attack: 65
+  Defense: 60
+  Sp. Atk: 130
+  Sp. Def: 75
+  Speed: 110
+  Generation: 1
+  Legendary: 'False'
+- Id: 720
+  Name: HoopaHoopa Confined
+  Type 1: Psychic
+  Type 2: Ghost
+  Total: 600
+  HP: 80
+  Attack: 110
+  Defense: 60
+  Sp. Atk: 150
+  Sp. Def: 130
+  Speed: 70
+  Generation: 6
+  Legendary: 'True'
+- Id: 428
+  Name: Lopunny
+  Type 1: Normal
+  Type 2: ''
+  Total: 480
+  HP: 65
+  Attack: 76
+  Defense: 84
+  Sp. Atk: 54
+  Sp. Def: 96
+  Speed: 105
+  Generation: 4
+  Legendary: 'False'
+- Id: 335
+  Name: Zangoose
+  Type 1: Normal
+  Type 2: ''
+  Total: 458
+  HP: 73
+  Attack: 115
+  Defense: 60
+  Sp. Atk: 60
+  Sp. Def: 60
+  Speed: 90
+  Generation: 3
+  Legendary: 'False'
+- Id: 14
+  Name: Kakuna
+  Type 1: Bug
+  Type 2: Poison
+  Total: 205
+  HP: 45
+  Attack: 25
+  Defense: 50
+  Sp. Atk: 25
+  Sp. Def: 25
+  Speed: 35
+  Generation: 1
+  Legendary: 'False'
+- Id: 622
+  Name: Golett
+  Type 1: Ground
+  Type 2: Ghost
+  Total: 303
+  HP: 59
+  Attack: 74
+  Defense: 50
+  Sp. Atk: 35
+  Sp. Def: 50
+  Speed: 35
+  Generation: 5
+  Legendary: 'False'
+- Id: 79
+  Name: Slowpoke
+  Type 1: Water
+  Type 2: Psychic
+  Total: 315
+  HP: 90
+  Attack: 65
+  Defense: 65
+  Sp. Atk: 40
+  Sp. Def: 40
+  Speed: 15
+  Generation: 1
+  Legendary: 'False'
+- Id: 459
+  Name: Snover
+  Type 1: Grass
+  Type 2: Ice
+  Total: 334
+  HP: 60
+  Attack: 62
+  Defense: 50
+  Sp. Atk: 62
+  Sp. Def: 60
+  Speed: 40
+  Generation: 4
+  Legendary: 'False'
+- Id: 487
+  Name: GiratinaOrigin Forme
+  Type 1: Ghost
+  Type 2: Dragon
+  Total: 680
+  HP: 150
+  Attack: 120
+  Defense: 100
+  Sp. Atk: 120
+  Sp. Def: 100
+  Speed: 90
+  Generation: 4
+  Legendary: 'True'
+- Id: 388
+  Name: Grotle
+  Type 1: Grass
+  Type 2: ''
+  Total: 405
+  HP: 75
+  Attack: 89
+  Defense: 85
+  Sp. Atk: 55
+  Sp. Def: 65
+  Speed: 36
+  Generation: 4
+  Legendary: 'False'
+- Id: 541
+  Name: Swadloon
+  Type 1: Bug
+  Type 2: Grass
+  Total: 380
+  HP: 55
+  Attack: 63
+  Defense: 90
+  Sp. Atk: 50
+  Sp. Def: 80
+  Speed: 42
+  Generation: 5
+  Legendary: 'False'
+- Id: 201
+  Name: Unown
+  Type 1: Psychic
+  Type 2: ''
+  Total: 336
+  HP: 48
+  Attack: 72
+  Defense: 48
+  Sp. Atk: 72
+  Sp. Def: 48
+  Speed: 48
+  Generation: 2
+  Legendary: 'False'
+- Id: 66
+  Name: Machop
+  Type 1: Fighting
+  Type 2: ''
+  Total: 305
+  HP: 70
+  Attack: 80
+  Defense: 50
+  Sp. Atk: 35
+  Sp. Def: 35
+  Speed: 35
+  Generation: 1
+  Legendary: 'False'
+- Id: 203
+  Name: Girafarig
+  Type 1: Normal
+  Type 2: Psychic
+  Total: 455
+  HP: 70
+  Attack: 80
+  Defense: 65
+  Sp. Atk: 90
+  Sp. Def: 65
+  Speed: 85
+  Generation: 2
+  Legendary: 'False'
+- Id: 669
+  Name: Flabébé
+  Type 1: Fairy
+  Type 2: ''
+  Total: 303
+  HP: 44
+  Attack: 38
+  Defense: 39
+  Sp. Atk: 61
+  Sp. Def: 79
+  Speed: 42
+  Generation: 6
+  Legendary: 'False'
+- Id: 254
+  Name: SceptileMega Sceptile
+  Type 1: Grass
+  Type 2: Dragon
+  Total: 630
+  HP: 70
+  Attack: 110
+  Defense: 75
+  Sp. Atk: 145
+  Sp. Def: 85
+  Speed: 145
+  Generation: 3
+  Legendary: 'False'
+- Id: 204
+  Name: Pineco
+  Type 1: Bug
+  Type 2: ''
+  Total: 290
+  HP: 50
+  Attack: 65
+  Defense: 90
+  Sp. Atk: 35
+  Sp. Def: 35
+  Speed: 15
+  Generation: 2
+  Legendary: 'False'
+- Id: 284
+  Name: Masquerain
+  Type 1: Bug
+  Type 2: Flying
+  Total: 414
+  HP: 70
+  Attack: 60
+  Defense: 62
+  Sp. Atk: 80
+  Sp. Def: 82
+  Speed: 60
+  Generation: 3
+  Legendary: 'False'
+- Id: 77
+  Name: Ponyta
+  Type 1: Fire
+  Type 2: ''
+  Total: 410
+  HP: 50
+  Attack: 85
+  Defense: 55
+  Sp. Atk: 65
+  Sp. Def: 65
+  Speed: 90
+  Generation: 1
+  Legendary: 'False'
+- Id: 625
+  Name: Bisharp
+  Type 1: Dark
+  Type 2: Steel
+  Total: 490
+  HP: 65
+  Attack: 125
+  Defense: 100
+  Sp. Atk: 60
+  Sp. Def: 70
+  Speed: 70
+  Generation: 5
+  Legendary: 'False'
+- Id: 565
+  Name: Carracosta
+  Type 1: Water
+  Type 2: Rock
+  Total: 495
+  HP: 74
+  Attack: 108
+  Defense: 133
+  Sp. Atk: 83
+  Sp. Def: 65
+  Speed: 32
+  Generation: 5
+  Legendary: 'False'
+- Id: 474
+  Name: Porygon-Z
+  Type 1: Normal
+  Type 2: ''
+  Total: 535
+  HP: 85
+  Attack: 80
+  Defense: 70
+  Sp. Atk: 135
+  Sp. Def: 75
+  Speed: 90
+  Generation: 4
+  Legendary: 'False'
+- Id: 571
+  Name: Zoroark
+  Type 1: Dark
+  Type 2: ''
+  Total: 510
+  HP: 60
+  Attack: 105
+  Defense: 60
+  Sp. Atk: 120
+  Sp. Def: 60
+  Speed: 105
+  Generation: 5
+  Legendary: 'False'
+- Id: 41
+  Name: Zubat
+  Type 1: Poison
+  Type 2: Flying
+  Total: 245
+  HP: 40
+  Attack: 45
+  Defense: 35
+  Sp. Atk: 30
+  Sp. Def: 40
+  Speed: 55
+  Generation: 1
+  Legendary: 'False'
+- Id: 258
+  Name: Mudkip
+  Type 1: Water
+  Type 2: ''
+  Total: 310
+  HP: 50
+  Attack: 70
+  Defense: 50
+  Sp. Atk: 50
+  Sp. Def: 50
+  Speed: 40
+  Generation: 3
+  Legendary: 'False'
+- Id: 280
+  Name: Ralts
+  Type 1: Psychic
+  Type 2: Fairy
+  Total: 198
+  HP: 28
+  Attack: 25
+  Defense: 25
+  Sp. Atk: 45
+  Sp. Def: 35
+  Speed: 40
+  Generation: 3
+  Legendary: 'False'
+- Id: 430
+  Name: Honchkrow
+  Type 1: Dark
+  Type 2: Flying
+  Total: 505
+  HP: 100
+  Attack: 125
+  Defense: 52
+  Sp. Atk: 105
+  Sp. Def: 52
+  Speed: 71
+  Generation: 4
+  Legendary: 'False'
+- Id: 360
+  Name: Wynaut
+  Type 1: Psychic
+  Type 2: ''
+  Total: 260
+  HP: 95
+  Attack: 23
+  Defense: 48
+  Sp. Atk: 23
+  Sp. Def: 48
+  Speed: 23
+  Generation: 3
+  Legendary: 'False'
+- Id: 308
+  Name: MedichamMega Medicham
+  Type 1: Fighting
+  Type 2: Psychic
+  Total: 510
+  HP: 60
+  Attack: 100
+  Defense: 85
+  Sp. Atk: 80
+  Sp. Def: 85
+  Speed: 100
+  Generation: 3
+  Legendary: 'False'
+- Id: 411
+  Name: Bastiodon
+  Type 1: Rock
+  Type 2: Steel
+  Total: 495
+  HP: 60
+  Attack: 52
+  Defense: 168
+  Sp. Atk: 47
+  Sp. Def: 138
+  Speed: 30
+  Generation: 4
+  Legendary: 'False'
+- Id: 604
+  Name: Eelektross
+  Type 1: Electric
+  Type 2: ''
+  Total: 515
+  HP: 85
+  Attack: 115
+  Defense: 80
+  Sp. Atk: 105
+  Sp. Def: 80
+  Speed: 50
+  Generation: 5
+  Legendary: 'False'
+- Id: 616
+  Name: Shelmet
+  Type 1: Bug
+  Type 2: ''
+  Total: 305
+  HP: 50
+  Attack: 40
+  Defense: 85
+  Sp. Atk: 40
+  Sp. Def: 65
+  Speed: 25
+  Generation: 5
+  Legendary: 'False'
+- Id: 455
+  Name: Carnivine
+  Type 1: Grass
+  Type 2: ''
+  Total: 454
+  HP: 74
+  Attack: 100
+  Defense: 72
+  Sp. Atk: 90
+  Sp. Def: 72
+  Speed: 46
+  Generation: 4
+  Legendary: 'False'
+- Id: 439
+  Name: Mime Jr.
+  Type 1: Psychic
+  Type 2: Fairy
+  Total: 310
+  HP: 20
+  Attack: 25
+  Defense: 45
+  Sp. Atk: 70
+  Sp. Def: 90
+  Speed: 60
+  Generation: 4
+  Legendary: 'False'
+- Id: 65
+  Name: AlakazamMega Alakazam
+  Type 1: Psychic
+  Type 2: ''
+  Total: 590
+  HP: 55
+  Attack: 50
+  Defense: 65
+  Sp. Atk: 175
+  Sp. Def: 95
+  Speed: 150
+  Generation: 1
+  Legendary: 'False'
+- Id: 407
+  Name: Roserade
+  Type 1: Grass
+  Type 2: Poison
+  Total: 515
+  HP: 60
+  Attack: 70
+  Defense: 65
+  Sp. Atk: 125
+  Sp. Def: 105
+  Speed: 90
+  Generation: 4
+  Legendary: 'False'
+- Id: 469
+  Name: Yanmega
+  Type 1: Bug
+  Type 2: Flying
+  Total: 515
+  HP: 86
+  Attack: 76
+  Defense: 86
+  Sp. Atk: 116
+  Sp. Def: 56
+  Speed: 95
+  Generation: 4
+  Legendary: 'False'
+- Id: 18
+  Name: PidgeotMega Pidgeot
+  Type 1: Normal
+  Type 2: Flying
+  Total: 579
+  HP: 83
+  Attack: 80
+  Defense: 80
+  Sp. Atk: 135
+  Sp. Def: 80
+  Speed: 121
+  Generation: 1
+  Legendary: 'False'
+- Id: 235
+  Name: Smeargle
+  Type 1: Normal
+  Type 2: ''
+  Total: 250
+  HP: 55
+  Attack: 20
+  Defense: 35
+  Sp. Atk: 20
+  Sp. Def: 45
+  Speed: 75
+  Generation: 2
+  Legendary: 'False'
+- Id: 711
+  Name: GourgeistSuper Size
+  Type 1: Ghost
+  Type 2: Grass
+  Total: 494
+  HP: 85
+  Attack: 100
+  Defense: 122
+  Sp. Atk: 58
+  Sp. Def: 75
+  Speed: 54
+  Generation: 6
+  Legendary: 'False'
+- Id: 150
+  Name: MewtwoMega Mewtwo Y
+  Type 1: Psychic
+  Type 2: ''
+  Total: 780
+  HP: 106
+  Attack: 150
+  Defense: 70
+  Sp. Atk: 194
+  Sp. Def: 120
+  Speed: 140
+  Generation: 1
+  Legendary: 'True'
+- Id: 282
+  Name: GardevoirMega Gardevoir
+  Type 1: Psychic
+  Type 2: Fairy
+  Total: 618
+  HP: 68
+  Attack: 85
+  Defense: 65
+  Sp. Atk: 165
+  Sp. Def: 135
+  Speed: 100
+  Generation: 3
+  Legendary: 'False'
+- Id: 116
+  Name: Horsea
+  Type 1: Water
+  Type 2: ''
+  Total: 295
+  HP: 30
+  Attack: 40
+  Defense: 70
+  Sp. Atk: 70
+  Sp. Def: 25
+  Speed: 60
+  Generation: 1
+  Legendary: 'False'
+- Id: 83
+  Name: Farfetch'd
+  Type 1: Normal
+  Type 2: Flying
+  Total: 352
+  HP: 52
+  Attack: 65
+  Defense: 55
+  Sp. Atk: 58
+  Sp. Def: 62
+  Speed: 60
+  Generation: 1
+  Legendary: 'False'
+- Id: 593
+  Name: Jellicent
+  Type 1: Water
+  Type 2: Ghost
+  Total: 480
+  HP: 100
+  Attack: 60
+  Defense: 70
+  Sp. Atk: 85
+  Sp. Def: 105
+  Speed: 60
+  Generation: 5
+  Legendary: 'False'
+- Id: 711
+  Name: GourgeistSmall Size
+  Type 1: Ghost
+  Type 2: Grass
+  Total: 494
+  HP: 55
+  Attack: 85
+  Defense: 122
+  Sp. Atk: 58
+  Sp. Def: 75
+  Speed: 99
+  Generation: 6
+  Legendary: 'False'
+- Id: 279
+  Name: Pelipper
+  Type 1: Water
+  Type 2: Flying
+  Total: 430
+  HP: 60
+  Attack: 50
+  Defense: 100
+  Sp. Atk: 85
+  Sp. Def: 70
+  Speed: 65
+  Generation: 3
+  Legendary: 'False'
+- Id: 509
+  Name: Purrloin
+  Type 1: Dark
+  Type 2: ''
+  Total: 281
+  HP: 41
+  Attack: 50
+  Defense: 37
+  Sp. Atk: 50
+  Sp. Def: 37
+  Speed: 66
+  Generation: 5
+  Legendary: 'False'
+- Id: 589
+  Name: Escavalier
+  Type 1: Bug
+  Type 2: Steel
+  Total: 495
+  HP: 70
+  Attack: 135
+  Defense: 105
+  Sp. Atk: 60
+  Sp. Def: 105
+  Speed: 20
+  Generation: 5
+  Legendary: 'False'
+- Id: 302
+  Name: Sableye
+  Type 1: Dark
+  Type 2: Ghost
+  Total: 380
+  HP: 50
+  Attack: 75
+  Defense: 75
+  Sp. Atk: 65
+  Sp. Def: 65
+  Speed: 50
+  Generation: 3
+  Legendary: 'False'
+- Id: 43
+  Name: Oddish
+  Type 1: Grass
+  Type 2: Poison
+  Total: 320
+  HP: 45
+  Attack: 50
+  Defense: 55
+  Sp. Atk: 75
+  Sp. Def: 65
+  Speed: 30
+  Generation: 1
+  Legendary: 'False'
+- Id: 21
+  Name: Spearow
+  Type 1: Normal
+  Type 2: Flying
+  Total: 262
+  HP: 40
+  Attack: 60
+  Defense: 30
+  Sp. Atk: 31
+  Sp. Def: 31
+  Speed: 70
+  Generation: 1
+  Legendary: 'False'
+- Id: 310
+  Name: Manectric
+  Type 1: Electric
+  Type 2: ''
+  Total: 475
+  HP: 70
+  Attack: 75
+  Defense: 60
+  Sp. Atk: 105
+  Sp. Def: 60
+  Speed: 105
+  Generation: 3
+  Legendary: 'False'
+- Id: 445
+  Name: Garchomp
+  Type 1: Dragon
+  Type 2: Ground
+  Total: 600
+  HP: 108
+  Attack: 130
+  Defense: 95
+  Sp. Atk: 80
+  Sp. Def: 85
+  Speed: 102
+  Generation: 4
+  Legendary: 'False'
+- Id: 260
+  Name: Swampert
+  Type 1: Water
+  Type 2: Ground
+  Total: 535
+  HP: 100
+  Attack: 110
+  Defense: 90
+  Sp. Atk: 85
+  Sp. Def: 90
+  Speed: 60
+  Generation: 3
+  Legendary: 'False'
+- Id: 164
+  Name: Noctowl
+  Type 1: Normal
+  Type 2: Flying
+  Total: 442
+  HP: 100
+  Attack: 50
+  Defense: 50
+  Sp. Atk: 76
+  Sp. Def: 96
+  Speed: 70
+  Generation: 2
+  Legendary: 'False'
+- Id: 322
+  Name: Numel
+  Type 1: Fire
+  Type 2: Ground
+  Total: 305
+  HP: 60
+  Attack: 60
+  Defense: 40
+  Sp. Atk: 65
+  Sp. Def: 45
+  Speed: 35
+  Generation: 3
+  Legendary: 'False'
+- Id: 386
+  Name: DeoxysAttack Forme
+  Type 1: Psychic
+  Type 2: ''
+  Total: 600
+  HP: 50
+  Attack: 180
+  Defense: 20
+  Sp. Atk: 180
+  Sp. Def: 20
+  Speed: 150
+  Generation: 3
+  Legendary: 'True'
+- Id: 67
+  Name: Machoke
+  Type 1: Fighting
+  Type 2: ''
+  Total: 405
+  HP: 80
+  Attack: 100
+  Defense: 70
+  Sp. Atk: 50
+  Sp. Def: 60
+  Speed: 45
+  Generation: 1
+  Legendary: 'False'
+- Id: 422
+  Name: Shellos
+  Type 1: Water
+  Type 2: ''
+  Total: 325
+  HP: 76
+  Attack: 48
+  Defense: 48
+  Sp. Atk: 57
+  Sp. Def: 62
+  Speed: 34
+  Generation: 4
+  Legendary: 'False'
+- Id: 246
+  Name: Larvitar
+  Type 1: Rock
+  Type 2: Ground
+  Total: 300
+  HP: 50
+  Attack: 64
+  Defense: 50
+  Sp. Atk: 45
+  Sp. Def: 50
+  Speed: 41
+  Generation: 2
+  Legendary: 'False'
+- Id: 711
+  Name: GourgeistAverage Size
+  Type 1: Ghost
+  Type 2: Grass
+  Total: 494
+  HP: 65
+  Attack: 90
+  Defense: 122
+  Sp. Atk: 58
+  Sp. Def: 75
+  Speed: 84
+  Generation: 6
+  Legendary: 'False'
+- Id: 592
+  Name: Frillish
+  Type 1: Water
+  Type 2: Ghost
+  Total: 335
+  HP: 55
+  Attack: 40
+  Defense: 50
+  Sp. Atk: 65
+  Sp. Def: 85
+  Speed: 40
+  Generation: 5
+  Legendary: 'False'
+- Id: 59
+  Name: Arcanine
+  Type 1: Fire
+  Type 2: ''
+  Total: 555
+  HP: 90
+  Attack: 110
+  Defense: 80
+  Sp. Atk: 100
+  Sp. Def: 80
+  Speed: 95
+  Generation: 1
+  Legendary: 'False'
+- Id: 238
+  Name: Smoochum
+  Type 1: Ice
+  Type 2: Psychic
+  Total: 305
+  HP: 45
+  Attack: 30
+  Defense: 15
+  Sp. Atk: 85
+  Sp. Def: 65
+  Speed: 65
+  Generation: 2
+  Legendary: 'False'
+- Id: 401
+  Name: Kricketot
+  Type 1: Bug
+  Type 2: ''
+  Total: 194
+  HP: 37
+  Attack: 25
+  Defense: 41
+  Sp. Atk: 25
+  Sp. Def: 41
+  Speed: 25
+  Generation: 4
+  Legendary: 'False'
+- Id: 613
+  Name: Cubchoo
+  Type 1: Ice
+  Type 2: ''
+  Total: 305
+  HP: 55
+  Attack: 70
+  Defense: 40
+  Sp. Atk: 60
+  Sp. Def: 40
+  Speed: 40
+  Generation: 5
+  Legendary: 'False'
+- Id: 655
+  Name: Delphox
+  Type 1: Fire
+  Type 2: Psychic
+  Total: 534
+  HP: 75
+  Attack: 69
+  Defense: 72
+  Sp. Atk: 114
+  Sp. Def: 100
+  Speed: 104
+  Generation: 6
+  Legendary: 'False'
+- Id: 189
+  Name: Jumpluff
+  Type 1: Grass
+  Type 2: Flying
+  Total: 460
+  HP: 75
+  Attack: 55
+  Defense: 70
+  Sp. Atk: 55
+  Sp. Def: 95
+  Speed: 110
+  Generation: 2
+  Legendary: 'False'
+- Id: 659
+  Name: Bunnelby
+  Type 1: Normal
+  Type 2: ''
+  Total: 237
+  HP: 38
+  Attack: 36
+  Defense: 38
+  Sp. Atk: 32
+  Sp. Def: 36
+  Speed: 57
+  Generation: 6
+  Legendary: 'False'
+- Id: 393
+  Name: Piplup
+  Type 1: Water
+  Type 2: ''
+  Total: 314
+  HP: 53
+  Attack: 51
+  Defense: 53
+  Sp. Atk: 61
+  Sp. Def: 56
+  Speed: 40
+  Generation: 4
+  Legendary: 'False'
+- Id: 485
+  Name: Heatran
+  Type 1: Fire
+  Type 2: Steel
+  Total: 600
+  HP: 91
+  Attack: 90
+  Defense: 106
+  Sp. Atk: 130
+  Sp. Def: 106
+  Speed: 77
+  Generation: 4
+  Legendary: 'True'
+- Id: 15
+  Name: BeedrillMega Beedrill
+  Type 1: Bug
+  Type 2: Poison
+  Total: 495
+  HP: 65
+  Attack: 150
+  Defense: 40
+  Sp. Atk: 15
+  Sp. Def: 80
+  Speed: 145
+  Generation: 1
+  Legendary: 'False'
+- Id: 366
+  Name: Clamperl
+  Type 1: Water
+  Type 2: ''
+  Total: 345
+  HP: 35
+  Attack: 64
+  Defense: 85
+  Sp. Atk: 74
+  Sp. Def: 55
+  Speed: 32
+  Generation: 3
+  Legendary: 'False'
+- Id: 642
+  Name: ThundurusIncarnate Forme
+  Type 1: Electric
+  Type 2: Flying
+  Total: 580
+  HP: 79
+  Attack: 115
+  Defense: 70
+  Sp. Atk: 125
+  Sp. Def: 80
+  Speed: 111
+  Generation: 5
+  Legendary: 'True'
