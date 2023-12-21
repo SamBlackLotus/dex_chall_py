@@ -151,10 +151,7 @@ def client_helper():
     The two players will challenge each other, using their three strongest
     pokemon, where the first pokemon to fall decides the winner, and we'll
     show you the battle information.
-    
-    Warning: If you have any doubt about how to use the function read the ATENTION
-    flag at the client usage.
-   
+ 
     """
     return print(helper_msg)
 

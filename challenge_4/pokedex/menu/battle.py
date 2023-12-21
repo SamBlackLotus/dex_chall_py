@@ -212,11 +212,8 @@ def show_battle_winner(start_battle,battle_result, id_number):
 
     if os.path.exists(f"{id_number}_battle.txt"):
         
-        user_choice_battle = input(f"Files {id_number}_battle.txt already exists, what do you prefer
-                                   to do? [append|OVERWRITE] : ")
+        user_choice_battle = input(f"Files {id_number}_battle.txt already exists, what do you prefer to do? [append|OVERWRITE] : ")
         
-        # TODO: you could use:
-        # if user_choice_battle.lower() == 'o' or user_choice_battle.lower() == 'overwrite'
         if user_choice_battle.lower() == 'o' or user_choice_battle.lower() == 'overwrite':
            
             os.remove(f"{id_number}_battle.txt")

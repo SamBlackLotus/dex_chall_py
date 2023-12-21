@@ -92,8 +92,7 @@ def show_trivia(pokemons_info, id_number):
     
     if os.path.exists(f"{id_number}_trivia.txt"):
         
-        user_choice_trivia = input(f"Files {id_number}_info.txt already exists, what do you prefer
-                                to do? [append|OVERWRITE] : ")
+        user_choice_trivia = input(f"Files {id_number}_info.txt already exists, what do you prefer to do? [append|OVERWRITE] : ")
         
         if user_choice_trivia.lower() == 'o' or user_choice_trivia.lower() == 'overwrite':
            

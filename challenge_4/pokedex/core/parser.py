@@ -1,35 +1,30 @@
+import core
 import json
 import csv
 import xmltodict
 import yaml
 
 #Receive and read json files 
-def read_file_json(filepath): 
+def read_file(filepath): 
     with open((filepath), "r") as source_pokedex:
-        return json.load(source_pokedex)
-    
-#Receive and read csv files       
-def read_file_csv(filepath):
-    with open(filepath, "r") as data:
-        file = csv.DictReader(data, delimiter = ",")
-        pokemons = [row for row in file]
-        return pokemons
-
-#Receive and read xml files
-# TODO: don't mix portuguese with english
-def read_file_xml(filepath): 
-    with open(filepath, "r") as data:
-        file = data.read()
-        pokemonsxml = xmltodict.parse(file)
-        pokemonsid = {key: value for key, value in pokemonsxml['root'].items()}
-        pokemons= []
-        for key, value in pokemonsid.items():
-            pokemons += [{a: i for a, i in value.items()}]
-    return pokemons
-
-#Receive and read yaml files 
-def read_file_yaml(filepath):
-    with open(filepath, "r") as data:
-        file = data.read()
-        pokemons = yaml.safe_load(file)
-        return pokemons
+        if ".json" in filepath:
+            return json.load(source_pokedex)
+        elif ".csv" in filepath:
+            file = csv.DictReader(source_pokedex, delimiter = ",")
+            pokemons = [row for row in file]
+            return pokemons
+        elif ".xml" in filepath:
+            file = source_pokedex.read()
+            pokemonsxml = xmltodict.parse(file)
+            pokemonsid = {key: value for key, value in pokemonsxml['root'].items()}
+            pokemons= []
+            for key, value in pokemonsid.items():
+                pokemons += [{a: i for a, i in value.items()}]
+            return pokemons
+        elif ".yaml" in filepath:
+            file = source_pokedex.read()
+            pokemons = yaml.safe_load(file)
+            return pokemons
+        else:
+            print(f"Error: File format not supported!\n{core.client_usage()}")
+            quit()

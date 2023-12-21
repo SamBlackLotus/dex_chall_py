@@ -78,8 +78,7 @@ def show_info(process_pokemons, id_number):
     
     if os.path.exists(f"{id_number}_info.txt"):
         
-        user_choice_info = input(f"Files {id_number}_info.txt already exists, what do you prefer
-                                to do? [append|OVERWRITE] : ")
+        user_choice_info = input(f"Files {id_number}_info.txt already exists, what do you prefer to do? [append|OVERWRITE] : ")
         
         if user_choice_info.lower() == 'o' or user_choice_info.lower() == 'overwrite':
            
