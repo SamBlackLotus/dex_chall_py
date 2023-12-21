@@ -72,7 +72,7 @@ def select_pokemons_for_battle(player_1_battle,player_2_battle):
             p2_pokemon_3["defense"] = defense
             p2_pokemon_3["hp"] = hp             
     
-    return core.Answers(
+    return core.AnswersBattle(
         
         p1_pkm_1_name =  player_1_battle[p1_pokemon_1["index"]]["Name"],
         p1_pkm_2_name =  player_1_battle[p1_pokemon_2["index"]]["Name"],
@@ -162,7 +162,7 @@ def pokemon_battle(start_battle):
             victorious_player = start_battle["p1_player"]
             break
     
-    return core.Answers(
+    return core.AnswersBattle(
         winner = victorious_player,
         rounds = while_counter,
         loser_pokemon = first_pokemon_dead
@@ -172,7 +172,7 @@ def pokemon_battle(start_battle):
 # TODO: control the column width
 # TODO: remove the line separation between attack and defense for player 2
 # TODO: improve how we code the visualization
-def show_battle_winner(start_battle,battle_result, idnumber):
+def show_battle_winner(start_battle,battle_result, id_number):
     datenow =  datetime.now()
     battle_msg =  "                                                                                     \n"
     battle_msg += "reported generated on:   " + datenow.isoformat() + "                                                  \n"
@@ -210,21 +210,22 @@ def show_battle_winner(start_battle,battle_result, idnumber):
     battle_msg += "=====================================================================================\n"
     battle_msg += "                                                                                     \n"
 
-    if os.path.exists(f"{idnumber}_battle.txt"):
+    if os.path.exists(f"{id_number}_battle.txt"):
         
-        choice = input(f"Files {idnumber}_battle.txt already exists, what do you prefer to do? [append|OVERWRITE] : ")
+        user_choice_battle = input(f"Files {id_number}_battle.txt already exists, what do you prefer
+                                   to do? [append|OVERWRITE] : ")
         
         # TODO: you could use:
-        # if choice.lower() == 'o' or choice.lower() == 'overwrite'
-        if choice == 'o' or choice == 'O' or choice == 'Overwrite' or choice == 'overwrite' or choice == 'OVERWRITE' or choice == '':
+        # if user_choice_battle.lower() == 'o' or user_choice_battle.lower() == 'overwrite'
+        if user_choice_battle.lower() == 'o' or user_choice_battle.lower() == 'overwrite':
            
-            os.remove(f"{idnumber}_battle.txt")
+            os.remove(f"{id_number}_battle.txt")
             
-            with open(f"{idnumber}_battle.txt", "w") as target:
+            with open(f"{id_number}_battle.txt", "w") as target:
                 target.write(battle_msg)
-        elif choice == 'a' or choice == 'A' or choice == 'Append' or choice == 'append' or choice == 'APPEND':
+        elif user_choice_battle.lower() == 'a' or user_choice_battle.lower() == 'append':
            
-            with open(f"{idnumber}_battle.txt", "a") as target:
+            with open(f"{id_number}_battle.txt", "a") as target:
                 target.write(battle_msg)  
         else:
             print(f"WARNING: Invalid Input.\n{core.client_usage()}")
@@ -232,7 +233,7 @@ def show_battle_winner(start_battle,battle_result, idnumber):
               
     else:
         
-        with open(f"{idnumber}_battle.txt", "w") as target:
+        with open(f"{id_number}_battle.txt", "w") as target:
             target.write(battle_msg)
     
     print(battle_msg.format(**start_battle))

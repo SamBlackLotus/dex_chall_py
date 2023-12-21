@@ -21,10 +21,10 @@ def read_file_xml(filepath):
     with open(filepath, "r") as data:
         file = data.read()
         pokemonsxml = xmltodict.parse(file)
-        pokemonsid = {chave: valor for chave, valor in pokemonsxml['root'].items()}
+        pokemonsid = {key: value for key, value in pokemonsxml['root'].items()}
         pokemons= []
-        for chave, valor in pokemonsid.items():
-            pokemons += [{a: i for a, i in valor.items()}]
+        for key, value in pokemonsid.items():
+            pokemons += [{a: i for a, i in value.items()}]
     return pokemons
 
 #Receive and read yaml files 
