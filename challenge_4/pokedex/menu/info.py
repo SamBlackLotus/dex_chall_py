@@ -1,3 +1,7 @@
+import core
+import os
+from datetime import datetime
+
 #Process the information read in the files and generate the info table 
 def process_info(process_poke1,process_poke2,pokemon_set_1,pokemon_set_2):
     
@@ -15,12 +19,12 @@ def process_info(process_poke1,process_poke2,pokemon_set_1,pokemon_set_2):
     for index, pokemon in enumerate(process_poke1):
         p1_total = len(process_poke1)
         
-        attack = cast_to_int(pokemon["Attack"])
+        attack = core.cast_to_int(pokemon["Attack"])
         if attack > strongest_p1["value"]:
             strongest_p1["index"] = index
             strongest_p1["value"] = attack
         
-        legendary_1 = cast_to_bool(pokemon["Legendary"])     
+        legendary_1 = core.cast_to_bool(pokemon["Legendary"])     
         if legendary_1 == True:
             tot_leg_1 +=1  
         
@@ -28,19 +32,19 @@ def process_info(process_poke1,process_poke2,pokemon_set_1,pokemon_set_2):
     for index, pokemon in enumerate(process_poke2):
         p2_total = len(process_poke2) 
         
-        attack = cast_to_int(pokemon["Attack"])
+        attack = core.cast_to_int(pokemon["Attack"])
         if attack > strongest_p2["value"]:
             strongest_p2["index"] = index
             strongest_p2["value"] = attack
 
-        legendary_2 = cast_to_bool(pokemon["Legendary"])
+        legendary_2 = core.cast_to_bool(pokemon["Legendary"])
         if legendary_2 == True:
             tot_leg_2 +=1   
             
          
                      
   
-    return Answers(
+    return core.Answers(
         
         p1_tot_info = p1_total,
         p2_tot_info = p2_total,
@@ -87,7 +91,7 @@ def show_info(process_pokemons, idnumber):
             with open(f"{idnumber}_info.txt", "a") as target:
                 target.write(msg)  
         else:
-            print(f"WARNING: Invalid Input.\n{client_usage()}")
+            print(f"WARNING: Invalid Input.\n{core.client_usage()}")
             quit()
               
     else:
@@ -95,9 +99,5 @@ def show_info(process_pokemons, idnumber):
         with open(f"{idnumber}_info.txt", "w") as target:
             target.write(msg)
     
-    print(msg.format(**process_pokemons))
-    
-
-
-info = process_info(data_1,data_2,dataset_1,dataset_2)
-                    show_info(info,idnumber)    
+    print(msg.format(**process_pokemons))   
+     
