@@ -2,9 +2,9 @@ import core
 import os
 from datetime import datetime
 
-#Process and generate the answers to the trivia questions    
+
 def process_trivia(pokemons_data):
-    highest_hp_trivia = {"index":0, "value":0}
+    highest_hp_trivia = {"index": 0, "value": 0}
     highest_attack_trivia = {"index": 0, "value": 0}
     highest_defense_trivia = {"index": 0, "value": 0}
     highest_speed_trivia = {"index": 0, "value": 0}
@@ -14,21 +14,21 @@ def process_trivia(pokemons_data):
         if hp_trivia_int > highest_hp_trivia["value"]:
             highest_hp_trivia["index"] = index
             highest_hp_trivia["value"] = hp_trivia_int
-      
+
         attack_trivia_int = core.cast_to_int(pokemon["Attack"])
         if attack_trivia_int > highest_attack_trivia["value"]:
             highest_attack_trivia["index"] = index
             highest_attack_trivia["value"] = attack_trivia_int
-            
+
         defense_trivia_int = core.cast_to_int(pokemon["Defense"])
         if defense_trivia_int > highest_defense_trivia["value"]:
             highest_defense_trivia["index"] = index
             highest_defense_trivia["value"] = defense_trivia_int
-      
+
         speed_trivia_int = core.cast_to_int(pokemon["Attack"])
         if speed_trivia_int > highest_speed_trivia["value"]:
             highest_speed_trivia["index"] = index
-            highest_speed_trivia["value"] = speed_trivia_int    
+            highest_speed_trivia["value"] = speed_trivia_int
 
     return core.AnswersTrivia(
         total_trivia=len(pokemons_data),
@@ -40,11 +40,11 @@ def process_trivia(pokemons_data):
         def_trivia_points=pokemons_data[highest_attack_trivia["index"]]["Defense"],
         spd_trivia_name=pokemons_data[highest_attack_trivia["index"]]["Name"],
         spd_trivia_points=pokemons_data[highest_attack_trivia["index"]]["Speed"]
-     
     )
-#Show the information gathered inn the trivia function    
+
+
 def show_trivia(pokemons_info, id_number):
-    datenow =  datetime.now()
+    datenow = datetime.now()
     msg =  "                                                                            \n"
     msg += "reported generated on:   " + datenow.isoformat() + "                                                  \n"
     msg += "                                                                           \n"
@@ -89,28 +89,28 @@ def show_trivia(pokemons_info, id_number):
     msg += "                                                                            \n"    
     msg += "============================================================================\n"
     msg += "                                                                            \n"
-    
+
     if os.path.exists(f"{id_number}_trivia.txt"):
-        
+
         user_choice_trivia = input(f"Files {id_number}_info.txt already exists, what do you prefer to do? [append|OVERWRITE] : ")
-        
+
         if user_choice_trivia.lower() == 'o' or user_choice_trivia.lower() == 'overwrite':
-           
+
             os.remove(f"{id_number}_info.txt")
-            
+
             with open(f"{id_number}_info.txt", "w") as target:
                 target.write(msg)
         elif user_choice_trivia.lower() == 'a' or user_choice_trivia.lower() == 'append':
-           
+
             with open(f"{id_number}_info.txt", "a") as target:
-                target.write(msg)  
+                target.write(msg)
         else:
             print(f"WARNING: Invalid Input.\n{core.client_usage()}")
             quit()
-              
+
     else:
-        
+
         with open(f"{id_number}_trivia.txt", "w") as target:
             target.write(msg)
-    
+
     print(msg.format(**pokemons_info))
