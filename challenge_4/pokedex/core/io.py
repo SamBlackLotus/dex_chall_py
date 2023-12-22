@@ -1,6 +1,5 @@
 from typing import Dict, Union, List, TypedDict, Optional
 
-# TODO: break more this data struture
 class AnswersTrivia(TypedDict):
     highest_hp_trivia: str 
     highest_attack_trivia: str
@@ -124,7 +123,6 @@ def cast_to_bool(value):
     return True if value == "True" else False 
 
 def client_helper():
-    # TODO: -- info and -- battle have space in between
     helper_msg = """
     Hello! Welcome to the Pokedex.
     
