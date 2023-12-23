@@ -1,7 +1,7 @@
 # TODO: remove unused libs
 # TODO: rename file to basic_types.py
 # TODO: create nested data when is repeated to organize better
-# some structures, such as "name, points"
+# some structures, such as "name, points" - dataclass
 from typing import Dict, List, Any, Set, TypedDict
 
 

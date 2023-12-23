@@ -2,6 +2,7 @@ import core
 import os
 from datetime import datetime
 
+#separar o show trivia da gravação do arquivo, tudo que for receber input ou devolver info na tela deve estar no io
 
 def process_trivia(pokemons_data):
     """

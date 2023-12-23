@@ -6,9 +6,9 @@ import yaml
 from typing import Dict, Union, List, Any
 
 
-# TODO: you don't need to say which function calls this one
-# TODO: improve the function description by adding "read"
-# TODO: this function could be more generic, it's not related
+# TODO: you don't need to say which function calls this one(explicar oq a função faz e n onde ela se aplica dentro do programa)
+# TODO: improve the function description by adding "read" (oq a função realmente faz é ler o arquivo, n receber)
+# TODO: this function could be more generic, it's not related(o nome pokemons tem q ser trocado pra função ficar generica como um leitor de arquivos)
 # to pokemons
 def read_file(filepath: str) -> List[Dict[str, Union[str, int]]]:
     """
