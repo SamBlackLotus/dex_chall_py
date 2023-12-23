@@ -159,6 +159,8 @@ Skills to unlock:
 The good:
 - Flake8 is helpful to guide to write a clean code.
 - Have a separate file to add types.
+- She found docstring useful, better than using comments.
+- She found easy to use modules.
 
 The bad:
 - Mypy is not intuitive for beginners.

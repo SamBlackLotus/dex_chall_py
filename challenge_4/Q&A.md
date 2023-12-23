@@ -12,5 +12,5 @@ Q. Should I create typeddict for all the returns?
 Q. What is Union type?
 > A. It's used to describe multiple types possibilities, for example, if you will return a string or a integer from a function.
 
-Q. How does it work the type Dict?
-> A. Dict type receives 2 arguments, one to describe the key and another for the values, so for example if you have homogenous values you would describe mode than one type in the second arguments, e.g. Dict[str, Union[str, int]].
+Q. How does the Dict type works?
+> A. Dict type receives 2 arguments, the first to describe the key and the second to describe the values, so for example if you have heterogeneous values you would describe more than one type in the second argument, e.g. Dict[str, Union[str, int]].

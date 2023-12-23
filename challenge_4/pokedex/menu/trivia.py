@@ -59,6 +59,8 @@ def process_trivia(pokemons_data):
     )
 
 
+# TODO: break into show and write files
+# TODO: move to io.py
 def show_trivia(pokemons_info, id_number):
     """
     This function will receive the data saved earlier in the

@@ -89,6 +89,8 @@ def client_helper() -> None:
     return print(helper_msg)
 
 
+# TODO: the correct trivia cmd is:
+# python3 pokedex/main.py --trivia data/json/pokemons_1.json --id 1
 def client_usage() -> None:
     client_usage_msg: str = """
     CLI usage:
