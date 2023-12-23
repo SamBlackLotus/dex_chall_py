@@ -2,8 +2,7 @@ import core
 import os
 from datetime import datetime
 
-#Process the information read in the files, compare the pokemons in each list to define
-#wich three of each player will participate in the battle 
+
 def select_pokemons_for_battle(player_1_battle,player_2_battle):
     
     hp = {"index": 0, "value": 0}
@@ -168,7 +167,6 @@ def pokemon_battle(start_battle):
         loser_pokemon = first_pokemon_dead
     )
 
-#Show the information about wich pokemons participated in the battle, and wich player was the winner
 # TODO: control the column width
 # TODO: remove the line separation between attack and defense for player 2
 # TODO: improve how we code the visualization

@@ -3,7 +3,7 @@ from typing import List, Set
 
 def cast_to_set(file_set_1: List[str]) -> Set:
     """
-    This function receaves data in any python types
+    This function receives data in any python types
     and turns into a set.
 
     Parameters
@@ -104,12 +104,12 @@ def client_helper() -> None:
 def client_usage() -> None:
     """
     This function will show a client usage, detailing how to properly use
-    the system if the user is giving wrong commands or any other incorret use.
+    the system if the user is giving wrong commands or any other incorrect use.
 
     Parameters
     ----------
-    client_mesage_msg:
-        A message showing the existing commands on the system, is ment to serve
+    client_message_msg:
+        A message showing the existing commands on the system, is meant to serve
         as examples and prevent user errors, and also explain some functions
         like the id use, and the function to save the info in text files
         creating new files of overwriting the existents.
@@ -121,12 +121,12 @@ def client_usage() -> None:
     client_usage_msg: str = """
     CLI usage:
 
-    > python3 pokedex_crud.py --help
-    > python3 pokedex_crud.py --player1 pokemons_1.json --trivia  --id 1
-    > python3 pokedex_crud.py --player1 pokemons_1.json --player2 pokemons_2.json --id 1 --info
-    > python3 pokedex_crud.py --player1 pokemons_1.json --player2 pokemons_2.json --id 1 --battle
+    > python3 main.py --help
+    > python3 main.py --player1 pokemons_1.json --trivia  --id 1
+    > python3 main.py --player1 pokemons_1.json --player2 pokemons_2.json --id 1 --info
+    > python3 main.py --player1 pokemons_1.json --player2 pokemons_2.json --id 1 --battle
 
-    ATENTION:
+    ATTENTION:
 
     Where you read <pokemons_1.json> or <pokemons_2.json>
     Notice that both lists don't need to be in the same format, here you
@@ -138,9 +138,11 @@ def client_usage() -> None:
                     pokemons_1.xml   pokemons_2.xml
                     pokemons_1.yaml  pokemons_2.yaml
 
-    For all options you'll need to inform an id, so the function can
+    For all options you'll need to inform an id so the function can
     save the log in a text file, if you don't inform any id number it
-    will be automatically set as 0.
+    will be automatically set as 0. The id is a key name to make the file
+    unique, making it possible have multiple files with different data
+    across them.
 
     Before using the function you can choose what will be done with the
     information generated, answering the question that will be displayed:

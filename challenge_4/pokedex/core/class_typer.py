@@ -1,19 +1,6 @@
 from typing import Dict, List, Any, Set, TypedDict
 
 
-class MainTyper(TypedDict):
-    user_input: List[str]
-    arguments: List[str]
-    id_number: str
-    data_1: List[Dict[str, int]]
-    dataset_1: Set[str]
-    data_2: List[Dict[str, int]]
-    dataset_2: Set[str]
-    info: Any
-    battle: Any
-    result: Any
-
-
 class AnswersTrivia(TypedDict):
     highest_hp_trivia: str
     highest_attack_trivia: str

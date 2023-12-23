@@ -4,7 +4,7 @@ import os
 
 def file_validator(user_input: str) -> None:
     """
-    This function receaves data in any python types and
+    This function receives data in any python types and
     turns into a set.
 
     Parameters

@@ -18,7 +18,7 @@ def main() -> None:
     arguments:
         This variable will receive the list provided in user_input
         and slice it into positional arguments, where each one calls
-        a diferent action.
+        a different action.
 
     Returns
     -------
