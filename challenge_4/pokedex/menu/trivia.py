@@ -4,6 +4,22 @@ from datetime import datetime
 
 
 def process_trivia(pokemons_data):
+    """
+    This function will get the data provided from main 
+    and slice the information to transform the data in 
+    specific info about the pokemons inside the archive.
+
+    Parameters
+    ----------
+    pokemons_data:
+        Will bring the treated dictionary with the pokemons
+        information 
+
+    Returns
+    -------
+    AnswerTrivia:
+        It returns the answers to the trivia questions
+    """
     highest_hp_trivia = {"index": 0, "value": 0}
     highest_attack_trivia = {"index": 0, "value": 0}
     highest_defense_trivia = {"index": 0, "value": 0}
@@ -44,6 +60,22 @@ def process_trivia(pokemons_data):
 
 
 def show_trivia(pokemons_info, id_number):
+    """
+    This function will receive the data saved earlier in the
+    process_trivia and use them to save a file with the questions 
+    and print it too in the CLI interface.
+
+    Parameters
+    ----------
+    pokemons_info:
+        Bring the treated variables which will be used to answer
+        the questions
+
+    Returns
+    -------
+        Create a file with a id value in the name and print the
+        same message from the file in the CLI interface.
+    """
     datenow = datetime.now()
     msg =  "                                                                            \n"
     msg += "reported generated on:   " + datenow.isoformat() + "                                                  \n"

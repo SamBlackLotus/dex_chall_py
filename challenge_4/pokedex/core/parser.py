@@ -8,7 +8,7 @@ from typing import Dict, Union, List, Any
 
 def read_file(filepath: str) -> List[Dict[str, Union[str, int]]]:
     """
-    This function receives a file from main an based on the format
+    This function receives a file from main and based on the format
     it will fit in one of the conditionals.
 
     If its a .json it uses load.
@@ -23,7 +23,7 @@ def read_file(filepath: str) -> List[Dict[str, Union[str, int]]]:
 
     Returns
     -------
-    data:
+    pokemons:
         The file received will be returned in python data types.
     """
     with open((filepath), "r") as source_pokedex:

@@ -28,6 +28,7 @@ def select_pokemons_for_battle(player_1_battle,player_2_battle):
             p1_pokemon_1["defense"] = defense
             p1_pokemon_1["hp"] = hp
             
+            
          
         if attack > p1_pokemon_2["attack"] and index is not p1_pokemon_1["index"]:
             p1_pokemon_2["index"] = index
@@ -168,7 +169,6 @@ def pokemon_battle(start_battle):
     )
 
 # TODO: control the column width
-# TODO: remove the line separation between attack and defense for player 2
 # TODO: improve how we code the visualization
 def show_battle_winner(start_battle,battle_result, id_number):
     datenow =  datetime.now()
@@ -190,7 +190,6 @@ def show_battle_winner(start_battle,battle_result, id_number):
     battle_msg += "|Name:" + start_battle["p2_pkm_1_name"] + "      |Name:" + start_battle["p2_pkm_2_name"] + "    |Name:" + start_battle["p2_pkm_3_name"] + "|\n"
     battle_msg += "|HP: " + str(start_battle["p2_pkm_1_hp"]) + "                       |HP: " + str(start_battle["p2_pkm_2_hp"]) + "                    |HP: " + str(start_battle["p2_pkm_3_hp"]) + "                    |\n"
     battle_msg += "|Attack: " + str(start_battle["p2_pkm_1_atk"]) + "                  |Attack: " + str(start_battle["p2_pkm_2_atk"]) + "                |Attack: " + str(start_battle["p2_pkm_3_atk"]) + "               |\n"
-    battle_msg += "-------------------------------------------------------------------------------------\n"
     battle_msg += "|Defense: " + str(start_battle["p2_pkm_1_dfs"]) + "                  |Defense: " + str(start_battle["p2_pkm_2_dfs"]) + "               |Defense: " + str(start_battle["p2_pkm_2_dfs"]) + "              |\n"
     battle_msg += "-------------------------------------------------------------------------------------\n"
     battle_msg += "=====================================================================================\n"

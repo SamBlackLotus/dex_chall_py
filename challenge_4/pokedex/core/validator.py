@@ -4,18 +4,21 @@ import os
 
 def file_validator(user_input: str) -> None:
     """
-    This function receives data in any python types and
-    turns into a set.
+    This function receives the "sys.argv" input, and use it to validate
+    and define which path the main function shall run and in cases the input
+    has errors the client_usage function is called, with the information on
+    how to use the input, which will be printed on the CLI interface alongside
+    the type of error that ocurred.
 
     Parameters
     ----------
-    file_set_1:
+    user_input
         The file path, it can be the full path or relative path.
 
     Returns
     -------
-    pokemon_set:
-        The data in a set type.
+    List of arguments:
+        The function will return a list of variables, according to the if path.
     """
 
     if len(user_input) == 1:

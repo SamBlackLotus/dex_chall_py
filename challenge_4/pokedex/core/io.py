@@ -9,8 +9,7 @@ def cast_to_set(file_set_1: List[str]) -> Set:
     Parameters
     ----------
     file_set_1:
-        The file path, it can be the full path or
-        relative path.
+        The data to be converted in set.
 
     Returns
     -------
@@ -58,18 +57,7 @@ def cast_to_bool(value: List[str]) -> List[bool]:
 
 
 def client_helper() -> None:
-    """
-    This function will show a helper if asked for the user.
 
-    Parameters
-    ----------
-    helper_msg:
-        A message explaining all the options to be used in the system.
-
-    Returns
-    -------
-        The message will be printed on the CLI interface.
-    """
     helper_msg: str = """
     Hello! Welcome to the Pokedex.
 
@@ -102,29 +90,14 @@ def client_helper() -> None:
 
 
 def client_usage() -> None:
-    """
-    This function will show a client usage, detailing how to properly use
-    the system if the user is giving wrong commands or any other incorrect use.
 
-    Parameters
-    ----------
-    client_message_msg:
-        A message showing the existing commands on the system, is meant to serve
-        as examples and prevent user errors, and also explain some functions
-        like the id use, and the function to save the info in text files
-        creating new files of overwriting the existents.
-
-    Returns
-    -------
-        The message will be printed on the CLI interface.
-    """
     client_usage_msg: str = """
     CLI usage:
 
     > python3 main.py --help
-    > python3 main.py --player1 pokemons_1.json --trivia  --id 1
-    > python3 main.py --player1 pokemons_1.json --player2 pokemons_2.json --id 1 --info
-    > python3 main.py --player1 pokemons_1.json --player2 pokemons_2.json --id 1 --battle
+    > python3 pokedex/main.py --player1 pokemons_1.json --trivia  --id 1
+    > python3 pokedex/main.py --player1 pokemons_1.json --player2 pokemons_2.json --id 1 --info
+    > python3 pokedex/main.py --player1 pokemons_1.json --player2 pokemons_2.json --id 1 --battle
 
     ATTENTION:
 
