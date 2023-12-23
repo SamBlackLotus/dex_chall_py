@@ -23,6 +23,7 @@ def process_info(process_poke1, process_poke2, pokemon_set_1, pokemon_set_2):
             strongest_pokemon_player1["value"] = attack
 
         legendary_1 = core.cast_to_bool(pokemon["Legendary"])
+        # TODO: there is no need to check for True
         if legendary_1 is True:
             total_legendary_player1 += 1
 

@@ -90,7 +90,6 @@ def client_helper() -> None:
 
 
 def client_usage() -> None:
-
     client_usage_msg: str = """
     CLI usage:
 

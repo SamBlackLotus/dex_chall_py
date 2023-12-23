@@ -6,9 +6,13 @@ import yaml
 from typing import Dict, Union, List, Any
 
 
+# TODO: you don't need to say which function calls this one
+# TODO: improve the function description by adding "read"
+# TODO: this function could be more generic, it's not related
+# to pokemons
 def read_file(filepath: str) -> List[Dict[str, Union[str, int]]]:
     """
-    This function receives a file from main and based on the format
+    This function receives a filepath from main and based on the format
     it will fit in one of the conditionals.
 
     If its a .json it uses load.

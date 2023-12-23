@@ -4,6 +4,9 @@ import sys
 from typing import List, Dict, Any, Set
 
 
+# TODO: remove the parameters description since there
+# are no args in the function, and also the returns
+# TODO: don't use Any
 def main() -> None:
     """
     This function receive arguments from CLI and process it to calls

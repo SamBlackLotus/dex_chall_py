@@ -2,6 +2,12 @@ import core
 import os
 
 
+# TODO: add returns type
+# TODO: add sys.argv here since you dont use it on main
+# TODO: avoid redundant logic, if you are checking the
+# main commands on main, you should not do it again here
+# or vice versa, try to break the logic per each menu, e.g.
+# core.trivia()
 def file_validator(user_input: str) -> None:
     """
     This function receives the "sys.argv" input, and use it to validate

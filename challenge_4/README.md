@@ -157,7 +157,8 @@ Skills to unlock:
 ## Retrospective
 
 The good:
-- TODO
+- Flake8 is helpful to guide to write a clean code.
+- Have a separate file to add types.
 
 The bad:
-- TODO
+- Mypy is not intuitive for beginners.
