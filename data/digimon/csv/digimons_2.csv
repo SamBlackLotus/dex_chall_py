@@ -1,0 +1,151 @@
+Id,Name,Stage,Type,Attribute,Memory,Equip Slots,HP,SP,Atk,Def,Int,Spd,Image link
+200,MegaSeadramon,Ultimate,Data,Water,12,3,1330,138,86,114,158,102,http://digidb.io/images/dot/dot132.png
+139,Reppamon,Champion,Vaccine,Light,8,1,790,118,94,99,99,143,http://digidb.io/images/dot/dot077.png
+63,Lopmon,Rookie,Data,Earth,4,1,790,79,103,68,103,85,http://digidb.io/images/dot/dot750.png
+228,WarGreymon,Mega,Vaccine,Fire,20,2,1630,98,193,163,99,140,http://digidb.io/images/dot/dot027.png
+49,DemiDevimon,Rookie,Virus,Dark,4,1,650,87,89,76,89,111,http://digidb.io/images/dot/dot097.png
+180,Triceramon,Ultimate,Data,Earth,12,3,1180,89,148,168,94,99,http://digidb.io/images/dot/dot033.png
+126,Hudiemon,Champion,Free,Plant,8,1,980,111,109,85,113,115,http://digidb.io/images/dot/dot022.png
+164,Shakkoumon,Ultimate,Free,Light,14,3,1530,135,84,158,139,92,http://digidb.io/images/dot/dot723.png
+52,FanBeemon,Rookie,Virus,Plant,4,1,860,69,104,86,73,98,http://digidb.io/images/dot/dot042.png
+22,Impmon,Rookie,Virus,Dark,5,1,530,114,83,65,114,102,http://digidb.io/images/dot/dot081.png
+183,Datamon,Ultimate,Virus,Electric,12,3,1180,133,74,114,175,102,http://digidb.io/images/dot/dot576.png
+173,Dragomon,Ultimate,Virus,Water,12,3,1280,115,126,111,137,99,http://digidb.io/images/dot/dot129.png
+188,Piximon,Ultimate,Data,Light,12,3,990,123,104,104,134,153,http://digidb.io/images/dot/dot410.png
+165,Cherrymon,Ultimate,Virus,Plant,12,3,1630,108,113,133,114,100,http://digidb.io/images/dot/dot379.png
+114,Tyrannomon,Champion,Data,Fire,6,2,1230,59,148,125,59,97,http://digidb.io/images/dot/dot363.png
+144,Andromon,Ultimate,Vaccine,Electric,12,3,1040,94,133,157,133,95,http://digidb.io/images/dot/dot342.png
+181,DoruGreymon,Ultimate,Data,Fire,14,3,1480,84,161,153,84,116,http://digidb.io/images/dot/dot407.png
+253,Seraphimon,Mega,Vaccine,Light,20,2,1480,162,94,144,198,135,http://digidb.io/images/dot/dot315.png
+90,Greymon,Champion,Vaccine,Fire,8,1,1230,74,148,118,64,104,http://digidb.io/images/dot/dot326.png
+43,Dracomon,Rookie,Data,Fire,5,1,980,69,132,89,49,99,http://digidb.io/images/dot/dot208.png
+276,BlackWarGreymon,Mega,Virus,Fire,20,2,1730,93,183,178,89,140,http://digidb.io/images/dot/dot175.png
+197,Matadormon,Ultimate,Virus,Dark,12,3,1480,94,148,93,104,144,http://digidb.io/images/dot/dot031.png
+35,Syakomon,Rookie,Virus,Water,4,1,870,100,53,86,112,78,http://digidb.io/images/dot/dot709.png
+93,Kuwagamon,Champion,Virus,Plant,6,2,1180,69,153,113,59,99,http://digidb.io/images/dot/dot367.png
+9,Tsunomon,In-Training,Free,Earth,3,0,930,54,107,92,54,76,http://digidb.io/images/dot/dot438.png
+322,Lucemon SM,Ultra,Virus,Dark,25,2,1490,173,89,124,233,158,http://digidb.io/images/dot/dot435.png
+102,Sunflowmon,Champion,Data,Plant,6,2,1180,113,64,89,141,86,http://digidb.io/images/dot/dot058.png
+245,SaberLeomon,Mega,Data,Wind,18,3,1680,99,228,104,84,163,http://digidb.io/images/dot/dot424.png
+326,Shoutmon,None,Free,Fire,5,1,1030,62,128,101,55,87,http://digidb.io/images/dot/dot682.png
+120,Nanimon,Champion,Virus,Earth,6,2,1070,84,108,133,98,81,http://digidb.io/images/dot/dot375.png
+195,MagnaAngemon,Ultimate,Vaccine,Light,14,3,1180,143,98,119,163,105,http://digidb.io/images/dot/dot101.png
+72,Wizardmon,Champion,Data,Dark,8,1,690,138,74,79,143,118,http://digidb.io/images/dot/dot377.png
+290,MarineAngemon,Mega,Vaccine,Water,18,3,1190,198,64,89,203,153,http://digidb.io/images/dot/dot024.png
+336,Sistermon C (Awake.),Champion,Virus,Light,18,2,1550,114,188,102,114,173,http://digidb.io/images/dot/dot784.png
+135,Raptordramon,Champion,Vaccine,Neutral,6,2,1130,83,131,101,83,100,http://digidb.io/images/dot/dot025.png
+248,ShineGreymon,Mega,Vaccine,Light,20,2,1880,114,203,109,84,158,http://digidb.io/images/dot/dot094.png
+309,Lotosmon,Mega,Data,Plant,18,3,940,188,74,109,213,168,http://digidb.io/images/dot/dot742.png
+100,Cyclonemon,Champion,Virus,Earth,6,2,940,84,131,128,93,81,http://digidb.io/images/dot/dot452.png
+223,Imperialdramon FM,Mega,Free,Neutral,20,2,1780,114,198,124,114,153,http://digidb.io/images/dot/dot419.png
+225,Valkyrimon,Mega,Free,Wind,18,3,1330,139,148,129,129,168,http://digidb.io/images/dot/dot773.png
+222,Imperialdramon DM,Mega,Free,Fire,20,2,1730,143,139,139,139,148,http://digidb.io/images/dot/dot732.png
+108,Stingmon,Champion,Free,Plant,8,1,1130,84,143,74,74,133,http://digidb.io/images/dot/dot091.png
+50,Biyomon,Rookie,Vaccine,Wind,4,1,830,93,85,79,85,91,http://digidb.io/images/dot/dot307.png
+301,RustTyranomon,Mega,Virus,Electric,18,3,1680,83,218,163,74,140,http://digidb.io/images/dot/dot383.png
+238,GranDracmon,Mega,Virus,Dark,20,2,1340,140,174,114,169,151,http://digidb.io/images/dot/dot032.png
+231,KaiserGreymon,Mega,Free,Fire,20,2,1640,99,206,151,123,139,http://digidb.io/images/dot/dot677.png
+60,Lucemon,Rookie,Vaccine,Light,14,1,1230,148,59,104,208,119,http://digidb.io/images/dot/dot390.png
+329,Ginryumon,Champion,Vaccine,Neutral,8,1,970,86,135,114,71,118,http://digidb.io/images/dot/dot191.png
+70,Ankylomon,Champion,Free,Earth,6,2,1330,98,89,133,79,79,http://digidb.io/images/dot/dot711.png
+152,Angewomon,Ultimate,Vaccine,Light,14,3,890,163,69,94,188,143,http://digidb.io/images/dot/dot148.png
+293,MirageGaogamon BM,Mega,Data,Light,20,3,1440,124,178,104,158,174,http://digidb.io/images/dot/dot777.png
+106,Sukamon,Champion,Virus,Earth,6,2,1430,98,89,133,69,79,http://digidb.io/images/dot/dot313.png
+147,Myotismon,Ultimate,Virus,Dark,14,3,1290,113,148,99,148,110,http://digidb.io/images/dot/dot085.png
+87,Kyubimon,Champion,Data,Fire,8,1,740,138,59,84,138,128,http://digidb.io/images/dot/dot395.png
+44,Dorumon,Rookie,Data,Neutral,5,1,1020,65,128,79,56,101,http://digidb.io/images/dot/dot112.png
+178,Duramon,Ultimate,Vaccine,Neutral,14,3,1460,81,175,146,79,119,http://digidb.io/images/dot/dot699.png
+211,Rapidmon,Ultimate,Vaccine,Electric,12,3,1180,113,114,109,119,143,http://digidb.io/images/dot/dot722.png
+279,Plesiomon,Mega,Data,Water,18,3,1680,153,74,114,188,129,http://digidb.io/images/dot/dot450.png
+324,Magnamon,Armor,Free,Earth,22,2,1240,124,168,208,148,124,http://digidb.io/images/dot/dot382.png
+236,Kuzuhamon,Mega,Data,Dark,18,3,1380,163,84,129,193,139,http://digidb.io/images/dot/dot754.png
+266,Leopardmon LM,Mega,Data,Earth,25,3,1290,153,159,129,139,218,http://digidb.io/images/dot/dot743.png
+141,MegaKabuterimon,Ultimate,Vaccine,Plant,12,2,1430,115,94,163,109,92,http://digidb.io/images/dot/dot305.png
+125,Veedramon,Champion,Vaccine,Wind,8,1,1180,84,138,113,64,114,http://digidb.io/images/dot/dot397.png
+25,Gaomon,Rookie,Data,Neutral,5,1,1030,69,118,74,66,101,http://digidb.io/images/dot/dot055.png
+219,Alphamon,Mega,Vaccine,Neutral,22,1,1390,128,158,183,158,130,http://digidb.io/images/dot/dot416.png
+315,Omnimon,Ultra,Vaccine,Light,25,2,1680,104,208,168,134,144,http://digidb.io/images/dot/dot088.png
+184,Paildramon,Ultimate,Free,Neutral,14,3,1280,133,139,124,109,128,http://digidb.io/images/dot/dot408.png
+30,Kudamon,Rookie,Vaccine,Light,5,1,590,128,53,74,117,105,http://digidb.io/images/dot/dot053.png
+277,PrinceMamemon,Mega,Data,Neutral,16,3,1630,137,104,173,109,130,http://digidb.io/images/dot/dot429.png
+10,Tsumemon,In-Training,Free,Dark,3,0,930,64,108,64,54,93,http://digidb.io/images/dot/dot631.png
+64,Wormmon,Rookie,Free,Plant,4,1,760,76,92,111,90,71,http://digidb.io/images/dot/dot392.png
+107,Starmon,Champion,Data,Neutral,6,2,1080,98,104,109,91,101,http://digidb.io/images/dot/dot014.png
+317,Chaosmon,Ultra,Vaccine,Neutral,25,3,1080,129,318,94,89,188,http://digidb.io/images/dot/dot772.png
+67,Aquilamon,Champion,Free,Wind,8,1,840,108,109,89,89,143,http://digidb.io/images/dot/dot015.png
+259,Dianamon,Mega,Data,Water,20,3,790,178,89,154,198,183,http://digidb.io/images/dot/dot733.png
+56,Hawkmon,Rookie,Free,Wind,5,1,690,88,99,79,83,114,http://digidb.io/images/dot/dot706.png
+286,Boltmon,Mega,Data,Electric,18,3,1580,83,198,163,84,140,http://digidb.io/images/dot/dot431.png
+163,Cyberdramon,Ultimate,Vaccine,Dark,14,2,1480,81,173,143,79,122,http://digidb.io/images/dot/dot719.png
+265,Leopardmon,Mega,Data,Light,22,3,990,188,124,114,183,188,http://digidb.io/images/dot/dot739.png
+289,Mastemon,Mega,Vaccine,Neutral,22,1,1340,144,173,134,173,149,http://digidb.io/images/dot/dot748.png
+55,Betamon,Rookie,Virus,Water,4,1,870,101,61,76,113,78,http://digidb.io/images/dot/dot389.png
+221,Ebemon,Mega,Virus,Electric,16,3,1230,178,74,114,198,129,http://digidb.io/images/dot/dot451.png
+255,Darkdramon,Mega,Virus,Electric,18,3,1580,94,188,148,99,139,http://digidb.io/images/dot/dot771.png
+111,Socerimon,Champion,Vaccine,Water,8,1,1030,123,64,93,148,90,http://digidb.io/images/dot/dot755.png
+291,Minervamon,Mega,Virus,Neutral,20,3,1580,114,208,114,119,168,http://digidb.io/images/dot/dot747.png
+148,Wingdramon,Ultimate,Vaccine,Wind,14,3,1380,89,163,109,89,158,http://digidb.io/images/dot/dot210.png
+216,WereGarurumon (Blk),Ultimate,Virus,Earth,12,3,1480,79,183,104,69,148,http://digidb.io/images/dot/dot715.png
+46,Patamon,Rookie,Data,Wind,4,1,880,93,79,74,92,90,http://digidb.io/images/dot/dot096.png
+18,Agumon,Rookie,Vaccine,Fire,5,1,1030,59,131,103,54,86,http://digidb.io/images/dot/dot050.png
+76,ExVeemon,Champion,Free,Neutral,8,1,1030,118,104,94,94,118,http://digidb.io/images/dot/dot365.png
+187,Pumpkinmon,Ultimate,Data,Earth,10,3,1480,97,123,108,119,111,http://digidb.io/images/dot/dot596.png
+243,Kerpymon (Good),Mega,Vaccine,Light,20,2,1290,188,94,104,208,158,http://digidb.io/images/dot/dot735.png
+166,Silphymon,Ultimate,Free,Wind,14,3,1040,138,119,119,124,158,http://digidb.io/images/dot/dot720.png
+74,Woodmon,Champion,Virus,Plant,6,2,1480,74,109,103,89,88,http://digidb.io/images/dot/dot393.png
+330,Hisyaryumon,Ultimate,Vaccine,Neutral,14,1,1200,89,183,157,74,123,http://digidb.io/images/dot/dot192.png
+213,Lucemon FM,Ultimate,Virus,Neutral,22,2,1390,139,163,114,203,139,http://digidb.io/images/dot/dot039.png
+32,Gotsumon,Rookie,Data,Earth,5,1,790,79,93,118,90,72,http://digidb.io/images/dot/dot595.png
+242,Kerpymon (Blk),Mega,Virus,Dark,20,3,1290,188,94,94,223,153,http://digidb.io/images/dot/dot774.png
+264,Durandamon,Mega,Vaccine,Neutral,20,2,1660,92,193,175,95,135,http://digidb.io/images/dot/dot700.png
+304,Ravemon,Mega,Vaccine,Wind,18,3,1040,143,139,119,139,203,http://digidb.io/images/dot/dot740.png
+34,Gomamon,Rookie,Vaccine,Water,5,1,1160,69,93,93,81,79,http://digidb.io/images/dot/dot343.png
+308,Rosemon BM,Mega,Data,Plant,20,3,1480,143,149,139,159,143,http://digidb.io/images/dot/dot779.png
+174,Chirinmon,Ultimate,Vaccine,Light,14,3,940,133,124,119,124,168,http://digidb.io/images/dot/dot084.png
+12,Nyaromon,In-Training,Free,Light,3,0,540,107,54,64,103,94,http://digidb.io/images/dot/dot515.png
+175,Dinobeemon,Ultimate,Free,Plant,14,3,1330,94,193,124,84,133,http://digidb.io/images/dot/dot023.png
+250,Justimon,Mega,Vaccine,Light,18,3,1530,99,193,158,99,144,http://digidb.io/images/dot/dot737.png
+249,ShineGreymon BM,Mega,Vaccine,Fire,22,2,1980,114,228,104,84,168,http://digidb.io/images/dot/dot776.png
+313,Imperialdramon PM,Ultra,Vaccine,Light,25,2,1530,158,154,154,154,153,http://digidb.io/images/dot/dot420.png
+172,Taomon,Ultimate,Data,Dark,12,3,990,148,69,104,173,138,http://digidb.io/images/dot/dot405.png
+150,AeroVeedramon,Ultimate,Vaccine,Wind,14,1,1430,94,163,99,94,153,http://digidb.io/images/dot/dot400.png
+212,Lillymon,Ultimate,Data,Plant,12,3,890,153,74,94,163,158,http://digidb.io/images/dot/dot359.png
+310,Armageddemon,Ultra,Free,Dark,25,1,1760,114,255,133,84,164,http://digidb.io/images/dot/dot106.png
+328,Ryudamon,Rookie,Vaccine,Neutral,5,1,790,73,123,97,57,102,http://digidb.io/images/dot/dot190.png
+80,Guardromon (Gold),Champion,Free,Electric,6,2,1130,83,99,168,96,62,http://digidb.io/images/dot/dot760.png
+281,Beelzemon,Mega,Virus,Dark,22,1,1680,114,228,119,99,168,http://digidb.io/images/dot/dot035.png
+58,Monodramon,Rookie,Vaccine,Neutral,4,1,1040,54,128,100,51,79,http://digidb.io/images/dot/dot458.png
+119,Dorugamon,Champion,Data,Earth,8,1,1180,84,138,89,69,123,http://digidb.io/images/dot/dot396.png
+85,Garurumon,Champion,Vaccine,Fire,8,1,890,108,99,94,94,138,http://digidb.io/images/dot/dot012.png
+13,Pagumon,In-Training,Free,Dark,3,0,550,103,60,63,102,93,http://digidb.io/images/dot/dot567.png
+218,Arcadiamon Mega,Mega,Virus,Dark,20,2,1410,153,196,109,119,163,http://digidb.io/images/dot/dot066.png
+95,Geremon,Champion,Virus,Electric,6,2,1380,99,104,128,64,78,http://digidb.io/images/dot/dot729.png
+186,Pandamon,Ultimate,Data,Earth,12,3,1090,104,135,153,118,97,http://digidb.io/images/dot/dot041.png
+176,Digitamamon,Ultimate,Data,Neutral,12,3,1380,89,128,148,111,102,http://digidb.io/images/dot/dot374.png
+273,Piedmon,Mega,Virus,Dark,18,3,890,178,129,104,183,163,http://digidb.io/images/dot/dot427.png
+20,Arcadiamon Rookie,Rookie,Virus,Dark,5,1,950,86,105,79,85,86,http://digidb.io/images/dot/dot063.png
+128,BlackGatomon,Champion,Virus,Dark,8,1,690,133,84,84,133,118,http://digidb.io/images/dot/dot043.png
+312,Alphamon Ouryuken,Ultra,Vaccine,Neutral,25,1,1530,133,179,149,159,153,http://digidb.io/images/dot/dot766.png
+4,Botamon,Baby,Free,Neutral,2,0,690,68,77,95,76,61,http://digidb.io/images/dot/dot317.png
+40,Tentomon,Rookie,Vaccine,Plant,4,1,750,79,86,110,93,73,http://digidb.io/images/dot/dot303.png
+153,Okuwamon,Ultimate,Virus,Plant,12,3,1330,74,158,158,74,119,http://digidb.io/images/dot/dot401.png
+270,PileVolcamon,Mega,Data,Fire,18,2,1330,109,173,163,111,137,http://digidb.io/images/dot/dot060.png
+306,Crusadermon,Mega,Virus,Dark,22,2,1240,153,144,139,144,193,http://digidb.io/images/dot/dot703.png
+151,Etemon,Ultimate,Virus,Dark,12,3,1130,133,104,119,129,133,http://digidb.io/images/dot/dot311.png
+327,OmniShoutmon,None,Free,Fire,20,2,1510,141,166,144,114,165,http://digidb.io/images/dot/dot683.png
+302,Leviamon,Mega,Virus,Water,22,1,1730,120,168,158,144,133,http://digidb.io/images/dot/dot037.png
+98,GoldNumemon,Champion,Virus,Light,6,2,1130,124,59,84,143,88,http://digidb.io/images/dot/dot113.png
+240,Gryphonmon,Mega,Data,Wind,18,3,1260,129,164,104,130,173,http://digidb.io/images/dot/dot083.png
+132,Monochromon,Champion,Data,Earth,6,2,1030,76,135,128,77,92,http://digidb.io/images/dot/dot369.png
+168,SkullGreymon,Ultimate,Virus,Dark,14,3,1230,79,203,153,69,119,http://digidb.io/images/dot/dot404.png
+323,Flamedramon,Armor,Free,Fire,8,3,1130,93,119,99,89,138,http://digidb.io/images/dot/dot716.png
+61,Lunamon,Rookie,Data,Water,5,1,890,94,89,76,101,82,http://digidb.io/images/dot/dot002.png
+229,Ophanimon,Mega,Vaccine,Light,20,2,840,183,104,164,193,153,http://digidb.io/images/dot/dot421.png
+161,Grademon,Ultimate,Vaccine,Neutral,12,3,1290,97,173,89,100,144,http://digidb.io/images/dot/dot026.png
+156,Gigadramon,Ultimate,Virus,Wind,12,3,1240,94,137,148,113,100,http://digidb.io/images/dot/dot402.png
+269,HiAndromon,Mega,Vaccine,Electric,18,3,1190,114,153,178,138,124,http://digidb.io/images/dot/dot426.png
+16,Motimon,In-Training,Free,Neutral,3,0,1030,63,82,81,78,69,http://digidb.io/images/dot/dot388.png
+217,Wisemon,Ultimate,Virus,Dark,12,3,790,168,69,84,198,133,http://digidb.io/images/dot/dot726.png
+71,Ikkakumon,Champion,Vaccine,Water,8,1,1330,84,118,102,94,90,http://digidb.io/images/dot/dot344.png
+133,Frigimon,Champion,Vaccine,Water,6,2,1380,83,103,98,99,90,http://digidb.io/images/dot/dot370.png
+83,ShellNumemon,Champion,Virus,Water,6,2,1280,103,79,148,74,79,http://digidb.io/images/dot/dot455.png

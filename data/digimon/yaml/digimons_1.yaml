@@ -1,0 +1,2101 @@
+---
+- Id: 304
+  Name: Ravemon
+  Stage: Mega
+  Type: Vaccine
+  Attribute: Wind
+  Memory: 18
+  Equip Slots: 3
+  HP: 1040
+  SP: 143
+  Atk: 139
+  Def: 119
+  Int: 139
+  Spd: 203
+  Image link: http://digidb.io/images/dot/dot740.png
+- Id: 144
+  Name: Andromon
+  Stage: Ultimate
+  Type: Vaccine
+  Attribute: Electric
+  Memory: 12
+  Equip Slots: 3
+  HP: 1040
+  SP: 94
+  Atk: 133
+  Def: 157
+  Int: 133
+  Spd: 95
+  Image link: http://digidb.io/images/dot/dot342.png
+- Id: 2
+  Name: Pabumon
+  Stage: Baby
+  Type: Free
+  Attribute: Neutral
+  Memory: 2
+  Equip Slots: 0
+  HP: 950
+  SP: 62
+  Atk: 76
+  Def: 76
+  Int: 69
+  Spd: 68
+  Image link: http://digidb.io/images/dot/dot387.png
+- Id: 120
+  Name: Nanimon
+  Stage: Champion
+  Type: Virus
+  Attribute: Earth
+  Memory: 6
+  Equip Slots: 2
+  HP: 1070
+  SP: 84
+  Atk: 108
+  Def: 133
+  Int: 98
+  Spd: 81
+  Image link: http://digidb.io/images/dot/dot375.png
+- Id: 269
+  Name: HiAndromon
+  Stage: Mega
+  Type: Vaccine
+  Attribute: Electric
+  Memory: 18
+  Equip Slots: 3
+  HP: 1190
+  SP: 114
+  Atk: 153
+  Def: 178
+  Int: 138
+  Spd: 124
+  Image link: http://digidb.io/images/dot/dot426.png
+- Id: 155
+  Name: KendoGarurumon
+  Stage: Ultimate
+  Type: Free
+  Attribute: Light
+  Memory: 14
+  Equip Slots: 2
+  HP: 1410
+  SP: 105
+  Atk: 144
+  Def: 128
+  Int: 104
+  Spd: 124
+  Image link: http://digidb.io/images/dot/dot681.png
+- Id: 288
+  Name: MagnaGarurumon (SV)
+  Stage: Mega
+  Type: Free
+  Attribute: Light
+  Memory: 18
+  Equip Slots: 3
+  HP: 1020
+  SP: 138
+  Atk: 163
+  Def: 107
+  Int: 119
+  Spd: 218
+  Image link: http://digidb.io/images/dot/dot675.png
+- Id: 5
+  Name: Poyomon
+  Stage: Baby
+  Type: Free
+  Attribute: Neutral
+  Memory: 2
+  Equip Slots: 0
+  HP: 540
+  SP: 98
+  Atk: 54
+  Def: 59
+  Int: 95
+  Spd: 86
+  Image link: http://digidb.io/images/dot/dot320.png
+- Id: 274
+  Name: Puppetmon
+  Stage: Mega
+  Type: Virus
+  Attribute: Plant
+  Memory: 18
+  Equip Slots: 3
+  HP: 1140
+  SP: 114
+  Atk: 163
+  Def: 163
+  Int: 148
+  Spd: 124
+  Image link: http://digidb.io/images/dot/dot428.png
+- Id: 272
+  Name: BanchoLeomon
+  Stage: Mega
+  Type: Vaccine
+  Attribute: Earth
+  Memory: 18
+  Equip Slots: 3
+  HP: 1630
+  SP: 84
+  Atk: 193
+  Def: 188
+  Int: 80
+  Spd: 138
+  Image link: http://digidb.io/images/dot/dot049.png
+- Id: 240
+  Name: Gryphonmon
+  Stage: Mega
+  Type: Data
+  Attribute: Wind
+  Memory: 18
+  Equip Slots: 3
+  HP: 1260
+  SP: 129
+  Atk: 164
+  Def: 104
+  Int: 130
+  Spd: 173
+  Image link: http://digidb.io/images/dot/dot083.png
+- Id: 265
+  Name: Leopardmon
+  Stage: Mega
+  Type: Data
+  Attribute: Light
+  Memory: 22
+  Equip Slots: 3
+  HP: 990
+  SP: 188
+  Atk: 124
+  Def: 114
+  Int: 183
+  Spd: 188
+  Image link: http://digidb.io/images/dot/dot739.png
+- Id: 128
+  Name: BlackGatomon
+  Stage: Champion
+  Type: Virus
+  Attribute: Dark
+  Memory: 8
+  Equip Slots: 1
+  HP: 690
+  SP: 133
+  Atk: 84
+  Def: 84
+  Int: 133
+  Spd: 118
+  Image link: http://digidb.io/images/dot/dot043.png
+- Id: 248
+  Name: ShineGreymon
+  Stage: Mega
+  Type: Vaccine
+  Attribute: Light
+  Memory: 20
+  Equip Slots: 2
+  HP: 1880
+  SP: 114
+  Atk: 203
+  Def: 109
+  Int: 84
+  Spd: 158
+  Image link: http://digidb.io/images/dot/dot094.png
+- Id: 53
+  Name: Veemon
+  Stage: Rookie
+  Type: Free
+  Attribute: Neutral
+  Memory: 5
+  Equip Slots: 1
+  HP: 1040
+  SP: 74
+  Atk: 130
+  Def: 74
+  Int: 53
+  Spd: 101
+  Image link: http://digidb.io/images/dot/dot114.png
+- Id: 45
+  Name: Hagurumon
+  Stage: Rookie
+  Type: Virus
+  Attribute: Electric
+  Memory: 4
+  Equip Slots: 1
+  HP: 1090
+  SP: 91
+  Atk: 66
+  Def: 110
+  Int: 69
+  Spd: 71
+  Image link: http://digidb.io/images/dot/dot009.png
+- Id: 333
+  Name: Sistermon Blanc
+  Stage: Rookie
+  Type: Vaccine
+  Attribute: Light
+  Memory: 4
+  Equip Slots: 1
+  HP: 880
+  SP: 105
+  Atk: 53
+  Def: 72
+  Int: 116
+  Spd: 82
+  Image link: http://digidb.io/images/dot/dot781.png
+- Id: 327
+  Name: OmniShoutmon
+  Stage: None
+  Type: Free
+  Attribute: Fire
+  Memory: 20
+  Equip Slots: 2
+  HP: 1510
+  SP: 141
+  Atk: 166
+  Def: 144
+  Int: 114
+  Spd: 165
+  Image link: http://digidb.io/images/dot/dot683.png
+- Id: 312
+  Name: Alphamon Ouryuken
+  Stage: Ultra
+  Type: Vaccine
+  Attribute: Neutral
+  Memory: 25
+  Equip Slots: 1
+  HP: 1530
+  SP: 133
+  Atk: 179
+  Def: 149
+  Int: 159
+  Spd: 153
+  Image link: http://digidb.io/images/dot/dot766.png
+- Id: 156
+  Name: Gigadramon
+  Stage: Ultimate
+  Type: Virus
+  Attribute: Wind
+  Memory: 12
+  Equip Slots: 3
+  HP: 1240
+  SP: 94
+  Atk: 137
+  Def: 148
+  Int: 113
+  Spd: 100
+  Image link: http://digidb.io/images/dot/dot402.png
+- Id: 260
+  Name: Diaboromon
+  Stage: Mega
+  Type: Free
+  Attribute: Dark
+  Memory: 20
+  Equip Slots: 2
+  HP: 1680
+  SP: 114
+  Atk: 243
+  Def: 104
+  Int: 79
+  Spd: 173
+  Image link: http://digidb.io/images/dot/dot632.png
+- Id: 299
+  Name: MetalSeadramon
+  Stage: Mega
+  Type: Data
+  Attribute: Water
+  Memory: 18
+  Equip Slots: 3
+  HP: 1430
+  SP: 148
+  Atk: 99
+  Def: 139
+  Int: 168
+  Spd: 129
+  Image link: http://digidb.io/images/dot/dot434.png
+- Id: 273
+  Name: Piedmon
+  Stage: Mega
+  Type: Virus
+  Attribute: Dark
+  Memory: 18
+  Equip Slots: 3
+  HP: 890
+  SP: 178
+  Atk: 129
+  Def: 104
+  Int: 183
+  Spd: 163
+  Image link: http://digidb.io/images/dot/dot427.png
+- Id: 216
+  Name: WereGarurumon (Blk)
+  Stage: Ultimate
+  Type: Virus
+  Attribute: Earth
+  Memory: 12
+  Equip Slots: 3
+  HP: 1480
+  SP: 79
+  Atk: 183
+  Def: 104
+  Int: 69
+  Spd: 148
+  Image link: http://digidb.io/images/dot/dot715.png
+- Id: 182
+  Name: Knightmon
+  Stage: Ultimate
+  Type: Data
+  Attribute: Neutral
+  Memory: 12
+  Equip Slots: 3
+  HP: 1140
+  SP: 109
+  Atk: 135
+  Def: 158
+  Int: 123
+  Spd: 92
+  Image link: http://digidb.io/images/dot/dot718.png
+- Id: 171
+  Name: SaviorHuckmon
+  Stage: Ultimate
+  Type: Data
+  Attribute: Fire
+  Memory: 14
+  Equip Slots: 3
+  HP: 1380
+  SP: 94
+  Atk: 163
+  Def: 128
+  Int: 79
+  Spd: 144
+  Image link: http://digidb.io/images/dot/dot116.png
+- Id: 322
+  Name: Lucemon SM
+  Stage: Ultra
+  Type: Virus
+  Attribute: Dark
+  Memory: 25
+  Equip Slots: 2
+  HP: 1490
+  SP: 173
+  Atk: 89
+  Def: 124
+  Int: 233
+  Spd: 158
+  Image link: http://digidb.io/images/dot/dot435.png
+- Id: 73
+  Name: Lobomon
+  Stage: Champion
+  Type: Free
+  Attribute: Light
+  Memory: 8
+  Equip Slots: 1
+  HP: 1180
+  SP: 79
+  Atk: 143
+  Def: 95
+  Int: 69
+  Spd: 117
+  Image link: http://digidb.io/images/dot/dot680.png
+- Id: 85
+  Name: Garurumon
+  Stage: Champion
+  Type: Vaccine
+  Attribute: Fire
+  Memory: 8
+  Equip Slots: 1
+  HP: 890
+  SP: 108
+  Atk: 99
+  Def: 94
+  Int: 94
+  Spd: 138
+  Image link: http://digidb.io/images/dot/dot012.png
+- Id: 284
+  Name: Hououmon
+  Stage: Mega
+  Type: Vaccine
+  Attribute: Fire
+  Memory: 18
+  Equip Slots: 3
+  HP: 1390
+  SP: 173
+  Atk: 84
+  Def: 99
+  Int: 193
+  Spd: 158
+  Image link: http://digidb.io/images/dot/dot310.png
+- Id: 328
+  Name: Ryudamon
+  Stage: Rookie
+  Type: Vaccine
+  Attribute: Neutral
+  Memory: 5
+  Equip Slots: 1
+  HP: 790
+  SP: 73
+  Atk: 123
+  Def: 97
+  Int: 57
+  Spd: 102
+  Image link: http://digidb.io/images/dot/dot190.png
+- Id: 116
+  Name: Devimon
+  Stage: Champion
+  Type: Virus
+  Attribute: Dark
+  Memory: 8
+  Equip Slots: 1
+  HP: 990
+  SP: 94
+  Atk: 133
+  Def: 84
+  Int: 125
+  Spd: 97
+  Image link: http://digidb.io/images/dot/dot093.png
+- Id: 297
+  Name: MetalGarurumon
+  Stage: Mega
+  Type: Data
+  Attribute: Water
+  Memory: 18
+  Equip Slots: 3
+  HP: 1140
+  SP: 143
+  Atk: 154
+  Def: 129
+  Int: 129
+  Spd: 178
+  Image link: http://digidb.io/images/dot/dot135.png
+- Id: 256
+  Name: TigerVespamon
+  Stage: Mega
+  Type: Virus
+  Attribute: Electric
+  Memory: 18
+  Equip Slots: 3
+  HP: 1630
+  SP: 104
+  Atk: 193
+  Def: 114
+  Int: 99
+  Spd: 173
+  Image link: http://digidb.io/images/dot/dot745.png
+- Id: 76
+  Name: ExVeemon
+  Stage: Champion
+  Type: Free
+  Attribute: Neutral
+  Memory: 8
+  Equip Slots: 1
+  HP: 1030
+  SP: 118
+  Atk: 104
+  Def: 94
+  Int: 94
+  Spd: 118
+  Image link: http://digidb.io/images/dot/dot365.png
+- Id: 111
+  Name: Socerimon
+  Stage: Champion
+  Type: Vaccine
+  Attribute: Water
+  Memory: 8
+  Equip Slots: 1
+  HP: 1030
+  SP: 123
+  Atk: 64
+  Def: 93
+  Int: 148
+  Spd: 90
+  Image link: http://digidb.io/images/dot/dot755.png
+- Id: 238
+  Name: GranDracmon
+  Stage: Mega
+  Type: Virus
+  Attribute: Dark
+  Memory: 20
+  Equip Slots: 2
+  HP: 1340
+  SP: 140
+  Atk: 174
+  Def: 114
+  Int: 169
+  Spd: 151
+  Image link: http://digidb.io/images/dot/dot032.png
+- Id: 236
+  Name: Kuzuhamon
+  Stage: Mega
+  Type: Data
+  Attribute: Dark
+  Memory: 18
+  Equip Slots: 3
+  HP: 1380
+  SP: 163
+  Atk: 84
+  Def: 129
+  Int: 193
+  Spd: 139
+  Image link: http://digidb.io/images/dot/dot754.png
+- Id: 286
+  Name: Boltmon
+  Stage: Mega
+  Type: Data
+  Attribute: Electric
+  Memory: 18
+  Equip Slots: 3
+  HP: 1580
+  SP: 83
+  Atk: 198
+  Def: 163
+  Int: 84
+  Spd: 140
+  Image link: http://digidb.io/images/dot/dot431.png
+- Id: 74
+  Name: Woodmon
+  Stage: Champion
+  Type: Virus
+  Attribute: Plant
+  Memory: 6
+  Equip Slots: 2
+  HP: 1480
+  SP: 74
+  Atk: 109
+  Def: 103
+  Int: 89
+  Spd: 88
+  Image link: http://digidb.io/images/dot/dot393.png
+- Id: 10
+  Name: Tsumemon
+  Stage: In-Training
+  Type: Free
+  Attribute: Dark
+  Memory: 3
+  Equip Slots: 0
+  HP: 930
+  SP: 64
+  Atk: 108
+  Def: 64
+  Int: 54
+  Spd: 93
+  Image link: http://digidb.io/images/dot/dot631.png
+- Id: 331
+  Name: Ouryumon
+  Stage: Mega
+  Type: Vaccine
+  Attribute: Neutral
+  Memory: 20
+  Equip Slots: 2
+  HP: 1350
+  SP: 104
+  Atk: 221
+  Def: 179
+  Int: 84
+  Spd: 158
+  Image link: http://digidb.io/images/dot/dot193.png
+- Id: 71
+  Name: Ikkakumon
+  Stage: Champion
+  Type: Vaccine
+  Attribute: Water
+  Memory: 8
+  Equip Slots: 1
+  HP: 1330
+  SP: 84
+  Atk: 118
+  Def: 102
+  Int: 94
+  Spd: 90
+  Image link: http://digidb.io/images/dot/dot344.png
+- Id: 22
+  Name: Impmon
+  Stage: Rookie
+  Type: Virus
+  Attribute: Dark
+  Memory: 5
+  Equip Slots: 1
+  HP: 530
+  SP: 114
+  Atk: 83
+  Def: 65
+  Int: 114
+  Spd: 102
+  Image link: http://digidb.io/images/dot/dot081.png
+- Id: 97
+  Name: Coredramon (Green)
+  Stage: Champion
+  Type: Virus
+  Attribute: Earth
+  Memory: 8
+  Equip Slots: 1
+  HP: 1230
+  SP: 74
+  Atk: 151
+  Def: 99
+  Int: 61
+  Spd: 123
+  Image link: http://digidb.io/images/dot/dot209.png
+- Id: 223
+  Name: Imperialdramon FM
+  Stage: Mega
+  Type: Free
+  Attribute: Neutral
+  Memory: 20
+  Equip Slots: 2
+  HP: 1780
+  SP: 114
+  Atk: 198
+  Def: 124
+  Int: 114
+  Spd: 153
+  Image link: http://digidb.io/images/dot/dot419.png
+- Id: 124
+  Name: Bakemon
+  Stage: Champion
+  Type: Virus
+  Attribute: Dark
+  Memory: 6
+  Equip Slots: 2
+  HP: 590
+  SP: 148
+  Atk: 64
+  Def: 74
+  Int: 138
+  Spd: 128
+  Image link: http://digidb.io/images/dot/dot013.png
+- Id: 86
+  Name: Garurumon (Blk)
+  Stage: Champion
+  Type: Virus
+  Attribute: Fire
+  Memory: 8
+  Equip Slots: 1
+  HP: 890
+  SP: 108
+  Atk: 109
+  Def: 104
+  Int: 79
+  Spd: 133
+  Image link: http://digidb.io/images/dot/dot714.png
+- Id: 134
+  Name: Unimon
+  Stage: Champion
+  Type: Vaccine
+  Attribute: Wind
+  Memory: 6
+  Equip Slots: 2
+  HP: 790
+  SP: 123
+  Atk: 84
+  Def: 79
+  Int: 128
+  Spd: 118
+  Image link: http://digidb.io/images/dot/dot548.png
+- Id: 257
+  Name: Titamon
+  Stage: Mega
+  Type: Virus
+  Attribute: Earth
+  Memory: 18
+  Equip Slots: 3
+  HP: 1930
+  SP: 99
+  Atk: 183
+  Def: 128
+  Int: 114
+  Spd: 129
+  Image link: http://digidb.io/images/dot/dot440.png
+- Id: 315
+  Name: Omnimon
+  Stage: Ultra
+  Type: Vaccine
+  Attribute: Light
+  Memory: 25
+  Equip Slots: 2
+  HP: 1680
+  SP: 104
+  Atk: 208
+  Def: 168
+  Int: 134
+  Spd: 144
+  Image link: http://digidb.io/images/dot/dot088.png
+- Id: 244
+  Name: Goldramon
+  Stage: Mega
+  Type: Vaccine
+  Attribute: Light
+  Memory: 20
+  Equip Slots: 2
+  HP: 1680
+  SP: 99
+  Atk: 193
+  Def: 149
+  Int: 134
+  Spd: 138
+  Image link: http://digidb.io/images/dot/dot048.png
+- Id: 157
+  Name: CatchMamemon
+  Stage: Ultimate
+  Type: Data
+  Attribute: Electric
+  Memory: 10
+  Equip Slots: 3
+  HP: 1420
+  SP: 109
+  Atk: 123
+  Def: 134
+  Int: 95
+  Spd: 104
+  Image link: http://digidb.io/images/dot/dot044.png
+- Id: 57
+  Name: Mushroomon
+  Stage: Rookie
+  Type: Virus
+  Attribute: Plant
+  Memory: 4
+  Equip Slots: 1
+  HP: 1110
+  SP: 64
+  Atk: 96
+  Def: 88
+  Int: 79
+  Spd: 78
+  Image link: http://digidb.io/images/dot/dot607.png
+- Id: 249
+  Name: ShineGreymon BM
+  Stage: Mega
+  Type: Vaccine
+  Attribute: Fire
+  Memory: 22
+  Equip Slots: 2
+  HP: 1980
+  SP: 114
+  Atk: 228
+  Def: 104
+  Int: 84
+  Spd: 168
+  Image link: http://digidb.io/images/dot/dot776.png
+- Id: 117
+  Name: Turuiemon
+  Stage: Champion
+  Type: Data
+  Attribute: Earth
+  Memory: 6
+  Equip Slots: 2
+  HP: 1140
+  SP: 78
+  Atk: 130
+  Def: 91
+  Int: 78
+  Spd: 120
+  Image link: http://digidb.io/images/dot/dot102.png
+- Id: 314
+  Name: Examon
+  Stage: Ultra
+  Type: Data
+  Attribute: Wind
+  Memory: 25
+  Equip Slots: 2
+  HP: 1730
+  SP: 148
+  Atk: 179
+  Def: 139
+  Int: 134
+  Spd: 153
+  Image link: http://digidb.io/images/dot/dot215.png
+- Id: 138
+  Name: Lekismon
+  Stage: Champion
+  Type: Data
+  Attribute: Water
+  Memory: 6
+  Equip Slots: 2
+  HP: 790
+  SP: 113
+  Atk: 94
+  Def: 84
+  Int: 99
+  Spd: 143
+  Image link: http://digidb.io/images/dot/dot003.png
+- Id: 324
+  Name: Magnamon
+  Stage: Armor
+  Type: Free
+  Attribute: Earth
+  Memory: 22
+  Equip Slots: 2
+  HP: 1240
+  SP: 124
+  Atk: 168
+  Def: 208
+  Int: 148
+  Spd: 124
+  Image link: http://digidb.io/images/dot/dot382.png
+- Id: 4
+  Name: Botamon
+  Stage: Baby
+  Type: Free
+  Attribute: Neutral
+  Memory: 2
+  Equip Slots: 0
+  HP: 690
+  SP: 68
+  Atk: 77
+  Def: 95
+  Int: 76
+  Spd: 61
+  Image link: http://digidb.io/images/dot/dot317.png
+- Id: 28
+  Name: Gabumon (Blk)
+  Stage: Rookie
+  Type: Virus
+  Attribute: Fire
+  Memory: 5
+  Equip Slots: 1
+  HP: 950
+  SP: 83
+  Atk: 99
+  Def: 89
+  Int: 74
+  Spd: 91
+  Image link: http://digidb.io/images/dot/dot713.png
+- Id: 83
+  Name: ShellNumemon
+  Stage: Champion
+  Type: Virus
+  Attribute: Water
+  Memory: 6
+  Equip Slots: 2
+  HP: 1280
+  SP: 103
+  Atk: 79
+  Def: 148
+  Int: 74
+  Spd: 79
+  Image link: http://digidb.io/images/dot/dot455.png
+- Id: 306
+  Name: Crusadermon
+  Stage: Mega
+  Type: Virus
+  Attribute: Dark
+  Memory: 22
+  Equip Slots: 2
+  HP: 1240
+  SP: 153
+  Atk: 144
+  Def: 139
+  Int: 144
+  Spd: 193
+  Image link: http://digidb.io/images/dot/dot703.png
+- Id: 41
+  Name: ToyAgumon
+  Stage: Rookie
+  Type: Vaccine
+  Attribute: Neutral
+  Memory: 4
+  Equip Slots: 1
+  HP: 1110
+  SP: 87
+  Atk: 72
+  Def: 112
+  Int: 63
+  Spd: 71
+  Image link: http://digidb.io/images/dot/dot708.png
+- Id: 131
+  Name: Meramon
+  Stage: Champion
+  Type: Data
+  Attribute: Fire
+  Memory: 6
+  Equip Slots: 2
+  HP: 1130
+  SP: 69
+  Atk: 138
+  Def: 113
+  Int: 79
+  Spd: 99
+  Image link: http://digidb.io/images/dot/dot010.png
+- Id: 162
+  Name: Crescemon
+  Stage: Ultimate
+  Type: Data
+  Attribute: Water
+  Memory: 12
+  Equip Slots: 3
+  HP: 1180
+  SP: 133
+  Atk: 124
+  Def: 103
+  Int: 139
+  Spd: 114
+  Image link: http://digidb.io/images/dot/dot004.png
+- Id: 15
+  Name: Bukamon
+  Stage: In-Training
+  Type: Free
+  Attribute: Water
+  Memory: 3
+  Equip Slots: 0
+  HP: 830
+  SP: 93
+  Atk: 54
+  Def: 74
+  Int: 103
+  Spd: 69
+  Image link: http://digidb.io/images/dot/dot514.png
+- Id: 75
+  Name: Airdramon
+  Stage: Champion
+  Type: Vaccine
+  Attribute: Wind
+  Memory: 6
+  Equip Slots: 2
+  HP: 1040
+  SP: 77
+  Atk: 126
+  Def: 100
+  Int: 86
+  Spd: 118
+  Image link: http://digidb.io/images/dot/dot011.png
+- Id: 199
+  Name: Mamemon
+  Stage: Ultimate
+  Type: Data
+  Attribute: Earth
+  Memory: 10
+  Equip Slots: 3
+  HP: 1480
+  SP: 113
+  Atk: 111
+  Def: 153
+  Int: 84
+  Spd: 97
+  Image link: http://digidb.io/images/dot/dot412.png
+- Id: 185
+  Name: Panjyamon
+  Stage: Ultimate
+  Type: Vaccine
+  Attribute: Water
+  Memory: 12
+  Equip Slots: 3
+  HP: 1280
+  SP: 128
+  Atk: 124
+  Def: 114
+  Int: 111
+  Spd: 126
+  Image link: http://digidb.io/images/dot/dot409.png
+- Id: 82
+  Name: Kabuterimon
+  Stage: Champion
+  Type: Vaccine
+  Attribute: Plant
+  Memory: 6
+  Equip Slots: 2
+  HP: 890
+  SP: 89
+  Atk: 108
+  Def: 128
+  Int: 116
+  Spd: 81
+  Image link: http://digidb.io/images/dot/dot304.png
+- Id: 198
+  Name: MachGaogamon
+  Stage: Ultimate
+  Type: Data
+  Attribute: Wind
+  Memory: 12
+  Equip Slots: 3
+  HP: 1480
+  SP: 89
+  Atk: 158
+  Def: 89
+  Int: 89
+  Spd: 158
+  Image link: http://digidb.io/images/dot/dot074.png
+- Id: 241
+  Name: Craniamon
+  Stage: Mega
+  Type: Vaccine
+  Attribute: Earth
+  Memory: 22
+  Equip Slots: 1
+  HP: 1630
+  SP: 143
+  Atk: 124
+  Def: 208
+  Int: 134
+  Spd: 124
+  Image link: http://digidb.io/images/dot/dot734.png
+- Id: 52
+  Name: FanBeemon
+  Stage: Rookie
+  Type: Virus
+  Attribute: Plant
+  Memory: 4
+  Equip Slots: 1
+  HP: 860
+  SP: 69
+  Atk: 104
+  Def: 86
+  Int: 73
+  Spd: 98
+  Image link: http://digidb.io/images/dot/dot042.png
+- Id: 192
+  Name: BlueMeramon
+  Stage: Ultimate
+  Type: Virus
+  Attribute: Fire
+  Memory: 12
+  Equip Slots: 3
+  HP: 1140
+  SP: 109
+  Atk: 148
+  Def: 94
+  Int: 133
+  Spd: 119
+  Image link: http://digidb.io/images/dot/dot177.png
+- Id: 323
+  Name: Flamedramon
+  Stage: Armor
+  Type: Free
+  Attribute: Fire
+  Memory: 8
+  Equip Slots: 3
+  HP: 1130
+  SP: 93
+  Atk: 119
+  Def: 99
+  Int: 89
+  Spd: 138
+  Image link: http://digidb.io/images/dot/dot716.png
+- Id: 39
+  Name: Terriermon
+  Stage: Rookie
+  Type: Vaccine
+  Attribute: Wind
+  Memory: 4
+  Equip Slots: 1
+  HP: 690
+  SP: 93
+  Atk: 84
+  Def: 75
+  Int: 84
+  Spd: 112
+  Image link: http://digidb.io/images/dot/dot701.png
+- Id: 337
+  Name: Alphamon NX
+  Stage: Mega
+  Type: Vaccine
+  Attribute: Neutral
+  Memory: 6
+  Equip Slots: 1
+  HP: 980
+  SP: 104
+  Atk: 109
+  Def: 114
+  Int: 109
+  Spd: 116
+  Image link: http://digidb.io/images/dot/dot901.png
+- Id: 239
+  Name: GroundLocomon
+  Stage: Mega
+  Type: Data
+  Attribute: Electric
+  Memory: 18
+  Equip Slots: 3
+  HP: 1140
+  SP: 114
+  Atk: 144
+  Def: 213
+  Int: 133
+  Spd: 128
+  Image link: http://digidb.io/images/dot/dot704.png
+- Id: 290
+  Name: MarineAngemon
+  Stage: Mega
+  Type: Vaccine
+  Attribute: Water
+  Memory: 18
+  Equip Slots: 3
+  HP: 1190
+  SP: 198
+  Atk: 64
+  Def: 89
+  Int: 203
+  Spd: 153
+  Image link: http://digidb.io/images/dot/dot024.png
+- Id: 267
+  Name: Dorugoramon
+  Stage: Mega
+  Type: Data
+  Attribute: Dark
+  Memory: 18
+  Equip Slots: 2
+  HP: 1640
+  SP: 91
+  Atk: 225
+  Def: 134
+  Int: 88
+  Spd: 145
+  Image link: http://digidb.io/images/dot/dot019.png
+- Id: 24
+  Name: Otamamon
+  Stage: Rookie
+  Type: Virus
+  Attribute: Water
+  Memory: 4
+  Equip Slots: 1
+  HP: 930
+  SP: 105
+  Atk: 52
+  Def: 75
+  Int: 113
+  Spd: 78
+  Image link: http://digidb.io/images/dot/dot582.png
+- Id: 285
+  Name: Magnadramon
+  Stage: Mega
+  Type: Vaccine
+  Attribute: Light
+  Memory: 20
+  Equip Slots: 2
+  HP: 1880
+  SP: 168
+  Atk: 89
+  Def: 124
+  Int: 183
+  Spd: 129
+  Image link: http://digidb.io/images/dot/dot453.png
+- Id: 318
+  Name: Chaosmon VA
+  Stage: Ultra
+  Type: Vaccine
+  Attribute: Light
+  Memory: 25
+  Equip Slots: 3
+  HP: 790
+  SP: 138
+  Atk: 254
+  Def: 84
+  Int: 204
+  Spd: 168
+  Image link: http://digidb.io/images/dot/dot118.png
+- Id: 340
+  Name: Omnimon NX
+  Stage: Mega
+  Type: Vaccine
+  Attribute: Light
+  Memory: 6
+  Equip Slots: 1
+  HP: 1010
+  SP: 98
+  Atk: 116
+  Def: 111
+  Int: 111
+  Spd: 113
+  Image link: http://digidb.io/images/dot/dot904.png
+- Id: 137
+  Name: Leomon
+  Stage: Champion
+  Type: Vaccine
+  Attribute: Earth
+  Memory: 8
+  Equip Slots: 1
+  HP: 1180
+  SP: 69
+  Atk: 143
+  Def: 123
+  Int: 71
+  Spd: 97
+  Image link: http://digidb.io/images/dot/dot072.png
+- Id: 258
+  Name: TyrantKabuterimon
+  Stage: Mega
+  Type: Virus
+  Attribute: Plant
+  Memory: 20
+  Equip Slots: 2
+  HP: 1530
+  SP: 108
+  Atk: 174
+  Def: 164
+  Int: 123
+  Spd: 159
+  Image link: http://digidb.io/images/dot/dot128.png
+- Id: 316
+  Name: Omnimon Zwart
+  Stage: Ultra
+  Type: Vaccine
+  Attribute: Dark
+  Memory: 25
+  Equip Slots: 2
+  HP: 1490
+  SP: 139
+  Atk: 153
+  Def: 193
+  Int: 158
+  Spd: 134
+  Image link: http://digidb.io/images/dot/dot757.png
+- Id: 189
+  Name: HippoGryphonmon
+  Stage: Ultimate
+  Type: Data
+  Attribute: Wind
+  Memory: 12
+  Equip Slots: 3
+  HP: 990
+  SP: 138
+  Atk: 107
+  Def: 82
+  Int: 143
+  Spd: 148
+  Image link: http://digidb.io/images/dot/dot082.png
+- Id: 317
+  Name: Chaosmon
+  Stage: Ultra
+  Type: Vaccine
+  Attribute: Neutral
+  Memory: 25
+  Equip Slots: 3
+  HP: 1080
+  SP: 129
+  Atk: 318
+  Def: 94
+  Int: 89
+  Spd: 188
+  Image link: http://digidb.io/images/dot/dot772.png
+- Id: 167
+  Name: SuperStarmon
+  Stage: Ultimate
+  Type: Data
+  Attribute: Light
+  Memory: 12
+  Equip Slots: 3
+  HP: 1180
+  SP: 128
+  Atk: 122
+  Def: 134
+  Int: 109
+  Spd: 120
+  Image link: http://digidb.io/images/dot/dot079.png
+- Id: 81
+  Name: GaoGamon
+  Stage: Champion
+  Type: Data
+  Attribute: Wind
+  Memory: 8
+  Equip Slots: 1
+  HP: 740
+  SP: 108
+  Atk: 109
+  Def: 94
+  Int: 99
+  Spd: 138
+  Image link: http://digidb.io/images/dot/dot068.png
+- Id: 194
+  Name: Whamon
+  Stage: Ultimate
+  Type: Vaccine
+  Attribute: Water
+  Memory: 12
+  Equip Slots: 2
+  HP: 1680
+  SP: 93
+  Atk: 123
+  Def: 123
+  Int: 124
+  Spd: 100
+  Image link: http://digidb.io/images/dot/dot021.png
+- Id: 335
+  Name: Sistermon Ciel
+  Stage: Champion
+  Type: Virus
+  Attribute: Light
+  Memory: 6
+  Equip Slots: 2
+  HP: 840
+  SP: 111
+  Atk: 96
+  Def: 87
+  Int: 95
+  Spd: 139
+  Image link: http://digidb.io/images/dot/dot783.png
+- Id: 25
+  Name: Gaomon
+  Stage: Rookie
+  Type: Data
+  Attribute: Neutral
+  Memory: 5
+  Equip Slots: 1
+  HP: 1030
+  SP: 69
+  Atk: 118
+  Def: 74
+  Int: 66
+  Spd: 101
+  Image link: http://digidb.io/images/dot/dot055.png
+- Id: 26
+  Name: Gazimon
+  Stage: Rookie
+  Type: Virus
+  Attribute: Dark
+  Memory: 4
+  Equip Slots: 1
+  HP: 970
+  SP: 71
+  Atk: 123
+  Def: 64
+  Int: 59
+  Spd: 102
+  Image link: http://digidb.io/images/dot/dot569.png
+- Id: 263
+  Name: Dynasmon
+  Stage: Mega
+  Type: Data
+  Attribute: Wind
+  Memory: 22
+  Equip Slots: 2
+  HP: 1680
+  SP: 114
+  Atk: 213
+  Def: 129
+  Int: 94
+  Spd: 178
+  Image link: http://digidb.io/images/dot/dot738.png
+- Id: 114
+  Name: Tyrannomon
+  Stage: Champion
+  Type: Data
+  Attribute: Fire
+  Memory: 6
+  Equip Slots: 2
+  HP: 1230
+  SP: 59
+  Atk: 148
+  Def: 125
+  Int: 59
+  Spd: 97
+  Image link: http://digidb.io/images/dot/dot363.png
+- Id: 130
+  Name: Peckmon
+  Stage: Champion
+  Type: Vaccine
+  Attribute: Wind
+  Memory: 8
+  Equip Slots: 1
+  HP: 790
+  SP: 113
+  Atk: 104
+  Def: 84
+  Int: 94
+  Spd: 148
+  Image link: http://digidb.io/images/dot/dot702.png
+- Id: 287
+  Name: MagnaGarurumon
+  Stage: Mega
+  Type: Free
+  Attribute: Light
+  Memory: 18
+  Equip Slots: 3
+  HP: 1480
+  SP: 122
+  Atk: 175
+  Def: 104
+  Int: 114
+  Spd: 183
+  Image link: http://digidb.io/images/dot/dot678.png
+- Id: 91
+  Name: Greymon (Blue)
+  Stage: Champion
+  Type: Virus
+  Attribute: Fire
+  Memory: 8
+  Equip Slots: 1
+  HP: 1280
+  SP: 74
+  Atk: 153
+  Def: 118
+  Int: 59
+  Spd: 99
+  Image link: http://digidb.io/images/dot/dot712.png
+- Id: 251
+  Name: Kentaurosmon
+  Stage: Mega
+  Type: Vaccine
+  Attribute: Light
+  Memory: 22
+  Equip Slots: 1
+  HP: 1140
+  SP: 153
+  Atk: 139
+  Def: 154
+  Int: 154
+  Spd: 183
+  Image link: http://digidb.io/images/dot/dot086.png
+- Id: 230
+  Name: Gaiomon
+  Stage: Mega
+  Type: Virus
+  Attribute: Fire
+  Memory: 18
+  Equip Slots: 3
+  HP: 1630
+  SP: 99
+  Atk: 203
+  Def: 129
+  Int: 94
+  Spd: 158
+  Image link: http://digidb.io/images/dot/dot744.png
+- Id: 305
+  Name: Ravemon BM
+  Stage: Mega
+  Type: Vaccine
+  Attribute: Wind
+  Memory: 20
+  Equip Slots: 2
+  HP: 1040
+  SP: 133
+  Atk: 149
+  Def: 139
+  Int: 144
+  Spd: 213
+  Image link: http://digidb.io/images/dot/dot778.png
+- Id: 233
+  Name: Chaosdramon
+  Stage: Mega
+  Type: Virus
+  Attribute: Electric
+  Memory: 20
+  Equip Slots: 2
+  HP: 1630
+  SP: 99
+  Atk: 203
+  Def: 173
+  Int: 109
+  Spd: 134
+  Image link: http://digidb.io/images/dot/dot422.png
+- Id: 310
+  Name: Armageddemon
+  Stage: Ultra
+  Type: Free
+  Attribute: Dark
+  Memory: 25
+  Equip Slots: 1
+  HP: 1760
+  SP: 114
+  Atk: 255
+  Def: 133
+  Int: 84
+  Spd: 164
+  Image link: http://digidb.io/images/dot/dot106.png
+- Id: 125
+  Name: Veedramon
+  Stage: Champion
+  Type: Vaccine
+  Attribute: Wind
+  Memory: 8
+  Equip Slots: 1
+  HP: 1180
+  SP: 84
+  Atk: 138
+  Def: 113
+  Int: 64
+  Spd: 114
+  Image link: http://digidb.io/images/dot/dot397.png
+- Id: 161
+  Name: Grademon
+  Stage: Ultimate
+  Type: Vaccine
+  Attribute: Neutral
+  Memory: 12
+  Equip Slots: 3
+  HP: 1290
+  SP: 97
+  Atk: 173
+  Def: 89
+  Int: 100
+  Spd: 144
+  Image link: http://digidb.io/images/dot/dot026.png
+- Id: 186
+  Name: Pandamon
+  Stage: Ultimate
+  Type: Data
+  Attribute: Earth
+  Memory: 12
+  Equip Slots: 3
+  HP: 1090
+  SP: 104
+  Atk: 135
+  Def: 153
+  Int: 118
+  Spd: 97
+  Image link: http://digidb.io/images/dot/dot041.png
+- Id: 16
+  Name: Motimon
+  Stage: In-Training
+  Type: Free
+  Attribute: Neutral
+  Memory: 3
+  Equip Slots: 0
+  HP: 1030
+  SP: 63
+  Atk: 82
+  Def: 81
+  Int: 78
+  Spd: 69
+  Image link: http://digidb.io/images/dot/dot388.png
+- Id: 332
+  Name: Apocalymon
+  Stage: Ultra
+  Type: Free
+  Attribute: Neutral
+  Memory: 25
+  Equip Slots: 1
+  HP: 1890
+  SP: 173
+  Atk: 89
+  Def: 104
+  Int: 183
+  Spd: 188
+  Image link: http://digidb.io/images/dot/dot328.png
+- Id: 48
+  Name: Palmon
+  Stage: Rookie
+  Type: Data
+  Attribute: Plant
+  Memory: 5
+  Equip Slots: 1
+  HP: 1140
+  SP: 65
+  Atk: 103
+  Def: 90
+  Int: 80
+  Spd: 79
+  Image link: http://digidb.io/images/dot/dot348.png
+- Id: 109
+  Name: Strikedramon
+  Stage: Champion
+  Type: Vaccine
+  Attribute: Earth
+  Memory: 6
+  Equip Slots: 2
+  HP: 1150
+  SP: 72
+  Atk: 151
+  Def: 87
+  Int: 68
+  Spd: 118
+  Image link: http://digidb.io/images/dot/dot016.png
+- Id: 275
+  Name: PlatinumNumemon
+  Stage: Mega
+  Type: Virus
+  Attribute: Neutral
+  Memory: 16
+  Equip Slots: 3
+  HP: 450
+  SP: 132
+  Atk: 99
+  Def: 999
+  Int: 50
+  Spd: 144
+  Image link: http://digidb.io/images/dot/dot069.png
+- Id: 108
+  Name: Stingmon
+  Stage: Champion
+  Type: Free
+  Attribute: Plant
+  Memory: 8
+  Equip Slots: 1
+  HP: 1130
+  SP: 84
+  Atk: 143
+  Def: 74
+  Int: 74
+  Spd: 133
+  Image link: http://digidb.io/images/dot/dot091.png
+- Id: 142
+  Name: Arcadiamon Ultimate
+  Stage: Ultimate
+  Type: Virus
+  Attribute: Dark
+  Memory: 14
+  Equip Slots: 3
+  HP: 1130
+  SP: 120
+  Atk: 157
+  Def: 99
+  Int: 119
+  Spd: 138
+  Image link: http://digidb.io/images/dot/dot065.png
+- Id: 38
+  Name: Chuumon
+  Stage: Rookie
+  Type: Virus
+  Attribute: Earth
+  Memory: 4
+  Equip Slots: 1
+  HP: 700
+  SP: 91
+  Atk: 87
+  Def: 73
+  Int: 85
+  Spd: 111
+  Image link: http://digidb.io/images/dot/dot020.png
+- Id: 42
+  Name: Dracmon
+  Stage: Rookie
+  Type: Virus
+  Attribute: Dark
+  Memory: 5
+  Equip Slots: 1
+  HP: 870
+  SP: 81
+  Atk: 108
+  Def: 88
+  Int: 83
+  Spd: 84
+  Image link: http://digidb.io/images/dot/dot457.png
+- Id: 30
+  Name: Kudamon
+  Stage: Rookie
+  Type: Vaccine
+  Attribute: Light
+  Memory: 5
+  Equip Slots: 1
+  HP: 590
+  SP: 128
+  Atk: 53
+  Def: 74
+  Int: 117
+  Spd: 105
+  Image link: http://digidb.io/images/dot/dot053.png
+- Id: 301
+  Name: RustTyranomon
+  Stage: Mega
+  Type: Virus
+  Attribute: Electric
+  Memory: 18
+  Equip Slots: 3
+  HP: 1680
+  SP: 83
+  Atk: 218
+  Def: 163
+  Int: 74
+  Spd: 140
+  Image link: http://digidb.io/images/dot/dot383.png
+- Id: 259
+  Name: Dianamon
+  Stage: Mega
+  Type: Data
+  Attribute: Water
+  Memory: 20
+  Equip Slots: 3
+  HP: 790
+  SP: 178
+  Atk: 89
+  Def: 154
+  Int: 198
+  Spd: 183
+  Image link: http://digidb.io/images/dot/dot733.png
+- Id: 303
+  Name: Lilithmon
+  Stage: Mega
+  Type: Virus
+  Attribute: Dark
+  Memory: 22
+  Equip Slots: 2
+  HP: 940
+  SP: 203
+  Atk: 99
+  Def: 104
+  Int: 223
+  Spd: 173
+  Image link: http://digidb.io/images/dot/dot034.png
+- Id: 31
+  Name: Keramon
+  Stage: Rookie
+  Type: Free
+  Attribute: Dark
+  Memory: 5
+  Equip Slots: 1
+  HP: 1030
+  SP: 74
+  Atk: 123
+  Def: 69
+  Int: 61
+  Spd: 101
+  Image link: http://digidb.io/images/dot/dot626.png
+- Id: 183
+  Name: Datamon
+  Stage: Ultimate
+  Type: Virus
+  Attribute: Electric
+  Memory: 12
+  Equip Slots: 3
+  HP: 1180
+  SP: 133
+  Atk: 74
+  Def: 114
+  Int: 175
+  Spd: 102
+  Image link: http://digidb.io/images/dot/dot576.png
+- Id: 209
+  Name: RizeGreymon
+  Stage: Ultimate
+  Type: Vaccine
+  Attribute: Fire
+  Memory: 14
+  Equip Slots: 3
+  HP: 1530
+  SP: 94
+  Atk: 178
+  Def: 109
+  Int: 69
+  Spd: 143
+  Image link: http://digidb.io/images/dot/dot071.png
+- Id: 319
+  Name: Susanomon
+  Stage: Ultra
+  Type: Vaccine
+  Attribute: Light
+  Memory: 25
+  Equip Slots: 1
+  HP: 1630
+  SP: 129
+  Atk: 183
+  Def: 158
+  Int: 149
+  Spd: 149
+  Image link: http://digidb.io/images/dot/dot104.png
+- Id: 113
+  Name: MudFrigimon
+  Stage: Champion
+  Type: Data
+  Attribute: Earth
+  Memory: 6
+  Equip Slots: 2
+  HP: 1190
+  SP: 96
+  Atk: 101
+  Def: 99
+  Int: 97
+  Spd: 99
+  Image link: http://digidb.io/images/dot/dot759.png
+- Id: 67
+  Name: Aquilamon
+  Stage: Champion
+  Type: Free
+  Attribute: Wind
+  Memory: 8
+  Equip Slots: 1
+  HP: 840
+  SP: 108
+  Atk: 109
+  Def: 89
+  Int: 89
+  Spd: 143
+  Image link: http://digidb.io/images/dot/dot015.png
+- Id: 146
+  Name: Infermon
+  Stage: Ultimate
+  Type: Free
+  Attribute: Dark
+  Memory: 14
+  Equip Slots: 3
+  HP: 1330
+  SP: 99
+  Atk: 198
+  Def: 89
+  Int: 74
+  Spd: 153
+  Image link: http://digidb.io/images/dot/dot627.png
+- Id: 278
+  Name: Breakdramon
+  Stage: Mega
+  Type: Virus
+  Attribute: Earth
+  Memory: 20
+  Equip Slots: 2
+  HP: 1880
+  SP: 89
+  Atk: 213
+  Def: 168
+  Int: 94
+  Spd: 129
+  Image link: http://digidb.io/images/dot/dot214.png
+- Id: 214
+  Name: LadyDevimon
+  Stage: Ultimate
+  Type: Virus
+  Attribute: Dark
+  Memory: 14
+  Equip Slots: 3
+  HP: 890
+  SP: 163
+  Atk: 99
+  Def: 94
+  Int: 158
+  Spd: 143
+  Image link: http://digidb.io/images/dot/dot107.png
+- Id: 255
+  Name: Darkdramon
+  Stage: Mega
+  Type: Virus
+  Attribute: Electric
+  Memory: 18
+  Equip Slots: 3
+  HP: 1580
+  SP: 94
+  Atk: 188
+  Def: 148
+  Int: 99
+  Spd: 139
+  Image link: http://digidb.io/images/dot/dot771.png
+- Id: 172
+  Name: Taomon
+  Stage: Ultimate
+  Type: Data
+  Attribute: Dark
+  Memory: 12
+  Equip Slots: 3
+  HP: 990
+  SP: 148
+  Atk: 69
+  Def: 104
+  Int: 173
+  Spd: 138
+  Image link: http://digidb.io/images/dot/dot405.png
+- Id: 122
+  Name: Birdramon
+  Stage: Champion
+  Type: Vaccine
+  Attribute: Fire
+  Memory: 8
+  Equip Slots: 1
+  HP: 940
+  SP: 113
+  Atk: 94
+  Def: 84
+  Int: 109
+  Spd: 128
+  Image link: http://digidb.io/images/dot/dot308.png
+- Id: 307
+  Name: Rosemon
+  Stage: Mega
+  Type: Data
+  Attribute: Plant
+  Memory: 18
+  Equip Slots: 3
+  HP: 1330
+  SP: 147
+  Atk: 144
+  Def: 129
+  Int: 149
+  Spd: 144
+  Image link: http://digidb.io/images/dot/dot057.png
+- Id: 250
+  Name: Justimon
+  Stage: Mega
+  Type: Vaccine
+  Attribute: Light
+  Memory: 18
+  Equip Slots: 3
+  HP: 1530
+  SP: 99
+  Atk: 193
+  Def: 158
+  Int: 99
+  Spd: 144
+  Image link: http://digidb.io/images/dot/dot737.png
+- Id: 160
+  Name: GrapLeomon
+  Stage: Ultimate
+  Type: Vaccine
+  Attribute: Electric
+  Memory: 12
+  Equip Slots: 3
+  HP: 1580
+  SP: 89
+  Atk: 163
+  Def: 99
+  Int: 79
+  Spd: 143
+  Image link: http://digidb.io/images/dot/dot403.png
+- Id: 40
+  Name: Tentomon
+  Stage: Rookie
+  Type: Vaccine
+  Attribute: Plant
+  Memory: 4
+  Equip Slots: 1
+  HP: 750
+  SP: 79
+  Atk: 86
+  Def: 110
+  Int: 93
+  Spd: 73
+  Image link: http://digidb.io/images/dot/dot303.png
+- Id: 96
+  Name: Coredramon (Blue)
+  Stage: Champion
+  Type: Vaccine
+  Attribute: Wind
+  Memory: 8
+  Equip Slots: 1
+  HP: 1230
+  SP: 76
+  Atk: 151
+  Def: 103
+  Int: 69
+  Spd: 109
+  Image link: http://digidb.io/images/dot/dot218.png
+- Id: 218
+  Name: Arcadiamon Mega
+  Stage: Mega
+  Type: Virus
+  Attribute: Dark
+  Memory: 20
+  Equip Slots: 2
+  HP: 1410
+  SP: 153
+  Atk: 196
+  Def: 109
+  Int: 119
+  Spd: 163
+  Image link: http://digidb.io/images/dot/dot066.png
+- Id: 178
+  Name: Duramon
+  Stage: Ultimate
+  Type: Vaccine
+  Attribute: Neutral
+  Memory: 14
+  Equip Slots: 3
+  HP: 1460
+  SP: 81
+  Atk: 175
+  Def: 146
+  Int: 79
+  Spd: 119
+  Image link: http://digidb.io/images/dot/dot699.png
+- Id: 191
+  Name: BlackKingNumemon
+  Stage: Ultimate
+  Type: Virus
+  Attribute: Dark
+  Memory: 10
+  Equip Slots: 3
+  HP: 1580
+  SP: 113
+  Atk: 89
+  Def: 168
+  Int: 89
+  Spd: 89
+  Image link: http://digidb.io/images/dot/dot753.png
+- Id: 224
+  Name: Vikemon
+  Stage: Mega
+  Type: Free
+  Attribute: Water
+  Memory: 18
+  Equip Slots: 3
+  HP: 1780
+  SP: 105
+  Atk: 158
+  Def: 143
+  Int: 129
+  Spd: 133
+  Image link: http://digidb.io/images/dot/dot346.png
+- Id: 202
+  Name: WarGrowlmon
+  Stage: Ultimate
+  Type: Virus
+  Attribute: Fire
+  Memory: 14
+  Equip Slots: 3
+  HP: 1430
+  SP: 84
+  Atk: 178
+  Def: 138
+  Int: 87
+  Spd: 116
+  Image link: http://digidb.io/images/dot/dot134.png
+- Id: 339
+  Name: Leopardmon NX
+  Stage: Mega
+  Type: Data
+  Attribute: Light
+  Memory: 6
+  Equip Slots: 1
+  HP: 960
+  SP: 109
+  Atk: 112
+  Def: 91
+  Int: 116
+  Spd: 126
+  Image link: http://digidb.io/images/dot/dot903.png
+- Id: 234
+  Name: Gankoomon
+  Stage: Mega
+  Type: Data
+  Attribute: Fire
+  Memory: 22
+  Equip Slots: 2
+  HP: 2080
+  SP: 90
+  Atk: 188
+  Def: 163
+  Int: 109
+  Spd: 138
+  Image link: http://digidb.io/images/dot/dot688.png
+- Id: 70
+  Name: Ankylomon
+  Stage: Champion
+  Type: Free
+  Attribute: Earth
+  Memory: 6
+  Equip Slots: 2
+  HP: 1330
+  SP: 98
+  Atk: 89
+  Def: 133
+  Int: 79
+  Spd: 79
+  Image link: http://digidb.io/images/dot/dot711.png
+- Id: 139
+  Name: Reppamon
+  Stage: Champion
+  Type: Vaccine
+  Attribute: Light
+  Memory: 8
+  Equip Slots: 1
+  HP: 790
+  SP: 118
+  Atk: 94
+  Def: 99
+  Int: 99
+  Spd: 143
+  Image link: http://digidb.io/images/dot/dot077.png
+- Id: 59
+  Name: Lalamon
+  Stage: Rookie
+  Type: Data
+  Attribute: Plant
+  Memory: 4
+  Equip Slots: 1
+  HP: 1100
+  SP: 74
+  Atk: 87
+  Def: 87
+  Int: 79
+  Spd: 79
+  Image link: http://digidb.io/images/dot/dot056.png
+- Id: 228
+  Name: WarGreymon
+  Stage: Mega
+  Type: Vaccine
+  Attribute: Fire
+  Memory: 20
+  Equip Slots: 2
+  HP: 1630
+  SP: 98
+  Atk: 193
+  Def: 163
+  Int: 99
+  Spd: 140
+  Image link: http://digidb.io/images/dot/dot027.png
