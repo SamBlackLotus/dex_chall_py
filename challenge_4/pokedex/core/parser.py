@@ -3,13 +3,12 @@ import json
 import csv
 import xmltodict
 import yaml
-from typing import Dict, Union, List, Any
+from typing import Dict, Union, List
 
 
 # TODO: you don't need to say which function calls this one(explicar oq a função faz e n onde ela se aplica dentro do programa)
 # TODO: improve the function description by adding "read" (oq a função realmente faz é ler o arquivo, n receber)
-# TODO: this function could be more generic, it's not related(o nome pokemons tem q ser trocado pra função ficar generica como um leitor de arquivos)
-# to pokemons
+
 def read_file(filepath: str) -> List[Dict[str, Union[str, int]]]:
     """
     This function receives a filepath from main and based on the format
@@ -27,28 +26,28 @@ def read_file(filepath: str) -> List[Dict[str, Union[str, int]]]:
 
     Returns
     -------
-    pokemons:
+    data_read:
         The file received will be returned in python data types.
     """
-    with open((filepath), "r") as source_pokedex:
+    with open((filepath), "r") as source_data:
         if ".json" in filepath:
-            return json.load(source_pokedex)
+            return json.load(source_data)
         elif ".csv" in filepath:
-            file: Dict[str, Any] = csv.DictReader(source_pokedex, delimiter=",")
-            pokemons: List[str] = [row for row in file]
-            return pokemons
+            file = csv.DictReader(source_data, delimiter=",")
+            data_read = [row for row in file]
+            return data_read
         elif ".xml" in filepath:
-            file: Dict[str, Any] = source_pokedex.read()
-            pokemonsxml: Dict[str, Any] = xmltodict.parse(file)
-            pokemonsid: Dict[Any] = {key: value for key, value in pokemonsxml['root'].items()}
-            pokemons: List[str] = []
-            for key, value in pokemonsid.items():
-                pokemons += [{a: i for a, i in value.items()}]
-            return pokemons
+            file = source_data.read()
+            file_xml = xmltodict.parse(file)
+            dict_id = {key: value for key, value in file_xml['root'].items()}
+            data_read = []
+            for key, value in dict_id.items():
+                data_read += [{key_list: value_list  for key_list, value_list in value.items()}]
+            return data_read
         elif ".yaml" in filepath:
-            file = source_pokedex.read()
-            pokemons = yaml.safe_load(file)
-            return pokemons
+            file = source_data.read()
+            data_read = yaml.safe_load(file)
+            return data_read
         else:
             print(f"Error: File format not supported!\n{core.client_usage()}")
             quit()
