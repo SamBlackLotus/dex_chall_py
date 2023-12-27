@@ -41,32 +41,34 @@ def process_info(process_poke1, process_poke2, pokemon_set_1, pokemon_set_2):
 
     return core.AnswersInfo(
 
-        player1_total_pokemons_info=player1_total_pokemons,
-        player2_total_pokemons_info=player2_total_pokemons,
-        strongest_pokemon_player1_info=process_poke1[strongest_pokemon_player1["index"]]["Name"],
-        strongest_pokemon_player2_info=process_poke2[strongest_pokemon_player2["index"]]["Name"],
-        legendary_player1_info=total_legendary_player1,
-        legendary_player2_info=total_legendary_player2,
-        repeated_pokemon_info=len(intersec_pokemon),
-        different_pokemon_info=len(diff_pokemon))
+        player1_total_pokemons_info = str(player1_total_pokemons),
+        player2_total_pokemons_info = str(player2_total_pokemons),
+        strongest_pokemon_player1_info = str(process_poke1[strongest_pokemon_player1["index"]]["Name"]),
+        strongest_pokemon_player2_info = str(process_poke2[strongest_pokemon_player2["index"]]["Name"]),
+        legendary_player1_info = str(total_legendary_player1),
+        legendary_player2_info = str(total_legendary_player2),
+        repeated_pokemon_info = str(len(intersec_pokemon)),
+        different_pokemon_info = str(len(diff_pokemon)))
 
 
 def show_info(process_pokemons, id_number):
 
+    print(len(process_pokemons["strongest_pokemon_player1_info"]))
+    
     datenow = datetime.now()
-    msg = "                                                                  \n"
+    msg =  ((" " * 70) + "\n")
     msg += "reported generated on:   " + datenow.isoformat() + "                                                  \n"
-    msg += "========================= POKEMON INFO ==========================\n"
-    msg += "|                   | PLAYER 1            | PLAYER 2            |\n"
-    msg += "|------------------ | -------------------- -------------------- |\n"
-    msg += "|Pokémons           |" + str(process_pokemons["player1_total_pokemons_info"]) + "                  |" + str(process_pokemons["player2_total_pokemons_info"]) + "                  |\n"
-    msg += "|Strongest Pokémon  |" + process_pokemons["strongest_pokemon_player1_info"] + "|" + process_pokemons["strongest_pokemon_player2_info"] + "   |\n"
-    msg += "|Legendaries        |" + str(process_pokemons["legendary_player1_info"]) + "                   |" + str(process_pokemons["legendary_player2_info"]) + "                   |\n"
-    msg += "|Repeated Pokemons  |" + str(process_pokemons["repeated_pokemon_info"]) + "                                        |\n"
-    msg += "|Different Pokemons |" + str(process_pokemons["different_pokemon_info"]) + "                                        |\n"
-    msg += "|------------------ | ----------------------------------------- |\n"
-    msg += "=================================================================\n"
-    msg += "                                                                 \n"
+    msg += " " +(("=" * 28) + " POKEMON INFO " + ("=" * 28) + " \n")
+    msg += "|" + (" " * 18) + "| PLAYER 1" + (" " * 16) + "| PLAYER 2" + (" " * 16) + "|\n"
+    msg += "|" + ("-" * 18) + "| " + ("-" * 24) + "|" + ("-" * 25) + "|\n"
+    msg += "|Pokémons" + (" " * 10) + "| " + process_pokemons["player1_total_pokemons_info"] + (" " * (24 - len(process_pokemons["player1_total_pokemons_info"]))) +  "| " + process_pokemons["player2_total_pokemons_info"] + (" " * (24 - len(process_pokemons["player1_total_pokemons_info"]))) + "|\n"
+    msg += "|Strongest Pokémon" + " | " + process_pokemons["strongest_pokemon_player1_info"] + (" " * (24 - len(process_pokemons["strongest_pokemon_player1_info"]))) +  "| " + process_pokemons["strongest_pokemon_player2_info"] + (" " * (24 - len(process_pokemons["strongest_pokemon_player2_info"]))) + "|\n"
+    msg += "|Legendaries" + (" " * 7) + "| " + process_pokemons["legendary_player1_info"] + "                   | " + process_pokemons["legendary_player2_info"] + "                   |\n"
+    msg += "|Repeated Pokemons" + " | " + process_pokemons["repeated_pokemon_info"] + "                                        |\n"
+    msg += "|Different Pokemons" + "| " + process_pokemons["different_pokemon_info"] + "                                        |\n"
+    msg += "|------------------|---------------------------------------------------|\n"
+    msg += " " + (("=" * 70) + " \n")(" " * (24 - len(process_pokemons["strongest_pokemon_player1_info"])))
+    msg += ((" " * 72) + "\n")
 
     if os.path.exists(f"{id_number}_info.txt"):
 
