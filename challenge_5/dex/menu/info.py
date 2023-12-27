@@ -5,8 +5,8 @@ from datetime import datetime
 
 def process_info(process_poke1, process_poke2, pokemon_set_1, pokemon_set_2):
 
-    strongest_p1 = {"index": 0, "value": 0}
-    strongest_p2 = {"index": 0, "value": 0}
+    strongest_pokemon_player1 = {"index": 0, "value": 0}
+    strongest_pokemon_player2 = {"index": 0, "value": 0}
     legendary_1 = 0
     legendary_2 = 0
     total_legendary_player1 = 0
@@ -18,9 +18,9 @@ def process_info(process_poke1, process_poke2, pokemon_set_1, pokemon_set_2):
         player1_total_pokemons = len(process_poke1)
 
         attack = core.cast_to_int(pokemon["Attack"])
-        if attack > strongest_p1["value"]:
-            strongest_p1["index"] = index
-            strongest_p1["value"] = attack
+        if attack > strongest_pokemon_player1["value"]:
+            strongest_pokemon_player1["index"] = index
+            strongest_pokemon_player1["value"] = attack
 
         legendary_1 = core.cast_to_bool(pokemon["Legendary"])
         # TODO: there is no need to check for True
@@ -31,9 +31,9 @@ def process_info(process_poke1, process_poke2, pokemon_set_1, pokemon_set_2):
         player2_total_pokemons = len(process_poke2)
 
         attack = core.cast_to_int(pokemon["Attack"])
-        if attack > strongest_p2["value"]:
-            strongest_p2["index"] = index
-            strongest_p2["value"] = attack
+        if attack > strongest_pokemon_player2["value"]:
+            strongest_pokemon_player2["index"] = index
+            strongest_pokemon_player2["value"] = attack
 
         legendary_2 = core.cast_to_bool(pokemon["Legendary"])
         if legendary_2 is True:
@@ -41,19 +41,19 @@ def process_info(process_poke1, process_poke2, pokemon_set_1, pokemon_set_2):
 
     return core.AnswersInfo(
 
-        p1_total_info = str(player1_total_pokemons),
-        p2_total_info = str(player2_total_pokemons),
-        strongest_p1_info = str(process_poke1[strongest_p1["index"]]["Name"]),
-        strongest_p2_info = str(process_poke2[strongest_p2["index"]]["Name"]),
-        legendary_p1_info = str(total_legendary_player1),
-        legendary_p2_info = str(total_legendary_player2),
+        player1_total_pokemons_info = str(player1_total_pokemons),
+        player2_total_pokemons_info = str(player2_total_pokemons),
+        strongest_pokemon_player1_info = str(process_poke1[strongest_pokemon_player1["index"]]["Name"]),
+        strongest_pokemon_player2_info = str(process_poke2[strongest_pokemon_player2["index"]]["Name"]),
+        legendary_player1_info = str(total_legendary_player1),
+        legendary_player2_info = str(total_legendary_player2),
         repeated_pokemon_info = str(len(intersec_pokemon)),
         different_pokemon_info = str(len(diff_pokemon)))
 
 
 def show_info(process_pokemons, id_number):
 
-    print(len(process_pokemons["strongest_p1_info"]))
+    print(len(process_pokemons["strongest_pokemon_player1_info"]))
     
     datenow = datetime.now()
     msg =  ((" " * 70) + "\n")
@@ -61,13 +61,13 @@ def show_info(process_pokemons, id_number):
     msg += " " +(("=" * 28) + " POKEMON INFO " + ("=" * 28) + " \n")
     msg += "|" + (" " * 18) + "| PLAYER 1" + (" " * 16) + "| PLAYER 2" + (" " * 16) + "|\n"
     msg += "|" + ("-" * 18) + "| " + ("-" * 24) + "|" + ("-" * 25) + "|\n"
-    msg += "|Pokémons" + (" " * 10) + "| " + process_pokemons["p1_total_info"] + (" " * (24 - len(process_pokemons["p1_total_info"]))) +  "| " + process_pokemons["p2_total_info"] + (" " * (24 - len(process_pokemons["p1_total_info"]))) + "|\n"
-    msg += "|Strongest Pokémon" + " | " + process_pokemons["strongest_p1_info"] + (" " * (24 - len(process_pokemons["strongest_p1_info"]))) +  "| " + process_pokemons["strongest_p2_info"] + (" " * (24 - len(process_pokemons["strongest_p2_info"]))) + "|\n"
-    msg += "|Legendaries" + (" " * 7) + "| " + process_pokemons["legendary_p1_info"] + "                   | " + process_pokemons["legendary_p2_info"] + "                   |\n"
+    msg += "|Pokémons" + (" " * 10) + "| " + process_pokemons["player1_total_pokemons_info"] + (" " * (24 - len(process_pokemons["player1_total_pokemons_info"]))) +  "| " + process_pokemons["player2_total_pokemons_info"] + (" " * (24 - len(process_pokemons["player1_total_pokemons_info"]))) + "|\n"
+    msg += "|Strongest Pokémon" + " | " + process_pokemons["strongest_pokemon_player1_info"] + (" " * (24 - len(process_pokemons["strongest_pokemon_player1_info"]))) +  "| " + process_pokemons["strongest_pokemon_player2_info"] + (" " * (24 - len(process_pokemons["strongest_pokemon_player2_info"]))) + "|\n"
+    msg += "|Legendaries" + (" " * 7) + "| " + process_pokemons["legendary_player1_info"] + "                   | " + process_pokemons["legendary_player2_info"] + "                   |\n"
     msg += "|Repeated Pokemons" + " | " + process_pokemons["repeated_pokemon_info"] + "                                        |\n"
     msg += "|Different Pokemons" + "| " + process_pokemons["different_pokemon_info"] + "                                        |\n"
     msg += "|------------------|---------------------------------------------------|\n"
-    msg += " " + (("=" * 70) + " \n")(" " * (24 - len(process_pokemons["strongest_p1_info"])))
+    msg += " " + (("=" * 70) + " \n")(" " * (24 - len(process_pokemons["strongest_pokemon_player1_info"])))
     msg += ((" " * 72) + "\n")
 
     if os.path.exists(f"{id_number}_info.txt"):
