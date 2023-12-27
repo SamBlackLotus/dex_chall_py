@@ -43,8 +43,8 @@ def process_info(process_poke1, process_poke2, pokemon_set_1, pokemon_set_2):
 
         p1_total_info = str(player1_total_pokemons),
         p2_total_info = str(player2_total_pokemons),
-        strongest_p1_info = str(process_poke1[strongest_p1["index"]]["Name"]),
-        strongest_p2_info = str(process_poke2[strongest_p2["index"]]["Name"]),
+        strongest_p1_info = process_poke1[strongest_p1["index"]]["Name"],
+        strongest_p2_info = process_poke2[strongest_p2["index"]]["Name"],
         legendary_p1_info = str(total_legendary_player1),
         legendary_p2_info = str(total_legendary_player2),
         repeated_pokemon_info = str(len(intersec_pokemon)),
@@ -52,13 +52,11 @@ def process_info(process_poke1, process_poke2, pokemon_set_1, pokemon_set_2):
 
 
 def show_info(process_pokemons, id_number):
-
-    print(len(process_pokemons["strongest_p1_info"]))
     
     datenow = datetime.now()
     msg =  ((" " * 70) + "\n")
     msg += "reported generated on:   " + datenow.isoformat() + "                                                  \n"
-    msg += " " +(("=" * 28) + " POKEMON INFO " + ("=" * 28) + " \n")
+    msg += " " +(("=" * 35 - len(" POKEMON INFO ")) + " POKEMON INFO " + ("=" * 35 - len(" POKEMON INFO ")) + " \n")
     msg += "|" + (" " * 18) + "| PLAYER 1" + (" " * 16) + "| PLAYER 2" + (" " * 16) + "|\n"
     msg += "|" + ("-" * 18) + "| " + ("-" * 24) + "|" + ("-" * 25) + "|\n"
     msg += "|Pokémons" + (" " * 10) + "| " + process_pokemons["p1_total_info"] + (" " * (24 - len(process_pokemons["p1_total_info"]))) +  "| " + process_pokemons["p2_total_info"] + (" " * (24 - len(process_pokemons["p1_total_info"]))) + "|\n"
