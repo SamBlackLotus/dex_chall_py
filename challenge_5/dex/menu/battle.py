@@ -1,5 +1,4 @@
 import core
-import os
 from datetime import datetime
 
 
@@ -206,28 +205,8 @@ def show_battle_winner(start_battle,battle_result, id_number):
     battle_msg += "|                              " + battle_result["loser_pokemon"] + "                                 |\n"
     battle_msg += "=====================================================================================\n"
     battle_msg += "                                                                                     \n"
-
-    if os.path.exists(f"{id_number}_battle.txt"):
-        
-        user_choice_battle = input(f"Files {id_number}_battle.txt already exists, what do you prefer to do? [append|OVERWRITE] : ")
-        
-        if user_choice_battle.lower() == 'o' or user_choice_battle.lower() == 'overwrite':
-           
-            os.remove(f"{id_number}_battle.txt")
-            
-            with open(f"{id_number}_battle.txt", "w") as target:
-                target.write(battle_msg)
-        elif user_choice_battle.lower() == 'a' or user_choice_battle.lower() == 'append':
-           
-            with open(f"{id_number}_battle.txt", "a") as target:
-                target.write(battle_msg)  
-        else:
-            print(f"WARNING: Invalid Input.\n{core.client_usage()}")
-            quit()
-              
-    else:
-        
-        with open(f"{id_number}_battle.txt", "w") as target:
-            target.write(battle_msg)
     
     print(battle_msg.format(**start_battle))
+    
+    core.save_data(battle_msg,"battle",id_number)
+    

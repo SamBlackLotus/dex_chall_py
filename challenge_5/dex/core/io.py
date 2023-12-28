@@ -1,63 +1,10 @@
-from typing import List, Set
+import os
+from typing import List, Set, SupportsIndex, Dict
 
 
-def cast_to_set(file_set_1: List[str]) -> Set:
-    """
-    This function receives data in any python types
-    and turns into a set.
-
-    Parameters
-    ----------
-    file_set_1:
-        The data to be converted in set.
-
-    Returns
-    -------
-    pokemon_set:
-        The data in a set type.
-    """
-    pokemon_set: set = set()
-    for pokemon in file_set_1:
-        pokemon_set.add(pokemon["Name"])
-    return pokemon_set
 
 
-def cast_to_int(value: List[str]) -> List[int]:
-    """
-    This function converts a list of strings to
-    integers.
-
-    Parameters
-    ----------
-    Value:
-        The list of strings to be converted.
-
-    Returns
-    -------
-        The data as integer type.
-    """
-    return int(value) if value is not None else 0
-
-
-def cast_to_bool(value: List[str]) -> List[bool]:
-    """
-    This function converts a list of strings
-    to bool.
-
-    Parameters
-    ----------
-    Value:
-        The list of strings to be converted.
-
-    Returns
-    -------
-        The data as bool type.
-    """
-    return True if value == "True" else False
-
-
-def client_helper() -> None:
-
+def client_helper() -> str:
     helper_msg: str = """
     Hello! Welcome to the Pokedex.
 
@@ -86,12 +33,12 @@ def client_helper() -> None:
     show you the battle information.
 
     """
-    return print(helper_msg)
+    return helper_msg
 
 
 # TODO: the correct trivia cmd is:
 # python3 pokedex/main.py --trivia data/json/pokemons_1.json --id 1
-def client_usage() -> None:
+def client_usage() -> str:
     client_usage_msg: str = """
     CLI usage:
 
@@ -141,3 +88,87 @@ def client_usage() -> None:
     it will automatically use OVERWRITE option.
     """
     return client_usage_msg
+
+def save_data(saved_data,archive_type,id_number):
+    if os.path.exists(f"{id_number}_{archive_type}.txt"):
+
+        user_choice = input(f"Files {id_number}_{archive_type}.txt already exists, what do you prefer to do? [append|OVERWRITE] : ")
+
+        if user_choice.lower() == 'o' or user_choice.lower() == 'overwrite':
+
+            os.remove(f"{id_number}_{archive_type}.txt")
+
+            with open(f"{id_number}_{archive_type}.txt", "w") as target:
+                target.write(saved_data)
+        elif user_choice.lower() == 'a' or user_choice.lower() == 'append':
+
+            with open(f"{id_number}_{archive_type}.txt", "a") as target:
+                target.write(saved_data)
+        else:
+            print(f"WARNING: Invalid Input.\n{core.client_usage()}")
+            quit()
+
+    else:
+
+        with open(f"{id_number}_{archive_type}.txt", "w") as target:
+            target.write(saved_data)
+
+def show_trivia(pokemons_info, id_number):
+    """
+    This function will print a message in the CLI.
+
+    Parameters
+    ----------
+    pokemons_info:
+        Bring the treated variables which will be used to answer
+        the questions
+
+    Returns
+    -------
+        Create a file with a id value in the name and print the
+        same message from the file in the CLI interface.
+    """
+    datenow = datetime.now()
+    msg =  ((" " * 80) + "\n")
+    msg += "reported generated on: " + datenow.isoformat() + (" " * 31  ) + "\n"
+    msg += ((" " * 80) + "\n")
+    msg += (("=" * 29) + " Welcome to the Dex! " + ("=" * 30) + "\n")
+    msg += ((" " * 80) + "\n")    
+    msg += "Here we have some useful information gathered from the list you provided us:    \n"
+    msg += ((" " * 80) + "\n")
+    msg += "1. How many pokemons there is in this list:" + (" " * 37) + "\n"
+    msg += (" " * 4) + "> " + pokemons_info["total_trivia"] + " pokemons" + \
+        (" " * (25 - len(pokemons_info["total_trivia"]))) + "\n"
+    msg += ((" " * 80) + "\n")
+    msg += "2. The pokemon with the highest HP point is:" + (" " * 36) + "\n"
+    msg += (" " * 4) + ">" + pokemons_info["hp_trivia_name"] + " with " + pokemons_info["hp_trivia_points"] + \
+        " HP points" + (" " * ((59 - len(pokemons_info["hp_trivia_name"])) - \
+        len(pokemons_info["hp_trivia_points"]))) + "\n"
+    msg += ((" " * 80) + "\n")
+    msg += "3. Which one has the strongest attack:" + (" " * 42) + "\n"
+    msg += (" " * 4) + ">" + pokemons_info["atk_trivia_name"] + " with " + \
+        pokemons_info["atk_trivia_points"] + " attack points." + \
+        (" " * ((54 - len(pokemons_info["atk_trivia_name"])) - \
+        len(pokemons_info["atk_trivia_points"]))) + "\n"
+    msg += ((" " * 80) + "\n")
+    msg += "4. Which one has the strongest defense:" + (" " * 41) + "\n"
+    msg += (" " * 4) + ">" + pokemons_info["def_trivia_name"] + " with " + \
+        pokemons_info["def_trivia_points"] + " defense points." + \
+        (" " * ((53 - len(pokemons_info["def_trivia_name"])) - \
+        len(pokemons_info["def_trivia_points"]))) + "\n"
+    msg += ((" " * 80) + "\n")
+    msg += "5. Which one is the fastest:" + (" " * 52) + "\n"
+    msg += (" " * 4) + ">" + pokemons_info["spd_trivia_name"] + " with " + \
+        pokemons_info["spd_trivia_points"] + " speed points." + \
+        (" " * ((55 - len(pokemons_info["spd_trivia_name"])) - \
+        len(pokemons_info["spd_trivia_points"]))) + "\n"
+    msg += ((" " * 80) + "\n")
+    msg += "Thanks for using this pokedex!" + (" " * 50) + "\n"
+    msg += ((" " * 80) + "\n")    
+    msg += (("=" * 80) + "\n")
+    msg += ((" " * 80) + "\n")
+    
+    print(msg.format(**pokemons_info))
+    
+    core.save_data(msg,"trivia",id_number)
+        

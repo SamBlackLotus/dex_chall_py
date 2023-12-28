@@ -1,5 +1,4 @@
 import core
-import os
 from datetime import datetime
 
 
@@ -79,27 +78,7 @@ def show_info(process_pokemons, id_number):
     msg += " " + (("=" * 78) + " \n")
     msg += ((" " * 80) + "\n")
 
-    if os.path.exists(f"{id_number}_info.txt"):
-
-        user_choice_info = input(f"Files {id_number}_info.txt already exists, what do you prefer to do? [append|OVERWRITE] : ")
-
-        if user_choice_info.lower() == 'o' or user_choice_info.lower() == 'overwrite':
-
-            os.remove(f"{id_number}_info.txt")
-
-            with open(f"{id_number}_info.txt", "w") as target:
-                target.write(msg)
-        elif user_choice_info.lower() == 'a' or user_choice_info.lower() == 'append':
-
-            with open(f"{id_number}_info.txt", "a") as target:
-                target.write(msg)
-        else:
-            print(f"WARNING: Invalid Input.\n{core.client_usage()}")
-            quit()
-
-    else:
-
-        with open(f"{id_number}_info.txt", "w") as target:
-            target.write(msg)
-
     print(msg.format(**process_pokemons))
+    
+    core.save_data(msg,"info",id_number)
+    

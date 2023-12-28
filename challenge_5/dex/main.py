@@ -39,7 +39,7 @@ def main() -> None:
     elif arguments[0] == "--trivia":
         id_number: str = arguments[2]
         data_1: List[Dict[str, int]] = core.read_file(arguments[1])
-        info: Any = menu.process_trivia(data_1)
+        info: Any = menu.pokemon_trivia(data_1)
         menu.show_trivia(info, id_number)
         quit()
 
