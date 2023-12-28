@@ -172,14 +172,14 @@ def pokemon_battle(start_battle):
 # TODO: improve how we code the visualization
 def show_battle_winner(start_battle,battle_result, id_number):
     datenow =  datetime.now()
-    battle_msg =  "                                                                                     \n"
-    battle_msg += "reported generated on:   " + datenow.isoformat() + "                                                  \n"
-    battle_msg += "                                                                                     \n"
-    battle_msg += "================================== POKéMON BATTLE ===================================\n"
-    battle_msg += "                                                                                     \n"
-    battle_msg += "-------------------------------------------------------------------------------------\n"
-    battle_msg += "|                                    PLAYER 1                                        |\n"
-    battle_msg += "-------------------------------------------------------------------------------------\n"
+    battle_msg =  ((" " * 80) + "\n")
+    battle_msg += "reported generated on:   " + datenow.isoformat() + (" " * 31  ) + "\n"
+    battle_msg += ((" " * 80) + "\n")
+    battle_msg += "" + (("=" * 32) + " POKéMON BATTLE " + ("=" * 32) + "\n")
+    battle_msg += ((" " * 80) + "\n")
+    battle_msg += " " + ("-" * 78) + " \n"
+    battle_msg += "|" + (" " * 35) + "PLAYER 1" + (" " * 35) + "|\n"
+    battle_msg += " " + ("-" * 78) + " \n"
     battle_msg += "|Name:" + start_battle["p1_pkm_1_name"] + "   |Name:" + start_battle["p1_pkm_2_name"] + "    |Name:" + start_battle["p1_pkm_3_name"] + "  |\n"
     battle_msg += "|HP: " + str(start_battle["p1_pkm_1_hp"]) + "                      |HP: " + str(start_battle["p1_pkm_2_hp"]) + "                     |HP: " + str(start_battle["p1_pkm_3_hp"]) + "                    |\n"
     battle_msg += "|Attack: " + str(start_battle["p1_pkm_1_atk"]) + "                  |Attack: " + str(start_battle["p1_pkm_2_atk"]) + "                |Attack: " + str(start_battle["p1_pkm_3_atk"]) + "               |\n"
