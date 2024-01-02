@@ -184,7 +184,7 @@ def show_trivia(pokemons_info, id_number):
     """
     datenow = datetime.now()
     msg =  ((" " * 80) + "\n")
-    msg += "reported generated on: " + datenow.isoformat() + (" " * 31  ) + "\n"
+    msg += "reported generated on: " + datenow.isoformat() + (" " * 31) + "\n"
     msg += ((" " * 80) + "\n")
     msg += (("=" * 29) + " Welcome to the Dex! " + ("=" * 30) + "\n")
     msg += ((" " * 80) + "\n")    
@@ -231,41 +231,63 @@ def show_trivia(pokemons_info, id_number):
 def show_battle_winner(battle_result, id_number):
     datenow =  datetime.now()
     battle_msg =  ((" " * 80) + "\n")
-    battle_msg += "reported generated on:   " + datenow.isoformat() + (" " * 31  ) + "\n"
+    battle_msg += "reported generated on: " + datenow.isoformat() + (" " * 31) + "\n"
     battle_msg += ((" " * 80) + "\n")
     battle_msg += "" + (("=" * 32) + " POKéMON BATTLE " + ("=" * 32) + "\n")
     battle_msg += ((" " * 80) + "\n")
     battle_msg += " " + ("-" * 78) + " \n"
     battle_msg += "|" + (" " * 35) + "PLAYER 1" + (" " * 35) + "|\n"
     battle_msg += " " + ("-" * 78) + " \n"
-    battle_msg += "|Name:" + battle_result["p1_pkm_1_name"] + (" " * (21 - len(battle_result["p1_pkm_1_name"]))) + \
-        "|Name:" + battle_result["p1_pkm_2_name"] + (" " * (20 - len(battle_result["p1_pkm_2_name"]))) + "|Name:" + \
+    battle_msg += "|Name:" + battle_result["p1_pkm_1_name"] + (" " * (21 - len(battle_result["p1_pkm_1_name"]))) +\
+        "|Name:" + battle_result["p1_pkm_2_name"] + (" " * (20 - len(battle_result["p1_pkm_2_name"]))) + "|Name:" +\
         battle_result["p1_pkm_3_name"] + (" " * (20 - len(battle_result["p1_pkm_3_name"]))) + "|\n"
-    battle_msg += "|HP: " + str(battle_result["p1_pkm_1_hp"]) + "                      |HP: " + str(battle_result["p1_pkm_2_hp"]) + "                     |HP: " + str(battle_result["p1_pkm_3_hp"]) + "                    |\n"
-    battle_msg += "|Attack: " + str(battle_result["p1_pkm_1_atk"]) + "                  |Attack: " + str(battle_result["p1_pkm_2_atk"]) + "                |Attack: " + str(battle_result["p1_pkm_3_atk"]) + "               |\n"
-    battle_msg += "|Defense: " + str(battle_result["p1_pkm_1_dfs"]) + "                 |Defense: " + str(battle_result["p1_pkm_2_dfs"]) + "                |Defense: " + str(battle_result["p1_pkm_2_dfs"]) + "               |\n"
-    battle_msg += "-------------------------------------------------------------------------------------\n"
-    battle_msg += "|                                    PLAYER 2                                        |\n"
-    battle_msg += "-------------------------------------------------------------------------------------\n"
-    battle_msg += "|Name:" + battle_result["p2_pkm_1_name"] + "      |Name:" + battle_result["p2_pkm_2_name"] + "    |Name:" + battle_result["p2_pkm_3_name"] + "|\n"
-    battle_msg += "|HP: " + str(battle_result["p2_pkm_1_hp"]) + "                       |HP: " + str(battle_result["p2_pkm_2_hp"]) + "                    |HP: " + str(battle_result["p2_pkm_3_hp"]) + "                    |\n"
-    battle_msg += "|Attack: " + str(battle_result["p2_pkm_1_atk"]) + "                  |Attack: " + str(battle_result["p2_pkm_2_atk"]) + "                |Attack: " + str(battle_result["p2_pkm_3_atk"]) + "               |\n"
-    battle_msg += "|Defense: " + str(battle_result["p2_pkm_1_dfs"]) + "                  |Defense: " + str(battle_result["p2_pkm_2_dfs"]) + "               |Defense: " + str(battle_result["p2_pkm_2_dfs"]) + "              |\n"
-    battle_msg += "-------------------------------------------------------------------------------------\n"
-    battle_msg += "=====================================================================================\n"
-    battle_msg += "|                              +++++ RESULT +++++                                    |\n"
-    battle_msg += "=====================================================================================\n"
-    battle_msg += "|                        -----------------------------                               |\n"
-    battle_msg += "|                                  --Winner--                                        |\n"
-    battle_msg += "|                                   Player " + str(battle_result["winner"]) + "                                         |\n"
-    battle_msg += "|                        -----------------------------                               |\n"
-    battle_msg += "|                                  --Rounds--                                        |\n"
-    battle_msg += "|                                      " + str(battle_result["rounds"]) + "                                            |\n"
-    battle_msg += "|                        -----------------------------                               |\n"
-    battle_msg += "|                          --First pokemon to fall--                                 |\n"
-    battle_msg += "|                              " + battle_result["loser_pokemon"] + "                                 |\n"
-    battle_msg += "=====================================================================================\n"
-    battle_msg += "                                                                                     \n"
+    battle_msg += "|HP:" + str(battle_result["p1_pkm_1_hp"]) + (" " * (23 - len(str(battle_result["p1_pkm_1_hp"])))) +\
+        "|HP:" + str(battle_result["p1_pkm_2_hp"]) + (" " * (22 - len(str(battle_result["p1_pkm_2_hp"])))) + "|HP:" +\
+        str(battle_result["p1_pkm_3_hp"]) + (" " * (22 - len(str(battle_result["p1_pkm_3_hp"])))) + "|\n"
+    battle_msg += "|Attack:" + str(battle_result["p1_pkm_1_atk"]) + (" " * (19 - \
+        len(str(battle_result["p1_pkm_1_atk"])))) + "|Attack:" + str(battle_result["p1_pkm_2_atk"]) +\
+        (" " * (18 - len(str(battle_result["p1_pkm_2_atk"])))) + "|Attack:" + str(battle_result["p1_pkm_3_atk"]) +\
+        (" " * (18 - len(str(battle_result["p1_pkm_3_atk"])))) + "|\n"
+    battle_msg += "|Defense:" + str(battle_result["p1_pkm_1_dfs"]) + (" " * (18 - \
+        len(str(battle_result["p1_pkm_1_dfs"])))) + "|Defense:" + str(battle_result["p1_pkm_2_dfs"]) +\
+        (" " * (17 - len(str(battle_result["p1_pkm_2_dfs"])))) + "|Defense:" + str(battle_result["p1_pkm_3_dfs"]) +\
+        (" " * (17 - len(str(battle_result["p1_pkm_3_dfs"])))) + "|\n"
+    battle_msg += " " + ("-" * 78) + " \n"
+    battle_msg += "|" + (" " * 35) + "PLAYER 2" + (" " * 35) + "|\n"
+    battle_msg += " " + ("-" * 78) + " \n"
+    battle_msg += "|Name:" + battle_result["p2_pkm_1_name"] + (" " * (21 - len(battle_result["p2_pkm_1_name"]))) +\
+        "|Name:" + battle_result["p2_pkm_2_name"] + (" " * (20 - len(battle_result["p2_pkm_2_name"]))) + "|Name:" +\
+        battle_result["p2_pkm_3_name"] + (" " * (20 - len(battle_result["p2_pkm_3_name"]))) + "|\n"
+    battle_msg += "|HP:" + str(battle_result["p2_pkm_1_hp"]) + (" " * (23 - len(str(battle_result["p2_pkm_1_hp"])))) +\
+        "|HP:" + str(battle_result["p2_pkm_2_hp"]) + (" " * (22 - len(str(battle_result["p2_pkm_2_hp"])))) + "|HP:" +\
+        str(battle_result["p2_pkm_3_hp"]) + (" " * (22 - len(str(battle_result["p2_pkm_3_hp"])))) + "|\n"
+    battle_msg += "|Attack:" + str(battle_result["p2_pkm_1_atk"]) + (" " * (19 - \
+        len(str(battle_result["p2_pkm_1_atk"])))) + "|Attack:" + str(battle_result["p2_pkm_2_atk"]) +\
+        (" " * (18 - len(str(battle_result["p2_pkm_2_atk"])))) + "|Attack:" + str(battle_result["p2_pkm_3_atk"]) +\
+        (" " * (18 - len(str(battle_result["p2_pkm_3_atk"])))) + "|\n"
+    battle_msg += "|Defense:" + str(battle_result["p2_pkm_1_dfs"]) + (" " * (18 - \
+        len(str(battle_result["p2_pkm_1_dfs"])))) + "|Defense:" + str(battle_result["p2_pkm_2_dfs"]) +\
+        (" " * (17 - len(str(battle_result["p2_pkm_2_dfs"])))) + "|Defense:" + str(battle_result["p2_pkm_3_dfs"]) +\
+        (" " * (17 - len(str(battle_result["p2_pkm_3_dfs"])))) + "|\n"
+    battle_msg += " " + ("-" * 78) + " \n"
+    battle_msg += " " + ("=" * 78) + " \n"
+    battle_msg += "|" + (" " * 30) + "+++++ RESULT +++++" + (" " * 30) + "|\n"
+    battle_msg += " " + ("=" * 78) + " \n"
+    battle_msg += "|" + (" " * 25) + ("-" * 28) + (" " * 25) + "|\n"
+    battle_msg += "|" + (" " * 34) + "--Winner--" + (" " * 34) + "|\n"
+    battle_msg += "|" + (" " * 35) + "Player " + str(battle_result["winner"]) + (" " * 35) + "|\n"
+    battle_msg += "|" + (" " * 25) + ("-" * 28) + (" " * 25) + "|\n"
+    battle_msg += "|" + (" " * 34) + "--Rounds--" + (" " * 34) + "|\n"
+    battle_msg += "|" + (" " * (41 - len(str(battle_result["p2_pkm_2_dfs"])))) + str(battle_result["rounds"]) + \
+        (" " * (41 - len(str(battle_result["p2_pkm_2_dfs"])))) + "|\n"
+    battle_msg += "|" + (" " * 25) + ("-" * 28) + (" " * 25) + "|\n"
+    battle_msg += "|" + (" " * 26) + "--First pokemon to fall--" + (" " * 27) + "|\n"
+    battle_msg += "|" + (" " * (39 - (len(battle_result["loser_pokemon"]) // 2))) + battle_result["loser_pokemon"] + \
+        (" " * (39 - (len(battle_result["loser_pokemon"]) // 2))) + "|\n"
+    battle_msg += " " + ("=" * 78) + " \n"
+    battle_msg += (" " * 80) + "\n"
+    battle_msg += ("=" * 80) + "\n"
+    battle_msg += (" " * 80) + "\n"
     
     print(battle_msg.format(**battle_result))
     
@@ -275,7 +297,8 @@ def show_info(process_pokemons, id_number):
     
     datenow = datetime.now()
     msg =  ((" " * 80) + "\n")
-    msg += "reported generated on: " + datenow.isoformat() + (" " * 31  ) + "\n"
+    msg += "reported generated on: " + datenow.isoformat() + (" " * 31) + "\n"
+    msg += ((" " * 80) + "\n")
     msg += " " +(("=" * 32) + " POKEMON INFO " + ("=" * 32) + " \n")
     msg += "|" + (" " * 18) + "| PLAYER 1" + (" " * 20) + "| PLAYER 2" + (" " * 20) + "|\n"
     msg += "|" + ("-" * 18) + "|" + ("-" * 29) + "|" + ("-" * 29) + "|\n"
