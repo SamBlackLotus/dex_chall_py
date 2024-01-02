@@ -103,14 +103,6 @@ def digimon_trivia(digimon_data):
             highest_speed_trivia["value"] = speed_trivia_int
 
     return core.AnswersTrivia(
-        total_trivia = str(len(digimon_data)),
-        hp_trivia_name = digimon_data[highest_hp_trivia["index"]]["Name"],
-        hp_trivia_points = str(digimon_data[highest_hp_trivia["index"]]["HP"]),
-        atk_trivia_name = digimon_data[highest_attack_trivia["index"]]["Name"],
-        atk_trivia_points = str(digimon_data[highest_attack_trivia["index"]]["Attack"]),
-        def_trivia_name = digimon_data[highest_attack_trivia["index"]]["Name"],
-        def_trivia_points = str(digimon_data[highest_attack_trivia["index"]]["Defense"]),
-        spd_trivia_name = digimon_data[highest_attack_trivia["index"]]["Name"],
-        spd_trivia_points = str(digimon_data[highest_attack_trivia["index"]]["Speed"])
+        total_trivia_dg = str(len(digimon_data)),
     )    
 

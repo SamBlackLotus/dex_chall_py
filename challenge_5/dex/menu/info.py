@@ -10,21 +10,21 @@ def process_info(process_poke1, process_poke2, pokemon_set_1, pokemon_set_2):
     Parameters
     ----------
     process_poke1:
-    
+
     process_poke2:
-    
+
     pokemon_set_1:
-    
+
     pokemon_set_2:
 
     Returns
     -------
     AnswerTrivia:
         Returns the results for the asked validations and puts
-        then in variables so it can the called to be presented 
-        to the user. 
-         
-    """    
+        then in variables so it can the called to be presented
+        to the user.
+
+    """
 
     strongest_pokemon_player1 = {"index": 0, "value": 0}
     strongest_pokemon_player2 = {"index": 0, "value": 0}
@@ -32,8 +32,8 @@ def process_info(process_poke1, process_poke2, pokemon_set_1, pokemon_set_2):
     legendary_2 = 0
     total_legendary_player1 = 0
     total_legendary_player2 = 0
-    intersec_pokemon = (pokemon_set_1.intersection(pokemon_set_2))
-    diff_pokemon = (pokemon_set_1.difference(pokemon_set_2))
+    intersec_pokemon = pokemon_set_1.intersection(pokemon_set_2)
+    diff_pokemon = pokemon_set_1.difference(pokemon_set_2)
 
     for index, pokemon in enumerate(process_poke1):
         player1_total_pokemons = len(process_poke1)
@@ -61,13 +61,16 @@ def process_info(process_poke1, process_poke2, pokemon_set_1, pokemon_set_2):
             total_legendary_player2 += 1
 
     return core.AnswersInfo(
-
-        player1_total_pokemons_info = str(player1_total_pokemons),
-        player2_total_pokemons_info = str(player2_total_pokemons),
-        strongest_pokemon_player1_info = process_poke1[strongest_pokemon_player1["index"]]["Name"],
-        strongest_pokemon_player2_info = process_poke2[strongest_pokemon_player2["index"]]["Name"],
-        legendary_player1_info = str(total_legendary_player1),
-        legendary_player2_info = str(total_legendary_player2),
-        repeated_pokemon_info = str(len(intersec_pokemon)),
-        different_pokemon_info = str(len(diff_pokemon)))
-
+        player1_total_pokemons_info=str(player1_total_pokemons),
+        player2_total_pokemons_info=str(player2_total_pokemons),
+        strongest_pokemon_player1_info=process_poke1[
+            strongest_pokemon_player1["index"]
+        ]["Name"],
+        strongest_pokemon_player2_info=process_poke2[
+            strongest_pokemon_player2["index"]
+        ]["Name"],
+        legendary_player1_info=str(total_legendary_player1),
+        legendary_player2_info=str(total_legendary_player2),
+        repeated_pokemon_info=str(len(intersec_pokemon)),
+        different_pokemon_info=str(len(diff_pokemon)),
+    )

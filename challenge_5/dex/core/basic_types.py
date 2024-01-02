@@ -56,7 +56,8 @@ class AnswersInfo(TypedDict):
 class AnswersBattle(TypedDict):
     p1_pokemon: List[Dict[str, int]]
     p1_pokemon: List[Dict[str, int]]
-    
+
+
 class AnswersResult(TypedDict):
     hp: str
     attack: str

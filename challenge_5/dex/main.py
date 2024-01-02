@@ -27,7 +27,7 @@ def main() -> None:
     the command given by the user and processed by this function.
 
     """
-    
+
     if len(sys.argv) == 1:
         print(core.client_usage())
         quit()
@@ -38,7 +38,7 @@ def main() -> None:
         if len(sys.argv) == 2:
             print(core.client_helper())
             quit()
-        
+
         else:
             print(f"WARNING! Incorrect amount of arguments.\n{core.client_usage()}")
             quit()
@@ -54,25 +54,25 @@ def main() -> None:
 
         elif len(sys.argv) == 5:
             command_2: str = sys.argv[3]
-            if command_2 == '--id':
-                id_number: int = sys.argv[4]
-                
+            if command_2 == "--id":
+                id_number = sys.argv[4]
+
             else:
                 print(f"WARNING: This command does not exist.\n{core.client_usage()}")
                 quit()
 
-            filepath_1: str = sys.argv[2]
+            filepath_1 = sys.argv[2]
             if not os.path.exists(filepath_1):
                 print(f"WARNING: File {filepath_1} does not exist.")
                 quit()
-                
+
         else:
             print(f"WARNING! Incorrect amount of arguments.\n{core.client_usage()}")
             quit()
 
         data_1: List[Dict[str, int]] = core.read_file(sys.argv[2])
         info = menu.pokemon_trivia(data_1)
-        core.show_trivia(info, id_number)
+        core.show_pokemon_trivia(info, id_number)
         quit()
 
     elif command_1 == "--player1":
@@ -80,12 +80,12 @@ def main() -> None:
             print(f"WARNING! Incorrect amount of arguments.\n{core.client_usage()}")
             quit()
 
-        filepath_1: str = sys.argv[2]
+        filepath_1 = sys.argv[2]
         if not os.path.exists(filepath_1):
             print(f"WARNING: File {filepath_1} does not exist.")
             quit()
 
-        command_2: str = sys.argv[3]
+        command_2 = sys.argv[3]
 
         if command_2 == "--player2":
             if len(sys.argv) >= 6:
@@ -103,27 +103,27 @@ def main() -> None:
 
         if command_3 == "--id":
             if len(sys.argv) == 8:
-                id_number: int = sys.argv[6]
-                command_4: int = sys.argv[7]
+                id_number = sys.argv[6]
+                command_4 = sys.argv[7]
 
             else:
                 print(f"WARNING! Incorrect amount of arguments.\n{core.client_usage()}")
                 quit()
 
-        elif command_3 == "--info" or command_3 == '--battle':
-            id_number: int = 0
+        elif command_3 == "--info" or command_3 == "--battle":
+            id_number = 0
 
         else:
             print(f"WARNING: This command does not exist.\n{core.client_usage()}")
             quit()
 
-        data_1: List[Dict[str, int]] = core.read_file(filepath_1)
+        data_1 = core.read_file(filepath_1)
         dataset_1: Set[str] = core.cast_to_set(data_1)
         data_2: List[Dict[str, int]] = core.read_file(filepath_2)
         dataset_2: Set[str] = core.cast_to_set(data_2)
 
         if command_3 == "--info" or command_4 == "--info":
-            info: Any = menu.process_info(data_1, data_2, dataset_1, dataset_2)
+            info = menu.process_info(data_1, data_2, dataset_1, dataset_2)
             core.show_info(info, id_number)
             quit()
         elif command_3 == "--battle" or command_4 == "--battle":
@@ -135,7 +135,6 @@ def main() -> None:
     else:
         print(f"WARNING: This command does not exist.\n{core.client_usage()}")
         quit()
-        
 
 
 if __name__ == "__main__":

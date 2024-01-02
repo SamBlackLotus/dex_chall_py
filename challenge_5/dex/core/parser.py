@@ -36,10 +36,12 @@ def read_file(filepath: str) -> List[Dict[str, Union[str, int]]]:
         elif ".xml" in filepath:
             file = source_data.read()
             file_xml = xmltodict.parse(file)
-            dict_id = {key: value for key, value in file_xml['root'].items()}
+            dict_id = {key: value for key, value in file_xml["root"].items()}
             data_read = []
             for key, value in dict_id.items():
-                data_read += [{key_list: value_list  for key_list, value_list in value.items()}]
+                data_read += [
+                    {key_list: value_list for key_list, value_list in value.items()}
+                ]
             return data_read
         elif ".yaml" in filepath:
             file = source_data.read()
