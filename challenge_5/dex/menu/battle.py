@@ -4,209 +4,110 @@ from datetime import datetime
 
 def select_pokemons_for_battle(player_1_battle,player_2_battle):
     
-    hp = {"index": 0, "value": 0}
-    attack = {"index": 0, "value": 0}
-    defense = {"index": 0, "value": 0}  
-    p1_pokemon_1 = {"player": 1, "index": 0, "name": 0, "attack": 0, "defense": 0, "hp": 0}
-    p1_pokemon_2 = {"player": 1, "index": 0, "name": 0,  "attack": 0, "defense": 0, "hp": 0}
-    p1_pokemon_3 = {"player": 1, "index": 0, "name": 0,  "attack": 0, "defense": 0, "hp": 0}
-    p2_pokemon_1 = {"player": 2, "index": 0, "name": 0,  "attack": 0, "defense": 0, "hp": 0}
-    p2_pokemon_2 = {"player": 2, "index": 0, "name": 0,  "attack": 0, "defense": 0, "hp": 0}
-    p2_pokemon_3 = {"player": 2, "index": 0, "name": 0,  "attack": 0, "defense": 0, "hp": 0}
+    p1_pokemon = []
+    p2_pokemon = []
     
-    for index, pokemon in enumerate(player_1_battle):
-        
-        name = pokemon["Name"]
-        attack = core.cast_to_int(pokemon["Attack"])
-        defense = core.cast_to_int(pokemon["Defense"])
-        hp = core.cast_to_int(pokemon["HP"])
-        if attack > p1_pokemon_1["attack"]:
-            p1_pokemon_1["index"] = index
-            p1_pokemon_1["name"] = name
-            p1_pokemon_1["attack"] = attack
-            p1_pokemon_1["defense"] = defense
-            p1_pokemon_1["hp"] = hp
-            
-            
-         
-        if attack > p1_pokemon_2["attack"] and index is not p1_pokemon_1["index"]:
-            p1_pokemon_2["index"] = index
-            p1_pokemon_2["name"] = name
-            p1_pokemon_2["attack"] = attack
-            p1_pokemon_2["defense"] = defense
-            p1_pokemon_2["hp"] = hp
-            
-        if attack > p1_pokemon_3["attack"] and index is not p1_pokemon_1["index"] and index is not p1_pokemon_2["index"]:
-            p1_pokemon_3["index"] = index
-            p1_pokemon_3["name"] = name
-            p1_pokemon_3["attack"] = attack        
-            p1_pokemon_3["defense"] = defense
-            p1_pokemon_3["hp"] = hp
+    attack_sorted_p1 = sorted(player_1_battle, key = lambda strongest_mon : strongest_mon["Attack"], reverse = True)
+    attack_sorted_p2 = sorted(player_2_battle, key = lambda strongest_mon : strongest_mon["Attack"], reverse = True)
+    counter = 0
     
-    for index, pokemon in enumerate(player_2_battle):
-        
-        name = pokemon["Name"]
-        attack = core.cast_to_int(pokemon["Attack"])
-        defense = core.cast_to_int(pokemon["Defense"])
-        hp = core.cast_to_int(pokemon["HP"])
-        if attack > p2_pokemon_1["attack"]:
-            p2_pokemon_1["index"] = index
-            p2_pokemon_1["name"] = name
-            p2_pokemon_1["attack"] = attack
-            p2_pokemon_1["defense"] = defense
-            p2_pokemon_1["hp"] = hp
-
-        if attack > p2_pokemon_2["attack"] and index is not p2_pokemon_1["index"]:
-            p2_pokemon_2["index"] = index
-            p2_pokemon_2["name"] = name
-            p2_pokemon_2["attack"] = attack
-            p2_pokemon_2["defense"] = defense
-            p2_pokemon_2["hp"] = hp
-            
-            
-        if attack > p2_pokemon_3["attack"] and index is not p2_pokemon_1["index"] and index is not p2_pokemon_2["index"]:
-            p2_pokemon_3["index"] = index
-            p2_pokemon_3["name"] = name
-            p2_pokemon_3["attack"] = attack        
-            p2_pokemon_3["defense"] = defense
-            p2_pokemon_3["hp"] = hp             
+    while counter <= 2:
+        p1_pokemon.append(attack_sorted_p1[counter])
+        p2_pokemon.append(attack_sorted_p2[counter])
+        counter += 1         
     
     return core.AnswersBattle(
         
-        p1_pkm_1_name =  player_1_battle[p1_pokemon_1["index"]]["Name"],
-        p1_pkm_2_name =  player_1_battle[p1_pokemon_2["index"]]["Name"],
-        p1_pkm_3_name =  player_1_battle[p1_pokemon_3["index"]]["Name"],
-        p2_pkm_1_name =  player_2_battle[p2_pokemon_1["index"]]["Name"],
-        p2_pkm_2_name =  player_2_battle[p2_pokemon_2["index"]]["Name"],
-        p2_pkm_3_name =  player_2_battle[p2_pokemon_3["index"]]["Name"],
+        p1_player = p1_pokemon,
+        p2_player = p2_pokemon
         
-        p1_pkm_1_hp =  player_1_battle[p1_pokemon_1["index"]]["HP"],
-        p1_pkm_2_hp =  player_1_battle[p1_pokemon_2["index"]]["HP"],
-        p1_pkm_3_hp =  player_1_battle[p1_pokemon_3["index"]]["HP"],
-        p2_pkm_1_hp =  player_2_battle[p2_pokemon_1["index"]]["HP"],
-        p2_pkm_2_hp =  player_2_battle[p2_pokemon_2["index"]]["HP"],
-        p2_pkm_3_hp =  player_2_battle[p2_pokemon_3["index"]]["HP"],
-        
-        p1_pkm_1_atk =  player_1_battle[p1_pokemon_1["index"]]["Attack"],
-        p1_pkm_2_atk =  player_1_battle[p1_pokemon_2["index"]]["Attack"],
-        p1_pkm_3_atk =  player_1_battle[p1_pokemon_3["index"]]["Attack"],
-        p2_pkm_1_atk =  player_2_battle[p2_pokemon_1["index"]]["Attack"],
-        p2_pkm_2_atk =  player_2_battle[p2_pokemon_2["index"]]["Attack"],
-        p2_pkm_3_atk =  player_2_battle[p2_pokemon_3["index"]]["Attack"],
-        
-        p1_pkm_1_dfs =  player_1_battle[p1_pokemon_1["index"]]["Defense"],
-        p1_pkm_2_dfs =  player_1_battle[p1_pokemon_2["index"]]["Defense"],
-        p1_pkm_3_dfs =  player_1_battle[p1_pokemon_3["index"]]["Defense"],
-        p2_pkm_1_dfs =  player_2_battle[p2_pokemon_1["index"]]["Defense"],
-        p2_pkm_2_dfs =  player_2_battle[p2_pokemon_2["index"]]["Defense"],
-        p2_pkm_3_dfs =  player_2_battle[p2_pokemon_3["index"]]["Defense"],
-        
-        p1_player = p1_pokemon_1["player"],
-        p2_player = p2_pokemon_1["player"]
-        
-    )           
+    )
     
 def pokemon_battle(start_battle):
-
+    print(start_battle)
     while_counter = 0
     
-    p1_pkm_1_hp = core.cast_to_int(start_battle["p1_pkm_1_hp"])
-    p1_pkm_2_hp = core.cast_to_int(start_battle["p1_pkm_2_hp"])
-    p1_pkm_3_hp = core.cast_to_int(start_battle["p1_pkm_3_hp"])
-    p2_pkm_1_hp = core.cast_to_int(start_battle["p2_pkm_1_hp"])
-    p2_pkm_2_hp = core.cast_to_int(start_battle["p2_pkm_2_hp"])
-    p2_pkm_3_hp = core.cast_to_int(start_battle["p2_pkm_3_hp"])
+    p1_mon_1_hp = start_battle["p1_player"][0]["HP"]
+    p1_mon_2_hp = start_battle["p1_player"][1]["HP"]
+    p1_mon_3_hp = start_battle["p1_player"][2]["HP"]
+    p2_mon_1_hp = start_battle["p2_player"][0]["HP"]
+    p2_mon_2_hp = start_battle["p2_player"][1]["HP"]
+    p2_mon_3_hp = start_battle["p2_player"][2]["HP"]
     
-    damagep1poke1 = (0.5 * (core.cast_to_int(start_battle["p1_pkm_1_atk"]) / core.cast_to_int(start_battle["p2_pkm_1_dfs"])) + 1)         
-    damagep1poke2 = (0.5 * (core.cast_to_int(start_battle["p1_pkm_2_atk"]) / core.cast_to_int(start_battle["p2_pkm_2_dfs"])) + 1) 
-    damagep1poke3 = (0.5 * (core.cast_to_int(start_battle["p1_pkm_3_atk"]) / core.cast_to_int(start_battle["p2_pkm_3_dfs"])) + 1) 
-    damagep2poke1 = (0.5 * (core.cast_to_int(start_battle["p2_pkm_1_atk"]) / core.cast_to_int(start_battle["p1_pkm_1_dfs"])) + 1) 
-    damagep2poke2 = (0.5 * (core.cast_to_int(start_battle["p2_pkm_2_atk"]) / core.cast_to_int(start_battle["p1_pkm_2_dfs"])) + 1) 
-    damagep2poke3 = (0.5 * (core.cast_to_int(start_battle["p2_pkm_3_atk"]) / core.cast_to_int(start_battle["p1_pkm_3_dfs"])) + 1)         
+    damage_p1_mon1 = (0.5 * (start_battle["p1_player"][0]["Attack"]) / (start_battle["p2_player"][0]["Defense"]) + 1)      
+    damage_p1_mon2 = (0.5 * (start_battle["p1_player"][1]["Attack"]) / (start_battle["p2_player"][1]["Defense"]) + 1)
+    damage_p1_mon3 = (0.5 * (start_battle["p1_player"][2]["Attack"]) / (start_battle["p2_player"][2]["Defense"]) + 1)
+    damage_p2_mon1 = (0.5 * (start_battle["p2_player"][0]["Attack"]) / (start_battle["p1_player"][0]["Defense"]) + 1)
+    damage_p2_mon2 = (0.5 * (start_battle["p2_player"][1]["Attack"]) / (start_battle["p1_player"][1]["Defense"]) + 1)
+    damage_p2_mon3 = (0.5 * (start_battle["p2_player"][2]["Attack"]) / (start_battle["p1_player"][2]["Defense"]) + 1)        
 
     while True:
         
         while_counter += 1 
         
-        p1_pkm_1_hp -= damagep1poke1
-        p1_pkm_2_hp -= damagep1poke2
-        p1_pkm_3_hp -= damagep1poke3
-        p2_pkm_1_hp -= damagep2poke1
-        p2_pkm_2_hp -= damagep2poke2
-        p2_pkm_3_hp -= damagep2poke3
+        p1_mon_1_hp -= damage_p1_mon1
+        p1_mon_2_hp -= damage_p1_mon2
+        p1_mon_3_hp -= damage_p1_mon3
+        p2_mon_1_hp -= damage_p2_mon1
+        p2_mon_2_hp -= damage_p2_mon2
+        p2_mon_3_hp -= damage_p2_mon3
+    
         
-        
-        if p1_pkm_1_hp <= 0:
-            first_pokemon_dead = start_battle["p1_pkm_1_name"]
-            victorious_player = start_battle["p2_player"]
+        if p1_mon_1_hp <= 0:
+            first_pokemon_dead = start_battle["p1_player"][0]["Name"]
+            victorious_player = "2"
             break
-        elif p1_pkm_2_hp <= 0:
-            first_pokemon_dead = start_battle["p1_pkm_2_name"]
-            victorious_player = start_battle["p2_player"]
+        elif p1_mon_2_hp <= 0:
+            first_pokemon_dead = start_battle["p1_player"][1]["Name"]
+            victorious_player = "2"
             break
-        elif p1_pkm_3_hp <= 0:
-            first_pokemon_dead = start_battle["p1_pkm_3_name"]
-            victorious_player = start_battle["p2_player"]
+        elif p1_mon_3_hp <= 0:
+            first_pokemon_dead = start_battle["p1_player"][2]["Name"]
+            victorious_player = "2"
             break
-        elif p2_pkm_1_hp <= 0:
-            first_pokemon_dead = start_battle["p2_pkm_1_name"]
-            victorious_player = start_battle["p1_player"]
+        elif p2_mon_1_hp <= 0:
+            first_pokemon_dead = start_battle["p2_player"][0]["Name"]
+            victorious_player = "1"
             break
-        elif p2_pkm_2_hp <= 0:
-            first_pokemon_dead = start_battle["p2_pkm_2_name"]
-            victorious_player = start_battle["p1_player"]
+        elif p2_mon_2_hp <= 0:
+            first_pokemon_dead = start_battle["p2_player"][1]["Name"]
+            victorious_player = "1"
             break
-        elif p2_pkm_3_hp <= 0:    
-            first_pokemon_dead = start_battle["p2_pkm_3_name"]
-            victorious_player = start_battle["p1_player"]
+        elif p2_mon_3_hp <= 0:    
+            first_pokemon_dead = start_battle["p2_player"][2]["Name"]
+            victorious_player = "1"
             break
     
-    return core.AnswersBattle(
+    return core.AnswersResult(
+        p1_pkm_1_name =  start_battle["p1_player"][0]["Name"],
+        p1_pkm_2_name =  start_battle["p1_player"][1]["Name"],
+        p1_pkm_3_name =  start_battle["p1_player"][2]["Name"],
+        p2_pkm_1_name =  start_battle["p2_player"][0]["Name"],
+        p2_pkm_2_name =  start_battle["p2_player"][1]["Name"],
+        p2_pkm_3_name =  start_battle["p2_player"][2]["Name"],
+        
+        p1_pkm_1_hp =  start_battle["p1_player"][0]["HP"],
+        p1_pkm_2_hp =  start_battle["p1_player"][1]["HP"],
+        p1_pkm_3_hp =  start_battle["p1_player"][2]["HP"],
+        p2_pkm_1_hp =  start_battle["p2_player"][0]["HP"],
+        p2_pkm_2_hp =  start_battle["p2_player"][1]["HP"],
+        p2_pkm_3_hp =  start_battle["p2_player"][2]["HP"],
+        
+        p1_pkm_1_atk =  start_battle["p1_player"][0]["Attack"],
+        p1_pkm_2_atk =  start_battle["p1_player"][1]["Attack"],
+        p1_pkm_3_atk =  start_battle["p1_player"][2]["Attack"],
+        p2_pkm_1_atk =  start_battle["p2_player"][0]["Attack"],
+        p2_pkm_2_atk =  start_battle["p2_player"][1]["Attack"],
+        p2_pkm_3_atk =  start_battle["p2_player"][2]["Attack"],
+        
+        p1_pkm_1_dfs =  start_battle["p1_player"][0]["Attack"],
+        p1_pkm_2_dfs =  start_battle["p1_player"][1]["Attack"],
+        p1_pkm_3_dfs =  start_battle["p1_player"][2]["Attack"],
+        p2_pkm_1_dfs =  start_battle["p2_player"][0]["Attack"],
+        p2_pkm_2_dfs =  start_battle["p2_player"][1]["Attack"],
+        p2_pkm_3_dfs =  start_battle["p2_player"][2]["Attack"],
+        
         winner = victorious_player,
         rounds = while_counter,
         loser_pokemon = first_pokemon_dead
     )
-
-# TODO: control the column width
-# TODO: improve how we code the visualization
-def show_battle_winner(start_battle,battle_result, id_number):
-    datenow =  datetime.now()
-    battle_msg =  ((" " * 80) + "\n")
-    battle_msg += "reported generated on:   " + datenow.isoformat() + (" " * 31  ) + "\n"
-    battle_msg += ((" " * 80) + "\n")
-    battle_msg += "" + (("=" * 32) + " POKéMON BATTLE " + ("=" * 32) + "\n")
-    battle_msg += ((" " * 80) + "\n")
-    battle_msg += " " + ("-" * 78) + " \n"
-    battle_msg += "|" + (" " * 35) + "PLAYER 1" + (" " * 35) + "|\n"
-    battle_msg += " " + ("-" * 78) + " \n"
-    battle_msg += "|Name:" + start_battle["p1_pkm_1_name"] + "   |Name:" + start_battle["p1_pkm_2_name"] + "    |Name:" + start_battle["p1_pkm_3_name"] + "  |\n"
-    battle_msg += "|HP: " + str(start_battle["p1_pkm_1_hp"]) + "                      |HP: " + str(start_battle["p1_pkm_2_hp"]) + "                     |HP: " + str(start_battle["p1_pkm_3_hp"]) + "                    |\n"
-    battle_msg += "|Attack: " + str(start_battle["p1_pkm_1_atk"]) + "                  |Attack: " + str(start_battle["p1_pkm_2_atk"]) + "                |Attack: " + str(start_battle["p1_pkm_3_atk"]) + "               |\n"
-    battle_msg += "|Defense: " + str(start_battle["p1_pkm_1_dfs"]) + "                 |Defense: " + str(start_battle["p1_pkm_2_dfs"]) + "                |Defense: " + str(start_battle["p1_pkm_2_dfs"]) + "               |\n"
-    battle_msg += "-------------------------------------------------------------------------------------\n"
-    battle_msg += "|                                    PLAYER 2                                        |\n"
-    battle_msg += "-------------------------------------------------------------------------------------\n"
-    battle_msg += "|Name:" + start_battle["p2_pkm_1_name"] + "      |Name:" + start_battle["p2_pkm_2_name"] + "    |Name:" + start_battle["p2_pkm_3_name"] + "|\n"
-    battle_msg += "|HP: " + str(start_battle["p2_pkm_1_hp"]) + "                       |HP: " + str(start_battle["p2_pkm_2_hp"]) + "                    |HP: " + str(start_battle["p2_pkm_3_hp"]) + "                    |\n"
-    battle_msg += "|Attack: " + str(start_battle["p2_pkm_1_atk"]) + "                  |Attack: " + str(start_battle["p2_pkm_2_atk"]) + "                |Attack: " + str(start_battle["p2_pkm_3_atk"]) + "               |\n"
-    battle_msg += "|Defense: " + str(start_battle["p2_pkm_1_dfs"]) + "                  |Defense: " + str(start_battle["p2_pkm_2_dfs"]) + "               |Defense: " + str(start_battle["p2_pkm_2_dfs"]) + "              |\n"
-    battle_msg += "-------------------------------------------------------------------------------------\n"
-    battle_msg += "=====================================================================================\n"
-    battle_msg += "|                              +++++ RESULT +++++                                    |\n"
-    battle_msg += "=====================================================================================\n"
-    battle_msg += "|                        -----------------------------                               |\n"
-    battle_msg += "|                                  --Winner--                                        |\n"
-    battle_msg += "|                                   Player " + str(battle_result["winner"]) + "                                         |\n"
-    battle_msg += "|                        -----------------------------                               |\n"
-    battle_msg += "|                                  --Rounds--                                        |\n"
-    battle_msg += "|                                      " + str(battle_result["rounds"]) + "                                            |\n"
-    battle_msg += "|                        -----------------------------                               |\n"
-    battle_msg += "|                          --First pokemon to fall--                                 |\n"
-    battle_msg += "|                              " + battle_result["loser_pokemon"] + "                                 |\n"
-    battle_msg += "=====================================================================================\n"
-    battle_msg += "                                                                                     \n"
-    
-    print(battle_msg.format(**start_battle))
-    
-    core.save_data(battle_msg,"battle",id_number)
-    

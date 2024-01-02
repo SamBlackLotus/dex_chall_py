@@ -1,6 +1,6 @@
 # TODO: create nested data when is repeated to organize better
 # some structures, such as "name, points" - dataclass
-from typing import TypedDict
+from typing import TypedDict, List, Dict
 
 
 class AnswersTrivia(TypedDict):
@@ -54,6 +54,10 @@ class AnswersInfo(TypedDict):
 
 
 class AnswersBattle(TypedDict):
+    p1_pokemon: List[Dict[str, int]]
+    p1_pokemon: List[Dict[str, int]]
+    
+class AnswersResult(TypedDict):
     hp: str
     attack: str
     defense: str

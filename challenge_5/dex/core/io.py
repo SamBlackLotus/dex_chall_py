@@ -1,10 +1,28 @@
 import os
+import core
+from datetime import datetime
 from typing import List, Set, SupportsIndex, Dict
 
 
 
 
 def client_helper() -> str:
+    
+    """
+    This function receives data in any python types
+    and turns into a set.
+
+    Parameters
+    ----------
+    file_set_1:
+        The data to be converted in set.
+
+    Returns
+    -------
+    pokemon_set:
+        The data in a set type.
+    """
+    
     helper_msg: str = """
     Hello! Welcome to the Pokedex.
 
@@ -36,9 +54,23 @@ def client_helper() -> str:
     return helper_msg
 
 
-# TODO: the correct trivia cmd is:
-# python3 pokedex/main.py --trivia data/json/pokemons_1.json --id 1
 def client_usage() -> str:
+    
+    """
+    This function receives data in any python types
+    and turns into a set.
+
+    Parameters
+    ----------
+    file_set_1:
+        The data to be converted in set.
+
+    Returns
+    -------
+    pokemon_set:
+        The data in a set type.
+    """
+        
     client_usage_msg: str = """
     CLI usage:
 
@@ -90,22 +122,44 @@ def client_usage() -> str:
     return client_usage_msg
 
 def save_data(saved_data,archive_type,id_number):
+    
+    """
+    This function receives data in any python types
+    and turns into a set.
+
+    Parameters
+    ----------
+    file_set_1:
+        The data to be converted in set.
+
+    Returns
+    -------
+    pokemon_set:
+        The data in a set type.
+    """
+        
     if os.path.exists(f"{id_number}_{archive_type}.txt"):
 
-        user_choice = input(f"Files {id_number}_{archive_type}.txt already exists, what do you prefer to do? [append|OVERWRITE] : ")
+        user_choice = input(\
+            f"Files {id_number}_{archive_type}.txt already exists, " \
+            + "what do you prefer to do? [append|OVERWRITE] : ")
 
         if user_choice.lower() == 'o' or user_choice.lower() == 'overwrite':
 
             os.remove(f"{id_number}_{archive_type}.txt")
+            
+            print("File Overwritten successfully!")
 
             with open(f"{id_number}_{archive_type}.txt", "w") as target:
                 target.write(saved_data)
+                
         elif user_choice.lower() == 'a' or user_choice.lower() == 'append':
 
             with open(f"{id_number}_{archive_type}.txt", "a") as target:
                 target.write(saved_data)
+                print("New entry added to the file successfully!")
         else:
-            print(f"WARNING: Invalid Input.\n{core.client_usage()}")
+            print(f"WARNING: Invalid Input.\n{client_usage()}")
             quit()
 
     else:
@@ -170,5 +224,83 @@ def show_trivia(pokemons_info, id_number):
     
     print(msg.format(**pokemons_info))
     
-    core.save_data(msg,"trivia",id_number)
-        
+    save_data(msg,"trivia",id_number)
+
+# TODO: control the column width
+# TODO: improve how we code the visualization
+def show_battle_winner(battle_result, id_number):
+    datenow =  datetime.now()
+    battle_msg =  ((" " * 80) + "\n")
+    battle_msg += "reported generated on:   " + datenow.isoformat() + (" " * 31  ) + "\n"
+    battle_msg += ((" " * 80) + "\n")
+    battle_msg += "" + (("=" * 32) + " POKéMON BATTLE " + ("=" * 32) + "\n")
+    battle_msg += ((" " * 80) + "\n")
+    battle_msg += " " + ("-" * 78) + " \n"
+    battle_msg += "|" + (" " * 35) + "PLAYER 1" + (" " * 35) + "|\n"
+    battle_msg += " " + ("-" * 78) + " \n"
+    battle_msg += "|Name:" + battle_result["p1_pkm_1_name"] + (" " * (21 - len(battle_result["p1_pkm_1_name"]))) + \
+        "|Name:" + battle_result["p1_pkm_2_name"] + (" " * (20 - len(battle_result["p1_pkm_2_name"]))) + "|Name:" + \
+        battle_result["p1_pkm_3_name"] + (" " * (20 - len(battle_result["p1_pkm_3_name"]))) + "|\n"
+    battle_msg += "|HP: " + str(battle_result["p1_pkm_1_hp"]) + "                      |HP: " + str(battle_result["p1_pkm_2_hp"]) + "                     |HP: " + str(battle_result["p1_pkm_3_hp"]) + "                    |\n"
+    battle_msg += "|Attack: " + str(battle_result["p1_pkm_1_atk"]) + "                  |Attack: " + str(battle_result["p1_pkm_2_atk"]) + "                |Attack: " + str(battle_result["p1_pkm_3_atk"]) + "               |\n"
+    battle_msg += "|Defense: " + str(battle_result["p1_pkm_1_dfs"]) + "                 |Defense: " + str(battle_result["p1_pkm_2_dfs"]) + "                |Defense: " + str(battle_result["p1_pkm_2_dfs"]) + "               |\n"
+    battle_msg += "-------------------------------------------------------------------------------------\n"
+    battle_msg += "|                                    PLAYER 2                                        |\n"
+    battle_msg += "-------------------------------------------------------------------------------------\n"
+    battle_msg += "|Name:" + battle_result["p2_pkm_1_name"] + "      |Name:" + battle_result["p2_pkm_2_name"] + "    |Name:" + battle_result["p2_pkm_3_name"] + "|\n"
+    battle_msg += "|HP: " + str(battle_result["p2_pkm_1_hp"]) + "                       |HP: " + str(battle_result["p2_pkm_2_hp"]) + "                    |HP: " + str(battle_result["p2_pkm_3_hp"]) + "                    |\n"
+    battle_msg += "|Attack: " + str(battle_result["p2_pkm_1_atk"]) + "                  |Attack: " + str(battle_result["p2_pkm_2_atk"]) + "                |Attack: " + str(battle_result["p2_pkm_3_atk"]) + "               |\n"
+    battle_msg += "|Defense: " + str(battle_result["p2_pkm_1_dfs"]) + "                  |Defense: " + str(battle_result["p2_pkm_2_dfs"]) + "               |Defense: " + str(battle_result["p2_pkm_2_dfs"]) + "              |\n"
+    battle_msg += "-------------------------------------------------------------------------------------\n"
+    battle_msg += "=====================================================================================\n"
+    battle_msg += "|                              +++++ RESULT +++++                                    |\n"
+    battle_msg += "=====================================================================================\n"
+    battle_msg += "|                        -----------------------------                               |\n"
+    battle_msg += "|                                  --Winner--                                        |\n"
+    battle_msg += "|                                   Player " + str(battle_result["winner"]) + "                                         |\n"
+    battle_msg += "|                        -----------------------------                               |\n"
+    battle_msg += "|                                  --Rounds--                                        |\n"
+    battle_msg += "|                                      " + str(battle_result["rounds"]) + "                                            |\n"
+    battle_msg += "|                        -----------------------------                               |\n"
+    battle_msg += "|                          --First pokemon to fall--                                 |\n"
+    battle_msg += "|                              " + battle_result["loser_pokemon"] + "                                 |\n"
+    battle_msg += "=====================================================================================\n"
+    battle_msg += "                                                                                     \n"
+    
+    print(battle_msg.format(**battle_result))
+    
+    save_data(battle_msg,"battle",id_number)
+    
+def show_info(process_pokemons, id_number):
+    
+    datenow = datetime.now()
+    msg =  ((" " * 80) + "\n")
+    msg += "reported generated on: " + datenow.isoformat() + (" " * 31  ) + "\n"
+    msg += " " +(("=" * 32) + " POKEMON INFO " + ("=" * 32) + " \n")
+    msg += "|" + (" " * 18) + "| PLAYER 1" + (" " * 20) + "| PLAYER 2" + (" " * 20) + "|\n"
+    msg += "|" + ("-" * 18) + "|" + ("-" * 29) + "|" + ("-" * 29) + "|\n"
+    msg += "|Pokémons" + (" " * 10) + "| " + process_pokemons["player1_total_pokemons_info"] + \
+        (" " * (28 - len(process_pokemons["player1_total_pokemons_info"]))) +  "| " + \
+        process_pokemons["player2_total_pokemons_info"] + \
+        (" " * (28 - len(process_pokemons["player1_total_pokemons_info"]))) + "|\n"
+    msg += "|Strongest Pokémon" + " | " + process_pokemons["strongest_pokemon_player1_info"] + \
+        (" " * (28 - len(process_pokemons["strongest_pokemon_player1_info"]))) +  "| " + \
+        process_pokemons["strongest_pokemon_player2_info"] + \
+        (" " * (28 - len(process_pokemons["strongest_pokemon_player2_info"]))) + "|\n"
+    msg += "|Legendaries" + (" " * 7) + "| " + process_pokemons["legendary_player1_info"] + \
+        (" " * (28 - len(process_pokemons["legendary_player1_info"]))) +  \
+        "| " + process_pokemons["legendary_player2_info"] + \
+        (" " * (28 - len(process_pokemons["legendary_player2_info"]))) +  "|\n"
+    msg += "|Repeated Pokemons" + " | " + process_pokemons["repeated_pokemon_info"] + \
+        (" " * (58 - len(process_pokemons["repeated_pokemon_info"]))) +  "|\n"
+    msg += "|Different Pokemons" + "| " + process_pokemons["different_pokemon_info"] + \
+        (" " * (58 - len(process_pokemons["different_pokemon_info"]))) +  "|\n"
+    msg += "|" + ("-" * 18) + "|" + ("-" * 59) + "|\n"
+    msg += " " + (("=" * 78) + " \n")
+    msg += ((" " * 80) + "\n")
+
+    print(msg.format(**process_pokemons))
+    
+    save_data(msg,"info",id_number)
+    
+    

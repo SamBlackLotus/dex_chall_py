@@ -49,36 +49,3 @@ def process_info(process_poke1, process_poke2, pokemon_set_1, pokemon_set_2):
         repeated_pokemon_info = str(len(intersec_pokemon)),
         different_pokemon_info = str(len(diff_pokemon)))
 
-
-def show_info(process_pokemons, id_number):
-    
-    datenow = datetime.now()
-    msg =  ((" " * 80) + "\n")
-    msg += "reported generated on: " + datenow.isoformat() + (" " * 31  ) + "\n"
-    msg += " " +(("=" * 32) + " POKEMON INFO " + ("=" * 32) + " \n")
-    msg += "|" + (" " * 18) + "| PLAYER 1" + (" " * 20) + "| PLAYER 2" + (" " * 20) + "|\n"
-    msg += "|" + ("-" * 18) + "|" + ("-" * 29) + "|" + ("-" * 29) + "|\n"
-    msg += "|Pokémons" + (" " * 10) + "| " + process_pokemons["player1_total_pokemons_info"] + \
-        (" " * (28 - len(process_pokemons["player1_total_pokemons_info"]))) +  "| " + \
-        process_pokemons["player2_total_pokemons_info"] + \
-        (" " * (28 - len(process_pokemons["player1_total_pokemons_info"]))) + "|\n"
-    msg += "|Strongest Pokémon" + " | " + process_pokemons["strongest_pokemon_player1_info"] + \
-        (" " * (28 - len(process_pokemons["strongest_pokemon_player1_info"]))) +  "| " + \
-        process_pokemons["strongest_pokemon_player2_info"] + \
-        (" " * (28 - len(process_pokemons["strongest_pokemon_player2_info"]))) + "|\n"
-    msg += "|Legendaries" + (" " * 7) + "| " + process_pokemons["legendary_player1_info"] + \
-        (" " * (28 - len(process_pokemons["legendary_player1_info"]))) +  \
-        "| " + process_pokemons["legendary_player2_info"] + \
-        (" " * (28 - len(process_pokemons["legendary_player2_info"]))) +  "|\n"
-    msg += "|Repeated Pokemons" + " | " + process_pokemons["repeated_pokemon_info"] + \
-        (" " * (58 - len(process_pokemons["repeated_pokemon_info"]))) +  "|\n"
-    msg += "|Different Pokemons" + "| " + process_pokemons["different_pokemon_info"] + \
-        (" " * (58 - len(process_pokemons["different_pokemon_info"]))) +  "|\n"
-    msg += "|" + ("-" * 18) + "|" + ("-" * 59) + "|\n"
-    msg += " " + (("=" * 78) + " \n")
-    msg += ((" " * 80) + "\n")
-
-    print(msg.format(**process_pokemons))
-    
-    core.save_data(msg,"info",id_number)
-    
