@@ -3,6 +3,28 @@ from datetime import datetime
 
 
 def process_info(process_poke1, process_poke2, pokemon_set_1, pokemon_set_2):
+    """
+        This function will process some validations using data, to find
+        some specific information and answer the given questions.
+
+    Parameters
+    ----------
+    process_poke1:
+    
+    process_poke2:
+    
+    pokemon_set_1:
+    
+    pokemon_set_2:
+
+    Returns
+    -------
+    AnswerTrivia:
+        Returns the results for the asked validations and puts
+        then in variables so it can the called to be presented 
+        to the user. 
+         
+    """    
 
     strongest_pokemon_player1 = {"index": 0, "value": 0}
     strongest_pokemon_player2 = {"index": 0, "value": 0}

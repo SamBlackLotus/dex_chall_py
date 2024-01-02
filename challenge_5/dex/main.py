@@ -5,9 +5,6 @@ import os
 from typing import List, Dict, Any, Set
 
 
-# TODO: remove the parameters description since there
-# are no args in the function, and also the returns
-# TODO: don't use Any
 def main() -> None:
     """
     This function receive sys.argv from CLI and process it to calls
@@ -74,7 +71,7 @@ def main() -> None:
             quit()
 
         data_1: List[Dict[str, int]] = core.read_file(sys.argv[2])
-        info: Any = menu.pokemon_trivia(data_1)
+        info = menu.pokemon_trivia(data_1)
         core.show_trivia(info, id_number)
         quit()
 
@@ -130,8 +127,8 @@ def main() -> None:
             core.show_info(info, id_number)
             quit()
         elif command_3 == "--battle" or command_4 == "--battle":
-            battle: Any = menu.select_pokemons_for_battle(data_1, data_2)
-            result: Any = menu.pokemon_battle(battle)
+            battle = menu.select_pokemons_for_battle(data_1, data_2)
+            result = menu.pokemon_battle(battle)
             core.show_battle_winner(result, id_number)
             quit()
 

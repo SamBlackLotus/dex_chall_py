@@ -6,12 +6,9 @@ import yaml
 from typing import Dict, Union, List
 
 
-# TODO: you don't need to say which function calls this one(explicar oq a função faz e n onde ela se aplica dentro do programa)
-# TODO: improve the function description by adding "read" (oq a função realmente faz é ler o arquivo, n receber)
-
 def read_file(filepath: str) -> List[Dict[str, Union[str, int]]]:
     """
-    This function receives a filepath from main and based on the format
+    This function reads a file and based on the format
     it will fit in one of the conditionals.
 
     If its a .json it uses load.

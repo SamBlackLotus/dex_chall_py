@@ -1,7 +1,6 @@
 from typing import List, Set, SupportsIndex, Dict
 
 
-
 def cast_to_set(file_set_1: Dict) -> Set:
     """
     This function receives data in any python types
