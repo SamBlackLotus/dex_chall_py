@@ -114,3 +114,30 @@ class AnswersResult(TypedDict):
     rounds: int
     loser_pokemon: str
     user_choice_battle: str
+
+class Monster(TypedDict):
+    Id: int
+    Name: str
+    Stage: str
+    Type: str
+    Type_1: str
+    Type_2: str        
+    Attribute: str
+    Memory: int
+    Equip_Slots: int
+    Total: int    
+    HP: int
+    SP: int
+    Int: int
+    Attack: int
+    Defense: int
+    Sp_Atk: int
+    Sp_Def: int
+    Speed: int
+    Generation: int
+    Legendary: str        
+    Image_link: str
+    
+
+
+   

@@ -25,36 +25,36 @@ def pokemon_trivia(pokemons_data):
     highest_speed_trivia = {"index": 0, "value": 0}
     for index, pokemon in enumerate(pokemons_data):
 
-        hp_trivia_int = core.cast_to_int(pokemon["HP"])
+        hp_trivia_int = core.cast_to_int(pokemon["hp"])
         if hp_trivia_int > highest_hp_trivia["value"]:
             highest_hp_trivia["index"] = index
             highest_hp_trivia["value"] = hp_trivia_int
 
-        attack_trivia_int = core.cast_to_int(pokemon["Attack"])
+        attack_trivia_int = core.cast_to_int(pokemon["attack"])
         if attack_trivia_int > highest_attack_trivia["value"]:
             highest_attack_trivia["index"] = index
             highest_attack_trivia["value"] = attack_trivia_int
 
-        defense_trivia_int = core.cast_to_int(pokemon["Defense"])
+        defense_trivia_int = core.cast_to_int(pokemon["defense"])
         if defense_trivia_int > highest_defense_trivia["value"]:
             highest_defense_trivia["index"] = index
             highest_defense_trivia["value"] = defense_trivia_int
 
-        speed_trivia_int = core.cast_to_int(pokemon["Attack"])
+        speed_trivia_int = core.cast_to_int(pokemon["attack"])
         if speed_trivia_int > highest_speed_trivia["value"]:
             highest_speed_trivia["index"] = index
             highest_speed_trivia["value"] = speed_trivia_int
 
     return core.AnswersTrivia(
         total_trivia= str(len(pokemons_data)),
-        hp_trivia_name= pokemons_data[highest_hp_trivia["index"]]["Name"],
-        hp_trivia_points= str(pokemons_data[highest_hp_trivia["index"]]["HP"]),
-        atk_trivia_name= pokemons_data[highest_attack_trivia["index"]]["Name"],
-        atk_trivia_points= str(pokemons_data[highest_attack_trivia["index"]]["Attack"]),
-        def_trivia_name= pokemons_data[highest_attack_trivia["index"]]["Name"],
-        def_trivia_points= str(pokemons_data[highest_attack_trivia["index"]]["Defense"]),
-        spd_trivia_name= pokemons_data[highest_attack_trivia["index"]]["Name"],
-        spd_trivia_points= str(pokemons_data[highest_attack_trivia["index"]]["Speed"])
+        hp_trivia_name= pokemons_data[highest_hp_trivia["index"]]["name"],
+        hp_trivia_points= str(pokemons_data[highest_hp_trivia["index"]]["hp"]),
+        atk_trivia_name= pokemons_data[highest_attack_trivia["index"]]["name"],
+        atk_trivia_points= str(pokemons_data[highest_attack_trivia["index"]]["attack"]),
+        def_trivia_name= pokemons_data[highest_attack_trivia["index"]]["name"],
+        def_trivia_points= str(pokemons_data[highest_attack_trivia["index"]]["defense"]),
+        spd_trivia_name= pokemons_data[highest_attack_trivia["index"]]["name"],
+        spd_trivia_points= str(pokemons_data[highest_attack_trivia["index"]]["speed"])
     )
     
 def digimon_trivia(digimon_data):
@@ -82,22 +82,22 @@ def digimon_trivia(digimon_data):
     highest_speed_trivia = {"index": 0, "value": 0}
     for index, digimon in enumerate(digimon_data):
 
-        hp_trivia_int = core.cast_to_int(digimon["HP"])
+        hp_trivia_int = core.cast_to_int(digimon["hp"])
         if hp_trivia_int > highest_hp_trivia["value"]:
             highest_hp_trivia["index"] = index
             highest_hp_trivia["value"] = hp_trivia_int
 
-        attack_trivia_int = core.cast_to_int(digimon["Attack"])
+        attack_trivia_int = core.cast_to_int(digimon["attack"])
         if attack_trivia_int > highest_attack_trivia["value"]:
             highest_attack_trivia["index"] = index
             highest_attack_trivia["value"] = attack_trivia_int
 
-        defense_trivia_int = core.cast_to_int(digimon["Defense"])
+        defense_trivia_int = core.cast_to_int(digimon["defense"])
         if defense_trivia_int > highest_defense_trivia["value"]:
             highest_defense_trivia["index"] = index
             highest_defense_trivia["value"] = defense_trivia_int
 
-        speed_trivia_int = core.cast_to_int(digimon["Attack"])
+        speed_trivia_int = core.cast_to_int(digimon["attack"])
         if speed_trivia_int > highest_speed_trivia["value"]:
             highest_speed_trivia["index"] = index
             highest_speed_trivia["value"] = speed_trivia_int

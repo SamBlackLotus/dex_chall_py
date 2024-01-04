@@ -28,11 +28,13 @@ def read_file(filepath: str) -> List[Dict[str, Union[str, int]]]:
     """
     with open((filepath), "r") as source_data:
         if ".json" in filepath:
-            return json.load(source_data)
+            data_read = json.load(source_data)
+        
         elif ".csv" in filepath:
             file = csv.DictReader(source_data, delimiter=",")
             data_read = [row for row in file]
-            return data_read
+
+        
         elif ".xml" in filepath:
             file = source_data.read()
             file_xml = xmltodict.parse(file)
@@ -42,11 +44,13 @@ def read_file(filepath: str) -> List[Dict[str, Union[str, int]]]:
                 data_read += [
                     {key_list: value_list for key_list, value_list in value.items()}
                 ]
-            return data_read
+                
         elif ".yaml" in filepath:
             file = source_data.read()
             data_read = yaml.safe_load(file)
-            return data_read
+            
         else:
             print(f"Error: File format not supported!\n{core.client_usage()}")
             quit()
+            
+        return data_read

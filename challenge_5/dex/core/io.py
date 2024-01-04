@@ -497,16 +497,16 @@ def show_battle_winner(battle_result: Callable, id_number: str) -> None:
     battle_msg += "|" + (" " * 34) + "--Rounds--" + (" " * 34) + "|\n"
     battle_msg += (
         "|"
-        + (" " * (41 - len(str(battle_result["p2_pkm_2_dfs"]))))
+        + (" " * (38 - (len(str(battle_result["p2_pkm_2_dfs"])) // 2)))
         + str(battle_result["rounds"])
-        + (" " * (41 - len(str(battle_result["p2_pkm_2_dfs"]))))
+        + (" " * (39 - (len(str(battle_result["p2_pkm_2_dfs"])) // 2)))
         + "|\n"
     )
     battle_msg += "|" + (" " * 25) + ("-" * 28) + (" " * 25) + "|\n"
     battle_msg += "|" + (" " * 26) + "--First pokemon to fall--" + (" " * 27) + "|\n"
     battle_msg += (
         "|"
-        + (" " * (39 - (len(battle_result["loser_pokemon"]) // 2)))
+        + (" " * (38 - (len(battle_result["loser_pokemon"]) // 2)))
         + battle_result["loser_pokemon"]
         + (" " * (39 - (len(battle_result["loser_pokemon"]) // 2)))
         + "|\n"
