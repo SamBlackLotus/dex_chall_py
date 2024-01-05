@@ -497,7 +497,7 @@ def show_battle_winner(battle_result: Callable, id_number: str) -> None:
     battle_msg += "|" + (" " * 34) + "--Rounds--" + (" " * 34) + "|\n"
     battle_msg += (
         "|"
-        + (" " * (38 - (len(str(battle_result["p2_pkm_2_dfs"])) // 2)))
+        + (" " * (39 - (len(str(battle_result["p2_pkm_2_dfs"])) // 2)))
         + str(battle_result["rounds"])
         + (" " * (39 - (len(str(battle_result["p2_pkm_2_dfs"])) // 2)))
         + "|\n"
@@ -572,7 +572,7 @@ def show_info(process_pokemons: Callable[[str], Dict], id_number: str) -> None:
     )
     msg += (
         "|Legendary"
-        + (" " * 7)
+        + (" " * 9)
         + "| "
         + process_pokemons["legendary_player1_info"]
         + (" " * (28 - len(process_pokemons["legendary_player1_info"])))
