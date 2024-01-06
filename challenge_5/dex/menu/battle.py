@@ -23,7 +23,6 @@ def select_pokemons_for_battle(player_1_battle, player_2_battle):
 
 
 def pokemon_battle(start_battle):
-    print(start_battle)
     while_counter = 0
 
     p1_mon_1_hp = start_battle["p1_player"][0]["hp"]

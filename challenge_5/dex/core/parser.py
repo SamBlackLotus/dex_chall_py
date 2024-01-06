@@ -6,7 +6,7 @@ import yaml
 from typing import Dict, Union, List
 
 
-def read_file(filepath: str) -> List[Dict[str, Union[str, int]]]:
+def read_file(filepath: str, archive_type: str) -> List[Dict[str, Union[str, int]]]:
     """
     This function reads a file and based on the format
     it will fit in one of the conditionals.
@@ -52,5 +52,17 @@ def read_file(filepath: str) -> List[Dict[str, Union[str, int]]]:
         else:
             print(f"Error: File format not supported!\n{core.client_usage()}")
             quit()
-            
-        return data_read
+
+        if archive_type == "--pokemon":
+            for list in data_read:
+                if "Legendary" not in list:
+                    print(f"Error: Monster option invalid for this file!\n{core.client_usage()}")
+                    quit()
+                    
+        elif archive_type == "--digimon":
+            for list in data_read:
+                if "Stage" not in list:
+                    print(f"Error: Monster option invalid for this file!\n{core.client_usage()}")
+                    quit()
+                    
+    return data_read

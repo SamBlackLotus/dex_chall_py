@@ -77,7 +77,7 @@ def main() -> None:
                 print(f"WARNING! Incorrect amount of arguments.\n{core.client_usage()}")
                 quit()
 
-            data_arq1: List[Dict[str, int]] = core.read_file(sys.argv[3])
+            data_arq1: List[Dict[str, int]] = core.read_file(filepath_1, command_1)
             data_1 = core.cast_to_lower(data_arq1,command_1)
             info = menu.pokemon_trivia(data_1)
             core.show_pokemon_trivia(info, id_number)
@@ -125,8 +125,8 @@ def main() -> None:
                 print(f"WARNING: This command does not exist.\n{core.client_usage()}")
                 quit()
 
-            data_arq1 = core.read_file(filepath_1)
-            data_arq2: List[Dict[str, int]] = core.read_file(filepath_2)
+            data_arq1 = core.read_file(filepath_1,command_1)
+            data_arq2: List[Dict[str, int]] = core.read_file(filepath_2,command_1)
             data_1 = core.cast_to_lower(data_arq1, command_1)
             data_2 = core.cast_to_lower(data_arq2, command_1)
 
@@ -134,7 +134,7 @@ def main() -> None:
             if command_4 == "--info" or command_5 == "--info":
                 dataset_1: Set[str] = core.cast_to_set(data_1)
                 dataset_2: Set[str] = core.cast_to_set(data_2)
-                info = menu.process_info(data_1, data_2, dataset_1, dataset_2)
+                info = menu.process_info(data_1, data_2, dataset_1, dataset_2,command_1)
                 core.show_info(info, id_number)
                 quit()
             elif command_4 == "--battle" or command_5 == "--battle":
@@ -178,7 +178,7 @@ def main() -> None:
             print(f"WARNING! Incorrect amount of arguments.\n{core.client_usage()}")
             quit()
 
-        data_arq1: List[Dict[str, int]] = core.read_file(sys.argv[2])
+        data_arq1: List[Dict[str, int]] = core.read_file(filepath_1,"--pokemon")
         data_1 = core.cast_to_lower(data_arq1,"--pokemon")
         info = menu.pokemon_trivia(data_1)
         core.show_pokemon_trivia(info, id_number)
@@ -226,8 +226,8 @@ def main() -> None:
             print(f"WARNING: This command does not exist.\n{core.client_usage()}")
             quit()
 
-        data_arq1 = core.read_file(filepath_1)
-        data_arq2: List[Dict[str, int]] = core.read_file(filepath_2)
+        data_arq1 = core.read_file(filepath_1,"--pokemon")
+        data_arq2: List[Dict[str, int]] = core.read_file(filepath_2,"--pokemon")
         data_1 = core.cast_to_lower(data_arq1, "--pokemon")
         data_2 = core.cast_to_lower(data_arq2, "--pokemon")
 
@@ -235,7 +235,7 @@ def main() -> None:
         if command_3 == "--info" or command_4 == "--info":
             dataset_1: Set[str] = core.cast_to_set(data_1)
             dataset_2: Set[str] = core.cast_to_set(data_2)
-            info = menu.process_info(data_1, data_2, dataset_1, dataset_2)
+            info = menu.process_info(data_1, data_2, dataset_1, dataset_2,"--pokemon")
             core.show_info(info, id_number)
             quit()
         elif command_3 == "--battle" or command_4 == "--battle":
