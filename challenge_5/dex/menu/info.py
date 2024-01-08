@@ -68,13 +68,13 @@ def process_info(process_poke1, process_poke2, pokemon_set_1, pokemon_set_2,arch
             legendary_2 = core.cast_to_bool(pokemon["legendary"])
             # TODO: there is no need to check for True
             if legendary_2 is True:
-                total_legendary_player1 += 1
+                total_legendary_player2 += 1
                 
         elif archive_type == "--digimon":
             legendary_2 = pokemon["stage"]
             # TODO: there is no need to check for True
             if legendary_2 == "Ultimate":
-                total_legendary_player1 += 1
+                total_legendary_player2 += 1
 
     return core.AnswersInfo(
         player1_total_pokemons_info=str(player1_total_pokemons),

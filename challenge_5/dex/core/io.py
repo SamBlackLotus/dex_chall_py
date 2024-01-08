@@ -296,6 +296,8 @@ def show_digimon_trivia(digimon_info: str, id_number: str) -> None:
         A message containing some specific information about the
         data provided.
     """
+    print(digimon_info)
+    
     datenow = datetime.now()
     msg = (" " * 80) + "\n"
     msg += "reported generated on: " + datenow.isoformat() + (" " * 31) + "\n"
@@ -308,14 +310,15 @@ def show_digimon_trivia(digimon_info: str, id_number: str) -> None:
     msg += (
         (" " * 4)
         + "> "
-        + digimon_info["total_trivia_dg"]
+        + digimon_info["total_trivia"]
         + " digimon"
         + (" " * (25 - len(digimon_info["total_trivia"])))
         + "\n"
     )
     msg += (" " * 80) + "\n"
     msg += "2. How many types of Digimon there are?" + (" " * 36) + "\n"
-    msg += (" " * 4) + ">" + digimon_info["digimon_types"] + " different types " + "\n"
+    msg += (digimon_info["highest_atk_name"] + "\n" + digimon_info["lowest_atk_name"] + "\n" + digimon_info["total_baby"] + "\n" + digimon_info["total_rookie"])
+    # msg += (" " * 4) + ">" + digimon_info["digimon_types"] + " different types " + "\n"
     # 1 - How many digimon there is?
     # Len
 
@@ -380,7 +383,7 @@ def show_battle_winner(battle_result: Callable, id_number: str) -> None:
     battle_msg = (" " * 80) + "\n"
     battle_msg += "reported generated on: " + datenow.isoformat() + (" " * 31) + "\n"
     battle_msg += (" " * 80) + "\n"
-    battle_msg += "" + (("=" * 32) + " POKéMON BATTLE " + ("=" * 32) + "\n")
+    battle_msg += "" + (("=" * 32) + " MONSTER BATTLE " + ("=" * 32) + "\n")
     battle_msg += (" " * 80) + "\n"
     battle_msg += " " + ("-" * 78) + " \n"
     battle_msg += "|" + (" " * 35) + "PLAYER 1" + (" " * 35) + "|\n"
@@ -503,7 +506,7 @@ def show_battle_winner(battle_result: Callable, id_number: str) -> None:
         + "|\n"
     )
     battle_msg += "|" + (" " * 25) + ("-" * 28) + (" " * 25) + "|\n"
-    battle_msg += "|" + (" " * 26) + "--First pokemon to fall--" + (" " * 27) + "|\n"
+    battle_msg += "|" + (" " * 26) + "--First monster to fall--" + (" " * 27) + "|\n"
     battle_msg += (
         "|"
         + (" " * (38 - (len(battle_result["loser_pokemon"]) // 2)))
@@ -521,7 +524,7 @@ def show_battle_winner(battle_result: Callable, id_number: str) -> None:
     save_data(battle_msg, "battle", id_number)
 
 
-def show_info(process_pokemons: Callable[[str], Dict], id_number: str) -> None:
+def show_info(process_pokemons: Callable[[str], Dict], id_number: str, archive_type: str) -> None:
     """
     This function will show a message in the CLI.
 
@@ -544,57 +547,122 @@ def show_info(process_pokemons: Callable[[str], Dict], id_number: str) -> None:
     msg = (" " * 80) + "\n"
     msg += "reported generated on: " + datenow.isoformat() + (" " * 31) + "\n"
     msg += (" " * 80) + "\n"
-    msg += " " + (("=" * 32) + " POKEMON INFO " + ("=" * 32) + " \n")
-    msg += (
-        "|" + (" " * 18) + "| PLAYER 1" + (" " * 20) + "| PLAYER 2" + (" " * 20) + "|\n"
-    )
-    msg += "|" + ("-" * 18) + "|" + ("-" * 29) + "|" + ("-" * 29) + "|\n"
-    msg += (
-        "|Pokemons"
-        + (" " * 10)
-        + "| "
-        + process_pokemons["player1_total_pokemons_info"]
-        + (" " * (28 - len(process_pokemons["player1_total_pokemons_info"])))
-        + "| "
-        + process_pokemons["player2_total_pokemons_info"]
-        + (" " * (28 - len(process_pokemons["player1_total_pokemons_info"])))
-        + "|\n"
-    )
-    msg += (
-        "|Strongest Pokémon"
-        + " | "
-        + process_pokemons["strongest_pokemon_player1_info"]
-        + (" " * (28 - len(process_pokemons["strongest_pokemon_player1_info"])))
-        + "| "
-        + process_pokemons["strongest_pokemon_player2_info"]
-        + (" " * (28 - len(process_pokemons["strongest_pokemon_player2_info"])))
-        + "|\n"
-    )
-    msg += (
-        "|Legendary"
-        + (" " * 9)
-        + "| "
-        + process_pokemons["legendary_player1_info"]
-        + (" " * (28 - len(process_pokemons["legendary_player1_info"])))
-        + "| "
-        + process_pokemons["legendary_player2_info"]
-        + (" " * (28 - len(process_pokemons["legendary_player2_info"])))
-        + "|\n"
-    )
-    msg += (
-        "|Repeated Pokemons"
-        + " | "
-        + process_pokemons["repeated_pokemon_info"]
-        + (" " * (58 - len(process_pokemons["repeated_pokemon_info"])))
-        + "|\n"
-    )
-    msg += (
-        "|Different Pokemons"
-        + "| "
-        + process_pokemons["different_pokemon_info"]
-        + (" " * (58 - len(process_pokemons["different_pokemon_info"])))
-        + "|\n"
-    )
+    
+    if archive_type == "--pokemon":
+        msg += " " + (("=" * 32) + " POKEMON INFO " + ("=" * 32) + " \n")
+        msg += (
+            "|" + (" " * 18) + "| PLAYER 1" + (" " * 20) + "| PLAYER 2" + (" " * 20) + "|\n"
+        )
+        msg += "|" + ("-" * 18) + "|" + ("-" * 29) + "|" + ("-" * 29) + "|\n"
+        msg += (
+            "|Pokemons"
+            + (" " * 10)
+            + "| "
+            + process_pokemons["player1_total_pokemons_info"]
+            + (" " * (28 - len(process_pokemons["player1_total_pokemons_info"])))
+            + "| "
+            + process_pokemons["player2_total_pokemons_info"]
+            + (" " * (28 - len(process_pokemons["player1_total_pokemons_info"])))
+            + "|\n"
+        )
+        msg += (
+            "|Strongest Pokémon"
+            + " | "
+            + process_pokemons["strongest_pokemon_player1_info"]
+            + (" " * (28 - len(process_pokemons["strongest_pokemon_player1_info"])))
+            + "| "
+            + process_pokemons["strongest_pokemon_player2_info"]
+            + (" " * (28 - len(process_pokemons["strongest_pokemon_player2_info"])))
+            + "|\n"
+        )
+        msg += (
+            "|Legendary"
+            + (" " * 9)
+            + "| "
+            + process_pokemons["legendary_player1_info"]
+            + (" " * (28 - len(process_pokemons["legendary_player1_info"])))
+            + "| "
+            + process_pokemons["legendary_player2_info"]
+            + (" " * (28 - len(process_pokemons["legendary_player2_info"])))
+            + "|\n"
+        )
+        msg += (
+            "|Ultimate Digimon"
+            + (" " * 1)
+            + "| "
+            + process_pokemons["legendary_player1_info"]
+            + (" " * (28 - len(process_pokemons["legendary_player1_info"])))
+            + "| "
+            + process_pokemons["legendary_player2_info"]
+            + (" " * (28 - len(process_pokemons["legendary_player2_info"])))
+            + "|\n"
+        )
+        msg += (
+            "|Repeated Pokemons"
+            + " | "
+            + process_pokemons["repeated_pokemon_info"]
+            + (" " * (58 - len(process_pokemons["repeated_pokemon_info"])))
+            + "|\n"
+        )
+        msg += (
+            "|Different Pokemons"
+            + "| "
+            + process_pokemons["different_pokemon_info"]
+            + (" " * (58 - len(process_pokemons["different_pokemon_info"])))
+            + "|\n"
+        )
+    elif archive_type == "--digimon":
+        msg += " " + (("=" * 32) + " DIGIMON INFO " + ("=" * 32) + " \n")
+        msg += (
+            "|" + (" " * 18) + "| PLAYER 1" + (" " * 20) + "| PLAYER 2" + (" " * 20) + "|\n"
+        )
+        msg += "|" + ("-" * 18) + "|" + ("-" * 29) + "|" + ("-" * 29) + "|\n"
+        msg += (
+            "|Digimons"
+            + (" " * 10)
+            + "| "
+            + process_pokemons["player1_total_pokemons_info"]
+            + (" " * (28 - len(process_pokemons["player1_total_pokemons_info"])))
+            + "| "
+            + process_pokemons["player2_total_pokemons_info"]
+            + (" " * (28 - len(process_pokemons["player1_total_pokemons_info"])))
+            + "|\n"
+        )
+        msg += (
+            "|Strongest Digimon"
+            + " | "
+            + process_pokemons["strongest_pokemon_player1_info"]
+            + (" " * (28 - len(process_pokemons["strongest_pokemon_player1_info"])))
+            + "| "
+            + process_pokemons["strongest_pokemon_player2_info"]
+            + (" " * (28 - len(process_pokemons["strongest_pokemon_player2_info"])))
+            + "|\n"
+        )
+        msg += (
+            "|Mega Digimon"
+            + (" " * 7)
+            + "| "
+            + process_pokemons["legendary_player1_info"]
+            + (" " * (28 - len(process_pokemons["legendary_player1_info"])))
+            + "| "
+            + process_pokemons["legendary_player2_info"]
+            + (" " * (28 - len(process_pokemons["legendary_player2_info"])))
+            + "|\n"
+        )
+        msg += (
+            "|Repeated Digimons"
+            + " | "
+            + process_pokemons["repeated_pokemon_info"]
+            + (" " * (58 - len(process_pokemons["repeated_pokemon_info"])))
+            + "|\n"
+        )
+        msg += (
+            "|Different Digimons"
+            + "| "
+            + process_pokemons["different_pokemon_info"]
+            + (" " * (58 - len(process_pokemons["different_pokemon_info"])))
+            + "|\n"
+        )
     msg += "|" + ("-" * 18) + "|" + ("-" * 59) + "|\n"
     msg += " " + (("=" * 78) + " \n")
     msg += (" " * 80) + "\n"
