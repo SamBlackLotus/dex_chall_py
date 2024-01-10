@@ -83,11 +83,13 @@ def digimon_trivia(digimon_data):
     champion_dict = []
     ultimate_dict = []
     mega_dict = []
+    ultra_dict = []
     baby_digimon = 0
     rookie_digimon = 0
     champion_digimon = 0
     ultimate_digimon = 0
     mega_digimon = 0
+    ultra_digimon = 0
     data_type = 0
     vaccine_type = 0
     virus_type = 0
@@ -97,6 +99,7 @@ def digimon_trivia(digimon_data):
     champion_strongest = {"index": 0, "value":0}
     ultimate_strongest = {"index": 0, "value":0}
     mega_strongest = {"index": 0, "value":0}
+    ultra_strongest = {"index": 0, "value":0}
     digimon_types = []
     
     for index, digimon in enumerate(digimon_data):
@@ -129,35 +132,49 @@ def digimon_trivia(digimon_data):
         elif digimon["stage"] == "Mega":
             mega_digimon += 1
             mega_dict += [{key_list: value_list for key_list, value_list in digimon.items()}]
+            
+        elif digimon["stage"] == "Ultra":
+            ultra_digimon += 1
+            ultra_dict += [{key_list: value_list for key_list, value_list in digimon.items()}]
 
         if digimon["type1"] == "Data":
             data_type += 1
+            if digimon["type1"] not in digimon_types:
+                digimon_types.append("Data")
+
         elif digimon["type1"] == "Vaccine":
             vaccine_type += 1
+            if digimon["type1"] not in digimon_types:
+                digimon_types.append("Vaccine")
+
         elif digimon["type1"] == "Virus":
             virus_type += 1
+            if digimon["type1"] not in digimon_types:
+                digimon_types.append("Virus")
+            
         elif digimon["type1"] == "Free":
             free_type += 1
-            
-        if "Data" in digimon["type1"] ==:
-            digimon_types.append("Data")
-        elif "Vaccine" in digimon["type1"]:
-            digimon_types.append("Vaccine")
-        elif "Virus" in digimon["type1"]:
-            digimon_types.append("Virus")
-        elif "Free" in digimon["type1"]:
-            digimon_types.append("Free")
-    print(digimon_types )       
-    baby_sorted = sorted(baby_dict, key = lambda strongest: strongest["attack"], reverse = True)
-    baby_strongest = baby_sorted[0]
-    rookie_sorted = sorted(rookie_dict, key = lambda strongest: strongest["attack"], reverse = True)
-    rookie_strongest = rookie_sorted[0]
-    champion_sorted = sorted(champion_dict, key = lambda strongest: strongest["attack"], reverse = True)
-    champion_strongest = champion_sorted[0]
-    ultimate_sorted = sorted(ultimate_dict, key = lambda strongest: strongest["attack"], reverse = True)
-    ultimate_strongest = ultimate_sorted[0]
-    mega_sorted = sorted(mega_dict, key = lambda strongest: strongest["attack"], reverse = True)
-    mega_strongest = mega_sorted[0]
+            if digimon["type1"] not in digimon_types:
+                digimon_types.append("Free")
+                
+    if baby_dict:   
+        baby_sorted = sorted(baby_dict, key = lambda strongest: strongest["attack"], reverse = True)
+        baby_strongest = baby_sorted[0]
+    if rookie_dict:
+        rookie_sorted = sorted(rookie_dict, key = lambda strongest: strongest["attack"], reverse = True)
+        rookie_strongest = rookie_sorted[0]
+    if champion_dict:    
+        champion_sorted = sorted(champion_dict, key = lambda strongest: strongest["attack"], reverse = True)
+        champion_strongest = champion_sorted[0]
+    if ultimate_dict:    
+        ultimate_sorted = sorted(ultimate_dict, key = lambda strongest: strongest["attack"], reverse = True)
+        ultimate_strongest = ultimate_sorted[0]
+    if mega_dict:   
+        mega_sorted = sorted(mega_dict, key = lambda strongest: strongest["attack"], reverse = True)
+        mega_strongest = mega_sorted[0]
+    if ultra_dict:   
+        ultra_sorted = sorted(ultra_dict, key = lambda strongest: strongest["attack"], reverse = True)
+        ultra_strongest = ultra_sorted[0]
 
     return core.AnswersTrivia(
         total_trivia = str(len(digimon_data)),
@@ -172,6 +189,7 @@ def digimon_trivia(digimon_data):
         total_champion = str(champion_digimon),
         total_ultimate = str(ultimate_digimon),
         total_mega = str(mega_digimon),
+        total_ultra = str(ultra_digimon),
         total_data = str(data_type),
         total_vaccine = str(vaccine_type),
         total_virus = str(virus_type),
@@ -181,5 +199,8 @@ def digimon_trivia(digimon_data):
         champion_strongest = champion_strongest["name"],
         ultimate_strongest = ultimate_strongest["name"],
         mega_strongest = mega_strongest["name"],
+        ultra_strongest = ultra_strongest["name"],
+        digimon_types = digimon_types,
+        types_sum = str(len(digimon_types))
     )
 

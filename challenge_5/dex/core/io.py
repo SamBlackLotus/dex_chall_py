@@ -296,7 +296,6 @@ def show_digimon_trivia(digimon_info: str, id_number: str) -> None:
         A message containing some specific information about the
         data provided.
     """
-    print(digimon_info)
     
     datenow = datetime.now()
     msg = (" " * 80) + "\n"
@@ -316,8 +315,188 @@ def show_digimon_trivia(digimon_info: str, id_number: str) -> None:
         + "\n"
     )
     msg += (" " * 80) + "\n"
-    msg += "2. How many types of Digimon there are?" + (" " * 36) + "\n"
-    msg += (digimon_info["highest_atk_name"] + "\n" + digimon_info["lowest_atk_name"] + "\n" + digimon_info["total_baby"] + "\n" + digimon_info["total_rookie"])
+    msg += "2. How many digimon in each stage there are?" + (" " * 36) + "\n"
+    msg += (
+        (" " * 4)
+        + "> "
+        + "Baby: " 
+        + digimon_info["total_baby"] 
+        + " digimon" 
+        + (" " * (60 - len(digimon_info["total_baby"])))
+        + "\n"
+    )
+    msg += (
+        (" " * 4)
+        + "> "
+        + "Rookie: " 
+        + digimon_info["total_rookie"] 
+        + " digimon" 
+        + (" " * (58 - len(digimon_info["total_rookie"])))
+        + "\n"
+    )
+    msg += (
+        (" " * 4)
+        + "> "
+        + "Champion: " 
+        + digimon_info["total_champion"] 
+        + " digimon" 
+        + (" " * (56 - len(digimon_info["total_champion"])))
+        + "\n"
+    )
+    msg += (
+        (" " * 4)
+        + "> "
+        + "Ultimate: " 
+        + digimon_info["total_ultimate"] 
+        + " digimon" 
+        + (" " * (56 - len(digimon_info["total_ultimate"])))
+        + "\n"
+    )
+    msg += (
+        (" " * 4)
+        + "> "
+        + "Mega: " 
+        + digimon_info["total_mega"] 
+        + " digimon" 
+        + (" " * (60 - len(digimon_info["total_mega"])))
+        + "\n"
+    )
+    msg += (
+        (" " * 4)
+        + "> "
+        + "Ultra: " 
+        + digimon_info["total_ultra"] 
+        + " digimon" 
+        + (" " * (59 - len(digimon_info["total_ultra"])))
+        + "\n"
+    )
+    msg += (" " * 80) + "\n"
+    msg += "3. The strongest digimon in each stage based on the Atk attribute is:" + (" " * 11) + "\n"
+    msg += (
+        (" " * 4)
+        + "> "
+        + "Baby: " 
+        + digimon_info["baby_strongest"] 
+        + (" " * (68 - len(digimon_info["baby_strongest"])))
+        + "\n"
+    )
+    msg += (
+        (" " * 4)
+        + "> "
+        + "Rookie: " 
+        + digimon_info["rookie_strongest"] 
+        + (" " * (66 - len(digimon_info["rookie_strongest"])))
+        + "\n"
+    )
+    msg += (
+        (" " * 4)
+        + "> "
+        + "Champion: " 
+        + digimon_info["champion_strongest"] 
+        + (" " * (64 - len(digimon_info["champion_strongest"])))
+        + "\n"
+    )
+    msg += (
+        (" " * 4)
+        + "> "
+        + "Ultimate: " 
+        + digimon_info["ultimate_strongest"] 
+        + (" " * (64 - len(digimon_info["ultimate_strongest"])))
+        + "\n"
+    )
+    msg += (
+        (" " * 4)
+        + "> "
+        + "Mega: " 
+        + digimon_info["mega_strongest"] 
+        + (" " * (66 - len(digimon_info["mega_strongest"])))
+        + "\n"
+    )
+    msg += (
+        (" " * 4)
+        + "> "
+        + "Ultra: " 
+        + digimon_info["ultra_strongest"] 
+        + (" " * (67 - len(digimon_info["ultra_strongest"])))
+        + "\n"
+    )
+    msg += (" " * 80) + "\n"
+    msg += "4. How many different types there is?:" + (" " * 42) + "\n"
+    msg += (
+        (" " * 4)
+        + "> In this list we have " 
+        + digimon_info["types_sum"]
+        + " types of digimon, they're " 
+        + " ".join(digimon_info["digimon_types"])
+        + "\n"
+    )
+    msg += (" " * 80) + "\n"
+    msg += "5. How many digimon in each type there is:" + (" " * 42) + "\n"
+    msg += (
+        (" " * 4)
+        + "> "
+        + "Data: " 
+        + digimon_info["total_data"] 
+        + (" " * (68 - len(digimon_info["total_data"])))
+        + "\n"
+    )
+    msg += (
+        (" " * 4)
+        + "> "
+        + "Vaccine: " 
+        + digimon_info["total_vaccine"] 
+        + (" " * (65 - len(digimon_info["total_vaccine"])))
+        + "\n"
+    )
+    msg += (
+        (" " * 4)
+        + "> "
+        + "Virus: " 
+        + digimon_info["total_virus"] 
+        + (" " * (67 - len(digimon_info["total_virus"])))
+        + "\n"
+    )
+    msg += (
+        (" " * 4)
+        + "> "
+        + "Free: " 
+        + digimon_info["total_free"] 
+        + (" " * (68 - len(digimon_info["total_free"])))
+        + "\n"
+    )
+    msg += (" " * 80) + "\n"
+    msg += "6. Which is the weakest digimon:" + (" " * 48) + "\n"
+    msg += (
+        (" " * 4)
+        + "> "
+        + "The weakest digimon is "
+        + digimon_info["lowest_atk_name"]
+        + ", on "
+        + digimon_info["lowest_atk_stage"]
+        + " stage, "
+        + digimon_info["lowest_atk_type"]
+        + " type."
+        +"\n"
+    )
+    msg += (" " * 80) + "\n"
+    msg += "6. Which is the strongest digimon:" + (" " * 46) + "\n"
+    msg += (
+        (" " * 4)
+        + "> "
+        + "The strongest digimon is "
+        + digimon_info["highest_atk_name"]
+        + ", on "
+        + digimon_info["highest_atk_stage"]
+        + " stage, "
+        + digimon_info["highest_atk_type"]
+        + " type."
+        +"\n"
+    )
+    msg += (" " * 80) + "\n"
+    msg += "Thanks for using this Dex!" + (" " * 50) + "\n"
+    msg += (" " * 80) + "\n"
+    msg += ("=" * 80) + "\n"
+    msg += (" " * 80) + "\n"
     # msg += (" " * 4) + ">" + digimon_info["digimon_types"] + " different types " + "\n"
     # 1 - How many digimon there is?
     # Len
