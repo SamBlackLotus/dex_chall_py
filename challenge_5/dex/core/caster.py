@@ -1,5 +1,6 @@
 from typing import List, Set, SupportsIndex, Dict
 
+
 def cast_to_set(file_set_1: Dict) -> Set:
     """
     This function receives data in any python types
@@ -54,6 +55,7 @@ def cast_to_bool(value: List[str]) -> bool:
     """
     return True if value == "True" else False
 
+
 def cast_to_lower(value: List[str], monster_type: str) -> List[str]:
     """
     This function converts a list of strings
@@ -70,41 +72,45 @@ def cast_to_lower(value: List[str], monster_type: str) -> List[str]:
     """
     change_dict = value
     new_dict = []
-    
+
     if monster_type == "--pokemon":
         for key in change_dict:
             new_dict += [
-                dict(id = key["Id"],
-                name = key["Name"],
-                type1 = key["Type 1"],
-                type2 = key["Type 2"],
-                total = key["Total"], 
-                hp = key["HP"], 
-                attack = key["Attack"], 
-                defense = key["Defense"],
-                spatk = key["Sp. Atk"],
-                spdef = key["Sp. Def"],
-                speed = key["Speed"],
-                generation = key["Generation"],
-                legendary = key["Legendary"])
+                dict(
+                    id=key["Id"],
+                    name=key["Name"],
+                    type1=key["Type 1"],
+                    type2=key["Type 2"],
+                    total=key["Total"],
+                    hp=key["HP"],
+                    attack=key["Attack"],
+                    defense=key["Defense"],
+                    spatk=key["Sp. Atk"],
+                    spdef=key["Sp. Def"],
+                    speed=key["Speed"],
+                    generation=key["Generation"],
+                    legendary=key["Legendary"],
+                )
             ]
     elif monster_type == "--digimon":
         for key in change_dict:
             new_dict += [
-                dict(id = key["Id"],
-                name = key["Name"],
-                stage = key["Stage"],
-                type1 = key["Type"],
-                attribute = key["Attribute"], 
-                memory = key["Memory"], 
-                equip = key["Equip Slots"], 
-                hp = key["HP"],
-                sp = key["SP"],
-                attack = key["Atk"],
-                defense = key["Def"],
-                intelligence = key["Int"],
-                speed = key["Spd"],
-                image = key["Image link"])
+                dict(
+                    id=key["Id"],
+                    name=key["Name"],
+                    stage=key["Stage"],
+                    type1=key["Type"],
+                    attribute=key["Attribute"],
+                    memory=key["Memory"],
+                    equip=key["Equip Slots"],
+                    hp=key["HP"],
+                    sp=key["SP"],
+                    attack=key["Atk"],
+                    defense=key["Def"],
+                    intelligence=key["Int"],
+                    speed=key["Spd"],
+                    image=key["Image link"],
+                )
             ]
-        
+
     return new_dict

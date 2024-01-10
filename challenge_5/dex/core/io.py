@@ -107,7 +107,8 @@ def client_usage() -> str:
 
 
 def save_data(
-    saved_data: Callable[[str], int], archive_type: str, id_number: str) -> None:
+    saved_data: Callable[[str], int], archive_type: str, id_number: str
+) -> None:
     """
     This function creates a .txt file and saves the generated information
     in it.
@@ -296,7 +297,7 @@ def show_digimon_trivia(digimon_info: str, id_number: str) -> None:
         A message containing some specific information about the
         data provided.
     """
-    
+
     datenow = datetime.now()
     msg = (" " * 80) + "\n"
     msg += "reported generated on: " + datenow.isoformat() + (" " * 31) + "\n"
@@ -319,104 +320,108 @@ def show_digimon_trivia(digimon_info: str, id_number: str) -> None:
     msg += (
         (" " * 4)
         + "> "
-        + "Baby: " 
-        + digimon_info["total_baby"] 
-        + " digimon" 
+        + "Baby: "
+        + digimon_info["total_baby"]
+        + " digimon"
         + (" " * (60 - len(digimon_info["total_baby"])))
         + "\n"
     )
     msg += (
         (" " * 4)
         + "> "
-        + "Rookie: " 
-        + digimon_info["total_rookie"] 
-        + " digimon" 
+        + "Rookie: "
+        + digimon_info["total_rookie"]
+        + " digimon"
         + (" " * (58 - len(digimon_info["total_rookie"])))
         + "\n"
     )
     msg += (
         (" " * 4)
         + "> "
-        + "Champion: " 
-        + digimon_info["total_champion"] 
-        + " digimon" 
+        + "Champion: "
+        + digimon_info["total_champion"]
+        + " digimon"
         + (" " * (56 - len(digimon_info["total_champion"])))
         + "\n"
     )
     msg += (
         (" " * 4)
         + "> "
-        + "Ultimate: " 
-        + digimon_info["total_ultimate"] 
-        + " digimon" 
+        + "Ultimate: "
+        + digimon_info["total_ultimate"]
+        + " digimon"
         + (" " * (56 - len(digimon_info["total_ultimate"])))
         + "\n"
     )
     msg += (
         (" " * 4)
         + "> "
-        + "Mega: " 
-        + digimon_info["total_mega"] 
-        + " digimon" 
+        + "Mega: "
+        + digimon_info["total_mega"]
+        + " digimon"
         + (" " * (60 - len(digimon_info["total_mega"])))
         + "\n"
     )
     msg += (
         (" " * 4)
         + "> "
-        + "Ultra: " 
-        + digimon_info["total_ultra"] 
-        + " digimon" 
+        + "Ultra: "
+        + digimon_info["total_ultra"]
+        + " digimon"
         + (" " * (59 - len(digimon_info["total_ultra"])))
         + "\n"
     )
     msg += (" " * 80) + "\n"
-    msg += "3. The strongest digimon in each stage based on the Atk attribute is:" + (" " * 11) + "\n"
+    msg += (
+        "3. The strongest digimon in each stage based on the Atk attribute is:"
+        + (" " * 11)
+        + "\n"
+    )
     msg += (
         (" " * 4)
         + "> "
-        + "Baby: " 
-        + digimon_info["baby_strongest"] 
+        + "Baby: "
+        + digimon_info["baby_strongest"]
         + (" " * (68 - len(digimon_info["baby_strongest"])))
         + "\n"
     )
     msg += (
         (" " * 4)
         + "> "
-        + "Rookie: " 
-        + digimon_info["rookie_strongest"] 
+        + "Rookie: "
+        + digimon_info["rookie_strongest"]
         + (" " * (66 - len(digimon_info["rookie_strongest"])))
         + "\n"
     )
     msg += (
         (" " * 4)
         + "> "
-        + "Champion: " 
-        + digimon_info["champion_strongest"] 
+        + "Champion: "
+        + digimon_info["champion_strongest"]
         + (" " * (64 - len(digimon_info["champion_strongest"])))
         + "\n"
     )
     msg += (
         (" " * 4)
         + "> "
-        + "Ultimate: " 
-        + digimon_info["ultimate_strongest"] 
+        + "Ultimate: "
+        + digimon_info["ultimate_strongest"]
         + (" " * (64 - len(digimon_info["ultimate_strongest"])))
         + "\n"
     )
     msg += (
         (" " * 4)
         + "> "
-        + "Mega: " 
-        + digimon_info["mega_strongest"] 
+        + "Mega: "
+        + digimon_info["mega_strongest"]
         + (" " * (66 - len(digimon_info["mega_strongest"])))
         + "\n"
     )
     msg += (
         (" " * 4)
         + "> "
-        + "Ultra: " 
-        + digimon_info["ultra_strongest"] 
+        + "Ultra: "
+        + digimon_info["ultra_strongest"]
         + (" " * (67 - len(digimon_info["ultra_strongest"])))
         + "\n"
     )
@@ -424,9 +429,9 @@ def show_digimon_trivia(digimon_info: str, id_number: str) -> None:
     msg += "4. How many different types there is?:" + (" " * 42) + "\n"
     msg += (
         (" " * 4)
-        + "> In this list we have " 
+        + "> In this list we have "
         + digimon_info["types_sum"]
-        + " types of digimon, they're " 
+        + " types of digimon, they're "
         + " ".join(digimon_info["digimon_types"])
         + "\n"
     )
@@ -435,32 +440,32 @@ def show_digimon_trivia(digimon_info: str, id_number: str) -> None:
     msg += (
         (" " * 4)
         + "> "
-        + "Data: " 
-        + digimon_info["total_data"] 
+        + "Data: "
+        + digimon_info["total_data"]
         + (" " * (68 - len(digimon_info["total_data"])))
         + "\n"
     )
     msg += (
         (" " * 4)
         + "> "
-        + "Vaccine: " 
-        + digimon_info["total_vaccine"] 
+        + "Vaccine: "
+        + digimon_info["total_vaccine"]
         + (" " * (65 - len(digimon_info["total_vaccine"])))
         + "\n"
     )
     msg += (
         (" " * 4)
         + "> "
-        + "Virus: " 
-        + digimon_info["total_virus"] 
+        + "Virus: "
+        + digimon_info["total_virus"]
         + (" " * (67 - len(digimon_info["total_virus"])))
         + "\n"
     )
     msg += (
         (" " * 4)
         + "> "
-        + "Free: " 
-        + digimon_info["total_free"] 
+        + "Free: "
+        + digimon_info["total_free"]
         + (" " * (68 - len(digimon_info["total_free"])))
         + "\n"
     )
@@ -476,7 +481,7 @@ def show_digimon_trivia(digimon_info: str, id_number: str) -> None:
         + " stage, "
         + digimon_info["lowest_atk_type"]
         + " type."
-        +"\n"
+        + "\n"
     )
     msg += (" " * 80) + "\n"
     msg += "6. Which is the strongest digimon:" + (" " * 46) + "\n"
@@ -490,7 +495,7 @@ def show_digimon_trivia(digimon_info: str, id_number: str) -> None:
         + " stage, "
         + digimon_info["highest_atk_type"]
         + " type."
-        +"\n"
+        + "\n"
     )
     msg += (" " * 80) + "\n"
     msg += "Thanks for using this Dex!" + (" " * 50) + "\n"
@@ -517,7 +522,6 @@ def show_digimon_trivia(digimon_info: str, id_number: str) -> None:
     # Ultimate:{digimon}
     # Mega:{digimon}
 
-
     # 3 - How many different types there is?
 
     # In this list we have {x} types of digimon, they're Data,Vaccine,Virus and Free.
@@ -528,11 +532,10 @@ def show_digimon_trivia(digimon_info: str, id_number: str) -> None:
     # Vaccine: {x} digimon
     # Virus: {x} digimon
     # Free: {x} digimon
-    
+
     # 4 - The weakest digimon is {name}, on {stage} stage, {type} type.
-    
+
     # 5 - The strongest digimon is {name}, on {stage} stage, {type} type.
-    
 
     print(msg.format(**digimon_info))
 
@@ -703,7 +706,9 @@ def show_battle_winner(battle_result: Callable, id_number: str) -> None:
     save_data(battle_msg, "battle", id_number)
 
 
-def show_info(process_pokemons: Callable[[str], Dict], id_number: str, archive_type: str) -> None:
+def show_info(
+    process_pokemons: Callable[[str], Dict], id_number: str, archive_type: str
+) -> None:
     """
     This function will show a message in the CLI.
 
@@ -726,11 +731,17 @@ def show_info(process_pokemons: Callable[[str], Dict], id_number: str, archive_t
     msg = (" " * 80) + "\n"
     msg += "reported generated on: " + datenow.isoformat() + (" " * 31) + "\n"
     msg += (" " * 80) + "\n"
-    
+
     if archive_type == "--pokemon":
         msg += " " + (("=" * 32) + " POKEMON INFO " + ("=" * 32) + " \n")
         msg += (
-            "|" + (" " * 18) + "| PLAYER 1" + (" " * 20) + "| PLAYER 2" + (" " * 20) + "|\n"
+            "|"
+            + (" " * 18)
+            + "| PLAYER 1"
+            + (" " * 20)
+            + "| PLAYER 2"
+            + (" " * 20)
+            + "|\n"
         )
         msg += "|" + ("-" * 18) + "|" + ("-" * 29) + "|" + ("-" * 29) + "|\n"
         msg += (
@@ -793,7 +804,13 @@ def show_info(process_pokemons: Callable[[str], Dict], id_number: str, archive_t
     elif archive_type == "--digimon":
         msg += " " + (("=" * 32) + " DIGIMON INFO " + ("=" * 32) + " \n")
         msg += (
-            "|" + (" " * 18) + "| PLAYER 1" + (" " * 20) + "| PLAYER 2" + (" " * 20) + "|\n"
+            "|"
+            + (" " * 18)
+            + "| PLAYER 1"
+            + (" " * 20)
+            + "| PLAYER 2"
+            + (" " * 20)
+            + "|\n"
         )
         msg += "|" + ("-" * 18) + "|" + ("-" * 29) + "|" + ("-" * 29) + "|\n"
         msg += (

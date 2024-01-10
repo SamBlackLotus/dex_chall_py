@@ -2,7 +2,9 @@ import core
 from datetime import datetime
 
 
-def process_info(process_poke1, process_poke2, pokemon_set_1, pokemon_set_2,archive_type):
+def process_info(
+    process_poke1, process_poke2, pokemon_set_1, pokemon_set_2, archive_type
+):
     """
         This function will process some validations using data, to find
         some specific information and answer the given questions.
@@ -34,8 +36,7 @@ def process_info(process_poke1, process_poke2, pokemon_set_1, pokemon_set_2,arch
     total_legendary_player2 = 0
     intersec_pokemon = pokemon_set_1.intersection(pokemon_set_2)
     diff_pokemon = pokemon_set_1.difference(pokemon_set_2)
-    
-    
+
     for index, pokemon in enumerate(process_poke1):
         player1_total_pokemons = len(process_poke1)
 
@@ -43,19 +44,19 @@ def process_info(process_poke1, process_poke2, pokemon_set_1, pokemon_set_2,arch
         if attack > strongest_pokemon_player1["value"]:
             strongest_pokemon_player1["index"] = index
             strongest_pokemon_player1["value"] = attack
-            
+
         if archive_type == "--pokemon":
             legendary_1 = core.cast_to_bool(pokemon["legendary"])
             # TODO: there is no need to check for True
             if legendary_1 is True:
                 total_legendary_player1 += 1
-                
+
         elif archive_type == "--digimon":
             legendary_1 = pokemon["stage"]
             # TODO: there is no need to check for True
             if legendary_1 == "Ultimate":
                 total_legendary_player1 += 1
-                
+
     for index, pokemon in enumerate(process_poke2):
         player2_total_pokemons = len(process_poke2)
 
@@ -63,13 +64,13 @@ def process_info(process_poke1, process_poke2, pokemon_set_1, pokemon_set_2,arch
         if attack > strongest_pokemon_player2["value"]:
             strongest_pokemon_player2["index"] = index
             strongest_pokemon_player2["value"] = attack
-    
+
         if archive_type == "--pokemon":
             legendary_2 = core.cast_to_bool(pokemon["legendary"])
             # TODO: there is no need to check for True
             if legendary_2 is True:
                 total_legendary_player2 += 1
-                
+
         elif archive_type == "--digimon":
             legendary_2 = pokemon["stage"]
             # TODO: there is no need to check for True

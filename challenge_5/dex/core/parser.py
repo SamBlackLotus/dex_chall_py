@@ -29,12 +29,11 @@ def read_file(filepath: str, archive_type: str) -> List[Dict[str, Union[str, int
     with open((filepath), "r") as source_data:
         if ".json" in filepath:
             data_read = json.load(source_data)
-        
+
         elif ".csv" in filepath:
             file = csv.DictReader(source_data, delimiter=",")
             data_read = [row for row in file]
 
-        
         elif ".xml" in filepath:
             file = source_data.read()
             file_xml = xmltodict.parse(file)
@@ -44,11 +43,11 @@ def read_file(filepath: str, archive_type: str) -> List[Dict[str, Union[str, int
                 data_read += [
                     {key_list: value_list for key_list, value_list in value.items()}
                 ]
-                
+
         elif ".yaml" in filepath:
             file = source_data.read()
             data_read = yaml.safe_load(file)
-            
+
         else:
             print(f"Error: File format not supported!\n{core.client_usage()}")
             quit()
@@ -56,13 +55,17 @@ def read_file(filepath: str, archive_type: str) -> List[Dict[str, Union[str, int
         if archive_type == "--pokemon":
             for list in data_read:
                 if "Legendary" not in list:
-                    print(f"Error: Monster option invalid for this file!\n{core.client_usage()}")
+                    print(
+                        f"Error: Monster option invalid for this file!\n{core.client_usage()}"
+                    )
                     quit()
-                    
+
         elif archive_type == "--digimon":
             for list in data_read:
                 if "Stage" not in list:
-                    print(f"Error: Monster option invalid for this file!\n{core.client_usage()}")
+                    print(
+                        f"Error: Monster option invalid for this file!\n{core.client_usage()}"
+                    )
                     quit()
-                    
+
     return data_read
