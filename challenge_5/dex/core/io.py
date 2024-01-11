@@ -59,9 +59,9 @@ def client_usage() -> str:
     CLI usage:
 
     > python3 main.py --help
-    > python3 pokedex/main.py --player1 pokemons_1.json --trivia  --id 1
-    > python3 pokedex/main.py --player1 pokemons_1.json --player2 pokemons_2.json --id 1 --info
-    > python3 pokedex/main.py --player1 pokemons_1.json --player2 pokemons_2.json --id 1 --battle
+    > python3 dex/main.py --player1 pokemons_1.json --trivia  --id 1
+    > python3 dex/main.py --player1 pokemons_1.json --player2 pokemons_2.json --id 1 --info
+    > python3 dex/main.py --player1 pokemons_1.json --player2 pokemons_2.json --id 1 --battle
 
     ATTENTION:
 
@@ -316,7 +316,17 @@ def show_digimon_trivia(digimon_info: str, id_number: str) -> None:
         + "\n"
     )
     msg += (" " * 80) + "\n"
-    msg += "2. How many digimon in each stage there are?" + (" " * 36) + "\n"
+    msg += "2. How many different stages a digimon have?" + (" " * 42) + "\n"
+    msg += (
+        (" " * 4)
+        + "> In this list we have "
+        + digimon_info["stages_sum"]
+        + " stages of digimon, they're "
+        + " ".join(digimon_info["digimon_stages"])
+        + "\n"
+    )
+    msg += (" " * 80) + "\n"
+    msg += "3. How many digimon in each stage there are?" + (" " * 36) + "\n"
     msg += (
         (" " * 4)
         + "> "
@@ -373,7 +383,7 @@ def show_digimon_trivia(digimon_info: str, id_number: str) -> None:
     )
     msg += (" " * 80) + "\n"
     msg += (
-        "3. The strongest digimon in each stage based on the Atk attribute is:"
+        "4. The strongest digimon in each stage based on the Atk attribute is:"
         + (" " * 11)
         + "\n"
     )
@@ -382,7 +392,9 @@ def show_digimon_trivia(digimon_info: str, id_number: str) -> None:
         + "> "
         + "Baby: "
         + digimon_info["baby_strongest"]
-        + (" " * (68 - len(digimon_info["baby_strongest"])))
+        + ", "
+        + digimon_info ["baby_attack"]
+        + (" " * (65 - len(digimon_info["baby_strongest"]) - len(digimon_info["baby_attack"])))
         + "\n"
     )
     msg += (
@@ -390,7 +402,9 @@ def show_digimon_trivia(digimon_info: str, id_number: str) -> None:
         + "> "
         + "Rookie: "
         + digimon_info["rookie_strongest"]
-        + (" " * (66 - len(digimon_info["rookie_strongest"])))
+        + ", "
+        + digimon_info ["rookie_attack"]
+        + (" " * (63 - len(digimon_info["rookie_strongest"]) - len(digimon_info["rookie_attack"])))
         + "\n"
     )
     msg += (
@@ -398,7 +412,9 @@ def show_digimon_trivia(digimon_info: str, id_number: str) -> None:
         + "> "
         + "Champion: "
         + digimon_info["champion_strongest"]
-        + (" " * (64 - len(digimon_info["champion_strongest"])))
+        + ", "
+        + digimon_info ["champion_attack"]
+        + (" " * (61 - len(digimon_info["champion_strongest"]) - len(digimon_info["champion_attack"])))
         + "\n"
     )
     msg += (
@@ -406,7 +422,9 @@ def show_digimon_trivia(digimon_info: str, id_number: str) -> None:
         + "> "
         + "Ultimate: "
         + digimon_info["ultimate_strongest"]
-        + (" " * (64 - len(digimon_info["ultimate_strongest"])))
+        + ", "
+        + digimon_info ["ultimate_attack"]
+        + (" " * (61 - len(digimon_info["ultimate_strongest"]) - len(digimon_info["ultimate_attack"])))
         + "\n"
     )
     msg += (
@@ -414,7 +432,9 @@ def show_digimon_trivia(digimon_info: str, id_number: str) -> None:
         + "> "
         + "Mega: "
         + digimon_info["mega_strongest"]
-        + (" " * (66 - len(digimon_info["mega_strongest"])))
+        + ", "
+        + digimon_info ["mega_attack"]
+        + (" " * (63 - len(digimon_info["mega_strongest"]) - len(digimon_info["mega_attack"])))
         + "\n"
     )
     msg += (
@@ -422,11 +442,13 @@ def show_digimon_trivia(digimon_info: str, id_number: str) -> None:
         + "> "
         + "Ultra: "
         + digimon_info["ultra_strongest"]
-        + (" " * (67 - len(digimon_info["ultra_strongest"])))
+        + ", "
+        + digimon_info ["ultra_attack"]
+        + (" " * (64 - len(digimon_info["ultra_strongest"]) - len(digimon_info["ultra_attack"])))
         + "\n"
     )
     msg += (" " * 80) + "\n"
-    msg += "4. How many different types there is?:" + (" " * 42) + "\n"
+    msg += "5. How many different types there is?" + (" " * 42) + "\n"
     msg += (
         (" " * 4)
         + "> In this list we have "
@@ -436,7 +458,7 @@ def show_digimon_trivia(digimon_info: str, id_number: str) -> None:
         + "\n"
     )
     msg += (" " * 80) + "\n"
-    msg += "5. How many digimon in each type there is:" + (" " * 42) + "\n"
+    msg += "6. How many digimon in each type there is:" + (" " * 42) + "\n"
     msg += (
         (" " * 4)
         + "> "
@@ -470,7 +492,73 @@ def show_digimon_trivia(digimon_info: str, id_number: str) -> None:
         + "\n"
     )
     msg += (" " * 80) + "\n"
-    msg += "6. Which is the weakest digimon:" + (" " * 48) + "\n"
+    msg += (
+        "7. The strongest digimon in each stage based on the Atk attribute is:"
+        + (" " * 11)
+        + "\n"
+    )
+    msg += (
+        (" " * 4)
+        + "> "
+        + "Data: "
+        + digimon_info["data_strongest"]
+        + ", "
+        + digimon_info ["data_attack"]
+        + (" " * (65 - len(digimon_info["data_strongest"]) - len(digimon_info["data_attack"])))
+        + "\n"
+    )
+    msg += (
+        (" " * 4)
+        + "> "
+        + "Vaccine: "
+        + digimon_info["vaccine_strongest"]
+        + ", "
+        + digimon_info ["vaccine_attack"]
+        + (" " * (63 - len(digimon_info["vaccine_strongest"]) - len(digimon_info["vaccine_attack"])))
+        + "\n"
+    )
+    msg += (
+        (" " * 4)
+        + "> "
+        + "Virus: "
+        + digimon_info["virus_strongest"]
+        + ", "
+        + digimon_info ["virus_attack"]
+        + (" " * (61 - len(digimon_info["virus_strongest"]) - len(digimon_info["virus_attack"])))
+        + "\n"
+    )
+    msg += (
+        (" " * 4)
+        + "> "
+        + "Free: "
+        + digimon_info["free_strongest"]
+        + ", "
+        + digimon_info ["free_attack"]
+        + (" " * (61 - len(digimon_info["free_strongest"]) - len(digimon_info["free_attack"])))
+        + "\n"
+    )
+    msg += (
+        (" " * 4)
+        + "> "
+        + "Mega: "
+        + digimon_info["mega_strongest"]
+        + ", "
+        + digimon_info ["mega_attack"]
+        + (" " * (63 - len(digimon_info["mega_strongest"]) - len(digimon_info["mega_attack"])))
+        + "\n"
+    )
+    msg += (
+        (" " * 4)
+        + "> "
+        + "Ultra: "
+        + digimon_info["ultra_strongest"]
+        + ", "
+        + digimon_info ["ultra_attack"]
+        + (" " * (64 - len(digimon_info["ultra_strongest"]) - len(digimon_info["ultra_attack"])))
+        + "\n"
+    )
+    msg += (" " * 80) + "\n"
+    msg += "8. Which is the weakest digimon of all:" + (" " * 41) + "\n"
     msg += (
         (" " * 4)
         + "> "
@@ -484,7 +572,7 @@ def show_digimon_trivia(digimon_info: str, id_number: str) -> None:
         + "\n"
     )
     msg += (" " * 80) + "\n"
-    msg += "6. Which is the strongest digimon:" + (" " * 46) + "\n"
+    msg += "9. Which is the strongest digimon of all:" + (" " * 39) + "\n"
     msg += (
         (" " * 4)
         + "> "

@@ -24,37 +24,48 @@ def pokemon_trivia(pokemons_data):
     highest_attack_trivia = {"index": 0, "value": 0}
     highest_defense_trivia = {"index": 0, "value": 0}
     highest_speed_trivia = {"index": 0, "value": 0}
+    pokemon_dict = []
+    
+    print(pokemons_data)
+    
     for index, pokemon in enumerate(pokemons_data):
-        hp_trivia_int = core.cast_to_int(pokemon["hp"])
-        if hp_trivia_int > highest_hp_trivia["value"]:
-            highest_hp_trivia["index"] = index
-            highest_hp_trivia["value"] = hp_trivia_int
-
-        attack_trivia_int = core.cast_to_int(pokemon["attack"])
-        if attack_trivia_int > highest_attack_trivia["value"]:
-            highest_attack_trivia["index"] = index
-            highest_attack_trivia["value"] = attack_trivia_int
-
-        defense_trivia_int = core.cast_to_int(pokemon["defense"])
-        if defense_trivia_int > highest_defense_trivia["value"]:
-            highest_defense_trivia["index"] = index
-            highest_defense_trivia["value"] = defense_trivia_int
-
-        speed_trivia_int = core.cast_to_int(pokemon["attack"])
-        if speed_trivia_int > highest_speed_trivia["value"]:
-            highest_speed_trivia["index"] = index
-            highest_speed_trivia["value"] = speed_trivia_int
+        
+        pokemon_dict += [
+                {key_list: value_list for key_list, value_list in pokemon.items()}
+            ]
+        
+        if pokemon_dict:
+            pokemon_hp = sorted(
+            pokemon_dict, key=lambda highest: highest["hp"], reverse=True
+        )
+            highest_hp_trivia = pokemon_hp[0]
+            
+            pokemon_attack = sorted(
+            pokemon_dict, key=lambda highest: highest["attack"], reverse=True
+        )
+            highest_attack_trivia = pokemon_attack[0]
+            
+            pokemon_defense = sorted(
+            pokemon_dict, key=lambda highest: highest["defense"], reverse=True
+        )
+            highest_defense_trivia = pokemon_defense[0]
+            
+            pokemon_speed = sorted(
+            pokemon_dict, key=lambda highest: highest["speed"], reverse=True
+        )
+            highest_speed_trivia = pokemon_speed[0]
+        
 
     return core.AnswersTrivia(
-        total_trivia=str(len(pokemons_data)),
-        hp_trivia_name=pokemons_data[highest_hp_trivia["index"]]["name"],
-        hp_trivia_points=str(pokemons_data[highest_hp_trivia["index"]]["hp"]),
-        atk_trivia_name=pokemons_data[highest_attack_trivia["index"]]["name"],
-        atk_trivia_points=str(pokemons_data[highest_attack_trivia["index"]]["attack"]),
-        def_trivia_name=pokemons_data[highest_attack_trivia["index"]]["name"],
-        def_trivia_points=str(pokemons_data[highest_attack_trivia["index"]]["defense"]),
-        spd_trivia_name=pokemons_data[highest_attack_trivia["index"]]["name"],
-        spd_trivia_points=str(pokemons_data[highest_attack_trivia["index"]]["speed"]),
+        total_trivia= str(len(pokemons_data)),
+        hp_trivia_name= highest_hp_trivia["name"],
+        hp_trivia_points= str(highest_hp_trivia["hp"]),
+        atk_trivia_name= highest_attack_trivia["name"],
+        atk_trivia_points= str(highest_attack_trivia["attack"]),
+        def_trivia_name= highest_defense_trivia["name"],
+        def_trivia_points= str(highest_defense_trivia["defense"]),
+        spd_trivia_name= highest_speed_trivia["name"],
+        spd_trivia_points= str(highest_speed_trivia["speed"]),
     )
 
 
@@ -85,6 +96,10 @@ def digimon_trivia(digimon_data):
     ultimate_dict = []
     mega_dict = []
     ultra_dict = []
+    data_dict = []
+    vaccine_dict = []
+    virus_dict = []
+    free_dict = []
     baby_digimon = 0
     rookie_digimon = 0
     champion_digimon = 0
@@ -101,7 +116,12 @@ def digimon_trivia(digimon_data):
     ultimate_strongest = {"index": 0, "value": 0}
     mega_strongest = {"index": 0, "value": 0}
     ultra_strongest = {"index": 0, "value": 0}
+    data_strongest = {"index": 0, "value": 0}
+    vaccine_strongest = {"index": 0, "value": 0}
+    virus_strongest = {"index": 0, "value": 0}
+    free_strongest = {"index": 0, "value": 0}
     digimon_types = []
+    digimon_stages = []
 
     for index, digimon in enumerate(digimon_data):
         highest_attack = core.cast_to_int(digimon["attack"])
@@ -119,56 +139,80 @@ def digimon_trivia(digimon_data):
             baby_dict += [
                 {key_list: value_list for key_list, value_list in digimon.items()}
             ]
+            if digimon["stage"] not in digimon_stages:
+                digimon_stages.append(digimon["stage"])
 
         elif digimon["stage"] == "Rookie":
             rookie_digimon += 1
             rookie_dict += [
                 {key_list: value_list for key_list, value_list in digimon.items()}
             ]
+            if digimon["stage"] not in digimon_stages:
+                digimon_stages.append(digimon["stage"])
 
         elif digimon["stage"] == "Champion":
             champion_digimon += 1
             champion_dict += [
                 {key_list: value_list for key_list, value_list in digimon.items()}
             ]
+            if digimon["stage"] not in digimon_stages:
+                digimon_stages.append(digimon["stage"])
 
         elif digimon["stage"] == "Ultimate":
             ultimate_digimon += 1
             ultimate_dict += [
                 {key_list: value_list for key_list, value_list in digimon.items()}
             ]
+            if digimon["stage"] not in digimon_stages:
+                digimon_stages.append(digimon["stage"])
 
         elif digimon["stage"] == "Mega":
             mega_digimon += 1
             mega_dict += [
                 {key_list: value_list for key_list, value_list in digimon.items()}
             ]
+            if digimon["stage"] not in digimon_stages:
+                digimon_stages.append(digimon["stage"])
 
         elif digimon["stage"] == "Ultra":
             ultra_digimon += 1
             ultra_dict += [
                 {key_list: value_list for key_list, value_list in digimon.items()}
             ]
+            if digimon["stage"] not in digimon_stages:
+                digimon_stages.append(digimon["stage"])
 
         if digimon["type1"] == "Data":
             data_type += 1
+            data_dict += [
+                {key_list: value_list for key_list, value_list in digimon.items()}
+            ]
             if digimon["type1"] not in digimon_types:
-                digimon_types.append("Data")
+                digimon_types.append(digimon["type1"])
 
         elif digimon["type1"] == "Vaccine":
             vaccine_type += 1
+            vaccine_dict += [
+                {key_list: value_list for key_list, value_list in digimon.items()}
+            ]
             if digimon["type1"] not in digimon_types:
-                digimon_types.append("Vaccine")
+                digimon_types.append(digimon["type1"])
 
         elif digimon["type1"] == "Virus":
             virus_type += 1
+            virus_dict += [
+                {key_list: value_list for key_list, value_list in digimon.items()}
+            ]
             if digimon["type1"] not in digimon_types:
-                digimon_types.append("Virus")
+                digimon_types.append(digimon["type1"])
 
         elif digimon["type1"] == "Free":
             free_type += 1
+            free_dict += [
+                {key_list: value_list for key_list, value_list in digimon.items()}
+            ]
             if digimon["type1"] not in digimon_types:
-                digimon_types.append("Free")
+                digimon_types.append(digimon["type1"])
 
     if baby_dict:
         baby_sorted = sorted(
@@ -200,6 +244,27 @@ def digimon_trivia(digimon_data):
             ultra_dict, key=lambda strongest: strongest["attack"], reverse=True
         )
         ultra_strongest = ultra_sorted[0]
+        
+    if data_dict:
+        data_sorted = sorted(
+            data_dict, key=lambda strongest: strongest["attack"], reverse=True
+        )
+        data_strongest = data_sorted[0]
+    if vaccine_dict:
+        vaccine_sorted = sorted(
+            vaccine_dict, key=lambda strongest: strongest["attack"], reverse=True
+        )
+        vaccine_strongest = vaccine_sorted[0]
+    if virus_dict:
+        virus_sorted = sorted(
+            virus_dict, key=lambda strongest: strongest["attack"], reverse=True
+        )
+        virus_strongest = virus_sorted[0]
+    if free_dict:
+        free_sorted = sorted(
+            free_dict, key=lambda strongest: strongest["attack"], reverse=True
+        )
+        free_strongest = free_sorted[0]
 
     return core.AnswersTrivia(
         total_trivia=str(len(digimon_data)),
@@ -220,11 +285,27 @@ def digimon_trivia(digimon_data):
         total_virus=str(virus_type),
         total_free=str(free_type),
         baby_strongest=baby_strongest["name"],
+        baby_attack =str(baby_strongest["attack"]),
         rookie_strongest=rookie_strongest["name"],
+        rookie_attack =str(rookie_strongest["attack"]),
         champion_strongest=champion_strongest["name"],
+        champion_attack =str(champion_strongest["attack"]),
         ultimate_strongest=ultimate_strongest["name"],
+        ultimate_attack =str(ultimate_strongest["attack"]),
         mega_strongest=mega_strongest["name"],
+        mega_attack =str(mega_strongest["attack"]),
         ultra_strongest=ultra_strongest["name"],
-        digimon_types=digimon_types,
+        ultra_attack =str(ultra_strongest["attack"]),
+        data_strongest=data_strongest["name"],
+        data_attack =str(data_strongest["attack"]),
+        vaccine_strongest=vaccine_strongest["name"],
+        vaccine_attack =str(vaccine_strongest["attack"]),
+        virus_strongest=virus_strongest["name"],
+        virus_attack =str(virus_strongest["attack"]),
+        free_strongest=free_strongest["name"],
+        free_attack =str(free_strongest["attack"]),
+        digimon_types= sorted(digimon_types),
         types_sum=str(len(digimon_types)),
+        digimon_stages= sorted(digimon_stages),
+        stages_sum=str(len(digimon_stages)),
     )

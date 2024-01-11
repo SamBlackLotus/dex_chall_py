@@ -2,7 +2,7 @@ import core
 import menu
 import sys
 import os
-from typing import List, Dict, Any, Set
+from typing import List, Dict, Set
 
 
 def main() -> None:
@@ -41,16 +41,7 @@ def main() -> None:
 
         command_2: str = sys.argv[2]
 
-        if command_2 == "--help":
-            if len(sys.argv) == 3:
-                print(core.client_helper())
-                quit()
-
-            else:
-                print(f"WARNING! Incorrect amount of arguments.\n{core.client_usage()}")
-                quit()
-
-        elif command_2 == "--trivia":
+        if command_2 == "--trivia":
             if len(sys.argv) == 4:
                 filepath_1: str = sys.argv[3]
                 if not os.path.exists(filepath_1):
@@ -78,16 +69,16 @@ def main() -> None:
             else:
                 print(f"WARNING! Incorrect amount of arguments.\n{core.client_usage()}")
                 quit()
+                
+            data_arq1: List[Dict[str, int]] = core.read_file(filepath_1, command_1)
 
             if command_1 == "--pokemon":
-                data_arq1: List[Dict[str, int]] = core.read_file(filepath_1, command_1)
                 data_1 = core.cast_to_lower(data_arq1, command_1)
                 info = menu.pokemon_trivia(data_1)
                 core.show_pokemon_trivia(info, id_number)
                 quit()
 
             elif command_1 == "--digimon":
-                data_arq1: List[Dict[str, int]] = core.read_file(filepath_1, command_1)
                 data_1 = core.cast_to_lower(data_arq1, command_1)
                 info = menu.digimon_trivia(data_1)
                 core.show_digimon_trivia(info, id_number)
