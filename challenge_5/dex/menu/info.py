@@ -1,10 +1,9 @@
 import core
-from datetime import datetime
-
+from typing import Dict
 
 def process_info(
-    process_poke1, process_poke2, pokemon_set_1, pokemon_set_2, archive_type
-):
+    process_monster1: Dict[str, int], process_monster2: Dict[str, int], monster_set_1: Dict[str, int], monster_set_2: Dict[str, int], archive_type: str
+) -> core.AnswersInfo:
     """
         This function will process some validations using data, to find
         some specific information and answer the given questions.
@@ -28,66 +27,61 @@ def process_info(
 
     """
 
-    strongest_pokemon_player1 = {"index": 0, "value": 0}
-    strongest_pokemon_player2 = {"index": 0, "value": 0}
-    legendary_1 = 0
-    legendary_2 = 0
-    total_legendary_player1 = 0
-    total_legendary_player2 = 0
-    intersec_pokemon = pokemon_set_1.intersection(pokemon_set_2)
-    diff_pokemon = pokemon_set_1.difference(pokemon_set_2)
+    strongest_monster_player1 = {"index": 0, "value": 0}
+    strongest_monster_player2 = {"index": 0, "value": 0}
+    total_stg_or_legend_player1 = 0
+    total_stg_or_legend_player2 = 0
+    intersec_monster = monster_set_1.intersection(monster_set_2)
+    diff_monster = monster_set_1.difference(monster_set_2)
+    monster_dict = []
 
-    for index, pokemon in enumerate(process_poke1):
-        player1_total_pokemons = len(process_poke1)
+    for index, monster in enumerate(process_monster1):
+        player1_total_monster = len(process_monster1)
+        monster_dict += [
+            {key_list: value_list for key_list, value_list in monster.items()}
+        ]
 
-        attack = core.cast_to_int(pokemon["attack"])
-        if attack > strongest_pokemon_player1["value"]:
-            strongest_pokemon_player1["index"] = index
-            strongest_pokemon_player1["value"] = attack
-
-        if archive_type == "--pokemon":
-            legendary_1 = core.cast_to_bool(pokemon["legendary"])
-            # TODO: there is no need to check for True
-            if legendary_1 is True:
-                total_legendary_player1 += 1
-
-        elif archive_type == "--digimon":
-            legendary_1 = pokemon["stage"]
-            # TODO: there is no need to check for True
-            if legendary_1 == "Ultimate":
-                total_legendary_player1 += 1
-
-    for index, pokemon in enumerate(process_poke2):
-        player2_total_pokemons = len(process_poke2)
-
-        attack = core.cast_to_int(pokemon["attack"])
-        if attack > strongest_pokemon_player2["value"]:
-            strongest_pokemon_player2["index"] = index
-            strongest_pokemon_player2["value"] = attack
+        if monster_dict:
+            monster_attack = sorted(
+                monster_dict, key=lambda highest: highest["attack"], reverse=True
+            )
+            strongest_monster_player1 = monster_attack[0]
 
         if archive_type == "--pokemon":
-            legendary_2 = core.cast_to_bool(pokemon["legendary"])
-            # TODO: there is no need to check for True
-            if legendary_2 is True:
-                total_legendary_player2 += 1
+            if core.cast_to_bool(monster["legendary"]):
+                total_stg_or_legend_player1 += 1
 
         elif archive_type == "--digimon":
-            legendary_2 = pokemon["stage"]
-            # TODO: there is no need to check for True
-            if legendary_2 == "Ultimate":
-                total_legendary_player2 += 1
+            if monster["stage"] == "Ultra":
+                total_stg_or_legend_player1 += 1
+
+    for index, monster in enumerate(process_monster2):
+        player2_total_monster = len(process_monster2)
+        monster_dict += [
+            {key_list: value_list for key_list, value_list in monster.items()}
+        ]
+
+        if monster_dict:
+            monster_attack = sorted(
+                monster_dict, key=lambda highest: highest["attack"], reverse=True
+            )
+            strongest_monster_player2 = monster_attack[0]
+
+        if archive_type == "--pokemon":
+            if core.cast_to_bool(monster["legendary"]):
+                total_stg_or_legend_player2 += 1
+
+        elif archive_type == "--digimon":
+            if monster["stage"] == "Ultra":
+                total_stg_or_legend_player2 += 1
 
     return core.AnswersInfo(
-        player1_total_pokemons_info=str(player1_total_pokemons),
-        player2_total_pokemons_info=str(player2_total_pokemons),
-        strongest_pokemon_player1_info=process_poke1[
-            strongest_pokemon_player1["index"]
-        ]["name"],
-        strongest_pokemon_player2_info=process_poke2[
-            strongest_pokemon_player2["index"]
-        ]["name"],
-        legendary_player1_info=str(total_legendary_player1),
-        legendary_player2_info=str(total_legendary_player2),
-        repeated_pokemon_info=str(len(intersec_pokemon)),
-        different_pokemon_info=str(len(diff_pokemon)),
+        player1_total_monster_info= str(player1_total_monster),
+        player2_total_monster_info= str(player2_total_monster),
+        strongest_monster_player1_info= strongest_monster_player1["name"],
+        strongest_monster_player2_info= strongest_monster_player2["name"],
+        stg_or_legend_player1_info= str(total_stg_or_legend_player1),
+        stg_or_legend_player2_info= str(total_stg_or_legend_player2),
+        repeated_monster_info= str(len(intersec_monster)),
+        different_monster_info= str(len(diff_monster)),
     )

@@ -28,30 +28,44 @@ def main() -> None:
 
     """
 
+    command_1: str
+    command_2: str
+    command_3: str
+    command_4: str
+    command_5: str
+    filepath_1: str
+    filepath_2: str
+    id_number: str = '0'
+    data_arq1: List[Dict[str, int]] = []
+    data_arq2: List[Dict[str, int]] = []
+    dataset_1: Set[str]
+    dataset_2: Set[str]
+    battle: Dict[str, int] = []
+    result: Dict[str, int] = []
+    info: Dict[str, int] = []
+
     if len(sys.argv) == 1:
         print(core.client_usage())
         quit()
 
-    command_1: str = sys.argv[1]
+    command_1 = sys.argv[1]
 
     if command_1 == "--pokemon" or command_1 == "--digimon":
         if len(sys.argv) == 2:
             print(f"WARNING! Incorrect amount of arguments.\n{core.client_usage()}")
             quit()
 
-        command_2: str = sys.argv[2]
-
+        command_2 = sys.argv[2]
+        
         if command_2 == "--trivia":
             if len(sys.argv) == 4:
-                filepath_1: str = sys.argv[3]
+                filepath_1 = sys.argv[3]
                 if not os.path.exists(filepath_1):
                     print(f"WARNING: File {filepath_1} does not exist.")
-                    quit()
-
-                id_number: int = 0
+                    quit()    
 
             elif len(sys.argv) == 6:
-                command_3: str = sys.argv[4]
+                command_3 = sys.argv[4]
                 if command_3 == "--id":
                     id_number = sys.argv[5]
 
@@ -69,8 +83,8 @@ def main() -> None:
             else:
                 print(f"WARNING! Incorrect amount of arguments.\n{core.client_usage()}")
                 quit()
-                
-            data_arq1: List[Dict[str, int]] = core.read_file(filepath_1, command_1)
+
+            data_arq1 = core.read_file(filepath_1, command_1)
 
             if command_1 == "--pokemon":
                 data_1 = core.cast_to_lower(data_arq1, command_1)
@@ -98,7 +112,7 @@ def main() -> None:
 
             if command_3 == "--player2":
                 if len(sys.argv) >= 7:
-                    filepath_2: str = sys.argv[5]
+                    filepath_2 = sys.argv[5]
                     if not os.path.exists(filepath_2):
                         print(f"WARNING: File {filepath_2} does not exist.")
                         quit()
@@ -107,8 +121,8 @@ def main() -> None:
                 print(f"WARNING: This command does not exist.\n{core.client_usage()}")
                 quit()
 
-            command_4: str = sys.argv[6]
-            command_5: int = 0
+            command_4 = sys.argv[6]
+            command_5 = '0'
 
             if command_4 == "--id":
                 if len(sys.argv) == 9:
@@ -121,29 +135,26 @@ def main() -> None:
                     )
                     quit()
 
-            elif command_4 == "--info" or command_4 == "--battle":
-                id_number = 0
-
-            else:
+            elif command_4 != "--info" or command_4 != "--battle":
                 print(f"WARNING: This command does not exist.\n{core.client_usage()}")
                 quit()
 
             data_arq1 = core.read_file(filepath_1, command_1)
-            data_arq2: List[Dict[str, int]] = core.read_file(filepath_2, command_1)
+            data_arq2 = core.read_file(filepath_2, command_1)
             data_1 = core.cast_to_lower(data_arq1, command_1)
             data_2 = core.cast_to_lower(data_arq2, command_1)
 
             if command_4 == "--info" or command_5 == "--info":
-                dataset_1: Set[str] = core.cast_to_set(data_1)
-                dataset_2: Set[str] = core.cast_to_set(data_2)
+                dataset_1 = core.cast_to_set(data_1)
+                dataset_2 = core.cast_to_set(data_2)
                 info = menu.process_info(
                     data_1, data_2, dataset_1, dataset_2, command_1
                 )
                 core.show_info(info, id_number, command_1)
                 quit()
             elif command_4 == "--battle" or command_5 == "--battle":
-                battle = menu.select_pokemons_for_battle(data_1, data_2)
-                result = menu.pokemon_battle(battle)
+                battle = menu.select_mon_for_battle(data_1, data_2)
+                result = menu.mon_battle(battle)
                 core.show_battle_winner(result, id_number)
                 quit()
 
@@ -155,17 +166,16 @@ def main() -> None:
         else:
             print(f"WARNING! Incorrect amount of arguments.\n{core.client_usage()}")
             quit()
+            
     elif command_1 == "--trivia":
         if len(sys.argv) == 3:
-            filepath_1: str = sys.argv[2]
+            filepath_1 = sys.argv[2]
             if not os.path.exists(filepath_1):
                 print(f"WARNING: File {filepath_1} does not exist.")
                 quit()
 
-            id_number: int = 0
-
         elif len(sys.argv) == 5:
-            command_3: str = sys.argv[3]
+            command_3 = sys.argv[3]
             if command_3 == "--id":
                 id_number = sys.argv[4]
 
@@ -182,7 +192,7 @@ def main() -> None:
             print(f"WARNING! Incorrect amount of arguments.\n{core.client_usage()}")
             quit()
 
-        data_arq1: List[Dict[str, int]] = core.read_file(filepath_1, "--pokemon")
+        data_arq1 = core.read_file(filepath_1, "--pokemon")
         data_1 = core.cast_to_lower(data_arq1, "--pokemon")
         info = menu.pokemon_trivia(data_1)
         core.show_pokemon_trivia(info, id_number)
@@ -202,7 +212,7 @@ def main() -> None:
 
         if command_2 == "--player2":
             if len(sys.argv) >= 6:
-                filepath_2: str = sys.argv[4]
+                filepath_2 = sys.argv[4]
                 if not os.path.exists(filepath_2):
                     print(f"WARNING: File {filepath_2} does not exist.")
                     quit()
@@ -211,8 +221,8 @@ def main() -> None:
             print(f"WARNING: This command does not exist.\n{core.client_usage()}")
             quit()
 
-        command_3: str = sys.argv[5]
-        command_4: int = 0
+        command_3 = sys.argv[5]
+        command_4 = '0'
 
         if command_3 == "--id":
             if len(sys.argv) == 8:
@@ -223,27 +233,24 @@ def main() -> None:
                 print(f"WARNING! Incorrect amount of arguments.\n{core.client_usage()}")
                 quit()
 
-        elif command_3 == "--info" or command_3 == "--battle":
-            id_number = 0
-
-        else:
+        elif command_3 != "--info" or command_3 != "--battle":
             print(f"WARNING: This command does not exist.\n{core.client_usage()}")
             quit()
 
         data_arq1 = core.read_file(filepath_1, "--pokemon")
-        data_arq2: List[Dict[str, int]] = core.read_file(filepath_2, "--pokemon")
+        data_arq2 = core.read_file(filepath_2, "--pokemon")
         data_1 = core.cast_to_lower(data_arq1, "--pokemon")
         data_2 = core.cast_to_lower(data_arq2, "--pokemon")
 
         if command_3 == "--info" or command_4 == "--info":
-            dataset_1: Set[str] = core.cast_to_set(data_1)
-            dataset_2: Set[str] = core.cast_to_set(data_2)
+            dataset_1 = core.cast_to_set(data_1)
+            dataset_2 = core.cast_to_set(data_2)
             info = menu.process_info(data_1, data_2, dataset_1, dataset_2, "--pokemon")
             core.show_info(info, id_number, "--pokemon")
             quit()
         elif command_3 == "--battle" or command_4 == "--battle":
-            battle = menu.select_pokemons_for_battle(data_1, data_2)
-            result = menu.pokemon_battle(battle)
+            battle = menu.select_mon_for_battle(data_1, data_2)
+            result = menu.mon_battle(battle)
             core.show_battle_winner(result, id_number)
             quit()
 

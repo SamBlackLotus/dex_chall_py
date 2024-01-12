@@ -1,7 +1,7 @@
 import core
+from typing import Dict,Union
 
-
-def pokemon_trivia(pokemons_data):
+def pokemon_trivia(pokemons_data: Dict[str, Union[str, int]]) -> Dict[str, str]:
     """
         This function will process some validations in a pokemon
         list, to find some specific information and answer the
@@ -25,51 +25,47 @@ def pokemon_trivia(pokemons_data):
     highest_defense_trivia = {"index": 0, "value": 0}
     highest_speed_trivia = {"index": 0, "value": 0}
     pokemon_dict = []
-    
-    print(pokemons_data)
-    
+
     for index, pokemon in enumerate(pokemons_data):
-        
         pokemon_dict += [
-                {key_list: value_list for key_list, value_list in pokemon.items()}
-            ]
-        
+            {key_list:   value_list for key_list, value_list in pokemon.items()}
+        ]
+
         if pokemon_dict:
             pokemon_hp = sorted(
-            pokemon_dict, key=lambda highest: highest["hp"], reverse=True
-        )
+                pokemon_dict, key=lambda highest: highest["hp"], reverse=True
+            )
             highest_hp_trivia = pokemon_hp[0]
-            
-            pokemon_attack = sorted(
-            pokemon_dict, key=lambda highest: highest["attack"], reverse=True
-        )
-            highest_attack_trivia = pokemon_attack[0]
-            
-            pokemon_defense = sorted(
-            pokemon_dict, key=lambda highest: highest["defense"], reverse=True
-        )
-            highest_defense_trivia = pokemon_defense[0]
-            
-            pokemon_speed = sorted(
-            pokemon_dict, key=lambda highest: highest["speed"], reverse=True
-        )
-            highest_speed_trivia = pokemon_speed[0]
-        
 
-    return core.AnswersTrivia(
-        total_trivia= str(len(pokemons_data)),
-        hp_trivia_name= highest_hp_trivia["name"],
-        hp_trivia_points= str(highest_hp_trivia["hp"]),
-        atk_trivia_name= highest_attack_trivia["name"],
-        atk_trivia_points= str(highest_attack_trivia["attack"]),
-        def_trivia_name= highest_defense_trivia["name"],
-        def_trivia_points= str(highest_defense_trivia["defense"]),
-        spd_trivia_name= highest_speed_trivia["name"],
-        spd_trivia_points= str(highest_speed_trivia["speed"]),
+            pokemon_attack = sorted(
+                pokemon_dict, key=lambda highest: highest["attack"], reverse=True
+            )
+            highest_attack_trivia = pokemon_attack[0]
+
+            pokemon_defense = sorted(
+                pokemon_dict, key=lambda highest: highest["defense"], reverse=True
+            )
+            highest_defense_trivia = pokemon_defense[0]
+
+            pokemon_speed = sorted(
+                pokemon_dict, key=lambda highest: highest["speed"], reverse=True
+            )
+            highest_speed_trivia = pokemon_speed[0]
+
+    return core.AnswersPokemonTrivia(
+        total_trivia=str(len(pokemons_data)),
+        hp_trivia_name=highest_hp_trivia["name"],
+        hp_trivia_points=str(highest_hp_trivia["hp"]),
+        atk_trivia_name=highest_attack_trivia["name"],
+        atk_trivia_points=str(highest_attack_trivia["attack"]),
+        def_trivia_name=highest_defense_trivia["name"],
+        def_trivia_points=str(highest_defense_trivia["defense"]),
+        spd_trivia_name=highest_speed_trivia["name"],
+        spd_trivia_points=str(highest_speed_trivia["speed"]),
     )
 
 
-def digimon_trivia(digimon_data):
+def digimon_trivia(digimon_data: Dict[str, Union[str, int]]) -> Dict[str, str]:
     """
         This function will process some validations in a digimon
         list, to find some specific information and answer the
@@ -122,17 +118,23 @@ def digimon_trivia(digimon_data):
     free_strongest = {"index": 0, "value": 0}
     digimon_types = []
     digimon_stages = []
+    digimon_dict = []
 
     for index, digimon in enumerate(digimon_data):
-        highest_attack = core.cast_to_int(digimon["attack"])
-        if highest_attack > highest_attack_trivia["value"]:
-            highest_attack_trivia["index"] = index
-            highest_attack_trivia["value"] = highest_attack
+        digimon_dict += [
+            {key_list:   value_list for key_list, value_list in digimon.items()}
+        ]
 
-        lowest_attack = core.cast_to_int(digimon["attack"])
-        if lowest_attack < lowest_attack_trivia["value"]:
-            lowest_attack_trivia["index"] = index
-            lowest_attack_trivia["value"] = lowest_attack
+        if digimon_dict:
+            digimon_highest_attack = sorted(
+                digimon_dict, key=lambda highest: highest["attack"], reverse=True
+            )
+            highest_attack_trivia = digimon_highest_attack[0]
+            
+            digimon_lowest_attack = sorted(
+                digimon_dict, key=lambda lowest: lowest["attack"]
+            )
+            lowest_attack_trivia = digimon_lowest_attack[0]
 
         if digimon["stage"] == "Baby":
             baby_digimon += 1
@@ -244,7 +246,7 @@ def digimon_trivia(digimon_data):
             ultra_dict, key=lambda strongest: strongest["attack"], reverse=True
         )
         ultra_strongest = ultra_sorted[0]
-        
+
     if data_dict:
         data_sorted = sorted(
             data_dict, key=lambda strongest: strongest["attack"], reverse=True
@@ -266,46 +268,46 @@ def digimon_trivia(digimon_data):
         )
         free_strongest = free_sorted[0]
 
-    return core.AnswersTrivia(
-        total_trivia=str(len(digimon_data)),
-        highest_atk_name=digimon_data[highest_attack_trivia["index"]]["name"],
-        highest_atk_stage=digimon_data[highest_attack_trivia["index"]]["stage"],
-        highest_atk_type=digimon_data[highest_attack_trivia["index"]]["type1"],
-        lowest_atk_name=digimon_data[lowest_attack_trivia["index"]]["name"],
-        lowest_atk_stage=digimon_data[lowest_attack_trivia["index"]]["stage"],
-        lowest_atk_type=digimon_data[lowest_attack_trivia["index"]]["type1"],
-        total_baby=str(baby_digimon),
-        total_rookie=str(rookie_digimon),
-        total_champion=str(champion_digimon),
-        total_ultimate=str(ultimate_digimon),
-        total_mega=str(mega_digimon),
-        total_ultra=str(ultra_digimon),
-        total_data=str(data_type),
-        total_vaccine=str(vaccine_type),
-        total_virus=str(virus_type),
-        total_free=str(free_type),
-        baby_strongest=baby_strongest["name"],
-        baby_attack =str(baby_strongest["attack"]),
-        rookie_strongest=rookie_strongest["name"],
-        rookie_attack =str(rookie_strongest["attack"]),
-        champion_strongest=champion_strongest["name"],
-        champion_attack =str(champion_strongest["attack"]),
-        ultimate_strongest=ultimate_strongest["name"],
-        ultimate_attack =str(ultimate_strongest["attack"]),
-        mega_strongest=mega_strongest["name"],
-        mega_attack =str(mega_strongest["attack"]),
-        ultra_strongest=ultra_strongest["name"],
-        ultra_attack =str(ultra_strongest["attack"]),
-        data_strongest=data_strongest["name"],
-        data_attack =str(data_strongest["attack"]),
-        vaccine_strongest=vaccine_strongest["name"],
-        vaccine_attack =str(vaccine_strongest["attack"]),
-        virus_strongest=virus_strongest["name"],
-        virus_attack =str(virus_strongest["attack"]),
-        free_strongest=free_strongest["name"],
-        free_attack =str(free_strongest["attack"]),
+    return core.AnswersDigimonTrivia(
+        total_trivia= str(len(digimon_data)),
+        highest_atk_name= highest_attack_trivia["name"],
+        highest_atk_stage= highest_attack_trivia["stage"],
+        highest_atk_type= highest_attack_trivia["type1"],
+        lowest_atk_name= lowest_attack_trivia["name"],
+        lowest_atk_stage= lowest_attack_trivia["stage"],
+        lowest_atk_type= lowest_attack_trivia["type1"],
+        total_baby= str(baby_digimon),
+        total_rookie= str(rookie_digimon),
+        total_champion= str(champion_digimon),
+        total_ultimate= str(ultimate_digimon),
+        total_mega= str(mega_digimon),
+        total_ultra= str(ultra_digimon),
+        total_data= str(data_type),
+        total_vaccine= str(vaccine_type),
+        total_virus= str(virus_type),
+        total_free= str(free_type),
+        baby_strongest= baby_strongest["name"],
+        baby_attack= str(baby_strongest["attack"]),
+        rookie_strongest= rookie_strongest["name"],
+        rookie_attack= str(rookie_strongest["attack"]),
+        champion_strongest= champion_strongest["name"],
+        champion_attack= str(champion_strongest["attack"]),
+        ultimate_strongest= ultimate_strongest["name"],
+        ultimate_attack= str(ultimate_strongest["attack"]),
+        mega_strongest= mega_strongest["name"],
+        mega_attack= str(mega_strongest["attack"]),
+        ultra_strongest= ultra_strongest["name"],
+        ultra_attack= str(ultra_strongest["attack"]),
+        data_strongest= data_strongest["name"],
+        data_attack= str(data_strongest["attack"]),
+        vaccine_strongest= vaccine_strongest["name"],
+        vaccine_attack= str(vaccine_strongest["attack"]),
+        virus_strongest= virus_strongest["name"],
+        virus_attack= str(virus_strongest["attack"]),
+        free_strongest= free_strongest["name"],
+        free_attack= str(free_strongest["attack"]),
         digimon_types= sorted(digimon_types),
-        types_sum=str(len(digimon_types)),
+        types_sum= str(len(digimon_types)),
         digimon_stages= sorted(digimon_stages),
-        stages_sum=str(len(digimon_stages)),
+        stages_sum= str(len(digimon_stages)),
     )

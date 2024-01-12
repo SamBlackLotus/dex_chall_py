@@ -3,16 +3,7 @@
 from typing import TypedDict, List, Dict
 
 
-class AnswersTrivia(TypedDict):
-    highest_hp_trivia: str
-    highest_attack_trivia: str
-    highest_defense_trivia: str
-    highest_speed_trivia: str
-    hp_trivia_int: int
-    index: int
-    attack_trivia_int: int
-    defense_trivia_int: int
-    speed_trivia_int: int
+class AnswersPokemonTrivia(TypedDict):
     total_trivia: int
     hp_trivia_name: str
     hp_trivia_points: int
@@ -22,119 +13,97 @@ class AnswersTrivia(TypedDict):
     def_trivia_points: int
     spd_trivia_name: str
     spd_trivia_points: int
-    user_choice_trivia: str
+    
+class AnswersDigimonTrivia(TypedDict):
+    total_trivia: int
+    highest_atk_name: int
+    highest_atk_stage: str
+    highest_atk_type: str
+    lowest_atk_name: str
+    lowest_atk_stage: str
+    lowest_atk_type: str
+    total_baby: int
+    total_rookie: int
+    total_champion: int
+    total_ultimate: int
+    total_mega: int
+    total_ultra: int
+    total_data: int
+    total_vaccine: int
+    total_virus: int
+    total_free: int
+    baby_strongest: str
+    baby_attack: int
+    rookie_strongest: str
+    rookie_attack: int
+    champion_strongest: str
+    champion_attack: int
+    ultimate_strongest: str
+    ultimate_attack: int
+    mega_strongest: str
+    mega_attack: int
+    ultra_strongest: str
+    ultra_attack: int
+    data_strongest: str
+    data_attack: int
+    vaccine_strongest: str
+    vaccine_attack: int
+    virus_strongest: str
+    virus_attack: int
+    free_strongest: str
+    free_attack: int
+    digimon_types: List[str]
+    types_sum: int
+    digimon_stages: List[str]
+    stages_sum: int
 
 
 class AnswersInfo(TypedDict):
-    strongest_pokemon_player1: str
-    strongest_pokemon_player2: str
-    legendary_1: bool
-    legendary_2: bool
-    total_legendary_player1: str
-    total_legendary_player2: str
-    intersec_pokemon: str
-    diff_pokemon: str
-    attack: int
-    index: int
-    strongest_pokemon_player1: int
-    strongest_pokemon_player2: int
-    total_legendary_player1: int
-    total_legendary_player1: int
-    player1_total_pokemons: int
-    player2_total_pokemons: int
-    player1_total_pokemons_info: int
-    player2_total_pokemons_info: int
-    strongest_pokemon_player1_info: int
-    strongest_pokemon_player2_info: int
-    legendary_player1_info: int
-    legendary_player2_info: int
-    repeated_pokemon_info: int
-    different_pokemon_info: int
-    user_choice_info: str
+    player1_total_monster_info: int
+    player2_total_monster_info: int
+    strongest_monster_player1_info: str
+    strongest_monster_player2_info: str
+    stg_or_legend_player1_info: str
+    stg_or_legend_player2_info: str
+    repeated_monster_info: int
+    different_monster_info: int
 
 
 class AnswersBattle(TypedDict):
-    p1_pokemon: List[Dict[str, int]]
-    p1_pokemon: List[Dict[str, int]]
+    p1_player: List[Dict[str, int]]
+    p2_player: List[Dict[str, int]]
 
 
 class AnswersResult(TypedDict):
-    hp: str
-    attack: str
-    defense: str
-    name: str
-    p1_pokemon_1: str
-    p1_pokemon_2: str
-    p1_pokemon_3: str
-    p2_pokemon_1: str
-    p2_pokemon_2: str
-    p2_pokemon_3: str
-    p1_pkm_1_name: str
-    p1_pkm_2_name: str
-    p1_pkm_3_name: str
-    p2_pkm_1_name: str
-    p2_pkm_2_name: str
-    p2_pkm_3_name: str
-    p1_pkm_1_hp: int
-    p1_pkm_2_hp: int
-    p1_pkm_3_hp: int
-    p2_pkm_1_hp: int
-    p2_pkm_2_hp: int
-    p2_pkm_3_hp: int
-    p1_pkm_1_atk: int
-    p1_pkm_2_atk: int
-    p1_pkm_3_atk: int
-    p2_pkm_1_atk: int
-    p2_pkm_2_atk: int
-    p2_pkm_3_atk: int
-    p1_pkm_1_dfs: int
-    p1_pkm_2_dfs: int
-    p1_pkm_3_dfs: int
-    p2_pkm_1_dfs: int
-    p2_pkm_2_dfs: int
-    p2_pkm_3_dfs: int
-    p1_player: str
-    p2_player: str
-    while_counter: int
-    p1_pkm_1_hp: int
-    p1_pkm_2_hp: int
-    p1_pkm_3_hp: int
-    p2_pkm_1_hp: int
-    p2_pkm_2_hp: int
-    p2_pkm_3_hp: int
-    damagep1poke1: int
-    damagep1poke2: int
-    damagep1poke3: int
-    damagep2poke1: int
-    damagep2poke2: int
-    damagep2poke3: int
-    first_pokemon_dead: str
-    victorious_player: str
+    p1_mon_1_name: str
+    p1_mon_2_name: str
+    p1_mon_3_name: str
+    p2_mon_1_name: str
+    p2_mon_2_name: str
+    p2_mon_3_name: str
+    p1_mon_1_hp: str
+    p1_mon_2_hp: str
+    p1_mon_3_hp: str
+    p2_mon_1_hp: str
+    p2_mon_2_hp: str
+    p2_mon_3_hp: str
+    p1_mon_1_atk: str
+    p1_mon_2_atk: str
+    p1_mon_3_atk: str
+    p2_mon_1_atk: str
+    p2_mon_2_atk: str
+    p2_mon_3_atk: str
+    p1_mon_1_dfs: str
+    p1_mon_2_dfs: str
+    p1_mon_3_dfs: str
+    p2_mon_1_dfs: str
+    p2_mon_2_dfs: str
+    p2_mon_3_dfs: str
     winner: str
-    rounds: int
-    loser_pokemon: str
-    user_choice_battle: str
+    rounds: str    
+    loser_monster: str
 
 
-class Monster(TypedDict):
-    Id: int
-    Name: str
-    Stage: str
-    Type: str
-    Type_1: str
-    Type_2: str
-    Attribute: str
-    Memory: int
-    Equip_Slots: int
-    Total: int
-    HP: int
-    SP: int
-    Int: int
-    Attack: int
-    Defense: int
-    Sp_Atk: int
-    Sp_Def: int
-    Speed: int
-    Generation: int
-    Legendary: str
-    Image_link: str
+
+
+

@@ -1,4 +1,5 @@
 import os
+import core
 from datetime import datetime
 from typing import Callable, Dict
 
@@ -159,7 +160,7 @@ def save_data(
             target.write(saved_data)
 
 
-def show_pokemon_trivia(pokemons_info: str, id_number: str) -> None:
+def show_pokemon_trivia(pokemons_info: Dict[str, str], id_number: str) -> None:
     """
     This function will show a message in the CLI.
 
@@ -278,7 +279,7 @@ def show_pokemon_trivia(pokemons_info: str, id_number: str) -> None:
     save_data(msg, "pokemon-trivia", id_number)
 
 
-def show_digimon_trivia(digimon_info: str, id_number: str) -> None:
+def show_digimon_trivia(digimon_info: Dict[str, str], id_number: str) -> None:
     """
     This function will show a message in the CLI.
 
@@ -393,8 +394,15 @@ def show_digimon_trivia(digimon_info: str, id_number: str) -> None:
         + "Baby: "
         + digimon_info["baby_strongest"]
         + ", "
-        + digimon_info ["baby_attack"]
-        + (" " * (65 - len(digimon_info["baby_strongest"]) - len(digimon_info["baby_attack"])))
+        + digimon_info["baby_attack"]
+        + (
+            " "
+            * (
+                65
+                - len(digimon_info["baby_strongest"])
+                - len(digimon_info["baby_attack"])
+            )
+        )
         + "\n"
     )
     msg += (
@@ -403,8 +411,15 @@ def show_digimon_trivia(digimon_info: str, id_number: str) -> None:
         + "Rookie: "
         + digimon_info["rookie_strongest"]
         + ", "
-        + digimon_info ["rookie_attack"]
-        + (" " * (63 - len(digimon_info["rookie_strongest"]) - len(digimon_info["rookie_attack"])))
+        + digimon_info["rookie_attack"]
+        + (
+            " "
+            * (
+                63
+                - len(digimon_info["rookie_strongest"])
+                - len(digimon_info["rookie_attack"])
+            )
+        )
         + "\n"
     )
     msg += (
@@ -413,8 +428,15 @@ def show_digimon_trivia(digimon_info: str, id_number: str) -> None:
         + "Champion: "
         + digimon_info["champion_strongest"]
         + ", "
-        + digimon_info ["champion_attack"]
-        + (" " * (61 - len(digimon_info["champion_strongest"]) - len(digimon_info["champion_attack"])))
+        + digimon_info["champion_attack"]
+        + (
+            " "
+            * (
+                61
+                - len(digimon_info["champion_strongest"])
+                - len(digimon_info["champion_attack"])
+            )
+        )
         + "\n"
     )
     msg += (
@@ -423,8 +445,15 @@ def show_digimon_trivia(digimon_info: str, id_number: str) -> None:
         + "Ultimate: "
         + digimon_info["ultimate_strongest"]
         + ", "
-        + digimon_info ["ultimate_attack"]
-        + (" " * (61 - len(digimon_info["ultimate_strongest"]) - len(digimon_info["ultimate_attack"])))
+        + digimon_info["ultimate_attack"]
+        + (
+            " "
+            * (
+                61
+                - len(digimon_info["ultimate_strongest"])
+                - len(digimon_info["ultimate_attack"])
+            )
+        )
         + "\n"
     )
     msg += (
@@ -433,8 +462,15 @@ def show_digimon_trivia(digimon_info: str, id_number: str) -> None:
         + "Mega: "
         + digimon_info["mega_strongest"]
         + ", "
-        + digimon_info ["mega_attack"]
-        + (" " * (63 - len(digimon_info["mega_strongest"]) - len(digimon_info["mega_attack"])))
+        + digimon_info["mega_attack"]
+        + (
+            " "
+            * (
+                63
+                - len(digimon_info["mega_strongest"])
+                - len(digimon_info["mega_attack"])
+            )
+        )
         + "\n"
     )
     msg += (
@@ -443,8 +479,15 @@ def show_digimon_trivia(digimon_info: str, id_number: str) -> None:
         + "Ultra: "
         + digimon_info["ultra_strongest"]
         + ", "
-        + digimon_info ["ultra_attack"]
-        + (" " * (64 - len(digimon_info["ultra_strongest"]) - len(digimon_info["ultra_attack"])))
+        + digimon_info["ultra_attack"]
+        + (
+            " "
+            * (
+                64
+                - len(digimon_info["ultra_strongest"])
+                - len(digimon_info["ultra_attack"])
+            )
+        )
         + "\n"
     )
     msg += (" " * 80) + "\n"
@@ -503,8 +546,15 @@ def show_digimon_trivia(digimon_info: str, id_number: str) -> None:
         + "Data: "
         + digimon_info["data_strongest"]
         + ", "
-        + digimon_info ["data_attack"]
-        + (" " * (65 - len(digimon_info["data_strongest"]) - len(digimon_info["data_attack"])))
+        + digimon_info["data_attack"]
+        + (
+            " "
+            * (
+                65
+                - len(digimon_info["data_strongest"])
+                - len(digimon_info["data_attack"])
+            )
+        )
         + "\n"
     )
     msg += (
@@ -513,8 +563,15 @@ def show_digimon_trivia(digimon_info: str, id_number: str) -> None:
         + "Vaccine: "
         + digimon_info["vaccine_strongest"]
         + ", "
-        + digimon_info ["vaccine_attack"]
-        + (" " * (63 - len(digimon_info["vaccine_strongest"]) - len(digimon_info["vaccine_attack"])))
+        + digimon_info["vaccine_attack"]
+        + (
+            " "
+            * (
+                63
+                - len(digimon_info["vaccine_strongest"])
+                - len(digimon_info["vaccine_attack"])
+            )
+        )
         + "\n"
     )
     msg += (
@@ -523,8 +580,15 @@ def show_digimon_trivia(digimon_info: str, id_number: str) -> None:
         + "Virus: "
         + digimon_info["virus_strongest"]
         + ", "
-        + digimon_info ["virus_attack"]
-        + (" " * (61 - len(digimon_info["virus_strongest"]) - len(digimon_info["virus_attack"])))
+        + digimon_info["virus_attack"]
+        + (
+            " "
+            * (
+                61
+                - len(digimon_info["virus_strongest"])
+                - len(digimon_info["virus_attack"])
+            )
+        )
         + "\n"
     )
     msg += (
@@ -533,8 +597,15 @@ def show_digimon_trivia(digimon_info: str, id_number: str) -> None:
         + "Free: "
         + digimon_info["free_strongest"]
         + ", "
-        + digimon_info ["free_attack"]
-        + (" " * (61 - len(digimon_info["free_strongest"]) - len(digimon_info["free_attack"])))
+        + digimon_info["free_attack"]
+        + (
+            " "
+            * (
+                61
+                - len(digimon_info["free_strongest"])
+                - len(digimon_info["free_attack"])
+            )
+        )
         + "\n"
     )
     msg += (
@@ -543,8 +614,15 @@ def show_digimon_trivia(digimon_info: str, id_number: str) -> None:
         + "Mega: "
         + digimon_info["mega_strongest"]
         + ", "
-        + digimon_info ["mega_attack"]
-        + (" " * (63 - len(digimon_info["mega_strongest"]) - len(digimon_info["mega_attack"])))
+        + digimon_info["mega_attack"]
+        + (
+            " "
+            * (
+                63
+                - len(digimon_info["mega_strongest"])
+                - len(digimon_info["mega_attack"])
+            )
+        )
         + "\n"
     )
     msg += (
@@ -553,8 +631,15 @@ def show_digimon_trivia(digimon_info: str, id_number: str) -> None:
         + "Ultra: "
         + digimon_info["ultra_strongest"]
         + ", "
-        + digimon_info ["ultra_attack"]
-        + (" " * (64 - len(digimon_info["ultra_strongest"]) - len(digimon_info["ultra_attack"])))
+        + digimon_info["ultra_attack"]
+        + (
+            " "
+            * (
+                64
+                - len(digimon_info["ultra_strongest"])
+                - len(digimon_info["ultra_attack"])
+            )
+        )
         + "\n"
     )
     msg += (" " * 80) + "\n"
@@ -630,7 +715,7 @@ def show_digimon_trivia(digimon_info: str, id_number: str) -> None:
     save_data(msg, "digimon-trivia", id_number)
 
 
-def show_battle_winner(battle_result: Callable, id_number: str) -> None:
+def show_battle_winner(battle_result: Dict[str, str], id_number: str) -> None:
     """
     This function will show a message in the CLI.
 
@@ -660,50 +745,50 @@ def show_battle_winner(battle_result: Callable, id_number: str) -> None:
     battle_msg += " " + ("-" * 78) + " \n"
     battle_msg += (
         "|Name:"
-        + battle_result["p1_pkm_1_name"]
-        + (" " * (21 - len(battle_result["p1_pkm_1_name"])))
+        + battle_result["p1_mon_1_name"]
+        + (" " * (21 - len(battle_result["p1_mon_1_name"])))
         + "|Name:"
-        + battle_result["p1_pkm_2_name"]
-        + (" " * (20 - len(battle_result["p1_pkm_2_name"])))
+        + battle_result["p1_mon_2_name"]
+        + (" " * (20 - len(battle_result["p1_mon_2_name"])))
         + "|Name:"
-        + battle_result["p1_pkm_3_name"]
-        + (" " * (20 - len(battle_result["p1_pkm_3_name"])))
+        + battle_result["p1_mon_3_name"]
+        + (" " * (20 - len(battle_result["p1_mon_3_name"])))
         + "|\n"
     )
     battle_msg += (
         "|HP:"
-        + str(battle_result["p1_pkm_1_hp"])
-        + (" " * (23 - len(str(battle_result["p1_pkm_1_hp"]))))
+        + str(battle_result["p1_mon_1_hp"])
+        + (" " * (23 - len(str(battle_result["p1_mon_1_hp"]))))
         + "|HP:"
-        + str(battle_result["p1_pkm_2_hp"])
-        + (" " * (22 - len(str(battle_result["p1_pkm_2_hp"]))))
+        + str(battle_result["p1_mon_2_hp"])
+        + (" " * (22 - len(str(battle_result["p1_mon_2_hp"]))))
         + "|HP:"
-        + str(battle_result["p1_pkm_3_hp"])
-        + (" " * (22 - len(str(battle_result["p1_pkm_3_hp"]))))
+        + str(battle_result["p1_mon_3_hp"])
+        + (" " * (22 - len(str(battle_result["p1_mon_3_hp"]))))
         + "|\n"
     )
     battle_msg += (
         "|Attack:"
-        + str(battle_result["p1_pkm_1_atk"])
-        + (" " * (19 - len(str(battle_result["p1_pkm_1_atk"]))))
+        + str(battle_result["p1_mon_1_atk"])
+        + (" " * (19 - len(str(battle_result["p1_mon_1_atk"]))))
         + "|Attack:"
-        + str(battle_result["p1_pkm_2_atk"])
-        + (" " * (18 - len(str(battle_result["p1_pkm_2_atk"]))))
+        + str(battle_result["p1_mon_2_atk"])
+        + (" " * (18 - len(str(battle_result["p1_mon_2_atk"]))))
         + "|Attack:"
-        + str(battle_result["p1_pkm_3_atk"])
-        + (" " * (18 - len(str(battle_result["p1_pkm_3_atk"]))))
+        + str(battle_result["p1_mon_3_atk"])
+        + (" " * (18 - len(str(battle_result["p1_mon_3_atk"]))))
         + "|\n"
     )
     battle_msg += (
         "|Defense:"
-        + str(battle_result["p1_pkm_1_dfs"])
-        + (" " * (18 - len(str(battle_result["p1_pkm_1_dfs"]))))
+        + str(battle_result["p1_mon_1_dfs"])
+        + (" " * (18 - len(str(battle_result["p1_mon_1_dfs"]))))
         + "|Defense:"
-        + str(battle_result["p1_pkm_2_dfs"])
-        + (" " * (17 - len(str(battle_result["p1_pkm_2_dfs"]))))
+        + str(battle_result["p1_mon_2_dfs"])
+        + (" " * (17 - len(str(battle_result["p1_mon_2_dfs"]))))
         + "|Defense:"
-        + str(battle_result["p1_pkm_3_dfs"])
-        + (" " * (17 - len(str(battle_result["p1_pkm_3_dfs"]))))
+        + str(battle_result["p1_mon_3_dfs"])
+        + (" " * (17 - len(str(battle_result["p1_mon_3_dfs"]))))
         + "|\n"
     )
     battle_msg += " " + ("-" * 78) + " \n"
@@ -711,50 +796,50 @@ def show_battle_winner(battle_result: Callable, id_number: str) -> None:
     battle_msg += " " + ("-" * 78) + " \n"
     battle_msg += (
         "|Name:"
-        + battle_result["p2_pkm_1_name"]
-        + (" " * (21 - len(battle_result["p2_pkm_1_name"])))
+        + battle_result["p2_mon_1_name"]
+        + (" " * (21 - len(battle_result["p2_mon_1_name"])))
         + "|Name:"
-        + battle_result["p2_pkm_2_name"]
-        + (" " * (20 - len(battle_result["p2_pkm_2_name"])))
+        + battle_result["p2_mon_2_name"]
+        + (" " * (20 - len(battle_result["p2_mon_2_name"])))
         + "|Name:"
-        + battle_result["p2_pkm_3_name"]
-        + (" " * (20 - len(battle_result["p2_pkm_3_name"])))
+        + battle_result["p2_mon_3_name"]
+        + (" " * (20 - len(battle_result["p2_mon_3_name"])))
         + "|\n"
     )
     battle_msg += (
         "|HP:"
-        + str(battle_result["p2_pkm_1_hp"])
-        + (" " * (23 - len(str(battle_result["p2_pkm_1_hp"]))))
+        + str(battle_result["p2_mon_1_hp"])
+        + (" " * (23 - len(str(battle_result["p2_mon_1_hp"]))))
         + "|HP:"
-        + str(battle_result["p2_pkm_2_hp"])
-        + (" " * (22 - len(str(battle_result["p2_pkm_2_hp"]))))
+        + str(battle_result["p2_mon_2_hp"])
+        + (" " * (22 - len(str(battle_result["p2_mon_2_hp"]))))
         + "|HP:"
-        + str(battle_result["p2_pkm_3_hp"])
-        + (" " * (22 - len(str(battle_result["p2_pkm_3_hp"]))))
+        + str(battle_result["p2_mon_3_hp"])
+        + (" " * (22 - len(str(battle_result["p2_mon_3_hp"]))))
         + "|\n"
     )
     battle_msg += (
         "|Attack:"
-        + str(battle_result["p2_pkm_1_atk"])
-        + (" " * (19 - len(str(battle_result["p2_pkm_1_atk"]))))
+        + str(battle_result["p2_mon_1_atk"])
+        + (" " * (19 - len(str(battle_result["p2_mon_1_atk"]))))
         + "|Attack:"
-        + str(battle_result["p2_pkm_2_atk"])
-        + (" " * (18 - len(str(battle_result["p2_pkm_2_atk"]))))
+        + str(battle_result["p2_mon_2_atk"])
+        + (" " * (18 - len(str(battle_result["p2_mon_2_atk"]))))
         + "|Attack:"
-        + str(battle_result["p2_pkm_3_atk"])
-        + (" " * (18 - len(str(battle_result["p2_pkm_3_atk"]))))
+        + str(battle_result["p2_mon_3_atk"])
+        + (" " * (18 - len(str(battle_result["p2_mon_3_atk"]))))
         + "|\n"
     )
     battle_msg += (
         "|Defense:"
-        + str(battle_result["p2_pkm_1_dfs"])
-        + (" " * (18 - len(str(battle_result["p2_pkm_1_dfs"]))))
+        + str(battle_result["p2_mon_1_dfs"])
+        + (" " * (18 - len(str(battle_result["p2_mon_1_dfs"]))))
         + "|Defense:"
-        + str(battle_result["p2_pkm_2_dfs"])
-        + (" " * (17 - len(str(battle_result["p2_pkm_2_dfs"]))))
+        + str(battle_result["p2_mon_2_dfs"])
+        + (" " * (17 - len(str(battle_result["p2_mon_2_dfs"]))))
         + "|Defense:"
-        + str(battle_result["p2_pkm_3_dfs"])
-        + (" " * (17 - len(str(battle_result["p2_pkm_3_dfs"]))))
+        + str(battle_result["p2_mon_3_dfs"])
+        + (" " * (17 - len(str(battle_result["p2_mon_3_dfs"]))))
         + "|\n"
     )
     battle_msg += " " + ("-" * 78) + " \n"
@@ -770,18 +855,18 @@ def show_battle_winner(battle_result: Callable, id_number: str) -> None:
     battle_msg += "|" + (" " * 34) + "--Rounds--" + (" " * 34) + "|\n"
     battle_msg += (
         "|"
-        + (" " * (39 - (len(str(battle_result["p2_pkm_2_dfs"])) // 2)))
+        + (" " * (39 - (len(str(battle_result["rounds"])) // 2)))
         + str(battle_result["rounds"])
-        + (" " * (39 - (len(str(battle_result["p2_pkm_2_dfs"])) // 2)))
+        + (" " * (39 - (len(str(battle_result["rounds"])) // 2)))
         + "|\n"
     )
     battle_msg += "|" + (" " * 25) + ("-" * 28) + (" " * 25) + "|\n"
     battle_msg += "|" + (" " * 26) + "--First monster to fall--" + (" " * 27) + "|\n"
     battle_msg += (
         "|"
-        + (" " * (38 - (len(battle_result["loser_pokemon"]) // 2)))
-        + battle_result["loser_pokemon"]
-        + (" " * (39 - (len(battle_result["loser_pokemon"]) // 2)))
+        + (" " * (38 - (len(battle_result["loser_monster"]) // 2)))
+        + battle_result["loser_monster"]
+        + (" " * (39 - (len(battle_result["loser_monster"]) // 2)))
         + "|\n"
     )
     battle_msg += " " + ("=" * 78) + " \n"
@@ -795,14 +880,14 @@ def show_battle_winner(battle_result: Callable, id_number: str) -> None:
 
 
 def show_info(
-    process_pokemons: Callable[[str], Dict], id_number: str, archive_type: str
+    process_monster: Dict[str, str], id_number: str, archive_type: str
 ) -> None:
     """
     This function will show a message in the CLI.
 
     Parameters
     ----------
-    process_pokemons:
+    process_monster:
         Bring the treated variables which will be used to answer
         the questions
 
@@ -836,57 +921,46 @@ def show_info(
             "|Pokemons"
             + (" " * 10)
             + "| "
-            + process_pokemons["player1_total_pokemons_info"]
-            + (" " * (28 - len(process_pokemons["player1_total_pokemons_info"])))
+            + process_monster["player1_total_monster_info"]
+            + (" " * (28 - len(process_monster["player1_total_monster_info"])))
             + "| "
-            + process_pokemons["player2_total_pokemons_info"]
-            + (" " * (28 - len(process_pokemons["player1_total_pokemons_info"])))
+            + process_monster["player2_total_monster_info"]
+            + (" " * (28 - len(process_monster["player1_total_monster_info"])))
             + "|\n"
         )
         msg += (
             "|Strongest Pokémon"
             + " | "
-            + process_pokemons["strongest_pokemon_player1_info"]
-            + (" " * (28 - len(process_pokemons["strongest_pokemon_player1_info"])))
+            + process_monster["strongest_monster_player1_info"]
+            + (" " * (28 - len(process_monster["strongest_monster_player1_info"])))
             + "| "
-            + process_pokemons["strongest_pokemon_player2_info"]
-            + (" " * (28 - len(process_pokemons["strongest_pokemon_player2_info"])))
+            + process_monster["strongest_monster_player2_info"]
+            + (" " * (28 - len(process_monster["strongest_monster_player2_info"])))
             + "|\n"
         )
         msg += (
             "|Legendary"
             + (" " * 9)
             + "| "
-            + process_pokemons["legendary_player1_info"]
-            + (" " * (28 - len(process_pokemons["legendary_player1_info"])))
+            + process_monster["stg_or_legend_player1_info"]
+            + (" " * (28 - len(process_monster["stg_or_legend_player1_info"])))
             + "| "
-            + process_pokemons["legendary_player2_info"]
-            + (" " * (28 - len(process_pokemons["legendary_player2_info"])))
-            + "|\n"
-        )
-        msg += (
-            "|Ultimate Digimon"
-            + (" " * 1)
-            + "| "
-            + process_pokemons["legendary_player1_info"]
-            + (" " * (28 - len(process_pokemons["legendary_player1_info"])))
-            + "| "
-            + process_pokemons["legendary_player2_info"]
-            + (" " * (28 - len(process_pokemons["legendary_player2_info"])))
+            + process_monster["stg_or_legend_player2_info"]
+            + (" " * (28 - len(process_monster["stg_or_legend_player2_info"])))
             + "|\n"
         )
         msg += (
             "|Repeated Pokemons"
             + " | "
-            + process_pokemons["repeated_pokemon_info"]
-            + (" " * (58 - len(process_pokemons["repeated_pokemon_info"])))
+            + process_monster["repeated_monster_info"]
+            + (" " * (58 - len(process_monster["repeated_monster_info"])))
             + "|\n"
         )
         msg += (
             "|Different Pokemons"
             + "| "
-            + process_pokemons["different_pokemon_info"]
-            + (" " * (58 - len(process_pokemons["different_pokemon_info"])))
+            + process_monster["different_monster_info"]
+            + (" " * (58 - len(process_monster["different_monster_info"])))
             + "|\n"
         )
     elif archive_type == "--digimon":
@@ -905,52 +979,52 @@ def show_info(
             "|Digimons"
             + (" " * 10)
             + "| "
-            + process_pokemons["player1_total_pokemons_info"]
-            + (" " * (28 - len(process_pokemons["player1_total_pokemons_info"])))
+            + process_monster["player1_total_monster_info"]
+            + (" " * (28 - len(process_monster["player1_total_monster_info"])))
             + "| "
-            + process_pokemons["player2_total_pokemons_info"]
-            + (" " * (28 - len(process_pokemons["player1_total_pokemons_info"])))
+            + process_monster["player2_total_monster_info"]
+            + (" " * (28 - len(process_monster["player1_total_monster_info"])))
             + "|\n"
         )
         msg += (
             "|Strongest Digimon"
             + " | "
-            + process_pokemons["strongest_pokemon_player1_info"]
-            + (" " * (28 - len(process_pokemons["strongest_pokemon_player1_info"])))
+            + process_monster["strongest_monster_player1_info"]
+            + (" " * (28 - len(process_monster["strongest_monster_player1_info"])))
             + "| "
-            + process_pokemons["strongest_pokemon_player2_info"]
-            + (" " * (28 - len(process_pokemons["strongest_pokemon_player2_info"])))
+            + process_monster["strongest_monster_player2_info"]
+            + (" " * (28 - len(process_monster["strongest_monster_player2_info"])))
             + "|\n"
         )
         msg += (
-            "|Mega Digimon"
-            + (" " * 7)
+            "|Digimon Ultra"
+            + (" " * 5)
             + "| "
-            + process_pokemons["legendary_player1_info"]
-            + (" " * (28 - len(process_pokemons["legendary_player1_info"])))
+            + process_monster["stg_or_legend_player1_info"]
+            + (" " * (28 - len(process_monster["stg_or_legend_player1_info"])))
             + "| "
-            + process_pokemons["legendary_player2_info"]
-            + (" " * (28 - len(process_pokemons["legendary_player2_info"])))
+            + process_monster["stg_or_legend_player2_info"]
+            + (" " * (28 - len(process_monster["stg_or_legend_player2_info"])))
             + "|\n"
         )
         msg += (
             "|Repeated Digimons"
             + " | "
-            + process_pokemons["repeated_pokemon_info"]
-            + (" " * (58 - len(process_pokemons["repeated_pokemon_info"])))
+            + process_monster["repeated_monster_info"]
+            + (" " * (58 - len(process_monster["repeated_monster_info"])))
             + "|\n"
         )
         msg += (
             "|Different Digimons"
             + "| "
-            + process_pokemons["different_pokemon_info"]
-            + (" " * (58 - len(process_pokemons["different_pokemon_info"])))
+            + process_monster["different_monster_info"]
+            + (" " * (58 - len(process_monster["different_monster_info"])))
             + "|\n"
         )
     msg += "|" + ("-" * 18) + "|" + ("-" * 59) + "|\n"
     msg += " " + (("=" * 78) + " \n")
     msg += (" " * 80) + "\n"
 
-    print(msg.format(**process_pokemons))
+    print(msg.format(**process_monster))
 
     save_data(msg, "info", id_number)
