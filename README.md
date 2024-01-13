@@ -1,4 +1,4 @@
-# Pokedex Challenge 
+# Dex Challenge 
 
 ### Technologies 
 
