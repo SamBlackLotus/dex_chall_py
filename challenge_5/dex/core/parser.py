@@ -8,7 +8,7 @@ from typing import Dict, Union, List
 
 def read_file(filepath: str, archive_type: str) -> List[Dict[str, Union[str, int]]]:
     """
-    This function reads a file and based on the format
+    This function reads a file and acts according to its format
     it will fit in one of the conditionals.
 
     If its a .json it uses load.

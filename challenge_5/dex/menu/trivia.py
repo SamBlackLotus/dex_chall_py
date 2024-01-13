@@ -15,9 +15,8 @@ def pokemon_trivia(pokemons_data: Dict[str, Union[str, int]]) -> Dict[str, str]:
     Returns
     -------
     AnswerTrivia:
-        Returns the results for the asked validations and puts
-        then in variables so it can the called to be presented
-        to the user.
+        Returns the results for the asked questions and stores
+        then in variables.
 
     """
     highest_hp_trivia = {"index": 0, "value": 0}
@@ -79,9 +78,8 @@ def digimon_trivia(digimon_data: Dict[str, Union[str, int]]) -> Dict[str, str]:
     Returns
     -------
     AnswerTrivia:
-        Returns the results for the asked validations and puts
-        then in variables so it can the called to be presented
-        to the user.
+        Returns the results for the asked questions and stores
+        then in variables.
 
     """
     highest_attack_trivia = {"index": 0, "value": 0}

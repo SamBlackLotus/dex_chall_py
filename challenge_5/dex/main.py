@@ -10,22 +10,6 @@ def main() -> None:
     This function receive sys.argv from CLI and process it to calls
     all the system functions.
 
-    Parameters
-    ----------
-    sys.argv:
-        The command given by the user in the CLI interface, it will
-        come as a list.
-
-    sys.argv:
-        This variable will receive the list provided in sys.argv
-        and slice it into positional sys.argv, where each one calls
-        a different action.
-
-    Returns
-    -------
-    The function return will be a call for another function based on
-    the command given by the user and processed by this function.
-
     """
 
     command_1: str

@@ -1,22 +1,20 @@
 import os
-import core
 from datetime import datetime
 from typing import Callable, Dict
 
 
 def client_helper() -> str:
     """
-    This function shows the client helper, giving to the user some explanation
-    about what each command will do.
+    This function prints the client helper in the CLI.
 
     Returns
     -------
     pokemon_set:
-        The helper message.
+        The client helper message.
     """
 
     helper_msg: str = """
-    Hello! Welcome to the Pokedex.
+    Hello! Welcome to the Monster Dex.
 
     Here you can choose between the following options, that are:
 
@@ -47,9 +45,7 @@ def client_helper() -> str:
 
 def client_usage() -> str:
     """
-    This function shows the client usage, giving to the user instructions
-    about how to use the dex, and explain some important details about types
-    of file formats supported.
+    This function prints the client usage in the CLI.
 
     Returns
     -------
@@ -61,6 +57,8 @@ def client_usage() -> str:
 
     > python3 main.py --help
     > python3 dex/main.py --player1 pokemons_1.json --trivia  --id 1
+    > python3 dex/main.py --pokemon --player1 pokemons_1.json --trivia  --id 1
+    > python3 dex/main.py --digimon --player1 pokemons_1.json --trivia  --id 1
     > python3 dex/main.py --player1 pokemons_1.json --player2 pokemons_2.json --id 1 --info
     > python3 dex/main.py --player1 pokemons_1.json --player2 pokemons_2.json --id 1 --battle
 
@@ -75,6 +73,11 @@ def client_usage() -> str:
                     pokemons_1.csv   pokemons_2.csv
                     pokemons_1.xml   pokemons_2.xml
                     pokemons_1.yaml  pokemons_2.yaml
+    
+    Another important set of information is that you can inform an pokemon list
+    or a digimon list, when informing a digimon list, you need to use the
+    "--digimon" command or "--pokemon" if it's a pokemon list, in the case of
+    not being informed the default will be considered a pokemon list.
 
     For all options you'll need to inform an id so the function can
     save the log in a text file, if you don't inform any id number it
@@ -111,8 +114,8 @@ def save_data(
     saved_data: Callable[[str], int], archive_type: str, id_number: str
 ) -> None:
     """
-    This function creates a .txt file and saves the generated information
-    in it.
+    This function creates a .txt file that stores the generated
+    information.
 
     Parameters
     ----------
@@ -127,10 +130,6 @@ def save_data(
         The id provided by the user, in case its not provided
         it will be filled with 0.
 
-    Returns
-    -------
-    pokemon_set:
-        The .txt file named as the command and id provided by the user.
     """
 
     if os.path.exists(f"{id_number}_{archive_type}.txt"):
@@ -162,7 +161,7 @@ def save_data(
 
 def show_pokemon_trivia(pokemons_info: Dict[str, str], id_number: str) -> None:
     """
-    This function will show a message in the CLI.
+    This function will print a message in the CLI.
 
     Parameters
     ----------
@@ -174,10 +173,6 @@ def show_pokemon_trivia(pokemons_info: Dict[str, str], id_number: str) -> None:
         The id provided by the user, in case its not provided
         it will be filled with 0.
 
-    Returns
-    -------
-        A message containing some specific information about the
-        data provided.
     """
     datenow = datetime.now()
     msg = (" " * 80) + "\n"
@@ -281,7 +276,7 @@ def show_pokemon_trivia(pokemons_info: Dict[str, str], id_number: str) -> None:
 
 def show_digimon_trivia(digimon_info: Dict[str, str], id_number: str) -> None:
     """
-    This function will show a message in the CLI.
+    This function will print a message in the CLI.
 
     Parameters
     ----------
@@ -293,10 +288,6 @@ def show_digimon_trivia(digimon_info: Dict[str, str], id_number: str) -> None:
         The id provided by the user, in case its not provided
         it will be filled with 0.
 
-    Returns
-    -------
-        A message containing some specific information about the
-        data provided.
     """
 
     datenow = datetime.now()
@@ -675,40 +666,6 @@ def show_digimon_trivia(digimon_info: Dict[str, str], id_number: str) -> None:
     msg += (" " * 80) + "\n"
     msg += ("=" * 80) + "\n"
     msg += (" " * 80) + "\n"
-    # msg += (" " * 4) + ">" + digimon_info["digimon_types"] + " different types " + "\n"
-    # 1 - How many digimon there is?
-    # Len
-
-    # 2 - How many digimon in each stage there is?
-
-    # Baby:{x} digimon
-    # Rookie: {x} digimon
-    # Champion: {x} digimon
-    # Ultimate: {x} digimon
-    # Mega: {x} digimon
-
-    # The strongest digimon in each stage based on the Atk attribute is:
-
-    # Baby:{digimon}
-    # Rookie:{digimon}
-    # Champion:{digimon}
-    # Ultimate:{digimon}
-    # Mega:{digimon}
-
-    # 3 - How many different types there is?
-
-    # In this list we have {x} types of digimon, they're Data,Vaccine,Virus and Free.
-
-    # How many digimon in each type there is:
-
-    # Data: {x} digimon
-    # Vaccine: {x} digimon
-    # Virus: {x} digimon
-    # Free: {x} digimon
-
-    # 4 - The weakest digimon is {name}, on {stage} stage, {type} type.
-
-    # 5 - The strongest digimon is {name}, on {stage} stage, {type} type.
 
     print(msg.format(**digimon_info))
 
@@ -717,7 +674,7 @@ def show_digimon_trivia(digimon_info: Dict[str, str], id_number: str) -> None:
 
 def show_battle_winner(battle_result: Dict[str, str], id_number: str) -> None:
     """
-    This function will show a message in the CLI.
+    This function will print a message in the CLI.
 
     Parameters
     ----------
@@ -730,9 +687,6 @@ def show_battle_winner(battle_result: Dict[str, str], id_number: str) -> None:
         The id provided by the user, in case its not provided
         it will be filled with 0.
 
-    Returns
-    -------
-        A message containing the results of the battle function.
     """
     datenow = datetime.now()
     battle_msg = (" " * 80) + "\n"
@@ -883,7 +837,7 @@ def show_info(
     process_monster: Dict[str, str], id_number: str, archive_type: str
 ) -> None:
     """
-    This function will show a message in the CLI.
+    This function will print a message in the CLI.
 
     Parameters
     ----------
@@ -895,10 +849,6 @@ def show_info(
         The id provided by the user, in case its not provided
         it will be filled with 0.
 
-    Returns
-    -------
-        A message containing some specific information about the
-        data provided.
     """
     datenow = datetime.now()
     msg = (" " * 80) + "\n"

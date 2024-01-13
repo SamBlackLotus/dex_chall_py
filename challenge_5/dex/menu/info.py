@@ -10,19 +10,19 @@ def process_info(
 
     Parameters
     ----------
-    process_poke1:
-
-    process_poke2:
-
-    pokemon_set_1:
-
-    pokemon_set_2:
-
+    process_monster1:
+        The player 1 list of monsters
+    process_monster2:
+        the player 2 list of monsters
+    monster_set_1:
+        The player 1 list converted in a set
+    monster_set_2:
+        The player 2 list converted in a set
     Returns
     -------
     AnswerTrivia:
         Returns the results for the asked validations and puts
-        then in variables so it can the called to be presented
+        then in variables so it can be called and presented
         to the user.
 
     """

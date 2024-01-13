@@ -3,8 +3,7 @@ from typing import List, Set, SupportsIndex, Dict
 
 def cast_to_set(file_set_1: Dict) -> Set:
     """
-    This function receives data in any python types
-    and turns into a set.
+    This function converts a list to a set.
 
     Parameters
     ----------
@@ -16,16 +15,15 @@ def cast_to_set(file_set_1: Dict) -> Set:
     pokemon_set:
         The data in a set type.
     """
-    pokemon_set: set = set()
-    for pokemon in file_set_1:
-        pokemon_set.add(pokemon["name"])
-    return pokemon_set
+    monster_set: set = set()
+    for monster in file_set_1:
+        monster_set.add(monster["name"])
+    return monster_set
 
 
 def cast_to_int(value: SupportsIndex) -> int:
     """
-    This function converts a list of strings to
-    integers.
+    This function converts a list to integers.
 
     Parameters
     ----------
@@ -41,8 +39,7 @@ def cast_to_int(value: SupportsIndex) -> int:
 
 def cast_to_bool(value: List[str]) -> bool:
     """
-    This function converts a list of strings
-    to bool.
+    This function converts a list to bool.
 
     Parameters
     ----------
@@ -58,17 +55,17 @@ def cast_to_bool(value: List[str]) -> bool:
 
 def cast_to_lower(value: List[str], monster_type: str) -> List[str]:
     """
-    This function converts a list of strings
-    to bool.
+    This function converts the list of variables
+    to lower case and put them in a patterned keynames.
 
     Parameters
     ----------
     Value:
-        The list of strings to be converted.
+        The list to be converted.
 
     Returns
     -------
-        The data as bool type.
+        The data in a lower case on a new dict.
     """
     change_dict = value
     new_dict = []
