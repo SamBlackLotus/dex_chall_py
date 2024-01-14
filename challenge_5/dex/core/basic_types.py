@@ -1,5 +1,3 @@
-# TODO: create nested data when is repeated to organize better
-# some structures, such as "name, points" - dataclass
 from typing import TypedDict, List, Dict
 
 
