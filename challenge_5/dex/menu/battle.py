@@ -3,7 +3,10 @@ from typing import Dict
 
 def select_mon_for_battle(player_1_battle: Dict[str, int], \
     player_2_battle: Dict[str, int]) -> core.AnswersBattle:
-    
+    # TODO: there is no need to say that you are going to store the data inside
+    # the variables, this is implicit
+    # TODO: Fix, AnswersBattle
+    # TODO: The three strongest monsters from the player_1_battle.
     """
         This function sorts and process the data, storing in
         variables the three strongest monsters in each list.
@@ -34,16 +37,28 @@ def select_mon_for_battle(player_1_battle: Dict[str, int], \
     )
     counter = 0
 
-    
     while counter <= 2:
         p1_mon.append(attack_sorted_p1[counter])
         p2_mon.append(attack_sorted_p2[counter])
         counter += 1
 
+    # for idx in range(3):
+    #     p1_mon.append(attack_sorted_p1[idx])
+    #     p2_mon.append(attack_sorted_p2[idx])
+
     return core.AnswersBattle(p1_player=p1_mon, p2_player=p2_mon)
 
 
 def mon_battle(start_battle: core.AnswersBattle) -> core.AnswersResult:
+    # TODO: start_battle seems like an action, it could be a name  for a function
+    # the args should describe the players characteristics, such as monsters or
+    # pokemon or digimon or player, etc.
+
+    # TODO: this function is hard to extend because imagine that now we want
+    # to have a battle with 5 monsters instead of 3, you would need to
+    # hardcode more 2 lines of each logic/comparison, it would be better
+    # to receive this information as an argument and loop throughout each
+    # player's team.
     
     """
         This function receives the list of the three 
@@ -63,7 +78,7 @@ def mon_battle(start_battle: core.AnswersBattle) -> core.AnswersResult:
         monsters, and information about the result
         of the battle.
 
-    """       
+    """
     
     while_counter = 0
 

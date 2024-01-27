@@ -17,9 +17,17 @@ For digimon the data will be under data/digimon. The battle logic will remain th
     - Data, ...
 ```
 
-In the info menu, instead of `Legendaries`, you will have `Ultimate`.
+In the digimon info menu, instead of `Legendaries`, you will have `Ultimate`.
+
+Both info and battle menu don't need to inform the monster type in the CLI, you need to infer from filepath or the file structure.
+
+```
+python dex/main.py --player1 ../data/pokemon/json/pokemons_1.json --player2 ../data/digimon/json/digimons_2.json --id 1 --info
+python dex/main.py --player1 ../data/pokemon/json/pokemons_1.json --player2 ../data/digimon/json/digimons_2.json --id 1 --battle
+```
 
 Your CLI will also change, first the name, `pokedex` now will turn into `dex`. Second, a new option will be added, to choose between pokemon or digimon, if no option is passed the default should be pokemon.
+
 
 ```
 python dex/main.py --pokemon --trivia ../data/pokemon/json/pokemons_1.json --id 1
@@ -143,6 +151,9 @@ Your directory tree should be looking like this now:
 - Configuration file: https://docs.python.org/3.9/distutils/configfile.html
 - venv: https://docs.python.org/3/library/venv.html#module-venv
 - black: https://black.readthedocs.io/en/stable/
+- packages versions syntax: https://pip.pypa.io/en/stable/reference/requirement-specifiers/#examples
+- dependencies resolution: https://pip.pypa.io/en/stable/topics/dependency-resolution/#dependency-resolution
+- semantic versioning: https://semver.org/
 
 ## Skills
 
@@ -155,11 +166,22 @@ Skills to unlock:
 
 ## Retrospective
 
+TODO:
+- Fix pokemon/digimon trivia, running json first and csv as second returns incorrect information, both should be similar.
+- OVERWRITE by default is not working.
+- Bug: KeyError: 'Type 1', from `python dex/main.py --pokemon --trivia ../data/pokemon/xml/pokemons_1.xml --id 1`.
+- Bug: AttributeError: 'list' object has no attribute 'items', from `python dex/main.py --digimon --trivia ../data/digimon/xml/digimons_1.xml --id 1`.
+- Fix 7Q on digimon trivia, it looks confusing.
+- Bug: When we run --info the player 2 data is coming from the player 1 data.
+- Battle is not working: `python dex/main.py --digimon --player1 ../data/pokemon/json/pokemons_1.json --player2 ../data/digimon/json/digimons_2.json --id 1 --battle`.
+
 The good:
-- TODO
+- Learn about the python basics for dependencies.
+- She discovered by herself about lambda and she found that it's very useful.
+- After a long holiday break we are back \o/.
 
 The bad:
-- TODO
+- Bugs.
 
 ## Dates
 

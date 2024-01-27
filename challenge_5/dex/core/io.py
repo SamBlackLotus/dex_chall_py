@@ -174,6 +174,8 @@ def show_pokemon_trivia(pokemons_info: Dict[str, str], id_number: str) -> None:
         it will be filled with 0.
 
     """
+    # TODO: now you can create your own types, such as break line with spaces, e.g.
+    # bl = (" " * 80) + "\n"
     datenow = datetime.now()
     msg = (" " * 80) + "\n"
     msg += "reported generated on: " + datenow.isoformat() + (" " * 31) + "\n"
@@ -275,8 +277,9 @@ def show_pokemon_trivia(pokemons_info: Dict[str, str], id_number: str) -> None:
 
 
 def show_digimon_trivia(digimon_info: Dict[str, str], id_number: str) -> None:
+    # TODO: adapt to monster instead of pokemon / digimon
     """
-    This function will print a message in the CLI.
+    This function will print a message about in the CLI.
 
     Parameters
     ----------

@@ -6,12 +6,15 @@ from typing import List, Dict, Set
 
 
 def main() -> None:
+    # TODO: this func does not receive any argument.
+    # TODO: systems remind the OS, replace the word to anything related to your app specifically.
     """
-    This function receive sys.argv from CLI and process it to calls
+    This function receive sys.argv from CLI and process it to call
     all the system functions.
 
     """
 
+    # TODO: there is no need to start all the variables here
     command_1: str
     command_2: str
     command_3: str

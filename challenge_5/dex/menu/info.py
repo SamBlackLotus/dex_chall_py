@@ -1,9 +1,12 @@
 import core
 from typing import Dict
 
+
+# TODO: try to not cross 120 col width
 def process_info(
     process_monster1: Dict[str, int], process_monster2: Dict[str, int], monster_set_1: Dict[str, int], monster_set_2: Dict[str, int], archive_type: str
 ) -> core.AnswersInfo:
+    # TODO: create a function for each question
     """
         This function will process some validations using data, to find
         some specific information and answer the given questions.

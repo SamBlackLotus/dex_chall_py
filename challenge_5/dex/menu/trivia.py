@@ -1,6 +1,8 @@
 import core
 from typing import Dict,Union
 
+
+# TODO: AnswerTrivia or Dict[str, str]
 def pokemon_trivia(pokemons_data: Dict[str, Union[str, int]]) -> Dict[str, str]:
     """
         This function will process some validations in a pokemon
@@ -82,6 +84,9 @@ def digimon_trivia(digimon_data: Dict[str, Union[str, int]]) -> Dict[str, str]:
         then in variables.
 
     """
+    # TODO: do not hardcode the stages / digimon types, try to find them
+    # in the files and use them as reference to count the strongest digimon
+    # for each stages / types
     highest_attack_trivia = {"index": 0, "value": 0}
     lowest_attack_trivia = {"index": 0, "value": 1000}
     baby_dict = []

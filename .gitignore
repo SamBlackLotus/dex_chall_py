@@ -12,3 +12,6 @@ __pycache__/
 
 # venvs
 venv*
+
+# editors
+.vscode
