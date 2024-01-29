@@ -7,10 +7,9 @@ from typing import List, Dict, Set
 
 def main() -> None:
     # TODO: this func does not receive any argument.
-    # TODO: systems remind the OS, replace the word to anything related to your app specifically.
     """
     This function receive sys.argv from CLI and process it to call
-    all the system functions.
+    all the application functions.
 
     """
 
@@ -22,7 +21,7 @@ def main() -> None:
     command_5: str
     filepath_1: str
     filepath_2: str
-    id_number: str = '0'
+    id_number: str = "0"
     data_arq1: List[Dict[str, int]] = []
     data_arq2: List[Dict[str, int]] = []
     dataset_1: Set[str]
@@ -43,13 +42,13 @@ def main() -> None:
             quit()
 
         command_2 = sys.argv[2]
-        
+
         if command_2 == "--trivia":
             if len(sys.argv) == 4:
                 filepath_1 = sys.argv[3]
                 if not os.path.exists(filepath_1):
                     print(f"WARNING: File {filepath_1} does not exist.")
-                    quit()    
+                    quit()
 
             elif len(sys.argv) == 6:
                 command_3 = sys.argv[4]
@@ -109,7 +108,7 @@ def main() -> None:
                 quit()
 
             command_4 = sys.argv[6]
-            command_5 = '0'
+            command_5 = "0"
 
             if command_4 == "--id":
                 if len(sys.argv) == 9:
@@ -153,7 +152,7 @@ def main() -> None:
         else:
             print(f"WARNING! Incorrect amount of arguments.\n{core.client_usage()}")
             quit()
-            
+
     elif command_1 == "--trivia":
         if len(sys.argv) == 3:
             filepath_1 = sys.argv[2]
@@ -209,7 +208,7 @@ def main() -> None:
             quit()
 
         command_3 = sys.argv[5]
-        command_4 = '0'
+        command_4 = "0"
 
         if command_3 == "--id":
             if len(sys.argv) == 8:

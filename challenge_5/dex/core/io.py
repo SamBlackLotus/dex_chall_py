@@ -3,13 +3,16 @@ from datetime import datetime
 from typing import Callable, Dict
 
 
+break_line = (" " * 80) + "\n"
+
+
 def client_helper() -> str:
     """
     This function prints the client helper in the CLI.
 
     Returns
     -------
-    pokemon_set:
+    helper_msg:
         The client helper message.
     """
 
@@ -49,18 +52,22 @@ def client_usage() -> str:
 
     Returns
     -------
-    pokemon_set:
+    client_usage_msg:
         The client usage message.
     """
     client_usage_msg: str = """
     CLI usage:
 
-    > python3 main.py --help
-    > python3 dex/main.py --player1 pokemons_1.json --trivia  --id 1
-    > python3 dex/main.py --pokemon --player1 pokemons_1.json --trivia  --id 1
-    > python3 dex/main.py --digimon --player1 pokemons_1.json --trivia  --id 1
-    > python3 dex/main.py --player1 pokemons_1.json --player2 pokemons_2.json --id 1 --info
-    > python3 dex/main.py --player1 pokemons_1.json --player2 pokemons_2.json --id 1 --battle
+    > python3 dex/main.py --help
+    > python3 dex/main.py --trivia ../data/pokemon/json/pokemons_1.json --id 1
+    > python3 dex/main.py --pokemon --trivia ../data/pokemon/json/pokemons_1.json --id 1
+    > python3 dex/main.py --digimon --trivia ../data/digimon/json/digimons_1.json --id 1
+    > python3 dex/main.py --player1 ../data/pokemon/json/pokemons_1.json --player2 ../data/pokemon/json/pokemons_2.json --id 1 --info
+    > python3 dex/main.py --player1 ../data/pokemon/json/pokemons_1.json --player2 ../data/pokemon/json/pokemons_2.json --id 1 --battle
+    > python3 dex/main.py --pokemon --player1 ../data/pokemon/json/pokemons_1.json --player2 ../data/pokemon/json/pokemons_2.json --id 1 --info
+    > python3 dex/main.py --pokemon --player1 ../data/pokemon/json/pokemons_1.json --player2 ../data/pokemon/json/pokemons_2.json --id 1 --battle
+    > python3 dex/main.py --digimon --player1 ../data/digimon/json/digimons_1.json --player2 ../data/digimon/json/digimons_2.json --id 1 --info
+    > python3 dex/main.py --digimon --player1 ../data/digimon/json/digimons_1.json --player2 ../data/digimon/json/digimons_2.json --id 1 --battle
 
     ATTENTION:
 
@@ -110,8 +117,8 @@ def client_usage() -> str:
     return client_usage_msg
 
 
-def save_data(
-    saved_data: Callable[[str], int], archive_type: str, id_number: str
+def data_saver(
+    data_to_be_saved: Callable[[str], int], archive_type: str, id_number: str
 ) -> None:
     """
     This function creates a .txt file that stores the generated
@@ -144,11 +151,11 @@ def save_data(
             print("File Overwritten successfully!")
 
             with open(f"{id_number}_{archive_type}.txt", "w") as target:
-                target.write(saved_data)
+                target.write(data_to_be_saved)
 
         elif user_choice.lower() == "a" or user_choice.lower() == "append":
             with open(f"{id_number}_{archive_type}.txt", "a") as target:
-                target.write(saved_data)
+                target.write(data_to_be_saved)
                 print("New entry added to the file successfully!")
         else:
             print(f"WARNING: Invalid Input.\n{client_usage()}")
@@ -156,7 +163,7 @@ def save_data(
 
     else:
         with open(f"{id_number}_{archive_type}.txt", "w") as target:
-            target.write(saved_data)
+            target.write(data_to_be_saved)
 
 
 def show_pokemon_trivia(pokemons_info: Dict[str, str], id_number: str) -> None:
@@ -175,15 +182,14 @@ def show_pokemon_trivia(pokemons_info: Dict[str, str], id_number: str) -> None:
 
     """
     # TODO: now you can create your own types, such as break line with spaces, e.g.
-    # bl = (" " * 80) + "\n"
     datenow = datetime.now()
-    msg = (" " * 80) + "\n"
+    msg = break_line
     msg += "reported generated on: " + datenow.isoformat() + (" " * 31) + "\n"
-    msg += (" " * 80) + "\n"
+    msg += break_line
     msg += ("=" * 29) + " Welcome to the Dex! " + ("=" * 30) + "\n"
-    msg += (" " * 80) + "\n"
+    msg += break_line
     msg += "Here we have some useful information gathered from the list you provided us:    \n"
-    msg += (" " * 80) + "\n"
+    msg += break_line
     msg += "1. How many pokemons there is in this list:" + (" " * 37) + "\n"
     msg += (
         (" " * 4)
@@ -193,7 +199,7 @@ def show_pokemon_trivia(pokemons_info: Dict[str, str], id_number: str) -> None:
         + (" " * (25 - len(pokemons_info["total_trivia"])))
         + "\n"
     )
-    msg += (" " * 80) + "\n"
+    msg += break_line
     msg += "2. The pokemon with the highest HP point is:" + (" " * 36) + "\n"
     msg += (
         (" " * 4)
@@ -211,7 +217,7 @@ def show_pokemon_trivia(pokemons_info: Dict[str, str], id_number: str) -> None:
         )
         + "\n"
     )
-    msg += (" " * 80) + "\n"
+    msg += break_line
     msg += "3. Which one has the strongest attack:" + (" " * 42) + "\n"
     msg += (
         (" " * 4)
@@ -229,7 +235,7 @@ def show_pokemon_trivia(pokemons_info: Dict[str, str], id_number: str) -> None:
         )
         + "\n"
     )
-    msg += (" " * 80) + "\n"
+    msg += break_line
     msg += "4. Which one has the strongest defense:" + (" " * 41) + "\n"
     msg += (
         (" " * 4)
@@ -247,7 +253,7 @@ def show_pokemon_trivia(pokemons_info: Dict[str, str], id_number: str) -> None:
         )
         + "\n"
     )
-    msg += (" " * 80) + "\n"
+    msg += break_line
     msg += "5. Which one is the fastest:" + (" " * 52) + "\n"
     msg += (
         (" " * 4)
@@ -265,15 +271,15 @@ def show_pokemon_trivia(pokemons_info: Dict[str, str], id_number: str) -> None:
         )
         + "\n"
     )
-    msg += (" " * 80) + "\n"
+    msg += break_line
     msg += "Thanks for using this Dex!" + (" " * 50) + "\n"
-    msg += (" " * 80) + "\n"
-    msg += ("=" * 80) + "\n"
-    msg += (" " * 80) + "\n"
+    msg += break_line
+    msg += break_line
+    msg += break_line
 
     print(msg.format(**pokemons_info))
 
-    save_data(msg, "pokemon-trivia", id_number)
+    data_saver(msg, "pokemon-trivia", id_number)
 
 
 def show_digimon_trivia(digimon_info: Dict[str, str], id_number: str) -> None:
@@ -294,13 +300,13 @@ def show_digimon_trivia(digimon_info: Dict[str, str], id_number: str) -> None:
     """
 
     datenow = datetime.now()
-    msg = (" " * 80) + "\n"
+    msg = break_line
     msg += "reported generated on: " + datenow.isoformat() + (" " * 31) + "\n"
-    msg += (" " * 80) + "\n"
+    msg += break_line
     msg += ("=" * 29) + " Welcome to the Dex! " + ("=" * 30) + "\n"
-    msg += (" " * 80) + "\n"
+    msg += break_line
     msg += "Here we have some useful information gathered from the list you provided us:    \n"
-    msg += (" " * 80) + "\n"
+    msg += break_line
     msg += "1. How many Digimon there is in this list:" + (" " * 37) + "\n"
     msg += (
         (" " * 4)
@@ -310,7 +316,7 @@ def show_digimon_trivia(digimon_info: Dict[str, str], id_number: str) -> None:
         + (" " * (25 - len(digimon_info["total_trivia"])))
         + "\n"
     )
-    msg += (" " * 80) + "\n"
+    msg += break_line
     msg += "2. How many different stages a digimon have?" + (" " * 42) + "\n"
     msg += (
         (" " * 4)
@@ -320,7 +326,7 @@ def show_digimon_trivia(digimon_info: Dict[str, str], id_number: str) -> None:
         + " ".join(digimon_info["digimon_stages"])
         + "\n"
     )
-    msg += (" " * 80) + "\n"
+    msg += break_line
     msg += "3. How many digimon in each stage there are?" + (" " * 36) + "\n"
     msg += (
         (" " * 4)
@@ -376,7 +382,7 @@ def show_digimon_trivia(digimon_info: Dict[str, str], id_number: str) -> None:
         + (" " * (59 - len(digimon_info["total_ultra"])))
         + "\n"
     )
-    msg += (" " * 80) + "\n"
+    msg += break_line
     msg += (
         "4. The strongest digimon in each stage based on the Atk attribute is:"
         + (" " * 11)
@@ -484,7 +490,7 @@ def show_digimon_trivia(digimon_info: Dict[str, str], id_number: str) -> None:
         )
         + "\n"
     )
-    msg += (" " * 80) + "\n"
+    msg += break_line
     msg += "5. How many different types there is?" + (" " * 42) + "\n"
     msg += (
         (" " * 4)
@@ -494,7 +500,7 @@ def show_digimon_trivia(digimon_info: Dict[str, str], id_number: str) -> None:
         + " ".join(digimon_info["digimon_types"])
         + "\n"
     )
-    msg += (" " * 80) + "\n"
+    msg += break_line
     msg += "6. How many digimon in each type there is:" + (" " * 42) + "\n"
     msg += (
         (" " * 4)
@@ -528,7 +534,7 @@ def show_digimon_trivia(digimon_info: Dict[str, str], id_number: str) -> None:
         + (" " * (68 - len(digimon_info["total_free"])))
         + "\n"
     )
-    msg += (" " * 80) + "\n"
+    msg += break_line
     msg += (
         "7. The strongest digimon in each stage based on the Atk attribute is:"
         + (" " * 11)
@@ -602,41 +608,7 @@ def show_digimon_trivia(digimon_info: Dict[str, str], id_number: str) -> None:
         )
         + "\n"
     )
-    msg += (
-        (" " * 4)
-        + "> "
-        + "Mega: "
-        + digimon_info["mega_strongest"]
-        + ", "
-        + digimon_info["mega_attack"]
-        + (
-            " "
-            * (
-                63
-                - len(digimon_info["mega_strongest"])
-                - len(digimon_info["mega_attack"])
-            )
-        )
-        + "\n"
-    )
-    msg += (
-        (" " * 4)
-        + "> "
-        + "Ultra: "
-        + digimon_info["ultra_strongest"]
-        + ", "
-        + digimon_info["ultra_attack"]
-        + (
-            " "
-            * (
-                64
-                - len(digimon_info["ultra_strongest"])
-                - len(digimon_info["ultra_attack"])
-            )
-        )
-        + "\n"
-    )
-    msg += (" " * 80) + "\n"
+    msg += break_line
     msg += "8. Which is the weakest digimon of all:" + (" " * 41) + "\n"
     msg += (
         (" " * 4)
@@ -650,7 +622,7 @@ def show_digimon_trivia(digimon_info: Dict[str, str], id_number: str) -> None:
         + " type."
         + "\n"
     )
-    msg += (" " * 80) + "\n"
+    msg += break_line
     msg += "9. Which is the strongest digimon of all:" + (" " * 39) + "\n"
     msg += (
         (" " * 4)
@@ -664,15 +636,15 @@ def show_digimon_trivia(digimon_info: Dict[str, str], id_number: str) -> None:
         + " type."
         + "\n"
     )
-    msg += (" " * 80) + "\n"
+    msg += break_line
     msg += "Thanks for using this Dex!" + (" " * 50) + "\n"
-    msg += (" " * 80) + "\n"
-    msg += ("=" * 80) + "\n"
-    msg += (" " * 80) + "\n"
+    msg += break_line
+    msg += break_line
+    msg += break_line
 
     print(msg.format(**digimon_info))
 
-    save_data(msg, "digimon-trivia", id_number)
+    data_saver(msg, "digimon-trivia", id_number)
 
 
 def show_battle_winner(battle_result: Dict[str, str], id_number: str) -> None:
@@ -692,11 +664,11 @@ def show_battle_winner(battle_result: Dict[str, str], id_number: str) -> None:
 
     """
     datenow = datetime.now()
-    battle_msg = (" " * 80) + "\n"
+    battle_msg = break_line
     battle_msg += "reported generated on: " + datenow.isoformat() + (" " * 31) + "\n"
-    battle_msg += (" " * 80) + "\n"
+    battle_msg += break_line
     battle_msg += "" + (("=" * 32) + " MONSTER BATTLE " + ("=" * 32) + "\n")
-    battle_msg += (" " * 80) + "\n"
+    battle_msg += break_line
     battle_msg += " " + ("-" * 78) + " \n"
     battle_msg += "|" + (" " * 35) + "PLAYER 1" + (" " * 35) + "|\n"
     battle_msg += " " + ("-" * 78) + " \n"
@@ -827,13 +799,13 @@ def show_battle_winner(battle_result: Dict[str, str], id_number: str) -> None:
         + "|\n"
     )
     battle_msg += " " + ("=" * 78) + " \n"
-    battle_msg += (" " * 80) + "\n"
-    battle_msg += ("=" * 80) + "\n"
-    battle_msg += (" " * 80) + "\n"
+    battle_msg += break_line
+    battle_msg += break_line
+    battle_msg += break_line
 
     print(battle_msg.format(**battle_result))
 
-    save_data(battle_msg, "battle", id_number)
+    data_saver(battle_msg, "battle", id_number)
 
 
 def show_info(
@@ -854,9 +826,9 @@ def show_info(
 
     """
     datenow = datetime.now()
-    msg = (" " * 80) + "\n"
+    msg = break_line
     msg += "reported generated on: " + datenow.isoformat() + (" " * 31) + "\n"
-    msg += (" " * 80) + "\n"
+    msg += break_line
 
     if archive_type == "--pokemon":
         msg += " " + (("=" * 32) + " POKEMON INFO " + ("=" * 32) + " \n")
@@ -976,8 +948,8 @@ def show_info(
         )
     msg += "|" + ("-" * 18) + "|" + ("-" * 59) + "|\n"
     msg += " " + (("=" * 78) + " \n")
-    msg += (" " * 80) + "\n"
+    msg += break_line
 
     print(msg.format(**process_monster))
 
-    save_data(msg, "info", id_number)
+    data_saver(msg, "info", id_number)

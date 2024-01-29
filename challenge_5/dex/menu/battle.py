@@ -1,8 +1,10 @@
 import core
 from typing import Dict
 
-def select_mon_for_battle(player_1_battle: Dict[str, int], \
-    player_2_battle: Dict[str, int]) -> core.AnswersBattle:
+
+def select_mon_for_battle(
+    player_1_battle: Dict[str, int], player_2_battle: Dict[str, int]
+) -> core.AnswersBattle:
     # TODO: there is no need to say that you are going to store the data inside
     # the variables, this is implicit
     # TODO: Fix, AnswersBattle
@@ -17,15 +19,15 @@ def select_mon_for_battle(player_1_battle: Dict[str, int], \
         The player 1 dict of monsters.
     player_2_battle:
         the player 2 dict of monsters.
-        
+
     Returns
     -------
     AnswerTrivia:
         p1_mon = The three strongest monsters from the dict.
         p2_mon = The three strongest monsters from the dict.
 
-    """    
-    
+    """
+
     p1_mon = []
     p2_mon = []
 
@@ -59,18 +61,18 @@ def mon_battle(start_battle: core.AnswersBattle) -> core.AnswersResult:
     # hardcode more 2 lines of each logic/comparison, it would be better
     # to receive this information as an argument and loop throughout each
     # player's team.
-    
+
     """
-        This function receives the list of the three 
-        strongest monsters of player 1 and 2, and 
-        simulate a battle between them to find the 
+        This function receives the list of the three
+        strongest monsters of player 1 and 2, and
+        simulate a battle between them to find the
         strongest team.
 
     Parameters
     ----------
     start_battle:
         Brings the two trios of monsters of each player.
-        
+
     Returns
     -------
     AnswerTrivia:
@@ -79,7 +81,7 @@ def mon_battle(start_battle: core.AnswersBattle) -> core.AnswersResult:
         of the battle.
 
     """
-    
+
     while_counter = 0
 
     p1_mon_1_hp = start_battle["p1_player"][0]["hp"]

@@ -4,7 +4,11 @@ from typing import Dict
 
 # TODO: try to not cross 120 col width
 def process_info(
-    process_monster1: Dict[str, int], process_monster2: Dict[str, int], monster_set_1: Dict[str, int], monster_set_2: Dict[str, int], archive_type: str
+    process_monster1: Dict[str, int],
+    process_monster2: Dict[str, int],
+    monster_set_1: Dict[str, int],
+    monster_set_2: Dict[str, int],
+    archive_type: str,
 ) -> core.AnswersInfo:
     # TODO: create a function for each question
     """
@@ -79,12 +83,12 @@ def process_info(
                 total_stg_or_legend_player2 += 1
 
     return core.AnswersInfo(
-        player1_total_monster_info= str(player1_total_monster),
-        player2_total_monster_info= str(player2_total_monster),
-        strongest_monster_player1_info= strongest_monster_player1["name"],
-        strongest_monster_player2_info= strongest_monster_player2["name"],
-        stg_or_legend_player1_info= str(total_stg_or_legend_player1),
-        stg_or_legend_player2_info= str(total_stg_or_legend_player2),
-        repeated_monster_info= str(len(intersec_monster)),
-        different_monster_info= str(len(diff_monster)),
+        player1_total_monster_info=str(player1_total_monster),
+        player2_total_monster_info=str(player2_total_monster),
+        strongest_monster_player1_info=strongest_monster_player1["name"],
+        strongest_monster_player2_info=strongest_monster_player2["name"],
+        stg_or_legend_player1_info=str(total_stg_or_legend_player1),
+        stg_or_legend_player2_info=str(total_stg_or_legend_player2),
+        repeated_monster_info=str(len(intersec_monster)),
+        different_monster_info=str(len(diff_monster)),
     )

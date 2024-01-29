@@ -11,7 +11,8 @@ class AnswersPokemonTrivia(TypedDict):
     def_trivia_points: int
     spd_trivia_name: str
     spd_trivia_points: int
-    
+
+
 class AnswersDigimonTrivia(TypedDict):
     total_trivia: int
     highest_atk_name: int
@@ -98,10 +99,5 @@ class AnswersResult(TypedDict):
     p2_mon_2_dfs: str
     p2_mon_3_dfs: str
     winner: str
-    rounds: str    
+    rounds: str
     loser_monster: str
-
-
-
-
-
