@@ -92,5 +92,5 @@ def process_info(
         stg_or_legend_player1_info=str(total_stg_or_legend_player1),
         stg_or_legend_player2_info=str(total_stg_or_legend_player2),
         repeated_monster_info=str(len(intersec_monster)),
-        different_monster_info=str(len(diff_monster)),
+        different_monster_info=str(len(diff_monster))
     )

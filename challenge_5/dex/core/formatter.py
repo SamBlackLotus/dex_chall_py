@@ -89,7 +89,7 @@ def cast_to_lower(value: List[str], monster_type: str) -> List[str]:
                     spdef=key["Sp. Def"],
                     speed=key["Speed"],
                     generation=key["Generation"],
-                    legendary=key["Legendary"],
+                    legendary=key["Legendary"]
                 )
             ]
     elif monster_type == "--digimon":
@@ -109,7 +109,7 @@ def cast_to_lower(value: List[str], monster_type: str) -> List[str]:
                     defense=key["Def"],
                     intelligence=key["Int"],
                     speed=key["Spd"],
-                    image=key["Image link"],
+                    image=key["Image link"]
                 )
             ]
 
