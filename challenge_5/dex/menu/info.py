@@ -7,8 +7,7 @@ def process_info(
     process_monster1: Dict[str, int],
     process_monster2: Dict[str, int],
     monster_set_1: Dict[str, int],
-    monster_set_2: Dict[str, int],
-    archive_type: str,
+    monster_set_2: Dict[str, int]
 ) -> core.AnswersInfo:
     # TODO: create a function for each question
     """

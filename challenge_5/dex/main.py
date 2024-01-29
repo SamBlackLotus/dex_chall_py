@@ -178,11 +178,19 @@ def main() -> None:
             print(f"WARNING! Incorrect amount of arguments.\n{core.client_usage()}")
             quit()
 
-        data_arq1 = core.read_file(filepath_1, "--pokemon")
-        data_1 = core.cast_to_lower(data_arq1, "--pokemon")
-        info = menu.pokemon_trivia(data_1)
-        core.show_pokemon_trivia(info, id_number)
-        quit()
+        data_arq1 = core.read_file(filepath_1)
+        
+        if "pokemon" in filepath_1:
+            data_1 = core.cast_to_lower(data_arq1, "pokemon")
+            info = menu.pokemon_trivia(data_1)
+            core.show_pokemon_trivia(info, id_number)
+            quit()
+
+        elif "digimon" in filepath_1:
+            data_1 = core.cast_to_lower(data_arq1, "digimon")
+            info = menu.digimon_trivia(data_1)
+            core.show_digimon_trivia(info, id_number)
+            quit()
 
     elif command_1 == "--player1":
         if len(sys.argv) <= 5:
@@ -223,16 +231,16 @@ def main() -> None:
             print(f"WARNING: This command does not exist.\n{core.client_usage()}")
             quit()
 
-        data_arq1 = core.read_file(filepath_1, "--pokemon")
-        data_arq2 = core.read_file(filepath_2, "--pokemon")
-        data_1 = core.cast_to_lower(data_arq1, "--pokemon")
-        data_2 = core.cast_to_lower(data_arq2, "--pokemon")
+        data_arq1 = core.read_file(filepath_1)
+        data_arq2 = core.read_file(filepath_2)
+        data_1 = core.cast_to_lower(data_arq1)
+        data_2 = core.cast_to_lower(data_arq2)
 
         if command_3 == "--info" or command_4 == "--info":
             dataset_1 = core.cast_to_set(data_1)
             dataset_2 = core.cast_to_set(data_2)
-            info = menu.process_info(data_1, data_2, dataset_1, dataset_2, "--pokemon")
-            core.show_info(info, id_number, "--pokemon")
+            info = menu.process_info(data_1, data_2, dataset_1, dataset_2)
+            core.show_info(info, id_number)
             quit()
         elif command_3 == "--battle" or command_4 == "--battle":
             battle = menu.select_mon_for_battle(data_1, data_2)

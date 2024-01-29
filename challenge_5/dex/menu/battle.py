@@ -7,8 +7,6 @@ def select_mon_for_battle(
 ) -> core.AnswersBattle:
     # TODO: there is no need to say that you are going to store the data inside
     # the variables, this is implicit
-    # TODO: Fix, AnswersBattle
-    # TODO: The three strongest monsters from the player_1_battle.
     """
         This function sorts and process the data, storing in
         variables the three strongest monsters in each list.
@@ -22,9 +20,9 @@ def select_mon_for_battle(
 
     Returns
     -------
-    AnswerTrivia:
-        p1_mon = The three strongest monsters from the dict.
-        p2_mon = The three strongest monsters from the dict.
+    AnswerBattle:
+        p1_mon = The three strongest monsters from player_1_battle.
+        p2_mon = The three strongest monsters from player_2_battle.
 
     """
 

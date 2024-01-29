@@ -56,18 +56,23 @@ def client_usage() -> str:
         The client usage message.
     """
     client_usage_msg: str = """
-    CLI usage:
-
+    CLI usage examples:
+    
+    HELPER
     > python3 dex/main.py --help
+    
+    TRIVIA
     > python3 dex/main.py --trivia ../data/pokemon/json/pokemons_1.json --id 1
-    > python3 dex/main.py --pokemon --trivia ../data/pokemon/json/pokemons_1.json --id 1
-    > python3 dex/main.py --digimon --trivia ../data/digimon/json/digimons_1.json --id 1
+    > python3 dex/main.py --trivia ../data/digimon/json/digimons_1.json --id 1
+    
+    INFO
     > python3 dex/main.py --player1 ../data/pokemon/json/pokemons_1.json --player2 ../data/pokemon/json/pokemons_2.json --id 1 --info
+    > python3 dex/main.py --player1 ../data/digimon/json/digimons_1.json --player2 ../data/digimon/json/digimons_2.json --id 1 --info
+    
+    BATTLE
     > python3 dex/main.py --player1 ../data/pokemon/json/pokemons_1.json --player2 ../data/pokemon/json/pokemons_2.json --id 1 --battle
-    > python3 dex/main.py --pokemon --player1 ../data/pokemon/json/pokemons_1.json --player2 ../data/pokemon/json/pokemons_2.json --id 1 --info
-    > python3 dex/main.py --pokemon --player1 ../data/pokemon/json/pokemons_1.json --player2 ../data/pokemon/json/pokemons_2.json --id 1 --battle
-    > python3 dex/main.py --digimon --player1 ../data/digimon/json/digimons_1.json --player2 ../data/digimon/json/digimons_2.json --id 1 --info
-    > python3 dex/main.py --digimon --player1 ../data/digimon/json/digimons_1.json --player2 ../data/digimon/json/digimons_2.json --id 1 --battle
+    > python3 dex/main.py --player1 ../data/pokemon/json/pokemons_1.json --player2 ../data/pokemon/json/digimons_2.json --id 1 --battle
+    > python3 dex/main.py --player1 ../data/digimon/json/digimons_1.json --player2 ../data/digimon/json/digimons_2.json --id 1 --battle
 
     ATTENTION:
 
@@ -118,7 +123,7 @@ def client_usage() -> str:
 
 
 def data_saver(
-    data_to_be_saved: Callable[[str], int], archive_type: str, id_number: str
+    data_to_be_saved: Callable[[str], int],monster_type: str, id_number: str,
 ) -> None:
     """
     This function creates a .txt file that stores the generated
@@ -139,22 +144,22 @@ def data_saver(
 
     """
 
-    if os.path.exists(f"{id_number}_{archive_type}.txt"):
+    if os.path.exists(f"{id_number}_{monster_type}.txt"):
         user_choice: str = input(
-            f"File {id_number}_{archive_type}.txt already exists, "
+            f"File {id_number}_{monster_type}.txt already exists, "
             + "what do you prefer to do? [append|OVERWRITE] : "
         )
 
         if user_choice.lower() == "o" or user_choice.lower() == "overwrite" or user_choice == "":
-            os.remove(f"{id_number}_{archive_type}.txt")
+            os.remove(f"{id_number}_{monster_type}.txt")
 
             print("File Overwritten successfully!")
 
-            with open(f"{id_number}_{archive_type}.txt", "w") as target:
+            with open(f"{id_number}_{monster_type}.txt", "w") as target:
                 target.write(data_to_be_saved)
 
         elif user_choice.lower() == "a" or user_choice.lower() == "append":
-            with open(f"{id_number}_{archive_type}.txt", "a") as target:
+            with open(f"{id_number}_{monster_type}.txt", "a") as target:
                 target.write(data_to_be_saved)
                 print("New entry added to the file successfully!")
         else:
@@ -163,7 +168,7 @@ def data_saver(
             quit()
 
     else:
-        with open(f"{id_number}_{archive_type}.txt", "w") as target:
+        with open(f"{id_number}_{monster_type}.txt", "w") as target:
             target.write(data_to_be_saved)
 
 
@@ -537,7 +542,7 @@ def show_digimon_trivia(digimon_info: Dict[str, str], id_number: str) -> None:
     )
     msg += break_line
     msg += (
-        "7. The strongest digimon in each stage based on the Atk attribute is:"
+        "7. The strongest digimon in each type based on the Atk attribute is:"
         + (" " * 11)
         + "\n"
     )
@@ -808,8 +813,7 @@ def show_battle_winner(battle_result: Dict[str, str], id_number: str) -> None:
 
 
 def show_info(
-    process_monster: Dict[str, str], id_number: str, archive_type: str
-) -> None:
+    process_monster: Dict[str, str], id_number: str) -> None:
     """
     This function will print a message in the CLI.
 

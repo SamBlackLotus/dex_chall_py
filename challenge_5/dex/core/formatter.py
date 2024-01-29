@@ -73,7 +73,7 @@ def cast_to_lower(value: List[str], monster_type: str) -> List[str]:
     change_dict = value
     new_dict = []
 
-    if monster_type == "--pokemon":
+    if monster_type == "pokemon":
         for key in change_dict:
             new_dict += [
                 dict(
@@ -92,7 +92,7 @@ def cast_to_lower(value: List[str], monster_type: str) -> List[str]:
                     legendary=key["Legendary"]
                 )
             ]
-    elif monster_type == "--digimon":
+    elif monster_type == "digimon":
         for key in change_dict:
             new_dict += [
                 dict(
