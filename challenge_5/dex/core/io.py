@@ -145,7 +145,7 @@ def data_saver(
             + "what do you prefer to do? [append|OVERWRITE] : "
         )
 
-        if user_choice.lower() == "o" or user_choice.lower() == "overwrite":
+        if user_choice.lower() == "o" or user_choice.lower() == "overwrite" or user_choice == "":
             os.remove(f"{id_number}_{archive_type}.txt")
 
             print("File Overwritten successfully!")
@@ -158,6 +158,7 @@ def data_saver(
                 target.write(data_to_be_saved)
                 print("New entry added to the file successfully!")
         else:
+            print(user_choice)
             print(f"WARNING: Invalid Input.\n{client_usage()}")
             quit()
 
@@ -317,7 +318,7 @@ def show_digimon_trivia(digimon_info: Dict[str, str], id_number: str) -> None:
         + "\n"
     )
     msg += break_line
-    msg += "2. How many different stages a digimon have?" + (" " * 42) + "\n"
+    msg += "2. How many different stages a digimon have?" + (" " * 36) + "\n"
     msg += (
         (" " * 4)
         + "> In this list we have "
@@ -491,7 +492,7 @@ def show_digimon_trivia(digimon_info: Dict[str, str], id_number: str) -> None:
         + "\n"
     )
     msg += break_line
-    msg += "5. How many different types there is?" + (" " * 42) + "\n"
+    msg += "5. How many different types of digimon there is?" + (" " * 32) + "\n"
     msg += (
         (" " * 4)
         + "> In this list we have "
@@ -501,7 +502,7 @@ def show_digimon_trivia(digimon_info: Dict[str, str], id_number: str) -> None:
         + "\n"
     )
     msg += break_line
-    msg += "6. How many digimon in each type there is:" + (" " * 42) + "\n"
+    msg += "6. How many digimon in each type there is:" + (" " * 38) + "\n"
     msg += (
         (" " * 4)
         + "> "
@@ -609,11 +610,10 @@ def show_digimon_trivia(digimon_info: Dict[str, str], id_number: str) -> None:
         + "\n"
     )
     msg += break_line
-    msg += "8. Which is the weakest digimon of all:" + (" " * 41) + "\n"
+    msg += "8. Which is the weakest digimon of all, based on the Atk attribute is:" + (" " * 10) + "\n"
     msg += (
         (" " * 4)
         + "> "
-        + "The weakest digimon is "
         + digimon_info["lowest_atk_name"]
         + ", on "
         + digimon_info["lowest_atk_stage"]
@@ -623,11 +623,10 @@ def show_digimon_trivia(digimon_info: Dict[str, str], id_number: str) -> None:
         + "\n"
     )
     msg += break_line
-    msg += "9. Which is the strongest digimon of all:" + (" " * 39) + "\n"
+    msg += "9. Which is the strongest digimon of all, based on the Atk attribute is:" + (" " * 8) + "\n"
     msg += (
         (" " * 4)
         + "> "
-        + "The strongest digimon is "
         + digimon_info["highest_atk_name"]
         + ", on "
         + digimon_info["highest_atk_stage"]
@@ -784,7 +783,7 @@ def show_battle_winner(battle_result: Dict[str, str], id_number: str) -> None:
     battle_msg += "|" + (" " * 34) + "--Rounds--" + (" " * 34) + "|\n"
     battle_msg += (
         "|"
-        + (" " * (39 - (len(str(battle_result["rounds"])) // 2)))
+        + (" " * (38 - (len(str(battle_result["rounds"])) // 2)))
         + str(battle_result["rounds"])
         + (" " * (39 - (len(str(battle_result["rounds"])) // 2)))
         + "|\n"
@@ -850,7 +849,7 @@ def show_info(
             + (" " * (28 - len(process_monster["player1_total_monster_info"])))
             + "| "
             + process_monster["player2_total_monster_info"]
-            + (" " * (28 - len(process_monster["player1_total_monster_info"])))
+            + (" " * (28 - len(process_monster["player2_total_monster_info"])))
             + "|\n"
         )
         msg += (
@@ -908,7 +907,7 @@ def show_info(
             + (" " * (28 - len(process_monster["player1_total_monster_info"])))
             + "| "
             + process_monster["player2_total_monster_info"]
-            + (" " * (28 - len(process_monster["player1_total_monster_info"])))
+            + (" " * (28 - len(process_monster["player2_total_monster_info"])))
             + "|\n"
         )
         msg += (

@@ -41,6 +41,7 @@ def process_info(
     intersec_monster = monster_set_1.intersection(monster_set_2)
     diff_monster = monster_set_1.difference(monster_set_2)
     monster_dict = []
+    monster_dict2 = []
 
     for index, monster in enumerate(process_monster1):
         player1_total_monster = len(process_monster1)
@@ -64,15 +65,15 @@ def process_info(
 
     for index, monster in enumerate(process_monster2):
         player2_total_monster = len(process_monster2)
-        monster_dict += [
+        monster_dict2 += [
             {key_list: value_list for key_list, value_list in monster.items()}
         ]
 
-        if monster_dict:
-            monster_attack = sorted(
-                monster_dict, key=lambda highest: highest["attack"], reverse=True
+        if monster_dict2:
+            monster_attack2 = sorted(
+                monster_dict2, key=lambda highest: highest["attack"], reverse=True
             )
-            strongest_monster_player2 = monster_attack[0]
+            strongest_monster_player2 = monster_attack2[0]
 
         if archive_type == "--pokemon":
             if core.cast_to_bool(monster["legendary"]):
@@ -81,7 +82,8 @@ def process_info(
         elif archive_type == "--digimon":
             if monster["stage"] == "Ultra":
                 total_stg_or_legend_player2 += 1
-
+    print(strongest_monster_player2)
+    print(strongest_monster_player1)
     return core.AnswersInfo(
         player1_total_monster_info=str(player1_total_monster),
         player2_total_monster_info=str(player2_total_monster),
