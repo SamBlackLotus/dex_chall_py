@@ -7,7 +7,9 @@ def process_info(
     process_monster1: Dict[str, int],
     process_monster2: Dict[str, int],
     monster_set_1: Dict[str, int],
-    monster_set_2: Dict[str, int]
+    monster_set_2: Dict[str, int],
+    monster_type1: str,
+    monster_type2: str
 ) -> core.AnswersInfo:
     # TODO: create a function for each question
     """
@@ -54,11 +56,11 @@ def process_info(
             )
             strongest_monster_player1 = monster_attack[0]
 
-        if archive_type == "--pokemon":
+        if monster_type1 == "pokemon":
             if core.cast_to_bool(monster["legendary"]):
                 total_stg_or_legend_player1 += 1
 
-        elif archive_type == "--digimon":
+        elif monster_type1 == "digimon":
             if monster["stage"] == "Ultra":
                 total_stg_or_legend_player1 += 1
 
@@ -74,11 +76,11 @@ def process_info(
             )
             strongest_monster_player2 = monster_attack2[0]
 
-        if archive_type == "--pokemon":
+        if monster_type2 == "pokemon":
             if core.cast_to_bool(monster["legendary"]):
                 total_stg_or_legend_player2 += 1
 
-        elif archive_type == "--digimon":
+        elif monster_type2 == "digimon":
             if monster["stage"] == "Ultra":
                 total_stg_or_legend_player2 += 1
     print(strongest_monster_player2)

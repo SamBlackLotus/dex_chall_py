@@ -18,7 +18,6 @@ def main() -> None:
     command_2: str
     command_3: str
     command_4: str
-    command_5: str
     filepath_1: str
     filepath_2: str
     id_number: str = "0"
@@ -35,116 +34,7 @@ def main() -> None:
         quit()
 
     command_1 = sys.argv[1]
-
-    if command_1 == "--pokemon" or command_1 == "--digimon":
-        if len(sys.argv) == 2:
-            print(f"WARNING! Incorrect amount of arguments.\n{core.client_usage()}")
-            quit()
-
-        command_2 = sys.argv[2]
-
-        if command_2 == "--trivia":
-            if len(sys.argv) == 4:
-                filepath_1 = sys.argv[3]
-                if not os.path.exists(filepath_1):
-                    print(f"WARNING: File {filepath_1} does not exist.")
-                    quit()
-
-            elif len(sys.argv) == 6:
-                command_3 = sys.argv[4]
-                if command_3 == "--id":
-                    id_number = sys.argv[5]
-
-                else:
-                    print(
-                        f"WARNING: This command does not exist.\n{core.client_usage()}"
-                    )
-                    quit()
-
-                filepath_1 = sys.argv[3]
-                if not os.path.exists(filepath_1):
-                    print(f"WARNING: File {filepath_1} does not exist.")
-                    quit()
-
-            else:
-                print(f"WARNING! Incorrect amount of arguments.\n{core.client_usage()}")
-                quit()
-
-            data_arq1 = core.read_file(filepath_1, command_1)
-
-            if command_1 == "--pokemon":
-                data_1 = core.cast_to_lower(data_arq1, command_1)
-                info = menu.pokemon_trivia(data_1)
-                core.show_pokemon_trivia(info, id_number)
-                quit()
-
-            elif command_1 == "--digimon":
-                data_1 = core.cast_to_lower(data_arq1, command_1)
-                info = menu.digimon_trivia(data_1)
-                core.show_digimon_trivia(info, id_number)
-                quit()
-
-        elif command_2 == "--player1":
-            if len(sys.argv) <= 6:
-                print(f"WARNING! Incorrect amount of arguments.\n{core.client_usage()}")
-                quit()
-
-            filepath_1 = sys.argv[3]
-            if not os.path.exists(filepath_1):
-                print(f"WARNING: File {filepath_1} does not exist.")
-                quit()
-
-            command_3 = sys.argv[4]
-
-            if command_3 == "--player2":
-                if len(sys.argv) >= 7:
-                    filepath_2 = sys.argv[5]
-                    if not os.path.exists(filepath_2):
-                        print(f"WARNING: File {filepath_2} does not exist.")
-                        quit()
-
-            else:
-                print(f"WARNING: This command does not exist.\n{core.client_usage()}")
-                quit()
-
-            command_4 = sys.argv[6]
-            command_5 = "0"
-
-            if command_4 == "--id":
-                if len(sys.argv) == 9:
-                    id_number = sys.argv[7]
-                    command_5 = sys.argv[8]
-
-                else:
-                    print(
-                        f"WARNING! Incorrect amount of arguments.\n{core.client_usage()}"
-                    )
-                    quit()
-
-            elif command_4 != "--info" or command_4 != "--battle":
-                print(f"WARNING: This command does not exist.\n{core.client_usage()}")
-                quit()
-
-            data_arq1 = core.read_file(filepath_1, command_1)
-            data_arq2 = core.read_file(filepath_2, command_1)
-            data_1 = core.cast_to_lower(data_arq1, command_1)
-            data_2 = core.cast_to_lower(data_arq2, command_1)
-
-            if command_4 == "--info" or command_5 == "--info":
-                dataset_1 = core.cast_to_set(data_1)
-                dataset_2 = core.cast_to_set(data_2)
-                info = menu.process_info(
-                    data_1, data_2, dataset_1, dataset_2, command_1
-                )
-                core.show_info(info, id_number, command_1)
-                quit()
-            elif command_4 == "--battle" or command_5 == "--battle":
-                battle = menu.select_mon_for_battle(data_1, data_2)
-                result = menu.mon_battle(battle)
-                core.show_battle_winner(result, id_number)
-                quit()
-
-    elif command_1 == "--help":
+    if command_1 == "--help":
         if len(sys.argv) == 2:
             print(core.client_helper())
             quit()
@@ -179,7 +69,6 @@ def main() -> None:
             quit()
 
         data_arq1 = core.read_file(filepath_1)
-        
         if "pokemon" in filepath_1:
             data_1 = core.cast_to_lower(data_arq1, "pokemon")
             info = menu.pokemon_trivia(data_1)
@@ -231,16 +120,31 @@ def main() -> None:
             print(f"WARNING: This command does not exist.\n{core.client_usage()}")
             quit()
 
+        if "pokemon" in filepath_1:
+            monster_type1 = "pokemon"
+            if "pokemon" in filepath_2:
+                monster_type2 = "pokemon"
+            elif "digimon" in filepath_2:
+                print(f"WARNING: Different type of monsters.\n{core.client_usage()}")
+                quit()
+        elif "digimon" in filepath_1:
+            monster_type1 = "digimon"
+            if "pokemon" in filepath_2:
+                print(f"WARNING: Different type of monsters.\n{core.client_usage()}")
+                quit()
+            elif "digimon" in filepath_2:
+                monster_type2 = "digimon"
+
         data_arq1 = core.read_file(filepath_1)
         data_arq2 = core.read_file(filepath_2)
-        data_1 = core.cast_to_lower(data_arq1)
-        data_2 = core.cast_to_lower(data_arq2)
+        data_1 = core.cast_to_lower(data_arq1, monster_type1)
+        data_2 = core.cast_to_lower(data_arq2, monster_type2)
 
         if command_3 == "--info" or command_4 == "--info":
             dataset_1 = core.cast_to_set(data_1)
             dataset_2 = core.cast_to_set(data_2)
-            info = menu.process_info(data_1, data_2, dataset_1, dataset_2)
-            core.show_info(info, id_number)
+            info = menu.process_info(data_1, data_2, dataset_1, dataset_2, monster_type1, monster_type2)
+            core.show_info(info, id_number, monster_type1)
             quit()
         elif command_3 == "--battle" or command_4 == "--battle":
             battle = menu.select_mon_for_battle(data_1, data_2)

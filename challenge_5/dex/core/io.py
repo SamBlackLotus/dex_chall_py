@@ -812,8 +812,7 @@ def show_battle_winner(battle_result: Dict[str, str], id_number: str) -> None:
     data_saver(battle_msg, "battle", id_number)
 
 
-def show_info(
-    process_monster: Dict[str, str], id_number: str) -> None:
+def show_info(process_monster: Dict[str, str], id_number: str, monster_type1: str) -> None:
     """
     This function will print a message in the CLI.
 
@@ -833,7 +832,7 @@ def show_info(
     msg += "reported generated on: " + datenow.isoformat() + (" " * 31) + "\n"
     msg += break_line
 
-    if archive_type == "--pokemon":
+    if monster_type1 == "pokemon":
         msg += " " + (("=" * 32) + " POKEMON INFO " + ("=" * 32) + " \n")
         msg += (
             "|"
@@ -891,7 +890,7 @@ def show_info(
             + (" " * (58 - len(process_monster["different_monster_info"])))
             + "|\n"
         )
-    elif archive_type == "--digimon":
+    elif monster_type1 == "digimon":
         msg += " " + (("=" * 32) + " DIGIMON INFO " + ("=" * 32) + " \n")
         msg += (
             "|"
