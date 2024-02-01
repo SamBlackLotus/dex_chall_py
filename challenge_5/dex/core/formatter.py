@@ -1,10 +1,9 @@
-from typing import List, Set, SupportsIndex, Dict
+from typing import List, Set, Union, Dict, SupportsIndex
 
-# TODO: use just formatter.py instead of caster.py
 # TODO: Set is missing the internal data types
 
 
-def cast_to_set(file_set_1: Dict) -> Set:
+def cast_to_set(file_set_1: Dict) -> Set[Dict[str, Union[str, int]]]:
     """
     This function converts a list to a set.
 

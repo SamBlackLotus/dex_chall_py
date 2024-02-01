@@ -2,14 +2,11 @@ import core
 from typing import Dict
 
 
-def select_mon_for_battle(
+def select_battle_team(
     player_1_battle: Dict[str, int], player_2_battle: Dict[str, int]
 ) -> core.AnswersBattle:
-    # TODO: there is no need to say that you are going to store the data inside
-    # the variables, this is implicit
     """
-        This function sorts and process the data, storing in
-        variables the three strongest monsters in each list.
+        This function defines the player teams.
 
     Parameters
     ----------
@@ -21,13 +18,13 @@ def select_mon_for_battle(
     Returns
     -------
     AnswerBattle:
-        p1_mon = The three strongest monsters from player_1_battle.
-        p2_mon = The three strongest monsters from player_2_battle.
+        team_player1 = The three strongest monsters from player_1_battle.
+        team_player2 = The three strongest monsters from player_2_battle.
 
     """
 
-    p1_mon = []
-    p2_mon = []
+    team_player1 = []
+    team_player2 = []
 
     attack_sorted_p1 = sorted(
         player_1_battle, key=lambda strongest_mon: strongest_mon["attack"], reverse=True
@@ -35,21 +32,15 @@ def select_mon_for_battle(
     attack_sorted_p2 = sorted(
         player_2_battle, key=lambda strongest_mon: strongest_mon["attack"], reverse=True
     )
-    counter = 0
+    
+    for idx in range(3):
+        team_player1.append(attack_sorted_p1[idx])
+        team_player2.append(attack_sorted_p2[idx])
 
-    while counter <= 2:
-        p1_mon.append(attack_sorted_p1[counter])
-        p2_mon.append(attack_sorted_p2[counter])
-        counter += 1
-
-    # for idx in range(3):
-    #     p1_mon.append(attack_sorted_p1[idx])
-    #     p2_mon.append(attack_sorted_p2[idx])
-
-    return core.AnswersBattle(p1_player=p1_mon, p2_player=p2_mon)
+    return core.AnswersBattle(p1_player=team_player1, p2_player=team_player2)
 
 
-def mon_battle(start_battle: core.AnswersBattle) -> core.AnswersResult:
+def start_battle(team_player1, team_player2: core.AnswersBattle) -> core.AnswersResult:
     # TODO: start_battle seems like an action, it could be a name  for a function
     # the args should describe the players characteristics, such as monsters or
     # pokemon or digimon or player, etc.

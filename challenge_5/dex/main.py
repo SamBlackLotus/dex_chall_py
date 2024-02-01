@@ -2,32 +2,9 @@ import core
 import menu
 import sys
 import os
-from typing import List, Dict, Set
 
 
 def main() -> None:
-    # TODO: this func does not receive any argument.
-    """
-    This function receive sys.argv from CLI and process it to call
-    all the application functions.
-
-    """
-
-    # TODO: there is no need to start all the variables here
-    command_1: str
-    command_2: str
-    command_3: str
-    command_4: str
-    filepath_1: str
-    filepath_2: str
-    id_number: str = "0"
-    data_arq1: List[Dict[str, int]] = []
-    data_arq2: List[Dict[str, int]] = []
-    dataset_1: Set[str]
-    dataset_2: Set[str]
-    battle: Dict[str, int] = []
-    result: Dict[str, int] = []
-    info: Dict[str, int] = []
 
     if len(sys.argv) == 1:
         print(core.client_usage())

@@ -83,8 +83,7 @@ def process_info(
         elif monster_type2 == "digimon":
             if monster["stage"] == "Ultra":
                 total_stg_or_legend_player2 += 1
-    print(strongest_monster_player2)
-    print(strongest_monster_player1)
+
     return core.AnswersInfo(
         player1_total_monster_info=str(player1_total_monster),
         player2_total_monster_info=str(player2_total_monster),

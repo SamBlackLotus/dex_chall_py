@@ -3,7 +3,7 @@ from datetime import datetime
 from typing import Callable, Dict
 
 
-break_line = (" " * 80) + "\n"
+break_line: str = (" " * 80) + "\n"
 
 
 def client_helper() -> str:
@@ -71,7 +71,6 @@ def client_usage() -> str:
     
     BATTLE
     > python3 dex/main.py --player1 ../data/pokemon/json/pokemons_1.json --player2 ../data/pokemon/json/pokemons_2.json --id 1 --battle
-    > python3 dex/main.py --player1 ../data/pokemon/json/pokemons_1.json --player2 ../data/pokemon/json/digimons_2.json --id 1 --battle
     > python3 dex/main.py --player1 ../data/digimon/json/digimons_1.json --player2 ../data/digimon/json/digimons_2.json --id 1 --battle
 
     ATTENTION:
@@ -187,7 +186,6 @@ def show_pokemon_trivia(pokemons_info: Dict[str, str], id_number: str) -> None:
         it will be filled with 0.
 
     """
-    # TODO: now you can create your own types, such as break line with spaces, e.g.
     datenow = datetime.now()
     msg = break_line
     msg += "reported generated on: " + datenow.isoformat() + (" " * 31) + "\n"
@@ -289,13 +287,12 @@ def show_pokemon_trivia(pokemons_info: Dict[str, str], id_number: str) -> None:
 
 
 def show_digimon_trivia(digimon_info: Dict[str, str], id_number: str) -> None:
-    # TODO: adapt to monster instead of pokemon / digimon
     """
     This function will print a message about in the CLI.
 
     Parameters
     ----------
-    pokemons_info:
+    digimon_info:
         Bring the treated variables which will be used to answer
         the questions
 
