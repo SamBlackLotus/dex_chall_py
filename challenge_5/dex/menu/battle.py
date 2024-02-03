@@ -3,7 +3,7 @@ from typing import Dict
 
 
 def select_battle_team(
-    player_1_battle: Dict[str, int], player_2_battle: Dict[str, int]
+    player_1_battle: Dict[str, int], player_2_battle: Dict[str, int], team_size: int
 ) -> core.AnswersBattle:
     """
         This function defines the player teams.
@@ -32,25 +32,14 @@ def select_battle_team(
     attack_sorted_p2 = sorted(
         player_2_battle, key=lambda strongest_mon: strongest_mon["attack"], reverse=True
     )
-    
-    for idx in range(3):
+    for idx in range(team_size):
         team_player1.append(attack_sorted_p1[idx])
         team_player2.append(attack_sorted_p2[idx])
 
     return core.AnswersBattle(p1_player=team_player1, p2_player=team_player2)
 
 
-def start_battle(team_player1, team_player2: core.AnswersBattle) -> core.AnswersResult:
-    # TODO: start_battle seems like an action, it could be a name  for a function
-    # the args should describe the players characteristics, such as monsters or
-    # pokemon or digimon or player, etc.
-
-    # TODO: this function is hard to extend because imagine that now we want
-    # to have a battle with 5 monsters instead of 3, you would need to
-    # hardcode more 2 lines of each logic/comparison, it would be better
-    # to receive this information as an argument and loop throughout each
-    # player's team.
-
+def start_battle(monster_team: core.AnswersBattle, team_size) -> core.AnswersResult:
     """
         This function receives the list of the three
         strongest monsters of player 1 and 2, and
@@ -70,114 +59,48 @@ def start_battle(team_player1, team_player2: core.AnswersBattle) -> core.Answers
         of the battle.
 
     """
+    team_player1 = monster_team["p1_player"]
+    team_player2 = monster_team["p2_player"]
+    lowest_round = 9999
 
-    while_counter = 0
+    for position in range(team_size):
+        round_counter = 0
+        p1_pokemon_hp = team_player1[position]["hp"]
+        p2_pokemon_hp = team_player2[position]["hp"]
+        damage_player1_monster = (
+            0.5
+            * (team_player1[position]["attack"])
+            / (team_player2[position]["defense"])
+            + 1
+        )
+        damage_player2_monster = (
+            0.5
+            * (team_player2[position]["attack"])
+            / (team_player2[position]["defense"])
+            + 1
+        )
 
-    p1_mon_1_hp = start_battle["p1_player"][0]["hp"]
-    p1_mon_2_hp = start_battle["p1_player"][1]["hp"]
-    p1_mon_3_hp = start_battle["p1_player"][2]["hp"]
-    p2_mon_1_hp = start_battle["p2_player"][0]["hp"]
-    p2_mon_2_hp = start_battle["p2_player"][1]["hp"]
-    p2_mon_3_hp = start_battle["p2_player"][2]["hp"]
+        while True:
+            round_counter += 1
 
-    damage_p1_mon1 = (
-        0.5
-        * (start_battle["p1_player"][0]["attack"])
-        / (start_battle["p2_player"][0]["defense"])
-        + 1
-    )
-    damage_p1_mon2 = (
-        0.5
-        * (start_battle["p1_player"][1]["attack"])
-        / (start_battle["p2_player"][1]["defense"])
-        + 1
-    )
-    damage_p1_mon3 = (
-        0.5
-        * (start_battle["p1_player"][2]["attack"])
-        / (start_battle["p2_player"][2]["defense"])
-        + 1
-    )
-    damage_p2_mon1 = (
-        0.5
-        * (start_battle["p2_player"][0]["attack"])
-        / (start_battle["p1_player"][0]["defense"])
-        + 1
-    )
-    damage_p2_mon2 = (
-        0.5
-        * (start_battle["p2_player"][1]["attack"])
-        / (start_battle["p1_player"][1]["defense"])
-        + 1
-    )
-    damage_p2_mon3 = (
-        0.5
-        * (start_battle["p2_player"][2]["attack"])
-        / (start_battle["p1_player"][2]["defense"])
-        + 1
-    )
+            p1_pokemon_hp -= damage_player1_monster
+            p2_pokemon_hp -= damage_player2_monster
 
-    while True:
-        while_counter += 1
-
-        p1_mon_1_hp -= damage_p1_mon1
-        p1_mon_2_hp -= damage_p1_mon2
-        p1_mon_3_hp -= damage_p1_mon3
-        p2_mon_1_hp -= damage_p2_mon1
-        p2_mon_2_hp -= damage_p2_mon2
-        p2_mon_3_hp -= damage_p2_mon3
-
-        if p1_mon_1_hp <= 0:
-            first_mon_dead = start_battle["p1_player"][0]["name"]
-            victorious_player = "2"
-            break
-        elif p1_mon_2_hp <= 0:
-            first_mon_dead = start_battle["p1_player"][1]["name"]
-            victorious_player = "2"
-            break
-        elif p1_mon_3_hp <= 0:
-            first_mon_dead = start_battle["p1_player"][2]["name"]
-            victorious_player = "2"
-            break
-        elif p2_mon_1_hp <= 0:
-            first_mon_dead = start_battle["p2_player"][0]["name"]
-            victorious_player = "1"
-            break
-        elif p2_mon_2_hp <= 0:
-            first_mon_dead = start_battle["p2_player"][1]["name"]
-            victorious_player = "1"
-            break
-        elif p2_mon_3_hp <= 0:
-            first_mon_dead = start_battle["p2_player"][2]["name"]
-            victorious_player = "1"
-            break
+            if p1_pokemon_hp <= 0:
+                if round_counter < lowest_round:
+                    first_mon_dead = team_player1[position]["name"]
+                    victorious_player = "2"
+                    lowest_round = round_counter
+                break
+            elif p2_pokemon_hp <= 0:
+                if round_counter < lowest_round:
+                    first_mon_dead = team_player2[position]["name"]
+                    victorious_player = "1"
+                    lowest_round = round_counter
+                break
 
     return core.AnswersResult(
-        p1_mon_1_name=start_battle["p1_player"][0]["name"],
-        p1_mon_2_name=start_battle["p1_player"][1]["name"],
-        p1_mon_3_name=start_battle["p1_player"][2]["name"],
-        p2_mon_1_name=start_battle["p2_player"][0]["name"],
-        p2_mon_2_name=start_battle["p2_player"][1]["name"],
-        p2_mon_3_name=start_battle["p2_player"][2]["name"],
-        p1_mon_1_hp=start_battle["p1_player"][0]["hp"],
-        p1_mon_2_hp=start_battle["p1_player"][1]["hp"],
-        p1_mon_3_hp=start_battle["p1_player"][2]["hp"],
-        p2_mon_1_hp=start_battle["p2_player"][0]["hp"],
-        p2_mon_2_hp=start_battle["p2_player"][1]["hp"],
-        p2_mon_3_hp=start_battle["p2_player"][2]["hp"],
-        p1_mon_1_atk=start_battle["p1_player"][0]["attack"],
-        p1_mon_2_atk=start_battle["p1_player"][1]["attack"],
-        p1_mon_3_atk=start_battle["p1_player"][2]["attack"],
-        p2_mon_1_atk=start_battle["p2_player"][0]["attack"],
-        p2_mon_2_atk=start_battle["p2_player"][1]["attack"],
-        p2_mon_3_atk=start_battle["p2_player"][2]["attack"],
-        p1_mon_1_dfs=start_battle["p1_player"][0]["defense"],
-        p1_mon_2_dfs=start_battle["p1_player"][1]["defense"],
-        p1_mon_3_dfs=start_battle["p1_player"][2]["defense"],
-        p2_mon_1_dfs=start_battle["p2_player"][0]["defense"],
-        p2_mon_2_dfs=start_battle["p2_player"][1]["defense"],
-        p2_mon_3_dfs=start_battle["p2_player"][2]["defense"],
         winner=victorious_player,
-        rounds=while_counter,
+        rounds=lowest_round,
         loser_monster=first_mon_dead
     )

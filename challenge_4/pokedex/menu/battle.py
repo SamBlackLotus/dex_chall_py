@@ -3,7 +3,7 @@ import os
 from datetime import datetime
 
 
-def select_pokemons_for_battle(player_1_battle,player_2_battle):
+def select_pokemons_for_battle(player_1_battle, player_2_battle):
     
     hp = {"index": 0, "value": 0}
     attack = {"index": 0, "value": 0}

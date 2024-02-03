@@ -124,8 +124,9 @@ def main() -> None:
             core.show_info(info, id_number, monster_type1)
             quit()
         elif command_3 == "--battle" or command_4 == "--battle":
-            battle = menu.select_mon_for_battle(data_1, data_2)
-            result = menu.mon_battle(battle)
+            team_size: int = int(input("How many monsters will participate the battle? "))
+            battle = menu.select_battle_team(data_1, data_2, team_size)
+            result = menu.start_battle(battle, team_size)
             core.show_battle_winner(result, id_number)
             quit()
 
