@@ -1,9 +1,9 @@
 import core
-from typing import Dict
+from typing import Dict, Union, List
 
 
 def select_battle_team(
-    player_1_battle: Dict[str, int], player_2_battle: Dict[str, int], team_size: int
+    player_1_battle: Dict[str, Union[str, int]], player_2_battle: Dict[str, int], team_size: int
 ) -> core.AnswersBattle:
     """
         This function defines the player teams.
@@ -26,10 +26,10 @@ def select_battle_team(
     team_player1 = []
     team_player2 = []
 
-    attack_sorted_p1 = sorted(
+    attack_sorted_p1: List[str] = sorted(
         player_1_battle, key=lambda strongest_mon: strongest_mon["attack"], reverse=True
     )
-    attack_sorted_p2 = sorted(
+    attack_sorted_p2: List[str] = sorted(
         player_2_battle, key=lambda strongest_mon: strongest_mon["attack"], reverse=True
     )
     for idx in range(team_size):
@@ -65,8 +65,8 @@ def start_battle(monster_team: core.AnswersBattle, team_size) -> core.AnswersRes
 
     for position in range(team_size):
         round_counter = 0
-        p1_pokemon_hp = team_player1[position]["hp"]
-        p2_pokemon_hp = team_player2[position]["hp"]
+        p1_monster_hp = team_player1[position]["hp"]
+        p2_monster_hp = team_player2[position]["hp"]
         damage_player1_monster = (
             0.5
             * (team_player1[position]["attack"])
@@ -83,16 +83,16 @@ def start_battle(monster_team: core.AnswersBattle, team_size) -> core.AnswersRes
         while True:
             round_counter += 1
 
-            p1_pokemon_hp -= damage_player1_monster
-            p2_pokemon_hp -= damage_player2_monster
+            p1_monster_hp -= damage_player1_monster
+            p2_monster_hp -= damage_player2_monster
 
-            if p1_pokemon_hp <= 0:
+            if p1_monster_hp <= 0:
                 if round_counter < lowest_round:
                     first_mon_dead = team_player1[position]["name"]
                     victorious_player = "2"
                     lowest_round = round_counter
                 break
-            elif p2_pokemon_hp <= 0:
+            elif p2_monster_hp <= 0:
                 if round_counter < lowest_round:
                     first_mon_dead = team_player2[position]["name"]
                     victorious_player = "1"
@@ -100,7 +100,5 @@ def start_battle(monster_team: core.AnswersBattle, team_size) -> core.AnswersRes
                 break
 
     return core.AnswersResult(
-        winner=victorious_player,
-        rounds=lowest_round,
-        loser_monster=first_mon_dead
+        winner=victorious_player, rounds=lowest_round, loser_monster=first_mon_dead
     )

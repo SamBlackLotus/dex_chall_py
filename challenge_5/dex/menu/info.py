@@ -2,14 +2,13 @@ import core
 from typing import Dict
 
 
-# TODO: try to not cross 120 col width
 def process_info(
     process_monster1: Dict[str, int],
     process_monster2: Dict[str, int],
     monster_set_1: Dict[str, int],
     monster_set_2: Dict[str, int],
     monster_type1: str,
-    monster_type2: str
+    monster_type2: str,
 ) -> core.AnswersInfo:
     # TODO: create a function for each question
     """
@@ -92,5 +91,5 @@ def process_info(
         stg_or_legend_player1_info=str(total_stg_or_legend_player1),
         stg_or_legend_player2_info=str(total_stg_or_legend_player2),
         repeated_monster_info=str(len(intersec_monster)),
-        different_monster_info=str(len(diff_monster))
+        different_monster_info=str(len(diff_monster)),
     )

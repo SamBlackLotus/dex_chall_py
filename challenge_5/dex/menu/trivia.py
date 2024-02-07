@@ -309,5 +309,5 @@ def digimon_trivia(digimon_data: Dict[str, Union[str, int]]) -> Dict[str, str]:
         digimon_types=sorted(digimon_types),
         types_sum=str(len(digimon_types)),
         digimon_stages=sorted(digimon_stages),
-        stages_sum=str(len(digimon_stages))
+        stages_sum=str(len(digimon_stages)),
     )

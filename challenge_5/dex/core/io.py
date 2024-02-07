@@ -57,21 +57,25 @@ def client_usage() -> str:
     """
     client_usage_msg: str = """
     CLI usage examples:
-    
+
     HELPER
     > python3 dex/main.py --help
-    
+
     TRIVIA
     > python3 dex/main.py --trivia ../data/pokemon/json/pokemons_1.json --id 1
     > python3 dex/main.py --trivia ../data/digimon/json/digimons_1.json --id 1
-    
+
     INFO
-    > python3 dex/main.py --player1 ../data/pokemon/json/pokemons_1.json --player2 ../data/pokemon/json/pokemons_2.json --id 1 --info
-    > python3 dex/main.py --player1 ../data/digimon/json/digimons_1.json --player2 ../data/digimon/json/digimons_2.json --id 1 --info
-    
+    > python3 dex/main.py --player1 ../data/pokemon/json/pokemons_1.json
+        --player2 ../data/pokemon/json/pokemons_2.json --id 1 --info
+    > python3 dex/main.py --player1 ../data/digimon/json/digimons_1.json
+        --player2 ../data/digimon/json/digimons_2.json --id 1 --info
+
     BATTLE
-    > python3 dex/main.py --player1 ../data/pokemon/json/pokemons_1.json --player2 ../data/pokemon/json/pokemons_2.json --id 1 --battle
-    > python3 dex/main.py --player1 ../data/digimon/json/digimons_1.json --player2 ../data/digimon/json/digimons_2.json --id 1 --battle
+    > python3 dex/main.py --player1 ../data/pokemon/json/pokemons_1.json
+        --player2 ../data/pokemon/json/pokemons_2.json --id 1 --battle
+    > python3 dex/main.py --player1 ../data/digimon/json/digimons_1.json
+        --player2 ../data/digimon/json/digimons_2.json --id 1 --battle
 
     ATTENTION:
 
@@ -81,10 +85,10 @@ def client_usage() -> str:
     csv list at the same time, it will work as well.
     You can use the formats that best suits your needs:
     Example --> pokemons_1.json  pokemons_2.json
-                    pokemons_1.csv   pokemons_2.csv
-                    pokemons_1.xml   pokemons_2.xml
-                    pokemons_1.yaml  pokemons_2.yaml
-    
+                pokemons_1.csv   pokemons_2.csv
+                pokemons_1.xml   pokemons_2.xml
+                pokemons_1.yaml  pokemons_2.yaml
+
     Another important set of information is that you can inform an pokemon list
     or a digimon list, when informing a digimon list, you need to use the
     "--digimon" command or "--pokemon" if it's a pokemon list, in the case of
@@ -122,7 +126,9 @@ def client_usage() -> str:
 
 
 def data_saver(
-    data_to_be_saved: Callable[[str], int],monster_type: str, id_number: str,
+    data_to_be_saved: Callable[[str], int],
+    monster_type: str,
+    id_number: str,
 ) -> None:
     """
     This function creates a .txt file that stores the generated
@@ -149,7 +155,11 @@ def data_saver(
             + "what do you prefer to do? [append|OVERWRITE] : "
         )
 
-        if user_choice.lower() == "o" or user_choice.lower() == "overwrite" or user_choice == "":
+        if (
+            user_choice.lower() == "o"
+            or user_choice.lower() == "overwrite"
+            or user_choice == ""
+        ):
             os.remove(f"{id_number}_{monster_type}.txt")
 
             print("File Overwritten successfully!")
@@ -612,7 +622,11 @@ def show_digimon_trivia(digimon_info: Dict[str, str], id_number: str) -> None:
         + "\n"
     )
     msg += break_line
-    msg += "8. Which is the weakest digimon of all, based on the Atk attribute is:" + (" " * 10) + "\n"
+    msg += (
+        "8. Which is the weakest digimon of all, based on the Atk attribute is:"
+        + (" " * 10)
+        + "\n"
+    )
     msg += (
         (" " * 4)
         + "> "
@@ -625,7 +639,11 @@ def show_digimon_trivia(digimon_info: Dict[str, str], id_number: str) -> None:
         + "\n"
     )
     msg += break_line
-    msg += "9. Which is the strongest digimon of all, based on the Atk attribute is:" + (" " * 8) + "\n"
+    msg += (
+        "9. Which is the strongest digimon of all, based on the Atk attribute is:"
+        + (" " * 8)
+        + "\n"
+    )
     msg += (
         (" " * 4)
         + "> "
@@ -670,9 +688,6 @@ def show_battle_winner(battle_result: Dict[str, str], id_number: str) -> None:
     battle_msg += break_line
     battle_msg += "" + (("=" * 32) + " MONSTER BATTLE " + ("=" * 32) + "\n")
     battle_msg += break_line
-    battle_msg += " " + ("-" * 78) + " \n"
-    battle_msg += "|" + (" " * 35) + "PLAYER 1" + (" " * 35) + "|\n"
-    battle_msg += " " + ("-" * 78) + " \n"
     battle_msg += " " + ("=" * 78) + " \n"
     battle_msg += "|" + (" " * 30) + "+++++ RESULT +++++" + (" " * 30) + "|\n"
     battle_msg += " " + ("=" * 78) + " \n"
@@ -709,7 +724,96 @@ def show_battle_winner(battle_result: Dict[str, str], id_number: str) -> None:
     data_saver(battle_msg, "battle", id_number)
 
 
-def show_info(process_monster: Dict[str, str], id_number: str, monster_type1: str) -> None:
+def show_info_pokemon(
+    monster_dict_p1: Dict[str, str],
+    monster_dict_p2: Dict[str, str],
+    process_monster: Dict[str, str],
+    id_number: str,
+    monster_type1: str,
+) -> None:
+    """
+    This function will print a message in the CLI.
+
+    Parameters
+    ----------
+    process_monster:
+        Bring the treated variables which will be used to answer
+        the questions
+
+    id_number:
+        The id provided by the user, in case its not provided
+        it will be filled with 0.
+
+    """
+    total_monster = str(len(monster_dict_p1))
+    total_monster2 = str(len(monster_dict_p2))
+    datenow = datetime.now()
+    msg = break_line
+    msg += "reported generated on: " + datenow.isoformat() + (" " * 31) + "\n"
+    msg += break_line
+    msg += " " + (("=" * 32) + " POKEMON INFO " + ("=" * 32) + " \n")
+    msg += (
+        "|" + (" " * 18) + "| PLAYER 1" + (" " * 20) + "| PLAYER 2" + (" " * 20) + "|\n"
+    )
+    msg += "|" + ("-" * 18) + "|" + ("-" * 29) + "|" + ("-" * 29) + "|\n"
+    msg += (
+        "|Pokemons"
+        + (" " * 10)
+        + "| "
+        + total_monster
+        + (" " * (28 - len(total_monster)))
+        + "| "
+        + total_monster2
+        + (" " * (28 - len(total_monster2)))
+        + "|\n"
+    )
+    msg += (
+        "|Strongest Pokémon"
+        + " | "
+        + process_monster["strongest_monster_player1_info"]
+        + (" " * (28 - len(process_monster["strongest_monster_player1_info"])))
+        + "| "
+        + process_monster["strongest_monster_player2_info"]
+        + (" " * (28 - len(process_monster["strongest_monster_player2_info"])))
+        + "|\n"
+    )
+    msg += (
+        "|Legendary"
+        + (" " * 9)
+        + "| "
+        + process_monster["stg_or_legend_player1_info"]
+        + (" " * (28 - len(process_monster["stg_or_legend_player1_info"])))
+        + "| "
+        + process_monster["stg_or_legend_player2_info"]
+        + (" " * (28 - len(process_monster["stg_or_legend_player2_info"])))
+        + "|\n"
+    )
+    msg += (
+        "|Repeated Pokemons"
+        + " | "
+        + process_monster["repeated_monster_info"]
+        + (" " * (58 - len(process_monster["repeated_monster_info"])))
+        + "|\n"
+    )
+    msg += (
+        "|Different Pokemons"
+        + "| "
+        + process_monster["different_monster_info"]
+        + (" " * (58 - len(process_monster["different_monster_info"])))
+        + "|\n"
+    )
+    msg += "|" + ("-" * 18) + "|" + ("-" * 59) + "|\n"
+    msg += " " + (("=" * 78) + " \n")
+    msg += break_line
+
+    print(msg.format(**process_monster))
+
+    data_saver(msg, "info", id_number)
+
+
+def show_info_digimon(
+    process_monster: Dict[str, str], id_number: str, monster_type1: str
+) -> None:
     """
     This function will print a message in the CLI.
 
@@ -728,123 +832,57 @@ def show_info(process_monster: Dict[str, str], id_number: str, monster_type1: st
     msg = break_line
     msg += "reported generated on: " + datenow.isoformat() + (" " * 31) + "\n"
     msg += break_line
-
-    if monster_type1 == "pokemon":
-        msg += " " + (("=" * 32) + " POKEMON INFO " + ("=" * 32) + " \n")
-        msg += (
-            "|"
-            + (" " * 18)
-            + "| PLAYER 1"
-            + (" " * 20)
-            + "| PLAYER 2"
-            + (" " * 20)
-            + "|\n"
-        )
-        msg += "|" + ("-" * 18) + "|" + ("-" * 29) + "|" + ("-" * 29) + "|\n"
-        msg += (
-            "|Pokemons"
-            + (" " * 10)
-            + "| "
-            + process_monster["player1_total_monster_info"]
-            + (" " * (28 - len(process_monster["player1_total_monster_info"])))
-            + "| "
-            + process_monster["player2_total_monster_info"]
-            + (" " * (28 - len(process_monster["player2_total_monster_info"])))
-            + "|\n"
-        )
-        msg += (
-            "|Strongest Pokémon"
-            + " | "
-            + process_monster["strongest_monster_player1_info"]
-            + (" " * (28 - len(process_monster["strongest_monster_player1_info"])))
-            + "| "
-            + process_monster["strongest_monster_player2_info"]
-            + (" " * (28 - len(process_monster["strongest_monster_player2_info"])))
-            + "|\n"
-        )
-        msg += (
-            "|Legendary"
-            + (" " * 9)
-            + "| "
-            + process_monster["stg_or_legend_player1_info"]
-            + (" " * (28 - len(process_monster["stg_or_legend_player1_info"])))
-            + "| "
-            + process_monster["stg_or_legend_player2_info"]
-            + (" " * (28 - len(process_monster["stg_or_legend_player2_info"])))
-            + "|\n"
-        )
-        msg += (
-            "|Repeated Pokemons"
-            + " | "
-            + process_monster["repeated_monster_info"]
-            + (" " * (58 - len(process_monster["repeated_monster_info"])))
-            + "|\n"
-        )
-        msg += (
-            "|Different Pokemons"
-            + "| "
-            + process_monster["different_monster_info"]
-            + (" " * (58 - len(process_monster["different_monster_info"])))
-            + "|\n"
-        )
-    elif monster_type1 == "digimon":
-        msg += " " + (("=" * 32) + " DIGIMON INFO " + ("=" * 32) + " \n")
-        msg += (
-            "|"
-            + (" " * 18)
-            + "| PLAYER 1"
-            + (" " * 20)
-            + "| PLAYER 2"
-            + (" " * 20)
-            + "|\n"
-        )
-        msg += "|" + ("-" * 18) + "|" + ("-" * 29) + "|" + ("-" * 29) + "|\n"
-        msg += (
-            "|Digimons"
-            + (" " * 10)
-            + "| "
-            + process_monster["player1_total_monster_info"]
-            + (" " * (28 - len(process_monster["player1_total_monster_info"])))
-            + "| "
-            + process_monster["player2_total_monster_info"]
-            + (" " * (28 - len(process_monster["player2_total_monster_info"])))
-            + "|\n"
-        )
-        msg += (
-            "|Strongest Digimon"
-            + " | "
-            + process_monster["strongest_monster_player1_info"]
-            + (" " * (28 - len(process_monster["strongest_monster_player1_info"])))
-            + "| "
-            + process_monster["strongest_monster_player2_info"]
-            + (" " * (28 - len(process_monster["strongest_monster_player2_info"])))
-            + "|\n"
-        )
-        msg += (
-            "|Digimon Ultra"
-            + (" " * 5)
-            + "| "
-            + process_monster["stg_or_legend_player1_info"]
-            + (" " * (28 - len(process_monster["stg_or_legend_player1_info"])))
-            + "| "
-            + process_monster["stg_or_legend_player2_info"]
-            + (" " * (28 - len(process_monster["stg_or_legend_player2_info"])))
-            + "|\n"
-        )
-        msg += (
-            "|Repeated Digimons"
-            + " | "
-            + process_monster["repeated_monster_info"]
-            + (" " * (58 - len(process_monster["repeated_monster_info"])))
-            + "|\n"
-        )
-        msg += (
-            "|Different Digimons"
-            + "| "
-            + process_monster["different_monster_info"]
-            + (" " * (58 - len(process_monster["different_monster_info"])))
-            + "|\n"
-        )
+    msg += " " + (("=" * 32) + " DIGIMON INFO " + ("=" * 32) + " \n")
+    msg += (
+        "|" + (" " * 18) + "| PLAYER 1" + (" " * 20) + "| PLAYER 2" + (" " * 20) + "|\n"
+    )
+    msg += "|" + ("-" * 18) + "|" + ("-" * 29) + "|" + ("-" * 29) + "|\n"
+    msg += (
+        "|Digimons"
+        + (" " * 10)
+        + "| "
+        + process_monster["player1_total_monster_info"]
+        + (" " * (28 - len(process_monster["player1_total_monster_info"])))
+        + "| "
+        + process_monster["player2_total_monster_info"]
+        + (" " * (28 - len(process_monster["player2_total_monster_info"])))
+        + "|\n"
+    )
+    msg += (
+        "|Strongest Digimon"
+        + " | "
+        + process_monster["strongest_monster_player1_info"]
+        + (" " * (28 - len(process_monster["strongest_monster_player1_info"])))
+        + "| "
+        + process_monster["strongest_monster_player2_info"]
+        + (" " * (28 - len(process_monster["strongest_monster_player2_info"])))
+        + "|\n"
+    )
+    msg += (
+        "|Digimon Ultra"
+        + (" " * 5)
+        + "| "
+        + process_monster["stg_or_legend_player1_info"]
+        + (" " * (28 - len(process_monster["stg_or_legend_player1_info"])))
+        + "| "
+        + process_monster["stg_or_legend_player2_info"]
+        + (" " * (28 - len(process_monster["stg_or_legend_player2_info"])))
+        + "|\n"
+    )
+    msg += (
+        "|Repeated Digimons"
+        + " | "
+        + process_monster["repeated_monster_info"]
+        + (" " * (58 - len(process_monster["repeated_monster_info"])))
+        + "|\n"
+    )
+    msg += (
+        "|Different Digimons"
+        + "| "
+        + process_monster["different_monster_info"]
+        + (" " * (58 - len(process_monster["different_monster_info"])))
+        + "|\n"
+    )
     msg += "|" + ("-" * 18) + "|" + ("-" * 59) + "|\n"
     msg += " " + (("=" * 78) + " \n")
     msg += break_line

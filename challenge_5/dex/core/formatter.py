@@ -55,7 +55,7 @@ def cast_to_bool(value: List[str]) -> bool:
     return True if value == "True" else False
 
 
-def cast_to_lower(value: List[str], monster_type: str) -> List[str]:
+def cast_to_lower(value: List[str], monster_type: str) -> List[Dict[str, str]]:
     """
     This function converts the list of variables
     to lower case and put them in a patterned keynames.
@@ -88,7 +88,7 @@ def cast_to_lower(value: List[str], monster_type: str) -> List[str]:
                     spdef=key["Sp. Def"],
                     speed=key["Speed"],
                     generation=key["Generation"],
-                    legendary=key["Legendary"]
+                    legendary=key["Legendary"],
                 )
             ]
     elif monster_type == "digimon":
@@ -108,7 +108,7 @@ def cast_to_lower(value: List[str], monster_type: str) -> List[str]:
                     defense=key["Def"],
                     intelligence=key["Int"],
                     speed=key["Spd"],
-                    image=key["Image link"]
+                    image=key["Image link"],
                 )
             ]
 

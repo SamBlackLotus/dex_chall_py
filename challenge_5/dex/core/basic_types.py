@@ -60,6 +60,7 @@ class AnswersDigimonTrivia(TypedDict):
 class AnswersInfo(TypedDict):
     player1_total_monster_info: int
     player2_total_monster_info: int
+    strongest_monster_player_info: str
     strongest_monster_player1_info: str
     strongest_monster_player2_info: str
     stg_or_legend_player1_info: str

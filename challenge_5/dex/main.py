@@ -2,15 +2,17 @@ import core
 import menu
 import sys
 import os
+from typing import Dict, Union
 
 
 def main() -> None:
-
     if len(sys.argv) == 1:
         print(core.client_usage())
         quit()
 
-    command_1 = sys.argv[1]
+    id_number: int = 0
+
+    command_1: str = sys.argv[1]
     if command_1 == "--help":
         if len(sys.argv) == 2:
             print(core.client_helper())
@@ -26,11 +28,10 @@ def main() -> None:
             if not os.path.exists(filepath_1):
                 print(f"WARNING: File {filepath_1} does not exist.")
                 quit()
-
         elif len(sys.argv) == 5:
-            command_3 = sys.argv[3]
-            if command_3 == "--id":
-                id_number = sys.argv[4]
+            command_2: str = sys.argv[3]
+            if command_2 == "--id":
+                id_number = int(sys.argv[4])
 
             else:
                 print(f"WARNING: This command does not exist.\n{core.client_usage()}")
@@ -45,10 +46,10 @@ def main() -> None:
             print(f"WARNING! Incorrect amount of arguments.\n{core.client_usage()}")
             quit()
 
-        data_arq1 = core.read_file(filepath_1)
+        data_arq1: Dict[str, Union[str, int]] = core.read_file(filepath_1)
         if "pokemon" in filepath_1:
-            data_1 = core.cast_to_lower(data_arq1, "pokemon")
-            info = menu.pokemon_trivia(data_1)
+            data_1: Dict[str, Union[str, int]] = core.cast_to_lower(data_arq1, "pokemon")
+            info: Dict[str, Union[str, int]] = menu.pokemon_trivia(data_1)
             core.show_pokemon_trivia(info, id_number)
             quit()
 
@@ -83,17 +84,17 @@ def main() -> None:
 
         command_3 = sys.argv[5]
         command_4 = "0"
-
+        print(command_3)
         if command_3 == "--id":
             if len(sys.argv) == 8:
-                id_number = sys.argv[6]
+                id_number = int(sys.argv[6])
                 command_4 = sys.argv[7]
 
             else:
                 print(f"WARNING! Incorrect amount of arguments.\n{core.client_usage()}")
                 quit()
 
-        elif command_3 != "--info" or command_3 != "--battle":
+        elif command_3 != "--info" and command_3 != "--battle":
             print(f"WARNING: This command does not exist.\n{core.client_usage()}")
             quit()
 
@@ -120,11 +121,19 @@ def main() -> None:
         if command_3 == "--info" or command_4 == "--info":
             dataset_1 = core.cast_to_set(data_1)
             dataset_2 = core.cast_to_set(data_2)
-            info = menu.process_info(data_1, data_2, dataset_1, dataset_2, monster_type1, monster_type2)
-            core.show_info(info, id_number, monster_type1)
-            quit()
+            info = menu.process_info(
+                data_1, data_2, dataset_1, dataset_2, monster_type1, monster_type2
+            )
+            if monster_type1 == "pokemon":
+                core.show_info_pokemon(data_1, data_2, info, id_number, monster_type1)
+                quit()
+            if monster_type1 == "digimon":
+                core.show_info_digimon(info, id_number, monster_type1)
+                quit()
         elif command_3 == "--battle" or command_4 == "--battle":
-            team_size: int = int(input("How many monsters will participate the battle? "))
+            team_size = int(
+                input("How many monsters will participate the battle? ")
+            )
             battle = menu.select_battle_team(data_1, data_2, team_size)
             result = menu.start_battle(battle, team_size)
             core.show_battle_winner(result, id_number)
