@@ -164,16 +164,16 @@ Skills to unlock:
 - Setup your configuration file.
 - Generalize functions to be used in multiple scopes.
 
-## Retrospective
+## Retrospective, 27/01/2024
 
 TODO:
-- Fix pokemon/digimon trivia, running json first and csv as second returns incorrect information, both should be similar.
-- OVERWRITE by default is not working.
+- [OK] Fix pokemon/digimon trivia, running json first and csv as second returns incorrect information, both should be similar.
+- [OK] OVERWRITE by default is not working.
 - Bug: KeyError: 'Type 1', from `python dex/main.py --pokemon --trivia ../data/pokemon/xml/pokemons_1.xml --id 1`.
 - Bug: AttributeError: 'list' object has no attribute 'items', from `python dex/main.py --digimon --trivia ../data/digimon/xml/digimons_1.xml --id 1`.
-- Fix 7Q on digimon trivia, it looks confusing.
-- Bug: When we run --info the player 2 data is coming from the player 1 data.
-- Battle is not working: `python dex/main.py --digimon --player1 ../data/pokemon/json/pokemons_1.json --player2 ../data/digimon/json/digimons_2.json --id 1 --battle`.
+- [OK] Fix 7Q on digimon trivia, it looks confusing.
+- [OK] Bug: When we run --info the player 2 data is coming from the player 1 data.
+- [OK] Battle is not working: `python dex/main.py --digimon --player1 ../data/pokemon/json/pokemons_1.json --player2 ../data/digimon/json/digimons_2.json --id 1 --battle`.
 
 The good:
 - Learn about the python basics for dependencies.
@@ -182,6 +182,13 @@ The good:
 
 The bad:
 - Bugs.
+
+## Retrospective, 07/02/2024
+
+TODO:
+- Bug: KeyError: 'Type 1', from `python dex/main.py --pokemon --trivia ../data/pokemon/xml/pokemons_1.xml --id 1`.
+- Bug: AttributeError: 'list' object has no attribute 'items', from `python dex/main.py --digimon --trivia ../data/digimon/xml/digimons_1.xml --id 1`.
+- Bug: Fix edge case when deciding how many monster will join the battle, e.g., not a number, negative, zero, etc.
 
 ## Dates
 

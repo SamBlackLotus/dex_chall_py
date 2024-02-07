@@ -2,6 +2,7 @@ import core
 from typing import Dict
 
 
+# TODO: monster_set_1 and monster_set_2 should be set type
 def process_info(
     process_monster1: Dict[str, int],
     process_monster2: Dict[str, int],

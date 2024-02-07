@@ -125,6 +125,7 @@ def client_usage() -> str:
     return client_usage_msg
 
 
+# TODO: data_to_be_saved is a str
 def data_saver(
     data_to_be_saved: Callable[[str], int],
     monster_type: str,
