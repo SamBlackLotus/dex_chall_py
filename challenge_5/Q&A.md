@@ -73,4 +73,3 @@ Q. Como eu documento lambda e comprehension no mypy? Pq ele ta misturando os com
     ```
 
     The list comprehension generates a list in the end, so just add typing similar to how you would create for a list, using List[arg_type].
-    

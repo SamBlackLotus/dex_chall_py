@@ -22,21 +22,24 @@ def select_battle_team(
         team_player2 = The three strongest monsters from player_2_battle.
 
     """
+    if team_size <= len(player_1_battle) or team_size <= len(player_2_battle):
+        team_player1 = []
+        team_player2 = []
 
-    team_player1 = []
-    team_player2 = []
+        attack_sorted_p1: List[str] = sorted(
+            player_1_battle, key=lambda strongest_mon: strongest_mon["attack"], reverse=True
+        )
+        attack_sorted_p2: List[str] = sorted(
+            player_2_battle, key=lambda strongest_mon: strongest_mon["attack"], reverse=True
+        )
+        for idx in range(team_size):
+            team_player1.append(attack_sorted_p1[idx])
+            team_player2.append(attack_sorted_p2[idx])
 
-    attack_sorted_p1: List[str] = sorted(
-        player_1_battle, key=lambda strongest_mon: strongest_mon["attack"], reverse=True
-    )
-    attack_sorted_p2: List[str] = sorted(
-        player_2_battle, key=lambda strongest_mon: strongest_mon["attack"], reverse=True
-    )
-    for idx in range(team_size):
-        team_player1.append(attack_sorted_p1[idx])
-        team_player2.append(attack_sorted_p2[idx])
-
-    return core.AnswersBattle(p1_player=team_player1, p2_player=team_player2)
+        return core.AnswersBattle(p1_player=team_player1, p2_player=team_player2)
+    else:
+        print("WARNING: Team size bigger than the monster list.\n")
+        quit()
 
 
 def start_battle(monster_team: core.AnswersBattle, team_size) -> core.AnswersResult:
@@ -98,7 +101,7 @@ def start_battle(monster_team: core.AnswersBattle, team_size) -> core.AnswersRes
                     victorious_player = "1"
                     lowest_round = round_counter
                 break
-
+        print(round_counter)
     return core.AnswersResult(
         winner=victorious_player, rounds=lowest_round, loser_monster=first_mon_dead
     )

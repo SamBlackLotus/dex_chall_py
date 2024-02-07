@@ -2,7 +2,6 @@ import core
 from typing import Dict, Union
 
 
-# TODO: AnswerTrivia or Dict[str, str]
 def pokemon_trivia(pokemons_data: Dict[str, Union[str, int]]) -> Dict[str, str]:
     """
         This function will process some validations in a pokemon
