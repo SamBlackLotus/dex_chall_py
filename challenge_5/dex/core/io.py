@@ -66,16 +66,20 @@ def client_usage() -> str:
     > python3 dex/main.py --trivia ../data/digimon/json/digimons_1.json --id 1
 
     INFO
-    > python3 dex/main.py --player1 ../data/pokemon/json/pokemons_1.json --player2 ../data/pokemon/json/pokemons_2.json --id 1 --info
-    > python3 dex/main.py --player1 ../data/digimon/json/digimons_1.json --player2 ../data/digimon/json/digimons_2.json --id 1 --info
+    > python3 dex/main.py --player1 ../data/pokemon/json/pokemons_1.json
+    --player2 ../data/pokemon/json/pokemons_2.json --id 1 --info
+    > python3 dex/main.py --player1 ../data/digimon/json/digimons_1.json
+    --player2 ../data/digimon/json/digimons_2.json --id 1 --info
 
     BATTLE
-    > python3 dex/main.py --player1 ../data/pokemon/json/pokemons_1.json --player2 ../data/pokemon/json/pokemons_2.json --id 1 --battle
-    > python3 dex/main.py --player1 ../data/digimon/json/digimons_1.json --player2 ../data/digimon/json/digimons_2.json --id 1 --battle
+    > python3 dex/main.py --player1 ../data/pokemon/json/pokemons_1.json
+    --player2 ../data/pokemon/json/pokemons_2.json --id 1 --battle
+    > python3 dex/main.py --player1 ../data/digimon/json/digimons_1.json
+    --player2 ../data/digimon/json/digimons_2.json --id 1 --battle
     
-    In the Battle option, you will be asked how many monster will participate in
-    the battle, the archive size will be validated, if you informed a number bigger
-    than the amount of monsters in the list, it will return a error.
+    In the Battle option, you will be asked how many monster will participate 
+    in the battle, the archive size will be validated, if you informed a number
+    bigger than the amount of monsters in the list, it will return a error.
 
     ATTENTION:
 
@@ -127,7 +131,7 @@ def client_usage() -> str:
 
 # TODO: data_to_be_saved is a str
 def data_saver(
-    data_to_be_saved: Callable[[str], int],
+    data_to_be_saved: str,
     monster_type: str,
     id_number: str,
 ) -> None:

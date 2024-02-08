@@ -1,13 +1,16 @@
 import core
-from typing import Dict
+from typing import Dict, Set
 
 
-# TODO: monster_set_1 and monster_set_2 should be set type
+# TODO: monster_set_1 and monster_set_2 should be set type 
+# O erro do mypy aqui com relação ao intersection é pq n existe intersection pra dict
+# só pra set, então tem q mudar pra set pra ele aceitar (já mudei só falta testar)
+
 def process_info(
     process_monster1: Dict[str, int],
     process_monster2: Dict[str, int],
-    monster_set_1: Dict[str, int],
-    monster_set_2: Dict[str, int],
+    monster_set_1: Set[str, int],
+    monster_set_2: Set[str, int],
     monster_type1: str,
     monster_type2: str,
 ) -> core.AnswersInfo:

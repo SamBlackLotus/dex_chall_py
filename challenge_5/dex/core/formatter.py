@@ -1,6 +1,6 @@
 from typing import List, Set, Union, Dict, SupportsIndex
 
-# TODO: Set is missing the internal data types
+# TODO: Set is missing the internal data types (erro do mypy conferir)
 
 
 def cast_to_set(file_set_1: Dict) -> Set[Dict[str, Union[str, int]]]:

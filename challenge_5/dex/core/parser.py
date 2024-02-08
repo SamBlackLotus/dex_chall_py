@@ -5,6 +5,9 @@ import xmltodict
 import yaml
 from typing import Dict, Union, List
 
+# Os erros do mypy aqui estão acontecendo pq a variável file é usada em todos os tipos de arquivo
+# como se fosse a msm coisa sempre, então mudar pra xml_file, json_file etc
+
 
 def read_file(filepath: str) -> List[Dict[str, Union[str, int]]]:
     """
