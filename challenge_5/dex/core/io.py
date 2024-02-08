@@ -1,6 +1,6 @@
 import os
 from datetime import datetime
-from typing import Callable, Dict
+from typing import Dict
 
 
 break_line: str = (" " * 80) + "\n"

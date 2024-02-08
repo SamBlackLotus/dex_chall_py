@@ -33,7 +33,7 @@ def pokemon_trivia(pokemons_data: Dict[str, Union[str, int]]) -> Dict[str, str]:
         pokemon_dict += [
             {key_list: value_list for key_list, value_list in pokemon.items()}
         ]
-
+        breakpoint()
         if pokemon_dict:
             pokemon_hp = sorted(
                 pokemon_dict, key=lambda highest: highest["hp"], reverse=True

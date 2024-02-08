@@ -1,5 +1,5 @@
 import core
-from typing import Dict, Set
+from typing import Dict
 
 
 # TODO: monster_set_1 and monster_set_2 should be set type 
@@ -9,8 +9,8 @@ from typing import Dict, Set
 def process_info(
     process_monster1: Dict[str, int],
     process_monster2: Dict[str, int],
-    monster_set_1: Set[str, int],
-    monster_set_2: Set[str, int],
+    monster_set_1: Dict[str, int],
+    monster_set_2: Dict[str, int],
     monster_type1: str,
     monster_type2: str,
 ) -> core.AnswersInfo:
