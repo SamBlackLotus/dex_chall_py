@@ -12,7 +12,7 @@ class Monster:
         self.defense = defense
         self.speed = speed
 
-    def introduce_self(self):
+    def info_self(self):
         print("INFO CARD", "\n"
               "Id:" + self.id, "\n"
               "Name:" + self.name, "\n"
@@ -30,8 +30,8 @@ digimon = Monster("Digimon", "5", "Poyomon", "Baby", "Free", "null", "null", "54
 
 pokemon = Monster("Pokemon", "255", "Torchic", "null", "null", "3", "No", "45", "60", "40", "45")
 
-digimon.introduce_self()
-pokemon.introduce_self()
+digimon.info_self()
+pokemon.info_self()
 
 # class Team:
 #     def
