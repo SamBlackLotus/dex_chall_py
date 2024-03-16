@@ -1,3 +1,0 @@
-# GSoC
-
-TODO
